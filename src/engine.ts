@@ -124,6 +124,13 @@ function runQueue(
             ? s.time
             : undefined;
       apply(a, s, w);
+      // A delivered message may open reply options without being viewed.
+      // Reading the chat remains a separate user action.
+      if (a.type === "unlock") {
+        const item = Object.values(w.data).flat().find((i) => i.id === a.key);
+        if (item && !item.outgoing)
+          queue.push(...w.nodes.filter((node) => node.event === "read" && node.target === a.key).map((node) => node.id));
+      }
       if (a.type === "variable" && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
@@ -167,7 +174,11 @@ export function dispatch(
   target = "",
 ): Runtime {
   const s = structuredClone(previous);
-  if (event === "choose") s.choices = [];
+  if (event === "choose") {
+    const group = w.nodes.find((node) => node.type === "choice" && node.next.includes(target));
+    const siblings = new Set(group?.next ?? [target]);
+    s.choices = s.choices.filter((choice) => !siblings.has(choice.target));
+  }
   if (event === "openApp" && !s.visited.includes(target))
     s.visited.push(target);
   if (event === "read" && !s.read.includes(target)) s.read.push(target);
@@ -179,7 +190,13 @@ export function dispatch(
         (n.event === event && (!n.target || n.target === target)),
     )
     .map((n) => n.id);
-  return runQueue(w, s, event, target, queue);
+  const next = runQueue(w, s, event, target, queue);
+  if (event === "start") {
+    const initial = Object.values(w.data).flat().filter((item) => !item.hidden && !item.outgoing);
+    const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
+    runQueue(w, next, "arrival", "", triggers);
+  }
+  return next;
 }
 export function advance(
   w: Work,
