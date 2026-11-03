@@ -151,12 +151,17 @@ export function MymyKakao(p: SkinProps) {
                       {m.time.slice(-5)}
                     </span>
                   )}
-                  <button
-                    className={"kzbub" + (m.media ? " kzimg" : "")}
-                    onClick={() => m.meta.local !== "true" && read(p, m)}
-                  >
-                    {m.media ? <Media item={m} /> : m.body.split("\n").map((line, index) => <span className="kkt-message-line" key={index}>{line}</span>)}
-                  </button>
+                  <div className="kkt-bubble-stack">
+                    {(m.media ? [m.body] : m.body.split("\n").filter(Boolean)).map((line, index) => (
+                      <button
+                        key={index}
+                        className={"kzbub" + (m.media ? " kzimg" : "")}
+                        onClick={() => m.meta.local !== "true" && read(p, m)}
+                      >
+                        {m.media ? <Media item={m} /> : line}
+                      </button>
+                    ))}
+                  </div>
                   {!m.outgoing && run.last && (
                     <span className="kzt">{m.time.slice(-5)}</span>
                   )}
