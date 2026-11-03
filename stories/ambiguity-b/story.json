@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
-  "description": "序章〈展覽前的三天〉：KKT 可選回覆、延遲回訊、Instagram 觀察與三條獨立互動線。",
-  "revision": 4,
+  "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
+  "revision": 5,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -147,6 +147,102 @@
           "body": "好～那我先去整理器材，有需要再找我。",
           "time": "21:35",
           "hidden": true
+        },
+        {
+          "id": "shen-phase2-1-1-out",
+          "title": "",
+          "body": "你拍照最在意什麼？",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-1-1-in",
+          "title": "",
+          "body": "光吧。還有被拍的人舒不舒服。不是每個人都想被鏡頭對著。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-1-2-out",
+          "title": "",
+          "body": "我先去處理展覽的事，晚點再說。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-1-2-in",
+          "title": "",
+          "body": "好，忙完再說。展場見也行。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-2-1-out",
+          "title": "",
+          "body": "那我六點半左右到，會遇到你嗎？",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-2-1-in",
+          "title": "",
+          "body": "不一定，我可能在後台搬器材。妳照自己的時間來就好。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-2-2-out",
+          "title": "",
+          "body": "我還不確定會不會去。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-2-2-in",
+          "title": "",
+          "body": "沒事啊。妳又不是工作人員，不用為了誰特地來。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-3-1-out",
+          "title": "",
+          "body": "謝謝你先說，這樣比較好安排。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-3-1-in",
+          "title": "",
+          "body": "哈哈，因為我自己也討厭被臨時放鴿子。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-3-2-out",
+          "title": "",
+          "body": "了解，那我先去忙了。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-3-2-in",
+          "title": "",
+          "body": "好～我也去充電池。",
+          "senderId": "shenyanzhou",
+          "time": "22:06",
+          "hidden": true
         }
       ]
     },
@@ -241,6 +337,102 @@
           "body": "嗯，不急。閱讀不是打卡任務。",
           "time": "21:35",
           "hidden": true
+        },
+        {
+          "id": "pei-phase2-1-1-out",
+          "title": "",
+          "body": "你覺得作者是不是把相關當成因果了？",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-1-1-in",
+          "title": "",
+          "body": "嗯，妳抓到重點了。至少那份資料不能直接支持那個結論。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-1-2-out",
+          "title": "",
+          "body": "我再讀一次，現在不急著下結論。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-1-2-in",
+          "title": "",
+          "body": "合理。比起急著同意我，這樣更有意思。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-2-1-out",
+          "title": "",
+          "body": "三頁太多了，先給我一句話版本。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-2-1-in",
+          "title": "",
+          "body": "一句話：寫得漂亮，不代表證據夠漂亮。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-2-2-out",
+          "title": "",
+          "body": "玩笑歸玩笑，我想知道研究限制。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-2-2-in",
+          "title": "",
+          "body": "好。先看抽樣方式，其他問題會比較清楚。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-3-1-out",
+          "title": "",
+          "body": "你提醒的第二節真的有幫助。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-3-1-in",
+          "title": "",
+          "body": "那就好。能省妳一點時間，也不算白傳。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-3-2-out",
+          "title": "",
+          "body": "我整理完資料再跟你確認。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-3-2-in",
+          "title": "",
+          "body": "可以，妳有自己的進度就照自己的來。",
+          "senderId": "peizhiyu",
+          "time": "22:06",
+          "hidden": true
         }
       ]
     },
@@ -334,6 +526,102 @@
           "senderId": "qiye",
           "body": "行，妳的作品妳決定。我先把自己的印刷檔搞定。",
           "time": "21:35",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-1-1-out",
+          "title": "",
+          "body": "那你明天畫個示意給我看。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-1-1-in",
+          "title": "",
+          "body": "行，但我下午有課。晚上有空才傳，別等我。",
+          "senderId": "qiye",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-1-2-out",
+          "title": "",
+          "body": "我先試著調整，不用麻煩你。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-1-2-in",
+          "title": "",
+          "body": "隨妳啊。有卡住再問，別硬改到自己不喜歡。",
+          "senderId": "qiye",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-2-1-out",
+          "title": "",
+          "body": "我想讓那行字有點壓迫感。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-2-1-in",
+          "title": "",
+          "body": "懂了。那不是失誤，是妳要的效果。挺敢的。",
+          "senderId": "qiye",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-2-2-out",
+          "title": "",
+          "body": "沒關係，我們對這版的看法不同。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-2-2-in",
+          "title": "",
+          "body": "正常啊。做設計又不是每個人都要想一樣。",
+          "senderId": "qiye",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-3-1-out",
+          "title": "",
+          "body": "謝謝你尊重我的決定。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-3-1-in",
+          "title": "",
+          "body": "這有什麼好謝的。妳做的東西，當然妳說了算。",
+          "senderId": "qiye",
+          "time": "22:06",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-3-2-out",
+          "title": "",
+          "body": "好，那就先不討論這張海報。",
+          "senderId": "owner",
+          "time": "21:48",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-3-2-in",
+          "title": "",
+          "body": "好。我也得去救我的印刷檔了。",
+          "senderId": "qiye",
+          "time": "22:06",
           "hidden": true
         }
       ]
@@ -483,6 +771,42 @@
         "sender": "林安",
         "time": "18:12",
         "kind": "post",
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-shen-late-story",
+        "title": "沈硯舟｜展前日常",
+        "body": "傍晚整理器材，鏡頭蓋差點又不見。明天得記得帶備用電池。",
+        "sender": "沈硯舟",
+        "time": "23:18",
+        "kind": "post",
+        "hidden": true,
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-pei-late-story",
+        "title": "裴知聿｜展前日常",
+        "body": "深夜研究室只剩走廊燈。配字：統計結果終於願意說人話。",
+        "sender": "裴知聿",
+        "time": "23:18",
+        "kind": "post",
+        "hidden": true,
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-qi-late-story",
+        "title": "祁野｜展前日常",
+        "body": "印刷廠門口的便利商店燈光。配字：送印成功，先吃飯。",
+        "sender": "祁野",
+        "time": "23:18",
+        "kind": "post",
+        "hidden": true,
         "meta": {
           "story": "true"
         }
@@ -1112,6 +1436,960 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "phase2-shen-1",
+      "label": "沈硯舟｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-branch-1-in",
+      "once": true,
+      "next": [
+        "phase2-shen-1-a",
+        "phase2-shen-1-b"
+      ]
+    },
+    {
+      "id": "phase2-shen-1-a",
+      "label": "聊攝影",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-1-1-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-1-1-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "shen-phase2-1-1-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-1-1-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-1-b",
+      "label": "先忙自己的事",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-1-2-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-1-2-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "shen-phase2-1-2-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-1-2-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-2",
+      "label": "沈硯舟｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-branch-2-in",
+      "once": true,
+      "next": [
+        "phase2-shen-2-a",
+        "phase2-shen-2-b"
+      ]
+    },
+    {
+      "id": "phase2-shen-2-a",
+      "label": "確認時間",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-2-1-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-2-1-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "shen-phase2-2-1-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-2-1-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-2-b",
+      "label": "不承諾到場",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-2-2-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-2-2-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "shen-phase2-2-2-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-2-2-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-3",
+      "label": "沈硯舟｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-branch-3-in",
+      "once": true,
+      "next": [
+        "phase2-shen-3-a",
+        "phase2-shen-3-b"
+      ]
+    },
+    {
+      "id": "phase2-shen-3-a",
+      "label": "回應體貼",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-3-1-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-3-1-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "shen-phase2-3-1-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-3-1-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-3-b",
+      "label": "暫時不回應展覽",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase2-3-2-wait"
+      ]
+    },
+    {
+      "id": "shen-phase2-3-2-wait",
+      "label": "沈硯舟的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "shen-phase2-3-2-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase2-3-2-arrive",
+      "label": "沈硯舟稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-shen-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-1",
+      "label": "裴知聿｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-branch-1-in",
+      "once": true,
+      "next": [
+        "phase2-pei-1-a",
+        "phase2-pei-1-b"
+      ]
+    },
+    {
+      "id": "phase2-pei-1-a",
+      "label": "深入討論",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-1-1-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-1-1-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "pei-phase2-1-1-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-1-1-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-1-b",
+      "label": "先保留看法",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-1-2-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-1-2-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "pei-phase2-1-2-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-1-2-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-2",
+      "label": "裴知聿｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-branch-2-in",
+      "once": true,
+      "next": [
+        "phase2-pei-2-a",
+        "phase2-pei-2-b"
+      ]
+    },
+    {
+      "id": "phase2-pei-2-a",
+      "label": "繼續玩笑",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-2-1-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-2-1-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "pei-phase2-2-1-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-2-1-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-2-b",
+      "label": "回到正題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-2-2-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-2-2-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "pei-phase2-2-2-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-2-2-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-3",
+      "label": "裴知聿｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-branch-3-in",
+      "once": true,
+      "next": [
+        "phase2-pei-3-a",
+        "phase2-pei-3-b"
+      ]
+    },
+    {
+      "id": "phase2-pei-3-a",
+      "label": "謝謝他的建議",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-3-1-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-3-1-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "pei-phase2-3-1-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-3-1-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-3-b",
+      "label": "保持學術距離",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase2-3-2-wait"
+      ]
+    },
+    {
+      "id": "pei-phase2-3-2-wait",
+      "label": "裴知聿的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "pei-phase2-3-2-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase2-3-2-arrive",
+      "label": "裴知聿稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-pei-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-1",
+      "label": "祁野｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-branch-1-in",
+      "once": true,
+      "next": [
+        "phase2-qi-1-a",
+        "phase2-qi-1-b"
+      ]
+    },
+    {
+      "id": "phase2-qi-1-a",
+      "label": "請他畫示意",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-1-1-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-1-1-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "qi-phase2-1-1-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-1-1-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-1-b",
+      "label": "自己先修改",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-1-2-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-1-2-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "qi-phase2-1-2-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-1-2-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-2",
+      "label": "祁野｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-branch-2-in",
+      "once": true,
+      "next": [
+        "phase2-qi-2-a",
+        "phase2-qi-2-b"
+      ]
+    },
+    {
+      "id": "phase2-qi-2-a",
+      "label": "解釋設計理念",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-2-1-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-2-1-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "qi-phase2-2-1-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-2-1-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-2-b",
+      "label": "接受不同意見",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-2-2-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-2-2-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "qi-phase2-2-2-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-2-2-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-3",
+      "label": "祁野｜繼續對話或結束",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-branch-3-in",
+      "once": true,
+      "next": [
+        "phase2-qi-3-a",
+        "phase2-qi-3-b"
+      ]
+    },
+    {
+      "id": "phase2-qi-3-a",
+      "label": "感謝尊重",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-3-1-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-3-1-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 180000,
+      "next": [
+        "qi-phase2-3-1-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-3-1-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-1-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-3-b",
+      "label": "結束討論",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase2-3-2-wait"
+      ]
+    },
+    {
+      "id": "qi-phase2-3-2-wait",
+      "label": "祁野的生活仍在繼續",
+      "type": "delay",
+      "delayMs": 360000,
+      "next": [
+        "qi-phase2-3-2-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase2-3-2-arrive",
+      "label": "祁野稍後回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-2-in",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "ig-qi-late-story",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
     }
   ],
   "tests": []
