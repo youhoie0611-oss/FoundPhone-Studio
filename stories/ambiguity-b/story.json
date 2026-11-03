@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 13,
+  "revision": 14,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -69,7 +69,7 @@
           "id": "shen-01",
           "senderId": "shenyanzhou",
           "time": "19:12",
-          "body": "欸，妳是上次在攝影展幫忙的那位嗎？我整理照片時拍到妳們那組作品，想問妳要不要看。對了，我週五也會去展場拍照。",
+          "body": "欸，妳是上次攝影展幫忙的那位嗎？\n我剛整理照片，拍到妳們那組作品。\n想問妳要不要看？\n對了，我週五也會去展場拍照。",
           "title": "",
           "avatar": "./characters/shen-yanzhou-avatar.png"
         },
@@ -121,7 +121,7 @@
           "id": "shen-branch-1-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "可以啊，我整理好就傳給妳。先說，照片如果有妳不喜歡的角度，直接跟我說，我會刪掉。",
+          "body": "好啊，我整理完就傳。\n有不喜歡的角度跟我說，我會刪掉。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -138,7 +138,7 @@
           "id": "shen-branch-2-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "大概六點前。我要先拍空景，可能沒辦法一直看手機。妳到了再傳訊息就好。",
+          "body": "應該六點前。\n我要先拍空景，可能不太看手機。\n妳到了再傳就好。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -155,7 +155,7 @@
           "id": "shen-branch-3-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "好，謝謝妳。那我先去把相機電池充好，晚點有空再聊。",
+          "body": "好，妳先忙。\n照片不急，等有空再看就好。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -277,7 +277,7 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "林安說妳在找社會認知那篇文章。我剛讀完，第二節的結論有點跳，摘要反而寫得很有自信。妳要的是這篇嗎？",
+          "body": "林安說妳在找社會認知那篇文章。\n我剛讀完。\n第二節的推論有問題，摘要倒是寫得很自信。\n妳要找的是這篇？",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png"
         },
@@ -329,7 +329,7 @@
           "id": "pei-branch-1-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "妳是覺得推論跳太快，還是樣本不夠？這兩個問題不太一樣。",
+          "body": "第二節把相關性說得太像因果。\n樣本也不夠支持那個結論。\n妳覺得呢？",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -346,7 +346,7 @@
           "id": "pei-branch-2-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "算是。摘要寫得很有自信，正文的證據倒沒那麼篤定。妳讀完可以反駁我。",
+          "body": "算是。\n摘要寫得漂亮，證據卻沒那麼漂亮。\n妳讀完可以反駁我。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -363,7 +363,7 @@
           "id": "pei-branch-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。妳有空再看就好，不需要特地回報閱讀進度。",
+          "body": "好。\n有空再讀，不用特地回報進度。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -485,7 +485,7 @@
           "id": "qi-01",
           "senderId": "qiye",
           "time": "21:02",
-          "body": "欸，設計展那張海報是妳做的？配色不錯。但標題第二行的字距我有意見。先說，我不是來找碴的。",
+          "body": "欸，展覽那張海報妳做的？\n配色還行。\n但第二行那字距誰調的啊？\n看得我手癢。",
           "title": "",
           "avatar": "./characters/qi-ye-avatar.png"
         },
@@ -537,7 +537,7 @@
           "id": "qi-branch-1-in",
           "title": "",
           "senderId": "qiye",
-          "body": "行。標題第二行的字距太緊，視線會卡住。我不是說妳做得差，明天我畫一版給妳比較。",
+          "body": "就第二行啊。\n字擠成那樣，眼睛都沒地方喘。\n妳要聽真的？我明天畫一版給妳看。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -554,7 +554,7 @@
           "id": "qi-branch-2-in",
           "title": "",
           "senderId": "qiye",
-          "body": "……喔，原來是故意的。那我剛剛講太快。妳這個處理有自己的理由，我收回。",
+          "body": "……喔，故意的？\n行，那我剛剛嘴快了。\n不過妳這想法挺敢的。說說看？",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -571,7 +571,7 @@
           "id": "qi-branch-3-in",
           "title": "",
           "senderId": "qiye",
-          "body": "知道了，不催妳。剛才是我嘴快。妳先休息，我去弄我的印刷檔。",
+          "body": "行，不改就不改。\n我又沒要搶妳的作品。\n先去休息吧，別熬到天亮。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
