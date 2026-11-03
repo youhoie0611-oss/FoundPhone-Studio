@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -2458,5 +2458,25 @@
       "next": []
     }
   ],
-  "tests": []
+  "tests": [
+    {
+      "name": "序章：閱讀三位角色初次聯絡",
+      "steps": [
+        {
+          "event": "read",
+          "target": "shen-02"
+        },
+        {
+          "event": "read",
+          "target": "pei-02"
+        },
+        {
+          "event": "read",
+          "target": "qi-02"
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": []
+    }
+  ]
 }
