@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -719,9 +719,7 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post",
-        "avatar": "./characters/shen-yanzhou-avatar.png",
-        "media": "./characters/shen-yanzhou.png"
+        "kind": "post"
       },
       {
         "id": "ig-pei-story",
@@ -732,9 +730,7 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post",
-        "avatar": "./characters/pei-zhiyu-avatar.png",
-        "media": "./characters/pei-zhiyu.png"
+        "kind": "post"
       },
       {
         "id": "ig-qi-story",
@@ -745,9 +741,7 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post",
-        "avatar": "./characters/qi-ye-avatar.png",
-        "media": "./characters/qi-ye.png"
+        "kind": "post"
       },
       {
         "id": "ig-shen-post",
@@ -756,9 +750,7 @@
         "sender": "沈硯舟",
         "time": "17:40",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/shen-yanzhou-avatar.png",
-        "media": "./characters/shen-yanzhou.png"
+        "meta": {}
       },
       {
         "id": "ig-pei-post",
@@ -767,9 +759,7 @@
         "sender": "裴知聿",
         "time": "15:25",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/pei-zhiyu-avatar.png",
-        "media": "./characters/pei-zhiyu.png"
+        "meta": {}
       },
       {
         "id": "ig-qi-post",
@@ -778,9 +768,7 @@
         "sender": "祁野",
         "time": "16:12",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/qi-ye-avatar.png",
-        "media": "./characters/qi-ye.png"
+        "meta": {}
       },
       {
         "id": "ig-linan-post",
@@ -798,9 +786,7 @@
         "sender": "沈硯舟",
         "time": "20:51",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/shen-yanzhou-avatar.png",
-        "media": "./characters/shen-yanzhou.png"
+        "meta": {}
       },
       {
         "id": "ig-pei-second",
@@ -809,9 +795,7 @@
         "sender": "裴知聿",
         "time": "21:06",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/pei-zhiyu-avatar.png",
-        "media": "./characters/pei-zhiyu.png"
+        "meta": {}
       },
       {
         "id": "ig-qi-second",
@@ -820,9 +804,7 @@
         "sender": "祁野",
         "time": "21:15",
         "kind": "post",
-        "meta": {},
-        "avatar": "./characters/qi-ye-avatar.png",
-        "media": "./characters/qi-ye.png"
+        "meta": {}
       },
       {
         "id": "ig-linan-story",
@@ -845,9 +827,7 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        },
-        "avatar": "./characters/shen-yanzhou-avatar.png",
-        "media": "./characters/shen-yanzhou.png"
+        }
       },
       {
         "id": "ig-pei-late-story",
@@ -859,9 +839,7 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        },
-        "avatar": "./characters/pei-zhiyu-avatar.png",
-        "media": "./characters/pei-zhiyu.png"
+        }
       },
       {
         "id": "ig-qi-late-story",
@@ -873,9 +851,7 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        },
-        "avatar": "./characters/qi-ye-avatar.png",
-        "media": "./characters/qi-ye.png"
+        }
       }
     ],
     "notes": [
