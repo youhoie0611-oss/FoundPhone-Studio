@@ -43,9 +43,12 @@ export function testStory(story: Story, work: Work) {
         state = advance(work, state, step.advanceMs);
       if (step.event) state = dispatch(work, state, step.event, step.target);
     }
-    if (!state.endings.includes(t.ending))
-      errors.push(t.name + ": 未到达结局 " + t.ending);
-    else reached.add(t.ending);
+    // Open-ended prototypes can verify a playable path without inventing a finale.
+    if (t.ending) {
+      if (!state.endings.includes(t.ending))
+        errors.push(t.name + ": 未到达结局 " + t.ending);
+      else reached.add(t.ending);
+    }
     for (const id of t.expectUnlocked)
       if (!state.unlocked.includes(id)) errors.push(t.name + ": 未解锁 " + id);
   }
