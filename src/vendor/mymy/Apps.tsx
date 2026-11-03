@@ -97,20 +97,35 @@ export function MymyKakao(p: SkinProps) {
       }),
     ],
     scroll = useRef<HTMLDivElement>(null);
+  const [revealed, setRevealed] = useState<Record<string, number>>({});
+  const lastMessage = messages[messages.length - 1];
+  const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
+    ? lastMessage.body.split("\n").filter(Boolean) : [];
+  const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
+  const shownLines = revealed[lastKey] ?? 1;
+  const isTyping = !p.creator && lastLines.length > shownLines;
+  useEffect(() => {
+    if (!p.thread || !lastKey || !isTyping) return;
+    const delay = p.thread === "祁野" ? 720 : p.thread === "裴知聿" ? 1550 : 1080;
+    const timer = window.setTimeout(() => {
+      setRevealed((current) => ({ ...current, [lastKey]: (current[lastKey] ?? 1) + 1 }));
+    }, delay);
+    return () => window.clearTimeout(timer);
+  }, [p.thread, lastKey, shownLines, isTyping]);
   useEffect(() => {
     const node = scroll.current;
     if (node) node.scrollTop = node.scrollHeight;
   }, [p.thread, messages.length]);
   const lastRead = useRef("");
   useEffect(() => {
-    if (!p.thread || p.creator) return;
+    if (!p.thread || p.creator || isTyping) return;
     const latest = [...messages].reverse().find((m) => !m.outgoing && m.meta.local !== "true");
     if (!latest) return;
     const key = p.thread + ":" + latest.id;
     if (lastRead.current === key) return;
     lastRead.current = key;
     p.onRead(latest.id);
-  }, [p.thread, p.creator, messages, p.onRead]);
+  }, [p.thread, p.creator, messages, p.onRead, isTyping]);
   return (
     <div className="mymy-ui mymy-kakao" data-mymy="kakao">
       {p.thread ? (
@@ -152,7 +167,7 @@ export function MymyKakao(p: SkinProps) {
                     </span>
                   )}
                   <div className="kkt-bubble-stack">
-                    {(m.media ? [m.body] : m.body.split("\n").filter(Boolean)).map((line, index) => (
+                    {(m.media ? [m.body] : m.body.split("\n").filter(Boolean).slice(0, m.id === lastMessage?.id && !m.outgoing ? shownLines : undefined)).map((line, index) => (
                       <button
                         key={index}
                         className={"kzbub" + (m.media ? " kzimg" : "")}
@@ -168,10 +183,11 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
+            {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
           <div className="kkt-reply-tray" aria-label="選擇要傳送的回覆">
-            {!p.creator && p.choices?.filter((choice) => {
+            {!p.creator && !isTyping && p.choices?.filter((choice) => {
               const character = p.thread === "沈硯舟" ? "shen" : p.thread === "裴知聿" ? "pei" : p.thread === "祁野" ? "qi" : "";
               return character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-"));
             }).map((choice) => (
