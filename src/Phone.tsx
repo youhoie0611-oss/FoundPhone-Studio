@@ -577,7 +577,7 @@ function PhoneRuntime({
               )}
             </div>
           )}
-          {!creator && s.choices.length > 0 && !locked && (
+          {!creator && s.choices.length > 0 && !locked && app !== "kakao" && (
             <div className="story-overlay">
               <span className="eyebrow">故事来到一个岔路口</span>
               <h3>你会如何选择？</h3>
@@ -861,6 +861,7 @@ function AppContent({
   creator,
   state,
   onRead,
+  onChoose,
   onEdit,
   onAdd,
   onBack,
@@ -874,6 +875,7 @@ function AppContent({
   creator: boolean;
   state: Runtime;
   onRead: (id: string) => void;
+  onChoose: (target: string) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
@@ -999,6 +1001,8 @@ function AppContent({
               onAdd={onAdd}
               onBack={onBack}
               thread={thread}
+              choices={state.choices}
+              onChoose={onChoose}
               onThread={(nextThread) => {
                 setThread(nextThread);
                 // Reading a KKT conversation includes its latest visible incoming
