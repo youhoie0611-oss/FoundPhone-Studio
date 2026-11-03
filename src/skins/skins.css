@@ -4130,3 +4130,7 @@
 .catalog-slot[hidden] {
   display: none;
 }
+
+/* KKT: in-chat player replies, never a separate story modal. */
+.mymy-kakao .kkt-reply-choice { display:block; width:calc(100% - 32px); margin:8px 16px; padding:12px 14px; border:1px solid rgba(40,55,70,.18); border-radius:14px; background:#fff9df; color:#28231b; font-size:14px; text-align:left; white-space:normal; cursor:pointer; }
+.mymy-kakao .kkt-reply-choice:active { background:#ffe779; }
