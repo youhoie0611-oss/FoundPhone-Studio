@@ -4139,3 +4139,8 @@
 .mymy-kakao .kkt-reply-tray { flex: 0 0 auto; max-height: 38%; overflow-y: auto; padding: 0 10px; scrollbar-width: thin; }
 .mymy-kakao .kkt-reply-tray:empty { display: none; }
 .mymy-kakao .kkt-reply-tray .kkt-reply-choice { width: 100%; margin: 6px 0; padding: 10px 13px; border-radius: 12px; background: #fff8db; font-size: 14px; line-height: 1.4; }
+
+/* Group consecutive short messages from the same sender. */
+.mymy-kakao .kkt-bubble-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; min-width: 0; }
+.mymy-kakao .kzmy .kkt-bubble-stack { align-items: flex-end; }
+.mymy-kakao .kkt-bubble-stack .kzbub { display: block; width: fit-content; max-width: 100%; text-align: left; white-space: pre-wrap; }
