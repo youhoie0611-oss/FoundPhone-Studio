@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 21,
+  "revision": 22,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -77,7 +77,7 @@
           "id": "shen-02",
           "senderId": "shenyanzhou",
           "time": "19:14",
-          "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。",
+          "body": "那天妳在處理現場流程，我有看到。\n妳看起來比我們工作人員還忙。",
           "title": "",
           "avatar": "./characters/shen-yanzhou-avatar.png",
           "hidden": true
@@ -94,7 +94,7 @@
         {
           "id": "shen-04",
           "title": "",
-          "body": "照片我傳到雲端了，林安那邊也有一份。妳有空再看就好。",
+          "body": "照片我先放雲端，還沒公開。\n妳確認過我才會分享。",
           "senderId": "shenyanzhou",
           "time": "20:46",
           "avatar": "./characters/shen-yanzhou-avatar.png",
@@ -103,7 +103,7 @@
         {
           "id": "shen-05",
           "title": "",
-          "body": "週五我會提早到展場拍空景。可能沒辦法一直聊天，先說一聲哈哈。",
+          "body": "我週五下午有課，傍晚才有空去拍另一場活動。",
           "senderId": "shenyanzhou",
           "time": "21:11",
           "avatar": "./characters/shen-yanzhou-avatar.png",
@@ -180,7 +180,7 @@
         {
           "id": "shen-phase2-1-2-out",
           "title": "",
-          "body": "我先去處理展覽的事，晚點再說。",
+          "body": "我先去處理公司的事，晚點再說。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -188,7 +188,7 @@
         {
           "id": "shen-phase2-1-2-in",
           "title": "",
-          "body": "好，忙完再說。展場見也行。",
+          "body": "好，妳先忙工作。\n我也要去上課了。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -197,7 +197,7 @@
         {
           "id": "shen-phase2-2-1-out",
           "title": "",
-          "body": "那我六點半左右到，會遇到你嗎？",
+          "body": "那我六點半左右下班，會遇到你嗎？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -205,7 +205,7 @@
         {
           "id": "shen-phase2-2-1-in",
           "title": "",
-          "body": "不一定，我可能在後台搬器材。妳照自己的時間來就好。",
+          "body": "不一定，我可能還在上課。\n妳不用為了我改下班時間。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -214,7 +214,7 @@
         {
           "id": "shen-phase2-2-2-out",
           "title": "",
-          "body": "我還不確定會不會去。",
+          "body": "我還不確定下班後有沒有力氣去。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -222,7 +222,7 @@
         {
           "id": "shen-phase2-2-2-in",
           "title": "",
-          "body": "沒事啊。妳又不是工作人員，不用為了誰特地來。",
+          "body": "沒事，妳工作一整天了。\n不用為了活動勉強自己。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -256,7 +256,7 @@
         {
           "id": "shen-phase2-3-2-in",
           "title": "",
-          "body": "好～我也去充電池。",
+          "body": "好～我也去充相機電池，明天還有課。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -299,7 +299,7 @@
         {
           "id": "shen-phase3-1-2-a-out",
           "title": "",
-          "body": "展場見的話，我可以跟你打招呼嗎？",
+          "body": "如果活動碰到你，我可以打招呼嗎？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -333,7 +333,7 @@
         {
           "id": "shen-phase3-2-1-a-out",
           "title": "",
-          "body": "你搬器材還要拍照？也太忙了吧。",
+          "body": "你上課還要兼活動攝影？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -341,7 +341,7 @@
         {
           "id": "shen-phase3-2-1-a-in",
           "title": "",
-          "body": "習慣了。\n但如果妳剛好經過，幫我按個電梯就很感激了。\n開玩笑的，別特地跑來。",
+          "body": "有時候會。\n但我有排好時間，不會拿課業開玩笑。",
           "senderId": "shenyanzhou",
           "time": "22:18",
           "hidden": true,
@@ -367,7 +367,7 @@
         {
           "id": "shen-phase3-2-2-a-out",
           "title": "",
-          "body": "我只是想看看作品，還沒決定時間。",
+          "body": "我可能加班，還沒決定要不要去。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -375,7 +375,7 @@
         {
           "id": "shen-phase3-2-2-a-in",
           "title": "",
-          "body": "那就別急著決定。\n我晚點把展場比較安靜的時段傳給妳，當參考就好。",
+          "body": "那就先別決定。\n妳忙完再看自己想不想出門。",
           "senderId": "shenyanzhou",
           "time": "22:18",
           "hidden": true,
@@ -401,7 +401,7 @@
         {
           "id": "shen-phase3-3-1-a-out",
           "title": "",
-          "body": "原來你也被放過鴿子？",
+          "body": "你也曾經在活動被放鴿子？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -409,7 +409,7 @@
         {
           "id": "shen-phase3-3-1-a-in",
           "title": "",
-          "body": "有啊。\n上次扛了兩盞燈等人，等到保全來關門。\n現在我都先確認時間。",
+          "body": "有啊。\n我扛著腳架等半天。\n後來學會先確認時間。",
           "senderId": "shenyanzhou",
           "time": "22:18",
           "hidden": true,
@@ -1387,7 +1387,7 @@
         {
           "id": "shen-day11-opening",
           "title": "",
-          "body": "早。\n昨天整理照片整理到一半，看到一張展場的空景。\n想到妳之前說想慢慢逛。\n今天有空我傳給妳看？",
+          "body": "早。\n我剛下課，整理了上次活動的照片。\n有一張妳在現場忙著協調的側拍。\n想先問妳能不能傳？",
           "senderId": "shenyanzhou",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -1430,7 +1430,7 @@
         {
           "id": "shen-day21-opening",
           "title": "",
-          "body": "早安。\n展場那邊臨時少了人，我今天得去幫忙搬器材。\n剛好想到妳可能也會去。\n先跟妳說一聲，不是要妳來幫忙。",
+          "body": "早安。\n系上臨時找我去支援活動攝影。\n我想起妳上次說工作忙。\n先跟妳說聲早，不用急著回。",
           "senderId": "shenyanzhou",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -1473,7 +1473,7 @@
         {
           "id": "shen-major-event-opening",
           "title": "",
-          "body": "有件事想跟妳說。\n展覽主辦方想把妳那組作品的現場照片放到宣傳頁。\n照片是我拍的，但作品是妳們的。\n我還沒答應，想先問妳的意思。",
+          "body": "有件事想先問妳。\n活動主辦方想把那天拍到妳的照片放上宣傳頁。\n我還沒交出去。\n這是妳的肖像，妳不同意我就不提供。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -1499,7 +1499,7 @@
         {
           "id": "shen-major-event-reply-2-out",
           "title": "",
-          "body": "我不希望作品照片被公開。",
+          "body": "我不希望自己的照片被公開。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -1507,7 +1507,7 @@
         {
           "id": "shen-major-event-reply-2-in",
           "title": "",
-          "body": "好，我直接回絕。\n妳不用解釋。\n謝謝妳講得這麼清楚。",
+          "body": "好，我會直接回絕。\n妳不用解釋理由。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -1536,7 +1536,7 @@
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
-          "body": "先提醒，摘要寫得比正文有趣。",
+          "body": "先提醒，報表的摘要跟明細有兩個地方對不上。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -1544,7 +1544,7 @@
         {
           "id": "pei-03",
           "title": "",
-          "body": "如果只是要報告引用，我建議先看第二節。",
+          "body": "如果是給主管看的版本，我建議先確認第二頁。",
           "senderId": "peizhiyu",
           "time": "20:19",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1553,7 +1553,7 @@
         {
           "id": "pei-04",
           "title": "",
-          "body": "我現在還在研究室，晚點要跟老師確認資料。",
+          "body": "我還在公司，等採購部門確認最後一筆資料。",
           "senderId": "peizhiyu",
           "time": "20:31",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1562,7 +1562,7 @@
         {
           "id": "pei-05",
           "title": "",
-          "body": "週五展覽我應該會晚到。不是故意神祕，是報告真的沒寫完。",
+          "body": "週五的部門會議我可能晚到。\n客戶那邊臨時改了時程。",
           "senderId": "peizhiyu",
           "time": "21:17",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1597,7 +1597,7 @@
           "id": "pei-branch-2-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "算是。\n摘要寫得漂亮，證據卻沒那麼漂亮。\n妳讀完可以反駁我。",
+          "body": "我是說數字有問題，不是妳做得不好。\n簡報可以漂亮，但資料得先正確。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -1614,7 +1614,7 @@
           "id": "pei-branch-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。\n有空再讀，不用特地回報進度。",
+          "body": "好。\n明天開會前確認就行，不用現在回報。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -1622,7 +1622,7 @@
         {
           "id": "pei-phase2-1-1-out",
           "title": "",
-          "body": "你覺得作者是不是把相關當成因果了？",
+          "body": "你覺得這份報表是不是把相關當成因果了？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1630,7 +1630,7 @@
         {
           "id": "pei-phase2-1-1-in",
           "title": "",
-          "body": "嗯，妳抓到重點了。至少那份資料不能直接支持那個結論。",
+          "body": "對。\n目前資料不能直接支持那個業績結論。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1639,7 +1639,7 @@
         {
           "id": "pei-phase2-1-2-out",
           "title": "",
-          "body": "我再讀一次，現在不急著下結論。",
+          "body": "我再核對一次，現在不急著下結論。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1656,7 +1656,7 @@
         {
           "id": "pei-phase2-2-1-out",
           "title": "",
-          "body": "三頁太多了，先給我一句話版本。",
+          "body": "三頁太多了，先給我一句話結論。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1664,7 +1664,7 @@
         {
           "id": "pei-phase2-2-1-in",
           "title": "",
-          "body": "一句話：寫得漂亮，不代表證據夠漂亮。",
+          "body": "一句話：簡報好看，不代表數字可靠。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1673,7 +1673,7 @@
         {
           "id": "pei-phase2-2-2-out",
           "title": "",
-          "body": "玩笑歸玩笑，我想知道研究限制。",
+          "body": "玩笑歸玩笑，我想知道數據限制。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1681,7 +1681,7 @@
         {
           "id": "pei-phase2-2-2-in",
           "title": "",
-          "body": "好。先看抽樣方式，其他問題會比較清楚。",
+          "body": "先看資料來源跟統計區間。\n其他問題比較容易釐清。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1690,7 +1690,7 @@
         {
           "id": "pei-phase2-3-1-out",
           "title": "",
-          "body": "你提醒的第二節真的有幫助。",
+          "body": "你提醒的第二頁真的有幫助。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1732,7 +1732,7 @@
         {
           "id": "pei-phase3-1-1-a-in",
           "title": "",
-          "body": "我會寫『目前資料不足以判斷』。\n不好聽，但比較誠實。\n妳有別的看法？",
+          "body": "我會寫『目前資料不足以支持這個結論』。\n不好聽，但比較負責。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1758,7 +1758,7 @@
         {
           "id": "pei-phase3-1-2-a-out",
           "title": "",
-          "body": "你是不是很喜歡別人反駁你？",
+          "body": "你是不是很喜歡同事反駁你？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1809,7 +1809,7 @@
         {
           "id": "pei-phase3-2-1-b-out",
           "title": "",
-          "body": "好，我先去看原文了。",
+          "body": "好，我先去核對原始表格。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1826,7 +1826,7 @@
         {
           "id": "pei-phase3-2-2-a-out",
           "title": "",
-          "body": "抽樣方式哪裡最值得懷疑？",
+          "body": "你覺得這份報表最值得懷疑哪裡？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1834,7 +1834,7 @@
         {
           "id": "pei-phase3-2-2-a-in",
           "title": "",
-          "body": "受試者來源太集中。\n研究卻把結論寫得像適用所有人。\n這是第一個要查的地方。",
+          "body": "資料來源太集中。\n簡報卻寫得像能代表全部客戶。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1860,7 +1860,7 @@
         {
           "id": "pei-phase3-3-1-a-out",
           "title": "",
-          "body": "你平常也會幫別人找資料嗎？",
+          "body": "你平常也會幫其他同事找資料嗎？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1868,7 +1868,7 @@
         {
           "id": "pei-phase3-3-1-a-in",
           "title": "",
-          "body": "看情況。\n林安開口，我剛好手邊有。\n妳不用把這當成人情。",
+          "body": "看分工。\n這份報表本來就跟我負責的部分有關。\n妳不用當成人情。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -2846,7 +2846,7 @@
         {
           "id": "pei-day11-opening",
           "title": "",
-          "body": "早。\n昨天提到的那篇研究，我找到作者後來的更正說明。\n妳可能會用到。\n需要我傳連結嗎？",
+          "body": "早。\n昨天會議提到的客戶資料，我找到新版附件。\n可能會影響妳那份報表。\n需要我轉給妳嗎？",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -2880,7 +2880,7 @@
         {
           "id": "pei-day11-reply-2-in",
           "title": "",
-          "body": "可以。\n作者網站的修訂紀錄有收錄。\n我不替妳省掉查證那一步。",
+          "body": "可以。\n共享資料夾的版本紀錄裡有。\n妳自己核對也好。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -2889,7 +2889,7 @@
         {
           "id": "pei-day21-opening",
           "title": "",
-          "body": "早上好。\n我今天要做一場小型報告。\n昨天重新看妳提過的疑問，發現確實有個地方我忽略了。\n先跟妳說一聲。",
+          "body": "早。\n我今天要跟主管報告進度。\n昨天重新核對妳提過的問題，發現確實有一處我忽略了。\n先跟妳說一聲。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -2915,7 +2915,7 @@
         {
           "id": "pei-day21-reply-2-out",
           "title": "",
-          "body": "你先準備報告，晚點再說。",
+          "body": "你先準備主管會議，晚點再說。",
           "senderId": "owner",
           "time": "2026-11-05 09:15",
           "hidden": true
@@ -2932,7 +2932,7 @@
         {
           "id": "pei-major-event-opening",
           "title": "",
-          "body": "我需要更正之前跟妳說的一件事。\n我引用的那份資料有新版，舊版的推論不完全成立。\n如果妳已經拿去做報告，我應該先告訴妳。",
+          "body": "我需要更正一件事。\n上週我提供給妳的客戶資料不是最新版。\n這可能影響妳交給主管的報告。\n是我的疏失，我先告訴妳。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -2941,7 +2941,7 @@
         {
           "id": "pei-major-event-reply-1-out",
           "title": "",
-          "body": "謝謝你主動更正，我們一起核對。",
+          "body": "我們一起核對最新版資料。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -2949,7 +2949,7 @@
         {
           "id": "pei-major-event-reply-1-in",
           "title": "",
-          "body": "可以。\n先從原始資料核對。\n我會把我之前說錯的地方標出來。",
+          "body": "好。\n我會把舊版差異逐項標出來。\n責任我會跟主管說清楚。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -2995,7 +2995,7 @@
           "id": "qi-02",
           "senderId": "qiye",
           "time": "21:04",
-          "body": "配色不錯。字距我有意見，但先不吵。",
+          "body": "還有，那天妳看我的眼神。\n跟我欠妳幾百萬一樣。",
           "title": "",
           "avatar": "./characters/qi-ye-avatar.png",
           "hidden": true
@@ -3003,7 +3003,7 @@
         {
           "id": "qi-03",
           "title": "",
-          "body": "我剛才講太快。字距那段我有具體建議，不是要找妳麻煩。",
+          "body": "我剛剛講話太衝。\n車擋到人就是我不對，這我認。",
           "senderId": "qiye",
           "time": "21:09",
           "avatar": "./characters/qi-ye-avatar.png",
@@ -3012,7 +3012,7 @@
         {
           "id": "qi-04",
           "title": "",
-          "body": "我現在在趕印刷檔。明天要是有空再跟妳說。",
+          "body": "車剛送去保養。\n司機問我要不要代步車，我說不用。",
           "senderId": "qiye",
           "time": "21:13",
           "avatar": "./characters/qi-ye-avatar.png",
@@ -3021,7 +3021,7 @@
         {
           "id": "qi-05",
           "title": "",
-          "body": "對了，妳要是覺得那版比較好就留著。作品是妳的。",
+          "body": "下次我會停好。\n妳不用擔心又被我擋路。",
           "senderId": "qiye",
           "time": "21:16",
           "avatar": "./characters/qi-ye-avatar.png",
@@ -3056,7 +3056,7 @@
           "id": "qi-branch-2-in",
           "title": "",
           "senderId": "qiye",
-          "body": "……喔，故意的？\n行，那我剛剛嘴快了。\n不過妳這想法挺敢的。說說看？",
+          "body": "我有發現。\n只是當時太急，沒先講清楚。\n行，這點算我欠妳一句道歉。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -3073,7 +3073,7 @@
           "id": "qi-branch-3-in",
           "title": "",
           "senderId": "qiye",
-          "body": "行，不改就不改。\n我又沒要搶妳的作品。\n先去休息吧，別熬到天亮。",
+          "body": "行，不想聊就算。\n上次擋路是我的問題。\n我不會再去煩妳。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -3081,7 +3081,7 @@
         {
           "id": "qi-phase2-1-1-out",
           "title": "",
-          "body": "那你明天畫個示意給我看。",
+          "body": "那你打算怎麼補償上次的事？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3089,7 +3089,7 @@
         {
           "id": "qi-phase2-1-1-in",
           "title": "",
-          "body": "行，但我下午有課。晚上有空才傳，別等我。",
+          "body": "我可以請妳喝杯咖啡。\n但妳不想就算，我不拿錢硬塞。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3098,7 +3098,7 @@
         {
           "id": "qi-phase2-1-2-out",
           "title": "",
-          "body": "我先試著調整，不用麻煩你。",
+          "body": "不用補償，你下次停好車就行。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3106,7 +3106,7 @@
         {
           "id": "qi-phase2-1-2-in",
           "title": "",
-          "body": "隨妳啊。有卡住再問，別硬改到自己不喜歡。",
+          "body": "行。\n下次不擋路，說到做到。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3115,7 +3115,7 @@
         {
           "id": "qi-phase2-2-1-out",
           "title": "",
-          "body": "我想讓那行字有點壓迫感。",
+          "body": "你是不是很習慣別人讓你？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3123,7 +3123,7 @@
         {
           "id": "qi-phase2-2-1-in",
           "title": "",
-          "body": "懂了。那不是失誤，是妳要的效果。挺敢的。",
+          "body": "……以前是。\n但這次是我理虧。\n妳不需要讓我。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3132,7 +3132,7 @@
         {
           "id": "qi-phase2-2-2-out",
           "title": "",
-          "body": "沒關係，我們對這版的看法不同。",
+          "body": "沒關係，我們對那天的看法不同。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3140,7 +3140,7 @@
         {
           "id": "qi-phase2-2-2-in",
           "title": "",
-          "body": "正常啊。做設計又不是每個人都要想一樣。",
+          "body": "可以啊。\n妳有妳的感受，我不替妳決定。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3149,7 +3149,7 @@
         {
           "id": "qi-phase2-3-1-out",
           "title": "",
-          "body": "謝謝你尊重我的決定。",
+          "body": "謝謝你沒有繼續糾纏。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3157,7 +3157,7 @@
         {
           "id": "qi-phase2-3-1-in",
           "title": "",
-          "body": "這有什麼好謝的。妳做的東西，當然妳說了算。",
+          "body": "這有什麼好謝的。\n妳說不想聊，我就該停。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3166,7 +3166,7 @@
         {
           "id": "qi-phase2-3-2-out",
           "title": "",
-          "body": "好，那就先不討論這張海報。",
+          "body": "好，那就先不討論停車場的事。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -3174,7 +3174,7 @@
         {
           "id": "qi-phase2-3-2-in",
           "title": "",
-          "body": "好。我也得去救我的印刷檔了。",
+          "body": "行。\n我也得去處理車行那邊的事。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3183,7 +3183,7 @@
         {
           "id": "qi-phase3-1-1-a-out",
           "title": "",
-          "body": "誰說我會等你？你想太多了吧。",
+          "body": "誰說我會等你請客？想太多了。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3191,7 +3191,7 @@
         {
           "id": "qi-phase3-1-1-a-in",
           "title": "",
-          "body": "喔？\n那最好。\n我還怕妳盯著手機催稿，壓力很大欸。",
+          "body": "喔？\n那最好。\n我也沒打算用一杯咖啡就把事情帶過。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3200,7 +3200,7 @@
         {
           "id": "qi-phase3-1-1-b-out",
           "title": "",
-          "body": "沒事，晚上有空再傳就好。",
+          "body": "沒事，有空再說就好。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3208,7 +3208,7 @@
         {
           "id": "qi-phase3-1-1-b-in",
           "title": "",
-          "body": "知道啦。\n有畫出能看的才傳，醜的我自己刪。",
+          "body": "知道啦。\n妳不急，我也不催。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3217,7 +3217,7 @@
         {
           "id": "qi-phase3-1-2-a-out",
           "title": "",
-          "body": "你剛剛不是還嫌我的字距？",
+          "body": "你剛剛不是還想拿咖啡補償？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3225,7 +3225,7 @@
         {
           "id": "qi-phase3-1-2-a-in",
           "title": "",
-          "body": "嫌歸嫌。\n作品又不是我的。\n我可以嘴，但不會替妳做決定。",
+          "body": "想請是想請。\n但妳不接受，我也不會硬來。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3234,7 +3234,7 @@
         {
           "id": "qi-phase3-1-2-b-out",
           "title": "",
-          "body": "嗯，我想先照自己的想法做。",
+          "body": "我想先照自己的方式處理。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3242,7 +3242,7 @@
         {
           "id": "qi-phase3-1-2-b-in",
           "title": "",
-          "body": "行啊。\n做完給我看也可以，不給也沒差。",
+          "body": "行啊。\n我又沒要替妳做決定。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3251,7 +3251,7 @@
         {
           "id": "qi-phase3-2-1-a-out",
           "title": "",
-          "body": "你現在是在誇我嗎？",
+          "body": "你現在是在承認自己很少道歉？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3259,7 +3259,7 @@
         {
           "id": "qi-phase3-2-1-a-in",
           "title": "",
-          "body": "不然咧？\n要我打三遍『妳很厲害』嗎？\n想得美。",
+          "body": "是啊。\n但這次我錯了。\n妳要我講幾次都一樣。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3293,7 +3293,7 @@
         {
           "id": "qi-phase3-2-2-a-in",
           "title": "",
-          "body": "我本來就講理好嗎。\n只是講話比較欠揍。\n這我承認。",
+          "body": "我本來就講理。\n只是講話欠揍，這我承認。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3327,7 +3327,7 @@
         {
           "id": "qi-phase3-3-1-a-in",
           "title": "",
-          "body": "意外什麼？\n我又不是來搶妳作品的。\n頂多嘴兩句。",
+          "body": "意外什麼？\n我又不是連拒絕都聽不懂。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3353,7 +3353,7 @@
         {
           "id": "qi-phase3-3-2-a-out",
           "title": "",
-          "body": "你的印刷檔又怎麼了？",
+          "body": "你那台車到底修好了沒？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -3361,7 +3361,7 @@
         {
           "id": "qi-phase3-3-2-a-in",
           "title": "",
-          "body": "出血沒留夠。\n我剛剛還笑妳字距，結果自己差點翻車。\n不准笑。",
+          "body": "好了。\n車行還說我該學會看停車線。\n……不准笑。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -4305,7 +4305,7 @@
         {
           "id": "qi-day11-opening",
           "title": "",
-          "body": "喂，早。\n昨天那張破印刷檔我終於救好了。\n還有，我試了一版妳說的壓迫感字距。\n妳要不要看？",
+          "body": "欸，早。\n車行剛通知我取車。\n我想到上次那件事，順手傳個訊息。\n今天妳上班？",
           "senderId": "qiye",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -4314,7 +4314,7 @@
         {
           "id": "qi-day11-reply-1-out",
           "title": "",
-          "body": "拿來啊，我看看你多厲害。",
+          "body": "你這次有記得停好車嗎？",
           "senderId": "owner",
           "time": "2026-11-04 09:15",
           "hidden": true
@@ -4322,7 +4322,7 @@
         {
           "id": "qi-day11-reply-1-in",
           "title": "",
-          "body": "等著。\n先說好，我只是試做，不是要改妳的稿。\n看完可以盡量嘴。",
+          "body": "有啦！\n還特地看了兩次線。\n滿意了吧？",
           "senderId": "qiye",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -4331,7 +4331,7 @@
         {
           "id": "qi-day11-reply-2-out",
           "title": "",
-          "body": "不用，我想保留自己的版本。",
+          "body": "我今天很忙，沒空聊天。",
           "senderId": "owner",
           "time": "2026-11-04 09:15",
           "hidden": true
@@ -4339,7 +4339,7 @@
         {
           "id": "qi-day11-reply-2-in",
           "title": "",
-          "body": "行啊。\n本來就妳的作品。\n我這版留著自己練手。",
+          "body": "行，妳先忙。\n我也有事，不查勤。",
           "senderId": "qiye",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -4348,7 +4348,7 @@
         {
           "id": "qi-day21-opening",
           "title": "",
-          "body": "欸。\n今天校隊選拔加練，我等等要進球場。\n昨天妳說的那句話我有記。\n先跟妳講，別說我只會嘴。",
+          "body": "欸。\n我今天要去談活動贊助。\n第一次不靠家裡關係自己談。\n先跟妳講，省得妳以為我整天閒晃。",
           "senderId": "qiye",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -4357,7 +4357,7 @@
         {
           "id": "qi-day21-reply-1-out",
           "title": "",
-          "body": "加油，別再硬撐受傷了。",
+          "body": "加油，別又跟人吵起來。",
           "senderId": "owner",
           "time": "2026-11-05 09:15",
           "hidden": true
@@ -4365,7 +4365,7 @@
         {
           "id": "qi-day21-reply-1-in",
           "title": "",
-          "body": "知道啦。\n有狀況我會下場。\n妳不要把我當三歲。",
+          "body": "知道啦。\n今天我會先聽對方講完。\n妳別把我當三歲。",
           "senderId": "qiye",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -4374,7 +4374,7 @@
         {
           "id": "qi-day21-reply-2-out",
           "title": "",
-          "body": "你先專心練球，別一直滑手機。",
+          "body": "你先去談合作，別一直滑手機。",
           "senderId": "owner",
           "time": "2026-11-05 09:15",
           "hidden": true
@@ -4382,7 +4382,7 @@
         {
           "id": "qi-day21-reply-2-in",
           "title": "",
-          "body": "嘖，被抓包。\n好啦，收手機。\n打完再說。",
+          "body": "嘖，被抓包。\n好啦，收手機。\n談完再說。",
           "senderId": "qiye",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -4391,7 +4391,7 @@
         {
           "id": "qi-major-event-opening",
           "title": "",
-          "body": "欸，出事了。\n有人把妳那張海報的試作圖放到社團群，還說是我改的。\n我沒傳出去。\n我現在去問清楚，妳先別急著回那些留言。",
+          "body": "欸，有件事要先跟妳講。\n有人在聚會上拿妳工作的公司開玩笑，還說我可以靠關係幫妳安排職位。\n我當場說不行。\n妳的工作不是拿來讓他們起鬨的。",
           "senderId": "qiye",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -4400,7 +4400,7 @@
         {
           "id": "qi-major-event-reply-1-out",
           "title": "",
-          "body": "先不要吵，我們把來源查清楚。",
+          "body": "謝謝你阻止，但我希望你別介入我的工作。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -4408,7 +4408,7 @@
         {
           "id": "qi-major-event-reply-1-in",
           "title": "",
-          "body": "……好。\n我先去問誰拿到檔案。\n妳說得對，亂衝只會更亂。",
+          "body": "行。\n我只會把那群人的嘴管好。\n妳的工作妳自己決定。",
           "senderId": "qiye",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -4417,7 +4417,7 @@
         {
           "id": "qi-major-event-reply-2-out",
           "title": "",
-          "body": "我自己處理，你先別插手。",
+          "body": "我不喜歡別人拿我的工作開玩笑。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -4425,7 +4425,7 @@
         {
           "id": "qi-major-event-reply-2-in",
           "title": "",
-          "body": "行。\n這是妳的作品，妳決定。\n需要我說明我沒外傳時，再叫我。",
+          "body": "我知道。\n這次他們講過頭了。\n我會跟他們說清楚，不再拿妳當話題。",
           "senderId": "qiye",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -4446,20 +4446,20 @@
           "id": "lin-01",
           "senderId": "linan",
           "time": "18:30",
-          "body": "週五的跨系展覽記得喔！硯舟會拍照，知聿說晚點才到，祁野還在趕設計稿。大家各忙各的，不用勉強一起來。",
+          "body": "妳上次活動認識的沈硯舟還有聯絡嗎？\n裴知聿不是妳公司的同事？\n對了，停車場那個開跑車的祁野，妳居然也認識？",
           "title": ""
         },
         {
           "id": "lin-02",
           "title": "",
-          "body": "硯舟答應幫忙拍照，但他週五下午有課。",
+          "body": "硯舟說他下午有課，活動攝影會晚點到。",
           "senderId": "linan",
           "time": "18:37"
         },
         {
           "id": "lin-03",
           "title": "",
-          "body": "知聿要先交研究室資料，祁野那邊印刷也還沒定稿。",
+          "body": "裴知聿最近忙公司的專案，祁野則說要去談一個活動合作。",
           "senderId": "linan",
           "time": "18:41"
         },
@@ -5305,7 +5305,7 @@
     },
     {
       "id": "phase2-shen-1-b",
-      "label": "我先去處理展覽的事，晚點再說。",
+      "label": "我先去處理公司的事，晚點再說。",
       "type": "action",
       "actions": [
         {
@@ -5364,7 +5364,7 @@
     },
     {
       "id": "phase2-shen-2-a",
-      "label": "那我六點半左右到，會遇到你嗎？",
+      "label": "那我六點半左右下班，會遇到你嗎？",
       "type": "action",
       "actions": [
         {
@@ -5411,7 +5411,7 @@
     },
     {
       "id": "phase2-shen-2-b",
-      "label": "我還不確定會不會去。",
+      "label": "我還不確定下班後有沒有力氣去。",
       "type": "action",
       "actions": [
         {
@@ -5576,7 +5576,7 @@
     },
     {
       "id": "phase2-pei-1-a",
-      "label": "你覺得作者是不是把相關當成因果了？",
+      "label": "你覺得這份報表是不是把相關當成因果了？",
       "type": "action",
       "actions": [
         {
@@ -5623,7 +5623,7 @@
     },
     {
       "id": "phase2-pei-1-b",
-      "label": "我再讀一次，現在不急著下結論。",
+      "label": "我再核對一次，現在不急著下結論。",
       "type": "action",
       "actions": [
         {
@@ -5682,7 +5682,7 @@
     },
     {
       "id": "phase2-pei-2-a",
-      "label": "三頁太多了，先給我一句話版本。",
+      "label": "三頁太多了，先給我一句話結論。",
       "type": "action",
       "actions": [
         {
@@ -5729,7 +5729,7 @@
     },
     {
       "id": "phase2-pei-2-b",
-      "label": "玩笑歸玩笑，我想知道研究限制。",
+      "label": "玩笑歸玩笑，我想知道數據限制。",
       "type": "action",
       "actions": [
         {
@@ -5788,7 +5788,7 @@
     },
     {
       "id": "phase2-pei-3-a",
-      "label": "你提醒的第二節真的有幫助。",
+      "label": "你提醒的第二頁真的有幫助。",
       "type": "action",
       "actions": [
         {
@@ -5894,7 +5894,7 @@
     },
     {
       "id": "phase2-qi-1-a",
-      "label": "那你明天畫個示意給我看。",
+      "label": "那你打算怎麼補償上次的事？",
       "type": "action",
       "actions": [
         {
@@ -5941,7 +5941,7 @@
     },
     {
       "id": "phase2-qi-1-b",
-      "label": "我先試著調整，不用麻煩你。",
+      "label": "不用補償，你下次停好車就行。",
       "type": "action",
       "actions": [
         {
@@ -6000,7 +6000,7 @@
     },
     {
       "id": "phase2-qi-2-a",
-      "label": "我想讓那行字有點壓迫感。",
+      "label": "你是不是很習慣別人讓你？",
       "type": "action",
       "actions": [
         {
@@ -6047,7 +6047,7 @@
     },
     {
       "id": "phase2-qi-2-b",
-      "label": "沒關係，我們對這版的看法不同。",
+      "label": "沒關係，我們對那天的看法不同。",
       "type": "action",
       "actions": [
         {
@@ -6106,7 +6106,7 @@
     },
     {
       "id": "phase2-qi-3-a",
-      "label": "謝謝你尊重我的決定。",
+      "label": "謝謝你沒有繼續糾纏。",
       "type": "action",
       "actions": [
         {
@@ -6153,7 +6153,7 @@
     },
     {
       "id": "phase2-qi-3-b",
-      "label": "好，那就先不討論這張海報。",
+      "label": "好，那就先不討論停車場的事。",
       "type": "action",
       "actions": [
         {
@@ -6306,7 +6306,7 @@
     },
     {
       "id": "shen-phase3-1-2-a",
-      "label": "展場見的話，我可以跟你打招呼嗎？",
+      "label": "如果活動碰到你，我可以打招呼嗎？",
       "type": "action",
       "actions": [
         {
@@ -6401,7 +6401,7 @@
     },
     {
       "id": "shen-phase3-2-1-a",
-      "label": "你搬器材還要拍照？也太忙了吧。",
+      "label": "你上課還要兼活動攝影？",
       "type": "action",
       "actions": [
         {
@@ -6496,7 +6496,7 @@
     },
     {
       "id": "shen-phase3-2-2-a",
-      "label": "我只是想看看作品，還沒決定時間。",
+      "label": "我可能加班，還沒決定要不要去。",
       "type": "action",
       "actions": [
         {
@@ -6591,7 +6591,7 @@
     },
     {
       "id": "shen-phase3-3-1-a",
-      "label": "原來你也被放過鴿子？",
+      "label": "你也曾經在活動被放鴿子？",
       "type": "action",
       "actions": [
         {
@@ -6876,7 +6876,7 @@
     },
     {
       "id": "pei-phase3-1-2-a",
-      "label": "你是不是很喜歡別人反駁你？",
+      "label": "你是不是很喜歡同事反駁你？",
       "type": "action",
       "actions": [
         {
@@ -7013,7 +7013,7 @@
     },
     {
       "id": "pei-phase3-2-1-b",
-      "label": "好，我先去看原文了。",
+      "label": "好，我先去核對原始表格。",
       "type": "action",
       "actions": [
         {
@@ -7066,7 +7066,7 @@
     },
     {
       "id": "pei-phase3-2-2-a",
-      "label": "抽樣方式哪裡最值得懷疑？",
+      "label": "你覺得這份報表最值得懷疑哪裡？",
       "type": "action",
       "actions": [
         {
@@ -7161,7 +7161,7 @@
     },
     {
       "id": "pei-phase3-3-1-a",
-      "label": "你平常也會幫別人找資料嗎？",
+      "label": "你平常也會幫其他同事找資料嗎？",
       "type": "action",
       "actions": [
         {
@@ -7351,7 +7351,7 @@
     },
     {
       "id": "qi-phase3-1-1-a",
-      "label": "誰說我會等你？你想太多了吧。",
+      "label": "誰說我會等你請客？想太多了。",
       "type": "action",
       "actions": [
         {
@@ -7393,7 +7393,7 @@
     },
     {
       "id": "qi-phase3-1-1-b",
-      "label": "沒事，晚上有空再傳就好。",
+      "label": "沒事，有空再說就好。",
       "type": "action",
       "actions": [
         {
@@ -7446,7 +7446,7 @@
     },
     {
       "id": "qi-phase3-1-2-a",
-      "label": "你剛剛不是還嫌我的字距？",
+      "label": "你剛剛不是還想拿咖啡補償？",
       "type": "action",
       "actions": [
         {
@@ -7488,7 +7488,7 @@
     },
     {
       "id": "qi-phase3-1-2-b",
-      "label": "嗯，我想先照自己的想法做。",
+      "label": "我想先照自己的方式處理。",
       "type": "action",
       "actions": [
         {
@@ -7541,7 +7541,7 @@
     },
     {
       "id": "qi-phase3-2-1-a",
-      "label": "你現在是在誇我嗎？",
+      "label": "你現在是在承認自己很少道歉？",
       "type": "action",
       "actions": [
         {
@@ -7826,7 +7826,7 @@
     },
     {
       "id": "qi-phase3-3-2-a",
-      "label": "你的印刷檔又怎麼了？",
+      "label": "你那台車到底修好了沒？",
       "type": "action",
       "actions": [
         {
@@ -17185,7 +17185,7 @@
     },
     {
       "id": "shen-major-event-reply-2",
-      "label": "我不希望作品照片被公開。",
+      "label": "我不希望自己的照片被公開。",
       "type": "action",
       "actions": [
         {
@@ -17449,7 +17449,7 @@
     },
     {
       "id": "pei-day21-reply-2",
-      "label": "你先準備報告，晚點再說。",
+      "label": "你先準備主管會議，晚點再說。",
       "type": "action",
       "actions": [
         {
@@ -17544,7 +17544,7 @@
     },
     {
       "id": "pei-major-event-reply-1",
-      "label": "謝謝你主動更正，我們一起核對。",
+      "label": "我們一起核對最新版資料。",
       "type": "action",
       "actions": [
         {
@@ -17676,7 +17676,7 @@
     },
     {
       "id": "qi-day11-reply-1",
-      "label": "拿來啊，我看看你多厲害。",
+      "label": "你這次有記得停好車嗎？",
       "type": "action",
       "actions": [
         {
@@ -17713,7 +17713,7 @@
     },
     {
       "id": "qi-day11-reply-2",
-      "label": "不用，我想保留自己的版本。",
+      "label": "我今天很忙，沒空聊天。",
       "type": "action",
       "actions": [
         {
@@ -17808,7 +17808,7 @@
     },
     {
       "id": "qi-day21-reply-1",
-      "label": "加油，別再硬撐受傷了。",
+      "label": "加油，別又跟人吵起來。",
       "type": "action",
       "actions": [
         {
@@ -17845,7 +17845,7 @@
     },
     {
       "id": "qi-day21-reply-2",
-      "label": "你先專心練球，別一直滑手機。",
+      "label": "你先去談合作，別一直滑手機。",
       "type": "action",
       "actions": [
         {
@@ -17940,7 +17940,7 @@
     },
     {
       "id": "qi-major-event-reply-1",
-      "label": "先不要吵，我們把來源查清楚。",
+      "label": "謝謝你阻止，但我希望你別介入我的工作。",
       "type": "action",
       "actions": [
         {
@@ -17977,7 +17977,7 @@
     },
     {
       "id": "qi-major-event-reply-2",
-      "label": "我自己處理，你先別插手。",
+      "label": "我不喜歡別人拿我的工作開玩笑。",
       "type": "action",
       "actions": [
         {
