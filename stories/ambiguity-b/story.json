@@ -3061,7 +3061,6 @@
       "id": "phase3-shen-1-1",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-1-1-in",
       "next": [
         "shen-phase3-1-1-a",
@@ -3156,7 +3155,6 @@
       "id": "phase3-shen-1-2",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-1-2-in",
       "next": [
         "shen-phase3-1-2-a",
@@ -3251,7 +3249,6 @@
       "id": "phase3-shen-2-1",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-2-1-in",
       "next": [
         "shen-phase3-2-1-a",
@@ -3346,7 +3343,6 @@
       "id": "phase3-shen-2-2",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-2-2-in",
       "next": [
         "shen-phase3-2-2-a",
@@ -3441,7 +3437,6 @@
       "id": "phase3-shen-3-1",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-3-1-in",
       "next": [
         "shen-phase3-3-1-a",
@@ -3536,7 +3531,6 @@
       "id": "phase3-shen-3-2",
       "label": "沈硯舟｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "shen-phase2-3-2-in",
       "next": [
         "shen-phase3-3-2-a",
@@ -3631,7 +3625,6 @@
       "id": "phase3-pei-1-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-1-1-in",
       "next": [
         "pei-phase3-1-1-a",
@@ -3726,7 +3719,6 @@
       "id": "phase3-pei-1-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-1-2-in",
       "next": [
         "pei-phase3-1-2-a",
@@ -3821,7 +3813,6 @@
       "id": "phase3-pei-2-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-2-1-in",
       "next": [
         "pei-phase3-2-1-a",
@@ -3916,7 +3907,6 @@
       "id": "phase3-pei-2-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-2-2-in",
       "next": [
         "pei-phase3-2-2-a",
@@ -4011,7 +4001,6 @@
       "id": "phase3-pei-3-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-3-1-in",
       "next": [
         "pei-phase3-3-1-a",
@@ -4106,7 +4095,6 @@
       "id": "phase3-pei-3-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "pei-phase2-3-2-in",
       "next": [
         "pei-phase3-3-2-a",
@@ -4201,7 +4189,6 @@
       "id": "phase3-qi-1-1",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-1-1-in",
       "next": [
         "qi-phase3-1-1-a",
@@ -4296,7 +4283,6 @@
       "id": "phase3-qi-1-2",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-1-2-in",
       "next": [
         "qi-phase3-1-2-a",
@@ -4391,7 +4377,6 @@
       "id": "phase3-qi-2-1",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-2-1-in",
       "next": [
         "qi-phase3-2-1-a",
@@ -4486,7 +4471,6 @@
       "id": "phase3-qi-2-2",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-2-2-in",
       "next": [
         "qi-phase3-2-2-a",
@@ -4581,7 +4565,6 @@
       "id": "phase3-qi-3-1",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-3-1-in",
       "next": [
         "qi-phase3-3-1-a",
@@ -4676,7 +4659,6 @@
       "id": "phase3-qi-3-2",
       "label": "祁野｜延續話題",
       "type": "choice",
-      "trigger": "read",
       "target": "qi-phase2-3-2-in",
       "next": [
         "qi-phase3-3-2-a",
