@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 16,
+  "revision": 17,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -5819,7 +5819,8 @@
       "next": [
         "shen-phase3-1-1-a",
         "shen-phase3-1-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-1-1-a",
@@ -5913,7 +5914,8 @@
       "next": [
         "shen-phase3-1-2-a",
         "shen-phase3-1-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-1-2-a",
@@ -6007,7 +6009,8 @@
       "next": [
         "shen-phase3-2-1-a",
         "shen-phase3-2-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-2-1-a",
@@ -6101,7 +6104,8 @@
       "next": [
         "shen-phase3-2-2-a",
         "shen-phase3-2-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-2-2-a",
@@ -6195,7 +6199,8 @@
       "next": [
         "shen-phase3-3-1-a",
         "shen-phase3-3-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-3-1-a",
@@ -6289,7 +6294,8 @@
       "next": [
         "shen-phase3-3-2-a",
         "shen-phase3-3-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-phase3-3-2-a",
@@ -6383,7 +6389,8 @@
       "next": [
         "pei-phase3-1-1-a",
         "pei-phase3-1-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-1-1-a",
@@ -6477,7 +6484,8 @@
       "next": [
         "pei-phase3-1-2-a",
         "pei-phase3-1-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-1-2-a",
@@ -6571,7 +6579,8 @@
       "next": [
         "pei-phase3-2-1-a",
         "pei-phase3-2-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-2-1-a",
@@ -6665,7 +6674,8 @@
       "next": [
         "pei-phase3-2-2-a",
         "pei-phase3-2-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-2-2-a",
@@ -6759,7 +6769,8 @@
       "next": [
         "pei-phase3-3-1-a",
         "pei-phase3-3-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-3-1-a",
@@ -6853,7 +6864,8 @@
       "next": [
         "pei-phase3-3-2-a",
         "pei-phase3-3-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-phase3-3-2-a",
@@ -6947,7 +6959,8 @@
       "next": [
         "qi-phase3-1-1-a",
         "qi-phase3-1-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-1-1-a",
@@ -7041,7 +7054,8 @@
       "next": [
         "qi-phase3-1-2-a",
         "qi-phase3-1-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-1-2-a",
@@ -7135,7 +7149,8 @@
       "next": [
         "qi-phase3-2-1-a",
         "qi-phase3-2-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-2-1-a",
@@ -7229,7 +7244,8 @@
       "next": [
         "qi-phase3-2-2-a",
         "qi-phase3-2-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-2-2-a",
@@ -7323,7 +7339,8 @@
       "next": [
         "qi-phase3-3-1-a",
         "qi-phase3-3-1-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-3-1-a",
@@ -7417,7 +7434,8 @@
       "next": [
         "qi-phase3-3-2-a",
         "qi-phase3-3-2-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-phase3-3-2-a",
@@ -7511,7 +7529,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-1-1-b-in",
@@ -7521,7 +7540,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-1-2-a-in",
@@ -7531,7 +7551,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-1-2-b-in",
@@ -7541,7 +7562,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-2-1-a-in",
@@ -7551,7 +7573,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-2-1-b-in",
@@ -7561,7 +7584,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-2-2-a-in",
@@ -7571,7 +7595,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-2-2-b-in",
@@ -7581,7 +7606,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-3-1-a-in",
@@ -7591,7 +7617,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-3-1-b-in",
@@ -7601,7 +7628,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-3-2-a-in",
@@ -7611,7 +7639,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r4-after-shen-phase3-3-2-b-in",
@@ -7621,7 +7650,8 @@
       "next": [
         "shen-r4-a",
         "shen-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r4-a",
@@ -7715,7 +7745,8 @@
       "next": [
         "shen-r5-a",
         "shen-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r5-after-shen-r4-b-in",
@@ -7725,7 +7756,8 @@
       "next": [
         "shen-r5-a",
         "shen-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r5-a",
@@ -7819,7 +7851,8 @@
       "next": [
         "shen-r6-a",
         "shen-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r6-after-shen-r5-b-in",
@@ -7829,7 +7862,8 @@
       "next": [
         "shen-r6-a",
         "shen-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r6-a",
@@ -7923,7 +7957,8 @@
       "next": [
         "shen-r7-a",
         "shen-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r7-after-shen-r6-b-in",
@@ -7933,7 +7968,8 @@
       "next": [
         "shen-r7-a",
         "shen-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r7-a",
@@ -8027,7 +8063,8 @@
       "next": [
         "shen-r8-a",
         "shen-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r8-after-shen-r7-b-in",
@@ -8037,7 +8074,8 @@
       "next": [
         "shen-r8-a",
         "shen-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r8-a",
@@ -8131,7 +8169,8 @@
       "next": [
         "shen-r9-a",
         "shen-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r9-after-shen-r8-b-in",
@@ -8141,7 +8180,8 @@
       "next": [
         "shen-r9-a",
         "shen-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r9-a",
@@ -8235,7 +8275,8 @@
       "next": [
         "shen-r10-a",
         "shen-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r10-after-shen-r9-b-in",
@@ -8245,7 +8286,8 @@
       "next": [
         "shen-r10-a",
         "shen-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r10-a",
@@ -8339,7 +8381,8 @@
       "next": [
         "shen-r11-a",
         "shen-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r11-after-shen-r10-b-in",
@@ -8349,7 +8392,8 @@
       "next": [
         "shen-r11-a",
         "shen-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r11-a",
@@ -8443,7 +8487,8 @@
       "next": [
         "shen-r12-a",
         "shen-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r12-after-shen-r11-b-in",
@@ -8453,7 +8498,8 @@
       "next": [
         "shen-r12-a",
         "shen-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r12-a",
@@ -8547,7 +8593,8 @@
       "next": [
         "shen-r13-a",
         "shen-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r13-after-shen-r12-b-in",
@@ -8557,7 +8604,8 @@
       "next": [
         "shen-r13-a",
         "shen-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r13-a",
@@ -8651,7 +8699,8 @@
       "next": [
         "shen-r14-a",
         "shen-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r14-after-shen-r13-b-in",
@@ -8661,7 +8710,8 @@
       "next": [
         "shen-r14-a",
         "shen-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r14-a",
@@ -8755,7 +8805,8 @@
       "next": [
         "shen-r15-a",
         "shen-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r15-after-shen-r14-b-in",
@@ -8765,7 +8816,8 @@
       "next": [
         "shen-r15-a",
         "shen-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r15-a",
@@ -8859,7 +8911,8 @@
       "next": [
         "shen-r16-a",
         "shen-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r16-after-shen-r15-b-in",
@@ -8869,7 +8922,8 @@
       "next": [
         "shen-r16-a",
         "shen-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r16-a",
@@ -8963,7 +9017,8 @@
       "next": [
         "shen-r17-a",
         "shen-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r17-after-shen-r16-b-in",
@@ -8973,7 +9028,8 @@
       "next": [
         "shen-r17-a",
         "shen-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r17-a",
@@ -9067,7 +9123,8 @@
       "next": [
         "shen-r18-a",
         "shen-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r18-after-shen-r17-b-in",
@@ -9077,7 +9134,8 @@
       "next": [
         "shen-r18-a",
         "shen-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r18-a",
@@ -9171,7 +9229,8 @@
       "next": [
         "shen-r19-a",
         "shen-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r19-after-shen-r18-b-in",
@@ -9181,7 +9240,8 @@
       "next": [
         "shen-r19-a",
         "shen-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r19-a",
@@ -9275,7 +9335,8 @@
       "next": [
         "shen-r20-a",
         "shen-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r20-after-shen-r19-b-in",
@@ -9285,7 +9346,8 @@
       "next": [
         "shen-r20-a",
         "shen-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r20-a",
@@ -9379,7 +9441,8 @@
       "next": [
         "shen-r21-a",
         "shen-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r21-after-shen-r20-b-in",
@@ -9389,7 +9452,8 @@
       "next": [
         "shen-r21-a",
         "shen-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r21-a",
@@ -9483,7 +9547,8 @@
       "next": [
         "shen-r22-a",
         "shen-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r22-after-shen-r21-b-in",
@@ -9493,7 +9558,8 @@
       "next": [
         "shen-r22-a",
         "shen-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r22-a",
@@ -9587,7 +9653,8 @@
       "next": [
         "shen-r23-a",
         "shen-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r23-after-shen-r22-b-in",
@@ -9597,7 +9664,8 @@
       "next": [
         "shen-r23-a",
         "shen-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r23-a",
@@ -9691,7 +9759,8 @@
       "next": [
         "shen-r24-a",
         "shen-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r24-after-shen-r23-b-in",
@@ -9701,7 +9770,8 @@
       "next": [
         "shen-r24-a",
         "shen-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r24-a",
@@ -9795,7 +9865,8 @@
       "next": [
         "shen-r25-a",
         "shen-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r25-after-shen-r24-b-in",
@@ -9805,7 +9876,8 @@
       "next": [
         "shen-r25-a",
         "shen-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r25-a",
@@ -9899,7 +9971,8 @@
       "next": [
         "shen-r26-a",
         "shen-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r26-after-shen-r25-b-in",
@@ -9909,7 +9982,8 @@
       "next": [
         "shen-r26-a",
         "shen-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r26-a",
@@ -10003,7 +10077,8 @@
       "next": [
         "shen-r27-a",
         "shen-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r27-after-shen-r26-b-in",
@@ -10013,7 +10088,8 @@
       "next": [
         "shen-r27-a",
         "shen-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r27-a",
@@ -10107,7 +10183,8 @@
       "next": [
         "shen-r28-a",
         "shen-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r28-after-shen-r27-b-in",
@@ -10117,7 +10194,8 @@
       "next": [
         "shen-r28-a",
         "shen-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r28-a",
@@ -10211,7 +10289,8 @@
       "next": [
         "shen-r29-a",
         "shen-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r29-after-shen-r28-b-in",
@@ -10221,7 +10300,8 @@
       "next": [
         "shen-r29-a",
         "shen-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r29-a",
@@ -10315,7 +10395,8 @@
       "next": [
         "shen-r30-a",
         "shen-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-shen-r30-after-shen-r29-b-in",
@@ -10325,7 +10406,8 @@
       "next": [
         "shen-r30-a",
         "shen-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "shen-r30-a",
@@ -10419,7 +10501,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-b-in",
@@ -10429,7 +10512,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-a-in",
@@ -10439,7 +10523,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-b-in",
@@ -10449,7 +10534,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-a-in",
@@ -10459,7 +10545,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-b-in",
@@ -10469,7 +10556,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-a-in",
@@ -10479,7 +10567,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-b-in",
@@ -10489,7 +10578,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-a-in",
@@ -10499,7 +10589,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-b-in",
@@ -10509,7 +10600,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-a-in",
@@ -10519,7 +10611,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-b-in",
@@ -10529,7 +10622,8 @@
       "next": [
         "pei-r4-a",
         "pei-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r4-a",
@@ -10623,7 +10717,8 @@
       "next": [
         "pei-r5-a",
         "pei-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r5-after-pei-r4-b-in",
@@ -10633,7 +10728,8 @@
       "next": [
         "pei-r5-a",
         "pei-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r5-a",
@@ -10727,7 +10823,8 @@
       "next": [
         "pei-r6-a",
         "pei-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r6-after-pei-r5-b-in",
@@ -10737,7 +10834,8 @@
       "next": [
         "pei-r6-a",
         "pei-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r6-a",
@@ -10831,7 +10929,8 @@
       "next": [
         "pei-r7-a",
         "pei-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r7-after-pei-r6-b-in",
@@ -10841,7 +10940,8 @@
       "next": [
         "pei-r7-a",
         "pei-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r7-a",
@@ -10935,7 +11035,8 @@
       "next": [
         "pei-r8-a",
         "pei-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r8-after-pei-r7-b-in",
@@ -10945,7 +11046,8 @@
       "next": [
         "pei-r8-a",
         "pei-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r8-a",
@@ -11039,7 +11141,8 @@
       "next": [
         "pei-r9-a",
         "pei-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r9-after-pei-r8-b-in",
@@ -11049,7 +11152,8 @@
       "next": [
         "pei-r9-a",
         "pei-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r9-a",
@@ -11143,7 +11247,8 @@
       "next": [
         "pei-r10-a",
         "pei-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r10-after-pei-r9-b-in",
@@ -11153,7 +11258,8 @@
       "next": [
         "pei-r10-a",
         "pei-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r10-a",
@@ -11247,7 +11353,8 @@
       "next": [
         "pei-r11-a",
         "pei-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r11-after-pei-r10-b-in",
@@ -11257,7 +11364,8 @@
       "next": [
         "pei-r11-a",
         "pei-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r11-a",
@@ -11351,7 +11459,8 @@
       "next": [
         "pei-r12-a",
         "pei-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r12-after-pei-r11-b-in",
@@ -11361,7 +11470,8 @@
       "next": [
         "pei-r12-a",
         "pei-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r12-a",
@@ -11455,7 +11565,8 @@
       "next": [
         "pei-r13-a",
         "pei-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r13-after-pei-r12-b-in",
@@ -11465,7 +11576,8 @@
       "next": [
         "pei-r13-a",
         "pei-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r13-a",
@@ -11559,7 +11671,8 @@
       "next": [
         "pei-r14-a",
         "pei-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r14-after-pei-r13-b-in",
@@ -11569,7 +11682,8 @@
       "next": [
         "pei-r14-a",
         "pei-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r14-a",
@@ -11663,7 +11777,8 @@
       "next": [
         "pei-r15-a",
         "pei-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r15-after-pei-r14-b-in",
@@ -11673,7 +11788,8 @@
       "next": [
         "pei-r15-a",
         "pei-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r15-a",
@@ -11767,7 +11883,8 @@
       "next": [
         "pei-r16-a",
         "pei-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r16-after-pei-r15-b-in",
@@ -11777,7 +11894,8 @@
       "next": [
         "pei-r16-a",
         "pei-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r16-a",
@@ -11871,7 +11989,8 @@
       "next": [
         "pei-r17-a",
         "pei-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r17-after-pei-r16-b-in",
@@ -11881,7 +12000,8 @@
       "next": [
         "pei-r17-a",
         "pei-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r17-a",
@@ -11975,7 +12095,8 @@
       "next": [
         "pei-r18-a",
         "pei-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r18-after-pei-r17-b-in",
@@ -11985,7 +12106,8 @@
       "next": [
         "pei-r18-a",
         "pei-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r18-a",
@@ -12079,7 +12201,8 @@
       "next": [
         "pei-r19-a",
         "pei-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r19-after-pei-r18-b-in",
@@ -12089,7 +12212,8 @@
       "next": [
         "pei-r19-a",
         "pei-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r19-a",
@@ -12183,7 +12307,8 @@
       "next": [
         "pei-r20-a",
         "pei-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r20-after-pei-r19-b-in",
@@ -12193,7 +12318,8 @@
       "next": [
         "pei-r20-a",
         "pei-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r20-a",
@@ -12287,7 +12413,8 @@
       "next": [
         "pei-r21-a",
         "pei-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r21-after-pei-r20-b-in",
@@ -12297,7 +12424,8 @@
       "next": [
         "pei-r21-a",
         "pei-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r21-a",
@@ -12391,7 +12519,8 @@
       "next": [
         "pei-r22-a",
         "pei-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r22-after-pei-r21-b-in",
@@ -12401,7 +12530,8 @@
       "next": [
         "pei-r22-a",
         "pei-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r22-a",
@@ -12495,7 +12625,8 @@
       "next": [
         "pei-r23-a",
         "pei-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r23-after-pei-r22-b-in",
@@ -12505,7 +12636,8 @@
       "next": [
         "pei-r23-a",
         "pei-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r23-a",
@@ -12599,7 +12731,8 @@
       "next": [
         "pei-r24-a",
         "pei-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r24-after-pei-r23-b-in",
@@ -12609,7 +12742,8 @@
       "next": [
         "pei-r24-a",
         "pei-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r24-a",
@@ -12703,7 +12837,8 @@
       "next": [
         "pei-r25-a",
         "pei-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r25-after-pei-r24-b-in",
@@ -12713,7 +12848,8 @@
       "next": [
         "pei-r25-a",
         "pei-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r25-a",
@@ -12807,7 +12943,8 @@
       "next": [
         "pei-r26-a",
         "pei-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r26-after-pei-r25-b-in",
@@ -12817,7 +12954,8 @@
       "next": [
         "pei-r26-a",
         "pei-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r26-a",
@@ -12911,7 +13049,8 @@
       "next": [
         "pei-r27-a",
         "pei-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r27-after-pei-r26-b-in",
@@ -12921,7 +13060,8 @@
       "next": [
         "pei-r27-a",
         "pei-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r27-a",
@@ -13015,7 +13155,8 @@
       "next": [
         "pei-r28-a",
         "pei-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r28-after-pei-r27-b-in",
@@ -13025,7 +13166,8 @@
       "next": [
         "pei-r28-a",
         "pei-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r28-a",
@@ -13119,7 +13261,8 @@
       "next": [
         "pei-r29-a",
         "pei-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r29-after-pei-r28-b-in",
@@ -13129,7 +13272,8 @@
       "next": [
         "pei-r29-a",
         "pei-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r29-a",
@@ -13223,7 +13367,8 @@
       "next": [
         "pei-r30-a",
         "pei-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-pei-r30-after-pei-r29-b-in",
@@ -13233,7 +13378,8 @@
       "next": [
         "pei-r30-a",
         "pei-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "pei-r30-a",
@@ -13327,7 +13473,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-1-1-b-in",
@@ -13337,7 +13484,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-1-2-a-in",
@@ -13347,7 +13495,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-1-2-b-in",
@@ -13357,7 +13506,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-2-1-a-in",
@@ -13367,7 +13517,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-2-1-b-in",
@@ -13377,7 +13528,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-2-2-a-in",
@@ -13387,7 +13539,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-2-2-b-in",
@@ -13397,7 +13550,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-3-1-a-in",
@@ -13407,7 +13561,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-3-1-b-in",
@@ -13417,7 +13572,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-3-2-a-in",
@@ -13427,7 +13583,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-3-2-b-in",
@@ -13437,7 +13594,8 @@
       "next": [
         "qi-r4-a",
         "qi-r4-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r4-a",
@@ -13531,7 +13689,8 @@
       "next": [
         "qi-r5-a",
         "qi-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r5-after-qi-r4-b-in",
@@ -13541,7 +13700,8 @@
       "next": [
         "qi-r5-a",
         "qi-r5-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r5-a",
@@ -13635,7 +13795,8 @@
       "next": [
         "qi-r6-a",
         "qi-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r6-after-qi-r5-b-in",
@@ -13645,7 +13806,8 @@
       "next": [
         "qi-r6-a",
         "qi-r6-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r6-a",
@@ -13739,7 +13901,8 @@
       "next": [
         "qi-r7-a",
         "qi-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r7-after-qi-r6-b-in",
@@ -13749,7 +13912,8 @@
       "next": [
         "qi-r7-a",
         "qi-r7-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r7-a",
@@ -13843,7 +14007,8 @@
       "next": [
         "qi-r8-a",
         "qi-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r8-after-qi-r7-b-in",
@@ -13853,7 +14018,8 @@
       "next": [
         "qi-r8-a",
         "qi-r8-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r8-a",
@@ -13947,7 +14113,8 @@
       "next": [
         "qi-r9-a",
         "qi-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r9-after-qi-r8-b-in",
@@ -13957,7 +14124,8 @@
       "next": [
         "qi-r9-a",
         "qi-r9-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r9-a",
@@ -14051,7 +14219,8 @@
       "next": [
         "qi-r10-a",
         "qi-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r10-after-qi-r9-b-in",
@@ -14061,7 +14230,8 @@
       "next": [
         "qi-r10-a",
         "qi-r10-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r10-a",
@@ -14155,7 +14325,8 @@
       "next": [
         "qi-r11-a",
         "qi-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r11-after-qi-r10-b-in",
@@ -14165,7 +14336,8 @@
       "next": [
         "qi-r11-a",
         "qi-r11-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r11-a",
@@ -14259,7 +14431,8 @@
       "next": [
         "qi-r12-a",
         "qi-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r12-after-qi-r11-b-in",
@@ -14269,7 +14442,8 @@
       "next": [
         "qi-r12-a",
         "qi-r12-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r12-a",
@@ -14363,7 +14537,8 @@
       "next": [
         "qi-r13-a",
         "qi-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r13-after-qi-r12-b-in",
@@ -14373,7 +14548,8 @@
       "next": [
         "qi-r13-a",
         "qi-r13-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r13-a",
@@ -14467,7 +14643,8 @@
       "next": [
         "qi-r14-a",
         "qi-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r14-after-qi-r13-b-in",
@@ -14477,7 +14654,8 @@
       "next": [
         "qi-r14-a",
         "qi-r14-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r14-a",
@@ -14571,7 +14749,8 @@
       "next": [
         "qi-r15-a",
         "qi-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r15-after-qi-r14-b-in",
@@ -14581,7 +14760,8 @@
       "next": [
         "qi-r15-a",
         "qi-r15-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r15-a",
@@ -14675,7 +14855,8 @@
       "next": [
         "qi-r16-a",
         "qi-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r16-after-qi-r15-b-in",
@@ -14685,7 +14866,8 @@
       "next": [
         "qi-r16-a",
         "qi-r16-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r16-a",
@@ -14779,7 +14961,8 @@
       "next": [
         "qi-r17-a",
         "qi-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r17-after-qi-r16-b-in",
@@ -14789,7 +14972,8 @@
       "next": [
         "qi-r17-a",
         "qi-r17-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r17-a",
@@ -14883,7 +15067,8 @@
       "next": [
         "qi-r18-a",
         "qi-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r18-after-qi-r17-b-in",
@@ -14893,7 +15078,8 @@
       "next": [
         "qi-r18-a",
         "qi-r18-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r18-a",
@@ -14987,7 +15173,8 @@
       "next": [
         "qi-r19-a",
         "qi-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r19-after-qi-r18-b-in",
@@ -14997,7 +15184,8 @@
       "next": [
         "qi-r19-a",
         "qi-r19-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r19-a",
@@ -15091,7 +15279,8 @@
       "next": [
         "qi-r20-a",
         "qi-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r20-after-qi-r19-b-in",
@@ -15101,7 +15290,8 @@
       "next": [
         "qi-r20-a",
         "qi-r20-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r20-a",
@@ -15195,7 +15385,8 @@
       "next": [
         "qi-r21-a",
         "qi-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r21-after-qi-r20-b-in",
@@ -15205,7 +15396,8 @@
       "next": [
         "qi-r21-a",
         "qi-r21-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r21-a",
@@ -15299,7 +15491,8 @@
       "next": [
         "qi-r22-a",
         "qi-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r22-after-qi-r21-b-in",
@@ -15309,7 +15502,8 @@
       "next": [
         "qi-r22-a",
         "qi-r22-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r22-a",
@@ -15403,7 +15597,8 @@
       "next": [
         "qi-r23-a",
         "qi-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r23-after-qi-r22-b-in",
@@ -15413,7 +15608,8 @@
       "next": [
         "qi-r23-a",
         "qi-r23-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r23-a",
@@ -15507,7 +15703,8 @@
       "next": [
         "qi-r24-a",
         "qi-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r24-after-qi-r23-b-in",
@@ -15517,7 +15714,8 @@
       "next": [
         "qi-r24-a",
         "qi-r24-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r24-a",
@@ -15611,7 +15809,8 @@
       "next": [
         "qi-r25-a",
         "qi-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r25-after-qi-r24-b-in",
@@ -15621,7 +15820,8 @@
       "next": [
         "qi-r25-a",
         "qi-r25-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r25-a",
@@ -15715,7 +15915,8 @@
       "next": [
         "qi-r26-a",
         "qi-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r26-after-qi-r25-b-in",
@@ -15725,7 +15926,8 @@
       "next": [
         "qi-r26-a",
         "qi-r26-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r26-a",
@@ -15819,7 +16021,8 @@
       "next": [
         "qi-r27-a",
         "qi-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r27-after-qi-r26-b-in",
@@ -15829,7 +16032,8 @@
       "next": [
         "qi-r27-a",
         "qi-r27-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r27-a",
@@ -15923,7 +16127,8 @@
       "next": [
         "qi-r28-a",
         "qi-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r28-after-qi-r27-b-in",
@@ -15933,7 +16138,8 @@
       "next": [
         "qi-r28-a",
         "qi-r28-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r28-a",
@@ -16027,7 +16233,8 @@
       "next": [
         "qi-r29-a",
         "qi-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r29-after-qi-r28-b-in",
@@ -16037,7 +16244,8 @@
       "next": [
         "qi-r29-a",
         "qi-r29-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r29-a",
@@ -16131,7 +16339,8 @@
       "next": [
         "qi-r30-a",
         "qi-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "choice-qi-r30-after-qi-r29-b-in",
@@ -16141,7 +16350,8 @@
       "next": [
         "qi-r30-a",
         "qi-r30-b"
-      ]
+      ],
+      "event": "read"
     },
     {
       "id": "qi-r30-a",
