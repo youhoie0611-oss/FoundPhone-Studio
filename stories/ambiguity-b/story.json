@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
-  "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 18,
+  "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
+  "revision": 19,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -29,21 +29,21 @@
     {
       "id": "shenyanzhou",
       "name": "沈硯舟",
-      "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。",
+      "bio": "24歲｜活動認識的大學生，喜歡攝影、健身與籃球。",
       "phone": "",
       "avatar": "./characters/shen-yanzhou-avatar.png"
     },
     {
       "id": "peizhiyu",
       "name": "裴知聿",
-      "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。",
+      "bio": "25歲｜玩家的同事，工作時理性精準。",
       "phone": "",
       "avatar": "./characters/pei-zhiyu-avatar.png"
     },
     {
       "id": "qiye",
       "name": "祁野",
-      "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。",
+      "bio": "21歲｜偶然認識的富家少爺，張揚叛逆。",
       "phone": "",
       "avatar": "./characters/qi-ye-avatar.png"
     },
@@ -4645,7 +4645,7 @@
     ]
   },
   "variables": {
-    "shen_attraction": 0,
+    "shen_attraction": 10,
     "shen_curiosity": 0,
     "shen_emotional_investment": 0,
     "shen_trust": 0,
