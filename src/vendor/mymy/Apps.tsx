@@ -153,6 +153,14 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
+            {!p.creator && p.choices?.filter((choice) => {
+              const character = p.thread === "沈硯舟" ? "shen" : p.thread === "裴知聿" ? "pei" : p.thread === "祁野" ? "qi" : "";
+              return character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-"));
+            }).map((choice) => (
+              <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>
+                {choice.label}
+              </button>
+            ))}
             {!messages.length && <Blank />}
           </div>
           <form
