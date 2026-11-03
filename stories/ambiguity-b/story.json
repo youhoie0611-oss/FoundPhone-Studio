@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 14,
+  "revision": 15,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -261,6 +261,210 @@
           "time": "22:06",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-1-1-a-out",
+          "title": "",
+          "body": "那如果有人不想入鏡，你會怎麼辦？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-1-1-a-in",
+          "title": "",
+          "body": "先問，再拍。\n如果對方不自在，我就收相機。\n照片可以重拍，人不該被勉強。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-1-1-b-out",
+          "title": "",
+          "body": "這樣說我就放心了，謝謝你。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-1-1-b-in",
+          "title": "",
+          "body": "不用謝。\n妳願意問，我反而覺得挺好的。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-1-2-a-out",
+          "title": "",
+          "body": "展場見的話，我可以跟你打招呼嗎？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-1-2-a-in",
+          "title": "",
+          "body": "當然啊。\n不過我可能抱著腳架，看起來很狼狽。\n先說好，不准笑太大聲。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-1-2-b-out",
+          "title": "",
+          "body": "好，先忙你的，我不打擾了。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-1-2-b-in",
+          "title": "",
+          "body": "嗯，妳也別忙到忘記吃飯。\n有空再聊。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-2-1-a-out",
+          "title": "",
+          "body": "你搬器材還要拍照？也太忙了吧。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-2-1-a-in",
+          "title": "",
+          "body": "習慣了。\n但如果妳剛好經過，幫我按個電梯就很感激了。\n開玩笑的，別特地跑來。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-2-1-b-out",
+          "title": "",
+          "body": "那我到時候就自己逛，不找你了。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-2-1-b-in",
+          "title": "",
+          "body": "好啊，照妳的步調來。\n展覽比我重要，真的。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-2-2-a-out",
+          "title": "",
+          "body": "我只是想看看作品，還沒決定時間。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-2-2-a-in",
+          "title": "",
+          "body": "那就別急著決定。\n我晚點把展場比較安靜的時段傳給妳，當參考就好。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-2-2-b-out",
+          "title": "",
+          "body": "嗯，我不想把行程綁在別人身上。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-2-2-b-in",
+          "title": "",
+          "body": "我懂。\n妳安排妳的，我安排我的，碰到了再打招呼。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-3-1-a-out",
+          "title": "",
+          "body": "原來你也被放過鴿子？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-3-1-a-in",
+          "title": "",
+          "body": "有啊。\n上次扛了兩盞燈等人，等到保全來關門。\n現在我都先確認時間。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-3-1-b-out",
+          "title": "",
+          "body": "哈哈，那希望你這次充電池順利。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-3-1-b-in",
+          "title": "",
+          "body": "拜託，一定要。\n上次忘記充，差點被自己氣死。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-3-2-a-out",
+          "title": "",
+          "body": "你拍攝前都會這麼忙嗎？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-3-2-a-in",
+          "title": "",
+          "body": "差不多。\n清器材、備份、確認路線。\n做完才有心情好好聊天。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-phase3-3-2-b-out",
+          "title": "",
+          "body": "好，那你去忙，晚安。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase3-3-2-b-in",
+          "title": "",
+          "body": "晚安。\n不用回我，早點休息。",
+          "senderId": "shenyanzhou",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -469,6 +673,210 @@
           "time": "22:06",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-1-1-a-out",
+          "title": "",
+          "body": "那如果換成你寫，你會怎麼下結論？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-1-1-a-in",
+          "title": "",
+          "body": "我會寫『目前資料不足以判斷』。\n不好聽，但比較誠實。\n妳有別的看法？",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-1-1-b-out",
+          "title": "",
+          "body": "懂了，我先把資料讀完。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-1-1-b-in",
+          "title": "",
+          "body": "嗯。\n不必急著接受我的結論。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-1-2-a-out",
+          "title": "",
+          "body": "你是不是很喜歡別人反駁你？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-1-2-a-in",
+          "title": "",
+          "body": "喜歡有根據的反駁。\n單純唱反調很浪費時間。\n妳剛才那句不算。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-1-2-b-out",
+          "title": "",
+          "body": "我現在腦袋不太能思考了。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-1-2-b-in",
+          "title": "",
+          "body": "那就先休息。\n疲勞時討論，只會把簡單問題弄複雜。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-2-1-a-out",
+          "title": "",
+          "body": "這句話倒是比三頁摘要好懂。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-2-1-a-in",
+          "title": "",
+          "body": "因為我不是在寫摘要。\n妳要是拿去交報告，記得自己補證據。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-2-1-b-out",
+          "title": "",
+          "body": "好，我先去看原文了。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-2-1-b-in",
+          "title": "",
+          "body": "去吧。\n有疑問再問，不必逐頁報告。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-2-2-a-out",
+          "title": "",
+          "body": "抽樣方式哪裡最值得懷疑？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-2-2-a-in",
+          "title": "",
+          "body": "受試者來源太集中。\n研究卻把結論寫得像適用所有人。\n這是第一個要查的地方。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-2-2-b-out",
+          "title": "",
+          "body": "謝謝，我會自己整理重點。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-2-2-b-in",
+          "title": "",
+          "body": "好。\n自己整理過，印象會比較深。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-3-1-a-out",
+          "title": "",
+          "body": "你平常也會幫別人找資料嗎？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-3-1-a-in",
+          "title": "",
+          "body": "看情況。\n林安開口，我剛好手邊有。\n妳不用把這當成人情。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-3-1-b-out",
+          "title": "",
+          "body": "嗯，真的幫我省很多時間。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-3-1-b-in",
+          "title": "",
+          "body": "那就好。\n我不喜歡做沒用的事。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-3-2-a-out",
+          "title": "",
+          "body": "如果我整理完有不同意見，可以傳給你嗎？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-3-2-a-in",
+          "title": "",
+          "body": "可以。\n但請告訴我妳不同意哪個前提。\n我比較容易接上妳的思路。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-phase3-3-2-b-out",
+          "title": "",
+          "body": "好，那就各忙各的。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase3-3-2-b-in",
+          "title": "",
+          "body": "嗯。\n有需要再聯絡。",
+          "senderId": "peizhiyu",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         }
       ]
     },
@@ -675,6 +1083,210 @@
           "body": "好。我也得去救我的印刷檔了。",
           "senderId": "qiye",
           "time": "22:06",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-1-1-a-out",
+          "title": "",
+          "body": "誰說我會等你？你想太多了吧。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-1-1-a-in",
+          "title": "",
+          "body": "喔？\n那最好。\n我還怕妳盯著手機催稿，壓力很大欸。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-1-1-b-out",
+          "title": "",
+          "body": "沒事，晚上有空再傳就好。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-1-1-b-in",
+          "title": "",
+          "body": "知道啦。\n有畫出能看的才傳，醜的我自己刪。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-1-2-a-out",
+          "title": "",
+          "body": "你剛剛不是還嫌我的字距？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-1-2-a-in",
+          "title": "",
+          "body": "嫌歸嫌。\n作品又不是我的。\n我可以嘴，但不會替妳做決定。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-1-2-b-out",
+          "title": "",
+          "body": "嗯，我想先照自己的想法做。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-1-2-b-in",
+          "title": "",
+          "body": "行啊。\n做完給我看也可以，不給也沒差。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-2-1-a-out",
+          "title": "",
+          "body": "你現在是在誇我嗎？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-2-1-a-in",
+          "title": "",
+          "body": "不然咧？\n要我打三遍『妳很厲害』嗎？\n想得美。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-2-1-b-out",
+          "title": "",
+          "body": "我只是想試試不同的做法。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-2-1-b-in",
+          "title": "",
+          "body": "那就試。\n別因為我一句話就改回去，太沒意思了。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-2-2-a-out",
+          "title": "",
+          "body": "難得你這麼講理。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-2-2-a-in",
+          "title": "",
+          "body": "我本來就講理好嗎。\n只是講話比較欠揍。\n這我承認。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-2-2-b-out",
+          "title": "",
+          "body": "好，那這題就到這裡。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-2-2-b-in",
+          "title": "",
+          "body": "行。\n換話題等妳有空再說。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-3-1-a-out",
+          "title": "",
+          "body": "你這樣講，我反而有點意外。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-3-1-a-in",
+          "title": "",
+          "body": "意外什麼？\n我又不是來搶妳作品的。\n頂多嘴兩句。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-3-1-b-out",
+          "title": "",
+          "body": "嗯，謝啦，我先去忙。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-3-1-b-in",
+          "title": "",
+          "body": "去吧。\n我也要趕印刷，不然明天被老師念。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-3-2-a-out",
+          "title": "",
+          "body": "你的印刷檔又怎麼了？",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-3-2-a-in",
+          "title": "",
+          "body": "出血沒留夠。\n我剛剛還笑妳字距，結果自己差點翻車。\n不准笑。",
+          "senderId": "qiye",
+          "time": "22:18",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase3-3-2-b-out",
+          "title": "",
+          "body": "那你快去救檔案吧。",
+          "senderId": "owner",
+          "time": "22:14",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase3-3-2-b-in",
+          "title": "",
+          "body": "正在救。\n晚點沒消息就是我跟印表機同歸於盡了。",
+          "senderId": "qiye",
+          "time": "22:18",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
         }
@@ -2441,6 +3053,1716 @@
           "type": "notification",
           "key": "",
           "value": "KKT：祁野稍後回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-1-1",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-1-1-in",
+      "next": [
+        "shen-phase3-1-1-a",
+        "shen-phase3-1-1-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-1-a",
+      "label": "那如果有人不想入鏡，你會怎麼辦？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-1-1-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-1-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-1-1-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-1-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-1-1-b",
+      "label": "這樣說我就放心了，謝謝你。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-1-1-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-1-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-1-1-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-1-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-1-2",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-1-2-in",
+      "next": [
+        "shen-phase3-1-2-a",
+        "shen-phase3-1-2-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-2-a",
+      "label": "展場見的話，我可以跟你打招呼嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-1-2-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-2-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-1-2-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-2-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-1-2-b",
+      "label": "好，先忙你的，我不打擾了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-1-2-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-2-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-1-2-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-1-2-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-1-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-2-1",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-2-1-in",
+      "next": [
+        "shen-phase3-2-1-a",
+        "shen-phase3-2-1-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-1-a",
+      "label": "你搬器材還要拍照？也太忙了吧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-2-1-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-1-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-2-1-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-1-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-2-1-b",
+      "label": "那我到時候就自己逛，不找你了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-2-1-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-1-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-2-1-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-1-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-2-2",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-2-2-in",
+      "next": [
+        "shen-phase3-2-2-a",
+        "shen-phase3-2-2-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-2-a",
+      "label": "我只是想看看作品，還沒決定時間。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-2-2-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-2-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-2-2-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-2-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-2-2-b",
+      "label": "嗯，我不想把行程綁在別人身上。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-2-2-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-2-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-2-2-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-2-2-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-2-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-3-1",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-3-1-in",
+      "next": [
+        "shen-phase3-3-1-a",
+        "shen-phase3-3-1-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-1-a",
+      "label": "原來你也被放過鴿子？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-3-1-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-1-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-3-1-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-1-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-3-1-b",
+      "label": "哈哈，那希望你這次充電池順利。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-3-1-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-1-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-3-1-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-1-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-shen-3-2",
+      "label": "沈硯舟｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "shen-phase2-3-2-in",
+      "next": [
+        "shen-phase3-3-2-a",
+        "shen-phase3-3-2-b"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-2-a",
+      "label": "你拍攝前都會這麼忙嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-3-2-a-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-2-a-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "shen-phase3-3-2-a-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-2-a-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-phase3-3-2-b",
+      "label": "好，那你去忙，晚安。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-phase3-3-2-b-wait"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-2-b-wait",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 40000,
+      "next": [
+        "shen-phase3-3-2-b-arrive"
+      ]
+    },
+    {
+      "id": "shen-phase3-3-2-b-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase3-3-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-1-1",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-1-1-in",
+      "next": [
+        "pei-phase3-1-1-a",
+        "pei-phase3-1-1-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-1-a",
+      "label": "那如果換成你寫，你會怎麼下結論？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-1-1-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-1-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-1-1-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-1-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-1-1-b",
+      "label": "懂了，我先把資料讀完。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-1-1-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-1-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-1-1-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-1-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-1-2",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-1-2-in",
+      "next": [
+        "pei-phase3-1-2-a",
+        "pei-phase3-1-2-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-2-a",
+      "label": "你是不是很喜歡別人反駁你？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-1-2-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-2-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-1-2-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-2-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-1-2-b",
+      "label": "我現在腦袋不太能思考了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-1-2-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-2-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-1-2-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-1-2-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-1-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-2-1",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-2-1-in",
+      "next": [
+        "pei-phase3-2-1-a",
+        "pei-phase3-2-1-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-1-a",
+      "label": "這句話倒是比三頁摘要好懂。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-2-1-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-1-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-2-1-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-1-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-2-1-b",
+      "label": "好，我先去看原文了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-2-1-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-1-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-2-1-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-1-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-2-2",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-2-2-in",
+      "next": [
+        "pei-phase3-2-2-a",
+        "pei-phase3-2-2-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-2-a",
+      "label": "抽樣方式哪裡最值得懷疑？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-2-2-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-2-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-2-2-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-2-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-2-2-b",
+      "label": "謝謝，我會自己整理重點。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-2-2-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-2-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-2-2-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-2-2-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-2-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-3-1",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-3-1-in",
+      "next": [
+        "pei-phase3-3-1-a",
+        "pei-phase3-3-1-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-1-a",
+      "label": "你平常也會幫別人找資料嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-3-1-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-1-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-3-1-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-1-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-3-1-b",
+      "label": "嗯，真的幫我省很多時間。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-3-1-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-1-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-3-1-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-1-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-pei-3-2",
+      "label": "裴知聿｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "pei-phase2-3-2-in",
+      "next": [
+        "pei-phase3-3-2-a",
+        "pei-phase3-3-2-b"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-2-a",
+      "label": "如果我整理完有不同意見，可以傳給你嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-3-2-a-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-2-a-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 47000,
+      "next": [
+        "pei-phase3-3-2-a-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-2-a-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-phase3-3-2-b",
+      "label": "好，那就各忙各的。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-phase3-3-2-b-wait"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-2-b-wait",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 61000,
+      "next": [
+        "pei-phase3-3-2-b-arrive"
+      ]
+    },
+    {
+      "id": "pei-phase3-3-2-b-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase3-3-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-1-1",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-1-1-in",
+      "next": [
+        "qi-phase3-1-1-a",
+        "qi-phase3-1-1-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-1-a",
+      "label": "誰說我會等你？你想太多了吧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-1-1-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-1-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-1-1-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-1-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-1-1-b",
+      "label": "沒事，晚上有空再傳就好。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-1-1-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-1-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-1-1-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-1-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-1-2",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-1-2-in",
+      "next": [
+        "qi-phase3-1-2-a",
+        "qi-phase3-1-2-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-2-a",
+      "label": "你剛剛不是還嫌我的字距？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-1-2-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-2-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-1-2-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-2-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-1-2-b",
+      "label": "嗯，我想先照自己的想法做。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-1-2-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-2-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-1-2-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-1-2-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-1-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-2-1",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-2-1-in",
+      "next": [
+        "qi-phase3-2-1-a",
+        "qi-phase3-2-1-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-1-a",
+      "label": "你現在是在誇我嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-2-1-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-1-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-2-1-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-1-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-2-1-b",
+      "label": "我只是想試試不同的做法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-2-1-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-1-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-2-1-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-1-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-2-2",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-2-2-in",
+      "next": [
+        "qi-phase3-2-2-a",
+        "qi-phase3-2-2-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-2-a",
+      "label": "難得你這麼講理。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-2-2-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-2-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-2-2-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-2-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-2-2-b",
+      "label": "好，那這題就到這裡。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-2-2-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-2-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-2-2-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-2-2-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-2-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-3-1",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-3-1-in",
+      "next": [
+        "qi-phase3-3-1-a",
+        "qi-phase3-3-1-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-1-a",
+      "label": "你這樣講，我反而有點意外。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-1-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-3-1-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-1-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-3-1-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-1-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-1-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-3-1-b",
+      "label": "嗯，謝啦，我先去忙。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-1-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-3-1-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-1-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-3-1-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-1-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-1-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase3-qi-3-2",
+      "label": "祁野｜延續話題",
+      "type": "choice",
+      "trigger": "read",
+      "target": "qi-phase2-3-2-in",
+      "next": [
+        "qi-phase3-3-2-a",
+        "qi-phase3-3-2-b"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-2-a",
+      "label": "你的印刷檔又怎麼了？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-2-a-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-3-2-a-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-2-a-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 12000,
+      "next": [
+        "qi-phase3-3-2-a-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-2-a-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-2-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-phase3-3-2-b",
+      "label": "那你快去救檔案吧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-2-b-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-phase3-3-2-b-wait"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-2-b-wait",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 26000,
+      "next": [
+        "qi-phase3-3-2-b-arrive"
+      ]
+    },
+    {
+      "id": "qi-phase3-3-2-b-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase3-3-2-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
         }
       ],
       "next": []
