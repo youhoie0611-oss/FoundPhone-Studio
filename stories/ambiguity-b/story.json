@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -121,7 +121,7 @@
           "id": "shen-branch-1-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "好啊，我傳連結給妳。妳們那組燈光其實滿漂亮的。",
+          "body": "可以啊，我整理好就傳給妳。先說，照片如果有妳不喜歡的角度，直接跟我說，我會刪掉。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -138,7 +138,7 @@
           "id": "shen-branch-2-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "應該六點前吧。我先拍場地，之後還要幫林安搬東西。",
+          "body": "大概六點前。我要先拍空景，可能沒辦法一直看手機。妳到了再傳訊息就好。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -155,7 +155,7 @@
           "id": "shen-branch-3-in",
           "title": "",
           "senderId": "shenyanzhou",
-          "body": "好～那我先去整理器材，有需要再找我。",
+          "body": "好，謝謝妳。那我先去把相機電池充好，晚點有空再聊。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
@@ -329,7 +329,7 @@
           "id": "pei-branch-1-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "有疑問很正常。那篇文章的樣本限制其實滿值得討論。",
+          "body": "妳是覺得推論跳太快，還是樣本不夠？這兩個問題不太一樣。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -346,7 +346,7 @@
           "id": "pei-branch-2-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "算是。妳要我認真批評的話，我可以寫三頁。",
+          "body": "算是。摘要寫得很有自信，正文的證據倒沒那麼篤定。妳讀完可以反駁我。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -363,7 +363,7 @@
           "id": "pei-branch-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "嗯，不急。閱讀不是打卡任務。",
+          "body": "好。妳有空再看就好，不需要特地回報閱讀進度。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -537,7 +537,7 @@
           "id": "qi-branch-1-in",
           "title": "",
           "senderId": "qiye",
-          "body": "可以。標題第二行太擠，視線會卡住。我明天畫給妳看。",
+          "body": "行。標題第二行的字距太緊，視線會卡住。我不是說妳做得差，明天我畫一版給妳比較。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -554,7 +554,7 @@
           "id": "qi-branch-2-in",
           "title": "",
           "senderId": "qiye",
-          "body": "喔，原來是故意的。那我收回剛剛那句，這樣看有道理。",
+          "body": "……喔，原來是故意的。那我剛剛講太快。妳這個處理有自己的理由，我收回。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -571,7 +571,7 @@
           "id": "qi-branch-3-in",
           "title": "",
           "senderId": "qiye",
-          "body": "行，妳的作品妳決定。我先把自己的印刷檔搞定。",
+          "body": "知道了，不催妳。剛才是我嘴快。妳先休息，我去弄我的印刷檔。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
@@ -1013,7 +1013,7 @@
       "id": "wait-shen-1",
       "label": "沈硯舟正在忙碌",
       "type": "delay",
-      "delayMs": 90000,
+      "delayMs": 18000,
       "next": [
         "arrival-shen-1"
       ]
@@ -1061,7 +1061,7 @@
       "id": "wait-shen-2",
       "label": "沈硯舟正在忙碌",
       "type": "delay",
-      "delayMs": 240000,
+      "delayMs": 65000,
       "next": [
         "arrival-shen-2"
       ]
@@ -1109,7 +1109,7 @@
       "id": "wait-shen-3",
       "label": "沈硯舟正在忙碌",
       "type": "delay",
-      "delayMs": 420000,
+      "delayMs": 85000,
       "next": [
         "arrival-shen-3"
       ]
@@ -1170,7 +1170,7 @@
       "id": "wait-pei-1",
       "label": "裴知聿正在忙碌",
       "type": "delay",
-      "delayMs": 90000,
+      "delayMs": 55000,
       "next": [
         "arrival-pei-1"
       ]
@@ -1218,7 +1218,7 @@
       "id": "wait-pei-2",
       "label": "裴知聿正在忙碌",
       "type": "delay",
-      "delayMs": 240000,
+      "delayMs": 90000,
       "next": [
         "arrival-pei-2"
       ]
@@ -1266,7 +1266,7 @@
       "id": "wait-pei-3",
       "label": "裴知聿正在忙碌",
       "type": "delay",
-      "delayMs": 420000,
+      "delayMs": 125000,
       "next": [
         "arrival-pei-3"
       ]
@@ -1327,7 +1327,7 @@
       "id": "wait-qi-1",
       "label": "祁野正在忙碌",
       "type": "delay",
-      "delayMs": 90000,
+      "delayMs": 9000,
       "next": [
         "arrival-qi-1"
       ]
@@ -1375,7 +1375,7 @@
       "id": "wait-qi-2",
       "label": "祁野正在忙碌",
       "type": "delay",
-      "delayMs": 240000,
+      "delayMs": 28000,
       "next": [
         "arrival-qi-2"
       ]
@@ -1423,7 +1423,7 @@
       "id": "wait-qi-3",
       "label": "祁野正在忙碌",
       "type": "delay",
-      "delayMs": 420000,
+      "delayMs": 60000,
       "next": [
         "arrival-qi-3"
       ]
@@ -1522,7 +1522,7 @@
       "id": "shen-phase2-1-1-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 38000,
       "next": [
         "shen-phase2-1-1-arrive"
       ]
@@ -1569,7 +1569,7 @@
       "id": "shen-phase2-1-2-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 56000,
       "next": [
         "shen-phase2-1-2-arrive"
       ]
@@ -1628,7 +1628,7 @@
       "id": "shen-phase2-2-1-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 38000,
       "next": [
         "shen-phase2-2-1-arrive"
       ]
@@ -1675,7 +1675,7 @@
       "id": "shen-phase2-2-2-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 56000,
       "next": [
         "shen-phase2-2-2-arrive"
       ]
@@ -1734,7 +1734,7 @@
       "id": "shen-phase2-3-1-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 38000,
       "next": [
         "shen-phase2-3-1-arrive"
       ]
@@ -1781,7 +1781,7 @@
       "id": "shen-phase2-3-2-wait",
       "label": "沈硯舟的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 56000,
       "next": [
         "shen-phase2-3-2-arrive"
       ]
@@ -1840,7 +1840,7 @@
       "id": "pei-phase2-1-1-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 72000,
       "next": [
         "pei-phase2-1-1-arrive"
       ]
@@ -1887,7 +1887,7 @@
       "id": "pei-phase2-1-2-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 90000,
       "next": [
         "pei-phase2-1-2-arrive"
       ]
@@ -1946,7 +1946,7 @@
       "id": "pei-phase2-2-1-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 72000,
       "next": [
         "pei-phase2-2-1-arrive"
       ]
@@ -1993,7 +1993,7 @@
       "id": "pei-phase2-2-2-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 90000,
       "next": [
         "pei-phase2-2-2-arrive"
       ]
@@ -2052,7 +2052,7 @@
       "id": "pei-phase2-3-1-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 72000,
       "next": [
         "pei-phase2-3-1-arrive"
       ]
@@ -2099,7 +2099,7 @@
       "id": "pei-phase2-3-2-wait",
       "label": "裴知聿的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 90000,
       "next": [
         "pei-phase2-3-2-arrive"
       ]
@@ -2158,7 +2158,7 @@
       "id": "qi-phase2-1-1-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 17000,
       "next": [
         "qi-phase2-1-1-arrive"
       ]
@@ -2205,7 +2205,7 @@
       "id": "qi-phase2-1-2-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 35000,
       "next": [
         "qi-phase2-1-2-arrive"
       ]
@@ -2264,7 +2264,7 @@
       "id": "qi-phase2-2-1-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 17000,
       "next": [
         "qi-phase2-2-1-arrive"
       ]
@@ -2311,7 +2311,7 @@
       "id": "qi-phase2-2-2-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 35000,
       "next": [
         "qi-phase2-2-2-arrive"
       ]
@@ -2370,7 +2370,7 @@
       "id": "qi-phase2-3-1-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 180000,
+      "delayMs": 17000,
       "next": [
         "qi-phase2-3-1-arrive"
       ]
@@ -2417,7 +2417,7 @@
       "id": "qi-phase2-3-2-wait",
       "label": "祁野的生活仍在繼續",
       "type": "delay",
-      "delayMs": 360000,
+      "delayMs": 35000,
       "next": [
         "qi-phase2-3-2-arrive"
       ]
