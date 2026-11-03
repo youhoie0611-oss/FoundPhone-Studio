@@ -1009,7 +1009,7 @@ function AppContent({
                     .find((item) => item.title === nextThread && !item.outgoing);
                   if (latestIncoming) onRead(latestIncoming.id);
                 }
-              }
+              }}
             />
           </Suspense>
         </div>
