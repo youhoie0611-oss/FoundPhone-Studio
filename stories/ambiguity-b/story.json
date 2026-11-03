@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 25,
+  "revision": 26,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -171,7 +171,7 @@
         {
           "id": "shen-phase2-1-1-in",
           "title": "",
-          "body": "光吧。還有被拍的人舒不舒服。不是每個人都想被鏡頭對著。",
+          "body": "有啊，拍到一張光線剛好落在會場窗邊的照片。\n不過有人入鏡的部分，我會先問過再傳。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -188,7 +188,7 @@
         {
           "id": "shen-phase2-1-2-in",
           "title": "",
-          "body": "好，妳先忙工作。\n我也要去上課了。",
+          "body": "妳那天真的幫了不少忙。\n不過別只顧著忙，現在有好好休息嗎？",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -205,7 +205,7 @@
         {
           "id": "shen-phase2-2-1-in",
           "title": "",
-          "body": "不一定，我可能還在上課。\n妳不用為了我改下班時間。",
+          "body": "我下午有課，傍晚才會過去。\n妳下班還有力氣再來就好，不用趕。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -222,7 +222,7 @@
         {
           "id": "shen-phase2-2-2-in",
           "title": "",
-          "body": "沒事，妳工作一整天了。\n不用為了活動勉強自己。",
+          "body": "那就先別答應啊。\n加班完很累的話直接回家休息，沒關係。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -239,7 +239,7 @@
         {
           "id": "shen-phase2-3-1-in",
           "title": "",
-          "body": "哈哈，因為我自己也討厭被臨時放鴿子。",
+          "body": "好，妳先忙。\n等妳有空再說就好。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -256,7 +256,7 @@
         {
           "id": "shen-phase2-3-2-in",
           "title": "",
-          "body": "好～我也去充相機電池，明天還有課。",
+          "body": "知道了，工作加油。\n我不會一直傳訊息吵妳。",
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
@@ -1630,7 +1630,7 @@
         {
           "id": "pei-phase2-1-1-in",
           "title": "",
-          "body": "對。\n目前資料不能直接支持那個業績結論。",
+          "body": "我標在第二頁右側了。\n妳先看統計區間，那邊和原始資料不一致。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1647,7 +1647,7 @@
         {
           "id": "pei-phase2-1-2-in",
           "title": "",
-          "body": "合理。比起急著同意我，這樣更有意思。",
+          "body": "好。\n原始表格的日期欄記得一起核對，摘要有漏掉一段。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1664,7 +1664,7 @@
         {
           "id": "pei-phase2-2-1-in",
           "title": "",
-          "body": "一句話：簡報好看，不代表數字可靠。",
+          "body": "嗯，我說得太直接了。\n不是在批評妳，只是這份資料確實有問題。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1681,7 +1681,7 @@
         {
           "id": "pei-phase2-2-2-in",
           "title": "",
-          "body": "先看資料來源跟統計區間。\n其他問題比較容易釐清。",
+          "body": "第二頁的統計區間跟原始表格對不上。\n我把差異標給妳。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -3089,7 +3089,7 @@
         {
           "id": "qi-phase2-1-1-in",
           "title": "",
-          "body": "我可以請妳喝杯咖啡。\n但妳不想就算，我不拿錢硬塞。",
+          "body": "嘖，我都認錯了。\n放心，下次我會停在線內。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3106,7 +3106,7 @@
         {
           "id": "qi-phase2-1-2-in",
           "title": "",
-          "body": "行。\n下次不擋路，說到做到。",
+          "body": "行，不拿請客當補償。\n我下次注意就是了。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3123,7 +3123,7 @@
         {
           "id": "qi-phase2-2-1-in",
           "title": "",
-          "body": "……以前是。\n但這次是我理虧。\n妳不需要讓我。",
+          "body": "妳也不用這麼驚訝吧。\n我又不是錯了還死不認的人。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
@@ -3140,7 +3140,7 @@
         {
           "id": "qi-phase2-2-2-in",
           "title": "",
-          "body": "可以啊。\n妳有妳的感受，我不替妳決定。",
+          "body": "行，那就翻篇。\n下次見面我會先把車停好。",
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
