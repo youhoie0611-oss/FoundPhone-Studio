@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 9,
+  "revision": 10,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -79,7 +79,8 @@
           "time": "19:14",
           "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。",
           "title": "",
-          "avatar": "./characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "hidden": true
         },
         {
           "id": "shen-03",
@@ -87,7 +88,8 @@
           "body": "喔對，我先去洗澡。剛從健身房回來，整個人都是汗。",
           "senderId": "shenyanzhou",
           "time": "19:27",
-          "avatar": "./characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "hidden": true
         },
         {
           "id": "shen-04",
@@ -95,7 +97,8 @@
           "body": "照片我傳到雲端了，林安那邊也有一份。妳有空再看就好。",
           "senderId": "shenyanzhou",
           "time": "20:46",
-          "avatar": "./characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "hidden": true
         },
         {
           "id": "shen-05",
@@ -103,7 +106,8 @@
           "body": "週五我會提早到展場拍空景。可能沒辦法一直聊天，先說一聲哈哈。",
           "senderId": "shenyanzhou",
           "time": "21:11",
-          "avatar": "./characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "hidden": true
         },
         {
           "id": "shen-branch-1-out",
@@ -283,7 +287,8 @@
           "time": "20:05",
           "body": "先提醒，摘要寫得比正文有趣。",
           "title": "",
-          "avatar": "./characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
         },
         {
           "id": "pei-03",
@@ -291,7 +296,8 @@
           "body": "如果只是要報告引用，我建議先看第二節。",
           "senderId": "peizhiyu",
           "time": "20:19",
-          "avatar": "./characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
         },
         {
           "id": "pei-04",
@@ -299,7 +305,8 @@
           "body": "我現在還在研究室，晚點要跟老師確認資料。",
           "senderId": "peizhiyu",
           "time": "20:31",
-          "avatar": "./characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
         },
         {
           "id": "pei-05",
@@ -307,7 +314,8 @@
           "body": "週五展覽我應該會晚到。不是故意神祕，是報告真的沒寫完。",
           "senderId": "peizhiyu",
           "time": "21:17",
-          "avatar": "./characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
         },
         {
           "id": "pei-branch-1-out",
@@ -487,7 +495,8 @@
           "time": "21:04",
           "body": "配色不錯。字距我有意見，但先不吵。",
           "title": "",
-          "avatar": "./characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png",
+          "hidden": true
         },
         {
           "id": "qi-03",
@@ -495,7 +504,8 @@
           "body": "我剛才講太快。字距那段我有具體建議，不是要找妳麻煩。",
           "senderId": "qiye",
           "time": "21:09",
-          "avatar": "./characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png",
+          "hidden": true
         },
         {
           "id": "qi-04",
@@ -503,7 +513,8 @@
           "body": "我現在在趕印刷檔。明天要是有空再跟妳說。",
           "senderId": "qiye",
           "time": "21:13",
-          "avatar": "./characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png",
+          "hidden": true
         },
         {
           "id": "qi-05",
@@ -511,7 +522,8 @@
           "body": "對了，妳要是覺得那版比較好就留著。作品是妳的。",
           "senderId": "qiye",
           "time": "21:16",
-          "avatar": "./characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png",
+          "hidden": true
         },
         {
           "id": "qi-branch-1-out",
@@ -968,7 +980,7 @@
       "label": "沈硯舟｜選擇回覆",
       "type": "choice",
       "event": "read",
-      "target": "shen-05",
+      "target": "shen-01",
       "once": true,
       "next": [
         "reply-shen-1",
@@ -978,7 +990,7 @@
     },
     {
       "id": "reply-shen-1",
-      "label": "想看照片",
+      "label": "謝謝你拍照，我想看看。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1026,7 +1038,7 @@
     },
     {
       "id": "reply-shen-2",
-      "label": "問展覽安排",
+      "label": "你週五幾點到？",
       "type": "action",
       "once": true,
       "actions": [
@@ -1074,7 +1086,7 @@
     },
     {
       "id": "reply-shen-3",
-      "label": "保持距離",
+      "label": "收到，你先忙自己的事就好。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1125,7 +1137,7 @@
       "label": "裴知聿｜選擇回覆",
       "type": "choice",
       "event": "read",
-      "target": "pei-05",
+      "target": "pei-01",
       "once": true,
       "next": [
         "reply-pei-1",
@@ -1135,7 +1147,7 @@
     },
     {
       "id": "reply-pei-1",
-      "label": "討論研究文章",
+      "label": "第二節的結論我有點疑問。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1183,7 +1195,7 @@
     },
     {
       "id": "reply-pei-2",
-      "label": "回應他的玩笑",
+      "label": "所以摘要比較有趣，是你的專業評價？",
       "type": "action",
       "once": true,
       "actions": [
@@ -1231,7 +1243,7 @@
     },
     {
       "id": "reply-pei-3",
-      "label": "禮貌結束",
+      "label": "謝謝分享，我有空再讀。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1282,7 +1294,7 @@
       "label": "祁野｜選擇回覆",
       "type": "choice",
       "event": "read",
-      "target": "qi-05",
+      "target": "qi-01",
       "once": true,
       "next": [
         "reply-qi-1",
@@ -1292,7 +1304,7 @@
     },
     {
       "id": "reply-qi-1",
-      "label": "詢問設計建議",
+      "label": "你說的字距問題，可以具體講嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -1340,7 +1352,7 @@
     },
     {
       "id": "reply-qi-2",
-      "label": "直接反駁",
+      "label": "我覺得那個字距是刻意保留的。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1388,7 +1400,7 @@
     },
     {
       "id": "reply-qi-3",
-      "label": "暫時不討論",
+      "label": "我現在不想改稿，先這樣。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1493,7 +1505,7 @@
     },
     {
       "id": "phase2-shen-1-a",
-      "label": "聊攝影",
+      "label": "你拍照最在意什麼？",
       "type": "action",
       "actions": [
         {
@@ -1540,7 +1552,7 @@
     },
     {
       "id": "phase2-shen-1-b",
-      "label": "先忙自己的事",
+      "label": "我先去處理展覽的事，晚點再說。",
       "type": "action",
       "actions": [
         {
@@ -1599,7 +1611,7 @@
     },
     {
       "id": "phase2-shen-2-a",
-      "label": "確認時間",
+      "label": "那我六點半左右到，會遇到你嗎？",
       "type": "action",
       "actions": [
         {
@@ -1646,7 +1658,7 @@
     },
     {
       "id": "phase2-shen-2-b",
-      "label": "不承諾到場",
+      "label": "我還不確定會不會去。",
       "type": "action",
       "actions": [
         {
@@ -1705,7 +1717,7 @@
     },
     {
       "id": "phase2-shen-3-a",
-      "label": "回應體貼",
+      "label": "謝謝你先說，這樣比較好安排。",
       "type": "action",
       "actions": [
         {
@@ -1752,7 +1764,7 @@
     },
     {
       "id": "phase2-shen-3-b",
-      "label": "暫時不回應展覽",
+      "label": "了解，那我先去忙了。",
       "type": "action",
       "actions": [
         {
@@ -1811,7 +1823,7 @@
     },
     {
       "id": "phase2-pei-1-a",
-      "label": "深入討論",
+      "label": "你覺得作者是不是把相關當成因果了？",
       "type": "action",
       "actions": [
         {
@@ -1858,7 +1870,7 @@
     },
     {
       "id": "phase2-pei-1-b",
-      "label": "先保留看法",
+      "label": "我再讀一次，現在不急著下結論。",
       "type": "action",
       "actions": [
         {
@@ -1917,7 +1929,7 @@
     },
     {
       "id": "phase2-pei-2-a",
-      "label": "繼續玩笑",
+      "label": "三頁太多了，先給我一句話版本。",
       "type": "action",
       "actions": [
         {
@@ -1964,7 +1976,7 @@
     },
     {
       "id": "phase2-pei-2-b",
-      "label": "回到正題",
+      "label": "玩笑歸玩笑，我想知道研究限制。",
       "type": "action",
       "actions": [
         {
@@ -2023,7 +2035,7 @@
     },
     {
       "id": "phase2-pei-3-a",
-      "label": "謝謝他的建議",
+      "label": "你提醒的第二節真的有幫助。",
       "type": "action",
       "actions": [
         {
@@ -2070,7 +2082,7 @@
     },
     {
       "id": "phase2-pei-3-b",
-      "label": "保持學術距離",
+      "label": "我整理完資料再跟你確認。",
       "type": "action",
       "actions": [
         {
@@ -2129,7 +2141,7 @@
     },
     {
       "id": "phase2-qi-1-a",
-      "label": "請他畫示意",
+      "label": "那你明天畫個示意給我看。",
       "type": "action",
       "actions": [
         {
@@ -2176,7 +2188,7 @@
     },
     {
       "id": "phase2-qi-1-b",
-      "label": "自己先修改",
+      "label": "我先試著調整，不用麻煩你。",
       "type": "action",
       "actions": [
         {
@@ -2235,7 +2247,7 @@
     },
     {
       "id": "phase2-qi-2-a",
-      "label": "解釋設計理念",
+      "label": "我想讓那行字有點壓迫感。",
       "type": "action",
       "actions": [
         {
@@ -2282,7 +2294,7 @@
     },
     {
       "id": "phase2-qi-2-b",
-      "label": "接受不同意見",
+      "label": "沒關係，我們對這版的看法不同。",
       "type": "action",
       "actions": [
         {
@@ -2341,7 +2353,7 @@
     },
     {
       "id": "phase2-qi-3-a",
-      "label": "感謝尊重",
+      "label": "謝謝你尊重我的決定。",
       "type": "action",
       "actions": [
         {
@@ -2388,7 +2400,7 @@
     },
     {
       "id": "phase2-qi-3-b",
-      "label": "結束討論",
+      "label": "好，那就先不討論這張海報。",
       "type": "action",
       "actions": [
         {
