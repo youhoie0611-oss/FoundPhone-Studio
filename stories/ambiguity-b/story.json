@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -31,21 +31,21 @@
       "name": "沈硯舟",
       "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。",
       "phone": "",
-      "avatar": ""
+      "avatar": "/characters/shen-yanzhou-avatar.png"
     },
     {
       "id": "peizhiyu",
       "name": "裴知聿",
       "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。",
       "phone": "",
-      "avatar": ""
+      "avatar": "/characters/pei-zhiyu-avatar.png"
     },
     {
       "id": "qiye",
       "name": "祁野",
       "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。",
       "phone": "",
-      "avatar": ""
+      "avatar": "/characters/qi-ye-avatar.png"
     },
     {
       "id": "linan",
@@ -70,35 +70,40 @@
           "senderId": "shenyanzhou",
           "time": "19:12",
           "body": "欸，妳是上次在攝影展幫忙的那位嗎？",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-02",
           "senderId": "shenyanzhou",
           "time": "19:14",
           "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-03",
           "title": "",
           "body": "喔對，我先去洗澡。剛從健身房回來，整個人都是汗。",
           "senderId": "shenyanzhou",
-          "time": "19:27"
+          "time": "19:27",
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-04",
           "title": "",
           "body": "照片我傳到雲端了，林安那邊也有一份。妳有空再看就好。",
           "senderId": "shenyanzhou",
-          "time": "20:46"
+          "time": "20:46",
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-05",
           "title": "",
           "body": "週五我會提早到展場拍空景。可能沒辦法一直聊天，先說一聲哈哈。",
           "senderId": "shenyanzhou",
-          "time": "21:11"
+          "time": "21:11",
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-1-out",
@@ -114,7 +119,8 @@
           "senderId": "shenyanzhou",
           "body": "好啊，我傳連結給妳。妳們那組燈光其實滿漂亮的。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-2-out",
@@ -130,7 +136,8 @@
           "senderId": "shenyanzhou",
           "body": "應該六點前吧。我先拍場地，之後還要幫林安搬東西。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-3-out",
@@ -146,7 +153,8 @@
           "senderId": "shenyanzhou",
           "body": "好～那我先去整理器材，有需要再找我。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-1-1-out",
@@ -162,7 +170,8 @@
           "body": "光吧。還有被拍的人舒不舒服。不是每個人都想被鏡頭對著。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-1-2-out",
@@ -178,7 +187,8 @@
           "body": "好，忙完再說。展場見也行。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-2-1-out",
@@ -194,7 +204,8 @@
           "body": "不一定，我可能在後台搬器材。妳照自己的時間來就好。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-2-2-out",
@@ -210,7 +221,8 @@
           "body": "沒事啊。妳又不是工作人員，不用為了誰特地來。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-3-1-out",
@@ -226,7 +238,8 @@
           "body": "哈哈，因為我自己也討厭被臨時放鴿子。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-3-2-out",
@@ -242,7 +255,8 @@
           "body": "好～我也去充電池。",
           "senderId": "shenyanzhou",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -260,35 +274,40 @@
           "senderId": "peizhiyu",
           "time": "20:03",
           "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
           "body": "先提醒，摘要寫得比正文有趣。",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-03",
           "title": "",
           "body": "如果只是要報告引用，我建議先看第二節。",
           "senderId": "peizhiyu",
-          "time": "20:19"
+          "time": "20:19",
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-04",
           "title": "",
           "body": "我現在還在研究室，晚點要跟老師確認資料。",
           "senderId": "peizhiyu",
-          "time": "20:31"
+          "time": "20:31",
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-05",
           "title": "",
           "body": "週五展覽我應該會晚到。不是故意神祕，是報告真的沒寫完。",
           "senderId": "peizhiyu",
-          "time": "21:17"
+          "time": "21:17",
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-1-out",
@@ -304,7 +323,8 @@
           "senderId": "peizhiyu",
           "body": "有疑問很正常。那篇文章的樣本限制其實滿值得討論。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-2-out",
@@ -320,7 +340,8 @@
           "senderId": "peizhiyu",
           "body": "算是。妳要我認真批評的話，我可以寫三頁。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-3-out",
@@ -336,7 +357,8 @@
           "senderId": "peizhiyu",
           "body": "嗯，不急。閱讀不是打卡任務。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-1-1-out",
@@ -352,7 +374,8 @@
           "body": "嗯，妳抓到重點了。至少那份資料不能直接支持那個結論。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-1-2-out",
@@ -368,7 +391,8 @@
           "body": "合理。比起急著同意我，這樣更有意思。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-2-1-out",
@@ -384,7 +408,8 @@
           "body": "一句話：寫得漂亮，不代表證據夠漂亮。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-2-2-out",
@@ -400,7 +425,8 @@
           "body": "好。先看抽樣方式，其他問題會比較清楚。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-3-1-out",
@@ -416,7 +442,8 @@
           "body": "那就好。能省妳一點時間，也不算白傳。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-3-2-out",
@@ -432,7 +459,8 @@
           "body": "可以，妳有自己的進度就照自己的來。",
           "senderId": "peizhiyu",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/pei-zhiyu-avatar.png"
         }
       ]
     },
@@ -450,35 +478,40 @@
           "senderId": "qiye",
           "time": "21:02",
           "body": "欸，設計展那張海報是妳做的？",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-02",
           "senderId": "qiye",
           "time": "21:04",
           "body": "配色不錯。字距我有意見，但先不吵。",
-          "title": ""
+          "title": "",
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-03",
           "title": "",
           "body": "我剛才講太快。字距那段我有具體建議，不是要找妳麻煩。",
           "senderId": "qiye",
-          "time": "21:09"
+          "time": "21:09",
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-04",
           "title": "",
           "body": "我現在在趕印刷檔。明天要是有空再跟妳說。",
           "senderId": "qiye",
-          "time": "21:13"
+          "time": "21:13",
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-05",
           "title": "",
           "body": "對了，妳要是覺得那版比較好就留著。作品是妳的。",
           "senderId": "qiye",
-          "time": "21:16"
+          "time": "21:16",
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-1-out",
@@ -494,7 +527,8 @@
           "senderId": "qiye",
           "body": "可以。標題第二行太擠，視線會卡住。我明天畫給妳看。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-2-out",
@@ -510,7 +544,8 @@
           "senderId": "qiye",
           "body": "喔，原來是故意的。那我收回剛剛那句，這樣看有道理。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-3-out",
@@ -526,7 +561,8 @@
           "senderId": "qiye",
           "body": "行，妳的作品妳決定。我先把自己的印刷檔搞定。",
           "time": "21:35",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-1-1-out",
@@ -542,7 +578,8 @@
           "body": "行，但我下午有課。晚上有空才傳，別等我。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-1-2-out",
@@ -558,7 +595,8 @@
           "body": "隨妳啊。有卡住再問，別硬改到自己不喜歡。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-2-1-out",
@@ -574,7 +612,8 @@
           "body": "懂了。那不是失誤，是妳要的效果。挺敢的。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-2-2-out",
@@ -590,7 +629,8 @@
           "body": "正常啊。做設計又不是每個人都要想一樣。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-3-1-out",
@@ -606,7 +646,8 @@
           "body": "這有什麼好謝的。妳做的東西，當然妳說了算。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-3-2-out",
@@ -622,7 +663,8 @@
           "body": "好。我也得去救我的印刷檔了。",
           "senderId": "qiye",
           "time": "22:06",
-          "hidden": true
+          "hidden": true,
+          "avatar": "/characters/qi-ye-avatar.png"
         }
       ]
     },
@@ -677,7 +719,9 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post"
+        "kind": "post",
+        "avatar": "/characters/shen-yanzhou-avatar.png",
+        "media": "/characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-story",
@@ -688,7 +732,9 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post"
+        "kind": "post",
+        "avatar": "/characters/pei-zhiyu-avatar.png",
+        "media": "/characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-story",
@@ -699,7 +745,9 @@
         "meta": {
           "story": "true"
         },
-        "kind": "post"
+        "kind": "post",
+        "avatar": "/characters/qi-ye-avatar.png",
+        "media": "/characters/qi-ye.png"
       },
       {
         "id": "ig-shen-post",
@@ -708,7 +756,9 @@
         "sender": "沈硯舟",
         "time": "17:40",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/shen-yanzhou-avatar.png",
+        "media": "/characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-post",
@@ -717,7 +767,9 @@
         "sender": "裴知聿",
         "time": "15:25",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/pei-zhiyu-avatar.png",
+        "media": "/characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-post",
@@ -726,7 +778,9 @@
         "sender": "祁野",
         "time": "16:12",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/qi-ye-avatar.png",
+        "media": "/characters/qi-ye.png"
       },
       {
         "id": "ig-linan-post",
@@ -744,7 +798,9 @@
         "sender": "沈硯舟",
         "time": "20:51",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/shen-yanzhou-avatar.png",
+        "media": "/characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-second",
@@ -753,7 +809,9 @@
         "sender": "裴知聿",
         "time": "21:06",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/pei-zhiyu-avatar.png",
+        "media": "/characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-second",
@@ -762,7 +820,9 @@
         "sender": "祁野",
         "time": "21:15",
         "kind": "post",
-        "meta": {}
+        "meta": {},
+        "avatar": "/characters/qi-ye-avatar.png",
+        "media": "/characters/qi-ye.png"
       },
       {
         "id": "ig-linan-story",
@@ -785,7 +845,9 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        }
+        },
+        "avatar": "/characters/shen-yanzhou-avatar.png",
+        "media": "/characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-late-story",
@@ -797,7 +859,9 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        }
+        },
+        "avatar": "/characters/pei-zhiyu-avatar.png",
+        "media": "/characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-late-story",
@@ -809,7 +873,9 @@
         "hidden": true,
         "meta": {
           "story": "true"
-        }
+        },
+        "avatar": "/characters/qi-ye-avatar.png",
+        "media": "/characters/qi-ye.png"
       }
     ],
     "notes": [
