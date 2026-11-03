@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createServer } from "vite";
 const [
   mode = "validate",
-  file = process.env.STORY_FILE || "stories/template/story.json",
+  file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
 ] = process.argv.slice(2);
 const server = await createServer({
   configFile: false,
