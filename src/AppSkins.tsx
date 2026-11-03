@@ -47,6 +47,8 @@ export type SkinProps = {
   onBack: () => void;
   thread: string;
   onThread: (s: string) => void;
+  choices?: { label: string; target: string }[];
+  onChoose?: (target: string) => void;
 };
 function Avatar({
   name,
