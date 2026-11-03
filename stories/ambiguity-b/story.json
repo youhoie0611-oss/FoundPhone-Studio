@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 17,
+  "revision": 18,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1383,6 +1383,135 @@
           "time": "22:23",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day11-opening",
+          "title": "",
+          "body": "早。\n昨天整理照片整理到一半，看到一張展場的空景。\n想到妳之前說想慢慢逛。\n今天有空我傳給妳看？",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day11-reply-1-out",
+          "title": "",
+          "body": "好啊，傳來看看。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "shen-day11-reply-1-in",
+          "title": "",
+          "body": "傳妳了。\n那張光線我很喜歡。\n不過妳要是不喜歡，也可以直接說。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day11-reply-2-out",
+          "title": "",
+          "body": "謝謝你，但我今天想休息。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "shen-day11-reply-2-in",
+          "title": "",
+          "body": "好，先休息。\n照片不會跑掉，妳有精神再看。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day21-opening",
+          "title": "",
+          "body": "早安。\n展場那邊臨時少了人，我今天得去幫忙搬器材。\n剛好想到妳可能也會去。\n先跟妳說一聲，不是要妳來幫忙。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day21-reply-1-out",
+          "title": "",
+          "body": "你一個人忙得過來嗎？",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "shen-day21-reply-1-in",
+          "title": "",
+          "body": "可以，還有其他工作人員。\n妳不用擔心。\n我忙完再跟妳報平安。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-day21-reply-2-out",
+          "title": "",
+          "body": "知道了，我今天有自己的安排。",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "shen-day21-reply-2-in",
+          "title": "",
+          "body": "收到。\n妳照自己的行程走。\n我也先去忙了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-major-event-opening",
+          "title": "",
+          "body": "有件事想跟妳說。\n展覽主辦方想把妳那組作品的現場照片放到宣傳頁。\n照片是我拍的，但作品是妳們的。\n我還沒答應，想先問妳的意思。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-major-event-reply-1-out",
+          "title": "",
+          "body": "我想先看照片和使用範圍。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "shen-major-event-reply-1-in",
+          "title": "",
+          "body": "應該的。\n我會把原圖和用途整理給妳。\n在妳確認之前，我不會交出去。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-major-event-reply-2-out",
+          "title": "",
+          "body": "我不希望作品照片被公開。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "shen-major-event-reply-2-in",
+          "title": "",
+          "body": "好，我直接回絕。\n妳不用解釋。\n謝謝妳講得這麼清楚。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -2713,6 +2842,135 @@
           "time": "22:23",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-opening",
+          "title": "",
+          "body": "早。\n昨天提到的那篇研究，我找到作者後來的更正說明。\n妳可能會用到。\n需要我傳連結嗎？",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-reply-1-out",
+          "title": "",
+          "body": "傳給我吧，我想看。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "pei-day11-reply-1-in",
+          "title": "",
+          "body": "傳了。\n更正不長，但很關鍵。\n看完有問題再問。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-reply-2-out",
+          "title": "",
+          "body": "先不用，我想自己找。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "pei-day11-reply-2-in",
+          "title": "",
+          "body": "可以。\n作者網站的修訂紀錄有收錄。\n我不替妳省掉查證那一步。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-opening",
+          "title": "",
+          "body": "早上好。\n我今天要做一場小型報告。\n昨天重新看妳提過的疑問，發現確實有個地方我忽略了。\n先跟妳說一聲。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-reply-1-out",
+          "title": "",
+          "body": "哪個地方？我有點好奇。",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "pei-day21-reply-1-in",
+          "title": "",
+          "body": "樣本的時間範圍。\n妳提醒我不要只看結論，是對的。\n謝謝。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-reply-2-out",
+          "title": "",
+          "body": "你先準備報告，晚點再說。",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "pei-day21-reply-2-in",
+          "title": "",
+          "body": "好。\n報告結束再聊。\n我會把修正後的版本留下來。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-major-event-opening",
+          "title": "",
+          "body": "我需要更正之前跟妳說的一件事。\n我引用的那份資料有新版，舊版的推論不完全成立。\n如果妳已經拿去做報告，我應該先告訴妳。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-major-event-reply-1-out",
+          "title": "",
+          "body": "謝謝你主動更正，我們一起核對。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "pei-major-event-reply-1-in",
+          "title": "",
+          "body": "可以。\n先從原始資料核對。\n我會把我之前說錯的地方標出來。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-major-event-reply-2-out",
+          "title": "",
+          "body": "我有點不高興，你應該早點確認。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "pei-major-event-reply-2-in",
+          "title": "",
+          "body": "妳說得對。\n是我查證不夠完整。\n我道歉，不會拿忙當理由。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         }
       ]
     },
@@ -4041,6 +4299,135 @@
           "body": "好。\n妳忙妳的，我也去練球。\n有空再鬥嘴。",
           "senderId": "qiye",
           "time": "22:23",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day11-opening",
+          "title": "",
+          "body": "喂，早。\n昨天那張破印刷檔我終於救好了。\n還有，我試了一版妳說的壓迫感字距。\n妳要不要看？",
+          "senderId": "qiye",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day11-reply-1-out",
+          "title": "",
+          "body": "拿來啊，我看看你多厲害。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "qi-day11-reply-1-in",
+          "title": "",
+          "body": "等著。\n先說好，我只是試做，不是要改妳的稿。\n看完可以盡量嘴。",
+          "senderId": "qiye",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day11-reply-2-out",
+          "title": "",
+          "body": "不用，我想保留自己的版本。",
+          "senderId": "owner",
+          "time": "2026-11-04 09:15",
+          "hidden": true
+        },
+        {
+          "id": "qi-day11-reply-2-in",
+          "title": "",
+          "body": "行啊。\n本來就妳的作品。\n我這版留著自己練手。",
+          "senderId": "qiye",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day21-opening",
+          "title": "",
+          "body": "欸。\n今天校隊選拔加練，我等等要進球場。\n昨天妳說的那句話我有記。\n先跟妳講，別說我只會嘴。",
+          "senderId": "qiye",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day21-reply-1-out",
+          "title": "",
+          "body": "加油，別再硬撐受傷了。",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "qi-day21-reply-1-in",
+          "title": "",
+          "body": "知道啦。\n有狀況我會下場。\n妳不要把我當三歲。",
+          "senderId": "qiye",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-day21-reply-2-out",
+          "title": "",
+          "body": "你先專心練球，別一直滑手機。",
+          "senderId": "owner",
+          "time": "2026-11-05 09:15",
+          "hidden": true
+        },
+        {
+          "id": "qi-day21-reply-2-in",
+          "title": "",
+          "body": "嘖，被抓包。\n好啦，收手機。\n打完再說。",
+          "senderId": "qiye",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-major-event-opening",
+          "title": "",
+          "body": "欸，出事了。\n有人把妳那張海報的試作圖放到社團群，還說是我改的。\n我沒傳出去。\n我現在去問清楚，妳先別急著回那些留言。",
+          "senderId": "qiye",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-major-event-reply-1-out",
+          "title": "",
+          "body": "先不要吵，我們把來源查清楚。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "qi-major-event-reply-1-in",
+          "title": "",
+          "body": "……好。\n我先去問誰拿到檔案。\n妳說得對，亂衝只會更亂。",
+          "senderId": "qiye",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-major-event-reply-2-out",
+          "title": "",
+          "body": "我自己處理，你先別插手。",
+          "senderId": "owner",
+          "time": "2026-11-06 18:30",
+          "hidden": true
+        },
+        {
+          "id": "qi-major-event-reply-2-in",
+          "title": "",
+          "body": "行。\n這是妳的作品，妳決定。\n需要我說明我沒外傳時，再叫我。",
+          "senderId": "qiye",
+          "time": "2026-11-06 18:30",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
         }
@@ -16433,6 +16820,1194 @@
           "type": "notification",
           "key": "",
           "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day11-trigger-shen-r10-a-in",
+      "label": "沈硯舟｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r10-a-in",
+      "next": [
+        "shen-day11-wake"
+      ]
+    },
+    {
+      "id": "shen-day11-trigger-shen-r10-b-in",
+      "label": "沈硯舟｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r10-b-in",
+      "next": [
+        "shen-day11-wake"
+      ]
+    },
+    {
+      "id": "shen-day11-wake",
+      "label": "沈硯舟｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "shen-day11-arrival"
+      ]
+    },
+    {
+      "id": "shen-day11-arrival",
+      "label": "沈硯舟｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day11-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day11-choice",
+      "label": "沈硯舟｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-day11-opening",
+      "next": [
+        "shen-day11-reply-1",
+        "shen-day11-reply-2"
+      ]
+    },
+    {
+      "id": "shen-day11-reply-1",
+      "label": "好啊，傳來看看。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day11-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-day11-reply-1-wait"
+      ]
+    },
+    {
+      "id": "shen-day11-reply-1-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-day11-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "shen-day11-reply-1-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day11-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day11-reply-2",
+      "label": "謝謝你，但我今天想休息。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day11-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-day11-reply-2-wait"
+      ]
+    },
+    {
+      "id": "shen-day11-reply-2-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-day11-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "shen-day11-reply-2-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day11-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day21-trigger-shen-r20-a-in",
+      "label": "沈硯舟｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r20-a-in",
+      "next": [
+        "shen-day21-wake"
+      ]
+    },
+    {
+      "id": "shen-day21-trigger-shen-r20-b-in",
+      "label": "沈硯舟｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r20-b-in",
+      "next": [
+        "shen-day21-wake"
+      ]
+    },
+    {
+      "id": "shen-day21-wake",
+      "label": "沈硯舟｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "shen-day21-arrival"
+      ]
+    },
+    {
+      "id": "shen-day21-arrival",
+      "label": "沈硯舟｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day21-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day21-choice",
+      "label": "沈硯舟｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-day21-opening",
+      "next": [
+        "shen-day21-reply-1",
+        "shen-day21-reply-2"
+      ]
+    },
+    {
+      "id": "shen-day21-reply-1",
+      "label": "你一個人忙得過來嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day21-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-day21-reply-1-wait"
+      ]
+    },
+    {
+      "id": "shen-day21-reply-1-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-day21-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "shen-day21-reply-1-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day21-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-day21-reply-2",
+      "label": "知道了，我今天有自己的安排。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day21-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-day21-reply-2-wait"
+      ]
+    },
+    {
+      "id": "shen-day21-reply-2-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-day21-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "shen-day21-reply-2-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-day21-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-major-event-trigger-shen-r30-a-in",
+      "label": "沈硯舟｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r30-a-in",
+      "next": [
+        "shen-major-event-wake"
+      ]
+    },
+    {
+      "id": "shen-major-event-trigger-shen-r30-b-in",
+      "label": "沈硯舟｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r30-b-in",
+      "next": [
+        "shen-major-event-wake"
+      ]
+    },
+    {
+      "id": "shen-major-event-wake",
+      "label": "沈硯舟｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 110000,
+      "next": [
+        "shen-major-event-arrival"
+      ]
+    },
+    {
+      "id": "shen-major-event-arrival",
+      "label": "沈硯舟｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-major-event-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-major-event-choice",
+      "label": "沈硯舟｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-major-event-opening",
+      "next": [
+        "shen-major-event-reply-1",
+        "shen-major-event-reply-2"
+      ]
+    },
+    {
+      "id": "shen-major-event-reply-1",
+      "label": "我想先看照片和使用範圍。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-major-event-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-major-event-reply-1-wait"
+      ]
+    },
+    {
+      "id": "shen-major-event-reply-1-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-major-event-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "shen-major-event-reply-1-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-major-event-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-major-event-reply-2",
+      "label": "我不希望作品照片被公開。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-major-event-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-major-event-reply-2-wait"
+      ]
+    },
+    {
+      "id": "shen-major-event-reply-2-wait",
+      "label": "沈硯舟｜等待回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "shen-major-event-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "shen-major-event-reply-2-arrival",
+      "label": "沈硯舟｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-major-event-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day11-trigger-pei-r10-a-in",
+      "label": "裴知聿｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r10-a-in",
+      "next": [
+        "pei-day11-wake"
+      ]
+    },
+    {
+      "id": "pei-day11-trigger-pei-r10-b-in",
+      "label": "裴知聿｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r10-b-in",
+      "next": [
+        "pei-day11-wake"
+      ]
+    },
+    {
+      "id": "pei-day11-wake",
+      "label": "裴知聿｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "pei-day11-arrival"
+      ]
+    },
+    {
+      "id": "pei-day11-arrival",
+      "label": "裴知聿｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day11-choice",
+      "label": "裴知聿｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-day11-opening",
+      "next": [
+        "pei-day11-reply-1",
+        "pei-day11-reply-2"
+      ]
+    },
+    {
+      "id": "pei-day11-reply-1",
+      "label": "傳給我吧，我想看。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-day11-reply-1-wait"
+      ]
+    },
+    {
+      "id": "pei-day11-reply-1-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-day11-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "pei-day11-reply-1-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day11-reply-2",
+      "label": "先不用，我想自己找。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-day11-reply-2-wait"
+      ]
+    },
+    {
+      "id": "pei-day11-reply-2-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-day11-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "pei-day11-reply-2-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day21-trigger-pei-r20-a-in",
+      "label": "裴知聿｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r20-a-in",
+      "next": [
+        "pei-day21-wake"
+      ]
+    },
+    {
+      "id": "pei-day21-trigger-pei-r20-b-in",
+      "label": "裴知聿｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r20-b-in",
+      "next": [
+        "pei-day21-wake"
+      ]
+    },
+    {
+      "id": "pei-day21-wake",
+      "label": "裴知聿｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "pei-day21-arrival"
+      ]
+    },
+    {
+      "id": "pei-day21-arrival",
+      "label": "裴知聿｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day21-choice",
+      "label": "裴知聿｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-day21-opening",
+      "next": [
+        "pei-day21-reply-1",
+        "pei-day21-reply-2"
+      ]
+    },
+    {
+      "id": "pei-day21-reply-1",
+      "label": "哪個地方？我有點好奇。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-day21-reply-1-wait"
+      ]
+    },
+    {
+      "id": "pei-day21-reply-1-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-day21-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "pei-day21-reply-1-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day21-reply-2",
+      "label": "你先準備報告，晚點再說。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-day21-reply-2-wait"
+      ]
+    },
+    {
+      "id": "pei-day21-reply-2-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-day21-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "pei-day21-reply-2-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-major-event-trigger-pei-r30-a-in",
+      "label": "裴知聿｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r30-a-in",
+      "next": [
+        "pei-major-event-wake"
+      ]
+    },
+    {
+      "id": "pei-major-event-trigger-pei-r30-b-in",
+      "label": "裴知聿｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "pei-r30-b-in",
+      "next": [
+        "pei-major-event-wake"
+      ]
+    },
+    {
+      "id": "pei-major-event-wake",
+      "label": "裴知聿｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 110000,
+      "next": [
+        "pei-major-event-arrival"
+      ]
+    },
+    {
+      "id": "pei-major-event-arrival",
+      "label": "裴知聿｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-major-event-choice",
+      "label": "裴知聿｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-major-event-opening",
+      "next": [
+        "pei-major-event-reply-1",
+        "pei-major-event-reply-2"
+      ]
+    },
+    {
+      "id": "pei-major-event-reply-1",
+      "label": "謝謝你主動更正，我們一起核對。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-major-event-reply-1-wait"
+      ]
+    },
+    {
+      "id": "pei-major-event-reply-1-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-major-event-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "pei-major-event-reply-1-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-major-event-reply-2",
+      "label": "我有點不高興，你應該早點確認。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-major-event-reply-2-wait"
+      ]
+    },
+    {
+      "id": "pei-major-event-reply-2-wait",
+      "label": "裴知聿｜等待回覆",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "pei-major-event-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "pei-major-event-reply-2-arrival",
+      "label": "裴知聿｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day11-trigger-qi-r10-a-in",
+      "label": "祁野｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r10-a-in",
+      "next": [
+        "qi-day11-wake"
+      ]
+    },
+    {
+      "id": "qi-day11-trigger-qi-r10-b-in",
+      "label": "祁野｜day11後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r10-b-in",
+      "next": [
+        "qi-day11-wake"
+      ]
+    },
+    {
+      "id": "qi-day11-wake",
+      "label": "祁野｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "qi-day11-arrival"
+      ]
+    },
+    {
+      "id": "qi-day11-arrival",
+      "label": "祁野｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day11-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day11-choice",
+      "label": "祁野｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-day11-opening",
+      "next": [
+        "qi-day11-reply-1",
+        "qi-day11-reply-2"
+      ]
+    },
+    {
+      "id": "qi-day11-reply-1",
+      "label": "拿來啊，我看看你多厲害。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day11-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-day11-reply-1-wait"
+      ]
+    },
+    {
+      "id": "qi-day11-reply-1-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-day11-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "qi-day11-reply-1-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day11-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day11-reply-2",
+      "label": "不用，我想保留自己的版本。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day11-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-day11-reply-2-wait"
+      ]
+    },
+    {
+      "id": "qi-day11-reply-2-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-day11-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "qi-day11-reply-2-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day11-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day21-trigger-qi-r20-a-in",
+      "label": "祁野｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r20-a-in",
+      "next": [
+        "qi-day21-wake"
+      ]
+    },
+    {
+      "id": "qi-day21-trigger-qi-r20-b-in",
+      "label": "祁野｜day21後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r20-b-in",
+      "next": [
+        "qi-day21-wake"
+      ]
+    },
+    {
+      "id": "qi-day21-wake",
+      "label": "祁野｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 90000,
+      "next": [
+        "qi-day21-arrival"
+      ]
+    },
+    {
+      "id": "qi-day21-arrival",
+      "label": "祁野｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day21-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day21-choice",
+      "label": "祁野｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-day21-opening",
+      "next": [
+        "qi-day21-reply-1",
+        "qi-day21-reply-2"
+      ]
+    },
+    {
+      "id": "qi-day21-reply-1",
+      "label": "加油，別再硬撐受傷了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day21-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-day21-reply-1-wait"
+      ]
+    },
+    {
+      "id": "qi-day21-reply-1-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-day21-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "qi-day21-reply-1-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day21-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-day21-reply-2",
+      "label": "你先專心練球，別一直滑手機。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day21-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-day21-reply-2-wait"
+      ]
+    },
+    {
+      "id": "qi-day21-reply-2-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-day21-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "qi-day21-reply-2-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-day21-reply-2-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-major-event-trigger-qi-r30-a-in",
+      "label": "祁野｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r30-a-in",
+      "next": [
+        "qi-major-event-wake"
+      ]
+    },
+    {
+      "id": "qi-major-event-trigger-qi-r30-b-in",
+      "label": "祁野｜major-event後主動聯絡",
+      "type": "event",
+      "event": "read",
+      "target": "qi-r30-b-in",
+      "next": [
+        "qi-major-event-wake"
+      ]
+    },
+    {
+      "id": "qi-major-event-wake",
+      "label": "祁野｜稍後主動聯絡",
+      "type": "delay",
+      "delayMs": 110000,
+      "next": [
+        "qi-major-event-arrival"
+      ]
+    },
+    {
+      "id": "qi-major-event-arrival",
+      "label": "祁野｜主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-major-event-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-major-event-choice",
+      "label": "祁野｜回覆主動訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "qi-major-event-opening",
+      "next": [
+        "qi-major-event-reply-1",
+        "qi-major-event-reply-2"
+      ]
+    },
+    {
+      "id": "qi-major-event-reply-1",
+      "label": "先不要吵，我們把來源查清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-major-event-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-major-event-reply-1-wait"
+      ]
+    },
+    {
+      "id": "qi-major-event-reply-1-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-major-event-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "qi-major-event-reply-1-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-major-event-reply-1-in",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-major-event-reply-2",
+      "label": "我自己處理，你先別插手。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-major-event-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-major-event-reply-2-wait"
+      ]
+    },
+    {
+      "id": "qi-major-event-reply-2-wait",
+      "label": "祁野｜等待回覆",
+      "type": "delay",
+      "delayMs": 9000,
+      "next": [
+        "qi-major-event-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "qi-major-event-reply-2-arrival",
+      "label": "祁野｜回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-major-event-reply-2-in",
+          "value": true
         }
       ],
       "next": []
