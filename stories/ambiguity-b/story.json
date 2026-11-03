@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
-  "description": "從原本手機桌面探索 KKT、Instagram 與三位有獨立生活的成年角色。",
-  "revision": 2,
+  "description": "序章〈展覽前的三天〉：透過原有手機桌面、KKT、Instagram、備忘錄與行事曆探索三位獨立生活的角色。",
+  "revision": 3,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -29,22 +29,30 @@
     {
       "id": "shenyanzhou",
       "name": "沈硯舟",
-      "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。 "
+      "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。",
+      "phone": "",
+      "avatar": ""
     },
     {
       "id": "peizhiyu",
       "name": "裴知聿",
-      "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。 "
+      "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。",
+      "phone": "",
+      "avatar": ""
     },
     {
       "id": "qiye",
       "name": "祁野",
-      "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。 "
+      "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。",
+      "phone": "",
+      "avatar": ""
     },
     {
       "id": "linan",
       "name": "林安",
-      "bio": "共同朋友，偶爾組織校園活動。"
+      "bio": "共同朋友，偶爾組織校園活動。",
+      "phone": "",
+      "avatar": ""
     }
   ],
   "chats": [
@@ -61,13 +69,36 @@
           "id": "shen-01",
           "senderId": "shenyanzhou",
           "time": "19:12",
-          "body": "欸，妳是上次在攝影展幫忙的那位嗎？"
+          "body": "欸，妳是上次在攝影展幫忙的那位嗎？",
+          "title": ""
         },
         {
           "id": "shen-02",
           "senderId": "shenyanzhou",
           "time": "19:14",
-          "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。"
+          "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。",
+          "title": ""
+        },
+        {
+          "id": "shen-03",
+          "title": "",
+          "body": "喔對，我先去洗澡。剛從健身房回來，整個人都是汗。",
+          "senderId": "shenyanzhou",
+          "time": "19:27"
+        },
+        {
+          "id": "shen-04",
+          "title": "",
+          "body": "照片我傳到雲端了，林安那邊也有一份。妳有空再看就好。",
+          "senderId": "shenyanzhou",
+          "time": "20:46"
+        },
+        {
+          "id": "shen-05",
+          "title": "",
+          "body": "週五我會提早到展場拍空景。可能沒辦法一直聊天，先說一聲哈哈。",
+          "senderId": "shenyanzhou",
+          "time": "21:11"
         }
       ]
     },
@@ -84,13 +115,36 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？"
+          "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？",
+          "title": ""
         },
         {
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
-          "body": "先提醒，摘要寫得比正文有趣。"
+          "body": "先提醒，摘要寫得比正文有趣。",
+          "title": ""
+        },
+        {
+          "id": "pei-03",
+          "title": "",
+          "body": "如果只是要報告引用，我建議先看第二節。",
+          "senderId": "peizhiyu",
+          "time": "20:19"
+        },
+        {
+          "id": "pei-04",
+          "title": "",
+          "body": "我現在還在研究室，晚點要跟老師確認資料。",
+          "senderId": "peizhiyu",
+          "time": "20:31"
+        },
+        {
+          "id": "pei-05",
+          "title": "",
+          "body": "週五展覽我應該會晚到。不是故意神祕，是報告真的沒寫完。",
+          "senderId": "peizhiyu",
+          "time": "21:17"
         }
       ]
     },
@@ -107,13 +161,36 @@
           "id": "qi-01",
           "senderId": "qiye",
           "time": "21:02",
-          "body": "欸，設計展那張海報是妳做的？"
+          "body": "欸，設計展那張海報是妳做的？",
+          "title": ""
         },
         {
           "id": "qi-02",
           "senderId": "qiye",
           "time": "21:04",
-          "body": "配色不錯。字距我有意見，但先不吵。"
+          "body": "配色不錯。字距我有意見，但先不吵。",
+          "title": ""
+        },
+        {
+          "id": "qi-03",
+          "title": "",
+          "body": "我剛才講太快。字距那段我有具體建議，不是要找妳麻煩。",
+          "senderId": "qiye",
+          "time": "21:09"
+        },
+        {
+          "id": "qi-04",
+          "title": "",
+          "body": "我現在在趕印刷檔。明天要是有空再跟妳說。",
+          "senderId": "qiye",
+          "time": "21:13"
+        },
+        {
+          "id": "qi-05",
+          "title": "",
+          "body": "對了，妳要是覺得那版比較好就留著。作品是妳的。",
+          "senderId": "qiye",
+          "time": "21:16"
         }
       ]
     },
@@ -130,7 +207,29 @@
           "id": "lin-01",
           "senderId": "linan",
           "time": "18:30",
-          "body": "週五的跨系展覽記得喔！硯舟會拍照，知聿說晚點才到，祁野還在趕設計稿。大家各忙各的，不用勉強一起來。"
+          "body": "週五的跨系展覽記得喔！硯舟會拍照，知聿說晚點才到，祁野還在趕設計稿。大家各忙各的，不用勉強一起來。",
+          "title": ""
+        },
+        {
+          "id": "lin-02",
+          "title": "",
+          "body": "硯舟答應幫忙拍照，但他週五下午有課。",
+          "senderId": "linan",
+          "time": "18:37"
+        },
+        {
+          "id": "lin-03",
+          "title": "",
+          "body": "知聿要先交研究室資料，祁野那邊印刷也還沒定稿。",
+          "senderId": "linan",
+          "time": "18:41"
+        },
+        {
+          "id": "lin-04",
+          "title": "",
+          "body": "不用替大家協調感情啦，我只是怕活動現場人手不夠。",
+          "senderId": "linan",
+          "time": "18:44"
         }
       ]
     }
@@ -145,7 +244,8 @@
         "time": "18:42",
         "meta": {
           "story": "true"
-        }
+        },
+        "kind": "post"
       },
       {
         "id": "ig-pei-story",
@@ -155,7 +255,8 @@
         "time": "20:16",
         "meta": {
           "story": "true"
-        }
+        },
+        "kind": "post"
       },
       {
         "id": "ig-qi-story",
@@ -165,7 +266,8 @@
         "time": "21:08",
         "meta": {
           "story": "true"
-        }
+        },
+        "kind": "post"
       },
       {
         "id": "ig-shen-post",
@@ -173,7 +275,8 @@
         "body": "底片洗出來了。最近拍的夕陽比人還多。",
         "sender": "沈硯舟",
         "time": "17:40",
-        "kind": "post"
+        "kind": "post",
+        "meta": {}
       },
       {
         "id": "ig-pei-post",
@@ -181,7 +284,8 @@
         "body": "讀書會紀錄：關於我們為什麼容易誤判他人的意圖。",
         "sender": "裴知聿",
         "time": "15:25",
-        "kind": "post"
+        "kind": "post",
+        "meta": {}
       },
       {
         "id": "ig-qi-post",
@@ -189,7 +293,55 @@
         "body": "視傳系期末展的字體實驗。做了三版，還是不滿意。",
         "sender": "祁野",
         "time": "16:12",
-        "kind": "post"
+        "kind": "post",
+        "meta": {}
+      },
+      {
+        "id": "ig-linan-post",
+        "title": "林安｜跨系展覽公告",
+        "body": "週五晚上七點，校園展覽廳。歡迎自由參觀，不必報名。",
+        "sender": "林安",
+        "time": "17:58",
+        "kind": "post",
+        "meta": {}
+      },
+      {
+        "id": "ig-shen-second",
+        "title": "沈硯舟｜日常",
+        "body": "今天相機電池忘記充。還好林安有借我一顆。",
+        "sender": "沈硯舟",
+        "time": "20:51",
+        "kind": "post",
+        "meta": {}
+      },
+      {
+        "id": "ig-pei-second",
+        "title": "裴知聿｜研究室",
+        "body": "一份問卷改到第六版。研究方法不是魔法。",
+        "sender": "裴知聿",
+        "time": "21:06",
+        "kind": "post",
+        "meta": {}
+      },
+      {
+        "id": "ig-qi-second",
+        "title": "祁野｜印刷進度",
+        "body": "凌晨之前一定要送印。再改我就把滑板拿去壓紙。",
+        "sender": "祁野",
+        "time": "21:15",
+        "kind": "post",
+        "meta": {}
+      },
+      {
+        "id": "ig-linan-story",
+        "title": "林安｜限時動態",
+        "body": "展覽現場佈置照片。配字：有人要來幫忙貼標籤嗎？",
+        "sender": "林安",
+        "time": "18:12",
+        "kind": "post",
+        "meta": {
+          "story": "true"
+        }
       }
     ],
     "notes": [
@@ -197,6 +349,11 @@
         "id": "note-first-week",
         "title": "這週的事",
         "body": "週五跨系展覽。沈硯舟說可以傳照片；裴知聿分享研究文章；祁野對海報有意見。這些只是目前收到的訊息。"
+      },
+      {
+        "id": "note-character-observations",
+        "title": "展覽前的聯絡紀錄",
+        "body": "沈硯舟：提早到場拍空景，傍晚健身後才回訊息。\\n裴知聿：在研究室趕報告，分享閱讀方向。\\n祁野：忙著修印刷檔，對設計提出意見後又補充尊重作者決定。\\n這些都是可觀察的日常，不代表任何人的感情。"
       }
     ],
     "calendar": [
@@ -204,6 +361,11 @@
         "id": "cal-exhibition",
         "title": "跨系展覽",
         "body": "週五 19:00｜校園展覽廳。是否出席由妳決定。"
+      },
+      {
+        "id": "cal-prep",
+        "title": "展前準備",
+        "body": "週四｜海報送印、場地佈置。每個人有自己的工作，不保證同時出現。"
       }
     ]
   },
@@ -241,21 +403,18 @@
   },
   "events": [
     {
-      "id": "first-open",
+      "id": "intro-observation",
+      "label": "展覽前夕",
       "type": "start",
-      "label": "新的訊息",
-      "actions": [
-        {
-          "type": "notification",
-          "key": "",
-          "value": "KakaoTalk：你有幾則未讀訊息"
-        }
-      ]
+      "next": []
     },
     {
-      "id": "read-shen",
+      "id": "observe-shen",
+      "label": "閱讀初次聯絡",
+      "type": "event",
       "event": "read",
-      "target": "shen-01",
+      "target": "shen-02",
+      "once": true,
       "actions": [
         {
           "type": "variable",
@@ -265,9 +424,12 @@
       ]
     },
     {
-      "id": "read-pei",
+      "id": "observe-pei",
+      "label": "閱讀初次聯絡",
+      "type": "event",
       "event": "read",
-      "target": "pei-01",
+      "target": "pei-02",
+      "once": true,
       "actions": [
         {
           "type": "variable",
@@ -277,9 +439,12 @@
       ]
     },
     {
-      "id": "read-qi",
+      "id": "observe-qi",
+      "label": "閱讀初次聯絡",
+      "type": "event",
       "event": "read",
-      "target": "qi-01",
+      "target": "qi-02",
+      "once": true,
       "actions": [
         {
           "type": "variable",
