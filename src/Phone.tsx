@@ -578,7 +578,7 @@ function PhoneRuntime({
               )}
             </div>
           )}
-          {!creator && s.choices.length > 0 && !locked && !work.chats?.some((chat) => chat.id.startsWith("kkt-")) && (
+          {!creator && s.choices.length > 0 && !locked && !s.choices.every((choice) => /^(reply|phase2)-(shen|pei|qi)-/.test(choice.target)) && (
             <div className="story-overlay">
               <span className="eyebrow">故事来到一个岔路口</span>
               <h3>你会如何选择？</h3>
