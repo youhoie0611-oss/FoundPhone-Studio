@@ -101,6 +101,16 @@ export function MymyKakao(p: SkinProps) {
     const node = scroll.current;
     if (node) node.scrollTop = node.scrollHeight;
   }, [p.thread, messages.length]);
+  const lastRead = useRef("");
+  useEffect(() => {
+    if (!p.thread || p.creator) return;
+    const latest = [...messages].reverse().find((m) => !m.outgoing && m.meta.local !== "true");
+    if (!latest) return;
+    const key = p.thread + ":" + latest.id;
+    if (lastRead.current === key) return;
+    lastRead.current = key;
+    p.onRead(latest.id);
+  }, [p.thread, p.creator, messages, p.onRead]);
   return (
     <div className="mymy-ui mymy-kakao" data-mymy="kakao">
       {p.thread ? (
