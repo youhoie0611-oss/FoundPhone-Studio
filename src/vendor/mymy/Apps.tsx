@@ -189,7 +189,7 @@ export function MymyKakao(p: SkinProps) {
           <div className="kkt-reply-tray" aria-label="選擇要傳送的回覆">
             {!p.creator && !isTyping && p.choices?.filter((choice) => {
               const character = p.thread === "沈硯舟" ? "shen" : p.thread === "裴知聿" ? "pei" : p.thread === "祁野" ? "qi" : "";
-              return character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-"));
+              return character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-") || choice.target.startsWith("phase3-" + character + "-"));
             }).map((choice) => (
               <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>
                 {choice.label}
