@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 23,
+  "revision": 24,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -4446,29 +4446,64 @@
           "id": "lin-01",
           "senderId": "linan",
           "time": "18:30",
-          "body": "妳上次活動認識的沈硯舟還有聯絡嗎？\n裴知聿不是妳公司的同事？\n對了，停車場那個開跑車的祁野，妳居然也認識？",
+          "body": "欸，妳今天下班了沒？\n上次活動認識的沈硯舟，後來有再聯絡妳嗎？",
           "title": ""
         },
         {
           "id": "lin-02",
           "title": "",
-          "body": "硯舟說他下午有課，活動攝影會晚點到。",
+          "body": "對了，週五活動的時間改成七點半。\n妳不用特地來幫忙，先跟妳說一聲。",
           "senderId": "linan",
-          "time": "18:37"
+          "time": "18:37",
+          "hidden": true
         },
         {
           "id": "lin-03",
           "title": "",
-          "body": "裴知聿最近忙公司的專案，祁野則說要去談一個活動合作。",
+          "body": "我剛才在公司附近看到裴知聿。\n才想起來他是妳同事，世界真小。",
           "senderId": "linan",
-          "time": "18:41"
+          "time": "18:41",
+          "hidden": true
         },
         {
           "id": "lin-04",
           "title": "",
-          "body": "不用替大家協調感情啦，我只是怕活動現場人手不夠。",
+          "body": "還有停車場那個祁野……\n他是不是終於跟妳道歉了？",
           "senderId": "linan",
-          "time": "18:44"
+          "time": "18:44",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-1-out",
+          "title": "",
+          "body": "有啊，他傳照片來問我。",
+          "senderId": "owner",
+          "time": "18:31",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-1-in",
+          "title": "",
+          "body": "喔～原來他真的有傳。\n我還以為他只顧著拍照。",
+          "senderId": "linan",
+          "time": "18:32",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-2-out",
+          "title": "",
+          "body": "有聯絡，但我們還不熟。",
+          "senderId": "owner",
+          "time": "18:31",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-2-in",
+          "title": "",
+          "body": "正常啦，才見過一次。\n慢慢認識就好。",
+          "senderId": "linan",
+          "time": "18:32",
+          "hidden": true
         }
       ]
     }
@@ -18008,6 +18043,194 @@
           "type": "unlock",
           "key": "qi-major-event-reply-2-in",
           "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-reply-1",
+      "label": "有啊，他傳照片來問我。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-1-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-1-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 11000,
+      "next": [
+        "lin-reply-1-arrival"
+      ]
+    },
+    {
+      "id": "lin-reply-1-arrival",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-reply-2",
+      "label": "有聯絡，但我們還不熟。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-2-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-2-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 11000,
+      "next": [
+        "lin-reply-2-arrival"
+      ]
+    },
+    {
+      "id": "lin-reply-2-arrival",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-initial-choice",
+      "label": "林安｜回覆訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "lin-01",
+      "next": [
+        "lin-reply-1",
+        "lin-reply-2"
+      ]
+    },
+    {
+      "id": "lin-background-start",
+      "label": "林安｜獨立訊息排程",
+      "type": "start",
+      "next": [
+        "lin-background-wait-2"
+      ]
+    },
+    {
+      "id": "lin-background-wait-2",
+      "label": "林安｜等待第2則訊息",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "lin-background-arrive-2"
+      ]
+    },
+    {
+      "id": "lin-background-arrive-2",
+      "label": "林安｜主動訊息2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-02",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": [
+        "lin-background-wait-3"
+      ]
+    },
+    {
+      "id": "lin-background-wait-3",
+      "label": "林安｜等待第3則訊息",
+      "type": "delay",
+      "delayMs": 45000,
+      "next": [
+        "lin-background-arrive-3"
+      ]
+    },
+    {
+      "id": "lin-background-arrive-3",
+      "label": "林安｜主動訊息3",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-03",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": [
+        "lin-background-wait-4"
+      ]
+    },
+    {
+      "id": "lin-background-wait-4",
+      "label": "林安｜等待第4則訊息",
+      "type": "delay",
+      "delayMs": 45000,
+      "next": [
+        "lin-background-arrive-4"
+      ]
+    },
+    {
+      "id": "lin-background-arrive-4",
+      "label": "林安｜主動訊息4",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-04",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
         }
       ],
       "next": []
