@@ -1,11 +1,11 @@
 {
   "scriptVersion": 1,
   "id": "between-the-lines-b-demo",
-  "title": "未定义关系｜第一夜",
-  "description": "预设剧情 B 版示范：只记录可观察的事实，不替玩家解释暧昧。",
-  "revision": 1,
+  "title": "未定義關係｜三人初識",
+  "description": "從原本手機桌面探索 KKT、Instagram 與三位有獨立生活的成年角色。",
+  "revision": 2,
   "phone": {
-    "owner": "玩家",
+    "owner": "妳",
     "date": "2026-11-03",
     "time": "21:18",
     "battery": 82,
@@ -27,59 +27,110 @@
   ],
   "contacts": [
     {
-      "id": "minjun",
-      "name": "姜旻俊",
-      "bio": "共同朋友的朋友。回复常常很短。"
+      "id": "shenyanzhou",
+      "name": "沈硯舟",
+      "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。 "
     },
     {
-      "id": "seoyeon",
-      "name": "尹书妍",
-      "bio": "聚会组织者，有自己的工作和朋友圈。"
+      "id": "peizhiyu",
+      "name": "裴知聿",
+      "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。 "
     },
     {
-      "id": "haein",
-      "name": "崔海仁",
-      "bio": "常出现在共同朋友的动态里；与旻俊的关系尚不明确。"
+      "id": "qiye",
+      "name": "祁野",
+      "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。 "
+    },
+    {
+      "id": "linan",
+      "name": "林安",
+      "bio": "共同朋友，偶爾組織校園活動。"
     }
   ],
   "chats": [
     {
-      "id": "kkt-minjun",
+      "id": "kkt-shen",
       "app": "kakao",
-      "title": "姜旻俊",
+      "title": "沈硯舟",
       "participants": [
         "owner",
-        "minjun"
+        "shenyanzhou"
       ],
       "messages": [
         {
-          "id": "mj-01",
-          "senderId": "minjun",
-          "time": "21:18",
-          "body": "今天也来？"
+          "id": "shen-01",
+          "senderId": "shenyanzhou",
+          "time": "19:12",
+          "body": "欸，妳是上次在攝影展幫忙的那位嗎？"
         },
         {
-          "id": "mj-02",
-          "senderId": "minjun",
-          "time": "21:19",
-          "body": "书妍说你可能会到"
+          "id": "shen-02",
+          "senderId": "shenyanzhou",
+          "time": "19:14",
+          "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。"
         }
       ]
     },
     {
-      "id": "kkt-seoyeon",
+      "id": "kkt-pei",
       "app": "kakao",
-      "title": "尹书妍",
+      "title": "裴知聿",
       "participants": [
         "owner",
-        "seoyeon"
+        "peizhiyu"
       ],
       "messages": [
         {
-          "id": "sy-01",
-          "senderId": "seoyeon",
-          "time": "20:46",
-          "body": "我们在二楼靠窗那桌，晚点来都行。海仁也到了。"
+          "id": "pei-01",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？"
+        },
+        {
+          "id": "pei-02",
+          "senderId": "peizhiyu",
+          "time": "20:05",
+          "body": "先提醒，摘要寫得比正文有趣。"
+        }
+      ]
+    },
+    {
+      "id": "kkt-qi",
+      "app": "kakao",
+      "title": "祁野",
+      "participants": [
+        "owner",
+        "qiye"
+      ],
+      "messages": [
+        {
+          "id": "qi-01",
+          "senderId": "qiye",
+          "time": "21:02",
+          "body": "欸，設計展那張海報是妳做的？"
+        },
+        {
+          "id": "qi-02",
+          "senderId": "qiye",
+          "time": "21:04",
+          "body": "配色不錯。字距我有意見，但先不吵。"
+        }
+      ]
+    },
+    {
+      "id": "kkt-linan",
+      "app": "kakao",
+      "title": "林安",
+      "participants": [
+        "owner",
+        "linan"
+      ],
+      "messages": [
+        {
+          "id": "lin-01",
+          "senderId": "linan",
+          "time": "18:30",
+          "body": "週五的跨系展覽記得喔！硯舟會拍照，知聿說晚點才到，祁野還在趕設計稿。大家各忙各的，不用勉強一起來。"
         }
       ]
     }
@@ -87,128 +138,156 @@
   "content": {
     "instagram": [
       {
-        "id": "ig-story-seoyeon",
-        "title": "尹书妍 · Story",
-        "body": "昏暗的吧台、三只碰在一起的玻璃杯。画面边缘有一截深色衬衫袖口。",
-        "sender": "尹书妍",
-        "time": "21:05",
+        "id": "ig-shen-story",
+        "title": "沈硯舟｜限時動態",
+        "body": "傍晚球場旁的橘色天空。配字：今天練完腿差點走不動。",
+        "sender": "沈硯舟",
+        "time": "18:42",
         "meta": {
           "story": "true"
         }
       },
       {
-        "id": "ig-post-haein",
-        "title": "崔海仁",
-        "body": "好久不见的朋友们。",
-        "sender": "崔海仁",
-        "time": "20:58"
+        "id": "ig-pei-story",
+        "title": "裴知聿｜限時動態",
+        "body": "研究室窗邊的黑咖啡與攤開的論文。配字：第三杯。",
+        "sender": "裴知聿",
+        "time": "20:16",
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-qi-story",
+        "title": "祁野｜限時動態",
+        "body": "未完成的展覽海報和散落的色票。配字：今晚不要再改稿了。",
+        "sender": "祁野",
+        "time": "21:08",
+        "meta": {
+          "story": "true"
+        }
+      },
+      {
+        "id": "ig-shen-post",
+        "title": "沈硯舟",
+        "body": "底片洗出來了。最近拍的夕陽比人還多。",
+        "sender": "沈硯舟",
+        "time": "17:40",
+        "kind": "post"
+      },
+      {
+        "id": "ig-pei-post",
+        "title": "裴知聿",
+        "body": "讀書會紀錄：關於我們為什麼容易誤判他人的意圖。",
+        "sender": "裴知聿",
+        "time": "15:25",
+        "kind": "post"
+      },
+      {
+        "id": "ig-qi-post",
+        "title": "祁野",
+        "body": "視傳系期末展的字體實驗。做了三版，還是不滿意。",
+        "sender": "祁野",
+        "time": "16:12",
+        "kind": "post"
       }
     ],
     "notes": [
       {
-        "id": "note-observation",
-        "title": "今晚",
-        "body": "书妍说二楼靠窗。旻俊发来了消息。海仁也在场。其他事情尚无定论。"
+        "id": "note-first-week",
+        "title": "這週的事",
+        "body": "週五跨系展覽。沈硯舟說可以傳照片；裴知聿分享研究文章；祁野對海報有意見。這些只是目前收到的訊息。"
       }
     ],
     "calendar": [
       {
-        "id": "calendar-party",
-        "title": "朋友聚会",
-        "body": "21:30 · 二楼靠窗"
+        "id": "cal-exhibition",
+        "title": "跨系展覽",
+        "body": "週五 19:00｜校園展覽廳。是否出席由妳決定。"
       }
     ]
   },
   "variables": {
-    "attraction_mj": 0,
-    "curiosity_mj": 1,
-    "trust_mj": 0,
-    "investment_mj": 0,
-    "ambiguity_mj": 2,
-    "public_recognition_mj": 0,
-    "choice_to_go": "unset"
+    "shen_attraction": 0,
+    "shen_curiosity": 0,
+    "shen_emotional_investment": 0,
+    "shen_trust": 0,
+    "shen_possessiveness": 0,
+    "shen_dependency": 0,
+    "shen_vulnerability": 0,
+    "shen_public_recognition": 0,
+    "shen_ambiguity": 0,
+    "shen_relationship_definition": 0,
+    "pei_attraction": 0,
+    "pei_curiosity": 0,
+    "pei_emotional_investment": 0,
+    "pei_trust": 0,
+    "pei_possessiveness": 0,
+    "pei_dependency": 0,
+    "pei_vulnerability": 0,
+    "pei_public_recognition": 0,
+    "pei_ambiguity": 0,
+    "pei_relationship_definition": 0,
+    "qi_attraction": 0,
+    "qi_curiosity": 0,
+    "qi_emotional_investment": 0,
+    "qi_trust": 0,
+    "qi_possessiveness": 0,
+    "qi_dependency": 0,
+    "qi_vulnerability": 0,
+    "qi_public_recognition": 0,
+    "qi_ambiguity": 0,
+    "qi_relationship_definition": 0
   },
   "events": [
     {
-      "id": "start-night",
+      "id": "first-open",
       "type": "start",
-      "label": "夜晚开始",
+      "label": "新的訊息",
       "actions": [
         {
           "type": "notification",
           "key": "",
-          "value": "KakaoTalk：姜旻俊发来消息"
+          "value": "KakaoTalk：你有幾則未讀訊息"
         }
       ]
     },
     {
-      "id": "read-invite",
+      "id": "read-shen",
       "event": "read",
-      "target": "mj-01",
-      "next": [
-        "choose-response"
-      ]
-    },
-    {
-      "id": "choose-response",
-      "type": "choice",
-      "label": "如何回应这条消息？",
-      "next": [
-        "go-tonight",
-        "stay-tonight"
-      ]
-    },
-    {
-      "id": "go-tonight",
-      "type": "ending",
-      "label": "去聚会",
+      "target": "shen-01",
       "actions": [
         {
-          "type": "ending",
-          "key": "",
-          "value": "今晚：你决定去看看。那条消息究竟意味着什么，仍然没有答案。"
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 1
         }
       ]
     },
     {
-      "id": "stay-tonight",
-      "type": "ending",
-      "label": "不去聚会",
+      "id": "read-pei",
+      "event": "read",
+      "target": "pei-01",
       "actions": [
         {
-          "type": "ending",
-          "key": "",
-          "value": "今晚：你没有赴约。手机屏幕暗下去，之后会不会再有消息，尚不可知。"
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "read-qi",
+      "event": "read",
+      "target": "qi-01",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 1
         }
       ]
     }
   ],
-  "tests": [
-    {
-      "name": "go",
-      "steps": [
-        {
-          "event": "read",
-          "target": "mj-01"
-        },
-        {
-          "choose": "go-tonight"
-        }
-      ],
-      "ending": "今晚：你决定去看看。那条消息究竟意味着什么，仍然没有答案。"
-    },
-    {
-      "name": "stay",
-      "steps": [
-        {
-          "event": "read",
-          "target": "mj-01"
-        },
-        {
-          "choose": "stay-tonight"
-        }
-      ],
-      "ending": "今晚：你没有赴约。手机屏幕暗下去，之后会不会再有消息，尚不可知。"
-    }
-  ]
+  "tests": []
 }
