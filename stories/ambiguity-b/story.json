@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 12,
+  "revision": 13,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -69,7 +69,7 @@
           "id": "shen-01",
           "senderId": "shenyanzhou",
           "time": "19:12",
-          "body": "欸，妳是上次在攝影展幫忙的那位嗎？",
+          "body": "欸，妳是上次在攝影展幫忙的那位嗎？我整理照片時拍到妳們那組作品，想問妳要不要看。對了，我週五也會去展場拍照。",
           "title": "",
           "avatar": "./characters/shen-yanzhou-avatar.png"
         },
@@ -130,7 +130,7 @@
           "id": "shen-branch-2-out",
           "title": "",
           "senderId": "owner",
-          "body": "你週五幾點到？",
+          "body": "你週五也會去展場嗎？大概幾點？",
           "time": "21:22",
           "hidden": true
         },
@@ -147,7 +147,7 @@
           "id": "shen-branch-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "收到，你先忙自己的事就好。",
+          "body": "謝謝你想到我，不過我現在有點忙，晚點再看照片。",
           "time": "21:22",
           "hidden": true
         },
@@ -277,7 +277,7 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？",
+          "body": "林安說妳在找社會認知那篇文章。我剛讀完，第二節的結論有點跳，摘要反而寫得很有自信。妳要的是這篇嗎？",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png"
         },
@@ -321,7 +321,7 @@
           "id": "pei-branch-1-out",
           "title": "",
           "senderId": "owner",
-          "body": "第二節的結論我有點疑問。",
+          "body": "你說第二節結論有問題，是哪個地方？",
           "time": "21:22",
           "hidden": true
         },
@@ -355,7 +355,7 @@
           "id": "pei-branch-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "謝謝分享，我有空再讀。",
+          "body": "謝謝你找到文章，我晚點再仔細讀。",
           "time": "21:22",
           "hidden": true
         },
@@ -485,7 +485,7 @@
           "id": "qi-01",
           "senderId": "qiye",
           "time": "21:02",
-          "body": "欸，設計展那張海報是妳做的？",
+          "body": "欸，設計展那張海報是妳做的？配色不錯。但標題第二行的字距我有意見。先說，我不是來找碴的。",
           "title": "",
           "avatar": "./characters/qi-ye-avatar.png"
         },
@@ -563,7 +563,7 @@
           "id": "qi-branch-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想改稿，先這樣。",
+          "body": "謝謝你提醒，但我現在不想改稿，先這樣。",
           "time": "21:22",
           "hidden": true
         },
@@ -1038,7 +1038,7 @@
     },
     {
       "id": "reply-shen-2",
-      "label": "你週五幾點到？",
+      "label": "你週五也會去展場嗎？大概幾點？",
       "type": "action",
       "once": true,
       "actions": [
@@ -1086,7 +1086,7 @@
     },
     {
       "id": "reply-shen-3",
-      "label": "收到，你先忙自己的事就好。",
+      "label": "謝謝你想到我，不過我現在有點忙，晚點再看照片。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1147,7 +1147,7 @@
     },
     {
       "id": "reply-pei-1",
-      "label": "第二節的結論我有點疑問。",
+      "label": "你說第二節結論有問題，是哪個地方？",
       "type": "action",
       "once": true,
       "actions": [
@@ -1243,7 +1243,7 @@
     },
     {
       "id": "reply-pei-3",
-      "label": "謝謝分享，我有空再讀。",
+      "label": "謝謝你找到文章，我晚點再仔細讀。",
       "type": "action",
       "once": true,
       "actions": [
@@ -1400,7 +1400,7 @@
     },
     {
       "id": "reply-qi-3",
-      "label": "我現在不想改稿，先這樣。",
+      "label": "謝謝你提醒，但我現在不想改稿，先這樣。",
       "type": "action",
       "once": true,
       "actions": [
