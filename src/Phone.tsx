@@ -999,7 +999,17 @@ function AppContent({
               onAdd={onAdd}
               onBack={onBack}
               thread={thread}
-              onThread={setThread}
+              onThread={(nextThread) => {
+                setThread(nextThread);
+                // Reading a KKT conversation includes its latest visible incoming
+                // message. Otherwise story choices only unlock when a bubble is tapped.
+                if (app.id === "kakao" && nextThread && !creator) {
+                  const latestIncoming = [...shown]
+                    .reverse()
+                    .find((item) => item.title === nextThread && !item.outgoing);
+                  if (latestIncoming) onRead(latestIncoming.id);
+                }
+              }
             />
           </Suspense>
         </div>
