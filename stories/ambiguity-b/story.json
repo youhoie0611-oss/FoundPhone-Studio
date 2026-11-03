@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "序章〈展覽前的三天〉：三位角色各自的 KKT 雙階段選擇、非即時回覆與 Instagram 展前日常。",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -31,21 +31,21 @@
       "name": "沈硯舟",
       "bio": "24歲｜大學生。健身、籃球與攝影。開朗真誠，對陌生人保持分寸。",
       "phone": "",
-      "avatar": "/characters/shen-yanzhou-avatar.png"
+      "avatar": "./characters/shen-yanzhou-avatar.png"
     },
     {
       "id": "peizhiyu",
       "name": "裴知聿",
       "bio": "25歲｜心理學研究所。研究社會認知與人際決策，喜歡咖啡與推理小說。",
       "phone": "",
-      "avatar": "/characters/pei-zhiyu-avatar.png"
+      "avatar": "./characters/pei-zhiyu-avatar.png"
     },
     {
       "id": "qiye",
       "name": "祁野",
       "bio": "21歲｜視覺傳達設計系大三。街頭攝影、滑板與平面設計。",
       "phone": "",
-      "avatar": "/characters/qi-ye-avatar.png"
+      "avatar": "./characters/qi-ye-avatar.png"
     },
     {
       "id": "linan",
@@ -71,7 +71,7 @@
           "time": "19:12",
           "body": "欸，妳是上次在攝影展幫忙的那位嗎？",
           "title": "",
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-02",
@@ -79,7 +79,7 @@
           "time": "19:14",
           "body": "我剛剛整理照片才發現有拍到妳們那組作品。要的話我可以傳給妳。",
           "title": "",
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-03",
@@ -87,7 +87,7 @@
           "body": "喔對，我先去洗澡。剛從健身房回來，整個人都是汗。",
           "senderId": "shenyanzhou",
           "time": "19:27",
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-04",
@@ -95,7 +95,7 @@
           "body": "照片我傳到雲端了，林安那邊也有一份。妳有空再看就好。",
           "senderId": "shenyanzhou",
           "time": "20:46",
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-05",
@@ -103,7 +103,7 @@
           "body": "週五我會提早到展場拍空景。可能沒辦法一直聊天，先說一聲哈哈。",
           "senderId": "shenyanzhou",
           "time": "21:11",
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-1-out",
@@ -120,7 +120,7 @@
           "body": "好啊，我傳連結給妳。妳們那組燈光其實滿漂亮的。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-2-out",
@@ -137,7 +137,7 @@
           "body": "應該六點前吧。我先拍場地，之後還要幫林安搬東西。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-branch-3-out",
@@ -154,7 +154,7 @@
           "body": "好～那我先去整理器材，有需要再找我。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-1-1-out",
@@ -171,7 +171,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-1-2-out",
@@ -188,7 +188,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-2-1-out",
@@ -205,7 +205,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-2-2-out",
@@ -222,7 +222,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-3-1-out",
@@ -239,7 +239,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
           "id": "shen-phase2-3-2-out",
@@ -256,7 +256,7 @@
           "senderId": "shenyanzhou",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/shen-yanzhou-avatar.png"
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -275,7 +275,7 @@
           "time": "20:03",
           "body": "林安說妳在找那篇社會認知的文章。是這篇嗎？",
           "title": "",
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-02",
@@ -283,7 +283,7 @@
           "time": "20:05",
           "body": "先提醒，摘要寫得比正文有趣。",
           "title": "",
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-03",
@@ -291,7 +291,7 @@
           "body": "如果只是要報告引用，我建議先看第二節。",
           "senderId": "peizhiyu",
           "time": "20:19",
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-04",
@@ -299,7 +299,7 @@
           "body": "我現在還在研究室，晚點要跟老師確認資料。",
           "senderId": "peizhiyu",
           "time": "20:31",
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-05",
@@ -307,7 +307,7 @@
           "body": "週五展覽我應該會晚到。不是故意神祕，是報告真的沒寫完。",
           "senderId": "peizhiyu",
           "time": "21:17",
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-1-out",
@@ -324,7 +324,7 @@
           "body": "有疑問很正常。那篇文章的樣本限制其實滿值得討論。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-2-out",
@@ -341,7 +341,7 @@
           "body": "算是。妳要我認真批評的話，我可以寫三頁。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-branch-3-out",
@@ -358,7 +358,7 @@
           "body": "嗯，不急。閱讀不是打卡任務。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-1-1-out",
@@ -375,7 +375,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-1-2-out",
@@ -392,7 +392,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-2-1-out",
@@ -409,7 +409,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-2-2-out",
@@ -426,7 +426,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-3-1-out",
@@ -443,7 +443,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         },
         {
           "id": "pei-phase2-3-2-out",
@@ -460,7 +460,7 @@
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/pei-zhiyu-avatar.png"
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         }
       ]
     },
@@ -479,7 +479,7 @@
           "time": "21:02",
           "body": "欸，設計展那張海報是妳做的？",
           "title": "",
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-02",
@@ -487,7 +487,7 @@
           "time": "21:04",
           "body": "配色不錯。字距我有意見，但先不吵。",
           "title": "",
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-03",
@@ -495,7 +495,7 @@
           "body": "我剛才講太快。字距那段我有具體建議，不是要找妳麻煩。",
           "senderId": "qiye",
           "time": "21:09",
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-04",
@@ -503,7 +503,7 @@
           "body": "我現在在趕印刷檔。明天要是有空再跟妳說。",
           "senderId": "qiye",
           "time": "21:13",
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-05",
@@ -511,7 +511,7 @@
           "body": "對了，妳要是覺得那版比較好就留著。作品是妳的。",
           "senderId": "qiye",
           "time": "21:16",
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-1-out",
@@ -528,7 +528,7 @@
           "body": "可以。標題第二行太擠，視線會卡住。我明天畫給妳看。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-2-out",
@@ -545,7 +545,7 @@
           "body": "喔，原來是故意的。那我收回剛剛那句，這樣看有道理。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-branch-3-out",
@@ -562,7 +562,7 @@
           "body": "行，妳的作品妳決定。我先把自己的印刷檔搞定。",
           "time": "21:35",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-1-1-out",
@@ -579,7 +579,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-1-2-out",
@@ -596,7 +596,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-2-1-out",
@@ -613,7 +613,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-2-2-out",
@@ -630,7 +630,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-3-1-out",
@@ -647,7 +647,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         },
         {
           "id": "qi-phase2-3-2-out",
@@ -664,7 +664,7 @@
           "senderId": "qiye",
           "time": "22:06",
           "hidden": true,
-          "avatar": "/characters/qi-ye-avatar.png"
+          "avatar": "./characters/qi-ye-avatar.png"
         }
       ]
     },
@@ -720,8 +720,8 @@
           "story": "true"
         },
         "kind": "post",
-        "avatar": "/characters/shen-yanzhou-avatar.png",
-        "media": "/characters/shen-yanzhou.png"
+        "avatar": "./characters/shen-yanzhou-avatar.png",
+        "media": "./characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-story",
@@ -733,8 +733,8 @@
           "story": "true"
         },
         "kind": "post",
-        "avatar": "/characters/pei-zhiyu-avatar.png",
-        "media": "/characters/pei-zhiyu.png"
+        "avatar": "./characters/pei-zhiyu-avatar.png",
+        "media": "./characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-story",
@@ -746,8 +746,8 @@
           "story": "true"
         },
         "kind": "post",
-        "avatar": "/characters/qi-ye-avatar.png",
-        "media": "/characters/qi-ye.png"
+        "avatar": "./characters/qi-ye-avatar.png",
+        "media": "./characters/qi-ye.png"
       },
       {
         "id": "ig-shen-post",
@@ -757,8 +757,8 @@
         "time": "17:40",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/shen-yanzhou-avatar.png",
-        "media": "/characters/shen-yanzhou.png"
+        "avatar": "./characters/shen-yanzhou-avatar.png",
+        "media": "./characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-post",
@@ -768,8 +768,8 @@
         "time": "15:25",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/pei-zhiyu-avatar.png",
-        "media": "/characters/pei-zhiyu.png"
+        "avatar": "./characters/pei-zhiyu-avatar.png",
+        "media": "./characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-post",
@@ -779,8 +779,8 @@
         "time": "16:12",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/qi-ye-avatar.png",
-        "media": "/characters/qi-ye.png"
+        "avatar": "./characters/qi-ye-avatar.png",
+        "media": "./characters/qi-ye.png"
       },
       {
         "id": "ig-linan-post",
@@ -799,8 +799,8 @@
         "time": "20:51",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/shen-yanzhou-avatar.png",
-        "media": "/characters/shen-yanzhou.png"
+        "avatar": "./characters/shen-yanzhou-avatar.png",
+        "media": "./characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-second",
@@ -810,8 +810,8 @@
         "time": "21:06",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/pei-zhiyu-avatar.png",
-        "media": "/characters/pei-zhiyu.png"
+        "avatar": "./characters/pei-zhiyu-avatar.png",
+        "media": "./characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-second",
@@ -821,8 +821,8 @@
         "time": "21:15",
         "kind": "post",
         "meta": {},
-        "avatar": "/characters/qi-ye-avatar.png",
-        "media": "/characters/qi-ye.png"
+        "avatar": "./characters/qi-ye-avatar.png",
+        "media": "./characters/qi-ye.png"
       },
       {
         "id": "ig-linan-story",
@@ -846,8 +846,8 @@
         "meta": {
           "story": "true"
         },
-        "avatar": "/characters/shen-yanzhou-avatar.png",
-        "media": "/characters/shen-yanzhou.png"
+        "avatar": "./characters/shen-yanzhou-avatar.png",
+        "media": "./characters/shen-yanzhou.png"
       },
       {
         "id": "ig-pei-late-story",
@@ -860,8 +860,8 @@
         "meta": {
           "story": "true"
         },
-        "avatar": "/characters/pei-zhiyu-avatar.png",
-        "media": "/characters/pei-zhiyu.png"
+        "avatar": "./characters/pei-zhiyu-avatar.png",
+        "media": "./characters/pei-zhiyu.png"
       },
       {
         "id": "ig-qi-late-story",
@@ -874,8 +874,8 @@
         "meta": {
           "story": "true"
         },
-        "avatar": "/characters/qi-ye-avatar.png",
-        "media": "/characters/qi-ye.png"
+        "avatar": "./characters/qi-ye-avatar.png",
+        "media": "./characters/qi-ye.png"
       }
     ],
     "notes": [
