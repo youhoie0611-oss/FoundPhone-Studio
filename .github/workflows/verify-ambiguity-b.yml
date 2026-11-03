@@ -1,0 +1,29 @@
+name: Validate B story and build player
+on:
+  push:
+    branches:
+      - feature/ambiguity-b-prototype
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Validate story
+        run: npm run story:validate
+      - name: Test story
+        run: npm run story:test
+      - name: Build player
+        run: npm run build
+      - name: Verify character assets in build
+        run: |
+          for file in pei-zhiyu pei-zhiyu-avatar qi-ye qi-ye-avatar shen-yanzhou shen-yanzhou-avatar; do
+            test -s "dist/characters/$file.png" || { echo "Missing $file.png"; exit 1; }
+          done
+          echo "All six character assets exist in built player"
