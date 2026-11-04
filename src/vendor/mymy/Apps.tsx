@@ -205,7 +205,9 @@ export function MymyKakao(p: SkinProps) {
                 const latest = lastMessage?.body ?? "";
                 // Match the complete delivered turn, not only a generic keyword.
                 // Earlier lines in the same message contain the actual question and context.
-                const options = p.thread === "沈硯舟" && /介意我傳|傳給妳看看|入鏡/.test(latest)
+                const options = p.thread === "顧時安" && /城市展覽|建築設計|這類活動/.test(latest)
+                  ? ["聽起來有趣，是什麼展覽？", "你怎麼會有我的聯絡方式？", "謝謝邀請，但我對這類活動沒興趣。", "我現在工作有點忙，改天再聊。"]
+                  : p.thread === "沈硯舟" && /介意我傳|傳給妳看看|入鏡/.test(latest)
                   ? ["可以啊，傳給我看看。", "我不太想讓照片被傳來傳去。", "你拍到的是哪一張？", "你怎麼知道那個人是我？"]
                   : p.thread === "沈硯舟" && /上次活動|那位|是妳|是你/.test(latest)
                     ? ["對，是我。你還記得我？", "你是不是認錯人了？", "你怎麼認出我的？", "我們好像還不太熟，先說說你是誰吧。"]
