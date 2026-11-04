@@ -1644,6 +1644,74 @@
           "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-branch-4-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你先說說照片是在哪裡拍的。",
+          "time": "21:22",
+          "hidden": true
+        },
+        {
+          "id": "shen-branch-4-in",
+          "title": "",
+          "senderId": "shenyanzhou",
+          "body": "我想先確認照片內容，再決定要不要收。",
+          "time": "21:35",
+          "hidden": true,
+          "avatar": "./characters/shen-yan-zhou-avatar.png"
+        },
+        {
+          "id": "shen-phase2-1-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "我比較想知道你當天怎麼看那場活動。",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-1-3-in",
+          "title": "",
+          "senderId": "shenyanzhou",
+          "body": "我那天注意到的不是照片，是現場的氣氛。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/shen-yan-zhou-avatar.png"
+        },
+        {
+          "id": "shen-phase2-2-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你會自己再去參加這類活動嗎？",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-2-3-in",
+          "title": "",
+          "senderId": "shenyanzhou",
+          "body": "會啊，這次想好好看展，不是只顧著幫忙。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/shen-yan-zhou-avatar.png"
+        },
+        {
+          "id": "shen-phase2-3-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "我們改天再聊你在學校的事。",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-phase2-3-3-in",
+          "title": "",
+          "senderId": "shenyanzhou",
+          "body": "好。等妳有空，我再跟妳說最近學校發生的事。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/shen-yan-zhou-avatar.png"
         }
       ]
     },
@@ -3208,6 +3276,74 @@
           "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-branch-4-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你聯絡我是想重新開始嗎？",
+          "time": "21:22",
+          "hidden": true
+        },
+        {
+          "id": "pei-branch-4-in",
+          "title": "",
+          "senderId": "peizhiyu",
+          "body": "是。我想跟妳重新開始，但不會要求妳現在回答。",
+          "time": "21:35",
+          "hidden": true,
+          "avatar": "./characters/pei-zhi-yu-avatar.png"
+        },
+        {
+          "id": "pei-phase2-1-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你想複合，還是只是不習慣沒有我？",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-1-3-in",
+          "title": "",
+          "senderId": "peizhiyu",
+          "body": "我想清楚了才聯絡妳。妳不相信也正常，我會用行動證明。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/pei-zhi-yu-avatar.png"
+        },
+        {
+          "id": "pei-phase2-2-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你有想過我們為什麼會走到分手嗎？",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-2-3-in",
+          "title": "",
+          "senderId": "peizhiyu",
+          "body": "想過。以前我以為沉默能解決問題，結果只是讓妳一個人難受。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/pei-zhi-yu-avatar.png"
+        },
+        {
+          "id": "pei-phase2-3-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "我現在想把自己的生活過好。",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "pei-phase2-3-3-in",
+          "title": "",
+          "senderId": "peizhiyu",
+          "body": "我明白。妳的生活不該再被我的情緒打亂。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/pei-zhi-yu-avatar.png"
         }
       ]
     },
@@ -4772,6 +4908,74 @@
           "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-branch-4-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你找我只是為了這件事？",
+          "time": "21:22",
+          "hidden": true
+        },
+        {
+          "id": "qi-branch-4-in",
+          "title": "",
+          "senderId": "qiye",
+          "body": "本來是想道歉。現在嘛，也想知道妳是不是每次講話都這麼直接。",
+          "time": "21:35",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase2-1-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你平常也這樣跟陌生人搭話？",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-1-3-in",
+          "title": "",
+          "senderId": "qiye",
+          "body": "不會。平常我懶得解釋，但那天確實是我理虧。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase2-2-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "你有沒有想過別人為什麼會生氣？",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-2-3-in",
+          "title": "",
+          "senderId": "qiye",
+          "body": "有。這次我知道光說不是故意的，根本沒用。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-phase2-3-3-out",
+          "title": "",
+          "senderId": "owner",
+          "body": "我希望你下次先尊重別人的時間。",
+          "time": "21:42",
+          "hidden": true
+        },
+        {
+          "id": "qi-phase2-3-3-in",
+          "title": "",
+          "senderId": "qiye",
+          "body": "知道了。以後有事我會先問妳方不方便。",
+          "time": "21:44",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
         }
       ]
     },
@@ -5654,7 +5858,8 @@
       "next": [
         "reply-shen-1",
         "reply-shen-2",
-        "reply-shen-3"
+        "reply-shen-3",
+        "reply-shen-4"
       ]
     },
     {
@@ -5811,7 +6016,8 @@
       "next": [
         "reply-pei-1",
         "reply-pei-2",
-        "reply-pei-3"
+        "reply-pei-3",
+        "reply-pei-4"
       ]
     },
     {
@@ -5968,7 +6174,8 @@
       "next": [
         "reply-qi-1",
         "reply-qi-2",
-        "reply-qi-3"
+        "reply-qi-3",
+        "reply-qi-4"
       ]
     },
     {
@@ -6169,7 +6376,8 @@
       "once": true,
       "next": [
         "phase2-shen-1-a",
-        "phase2-shen-1-b"
+        "phase2-shen-1-b",
+        "phase2-shen-1-c"
       ]
     },
     {
@@ -6275,7 +6483,8 @@
       "once": true,
       "next": [
         "phase2-shen-2-a",
-        "phase2-shen-2-b"
+        "phase2-shen-2-b",
+        "phase2-shen-2-c"
       ]
     },
     {
@@ -6381,7 +6590,8 @@
       "once": true,
       "next": [
         "phase2-shen-3-a",
-        "phase2-shen-3-b"
+        "phase2-shen-3-b",
+        "phase2-shen-3-c"
       ]
     },
     {
@@ -6487,7 +6697,8 @@
       "once": true,
       "next": [
         "phase2-pei-1-a",
-        "phase2-pei-1-b"
+        "phase2-pei-1-b",
+        "phase2-pei-1-c"
       ]
     },
     {
@@ -6593,7 +6804,8 @@
       "once": true,
       "next": [
         "phase2-pei-2-a",
-        "phase2-pei-2-b"
+        "phase2-pei-2-b",
+        "phase2-pei-2-c"
       ]
     },
     {
@@ -6699,7 +6911,8 @@
       "once": true,
       "next": [
         "phase2-pei-3-a",
-        "phase2-pei-3-b"
+        "phase2-pei-3-b",
+        "phase2-pei-3-c"
       ]
     },
     {
@@ -6805,7 +7018,8 @@
       "once": true,
       "next": [
         "phase2-qi-1-a",
-        "phase2-qi-1-b"
+        "phase2-qi-1-b",
+        "phase2-qi-1-c"
       ]
     },
     {
@@ -6911,7 +7125,8 @@
       "once": true,
       "next": [
         "phase2-qi-2-a",
-        "phase2-qi-2-b"
+        "phase2-qi-2-b",
+        "phase2-qi-2-c"
       ]
     },
     {
@@ -7017,7 +7232,8 @@
       "once": true,
       "next": [
         "phase2-qi-3-a",
-        "phase2-qi-3-b"
+        "phase2-qi-3-b",
+        "phase2-qi-3-c"
       ]
     },
     {
@@ -21776,6 +21992,582 @@
           "type": "notification",
           "key": "",
           "value": "顧時安：最近工作和生活都慢慢找到節奏了。謝謝妳願意聽我分享這些日常。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "reply-shen-4",
+      "label": "你先說說照片是在哪裡拍的。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-branch-4-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 3
+        }
+      ],
+      "next": [
+        "wait-shen-4"
+      ]
+    },
+    {
+      "id": "wait-shen-4",
+      "label": "沈硯舟稍後回覆",
+      "type": "delay",
+      "delayMs": 16000,
+      "next": [
+        "arrival-shen-4"
+      ]
+    },
+    {
+      "id": "arrival-shen-4",
+      "label": "沈硯舟回覆追問",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-branch-4-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：我想先確認照片內容，再決定要不要收。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "reply-pei-4",
+      "label": "你聯絡我是想重新開始嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-branch-4-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 3
+        }
+      ],
+      "next": [
+        "wait-pei-4"
+      ]
+    },
+    {
+      "id": "wait-pei-4",
+      "label": "裴知聿稍後回覆",
+      "type": "delay",
+      "delayMs": 16000,
+      "next": [
+        "arrival-pei-4"
+      ]
+    },
+    {
+      "id": "arrival-pei-4",
+      "label": "裴知聿回覆追問",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-branch-4-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：是。我想跟妳重新開始，但不會要求妳現在回答。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "reply-qi-4",
+      "label": "你找我只是為了這件事？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-branch-4-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 3
+        }
+      ],
+      "next": [
+        "wait-qi-4"
+      ]
+    },
+    {
+      "id": "wait-qi-4",
+      "label": "祁野稍後回覆",
+      "type": "delay",
+      "delayMs": 16000,
+      "next": [
+        "arrival-qi-4"
+      ]
+    },
+    {
+      "id": "arrival-qi-4",
+      "label": "祁野回覆追問",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-branch-4-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：本來是想道歉。現在嘛，也想知道妳是不是每次講話都這麼直接。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-1-c",
+      "label": "我比較想知道你當天怎麼看那場活動。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 4
+        }
+      ],
+      "next": [
+        "phase2-shen-1-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-shen-1-c-wait",
+      "label": "沈硯舟思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-shen-1-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-shen-1-c-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-1-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：我那天注意到的不是照片，是現場的氣氛。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-2-c",
+      "label": "你會自己再去參加這類活動嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 5
+        }
+      ],
+      "next": [
+        "phase2-shen-2-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-shen-2-c-wait",
+      "label": "沈硯舟思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-shen-2-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-shen-2-c-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-2-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：會啊，這次想好好看展，不是只顧著幫忙。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-shen-3-c",
+      "label": "我們改天再聊你在學校的事。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 6
+        }
+      ],
+      "next": [
+        "phase2-shen-3-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-shen-3-c-wait",
+      "label": "沈硯舟思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-shen-3-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-shen-3-c-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-phase2-3-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：好。等妳有空，我再跟妳說最近學校發生的事。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-1-c",
+      "label": "你想複合，還是只是不習慣沒有我？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 4
+        }
+      ],
+      "next": [
+        "phase2-pei-1-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-pei-1-c-wait",
+      "label": "裴知聿思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-pei-1-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-pei-1-c-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-1-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我想清楚了才聯絡妳。妳不相信也正常，我會用行動證明。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-2-c",
+      "label": "你有想過我們為什麼會走到分手嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 5
+        }
+      ],
+      "next": [
+        "phase2-pei-2-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-pei-2-c-wait",
+      "label": "裴知聿思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-pei-2-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-pei-2-c-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-2-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：想過。以前我以為沉默能解決問題，結果只是讓妳一個人難受。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-pei-3-c",
+      "label": "我現在想把自己的生活過好。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 6
+        }
+      ],
+      "next": [
+        "phase2-pei-3-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-pei-3-c-wait",
+      "label": "裴知聿思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-pei-3-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-pei-3-c-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-phase2-3-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我明白。妳的生活不該再被我的情緒打亂。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-1-c",
+      "label": "你平常也這樣跟陌生人搭話？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 4
+        }
+      ],
+      "next": [
+        "phase2-qi-1-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-qi-1-c-wait",
+      "label": "祁野思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-qi-1-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-qi-1-c-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-1-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：不會。平常我懶得解釋，但那天確實是我理虧。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-2-c",
+      "label": "你有沒有想過別人為什麼會生氣？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 5
+        }
+      ],
+      "next": [
+        "phase2-qi-2-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-qi-2-c-wait",
+      "label": "祁野思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-qi-2-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-qi-2-c-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-2-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：有。這次我知道光說不是故意的，根本沒用。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phase2-qi-3-c",
+      "label": "我希望你下次先尊重別人的時間。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-3-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 6
+        }
+      ],
+      "next": [
+        "phase2-qi-3-c-wait"
+      ]
+    },
+    {
+      "id": "phase2-qi-3-c-wait",
+      "label": "祁野思考後回覆",
+      "type": "delay",
+      "delayMs": 17000,
+      "next": [
+        "phase2-qi-3-c-arrive"
+      ]
+    },
+    {
+      "id": "phase2-qi-3-c-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-phase2-3-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：知道了。以後有事我會先問妳方不方便。"
         }
       ],
       "next": []
