@@ -271,7 +271,10 @@ export function advance(
     }
     if (due && due.due <= s.elapsedMs) {
       const node = w.nodes.find((entry) => entry.id === due.nodeId);
-      const incoming = (node?.actions ?? []).filter((action) => action.type === "unlock")
+      const following = node?.type === "delay"
+        ? (node.next ?? []).flatMap((id) => w.nodes.find((entry) => entry.id === id)?.actions ?? [])
+        : node?.actions ?? [];
+      const incoming = following.filter((action) => action.type === "unlock")
         .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
         .filter((item) => item && !item.outgoing);
       const lastReplies = s.ui?.lastFreeReply ?? {};
