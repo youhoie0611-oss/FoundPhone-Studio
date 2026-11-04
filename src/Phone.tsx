@@ -461,7 +461,6 @@ function PhoneRuntime({
                   creator={creator}
                   state={s}
                   onRead={(id) => event("read", id)}
-                  readIds={s.read}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
                   onCustomMessage={(thread, message) => {
                     const sourceApp = app;
