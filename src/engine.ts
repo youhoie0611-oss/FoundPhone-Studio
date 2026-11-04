@@ -255,6 +255,13 @@ export function advance(
           String(Math.floor(value / 60)).padStart(2, "0") +
           ":" +
           String(value % 60).padStart(2, "0");
+        if (value === 0) {
+          const currentDate = new Date(`${s.date ?? w.phone.date}T12:00:00Z`);
+          if (!Number.isNaN(currentDate.getTime())) {
+            currentDate.setUTCDate(currentDate.getUTCDate() + 1);
+            s.date = currentDate.toISOString().slice(0, 10);
+          }
+        }
         if (w.mode !== "explore")
           runQueue(
             w,
