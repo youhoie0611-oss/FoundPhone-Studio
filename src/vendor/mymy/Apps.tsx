@@ -403,7 +403,7 @@ export function MymyInstagram(p: SkinProps) {
   const post = (i: Item) => (
     <article className="igp" key={i.id}>
       <header className="igph">
-        <Avatar name={i.sender} src={i.avatar} />
+        <Avatar name={i.sender} src={chatAvatar(i.sender, i.avatar)} />
         <div className="igpn">
           <button onClick={() => { setProfileOwner(i.sender); setSelected(null); setTab("个人主页"); }}>
             <b>{i.sender}</b>
@@ -510,7 +510,7 @@ export function MymyInstagram(p: SkinProps) {
                     <span
                       className={"sr on " + (seen.includes(s.id) ? "seen" : "")}
                     >
-                      <Avatar name={s.sender} src={s.avatar} />
+                      <Avatar name={s.sender} src={chatAvatar(s.sender, s.avatar)} />
                     </span>
                     <small>{s.sender}</small>
                   </button>
@@ -558,7 +558,7 @@ export function MymyInstagram(p: SkinProps) {
             <>
               {dms.map((i) => (
                 <button className="kzkr" key={i.id} onClick={() => openPost(i)}>
-                  <Avatar name={i.sender} src={i.avatar} />
+                  <Avatar name={i.sender} src={chatAvatar(i.sender, i.avatar)} />
                   <span className="kzkn">
                     <b>{i.title}</b>
                     <small>{i.body}</small>
@@ -625,7 +625,7 @@ export function MymyInstagram(p: SkinProps) {
                   .map((r) => r.split("\t").slice(1).join("\t")),
               ].map((c, n) => (
                 <p key={n}>
-                  <Avatar name={c.split(":")[0]} />
+                  <Avatar name={c.split(":")[0]} src={chatAvatar(c.split(":")[0])} />
                   {c}
                 </p>
               ))}
@@ -668,7 +668,7 @@ export function MymyInstagram(p: SkinProps) {
             ))}
           </div>
           <header>
-            <Avatar name={active.sender} src={active.avatar} />
+            <Avatar name={active.sender} src={chatAvatar(active.sender, active.avatar)} />
             <b>{active.sender}</b>
             <button
               aria-label="关闭快拍"
@@ -742,7 +742,7 @@ export function MymyX(p: SkinProps) {
             .filter((i) => (i.title + i.body).includes(query))
             .map((i) => (
               <article className="kzxt" key={i.id}>
-                <Avatar name={i.sender} src={i.avatar} />
+                <Avatar name={i.sender} src={chatAvatar(i.sender, i.avatar)} />
                 <div className="kzxb">
                   <div className="kzxn">
                     <b>{i.sender}</b>
