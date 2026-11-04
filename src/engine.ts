@@ -42,7 +42,7 @@ function apply(a: Action, s: Runtime, w: Work) {
         s.unlocked.push(a.key);
         const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
         if (item && !item.outgoing) {
-          s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time } };
+          s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time }, deliveryElapsed: { ...((s.ui?.deliveryElapsed ?? {}) as Record<string, number>), [a.key]: s.elapsedMs ?? 0 } };
         }
       }
       break;
