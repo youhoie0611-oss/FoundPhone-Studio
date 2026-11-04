@@ -257,6 +257,31 @@ export function advance(
   }
   return s;
 }
+/** Preserve custom player text without silently choosing a scripted response. */
+export function submitCustomReply(s: Runtime, raw: string): Runtime {
+  if (!s.choices.length || !raw.trim()) return s;
+  const history = Array.isArray(s.ui?.player?.customReplies)
+    ? (s.ui.player.customReplies as string[])
+    : [];
+  const message = makeItem({
+    id: `custom-reply-${history.length + 1}`,
+    title: "玩家自定義",
+    sender: "我",
+    body: raw,
+    outgoing: true,
+    time: `${s.date ?? "2026-11-03"} ${s.time}`,
+  });
+  return {
+    ...s,
+    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] } },
+    messages: {
+      ...s.messages,
+      messages: [...(s.messages.messages ?? []), message],
+    },
+    trace: [...s.trace, `player-custom-reply:${message.id}`],
+  };
+}
+
 export function choose(w: Work, s: Runtime, id: string) {
   const node = w.nodes.find((n) => n.id === id);
   if (!node || !s.choices.some((c) => c.target === id)) return s;
