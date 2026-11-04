@@ -116,6 +116,12 @@ function runQueue(
     }
     if (!s.completed.includes(id)) s.completed.push(id);
     s.trace.push(`${event}:${target} → ${n.label}`);
+    // A scripted chat notification must describe the message unlocked by this event,
+    // never a placeholder such as "稍後回覆了訊息".
+    const unlockedIncoming = n.actions
+      .filter((action) => action.type === "unlock")
+      .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+      .filter((item) => item && !item.outgoing && item.body.trim());
     for (const a of n.actions) {
       const previous =
         a.type === "variable"
@@ -123,7 +129,17 @@ function runQueue(
           : a.type === "time"
             ? s.time
             : undefined;
-      apply(a, s, w);
+      if (a.type === "notification" && /^KKT[：:]|(?:傳來新訊息|稍後回覆了訊息|回覆了訊息)/.test(String(a.value))) {
+        const latest = unlockedIncoming.at(-1);
+        if (latest) {
+          const sender = latest.sender || latest.title;
+          const body = latest.body.trim().split("\\n").filter(Boolean).at(-1) ?? latest.body.trim();
+          s.notifications.push(`${sender}：${body}`);
+        }
+        // Do not show misleading generic text when no actual message was delivered.
+      } else {
+        apply(a, s, w);
+      }
       // A delivered message may open reply options without being viewed.
       // Reading the chat remains a separate user action.
       if (a.type === "unlock") {
