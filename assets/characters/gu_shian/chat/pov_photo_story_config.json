@@ -1,0 +1,449 @@
+{
+  "schemaVersion": "gu-shian-pov-chat-photos/1",
+  "characterId": "gu_shian",
+  "status": "authored_not_runtime_integrated",
+  "imageUploadStatus": "pending_binary_upload",
+  "photoStyle": "first-person hand-held smartphone photos; no face, no selfie, no other photographer",
+  "assetFolder": "assets/characters/gu_shian/chat",
+  "requirements": {
+    "onlySendAfterWorkProjectAcquaintance": true,
+    "sendWhileChatClosed": true,
+    "neverRepeatSamePhoto": true,
+    "preferActualLifeEvents": true,
+    "respectContactBoundaries": true,
+    "fourMeaningfullyDifferentReplies": true,
+    "queueIfConversationActive": true,
+    "sendSequentially": true,
+    "notifyWithUnreadCount": true,
+    "doNotForceRomanceOrPlayerFeelings": true,
+    "noImageIfRemoteAssetMissing": true
+  },
+  "scenes": [
+    {
+      "id": "gu-pov-studio_workdesk",
+      "title": "設計桌",
+      "asset": "assets/characters/gu_shian/chat/studio_workdesk.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/studio_workdesk.jpg",
+      "imageExistsOnGithub": false,
+      "window": "17:30-22:00",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "這張是今天收工前的桌面。"
+        },
+        {
+          "kind": "image",
+          "file": "studio_workdesk.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "圖改到最後，反而是這幾條線最難決定。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-studio_workdesk-choice-1",
+          "text": "你是在調哪裡？",
+          "response": [
+            "在看採光和動線的交界。看著簡單，調起來需要一點耐心。"
+          ],
+          "state": {
+            "topic": "work_detail"
+          }
+        },
+        {
+          "id": "gu-pov-studio_workdesk-choice-2",
+          "text": "模型是你做的嗎？",
+          "response": [
+            "團隊一起做的。我負責其中一部分，還有些細節要修。"
+          ],
+          "state": {
+            "topic": "model_question"
+          }
+        },
+        {
+          "id": "gu-pov-studio_workdesk-choice-3",
+          "text": "桌面有點亂耶。",
+          "response": [
+            "有，我自己也發現了。收完這份就整理。"
+          ],
+          "state": {
+            "topic": "tease"
+          }
+        },
+        {
+          "id": "gu-pov-studio_workdesk-choice-4",
+          "text": "你先忙工作吧。",
+          "response": [
+            "好，等忙完再聊。"
+          ],
+          "state": {
+            "topic": "pause"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gu-pov-rainy_sunset",
+      "title": "雨後的天空",
+      "asset": "assets/characters/gu_shian/chat/rainy_sunset.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/rainy_sunset.jpg",
+      "imageExistsOnGithub": false,
+      "window": "16:30-19:00",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "剛剛雨停了一下。"
+        },
+        {
+          "kind": "image",
+          "file": "rainy_sunset.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "從窗邊看到這個顏色，就拍下來了。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-rainy_sunset-choice-1",
+          "text": "這個天空好漂亮。",
+          "response": [
+            "對，只有幾分鐘。我差點來不及拍。"
+          ],
+          "state": {
+            "topic": "shared_observation"
+          }
+        },
+        {
+          "id": "gu-pov-rainy_sunset-choice-2",
+          "text": "你還在公司嗎？",
+          "response": [
+            "嗯，剛好在窗邊收東西。"
+          ],
+          "state": {
+            "topic": "whereabouts"
+          }
+        },
+        {
+          "id": "gu-pov-rainy_sunset-choice-3",
+          "text": "感覺像電影畫面。",
+          "response": [
+            "玻璃上的水珠剛好把顏色弄得很柔和。"
+          ],
+          "state": {
+            "topic": "composition"
+          }
+        },
+        {
+          "id": "gu-pov-rainy_sunset-choice-4",
+          "text": "我這邊還在下雨。",
+          "response": [
+            "那妳出門小心，路面可能比較滑。"
+          ],
+          "state": {
+            "topic": "weather"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gu-pov-construction_site",
+      "title": "現場材料",
+      "asset": "assets/characters/gu_shian/chat/construction_site.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/construction_site.jpg",
+      "imageExistsOnGithub": false,
+      "window": "09:00-17:00",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "今天到現場看了一圈。"
+        },
+        {
+          "kind": "image",
+          "file": "construction_site.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "清水模在這個角度的光影很有意思。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-construction_site-choice-1",
+          "text": "這是你們的案子嗎？",
+          "response": [
+            "是團隊參與的案子，目前還在現場確認階段。"
+          ],
+          "state": {
+            "topic": "project"
+          }
+        },
+        {
+          "id": "gu-pov-construction_site-choice-2",
+          "text": "旁邊怎麼還有鷹架？",
+          "response": [
+            "還有一些工程沒完成，所以只在允許的安全區域查看。"
+          ],
+          "state": {
+            "topic": "site_safety"
+          }
+        },
+        {
+          "id": "gu-pov-construction_site-choice-3",
+          "text": "這個牆面質感好好看。",
+          "response": [
+            "現場看更明顯，細節跟光線有很大關係。"
+          ],
+          "state": {
+            "topic": "material"
+          }
+        },
+        {
+          "id": "gu-pov-construction_site-choice-4",
+          "text": "你先專心看現場。",
+          "response": [
+            "好，等離開現場再回妳。"
+          ],
+          "state": {
+            "topic": "pause"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gu-pov-ramen_dinner",
+      "title": "晚餐拉麵",
+      "asset": "assets/characters/gu_shian/chat/ramen_dinner.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/ramen_dinner.jpg",
+      "imageExistsOnGithub": false,
+      "window": "18:00-21:30",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "晚餐終於吃上了。"
+        },
+        {
+          "kind": "image",
+          "file": "ramen_dinner.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "這家拉麵比想像中好吃。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-ramen_dinner-choice-1",
+          "text": "看起來很好吃耶。",
+          "response": [
+            "湯頭滿順口的，下次有經過可以試試。"
+          ],
+          "state": {
+            "topic": "food"
+          }
+        },
+        {
+          "id": "gu-pov-ramen_dinner-choice-2",
+          "text": "你現在才吃晚餐？",
+          "response": [
+            "今天現場比預期久了一點。現在終於坐下來了。"
+          ],
+          "state": {
+            "topic": "schedule"
+          }
+        },
+        {
+          "id": "gu-pov-ramen_dinner-choice-3",
+          "text": "你點的是什麼口味？",
+          "response": [
+            "今天點的是豚骨口味，配料也滿豐富的。"
+          ],
+          "state": {
+            "topic": "food_detail"
+          }
+        },
+        {
+          "id": "gu-pov-ramen_dinner-choice-4",
+          "text": "我不太喜歡拉麵。",
+          "response": [
+            "原來如此。妳比較喜歡吃什麼？"
+          ],
+          "state": {
+            "topic": "food_preference"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gu-pov-architecture_book",
+      "title": "書店翻書",
+      "asset": "assets/characters/gu_shian/chat/architecture_book.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/architecture_book.jpg",
+      "imageExistsOnGithub": false,
+      "window": "11:00-18:00",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "今天翻到一本很喜歡的建築書。"
+        },
+        {
+          "kind": "image",
+          "file": "architecture_book.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "有些空間不需要很複雜，就已經很有力量。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-architecture_book-choice-1",
+          "text": "這是哪一本？",
+          "response": [
+            "我先確認書名再跟妳說，剛剛只顧著看內容。"
+          ],
+          "state": {
+            "topic": "book_name_pending"
+          }
+        },
+        {
+          "id": "gu-pov-architecture_book-choice-2",
+          "text": "你休假也看建築？",
+          "response": [
+            "會啊，不一定是為了工作。有時候只是想看看別人的想法。"
+          ],
+          "state": {
+            "topic": "interest"
+          }
+        },
+        {
+          "id": "gu-pov-architecture_book-choice-3",
+          "text": "這頁照片滿有感覺的。",
+          "response": [
+            "我也很喜歡那個光線跟留白。"
+          ],
+          "state": {
+            "topic": "aesthetics"
+          }
+        },
+        {
+          "id": "gu-pov-architecture_book-choice-4",
+          "text": "感覺有點看不懂。",
+          "response": [
+            "沒關係，我一開始也不是每本都看得懂。"
+          ],
+          "state": {
+            "topic": "accessible"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gu-pov-night_street",
+      "title": "晚上的街道",
+      "asset": "assets/characters/gu_shian/chat/night_street.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/night_street.jpg",
+      "imageExistsOnGithub": false,
+      "window": "19:30-23:00",
+      "triggerPolicy": "life_event_and_context_only_not_fixed_daily_schedule",
+      "prerequisites": [
+        "known_from_work_project",
+        "photo_not_sent_before",
+        "no_conflicting_boundary"
+      ],
+      "messages": [
+        {
+          "kind": "text",
+          "body": "剛剛走回去的路上拍的。"
+        },
+        {
+          "kind": "image",
+          "file": "night_street.jpg"
+        },
+        {
+          "kind": "text",
+          "body": "下過雨以後，整條街安靜很多。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "gu-pov-night_street-choice-1",
+          "text": "路上感覺很安靜。",
+          "response": [
+            "嗯，車也少了，走起來剛好。"
+          ],
+          "state": {
+            "topic": "quiet"
+          }
+        },
+        {
+          "id": "gu-pov-night_street-choice-2",
+          "text": "你才下班嗎？",
+          "response": [
+            "剛結束今天的事，現在準備回去。"
+          ],
+          "state": {
+            "topic": "schedule"
+          }
+        },
+        {
+          "id": "gu-pov-night_street-choice-3",
+          "text": "這個光影拍得不錯。",
+          "response": [
+            "謝謝，路燈照在濕地面上剛好有反光。"
+          ],
+          "state": {
+            "topic": "photography"
+          }
+        },
+        {
+          "id": "gu-pov-night_street-choice-4",
+          "text": "這麼晚了，回去小心。",
+          "response": [
+            "會的。妳也早點休息。"
+          ],
+          "state": {
+            "topic": "care"
+          }
+        }
+      ]
+    }
+  ],
+  "integrationNotes": [
+    "本檔是獨立場景源資料，不是已被既有手機執行器載入的事件。",
+    "此版六張 JPG 尚未以 GitHub API 上傳，必須先確認遠端檔案存在，再啟用圖片事件。",
+    "不應替玩家預設已回覆任何選項。",
+    "觸發應依據真實劇情生活事件與玩家已知資訊，不可固定每天傳圖。"
+  ]
+}
