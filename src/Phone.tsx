@@ -454,9 +454,14 @@ function PhoneRuntime({
                   items={[
                     ...(work.data[app] ?? []).map((item) => {
                       const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
+                      // Legacy saves predate deliveryTimes. Never display a delayed
+                      // scripted arrival with its obsolete authoring timestamp.
+                      const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
                       return delivered && typeof delivered === "string"
                         ? { ...item, time: delivered }
-                        : item;
+                        : legacyDelivered
+                          ? { ...item, time: `${s.date ?? work.phone.date} ${s.time}` }
+                          : item;
                     }),
                     ...(s.messages[app] ?? []),
                   ]}
