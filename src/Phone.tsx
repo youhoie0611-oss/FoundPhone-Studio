@@ -483,7 +483,10 @@ function PhoneRuntime({
                         update({ ...current, messages: {
                           ...current.messages,
                           [sourceApp]: [...(current.messages[sourceApp] ?? []), incoming],
-                        } });
+                        }, notifications: [
+                          ...current.notifications,
+                          `${thread}：${reply}`,
+                        ] });
                       })
                       .catch((error: unknown) => setBanner(error instanceof Error ? error.message : "AI 暫時無法回覆"))
                       .finally(() => pendingNpcReplies.current.delete(`${sourceApp}:${thread}`));
