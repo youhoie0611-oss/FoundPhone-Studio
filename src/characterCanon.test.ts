@@ -6,6 +6,7 @@ describe("character canon", () => {
     expect(CHARACTER_CANON["沈硯舟"].age).toBe(24);
     expect(CHARACTER_CANON["裴知聿"].connection).toContain("前男友");
     expect(CHARACTER_CANON["祁野"].initialAffection).toBe(0);
+    expect(CHARACTER_CANON["顧時安"].identity).toBe("建築設計師");
     expect(PLAYER_CANON.identity).toContain("上班族");
   });
   it("flags history contradictions", () => {
