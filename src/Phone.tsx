@@ -472,7 +472,8 @@ function PhoneRuntime({
                     const history = (next.messages[sourceApp] ?? []).filter((item) => item.title === thread)
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
                     void requestNpcReply({ playerId: activePlayerId(), thread, message, history })
-                      .then(({ reply }) => {
+                      .then(async ({ reply, delayMs }) => {
+                        if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
                         const current = runtimeRef.current;
                         const incoming = makeItem({
                           id: `ai-npc-${id}-${Date.now()}`,
