@@ -185,10 +185,10 @@ export function MymyKakao(p: SkinProps) {
             {!messages.length && <Blank />}
           </div>
           <div className="kkt-reply-tray" aria-label="選擇要傳送的回覆">
-            {!p.creator && !isTyping && p.choices?.filter((choice) => {
+            {!p.creator && !isTyping && !lastMessage?.outgoing && p.choices?.filter((choice) => {
               const character = p.thread === "沈硯舟" ? "shen" : p.thread === "裴知聿" ? "pei" : p.thread === "祁野" ? "qi" : "";
               return (p.thread === "林安" && choice.target.startsWith("lin-reply-")) || (character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-") || choice.target.startsWith("phase3-" + character + "-") || choice.target.startsWith(character + "-r") || choice.target.startsWith(character + "-day") || choice.target.startsWith(character + "-major-event-")));
-            }).map((choice) => (
+            }).slice(-3).map((choice) => (
               <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>
                 {choice.label}
               </button>
