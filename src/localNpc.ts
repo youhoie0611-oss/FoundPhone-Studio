@@ -127,6 +127,33 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
       return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
     }
   }
+  // Resolve the player's actual question before any generic intent templates.
+  // Never invent a location, promise, or completed event from a vague prompt.
+  const recentContext = request.history.filter(x => !x.outgoing).slice(-4).map(x => x.body).join(" ");
+  if (request.thread === "祁野") {
+    if (/沒發現|沒看到|沒注意|根本沒發現/.test(input))
+      return { reply: "我知道。妳當時根本沒看見我，我還以為妳故意裝沒看到。", delayMs: 1400 };
+    if (/停車場|擋到|擋路|那天/.test(input))
+      return { reply: "上次停車場那件事，我記得。妳想問哪一段？", delayMs: 1500 };
+  }
+  if (request.thread === "沈硯舟") {
+    if (/週五|星期五|禮拜五/.test(input) && /活動|現場|球場|相機/.test(recentContext))
+      return { reply: "妳是問週五的活動嗎？我還沒確認會不會去，確認後再跟妳說。", delayMs: 1500 };
+    if (/照片|傳給我|給我看|拍到/.test(input))
+      return { reply: "有拍到幾張，不過我還沒整理完。整理好再傳給妳看。", delayMs: 1600 };
+  }
+  if (request.thread === "裴知聿") {
+    if (/^(幹嘛|幹嘛[？?]|找我幹嘛|什麼事|有事嗎)[！!。\\s]*$/.test(input))
+      return { reply: "想問妳最近過得好不好。知道這樣突然聯絡很冒昧，妳不想聊我就不打擾。", delayMs: 1600 };
+    if (/不是說好|說好.*不.*聯絡|不要聯絡|為什麼.*聯絡/.test(input))
+      return { reply: "是，我記得我們說好先不要聯絡。這次是我越界了，對不起。妳不想繼續，我就停在這裡。", delayMs: 1700 };
+  }
+  if (/[？?]|怎麼|為什麼|哪裡|哪裏|哪天|什麼時候|是不是/.test(input)) {
+    if (/哪裡|哪裏|在哪|什麼地方/.test(input))
+      return { reply: request.thread === "祁野" ? "妳問的是哪次？我不想隨便說個地點敷衍妳。" : "妳說的是哪一次？我先確認，免得答錯。", delayMs: 1400 };
+    if (/為什麼|怎麼會|怎麼突然/.test(input))
+      return { reply: "妳問得對。我想先把事情說清楚，不想用一句話帶過。妳是指剛剛那件事嗎？", delayMs: 1500 };
+  }
   const intent = classifyMessage(request.message);
   const choices = person.responses[intent];
   const previousNpc = request.history.filter(x => !x.outgoing).at(-1)?.body;
