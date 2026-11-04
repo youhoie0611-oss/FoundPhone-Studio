@@ -49,7 +49,6 @@ import {
   Heart,
   MessageCircle,
   MoreHorizontal,
-  ArrowUp,
   Folder,
   Phone as PhoneIcon,
 } from "lucide-react";
