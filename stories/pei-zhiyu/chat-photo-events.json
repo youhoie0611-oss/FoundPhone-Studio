@@ -9,11 +9,12 @@
     "relationship": "玩家前男友",
     "breakupInitiatedBy": "玩家",
     "reunionIntent": true,
-    "hiddenInitialAffection": 0
+    "hiddenInitialAffection": 70,
+    "currentFeelings": "仍喜歡玩家並想重新復合，玩家可以拒絕"
   },
   "guidelines": {
     "photosAreSelfTaken": true,
-    "noSelfie": true,
+    "noSelfie": false,
     "noOtherPhotographer": true,
     "sendEvenWithoutOpeningChat": true,
     "neverMassSend": true,
@@ -38,7 +39,19 @@
     "visualTone": "低飽和、暖黃室內光與自然暮光、日常手機照片而非棚拍",
     "contextSpecificVariety": true,
     "followCurrentCharacterVisualCanon": true,
-    "noAssumedPetOwnership": true
+    "noAssumedPetOwnership": true,
+    "allowOccasionalSelfie": true,
+    "allowNonExplicitFlirtySelfie": true,
+    "photoPersona": "克制70%＋刻意誘惑30%",
+    "noPlayerPhotoRequests": true,
+    "noPlayerPhotoUploads": true,
+    "noPhotoExchange": true,
+    "noPlayerNpcGroupPhoto": true,
+    "stopFlirtyPhotosAfterExplicitRefusal": true,
+    "reuseSavedAssetOnReplay": true,
+    "flirtyPhotosRequirePlausibleLifeEvent": true,
+    "flirtyPhotosNotUnlockedByAffectionAlone": true,
+    "photoPolicyV2": "stories/pei-zhiyu/photo-policy-v2.json"
   },
   "scenes": [
     {
@@ -235,5 +248,216 @@
   "newerGeneratedPhotoSet": {
     "status": "created_in_conversation_not_yet_uploaded",
     "note": "最近一次同一人自攝感的四張大圖（研究書桌、窗邊夕陽、灰貓、拉麵）尚未替換本 JSON 所指向的既有 JPG 檔案；不可宣稱已完成新版圖片上傳。"
-  }
+  },
+  "selfieCandidateTemplates": [
+    {
+      "id": "pei-v2-after-shower",
+      "channel": "kkt",
+      "category": "subtle_flirt_or_normal_selfie",
+      "status": "draft_missing_uploaded_photo",
+      "imageAsset": null,
+      "imagesMustBeUploadedBeforeRuntime": true,
+      "targetAssetFolder": "public/assets/characters/pei-zhiyu/chat/",
+      "photoBrief": "濕潤碎髮、毛巾搭肩、寬鬆上衣、鏡前本人自拍，非露骨",
+      "lead": "剛洗完澡。",
+      "caption": "今天累得差點在浴室睡著。",
+      "conditions": {
+        "characterOnRealisticLifeEvent": true,
+        "relationshipAndBoundariesPermit": true,
+        "contactAllowed": true,
+        "notBlocked": true,
+        "notAfterExplicitFlirtyPhotoRefusal": true,
+        "independentOfOpeningChat": true,
+        "noAutoRepeat": true,
+        "notTriggeredByAffectionAlone": true
+      },
+      "replies": [
+        {
+          "id": "pei-v2-after-shower-choice-1",
+          "player": "你累成這樣還拍照？",
+          "pei": "先讓妳知道我還活著。看起來很狼狽？",
+          "intent": "tease",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-after-shower-choice-2",
+          "player": "今天真的這麼累？",
+          "pei": "嗯，整理資料到很晚。等會兒就睡。",
+          "intent": "care",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-after-shower-choice-3",
+          "player": "你是不是故意挑角度？",
+          "pei": "……被妳發現了？",
+          "intent": "flirt",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-after-shower-choice-4",
+          "player": "我不想收到這種自拍。",
+          "pei": "知道了，之後不傳這類照片。",
+          "intent": "boundary",
+          "stopFurtherFlirtyPhotos": true
+        }
+      ]
+    },
+    {
+      "id": "pei-v2-post-workout",
+      "channel": "kkt",
+      "category": "subtle_flirt_or_normal_selfie",
+      "status": "draft_missing_uploaded_photo",
+      "imageAsset": null,
+      "imagesMustBeUploadedBeforeRuntime": true,
+      "targetAssetFolder": "public/assets/characters/pei-zhiyu/chat/",
+      "photoBrief": "運動背心或寬鬆上衣，稍微流汗與亂髮，自然手機自拍",
+      "lead": "今天難得去運動。",
+      "caption": "現在開始後悔了。",
+      "conditions": {
+        "characterOnRealisticLifeEvent": true,
+        "relationshipAndBoundariesPermit": true,
+        "contactAllowed": true,
+        "notBlocked": true,
+        "notAfterExplicitFlirtyPhotoRefusal": true,
+        "independentOfOpeningChat": true,
+        "noAutoRepeat": true,
+        "notTriggeredByAffectionAlone": true
+      },
+      "replies": [
+        {
+          "id": "pei-v2-post-workout-choice-1",
+          "player": "你不是不常去嗎？",
+          "pei": "最近真的動得少。",
+          "intent": "curious",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-post-workout-choice-2",
+          "player": "先喝水休息吧。",
+          "pei": "喝了，等一下再走。",
+          "intent": "care",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-post-workout-choice-3",
+          "player": "這是想炫耀嗎？",
+          "pei": "我明明是在抱怨累。妳還挺會抓重點。",
+          "intent": "tease",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-post-workout-choice-4",
+          "player": "運動照不用傳我。",
+          "pei": "好，以後不傳這類。",
+          "intent": "boundary",
+          "stopFurtherFlirtyPhotos": true
+        }
+      ]
+    },
+    {
+      "id": "pei-v2-outfit",
+      "channel": "kkt",
+      "category": "subtle_flirt_or_normal_selfie",
+      "status": "draft_missing_uploaded_photo",
+      "imageAsset": null,
+      "imagesMustBeUploadedBeforeRuntime": true,
+      "targetAssetFolder": "public/assets/characters/pei-zhiyu/chat/",
+      "photoBrief": "襯衫自然微敞領口、捲袖、出門前鏡子自拍，符合本人拍攝角度",
+      "lead": "幫我看一下。",
+      "caption": "這件還行嗎？",
+      "conditions": {
+        "characterOnRealisticLifeEvent": true,
+        "relationshipAndBoundariesPermit": true,
+        "contactAllowed": true,
+        "notBlocked": true,
+        "notAfterExplicitFlirtyPhotoRefusal": true,
+        "independentOfOpeningChat": true,
+        "noAutoRepeat": true,
+        "notTriggeredByAffectionAlone": true
+      },
+      "replies": [
+        {
+          "id": "pei-v2-outfit-choice-1",
+          "player": "很好看。",
+          "pei": "妳以前眼光就不差。",
+          "intent": "positive",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-outfit-choice-2",
+          "player": "你不是已經穿好了？",
+          "pei": "穿好了就不能問？",
+          "intent": "tease",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-outfit-choice-3",
+          "player": "你要去哪裡？",
+          "pei": "有個安排，稍微正式點。",
+          "intent": "curious",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-outfit-choice-4",
+          "player": "我不想幫你挑。",
+          "pei": "好，那我自己決定。",
+          "intent": "boundary",
+          "stopFurtherFlirtyPhotos": true
+        }
+      ]
+    },
+    {
+      "id": "pei-v2-lazy-home",
+      "channel": "kkt",
+      "category": "subtle_flirt_or_normal_selfie",
+      "status": "draft_missing_uploaded_photo",
+      "imageAsset": null,
+      "imagesMustBeUploadedBeforeRuntime": true,
+      "targetAssetFolder": "public/assets/characters/pei-zhiyu/chat/",
+      "photoBrief": "沙發上寬鬆T恤、自然亂髮的居家隨手自拍，不能暗示玩家在場",
+      "lead": "今天不想出門。",
+      "caption": "研究報告明天再說。",
+      "conditions": {
+        "characterOnRealisticLifeEvent": true,
+        "relationshipAndBoundariesPermit": true,
+        "contactAllowed": true,
+        "notBlocked": true,
+        "notAfterExplicitFlirtyPhotoRefusal": true,
+        "independentOfOpeningChat": true,
+        "noAutoRepeat": true,
+        "notTriggeredByAffectionAlone": true
+      },
+      "replies": [
+        {
+          "id": "pei-v2-lazy-home-choice-1",
+          "player": "你又拖報告。",
+          "pei": "今天真的想休息一下。",
+          "intent": "tease",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-lazy-home-choice-2",
+          "player": "最近沒睡好？",
+          "pei": "昨晚資料整理太晚了。",
+          "intent": "care",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-lazy-home-choice-3",
+          "player": "頭髮好亂。",
+          "pei": "剛醒沒整理。需要撤回嗎？",
+          "intent": "neutral",
+          "stopFurtherFlirtyPhotos": false
+        },
+        {
+          "id": "pei-v2-lazy-home-choice-4",
+          "player": "這種照片不用傳。",
+          "pei": "好，我會注意。",
+          "intent": "boundary",
+          "stopFurtherFlirtyPhotos": true
+        }
+      ]
+    }
+  ],
+  "policyVersion": "V2.0"
 }
