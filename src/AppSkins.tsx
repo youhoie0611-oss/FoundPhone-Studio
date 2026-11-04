@@ -49,6 +49,7 @@ export type SkinProps = {
   onThread: (s: string) => void;
   choices?: { label: string; target: string }[];
   onChoose?: (target: string) => void;
+  onCustomMessage?: (thread: string, message: string) => void;
 };
 function Avatar({
   name,
