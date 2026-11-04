@@ -452,7 +452,12 @@ function PhoneRuntime({
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
                   }
                   items={[
-                    ...(work.data[app] ?? []),
+                    ...(work.data[app] ?? []).map((item) => {
+                      const delivered = s.ui?.deliveryTimes?.[item.id];
+                      return delivered && typeof delivered === "string"
+                        ? { ...item, time: delivered }
+                        : item;
+                    }),
                     ...(s.messages[app] ?? []),
                   ]}
                   creator={creator}
