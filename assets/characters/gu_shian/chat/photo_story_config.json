@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "gu-shian-chat-photo-scenes/1",
+  "characterId": "gu_shian",
+  "displayName": "顧時安",
+  "status": "authored_scene_configuration_not_automatically_loaded",
+  "relationshipOrigin": "因工作專案認識",
+  "persona": {
+    "age": 26,
+    "profession": "建築設計師",
+    "traits": [
+      "溫柔沉穩",
+      "細膩",
+      "聰明",
+      "有主見"
+    ]
+  },
+  "assetBasePath": "assets/characters/gu_shian/chat",
+  "assetUrlBase": "/assets/characters/gu_shian/chat/",
+  "notes": [
+    "此檔是劇情配置來源資料；既有 stories/template/story.json 尚未載入本檔。",
+    "目前 schema 的聊天 media 僅接受安全的 data URL；本檔保留相對 JPG 路徑供日後整合，不能假稱已實際出現在聊天室。",
+    "好感度與信任度屬隱藏狀態；trustDelta 為供整合時採用的建議變化，不直接對玩家顯示。",
+    "所有選項是提案而非玩家已選；不能提前確立互動結果。"
+  ],
+  "dispatchPolicy": {
+    "sendWithoutChatOpen": true,
+    "queueIfActiveConversation": true,
+    "oneMessageAtATime": true,
+    "requirePriorEvents": true,
+    "suppressRepeatedPhoto": true,
+    "deliveryTimeNotBeforeEvent": true,
+    "unreadNotificationSync": true,
+    "playerChoiceCount": 4,
+    "explicitBoundariesPersist": true,
+    "doNotForcePlayerEmotion": true,
+    "cooldownIsMinimumNotFixedSchedule": true
+  },
+  "scenes": [
+    {
+      "id": "gu-studio-mirror",
+      "title": "工作室的收尾",
+      "image": "studio_mirror_selfie.jpg",
+      "phase": "熟識初期",
+      "timeWindow": {
+        "start": "17:30",
+        "end": "21:30"
+      },
+      "prerequisites": [
+        "work_project_acquainted",
+        "photo_not_previously_sent"
+      ],
+      "suggestedCooldownHours": 48,
+      "trigger": "設計案圖面完成、晚上離開工作室前；不要求玩家在線",
+      "intro": [
+        "今天總算把這一版圖面收好了。",
+        "剛準備下班，順手拍了一張。"
+      ],
+      "photoLead": "",
+      "choices": [
+        {
+          "id": "accept",
+          "text": "看起來忙了一整天，總算可以休息了。",
+          "intent": "關心近況",
+          "reply": [
+            "確實有點久。",
+            "但收尾的時候反而會比較踏實。妳今天也忙嗎？"
+          ],
+          "state": {
+            "topic": "daily_work",
+            "trustDelta": 1,
+            "photoEventCompleted": "gu-studio-mirror"
+          }
+        },
+        {
+          "id": "ask",
+          "text": "後面那個模型是你正在做的案子嗎？",
+          "intent": "詢問專業",
+          "reply": [
+            "對，是最近在調整的量體模型。",
+            "照片裡看不太清楚，實際上還有幾個地方在改。"
+          ],
+          "state": {
+            "topic": "architecture_project",
+            "photoEventCompleted": "gu-studio-mirror"
+          }
+        },
+        {
+          "id": "tease",
+          "text": "你是在拍工作室，還是在拍自己？",
+          "intent": "輕鬆調侃",
+          "reply": [
+            "被妳發現了。",
+            "本來想拍後面的模型，結果人站得太前面。"
+          ],
+          "state": {
+            "topic": "light_banter",
+            "photoEventCompleted": "gu-studio-mirror"
+          }
+        },
+        {
+          "id": "boundary",
+          "text": "你不用特地跟我報備下班啦。",
+          "intent": "表明界線",
+          "reply": [
+            "好，我知道了。",
+            "之後有跟專案相關的事再找妳。"
+          ],
+          "state": {
+            "boundary": "no_unsolicited_personal_checkins",
+            "trustDelta": 0,
+            "photoEventCompleted": "gu-studio-mirror"
+          }
+        }
+      ],
+      "followup": "若玩家詢問工作細節，先回答；若表明不想收到生活照，停止此類主動分享。",
+      "imagePath": "assets/characters/gu_shian/chat/studio_mirror_selfie.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/studio_mirror_selfie.jpg",
+      "deliverySequence": [
+        {
+          "kind": "text",
+          "body": "今天總算把這一版圖面收好了。"
+        },
+        {
+          "kind": "text",
+          "body": "剛準備下班，順手拍了一張。"
+        },
+        {
+          "kind": "image",
+          "asset": "studio_mirror_selfie.jpg"
+        }
+      ]
+    },
+    {
+      "id": "gu-site-visit",
+      "title": "現場勘查",
+      "image": "site_visit_selfie.jpg",
+      "phase": "認識後可發",
+      "timeWindow": {
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "prerequisites": [
+        "work_project_acquainted",
+        "site_visit_scheduled",
+        "photo_not_previously_sent"
+      ],
+      "suggestedCooldownHours": 72,
+      "trigger": "有真實的工地勘查行程，且照片符合當天的工作進度",
+      "intro": [
+        "今天來現場看一下細節。",
+        "陽光剛好照到這面清水模，現場比照片還好看。"
+      ],
+      "choices": [
+        {
+          "id": "detail",
+          "text": "這是清水模嗎？現場質感看起來很好。",
+          "intent": "專業交流",
+          "reply": [
+            "對，妳眼力很好。",
+            "近看會看到模板留下的細節，光影一變感覺也不太一樣。"
+          ],
+          "state": {
+            "topic": "material_detail",
+            "photoEventCompleted": "gu-site-visit"
+          }
+        },
+        {
+          "id": "safety",
+          "text": "你在工地還自拍，注意安全。",
+          "intent": "關心安全",
+          "reply": [
+            "放心，我是在已開放的安全區域拍的。",
+            "等一下進去就先把手機收起來。"
+          ],
+          "state": {
+            "topic": "site_safety",
+            "trustDelta": 1,
+            "photoEventCompleted": "gu-site-visit"
+          }
+        },
+        {
+          "id": "question",
+          "text": "這個案子是你設計的嗎？",
+          "intent": "確認專案",
+          "reply": [
+            "有參與設計，不過不是我一個人完成的。",
+            "現場很多決定都要和團隊一起確認。"
+          ],
+          "state": {
+            "topic": "teamwork",
+            "photoEventCompleted": "gu-site-visit"
+          }
+        },
+        {
+          "id": "busy",
+          "text": "我正在忙，晚點再看。",
+          "intent": "延後回覆",
+          "reply": [
+            "好，妳先忙。",
+            "不急著回我。"
+          ],
+          "state": {
+            "topic": "pause",
+            "pauseUntilPlayerReply": true,
+            "photoEventCompleted": "gu-site-visit"
+          }
+        }
+      ],
+      "followup": "不能以照片推斷女主角已到場；不得傳播尚未授權公開的客戶機密圖面。",
+      "imagePath": "assets/characters/gu_shian/chat/site_visit_selfie.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/site_visit_selfie.jpg",
+      "deliverySequence": [
+        {
+          "kind": "text",
+          "body": "今天來現場看一下細節。"
+        },
+        {
+          "kind": "text",
+          "body": "陽光剛好照到這面清水模，現場比照片還好看。"
+        },
+        {
+          "kind": "image",
+          "asset": "site_visit_selfie.jpg"
+        }
+      ]
+    },
+    {
+      "id": "gu-late-night",
+      "title": "深夜改圖",
+      "image": "late_night_studio.jpg",
+      "phase": "熟識後",
+      "timeWindow": {
+        "start": "21:00",
+        "end": "01:30"
+      },
+      "prerequisites": [
+        "work_project_acquainted",
+        "actual_overtime_event",
+        "photo_not_previously_sent"
+      ],
+      "suggestedCooldownHours": 96,
+      "trigger": "當晚確有加班，且未因玩家界線停用非必要的晚間聯絡",
+      "intro": [
+        "本來想再改一個地方，結果一抬頭就這個時間了。",
+        "咖啡好像買得太晚。"
+      ],
+      "choices": [
+        {
+          "id": "rest",
+          "text": "都這麼晚了，改不完就明天再改吧。",
+          "intent": "關心休息",
+          "reply": [
+            "妳說得有道理。",
+            "我把手上這段標記完就收工，不再往下開新的部分。"
+          ],
+          "state": {
+            "topic": "rest",
+            "trustDelta": 1,
+            "photoEventCompleted": "gu-late-night"
+          }
+        },
+        {
+          "id": "work",
+          "text": "你到底在改哪個地方？",
+          "intent": "追問工作",
+          "reply": [
+            "主要是在對照平面和立面的開口位置。",
+            "看起來只是幾條線，改動其實會連到不少地方。"
+          ],
+          "state": {
+            "topic": "design_revision",
+            "photoEventCompleted": "gu-late-night"
+          }
+        },
+        {
+          "id": "joke",
+          "text": "這杯咖啡看起來已經救不了你了。",
+          "intent": "開玩笑",
+          "reply": [
+            "我也有這個懷疑。",
+            "現在只是心理安慰比較多。"
+          ],
+          "state": {
+            "topic": "humor",
+            "photoEventCompleted": "gu-late-night"
+          }
+        },
+        {
+          "id": "no_late",
+          "text": "太晚了，我不太希望這個時間收到訊息。",
+          "intent": "設定夜間界線",
+          "reply": [
+            "抱歉，沒注意到時間。",
+            "之後非急事我會白天再傳。"
+          ],
+          "state": {
+            "boundary": "quiet_hours_no_nonurgent",
+            "pauseUntilPlayerReply": true,
+            "photoEventCompleted": "gu-late-night"
+          }
+        }
+      ],
+      "followup": "不可將熬夜美化為浪漫義務；夜間界線對後續所有自主訊息生效。",
+      "imagePath": "assets/characters/gu_shian/chat/late_night_studio.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/late_night_studio.jpg",
+      "deliverySequence": [
+        {
+          "kind": "text",
+          "body": "本來想再改一個地方，結果一抬頭就這個時間了。"
+        },
+        {
+          "kind": "text",
+          "body": "咖啡好像買得太晚。"
+        },
+        {
+          "kind": "image",
+          "asset": "late_night_studio.jpg"
+        }
+      ]
+    },
+    {
+      "id": "gu-bookstore",
+      "title": "書店裡的午後",
+      "image": "bookstore_cafe.jpg",
+      "phase": "關係自然熟絡後",
+      "timeWindow": {
+        "start": "11:00",
+        "end": "18:00"
+      },
+      "prerequisites": [
+        "mutual_daily_chat_established",
+        "day_off",
+        "photo_not_previously_sent"
+      ],
+      "suggestedCooldownHours": 120,
+      "trigger": "顧時安休假且自行去書店咖啡館，與玩家的日常分享有足夠互動基礎",
+      "intro": [
+        "本來只是想進來找一本書。",
+        "結果坐下來畫了快一個下午。"
+      ],
+      "choices": [
+        {
+          "id": "ask_place",
+          "text": "這家店在哪裡？感覺很舒服。",
+          "intent": "詢問店家",
+          "reply": [
+            "是在我今天路過的書店咖啡館。",
+            "我把店名確認一下再傳給妳，免得記錯。"
+          ],
+          "state": {
+            "topic": "cafe_location",
+            "pending": "confirm_actual_venue_before_naming",
+            "photoEventCompleted": "gu-bookstore"
+          }
+        },
+        {
+          "id": "sketch",
+          "text": "你休假還在畫建築喔？",
+          "intent": "了解興趣",
+          "reply": [
+            "習慣了，看到有趣的空間就想記一下。",
+            "不過這次不是工作，純粹自己想畫。"
+          ],
+          "state": {
+            "topic": "sketching",
+            "photoEventCompleted": "gu-bookstore"
+          }
+        },
+        {
+          "id": "tease",
+          "text": "你是不是不太會真正休息？",
+          "intent": "輕鬆打趣",
+          "reply": [
+            "可能有一點。",
+            "但對我來說，坐著慢慢畫反而很放鬆。"
+          ],
+          "state": {
+            "topic": "rest_style",
+            "photoEventCompleted": "gu-bookstore"
+          }
+        },
+        {
+          "id": "neutral",
+          "text": "不錯耶，祝你休假愉快。",
+          "intent": "禮貌結束",
+          "reply": [
+            "謝謝，妳也過得順利。"
+          ],
+          "state": {
+            "topic": "conversation_end",
+            "pauseUntilPlayerReply": true,
+            "photoEventCompleted": "gu-bookstore"
+          }
+        }
+      ],
+      "followup": "不得因詢問地點就推斷玩家同意約會；若未確定店名不得虛構。",
+      "imagePath": "assets/characters/gu_shian/chat/bookstore_cafe.jpg",
+      "publicUrl": "/assets/characters/gu_shian/chat/bookstore_cafe.jpg",
+      "deliverySequence": [
+        {
+          "kind": "text",
+          "body": "本來只是想進來找一本書。"
+        },
+        {
+          "kind": "text",
+          "body": "結果坐下來畫了快一個下午。"
+        },
+        {
+          "kind": "image",
+          "asset": "bookstore_cafe.jpg"
+        }
+      ]
+    }
+  ]
+}
