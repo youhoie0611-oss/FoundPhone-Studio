@@ -116,7 +116,7 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   if (request.thread === "裴知聿" && /哪件事|什麼照片|哪張照片|什麼收據/.test(input)) {
     return { reply: "是我們以前常去那家店的收據，夾在舊相冊裡。我不是故意翻出來讓妳難受。", delayMs: 1800 };
   }
-  if (request.thread === "周予晴" && /^(好呀|好啊|好|可以|有興趣|想去)[！!。\\s]*$/.test(input)) {
+  if (request.thread === "周予晴" && /^(好呀|好啊|好|可以|有興趣|想去)[！!。\s]*$/.test(input)) {
     return { reply: "那就約週末！我先看看市集的時間，晚點把資訊傳妳。", delayMs: 1500 };
   }
   if (request.thread === "林安") {
