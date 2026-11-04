@@ -83,6 +83,19 @@ export function MymyKakao(p: SkinProps) {
     messages = p.items.filter((i) => i.title === p.thread),
     scroll = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState<Record<string, number>>({});
+  // A thread is read when opened; never mark other conversations or outgoing messages.
+  const acknowledged = useRef(new Set<string>());
+  useEffect(() => {
+    if (!p.thread || p.creator) return;
+    const unread = messages.filter((m) =>
+      !m.outgoing && !m.read && !p.readIds?.includes(m.id) && !acknowledged.current.has(m.id)
+    );
+    for (const item of unread) {
+      acknowledged.current.add(item.id);
+      p.onRead(item.id);
+    }
+  }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
+
   const lastMessage = messages[messages.length - 1];
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
