@@ -2,7 +2,7 @@
   "schemaVersion": "gu-shian-chat-photo-scenes/1",
   "characterId": "gu_shian",
   "displayName": "顧時安",
-  "status": "authored_scene_configuration_not_automatically_loaded",
+  "status": "integrated_into_stories_template_story_json",
   "relationshipOrigin": "因工作專案認識",
   "persona": {
     "age": 26,
@@ -17,10 +17,10 @@
   "assetBasePath": "assets/characters/gu_shian/chat",
   "assetUrlBase": "/assets/characters/gu_shian/chat/",
   "notes": [
-    "此檔是劇情配置來源資料；既有 stories/template/story.json 尚未載入本檔。",
-    "目前 schema 的聊天 media 僅接受安全的 data URL；本檔保留相對 JPG 路徑供日後整合，不能假稱已實際出現在聊天室。",
-    "好感度與信任度屬隱藏狀態；trustDelta 為供整合時採用的建議變化，不直接對玩家顯示。",
-    "所有選項是提案而非玩家已選；不能提前確立互動結果。"
+    "四張 JPG 已存在本儲存庫，實際運行媒體由 scripts/story.mjs 複製至 public/characters。此檔仍為來源企劃，不是執行器自動直接載入的 JSON。",
+    "正式可玩內容位於 stories/template/story.json，含四張照片、16 個選項及 NPC 回覆，並經 GitHub Actions 的故事驗證與建置流程。",
+    "角色信任及好感保持隱藏，不得憑空預設玩家接受曖昧或交往。",
+    "前六張第一人稱主觀照片及其 24 個選項存於 pov_photo_story_config.json；圖片尚未上傳，暫未在遊戲啟用。"
   ],
   "dispatchPolicy": {
     "sendWithoutChatOpen": true,
@@ -128,7 +128,9 @@
           "kind": "image",
           "asset": "studio_mirror_selfie.jpg"
         }
-      ]
+      ],
+      "runtimeMedia": "./characters/gu-shian-studio-mirror-selfie.jpg",
+      "runtimeSceneId": "gu-photo-studio"
     },
     {
       "id": "gu-site-visit",
@@ -222,7 +224,9 @@
           "kind": "image",
           "asset": "site_visit_selfie.jpg"
         }
-      ]
+      ],
+      "runtimeMedia": "./characters/gu-shian-site-visit-selfie.jpg",
+      "runtimeSceneId": "gu-photo-site"
     },
     {
       "id": "gu-late-night",
@@ -316,7 +320,9 @@
           "kind": "image",
           "asset": "late_night_studio.jpg"
         }
-      ]
+      ],
+      "runtimeMedia": "./characters/gu-shian-late-night-studio.jpg",
+      "runtimeSceneId": "gu-photo-late"
     },
     {
       "id": "gu-bookstore",
@@ -409,7 +415,9 @@
           "kind": "image",
           "asset": "bookstore_cafe.jpg"
         }
-      ]
+      ],
+      "runtimeMedia": "./characters/gu-shian-bookstore-cafe.jpg",
+      "runtimeSceneId": "gu-photo-book"
     }
   ]
 }
