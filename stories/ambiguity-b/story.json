@@ -1,9 +1,9 @@
 {
   "scriptVersion": 1,
   "id": "between-the-lines-b-demo",
-  "title": "未定義關係｜三人初識",
-  "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 39,
+  "title": "未定義關係｜四人交錯",
+  "description": "上班族玩家與沈硯舟、想復合的前男友裴知聿、祁家次子祁野、因工作專案認識的建築設計師顧時安各自發展關係。加入情敵傳聞、合作背叛、家族壓力、建築提案爭議與友情危機。四位男主不永久退場，感情及選擇皆由玩家決定。",
+  "revision": 40,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1644,6 +1644,142 @@
           "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen1-intro",
+          "senderId": "shenyanzhou",
+          "body": "我剛從攝影社的會議出來。\n夏予薇說展覽用的照片有一版被提前放上公開頁面，署名也不對。\n放心，妳之前那幾張我還沒公開。我先去確認到底是哪個環節出問題。",
+          "time": "21:36",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen1-out-1",
+          "senderId": "owner",
+          "body": "先把原始檔跟發布紀錄留好。",
+          "time": "21:36",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen1-in-1",
+          "senderId": "shenyanzhou",
+          "body": "我也是這麼想。照片是哪一版送出去的，至少要查得出來。",
+          "time": "21:36",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen1-out-2",
+          "senderId": "owner",
+          "body": "我之前的照片也在裡面嗎？",
+          "time": "21:36",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen1-in-2",
+          "senderId": "shenyanzhou",
+          "body": "沒有。我剛剛又確認了一遍，妳的照片沒有出現在公開頁面。這點妳可以放心。",
+          "time": "21:36",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen1-out-3",
+          "senderId": "owner",
+          "body": "這是你們攝影社的事，我先不介入。",
+          "time": "21:36",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen1-in-3",
+          "senderId": "shenyanzhou",
+          "body": "好，這本來就不是妳需要處理的事。等我核對清楚再說。",
+          "time": "21:36",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen1-out-4",
+          "senderId": "owner",
+          "body": "你跟夏予薇談過了嗎？",
+          "time": "21:36",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen1-in-4",
+          "senderId": "shenyanzhou",
+          "body": "還沒有正式談。她剛剛在忙活動，我約了明天把檔案攤開來對。",
+          "time": "21:36",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen2-intro",
+          "senderId": "shenyanzhou",
+          "body": "昨天那件事有結果了。\n夏予薇確實把還沒核准的版本交給外部窗口。她說以為我點過頭，我不認同。\n我會先找負責人更正署名，至於我跟她認識那麼多年……我想再聽她完整說一次。",
+          "time": "20:17",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen2-out-1",
+          "senderId": "owner",
+          "body": "你可以生氣，不需要現在原諒。",
+          "time": "20:17",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen2-in-1",
+          "senderId": "shenyanzhou",
+          "body": "嗯。我今天真的不太高興，但我會把工作問題跟友情分開處理。",
+          "time": "20:17",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen2-out-2",
+          "senderId": "owner",
+          "body": "先把公開錯誤更正比較重要。",
+          "time": "20:17",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen2-in-2",
+          "senderId": "shenyanzhou",
+          "body": "對，展覽下週就要開始。我剛寄了更正信，今晚應該會收到回覆。",
+          "time": "20:17",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen2-out-3",
+          "senderId": "owner",
+          "body": "你是不是太相信她了？",
+          "time": "20:17",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen2-in-3",
+          "senderId": "shenyanzhou",
+          "body": "有可能。我以前習慣交給她處理這些事，這次才發現核對不能省。",
+          "time": "20:17",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "drama5-shen2-out-4",
+          "senderId": "owner",
+          "body": "我不想捲進你們的爭執。",
+          "time": "20:17",
+          "hidden": true
+        },
+        {
+          "id": "drama5-shen2-in-4",
+          "senderId": "shenyanzhou",
+          "body": "我知道，抱歉把這些細節丟給妳。妳不用幫我評斷她。",
+          "time": "20:17",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -3206,6 +3342,142 @@
           "body": "昨天聊完我去處理工作了。\n今天想問問妳近況，但不必勉強回覆。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei1-intro",
+          "senderId": "peizhiyu",
+          "body": "系上今天公開了研究交流的合照。\n有人拿我跟江若寧坐在一起的照片開玩笑，傳得有點離譜。\n她是共同報告的學姊。至於那些傳聞，我會自己處理。",
+          "time": "21:43",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei1-out-1",
+          "senderId": "owner",
+          "body": "你特地告訴我是想說什麼？",
+          "time": "21:43",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei1-in-1",
+          "senderId": "peizhiyu",
+          "body": "因為我最近重新聯絡妳，不想讓妳以為我在迴避這件事。但要不要聽，妳決定。",
+          "time": "21:43",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei1-out-2",
+          "senderId": "owner",
+          "body": "你們之間真的只是合作嗎？",
+          "time": "21:43",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei1-in-2",
+          "senderId": "peizhiyu",
+          "body": "目前是合作關係。她對這件事怎麼想，我不敢替她回答。我的界線該由我自己說清楚。",
+          "time": "21:43",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei1-out-3",
+          "senderId": "owner",
+          "body": "你跟誰來往不需要向我報備。",
+          "time": "21:43",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei1-in-3",
+          "senderId": "peizhiyu",
+          "body": "妳說得對。剛才是我擅自以為這件事該先告訴妳，抱歉。",
+          "time": "21:43",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei1-out-4",
+          "senderId": "owner",
+          "body": "照片有什麼好被誤會的？",
+          "time": "21:43",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei1-in-4",
+          "senderId": "peizhiyu",
+          "body": "照片本身沒什麼。一群人聚餐，剪掉旁邊的人以後，就很容易被講成另一回事。",
+          "time": "21:43",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei2-intro",
+          "senderId": "peizhiyu",
+          "body": "我今天跟江若寧把話說清楚了。\n她說之前以為我沒有拒絕，就是給了她可能性。\n我不打算把責任都推給她。以前我太習慣用沉默代替回答，這點確實有問題。",
+          "time": "20:29",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei2-out-1",
+          "senderId": "owner",
+          "body": "那你到底跟她說了什麼？",
+          "time": "20:29",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei2-in-1",
+          "senderId": "peizhiyu",
+          "body": "我說我沒有交往的打算，也承認自己以前沒有講明白。這樣她才能自己做決定。",
+          "time": "20:29",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei2-out-2",
+          "senderId": "owner",
+          "body": "這種事你應該早一點說清楚。",
+          "time": "20:29",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei2-in-2",
+          "senderId": "peizhiyu",
+          "body": "是。我總以為不答應就不算給希望，現在知道那是逃避。",
+          "time": "20:29",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei2-out-3",
+          "senderId": "owner",
+          "body": "你跟我講這些，是希望我原諒你？",
+          "time": "20:29",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei2-in-3",
+          "senderId": "peizhiyu",
+          "body": "不是。這不是拿來換取妳諒解的事。我只是把今天實際發生的事告訴妳。",
+          "time": "20:29",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "drama5-pei2-out-4",
+          "senderId": "owner",
+          "body": "這跟我們以前分手的原因有關嗎？",
+          "time": "20:29",
+          "hidden": true
+        },
+        {
+          "id": "drama5-pei2-in-4",
+          "senderId": "peizhiyu",
+          "body": "也許有相似的地方。但當年的事不能只由我一個人下結論。妳如果想談，我會直接回答。",
+          "time": "20:29",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
         }
@@ -4772,6 +5044,142 @@
           "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi1-intro",
+          "senderId": "qiye",
+          "body": "靠，今天家宴的照片居然被寫成我跟顧明妍要訂婚。\n先講，沒這回事。\n顧家跟我們家有合作沒錯，但我從來沒答應什麼婚約。",
+          "time": "21:52",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi1-out-1",
+          "senderId": "owner",
+          "body": "你跟我解釋幹嘛？",
+          "time": "21:52",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi1-in-1",
+          "senderId": "qiye",
+          "body": "……也是。只是看到那張照片想到妳可能會刷到，就順手講了。",
+          "time": "21:52",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi1-out-2",
+          "senderId": "owner",
+          "body": "所以顧明妍知道傳聞嗎？",
+          "time": "21:52",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi1-in-2",
+          "senderId": "qiye",
+          "body": "知道。她剛傳訊問我是不是也看到，說明天會找我把事情講清楚。",
+          "time": "21:52",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi1-out-3",
+          "senderId": "owner",
+          "body": "那你應該先去跟家裡講清楚。",
+          "time": "21:52",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi1-in-3",
+          "senderId": "qiye",
+          "body": "我剛講過，吵了一輪。這次我不打算讓他們替我答應任何事。",
+          "time": "21:52",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi1-out-4",
+          "senderId": "owner",
+          "body": "不關我的事，你自己處理。",
+          "time": "21:52",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi1-in-4",
+          "senderId": "qiye",
+          "body": "行，我自己處理。這些亂七八糟的事本來就不該算在妳頭上。",
+          "time": "21:52",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi2-intro",
+          "senderId": "qiye",
+          "body": "顧明妍今天找我談了。\n原來家裡早就想用我們兩家的合作案做新聞，連照片都有人安排。\n她也是看了媒體才知道。我們都不想被當成那個什麼『未婚夫妻』。",
+          "time": "20:41",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi2-out-1",
+          "senderId": "owner",
+          "body": "那你們可以一起發聲明。",
+          "time": "20:41",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi2-in-1",
+          "senderId": "qiye",
+          "body": "我也是這樣想。先把合作跟私人關係分開寫清楚，省得他們再亂講。",
+          "time": "20:41",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi2-out-2",
+          "senderId": "owner",
+          "body": "你剛剛不是還很討厭她嗎？",
+          "time": "20:41",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi2-in-2",
+          "senderId": "qiye",
+          "body": "我討厭的是別人拿她跟我湊一對，又不是她本人。她這次也被擺了一道。",
+          "time": "20:41",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi2-out-3",
+          "senderId": "owner",
+          "body": "你打算跟家裡鬧翻嗎？",
+          "time": "20:41",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi2-in-3",
+          "senderId": "qiye",
+          "body": "不至於。公司跟家人都還在，我只是要他們知道我的事不能替我答應。",
+          "time": "20:41",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "drama5-qi2-out-4",
+          "senderId": "owner",
+          "body": "如果澄清完就沒事了吧。",
+          "time": "20:41",
+          "hidden": true
+        },
+        {
+          "id": "drama5-qi2-in-4",
+          "senderId": "qiye",
+          "body": "傳聞能澄清，家裡下一次想安排什麼還不知道。我得先把自己的計畫站穩。",
+          "time": "20:41",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
         }
       ]
     },
@@ -5008,6 +5416,69 @@
           "body": "今天跟以衡討論旅行預算，發現我們想去的地方完全不同。先各自列清單，週末再一起選。",
           "time": "2026-11-09 20:10",
           "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-intro",
+          "senderId": "zhouyu",
+          "body": "最近我跟以衡有點僵。\n他前任來餐廳幫忙談企劃，他沒先跟我說，我是從別人口中知道的。\n我還沒決定怎麼看這件事。妳先不要在群組提，可以嗎？",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-out-1",
+          "senderId": "owner",
+          "body": "好，這件事我不會在群組提。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-in-1",
+          "senderId": "zhouyu",
+          "body": "謝啦。我想先跟他當面談，釐清之後再自己決定要不要說。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-out-2",
+          "senderId": "owner",
+          "body": "你有直接問過以衡嗎？",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-in-2",
+          "senderId": "zhouyu",
+          "body": "還沒，昨晚我們都在工作。今天約好談，至少先把事情問清楚。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-out-3",
+          "senderId": "owner",
+          "body": "他沒說確實很讓人在意。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-in-3",
+          "senderId": "zhouyu",
+          "body": "對，我介意的主要是沒提前告訴我。至於合作本身有沒有問題，我還沒下結論。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-out-4",
+          "senderId": "owner",
+          "body": "這是你們的事，我不想介入。",
+          "time": "19:09",
+          "hidden": true
+        },
+        {
+          "id": "drama5-zhou2-in-4",
+          "senderId": "zhouyu",
+          "body": "可以理解。我也不是要妳評理，只是想把這件事說出來。",
+          "time": "19:09",
+          "hidden": true
         }
       ]
     },
@@ -5217,6 +5688,69 @@
           "body": "我跟以衡最近因為生活安排有點磨合，但我們會自己談，不用妳幫忙站隊。",
           "time": "2026-11-03 20:10",
           "hidden": true
+        },
+        {
+          "id": "drama5-group1-intro",
+          "senderId": "linan",
+          "body": "林安：週末城市文化週有攝影展跟設計展，朋友給了幾張入場票。\n周予晴：我想去看設計展！\n許棠：我得先看班表。\n陳以衡：我週六可能有工作，不要先算我。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-out-1",
+          "senderId": "owner",
+          "body": "我想去，時間確定再跟我說。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-in-1",
+          "senderId": "linan",
+          "body": "林安：好，我先把活動時段發群組。等妳確定再幫妳留票。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-out-2",
+          "senderId": "owner",
+          "body": "我週末可能加班，先不算我。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-in-2",
+          "senderId": "linan",
+          "body": "林安：收到，不幫妳算名額。先忙妳的，有空再說。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-out-3",
+          "senderId": "owner",
+          "body": "有哪幾場？可以先看資訊嗎？",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-in-3",
+          "senderId": "linan",
+          "body": "周予晴：有攝影展、街頭設計展跟老屋導覽。我晚點把公開活動表貼過來。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-out-4",
+          "senderId": "owner",
+          "body": "我這次不參加，你們玩就好。",
+          "time": "19:38",
+          "hidden": true
+        },
+        {
+          "id": "drama5-group1-in-4",
+          "senderId": "linan",
+          "body": "許棠：好啊，下次再約。不用每次都全員到齊。",
+          "time": "19:38",
+          "hidden": true
         }
       ]
     },
@@ -5375,6 +5909,132 @@
           "body": "最近工作和生活都慢慢找到節奏了。謝謝妳願意聽我分享這些日常。",
           "time": "19:29",
           "hidden": true
+        },
+        {
+          "id": "drama5-gu1-intro",
+          "senderId": "gushian",
+          "body": "今天提案會有點亂。\n我負責的老街更新構想，突然出現在另一組的公開簡報裡，連示意圖都很像。\n我先把版本紀錄整理出來，不想沒證據就指控誰。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-out-1",
+          "senderId": "owner",
+          "body": "先保存版本紀錄，這很重要。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-in-1",
+          "senderId": "gushian",
+          "body": "對，我正在整理雲端歷史和寄送時間。明天跟主管談才有依據。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-out-2",
+          "senderId": "owner",
+          "body": "會不會只是大家想到同一個方向？",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-in-2",
+          "senderId": "gushian",
+          "body": "有可能。所以我才不想急著下結論。我會把圖面、比例和修改時間一起對。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-out-3",
+          "senderId": "owner",
+          "body": "這件事你打算怎麼處理？",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-in-3",
+          "senderId": "gushian",
+          "body": "先核對，再找負責窗口。我不想鬧大，但也不能讓團隊的成果被當成別人的。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-out-4",
+          "senderId": "owner",
+          "body": "我最近工作也忙，可能沒辦法聊這個。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu1-in-4",
+          "senderId": "gushian",
+          "body": "了解！妳先忙工作，我這邊會照流程處理，不用分心。",
+          "time": "22:01",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-intro",
+          "senderId": "gushian",
+          "body": "提案的事情核對出來了。\n是合作窗口黎澄先把我們的草案送進另一組的簡報，說這樣比較容易保住預算。\n我不認同這種做法，明天要跟主管正式說明。可能會影響案子的進度。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-out-1",
+          "senderId": "owner",
+          "body": "你有整理出足夠的證據嗎？",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-in-1",
+          "senderId": "gushian",
+          "body": "有，時間戳記、原始圖面和會議紀錄都在。我不會只靠一時生氣去談。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-out-2",
+          "senderId": "owner",
+          "body": "你會不會因此跟合作方撕破臉？",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-in-2",
+          "senderId": "gushian",
+          "body": "可能會尷尬，但不是只有翻臉跟裝沒事兩種選擇。我想先談清楚責任。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-out-3",
+          "senderId": "owner",
+          "body": "如果我是你，我會要求署名更正。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-in-3",
+          "senderId": "gushian",
+          "body": "我也會提出更正，另外還要確認後續圖面使用權。不只是誰的名字比較大。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-out-4",
+          "senderId": "owner",
+          "body": "我不太懂這個案子，沒辦法給意見。",
+          "time": "20:53",
+          "hidden": true
+        },
+        {
+          "id": "drama5-gu2-in-4",
+          "senderId": "gushian",
+          "body": "沒關係，這原本就是我的工作問題。謝謝妳聽我講到這裡。",
+          "time": "20:53",
+          "hidden": true
         }
       ]
     }
@@ -5523,6 +6183,56 @@
         "meta": {
           "story": "true"
         }
+      },
+      {
+        "id": "drama5-ig-shen",
+        "title": "沈硯舟｜攝影作品公告",
+        "body": "攝影社公告：本週展覽海報有兩個版本，主辦方正在核對作品授權與署名。請先以正式公告為準。",
+        "sender": "攝影社",
+        "time": "19:42",
+        "kind": "post",
+        "hidden": true,
+        "meta": {}
+      },
+      {
+        "id": "drama5-ig-pei",
+        "title": "裴知聿｜研究室合照",
+        "body": "研究室公開分享：今天的交流報告順利結束。合照中有多位研究生，完整照片已更新。",
+        "sender": "研究室",
+        "time": "19:42",
+        "kind": "post",
+        "hidden": true,
+        "meta": {}
+      },
+      {
+        "id": "drama5-ig-qi",
+        "title": "祁野｜家族活動傳聞",
+        "body": "公開活動帳號：祁家與顧家出席產業晚宴。有留言猜測婚約，但主辦單位尚未發布相關資訊。",
+        "sender": "活動紀錄",
+        "time": "19:42",
+        "kind": "post",
+        "hidden": true,
+        "meta": {}
+      },
+      {
+        "id": "drama5-ig-gu",
+        "title": "顧時安｜建築提案",
+        "body": "設計展公開貼文：老街更新提案展示中。兩組圖面概念相近，正式團隊署名將由主辦方確認。",
+        "sender": "城市設計展",
+        "time": "19:42",
+        "kind": "post",
+        "hidden": true,
+        "meta": {}
+      },
+      {
+        "id": "drama5-ig-city",
+        "title": "城市文化週｜週末活動",
+        "body": "公開活動表：攝影展、街頭設計展、老屋導覽分不同場次開放參觀。",
+        "sender": "城市文化週",
+        "time": "19:42",
+        "kind": "post",
+        "hidden": true,
+        "meta": {}
       }
     ],
     "notes": [
@@ -5547,6 +6257,12 @@
         "id": "cal-prep",
         "title": "展前準備",
         "body": "週四｜公司會議與活動準備。"
+      },
+      {
+        "id": "drama5-cal-city",
+        "title": "週末｜城市文化週",
+        "body": "公開攝影展、設計展及老屋導覽；可自行決定是否出席。",
+        "hidden": true
       }
     ]
   },
@@ -5585,7 +6301,17 @@
     "gu_trust": 0,
     "gu_curiosity": 0,
     "gu_relationship_definition": "stranger",
-    "gu_boundary": "normal"
+    "gu_boundary": "normal",
+    "drama5-shen1-answer": "unanswered",
+    "drama5-pei1-answer": "unanswered",
+    "drama5-qi1-answer": "unanswered",
+    "drama5-gu1-answer": "unanswered",
+    "drama5-group1-answer": "unanswered",
+    "drama5-shen2-answer": "unanswered",
+    "drama5-pei2-answer": "unanswered",
+    "drama5-qi2-answer": "unanswered",
+    "drama5-gu2-answer": "unanswered",
+    "drama5-zhou2-answer": "unanswered"
   },
   "events": [
     {
@@ -21776,6 +22502,2648 @@
           "type": "notification",
           "key": "",
           "value": "顧時安：最近工作和生活都慢慢找到節奏了。謝謝妳願意聽我分享這些日常。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-start",
+      "label": "四男主情感風波｜開啟獨立排程",
+      "type": "start",
+      "next": [
+        "drama5-shen1-wait",
+        "drama5-pei1-wait",
+        "drama5-qi1-wait",
+        "drama5-gu1-wait",
+        "drama5-group1-wait"
+      ]
+    },
+    {
+      "id": "drama5-shen1-wait",
+      "label": "沈硯舟｜獨立事件排程",
+      "type": "delay",
+      "once": true,
+      "delayMs": 720000,
+      "next": [
+        "drama5-shen1-arrive"
+      ]
+    },
+    {
+      "id": "drama5-shen1-arrive",
+      "label": "沈硯舟｜自主發送新訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：我剛從攝影社的會議出來。"
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-ig-shen",
+          "value": true
+        }
+      ],
+      "next": [
+        "drama5-shen2-wait"
+      ]
+    },
+    {
+      "id": "drama5-shen2-wait",
+      "label": "沈硯舟｜後續生活事件等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "drama5-shen2-arrive"
+      ]
+    },
+    {
+      "id": "drama5-shen2-arrive",
+      "label": "沈硯舟｜自主發送後續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：昨天那件事有結果了。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen1-choice",
+      "label": "沈硯舟｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-shen1-intro",
+      "next": [
+        "drama5-shen1-choice-1",
+        "drama5-shen1-choice-2",
+        "drama5-shen1-choice-3",
+        "drama5-shen1-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-shen1-choice-1",
+      "label": "先把原始檔跟發布紀錄留好。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen1-answer",
+          "value": "evidence"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-shen1-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-wait-1",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-shen1-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-arrive-1",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：我也是這麼想。照片是哪一版送出去的，至少要查得出來。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen1-choice-2",
+      "label": "我之前的照片也在裡面嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen1-answer",
+          "value": "privacy"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-shen1-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-wait-2",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-shen1-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-arrive-2",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：沒有。我剛剛又確認了一遍，妳的照片沒有出現在公開頁面。這點妳可以放心。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen1-choice-3",
+      "label": "這是你們攝影社的事，我先不介入。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen1-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-shen1-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-wait-3",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-shen1-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-arrive-3",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：好，這本來就不是妳需要處理的事。等我核對清楚再說。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen1-choice-4",
+      "label": "你跟夏予薇談過了嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen1-answer",
+          "value": "ask_collaborator"
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-shen1-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-wait-4",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-shen1-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-shen1-reply-arrive-4",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen1-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：還沒有正式談。她剛剛在忙活動，我約了明天把檔案攤開來對。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei1-wait",
+      "label": "裴知聿｜獨立事件排程",
+      "type": "delay",
+      "once": true,
+      "delayMs": 900000,
+      "next": [
+        "drama5-pei1-arrive"
+      ]
+    },
+    {
+      "id": "drama5-pei1-arrive",
+      "label": "裴知聿｜自主發送新訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：系上今天公開了研究交流的合照。"
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-ig-pei",
+          "value": true
+        }
+      ],
+      "next": [
+        "drama5-pei2-wait"
+      ]
+    },
+    {
+      "id": "drama5-pei2-wait",
+      "label": "裴知聿｜後續生活事件等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 92700000,
+      "next": [
+        "drama5-pei2-arrive"
+      ]
+    },
+    {
+      "id": "drama5-pei2-arrive",
+      "label": "裴知聿｜自主發送後續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我今天跟江若寧把話說清楚了。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei1-choice",
+      "label": "裴知聿｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-pei1-intro",
+      "next": [
+        "drama5-pei1-choice-1",
+        "drama5-pei1-choice-2",
+        "drama5-pei1-choice-3",
+        "drama5-pei1-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-pei1-choice-1",
+      "label": "你特地告訴我是想說什麼？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei1-answer",
+          "value": "intent"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-pei1-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-wait-1",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-pei1-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-arrive-1",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：因為我最近重新聯絡妳，不想讓妳以為我在迴避這件事。但要不要聽，妳決定。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei1-choice-2",
+      "label": "你們之間真的只是合作嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei1-answer",
+          "value": "clarify"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-pei1-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-wait-2",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-pei1-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-arrive-2",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：目前是合作關係。她對這件事怎麼想，我不敢替她回答。我的界線該由我自己說清楚。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei1-choice-3",
+      "label": "你跟誰來往不需要向我報備。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei1-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-pei1-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-wait-3",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-pei1-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-arrive-3",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：妳說得對。剛才是我擅自以為這件事該先告訴妳，抱歉。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei1-choice-4",
+      "label": "照片有什麼好被誤會的？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei1-answer",
+          "value": "source"
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-pei1-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-wait-4",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-pei1-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-pei1-reply-arrive-4",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei1-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：照片本身沒什麼。一群人聚餐，剪掉旁邊的人以後，就很容易被講成另一回事。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi1-wait",
+      "label": "祁野｜獨立事件排程",
+      "type": "delay",
+      "once": true,
+      "delayMs": 1080000,
+      "next": [
+        "drama5-qi1-arrive"
+      ]
+    },
+    {
+      "id": "drama5-qi1-arrive",
+      "label": "祁野｜自主發送新訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：靠，今天家宴的照片居然被寫成我跟顧明妍要訂婚。"
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-ig-qi",
+          "value": true
+        }
+      ],
+      "next": [
+        "drama5-qi2-wait"
+      ]
+    },
+    {
+      "id": "drama5-qi2-wait",
+      "label": "祁野｜後續生活事件等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 96000000,
+      "next": [
+        "drama5-qi2-arrive"
+      ]
+    },
+    {
+      "id": "drama5-qi2-arrive",
+      "label": "祁野｜自主發送後續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：顧明妍今天找我談了。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi1-choice",
+      "label": "祁野｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-qi1-intro",
+      "next": [
+        "drama5-qi1-choice-1",
+        "drama5-qi1-choice-2",
+        "drama5-qi1-choice-3",
+        "drama5-qi1-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-qi1-choice-1",
+      "label": "你跟我解釋幹嘛？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi1-answer",
+          "value": "question_motive"
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-qi1-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-wait-1",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-qi1-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-arrive-1",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：……也是。只是看到那張照片想到妳可能會刷到，就順手講了。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi1-choice-2",
+      "label": "所以顧明妍知道傳聞嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi1-answer",
+          "value": "ask_gu"
+        },
+        {
+          "type": "variable",
+          "key": "qi_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-qi1-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-wait-2",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-qi1-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-arrive-2",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：知道。她剛傳訊問我是不是也看到，說明天會找我把事情講清楚。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi1-choice-3",
+      "label": "那你應該先去跟家裡講清楚。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi1-answer",
+          "value": "family"
+        },
+        {
+          "type": "variable",
+          "key": "qi_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-qi1-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-wait-3",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-qi1-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-arrive-3",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：我剛講過，吵了一輪。這次我不打算讓他們替我答應任何事。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi1-choice-4",
+      "label": "不關我的事，你自己處理。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi1-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "qi_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-qi1-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-wait-4",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-qi1-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-qi1-reply-arrive-4",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi1-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：行，我自己處理。這些亂七八糟的事本來就不該算在妳頭上。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu1-wait",
+      "label": "顧時安｜獨立事件排程",
+      "type": "delay",
+      "once": true,
+      "delayMs": 1260000,
+      "next": [
+        "drama5-gu1-arrive"
+      ]
+    },
+    {
+      "id": "drama5-gu1-arrive",
+      "label": "顧時安｜自主發送新訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天提案會有點亂。"
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-ig-gu",
+          "value": true
+        }
+      ],
+      "next": [
+        "drama5-gu2-wait"
+      ]
+    },
+    {
+      "id": "drama5-gu2-wait",
+      "label": "顧時安｜後續生活事件等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 100800000,
+      "next": [
+        "drama5-gu2-arrive"
+      ]
+    },
+    {
+      "id": "drama5-gu2-arrive",
+      "label": "顧時安｜自主發送後續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：提案的事情核對出來了。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu1-choice",
+      "label": "顧時安｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-gu1-intro",
+      "next": [
+        "drama5-gu1-choice-1",
+        "drama5-gu1-choice-2",
+        "drama5-gu1-choice-3",
+        "drama5-gu1-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-gu1-choice-1",
+      "label": "先保存版本紀錄，這很重要。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu1-answer",
+          "value": "document"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-gu1-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-wait-1",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-gu1-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-arrive-1",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：對，我正在整理雲端歷史和寄送時間。明天跟主管談才有依據。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu1-choice-2",
+      "label": "會不會只是大家想到同一個方向？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu1-answer",
+          "value": "doubt"
+        },
+        {
+          "type": "variable",
+          "key": "gu_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-gu1-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-wait-2",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-gu1-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-arrive-2",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：有可能。所以我才不想急著下結論。我會把圖面、比例和修改時間一起對。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu1-choice-3",
+      "label": "這件事你打算怎麼處理？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu1-answer",
+          "value": "plan"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-gu1-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-wait-3",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-gu1-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-arrive-3",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：先核對，再找負責窗口。我不想鬧大，但也不能讓團隊的成果被當成別人的。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu1-choice-4",
+      "label": "我最近工作也忙，可能沒辦法聊這個。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu1-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-gu1-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-wait-4",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-gu1-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-gu1-reply-arrive-4",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu1-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：了解！妳先忙工作，我這邊會照流程處理，不用分心。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-group1-wait",
+      "label": "下班後五人組｜獨立事件排程",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2100000,
+      "next": [
+        "drama5-group1-arrive"
+      ]
+    },
+    {
+      "id": "drama5-group1-arrive",
+      "label": "下班後五人組｜自主發送新訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "下班後五人組：林安：週末城市文化週有攝影展跟設計展，朋友給了幾張入場票。"
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-ig-city",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "drama5-cal-city",
+          "value": true
+        }
+      ],
+      "next": [
+        "drama5-zhou2-wait"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-wait",
+      "label": "下班後五人組｜後續生活事件等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 126000000,
+      "next": [
+        "drama5-zhou2-arrive"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-arrive",
+      "label": "周予晴｜自主發送後續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "周予晴：最近我跟以衡有點僵。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-group1-choice",
+      "label": "下班後五人組｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-group1-intro",
+      "next": [
+        "drama5-group1-choice-1",
+        "drama5-group1-choice-2",
+        "drama5-group1-choice-3",
+        "drama5-group1-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-group1-choice-1",
+      "label": "我想去，時間確定再跟我說。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-group1-answer",
+          "value": "interested"
+        }
+      ],
+      "next": [
+        "drama5-group1-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-wait-1",
+      "label": "下班後五人組｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-group1-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-arrive-1",
+      "label": "下班後五人組｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "下班後五人組：林安：好，我先把活動時段發群組。等妳確定再幫妳留票。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-group1-choice-2",
+      "label": "我週末可能加班，先不算我。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-group1-answer",
+          "value": "work"
+        }
+      ],
+      "next": [
+        "drama5-group1-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-wait-2",
+      "label": "下班後五人組｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-group1-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-arrive-2",
+      "label": "下班後五人組｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "下班後五人組：林安：收到，不幫妳算名額。先忙妳的，有空再說。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-group1-choice-3",
+      "label": "有哪幾場？可以先看資訊嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-group1-answer",
+          "value": "ask"
+        }
+      ],
+      "next": [
+        "drama5-group1-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-wait-3",
+      "label": "下班後五人組｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-group1-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-arrive-3",
+      "label": "下班後五人組｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "下班後五人組：周予晴：有攝影展、街頭設計展跟老屋導覽。我晚點把公開活動表貼過來。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-group1-choice-4",
+      "label": "我這次不參加，你們玩就好。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-group1-answer",
+          "value": "decline"
+        }
+      ],
+      "next": [
+        "drama5-group1-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-wait-4",
+      "label": "下班後五人組｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-group1-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-group1-reply-arrive-4",
+      "label": "下班後五人組｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-group1-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "下班後五人組：許棠：好啊，下次再約。不用每次都全員到齊。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen2-choice",
+      "label": "沈硯舟｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-shen2-intro",
+      "next": [
+        "drama5-shen2-choice-1",
+        "drama5-shen2-choice-2",
+        "drama5-shen2-choice-3",
+        "drama5-shen2-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-shen2-choice-1",
+      "label": "你可以生氣，不需要現在原諒。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen2-answer",
+          "value": "validate"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-shen2-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-wait-1",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-shen2-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-arrive-1",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：嗯。我今天真的不太高興，但我會把工作問題跟友情分開處理。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen2-choice-2",
+      "label": "先把公開錯誤更正比較重要。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen2-answer",
+          "value": "professional"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-shen2-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-wait-2",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-shen2-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-arrive-2",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：對，展覽下週就要開始。我剛寄了更正信，今晚應該會收到回覆。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen2-choice-3",
+      "label": "你是不是太相信她了？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen2-answer",
+          "value": "challenge"
+        },
+        {
+          "type": "variable",
+          "key": "shen_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-shen2-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-wait-3",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-shen2-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-arrive-3",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：有可能。我以前習慣交給她處理這些事，這次才發現核對不能省。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-shen2-choice-4",
+      "label": "我不想捲進你們的爭執。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-shen2-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "shen_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-shen2-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-wait-4",
+      "label": "沈硯舟｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-shen2-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-shen2-reply-arrive-4",
+      "label": "沈硯舟｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-shen2-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：我知道，抱歉把這些細節丟給妳。妳不用幫我評斷她。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei2-choice",
+      "label": "裴知聿｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-pei2-intro",
+      "next": [
+        "drama5-pei2-choice-1",
+        "drama5-pei2-choice-2",
+        "drama5-pei2-choice-3",
+        "drama5-pei2-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-pei2-choice-1",
+      "label": "那你到底跟她說了什麼？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei2-answer",
+          "value": "details"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-pei2-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-wait-1",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-pei2-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-arrive-1",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我說我沒有交往的打算，也承認自己以前沒有講明白。這樣她才能自己做決定。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei2-choice-2",
+      "label": "這種事你應該早一點說清楚。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei2-answer",
+          "value": "accountability"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-pei2-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-wait-2",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-pei2-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-arrive-2",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：是。我總以為不答應就不算給希望，現在知道那是逃避。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei2-choice-3",
+      "label": "你跟我講這些，是希望我原諒你？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei2-answer",
+          "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-pei2-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-wait-3",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-pei2-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-arrive-3",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：不是。這不是拿來換取妳諒解的事。我只是把今天實際發生的事告訴妳。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-pei2-choice-4",
+      "label": "這跟我們以前分手的原因有關嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-pei2-answer",
+          "value": "past"
+        },
+        {
+          "type": "variable",
+          "key": "pei_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-pei2-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-wait-4",
+      "label": "裴知聿｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-pei2-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-pei2-reply-arrive-4",
+      "label": "裴知聿｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-pei2-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：也許有相似的地方。但當年的事不能只由我一個人下結論。妳如果想談，我會直接回答。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi2-choice",
+      "label": "祁野｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-qi2-intro",
+      "next": [
+        "drama5-qi2-choice-1",
+        "drama5-qi2-choice-2",
+        "drama5-qi2-choice-3",
+        "drama5-qi2-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-qi2-choice-1",
+      "label": "那你們可以一起發聲明。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi2-answer",
+          "value": "joint_statement"
+        },
+        {
+          "type": "variable",
+          "key": "qi_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-qi2-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-wait-1",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-qi2-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-arrive-1",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：我也是這樣想。先把合作跟私人關係分開寫清楚，省得他們再亂講。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi2-choice-2",
+      "label": "你剛剛不是還很討厭她嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi2-answer",
+          "value": "nuance"
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-qi2-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-wait-2",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-qi2-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-arrive-2",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：我討厭的是別人拿她跟我湊一對，又不是她本人。她這次也被擺了一道。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi2-choice-3",
+      "label": "你打算跟家裡鬧翻嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi2-answer",
+          "value": "family"
+        },
+        {
+          "type": "variable",
+          "key": "qi_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-qi2-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-wait-3",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-qi2-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-arrive-3",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：不至於。公司跟家人都還在，我只是要他們知道我的事不能替我答應。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-qi2-choice-4",
+      "label": "如果澄清完就沒事了吧。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-qi2-answer",
+          "value": "future"
+        },
+        {
+          "type": "variable",
+          "key": "qi_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-qi2-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-wait-4",
+      "label": "祁野｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-qi2-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-qi2-reply-arrive-4",
+      "label": "祁野｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-qi2-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：傳聞能澄清，家裡下一次想安排什麼還不知道。我得先把自己的計畫站穩。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu2-choice",
+      "label": "顧時安｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-gu2-intro",
+      "next": [
+        "drama5-gu2-choice-1",
+        "drama5-gu2-choice-2",
+        "drama5-gu2-choice-3",
+        "drama5-gu2-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-gu2-choice-1",
+      "label": "你有整理出足夠的證據嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu2-answer",
+          "value": "evidence"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 2
+        }
+      ],
+      "next": [
+        "drama5-gu2-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-wait-1",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-gu2-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-arrive-1",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：有，時間戳記、原始圖面和會議紀錄都在。我不會只靠一時生氣去談。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu2-choice-2",
+      "label": "你會不會因此跟合作方撕破臉？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu2-answer",
+          "value": "risk"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-gu2-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-wait-2",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-gu2-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-arrive-2",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：可能會尷尬，但不是只有翻臉跟裝沒事兩種選擇。我想先談清楚責任。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu2-choice-3",
+      "label": "如果我是你，我會要求署名更正。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu2-answer",
+          "value": "credit"
+        },
+        {
+          "type": "variable",
+          "key": "gu_curiosity",
+          "value": 1
+        }
+      ],
+      "next": [
+        "drama5-gu2-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-wait-3",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-gu2-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-arrive-3",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：我也會提出更正，另外還要確認後續圖面使用權。不只是誰的名字比較大。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-gu2-choice-4",
+      "label": "我不太懂這個案子，沒辦法給意見。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-gu2-answer",
+          "value": "distance"
+        },
+        {
+          "type": "variable",
+          "key": "gu_trust",
+          "value": 0
+        }
+      ],
+      "next": [
+        "drama5-gu2-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-wait-4",
+      "label": "顧時安｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-gu2-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-gu2-reply-arrive-4",
+      "label": "顧時安｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-gu2-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：沒關係，這原本就是我的工作問題。謝謝妳聽我講到這裡。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-zhou2-choice",
+      "label": "周予晴｜四種不同回應",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "drama5-zhou2-intro",
+      "next": [
+        "drama5-zhou2-choice-1",
+        "drama5-zhou2-choice-2",
+        "drama5-zhou2-choice-3",
+        "drama5-zhou2-choice-4"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-choice-1",
+      "label": "好，這件事我不會在群組提。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-out-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-zhou2-answer",
+          "value": "privacy"
+        }
+      ],
+      "next": [
+        "drama5-zhou2-reply-wait-1"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-wait-1",
+      "label": "周予晴｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 14000,
+      "next": [
+        "drama5-zhou2-reply-arrive-1"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-arrive-1",
+      "label": "周予晴｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-in-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "周予晴：謝啦。我想先跟他當面談，釐清之後再自己決定要不要說。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-zhou2-choice-2",
+      "label": "你有直接問過以衡嗎？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-out-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-zhou2-answer",
+          "value": "clarify"
+        }
+      ],
+      "next": [
+        "drama5-zhou2-reply-wait-2"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-wait-2",
+      "label": "周予晴｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 26000,
+      "next": [
+        "drama5-zhou2-reply-arrive-2"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-arrive-2",
+      "label": "周予晴｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-in-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "周予晴：還沒，昨晚我們都在工作。今天約好談，至少先把事情問清楚。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-zhou2-choice-3",
+      "label": "他沒說確實很讓人在意。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-out-3",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-zhou2-answer",
+          "value": "support"
+        }
+      ],
+      "next": [
+        "drama5-zhou2-reply-wait-3"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-wait-3",
+      "label": "周予晴｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 38000,
+      "next": [
+        "drama5-zhou2-reply-arrive-3"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-arrive-3",
+      "label": "周予晴｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-in-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "周予晴：對，我介意的主要是沒提前告訴我。至於合作本身有沒有問題，我還沒下結論。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drama5-zhou2-choice-4",
+      "label": "這是你們的事，我不想介入。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-out-4",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "drama5-zhou2-answer",
+          "value": "distance"
+        }
+      ],
+      "next": [
+        "drama5-zhou2-reply-wait-4"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-wait-4",
+      "label": "周予晴｜依回應暫停",
+      "type": "delay",
+      "once": true,
+      "delayMs": 50000,
+      "next": [
+        "drama5-zhou2-reply-arrive-4"
+      ]
+    },
+    {
+      "id": "drama5-zhou2-reply-arrive-4",
+      "label": "周予晴｜針對選擇作答",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "drama5-zhou2-in-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "周予晴：可以理解。我也不是要妳評理，只是想把這件事說出來。"
         }
       ],
       "next": []
