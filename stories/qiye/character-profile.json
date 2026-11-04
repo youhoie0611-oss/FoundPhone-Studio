@@ -48,7 +48,13 @@
       "參考圖內的 21 歲",
       "參考圖內的大三學生職業欄",
       "188cm / 82kg 數字在核心人物設定尚未確認"
-    ]
+    ],
+    "visualMemoryPath": "assets/characters/qiye/visual-memory.json",
+    "visualRegistryPath": "assets/characters/visual-memory-registry.json",
+    "referenceSheetPlannedPath": "assets/characters/qiye/reference/qiye_reference_sheet_v1.jpg",
+    "referenceSheetGithubStatus": "pending_upload",
+    "referenceVersion": 1,
+    "mandatoryBeforeImageGeneration": "讀取 visual-memory.json 並提供已確認的參考圖本體；不得只依角色姓名生成"
   },
   "messaging": {
     "platform": "kakao",
