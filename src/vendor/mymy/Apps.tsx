@@ -37,7 +37,7 @@ const characterAvatar: Record<string, string> = {
   "祁野": "qi-ye-avatar.png",
 };
 function chatAvatar(name: string, fallback?: string) {
-  const normalized = name.trim().replace(/^[\\s\\u3000]+|[\\s\\u3000]+$/g, "");
+  const normalized = name.trim().replace(/^[\s\u3000]+|[\s\u3000]+$/g, "");
   const file = characterAvatar[normalized] ?? Object.entries(characterAvatar).find(([character]) => normalized.includes(character))?.[1];
   return file ? `${import.meta.env.BASE_URL}characters/${file}` : fallback;
 }
