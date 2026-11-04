@@ -77,7 +77,7 @@
     "疲憊"
   ],
   "cameraHabits": {
-    "status": "visual_storytelling_guidance_not_confirmed_biography",
+    "status": "confirmed_author_photo_style_v3",
     "defaultOwner": "祁野本人",
     "privateChat": [
       "手機前鏡頭隨手自拍、低角度或偏斜構圖",
@@ -94,8 +94,20 @@
     ],
     "constraints": [
       "禁止把第三人稱棚拍／旁人拍攝的全身照當作本人自拍",
-      "禁止拍到現實中不可能由本人持手機取景的鏡位，除非有合理的自拍工具或其他人拍攝並標示"
-    ]
+      "禁止拍到現實中不可能由本人持手機取景的鏡位，除非有合理的自拍工具或其他人拍攝並標示",
+      "同行 NPC 幫拍的第三人稱照片可以存在，但一定要記錄真實拍攝者，不能冒稱祁野自拍",
+      "角色自拍、日常照片必須具真實手機攝影感；不得每張是專業時尚寫真或極度磨皮"
+    ],
+    "validOtherPhotographers": {
+      "condition": "只有劇情中確實同行且存在的 NPC 能幫拍祁野或與祁野合照",
+      "referenceWeightsForQualifiedOutings": {
+        "selfCaptured": 50,
+        "otherNpcCaptured": 20,
+        "npcGroupSelfieOrPhoto": 30
+      },
+      "requireNpcIdentityAndVisualMemory": true,
+      "prohibitPlayerGroupPhoto": true
+    }
   },
   "commonScenes": {
     "status": "候選生活情境，非已發生劇情",
@@ -131,6 +143,45 @@
     "依場景更換衣物但仍維持角色識別",
     "確認照片確實可能由祁野自己拍攝",
     "指定唯一用途分類與目標 GitHub 路徑",
-    "在提交成功後核對實際檔案；未提交不得說已上傳"
-  ]
+    "在提交成功後核對實際檔案；未提交不得說已上傳",
+    "檢查情緒、日程、拍照動機與對象關係；不適合時可以不生成",
+    "同一照片永久重用原始圖片，不因開啟聊天而重生",
+    "若由同行 NPC 幫拍或合照，必須對照該 NPC 已建立的外貌與存在性",
+    "生成的照片不等於已選擇分享、更不等於已送達玩家"
+  ],
+  "photoPolicyV3Path": "stories/qiye/photo-policy-v3.json",
+  "photographyIdentity": {
+    "status": "confirmed_author_rule_v3",
+    "style": "隨性惡犬型；偶爾耍帥，也會搞怪、狼狽、疲憊、安靜",
+    "longTermWeights": {
+      "sports_and_activities": 30,
+      "selfies_and_outfits": 25,
+      "friends_and_outings": 20,
+      "photography_design": 15,
+      "food_scenery_other": 10
+    },
+    "weightsAreNotDailyQuota": true,
+    "selfieModes": [
+      "耍帥",
+      "隨性",
+      "搞怪",
+      "狼狽",
+      "安靜"
+    ],
+    "allowedImperfectAngles": [
+      "低角度",
+      "側臉",
+      "不對稱",
+      "鏡子",
+      "廣角",
+      "運動模糊",
+      "手震",
+      "失焦",
+      "逆光"
+    ],
+    "variation": "有時攝影構圖漂亮，有時完全是隨手照，不可固定高冷、黑白或時尚棚拍",
+    "captureMoodLinked": true,
+    "photoAndSharingOptional": true,
+    "existingPhotosImmutable": true
+  }
 }
