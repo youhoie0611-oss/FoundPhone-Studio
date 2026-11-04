@@ -618,45 +618,6 @@ function PhoneRuntime({
               )}
             </div>
           )}
-          {!creator && s.choices.length > 0 && !locked && (
-            <div className="story-overlay" style={{ maxHeight: "70%", overflowY: "auto" }}>
-              <span className="eyebrow">劇情選擇</span>
-              <h3>你會如何回應？</h3>
-              {s.choices.slice(0, 3).map((c, index) => (
-                <button key={c.target} onClick={() => {
-                  setCustomReplyOpen(false);
-                  update(choose(work, runtimeRef.current, c.target));
-                }}>
-                  {String.fromCharCode(65 + index)}. {c.label}
-                  <ArrowUp size={15} />
-                </button>
-              ))}
-              <button onClick={() => setCustomReplyOpen((open) => !open)}>
-                D. 【玩家自定義】
-              </button>
-              {customReplyOpen && (
-                <form onSubmit={(event) => {
-                  event.preventDefault();
-                  if (!customReplyText.trim()) return;
-                  update(submitCustomReply(runtimeRef.current, customReplyText, app || "kakao", notificationThread || (runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "shen" ? "沈硯舟" : runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "pei" ? "裴知聿" : runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "qi" ? "祁野" : "林安")));
-                  setCustomReplyText("");
-                  setCustomReplyOpen(false);
-                }}>
-                  <textarea
-                    aria-label="玩家自定義回覆"
-                    value={customReplyText}
-                    onChange={(event) => setCustomReplyText(event.target.value)}
-                    placeholder="輸入你真正想說的話（將原文保存，不自動套用預設選項）"
-                    maxLength={2000}
-                    rows={3}
-                    style={{ width: "100%", boxSizing: "border-box" }}
-                  />
-                  <button type="submit" disabled={!customReplyText.trim()}>保存自定義回覆</button>
-                  <small>目前保留原文與待選分支；NPC 語意回應尚未接入。</small>
-                </form>
-              )}
-            </div>
-          )}
           {!creator && s.endings.length > 0 && !locked && (
             <div className="story-overlay ending">
               <span className="eyebrow">ENDING · {s.endings.length}</span>
