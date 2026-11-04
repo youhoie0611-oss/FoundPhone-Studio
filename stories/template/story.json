@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "机主",
     "date": "2026-11-04",
@@ -100,6 +100,13 @@
       "phone": "",
       "avatar": "./characters/gu-shian-avatar.jpg",
       "bio": "26 歲，183 公分，76 公斤。建築學系畢業，建築設計師。溫柔沉穩、細膩、聰明、有主見。與玩家因工作專案認識。"
+    },
+    {
+      "id": "qiye",
+      "name": "祁野",
+      "phone": "",
+      "avatar": "",
+      "bio": "23 歲。喜歡街頭運動、籃球、攝影與設計；說話直接、好勝，有自己的生活與界線。"
     }
   ],
   "chats": [
@@ -885,6 +892,16 @@
           }
         }
       ]
+    },
+    {
+      "id": "qiye-kkt",
+      "app": "kakao",
+      "title": "祁野",
+      "participants": [
+        "owner",
+        "qiye"
+      ],
+      "messages": []
     }
   ],
   "content": {
@@ -1339,7 +1356,12 @@
     "gu_studio_answered": false,
     "gu_quiet_hours": false,
     "gu_last_topic": "",
-    "gu_pov_assets_ready": false
+    "gu_pov_assets_ready": false,
+    "qiye_hidden_affinity": 0,
+    "qiye_trust": 0,
+    "qiye_relationship": "acquaintance",
+    "qiye_last_topic": "",
+    "qiye_chat_media_ready": false
   },
   "events": [
     {
