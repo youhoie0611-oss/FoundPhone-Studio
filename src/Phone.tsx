@@ -208,8 +208,16 @@ function PhoneRuntime({
       .get(work.id)
       .then((saved) => {
         if (!active) return;
-        if (saved && saved.state.revision === work.updatedAt)
-          setOwn(saved.state);
+        if (saved && saved.state.revision === work.updatedAt) {
+          // Older builds incorrectly created read-triggered choices on startup.
+          // Discard only orphaned choices whose triggering chat was never read.
+          const restored = structuredClone(saved.state);
+          restored.choices = restored.choices.filter((choice) => {
+            const group = work.nodes.find((node) => node.type === "choice" && node.next.includes(choice.target));
+            return !group || group.event !== "read" || restored.read.includes(group.target);
+          });
+          setOwn(restored);
+        }
         else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
