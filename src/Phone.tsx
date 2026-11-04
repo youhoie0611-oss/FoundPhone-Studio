@@ -715,8 +715,15 @@ function PhoneRuntime({
             <button
               className="device-banner"
               onClick={() => {
+                const notice = notificationContent(banner, work.apps);
                 setBanner("");
-                setPanel("notification");
+                const target = installedApps.some((a) => a.id === notice.appId)
+                  ? notice.appId : "messages";
+                const items = [...(work.data[target] ?? []), ...(runtimeRef.current.messages[target] ?? [])];
+                const matching = items.find((item) => item.title === notice.title || item.sender === notice.title);
+                setNotificationThread(matching?.title ?? "");
+                if (locked) beginUnlock();
+                else open(target);
               }}
             >
               <AppIcon
