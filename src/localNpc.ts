@@ -39,6 +39,13 @@ const people: Record<string, { name: string; responses: Record<Intent, string[]>
     affection: ["妳這話有點犯規啊。", "再說一遍？我剛才沒看錯吧。"],
     other: ["然後呢？", "妳這話有後半句吧？"],
   }},
+  "顧時安": { name: "顧時安", responses: {
+    stop: ["好，妳先忙！"], refuse: ["沒問題，完全不用勉強。"],
+    gift: ["欸，謝謝妳想到我！"], question: ["妳想知道哪部分？"],
+    greeting: ["嗨！今天過得還好嗎？"], meeting: ["走啊！不過先確認彼此的時間。"],
+    work: ["辛苦啦！我也在趕設計圖。"], thanks: ["能幫上忙就好！"],
+    affection: ["欸，妳這樣說我真的會開心。"], other: ["哈哈，我剛好在整理模型，妳今天有什麼新鮮事嗎？"],
+  }},
   "周予晴": { name: "周予晴", responses: {
     stop: ["好，先不打擾妳。"], refuse: ["那我們改天再約，妳先忙。"],
     gift: ["真的嗎？謝謝妳想到我。"], question: ["妳想問哪件事？我看一下。"],
@@ -126,6 +133,16 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
     if (/加班|不能去|沒辦法去|不一定能去|先不答應/.test(input) && /聚餐|週五|七點半|吃飯|約/.test(request.history.map(x => x.body).slice(-12).join(" "))) {
       return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
     }
+  }
+  if (request.thread === "顧時安" && /城市展覽|建築設計|這類活動/.test(recent)) {
+    if (/沒興趣|不想|不用|不方便|不要/.test(input))
+      return { reply: "收到！那我就不繼續推展覽啦。突然打擾妳不好意思！", delayMs: 1300 };
+    if (/怎麼有|怎麼知道|怎麼找到|認識/.test(input))
+      return { reply: "妳問得對，我應該先把聯絡的緣由說清楚。抱歉我剛剛太突然了。", delayMs: 1500 };
+    if (/有興趣|想聽|介紹|什麼展/.test(input))
+      return { reply: "是城市空間和建築相關的展覽！我平常做設計，看到這種活動就想分享。妳喜歡看建築嗎？", delayMs: 1500 };
+    if (/忙|晚點|改天/.test(input))
+      return { reply: "沒問題，妳先忙！我也還有張圖要改，有空再聊。", delayMs: 1400 };
   }
   // Resolve character-specific opening scenes before generic intent classification.
   if (request.thread === "沈硯舟" && /介意我傳|入鏡|上次活動/.test(recent)) {
