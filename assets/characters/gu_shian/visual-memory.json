@@ -277,9 +277,14 @@
     }
   ],
   "generatedReferenceCandidate": {
-    "currentStatus": "generated_not_uploaded_to_GitHub",
-    "localFilename": "gu_shian_character_sheet_v2_candidate.jpg",
+    "currentStatus": "github_uploaded_pending_author_face_review",
+    "githubPath": "assets/characters/gu_shian/reference/gu_shian_character_sheet_v2_candidate.jpg",
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "sha256": "e4947a46e9a1433c4ae0ac89d8273ce264fd1cb7d3c18031c244b8fab70aaad1",
     "faceReferenceAuthority": "original_author_confirmed_v1",
-    "note": "新生成設定板含未確認的狗名阿麥，不能作為正史；只以其眼鏡與犬外貌設計作為示意，原始五視圖仍是臉部標準。"
+    "note": "新圖有已選定的眼鏡及寵物外型，但AI在圖中自行填入的狗名「阿麥」尚未由作者確認，不能視為正式犬名。若臉部與原始v1不同，一律以v1五視圖為準。"
   }
 }
