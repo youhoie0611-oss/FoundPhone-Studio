@@ -10,7 +10,7 @@ export function notificationContent(text: string, apps: Work["apps"]) {
   const chatApp = apps.find((a) => ["kakao", "wechat", "whatsapp", "qq", "messages"].includes(a.id) && a.installed);
   return {
     title: sender,
-    body: separator > 0 ? text.slice(separator + 1) : text,
+    body: (separator > 0 ? text.slice(separator + 1) : text).replace(/稍後回覆了訊息|傳來新訊息|回覆了訊息/g, "傳來一則訊息"),
     appId: app?.id ?? chatApp?.id ?? "messages",
   };
 }
