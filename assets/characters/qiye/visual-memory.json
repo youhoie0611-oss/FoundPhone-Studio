@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "characterId": "qiye",
+  "name": "祁野",
+  "visualIdentityStatus": "confirmed",
+  "reference": {
+    "version": 1,
+    "source": "作者在角色專屬對話中上傳並確認的五視角、表情、細節與髮型角色設定板",
+    "sourceUploadedFilename": "7F73BC76-F8E9-4D06-A12E-03575F53FF2E.jpeg",
+    "sourceFileId": "file_00000000232c81fabef4440f84a0d937",
+    "expectedGitHubPath": "assets/characters/qiye/reference/qiye_reference_sheet_v1.jpg",
+    "githubUploadStatus": "pending",
+    "sourceDimensions": {
+      "width": 1213,
+      "height": 1296
+    },
+    "priority": "人物面貌、五官、髮型、氣質、體態比例最高優先；角色身分與年齡以核心設定為準",
+    "note": "GitHub 尚未放入這張原圖。生成前必須實際提供這張原圖（本對話附件或日後 GitHub 影像），不能僅根據檔名宣稱參照。"
+  },
+  "immutableAppearance": {
+    "face": [
+      "年輕東亞男性面孔",
+      "深邃略狹長的眼型與明確眉眼輪廓",
+      "挺直鼻樑",
+      "較立體的唇形與俐落下顎線",
+      "膚色自然偏冷白"
+    ],
+    "hair": [
+      "黑色、中短長度的凌亂層次碎髮",
+      "有蓬鬆感、部分瀏海自然落在眉眼附近",
+      "避免整齊油頭、齊瀏海或改成淺色髮型"
+    ],
+    "body": [
+      "高挑、肩膀偏寬、長腿",
+      "體格結實偏運動型，但不要極度健美化"
+    ],
+    "distinguishingDetails": [
+      "多處銀色耳飾，可見耳骨釘和垂墜長耳飾",
+      "下唇一側有銀色唇環／唇飾",
+      "頸部常配銀色多層項鍊、十字架元素",
+      "手背／手指有紋身圖樣"
+    ],
+    "identityNegativeConstraints": [
+      "不得換成另一張漂亮但五官不同的陌生臉",
+      "不得自行改動年齡為參考圖片標示的21歲",
+      "不得將參考圖的『大三學生』設定視為正史"
+    ]
+  },
+  "typicalWardrobe": {
+    "definingStyle": [
+      "暗色系、街頭、賽車機能感穿搭",
+      "深藍色或黑色賽車夾克，紅白撞色條紋與布章",
+      "黑色內搭、寬鬆黑色多口袋工裝褲、厚底運動鞋",
+      "銀色項鍊與耳飾；墨鏡偶爾架在頭頂"
+    ],
+    "casualVariations": [
+      "黑色連帽外套、寬鬆T恤、運動背心",
+      "打球或健身時改穿活動方便的服裝",
+      "外套可以更換，但不應完全丟失角色的街頭風格"
+    ],
+    "avoid": [
+      "每張照片都穿一模一樣的全套制服",
+      "不合當下生活場景的高級訂製西服或棚拍造型"
+    ]
+  },
+  "expressionReference": [
+    "平靜冷淡",
+    "帶挑釁的輕笑",
+    "無防備的大笑",
+    "調皮",
+    "驚訝",
+    "不耐",
+    "吃醋時的悶沉",
+    "疲憊"
+  ],
+  "cameraHabits": {
+    "status": "visual_storytelling_guidance_not_confirmed_biography",
+    "defaultOwner": "祁野本人",
+    "privateChat": [
+      "手機前鏡頭隨手自拍、低角度或偏斜構圖",
+      "第一人稱 POV 拍正在做的事、鞋子、街景、食物、手部局部",
+      "有自然裁切、生活現場光與適度模糊；並非每張都要露臉"
+    ],
+    "instagramStory": [
+      "偏即時、用手機拍、9:16直式",
+      "可發運動、雨天、街頭、風景、生活片段；不必特別為玩家拍"
+    ],
+    "instagramPost": [
+      "經過挑選但仍像祁野親自拍的攝影作品或生活記錄",
+      "4:5或1:1畫面，構圖可較完整、有自我審美"
+    ],
+    "constraints": [
+      "禁止把第三人稱棚拍／旁人拍攝的全身照當作本人自拍",
+      "禁止拍到現實中不可能由本人持手機取景的鏡位，除非有合理的自拍工具或其他人拍攝並標示"
+    ]
+  },
+  "commonScenes": {
+    "status": "候選生活情境，非已發生劇情",
+    "locations": [
+      "夜間籃球場",
+      "滑板場／街頭水泥地",
+      "設計工作桌、筆電與草稿",
+      "健身房",
+      "雨後的城市街道",
+      "路邊小店／用餐",
+      "公車或車窗外的景色",
+      "街邊偶遇的動物"
+    ],
+    "moods": [
+      "夜生活自然低光",
+      "手機拍攝的稍粗糙顆粒感",
+      "街頭環境的不完美構圖"
+    ],
+    "storyCaveats": [
+      "有狗貓入鏡不等於他飼養牠",
+      "工作桌／設計圖不等於已確定他的學籍或職業",
+      "拍照不代表已公開 IG 或已私訊玩家"
+    ]
+  },
+  "photoDestinations": {
+    "kkt": "assets/characters/qiye/chat/",
+    "instagramStory": "assets/characters/qiye/instagram/story/",
+    "instagramPost": "assets/characters/qiye/instagram/post/"
+  },
+  "mandatoryGenerationChecklist": [
+    "讀取角色視覺記憶與人物參考圖本體",
+    "比對五官、髮型、飾品、刺青、身型比例",
+    "依場景更換衣物但仍維持角色識別",
+    "確認照片確實可能由祁野自己拍攝",
+    "指定唯一用途分類與目標 GitHub 路徑",
+    "在提交成功後核對實際檔案；未提交不得說已上傳"
+  ]
+}
