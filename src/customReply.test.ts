@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { submitCustomReply } from "./engine";
-import { initialRuntime } from "./schema";
-import { testWork } from "./story-engine/testStory";
+import { initialRuntime, type Work } from "./schema";
+const testWork = { id: "test", updatedAt: 1, phone: { date: "2026-11-03", time: "10:00" } } as Work;
 
 describe("custom player reply", () => {
   it("preserves the exact input and does not silently select a scripted branch", () => {
