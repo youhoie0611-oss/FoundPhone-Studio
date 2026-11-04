@@ -42,7 +42,7 @@ function apply(a: Action, s: Runtime, w: Work) {
         s.unlocked.push(a.key);
         const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
         if (item && !item.outgoing) {
-          s.ui = { ...s.ui, deliveryTimes: { ...(s.ui?.deliveryTimes ?? {}), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time } };
+          s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time } };
         }
       }
       break;
@@ -277,7 +277,7 @@ export function advance(
       const incoming = following.filter((action) => action.type === "unlock")
         .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
         .filter((item) => item && !item.outgoing);
-      const lastReplies = s.ui?.lastFreeReply ?? {};
+      const lastReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
       const isConversing = incoming.some((item) => {
         const last = lastReplies[item!.title];
         return last !== undefined && s.elapsedMs - Number(last) < 90000;
@@ -312,7 +312,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   });
   return {
     ...s,
-    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...(s.ui?.lastFreeReply ?? {}), [thread]: String(s.elapsedMs ?? 0) } },
+    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
     messages: {
       ...s.messages,
       [appId]: [...(s.messages[appId] ?? []), message],
