@@ -59,7 +59,8 @@
     ],
     "reasonableVariations": [
       "研究所日常可穿黑／灰／深藍上衣、襯衫或針織",
-      "更正式場合可依已發生劇情改穿其他服裝"
+      "更正式場合可依已發生劇情改穿其他服裝",
+      "運動背心、休閒寬鬆 T 恤、領口自然微開的襯衫、捲袖、深色高領（視場景替換）"
     ],
     "avoid": [
       "所有場景被固定成同一套制服",
@@ -85,7 +86,8 @@
       "手機自己拍的工作桌與論文資料",
       "坐在窗邊或路上拍暮色、街景",
       "第一人稱拍餐點或遇到的小動物",
-      "偶爾自然自拍，但不能莫名出現第三人稱全身寫真"
+      "偶爾自然自拍，但不能莫名出現第三人稱全身寫真",
+      "允許合理情境下的自拍：出門前襯衫、運動後、微濕髮與完整居家上衣、沙發休息；偶爾挑角度讓照片自然帶曖昧，但不露骨"
     ],
     "instagramStory": [
       "即時生活、外出、天空、研究所、咖啡等片刻",
@@ -105,7 +107,8 @@
     "constraints": [
       "本人手機不可能拍到的第三人稱視角要有合理拍攝者／自拍工具說明",
       "不可每張都像同一個商業攝影棚",
-      "同一人拍攝並不等於所有照片色調、拍攝位置一樣"
+      "同一人拍攝並不等於所有照片色調、拍攝位置一樣",
+      "不因初始高好感而加快曖昧照片頻率；玩家明確拒絕後不再傳同類照片施壓"
     ]
   },
   "commonScenes": {
@@ -115,7 +118,11 @@
       "窗邊夕陽、傍晚城市",
       "閱讀、咖啡與簡單晚餐",
       "夜間散步",
-      "偶遇路邊動物"
+      "偶遇路邊動物",
+      "運動後休息與自然自拍",
+      "洗澡後穿好衣服、微濕頭髮",
+      "居家沙發小憩",
+      "出門前穿搭自拍"
     ],
     "mood": [
       "生活化、安靜、略帶觀察與克制",
@@ -143,5 +150,21 @@
     "生成後標註照片檔名、用途、情境、GitHub 資料夾 URL、實際提交狀態與 commit",
     "如沒有真的把圖片上傳成功，不得宣稱遠端已有此圖或遊戲已引用"
   ],
-  "linkedCharacterCanon": "stories/pei-zhiyu/character-profile.json"
+  "linkedCharacterCanon": "stories/pei-zhiyu/character-profile.json",
+  "photoPersonaV2": {
+    "archetype": "腹黑狐狸型",
+    "restraintPercent": 70,
+    "intentionalAllurePercent": 30,
+    "occasionalIntentionalSelfie": true,
+    "notEverySelfieFlirt": true,
+    "nonExplicit": true
+  },
+  "photoContentWeightsV2": {
+    "graduateStudy": 25,
+    "everydayLife": 20,
+    "normalSelfiesAndOutfits": 20,
+    "subtleFlirtySelfies": 15,
+    "friendsAndOutings": 10,
+    "sceneryAndHobbies": 10
+  }
 }
