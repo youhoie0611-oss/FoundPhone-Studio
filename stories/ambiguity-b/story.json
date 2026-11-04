@@ -50,7 +50,28 @@
     {
       "id": "linan",
       "name": "林安",
-      "bio": "妳自己的好友，有獨立的工作、交友與生活安排；會分享日常、約妳出門，也會在需要時關心妳。",
+      "bio": "妳的多年好友，從事行銷企劃；與許棠交往一年。喜歡揪朋友吃飯，也會因工作焦慮、生活瑣事找妳聊天，不是戀愛情報員。",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "zhouyu",
+      "name": "周予晴",
+      "bio": "妳的老朋友，平面設計師。嘴快心軟，與陳以衡交往三年；有自己的工作壓力和旅行計畫。",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "chenyiheng",
+      "name": "陳以衡",
+      "bio": "妳的朋友，餐飲企劃。與周予晴穩定交往，習慣負責聚餐訂位，偶爾與女友意見不合。",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "xutang",
+      "name": "許棠",
+      "bio": "妳的好友，護理師。與林安交往一年，輪班忙碌，對朋友很可靠，偶爾需要自己的空間。",
       "phone": "",
       "avatar": ""
     }
@@ -4791,7 +4812,7 @@
         {
           "id": "lin-reply-1-out",
           "title": "",
-          "body": "有啊，他傳照片來問我。",
+          "body": "剛下班，今天有點累。",
           "senderId": "owner",
           "time": "18:31",
           "hidden": true
@@ -4799,7 +4820,7 @@
         {
           "id": "lin-reply-1-in",
           "title": "",
-          "body": "喔～原來他真的有傳。\n我還以為他只顧著拍照。",
+          "body": "我也是。下次一起吃飯吧，最近真的需要放鬆。",
           "senderId": "linan",
           "time": "18:32",
           "hidden": true
@@ -4807,7 +4828,7 @@
         {
           "id": "lin-reply-2-out",
           "title": "",
-          "body": "有聯絡，但我們還不熟。",
+          "body": "還沒，手上的事有點多。",
           "senderId": "owner",
           "time": "18:31",
           "hidden": true
@@ -4815,7 +4836,7 @@
         {
           "id": "lin-reply-2-in",
           "title": "",
-          "body": "正常啦，才見過一次。\n慢慢認識就好。",
+          "body": "那妳先忙，晚點再聊。別忘記吃東西。",
           "senderId": "linan",
           "time": "18:32",
           "hidden": true
@@ -4855,7 +4876,7 @@
         {
           "id": "lin-reply-r3-1-out",
           "title": "",
-          "body": "對啊，我跟裴知聿同部門。妳在哪遇到他的？",
+          "body": "是啊，他是我前男友。妳在哪裡遇到他的？",
           "senderId": "owner",
           "time": "18:46",
           "hidden": true
@@ -4871,7 +4892,7 @@
         {
           "id": "lin-reply-r3-2-out",
           "title": "",
-          "body": "哈哈，他在公司也一樣，一副很忙的樣子。",
+          "body": "哈哈，他以前也是這樣，一副很忙的樣子。",
           "senderId": "owner",
           "time": "18:46",
           "hidden": true
@@ -4914,6 +4935,177 @@
           "body": "好，那不提他。\n妳今天上班累不累？",
           "senderId": "linan",
           "time": "18:57",
+          "hidden": true
+        },
+        {
+          "id": "friends-linan-later-1",
+          "senderId": "linan",
+          "title": "",
+          "body": "我今天提案被退回來重做，現在只想吃辣的。妳週末有空一起吃嗎？",
+          "time": "2026-11-05 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-linan-later-2",
+          "senderId": "linan",
+          "title": "",
+          "body": "許棠今天輪班，我自己去買晚餐。妳最近有沒有看到什麼好看的劇？",
+          "time": "2026-11-06 19:15",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "kkt-zhouyu",
+      "app": "kakao",
+      "title": "周予晴",
+      "participants": [
+        "owner",
+        "zhouyu"
+      ],
+      "messages": [
+        {
+          "id": "friends-zhouyu-opening",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "我剛把客戶的第七版改稿交出去。\n週末想去逛市集，妳有興趣嗎？",
+          "time": "2026-11-04 18:12"
+        },
+        {
+          "id": "friends-zhouyu-later-1",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "以衡說要做晚餐，結果忘了買米。這個人真的很會安排。",
+          "time": "2026-11-05 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-zhouyu-later-2",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "週末市集我還是會去，妳想來就來，不用為了陪我硬排時間。",
+          "time": "2026-11-06 19:15",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "kkt-chenyiheng",
+      "app": "kakao",
+      "title": "陳以衡",
+      "participants": [
+        "owner",
+        "chenyiheng"
+      ],
+      "messages": [
+        {
+          "id": "friends-chenyiheng-opening",
+          "senderId": "chenyiheng",
+          "title": "",
+          "body": "我在看週五的餐廳。\n有沒有什麼妳最近特別想吃的？",
+          "time": "2026-11-04 18:12"
+        },
+        {
+          "id": "friends-chenyiheng-later-1",
+          "senderId": "chenyiheng",
+          "title": "",
+          "body": "予晴最近趕稿很累，我打算做點她喜歡的菜。",
+          "time": "2026-11-05 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-chenyiheng-later-2",
+          "senderId": "chenyiheng",
+          "title": "",
+          "body": "店我先留五個位子，妳加班也沒關係，晚點跟我說就好。",
+          "time": "2026-11-06 19:15",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "kkt-xutang",
+      "app": "kakao",
+      "title": "許棠",
+      "participants": [
+        "owner",
+        "xutang"
+      ],
+      "messages": [
+        {
+          "id": "friends-xutang-opening",
+          "senderId": "xutang",
+          "title": "",
+          "body": "今天剛下夜班，準備補眠。\n林安說妳最近也很忙，記得吃飯。",
+          "time": "2026-11-04 18:12"
+        },
+        {
+          "id": "friends-xutang-later-1",
+          "senderId": "xutang",
+          "title": "",
+          "body": "醒了。林安買了兩杯咖啡，忘記我今天要睡到下午。",
+          "time": "2026-11-05 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-xutang-later-2",
+          "senderId": "xutang",
+          "title": "",
+          "body": "這週我值班可能沒辦法聚餐，妳們去就好，別為了我改時間。",
+          "time": "2026-11-06 19:15",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "kkt-friends-five",
+      "app": "kakao",
+      "title": "下班後五人組",
+      "participants": [
+        "owner",
+        "linan",
+        "zhouyu",
+        "chenyiheng",
+        "xutang"
+      ],
+      "messages": [
+        {
+          "id": "friends-group-opening",
+          "senderId": "linan",
+          "title": "",
+          "body": "週五晚上七點半有人要一起吃飯嗎？我剛好找到一家不用排隊的。",
+          "time": "2026-11-04 18:12"
+        },
+        {
+          "id": "friends-group-later-1",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "我可能晚到，今天客戶臨時要改圖。妳們先點。",
+          "time": "2026-11-05 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-group-later-2",
+          "senderId": "chenyiheng",
+          "title": "",
+          "body": "我訂好五個位子了。誰臨時不能來直接說，別有壓力。",
+          "time": "2026-11-06 19:15",
+          "hidden": true
+        },
+        {
+          "id": "friends-group-later-3",
+          "senderId": "xutang",
+          "title": "",
+          "body": "我週五夜班，這次先缺席。妳們玩得開心。",
+          "time": "2026-11-07 18:45",
+          "hidden": true
+        },
+        {
+          "id": "friends-group-later-4",
+          "senderId": "linan",
+          "title": "",
+          "body": "我會帶桌遊，但不保證大家都想玩。",
+          "time": "2026-11-08 19:15",
           "hidden": true
         }
       ]
@@ -18473,7 +18665,7 @@
     },
     {
       "id": "lin-reply-1",
-      "label": "有啊，他傳照片來問我。",
+      "label": "剛下班，今天有點累。",
       "type": "action",
       "actions": [
         {
@@ -18515,7 +18707,7 @@
     },
     {
       "id": "lin-reply-2",
-      "label": "有聯絡，但我們還不熟。",
+      "label": "還沒，手上的事有點多。",
       "type": "action",
       "actions": [
         {
@@ -19933,6 +20125,384 @@
           "type": "notification",
           "key": "",
           "value": "KKT：祁野傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-zhouyu-autonomy-start",
+      "label": "周予晴｜獨立生活事件",
+      "type": "start",
+      "next": [
+        "friends-zhouyu-wait-1"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-wait-1",
+      "label": "周予晴｜生活間隔",
+      "type": "delay",
+      "delayMs": 115000,
+      "next": [
+        "friends-zhouyu-arrive-1"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-arrive-1",
+      "label": "周予晴｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-zhouyu-later-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：周予晴傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-zhouyu-wait-2"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-wait-2",
+      "label": "周予晴｜生活間隔",
+      "type": "delay",
+      "delayMs": 185000,
+      "next": [
+        "friends-zhouyu-arrive-2"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-arrive-2",
+      "label": "周予晴｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-zhouyu-later-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：周予晴傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-chenyiheng-autonomy-start",
+      "label": "陳以衡｜獨立生活事件",
+      "type": "start",
+      "next": [
+        "friends-chenyiheng-wait-1"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-wait-1",
+      "label": "陳以衡｜生活間隔",
+      "type": "delay",
+      "delayMs": 134000,
+      "next": [
+        "friends-chenyiheng-arrive-1"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-arrive-1",
+      "label": "陳以衡｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-chenyiheng-later-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：陳以衡傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-chenyiheng-wait-2"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-wait-2",
+      "label": "陳以衡｜生活間隔",
+      "type": "delay",
+      "delayMs": 204000,
+      "next": [
+        "friends-chenyiheng-arrive-2"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-arrive-2",
+      "label": "陳以衡｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-chenyiheng-later-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：陳以衡傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-xutang-autonomy-start",
+      "label": "許棠｜獨立生活事件",
+      "type": "start",
+      "next": [
+        "friends-xutang-wait-1"
+      ]
+    },
+    {
+      "id": "friends-xutang-wait-1",
+      "label": "許棠｜生活間隔",
+      "type": "delay",
+      "delayMs": 153000,
+      "next": [
+        "friends-xutang-arrive-1"
+      ]
+    },
+    {
+      "id": "friends-xutang-arrive-1",
+      "label": "許棠｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-xutang-later-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：許棠傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-xutang-wait-2"
+      ]
+    },
+    {
+      "id": "friends-xutang-wait-2",
+      "label": "許棠｜生活間隔",
+      "type": "delay",
+      "delayMs": 223000,
+      "next": [
+        "friends-xutang-arrive-2"
+      ]
+    },
+    {
+      "id": "friends-xutang-arrive-2",
+      "label": "許棠｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-xutang-later-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：許棠傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-linan-autonomy-start",
+      "label": "林安｜獨立生活事件",
+      "type": "start",
+      "next": [
+        "friends-linan-wait-1"
+      ]
+    },
+    {
+      "id": "friends-linan-wait-1",
+      "label": "林安｜生活間隔",
+      "type": "delay",
+      "delayMs": 172000,
+      "next": [
+        "friends-linan-arrive-1"
+      ]
+    },
+    {
+      "id": "friends-linan-arrive-1",
+      "label": "林安｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-linan-later-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-linan-wait-2"
+      ]
+    },
+    {
+      "id": "friends-linan-wait-2",
+      "label": "林安｜生活間隔",
+      "type": "delay",
+      "delayMs": 242000,
+      "next": [
+        "friends-linan-arrive-2"
+      ]
+    },
+    {
+      "id": "friends-linan-arrive-2",
+      "label": "林安｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-linan-later-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-group-autonomy-start",
+      "label": "下班後五人組｜獨立生活事件",
+      "type": "start",
+      "next": [
+        "friends-group-wait-1"
+      ]
+    },
+    {
+      "id": "friends-group-wait-1",
+      "label": "下班後五人組｜生活間隔",
+      "type": "delay",
+      "delayMs": 191000,
+      "next": [
+        "friends-group-arrive-1"
+      ]
+    },
+    {
+      "id": "friends-group-arrive-1",
+      "label": "下班後五人組｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-group-later-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-group-wait-2"
+      ]
+    },
+    {
+      "id": "friends-group-wait-2",
+      "label": "下班後五人組｜生活間隔",
+      "type": "delay",
+      "delayMs": 261000,
+      "next": [
+        "friends-group-arrive-2"
+      ]
+    },
+    {
+      "id": "friends-group-arrive-2",
+      "label": "下班後五人組｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-group-later-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-group-wait-3"
+      ]
+    },
+    {
+      "id": "friends-group-wait-3",
+      "label": "下班後五人組｜生活間隔",
+      "type": "delay",
+      "delayMs": 261000,
+      "next": [
+        "friends-group-arrive-3"
+      ]
+    },
+    {
+      "id": "friends-group-arrive-3",
+      "label": "下班後五人組｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-group-later-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-group-wait-4"
+      ]
+    },
+    {
+      "id": "friends-group-wait-4",
+      "label": "下班後五人組｜生活間隔",
+      "type": "delay",
+      "delayMs": 261000,
+      "next": [
+        "friends-group-arrive-4"
+      ]
+    },
+    {
+      "id": "friends-group-arrive-4",
+      "label": "下班後五人組｜主動分享生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-group-later-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
         }
       ],
       "next": []
