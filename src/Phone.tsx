@@ -467,7 +467,7 @@ function PhoneRuntime({
                       const origin = deliveryElapsed ?? (item.hidden ? undefined : 0);
                       return lines.flatMap((line, index) => {
                         if (origin !== undefined && elapsed < origin + index * 2800) return [];
-                        return [{ ...base, id: `${item.id}-line-${index}`, body: line }];
+                        return [{ ...base, id: index === 0 ? item.id : `${item.id}-line-${index}`, body: line }];
                       });
                     }),
                     ...(s.messages[app] ?? []),
