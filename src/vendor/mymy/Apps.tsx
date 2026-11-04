@@ -31,11 +31,24 @@ import { useSkinState } from "../../skinState";
 import { makeItem, type Item } from "../../schema";
 import "./ui.css";
 import "./adapter.css";
+/** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
+function messageClock(item: Item): number {
+  const match = item.time.match(/(\\d{1,2}):(\\d{2})(?::\\d{2})?$/);
+  const clock = match ? Number(match[1]) * 60 + Number(match[2]) : -1;
+  const date = item.time.match(/^(\\d{4})-(\\d{2})-(\\d{2})/);
+  if (!date) return clock;
+  return Date.UTC(Number(date[1]), Number(date[2]) - 1, Number(date[3])) / 60000 + clock;
+}
 function grouped(items: Item[]) {
-  return [...new Set(items.map((i) => i.title))].map((title) => ({
+  const groups = [...new Set(items.map((i) => i.title))].map((title) => ({
     title,
-    items: items.filter((i) => i.title === title).sort((a, b) => a.time.localeCompare(b.time)),
-  })).sort((a, b) => (b.items.at(-1)?.time ?? "").localeCompare(a.items.at(-1)?.time ?? ""));
+    items: items.filter((i) => i.title === title)
+      .map((item, index) => ({ item, index }))
+      .sort((a, b) => messageClock(a.item) - messageClock(b.item) || a.index - b.index)
+      .map(({ item }) => item),
+  }));
+  return groups.sort((a, b) =>
+    messageClock(b.items.at(-1)!) - messageClock(a.items.at(-1)!));
 }
 export function messageRun(items: Item[], index: number) {
   const m = items[index],
@@ -269,6 +282,9 @@ export function MymyKakao(p: SkinProps) {
               .filter((g) => g.title.includes(query.trim()))
               .map((g) => {
                 const last = g.items.at(-1)!;
+                const unread = g.items.filter((item) =>
+                  !item.outgoing && !item.read && !p.readIds?.includes(item.id)
+                ).length;
                 return (
                   <button
                     className="kzkr kzkcr"
@@ -282,8 +298,8 @@ export function MymyKakao(p: SkinProps) {
                     </span>
                     <span className="kzkmt">
                       {last.time.slice(-5)}
-                      {last.meta.unread && (
-                        <i className="kzkbd">{last.meta.unread}</i>
+                      {unread > 0 && (
+                        <i className="kzkbd" aria-label={`未讀 ${unread} 則訊息`}>{unread > 99 ? "99+" : unread}</i>
                       )}
                     </span>
                   </button>
