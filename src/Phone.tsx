@@ -460,8 +460,8 @@ function PhoneRuntime({
                       const base = { ...item, time: timestamp };
                       // Render each incoming chat line as an independent bubble.
                       // Unread and notifications continue to follow the underlying event.
-                      if (item.outgoing || !item.body.includes("\\n") || !["kakao", "messages"].includes(app)) return [base];
-                      const lines = item.body.split(/\\n+/).map((line) => line.trim()).filter(Boolean);
+                      if (item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
+                      const lines = item.body.split(/\n+/).map((line) => line.trim()).filter(Boolean);
                       if (lines.length < 2) return [base];
                       const elapsed = s.elapsedMs ?? 0;
                       const origin = deliveryElapsed ?? (item.hidden ? undefined : 0);
