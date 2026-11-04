@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 38,
+  "revision": 39,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -5235,6 +5235,146 @@
           "time": "18:46",
           "title": "",
           "body": "嗨，妳好！我是顧時安，26歲，在做建築設計。\n我最近在整理一份城市展覽的資料，剛好想問問妳對這類活動有沒有興趣。\n突然傳訊息有點冒昧，不方便聊也沒關係！"
+        },
+        {
+          "id": "gu-life-01",
+          "senderId": "gushian",
+          "body": "今天把建築模型改到終於順了。工作卡關的時候真的會很煩，但解開又很有成就感。",
+          "time": "19:10",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-02",
+          "senderId": "gushian",
+          "body": "下班路過一棟老房子，夕陽照在窗框上特別漂亮。我站著看了好久。",
+          "time": "19:11",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-03",
+          "senderId": "gushian",
+          "body": "週末跟朋友打羽球，輸得很慘，哈哈。明天大概會全身痠痛。",
+          "time": "19:12",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-04",
+          "senderId": "gushian",
+          "body": "最近有個建築展我想去看看。如果妳也有興趣，可以一起逛；不方便也沒關係。",
+          "time": "19:13",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-05",
+          "senderId": "gushian",
+          "body": "今天設計提案被退回了。雖然知道還能改進，還是有點失落。",
+          "time": "19:14",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-06",
+          "senderId": "gushian",
+          "body": "去幫我媽搬花材，她笑我連花盆都認不清。今天倒是挺開心的。",
+          "time": "19:15",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-07",
+          "senderId": "gushian",
+          "body": "這週忙得有點累，今天決定自己煮咖哩、早點睡。",
+          "time": "19:16",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-08",
+          "senderId": "gushian",
+          "body": "同事提出一個我沒想到的設計方向。原來有時候先聽別人的意見，比急著解決問題更有用。",
+          "time": "19:17",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-09",
+          "senderId": "gushian",
+          "body": "早上看到一隻黃金獵犬，差點忘了要趕公車。",
+          "time": "19:18",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-10",
+          "senderId": "gushian",
+          "body": "我發現自己常常想讓所有人開心，結果反而把自己弄得很累。最近在練習說不。",
+          "time": "19:19",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-11",
+          "senderId": "gushian",
+          "body": "上次那個建築展我自己去看了，老街區的紀錄很有意思。",
+          "time": "19:20",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-12",
+          "senderId": "gushian",
+          "body": "接下來幾天要趕設計案，我可能比較少看手機，先跟妳說一聲。",
+          "time": "19:21",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-13",
+          "senderId": "gushian",
+          "body": "終於交件！今天只想吃個漢堡，然後好好睡一覺。",
+          "time": "19:22",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-14",
+          "senderId": "gushian",
+          "body": "朋友約我去河邊騎車，我打算趁週末出去透透氣。",
+          "time": "19:23",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-15",
+          "senderId": "gushian",
+          "body": "前幾天心情其實不太好。以前總覺得自己應該一直笑，現在想想也沒必要。",
+          "time": "19:24",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-16",
+          "senderId": "gushian",
+          "body": "最近想做個街景攝影紀錄，不是工作案，就單純拍自己喜歡的城市。",
+          "time": "19:25",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-17",
+          "senderId": "gushian",
+          "body": "今天同事需要幫忙，我先確認時間才答應。總算沒再把行程排得滿滿的。",
+          "time": "19:26",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-18",
+          "senderId": "gushian",
+          "body": "今天就是買菜、洗衣服、整理模型。普通的一天也挺舒服。",
+          "time": "19:27",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-19",
+          "senderId": "gushian",
+          "body": "看到一個城市散步活動，會經過幾棟老建築。有機會想去走走。",
+          "time": "19:28",
+          "hidden": true
+        },
+        {
+          "id": "gu-life-20",
+          "senderId": "gushian",
+          "body": "最近工作和生活都慢慢找到節奏了。謝謝妳願意聽我分享這些日常。",
+          "time": "19:29",
+          "hidden": true
         }
       ]
     }
@@ -5455,7 +5595,8 @@
       "next": [
         "shen-autonomy-v3-day1-delay",
         "pei-autonomy-v3-day1-delay",
-        "qi-autonomy-v3-day1-delay"
+        "qi-autonomy-v3-day1-delay",
+        "gu-life-01-wait"
       ]
     },
     {
@@ -21017,6 +21158,624 @@
           "type": "notification",
           "key": "",
           "value": "陳以衡：予晴想去看海，我想去山裡。後來覺得不如排兩次短旅行，誰也不用委屈。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-life-01-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 240000,
+      "next": [
+        "gu-life-01-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-01-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-01",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天把建築模型改到終於順了。工作卡關的時候真的會很煩，但解開又很有成就感。"
+        }
+      ],
+      "next": [
+        "gu-life-02-wait"
+      ]
+    },
+    {
+      "id": "gu-life-02-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-02-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-02-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-02",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：下班路過一棟老房子，夕陽照在窗框上特別漂亮。我站著看了好久。"
+        }
+      ],
+      "next": [
+        "gu-life-03-wait"
+      ]
+    },
+    {
+      "id": "gu-life-03-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-03-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-03-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-03",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：週末跟朋友打羽球，輸得很慘，哈哈。明天大概會全身痠痛。"
+        }
+      ],
+      "next": [
+        "gu-life-04-wait"
+      ]
+    },
+    {
+      "id": "gu-life-04-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-04-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-04-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-04",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：最近有個建築展我想去看看。如果妳也有興趣，可以一起逛；不方便也沒關係。"
+        }
+      ],
+      "next": [
+        "gu-life-05-wait"
+      ]
+    },
+    {
+      "id": "gu-life-05-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-05-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-05-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-05",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天設計提案被退回了。雖然知道還能改進，還是有點失落。"
+        }
+      ],
+      "next": [
+        "gu-life-06-wait"
+      ]
+    },
+    {
+      "id": "gu-life-06-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-06-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-06-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-06",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：去幫我媽搬花材，她笑我連花盆都認不清。今天倒是挺開心的。"
+        }
+      ],
+      "next": [
+        "gu-life-07-wait"
+      ]
+    },
+    {
+      "id": "gu-life-07-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-07-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-07-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-07",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：這週忙得有點累，今天決定自己煮咖哩、早點睡。"
+        }
+      ],
+      "next": [
+        "gu-life-08-wait"
+      ]
+    },
+    {
+      "id": "gu-life-08-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-08-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-08-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-08",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：同事提出一個我沒想到的設計方向。原來有時候先聽別人的意見，比急著解決問題更有用。"
+        }
+      ],
+      "next": [
+        "gu-life-09-wait"
+      ]
+    },
+    {
+      "id": "gu-life-09-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-09-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-09-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-09",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：早上看到一隻黃金獵犬，差點忘了要趕公車。"
+        }
+      ],
+      "next": [
+        "gu-life-10-wait"
+      ]
+    },
+    {
+      "id": "gu-life-10-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-10-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-10-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-10",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：我發現自己常常想讓所有人開心，結果反而把自己弄得很累。最近在練習說不。"
+        }
+      ],
+      "next": [
+        "gu-life-11-wait"
+      ]
+    },
+    {
+      "id": "gu-life-11-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-11-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-11-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-11",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：上次那個建築展我自己去看了，老街區的紀錄很有意思。"
+        }
+      ],
+      "next": [
+        "gu-life-12-wait"
+      ]
+    },
+    {
+      "id": "gu-life-12-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-12-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-12-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-12",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：接下來幾天要趕設計案，我可能比較少看手機，先跟妳說一聲。"
+        }
+      ],
+      "next": [
+        "gu-life-13-wait"
+      ]
+    },
+    {
+      "id": "gu-life-13-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-13-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-13-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-13",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：終於交件！今天只想吃個漢堡，然後好好睡一覺。"
+        }
+      ],
+      "next": [
+        "gu-life-14-wait"
+      ]
+    },
+    {
+      "id": "gu-life-14-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-14-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-14-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-14",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：朋友約我去河邊騎車，我打算趁週末出去透透氣。"
+        }
+      ],
+      "next": [
+        "gu-life-15-wait"
+      ]
+    },
+    {
+      "id": "gu-life-15-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-15-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-15-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-15",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：前幾天心情其實不太好。以前總覺得自己應該一直笑，現在想想也沒必要。"
+        }
+      ],
+      "next": [
+        "gu-life-16-wait"
+      ]
+    },
+    {
+      "id": "gu-life-16-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-16-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-16-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-16",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：最近想做個街景攝影紀錄，不是工作案，就單純拍自己喜歡的城市。"
+        }
+      ],
+      "next": [
+        "gu-life-17-wait"
+      ]
+    },
+    {
+      "id": "gu-life-17-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-17-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-17-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-17",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天同事需要幫忙，我先確認時間才答應。總算沒再把行程排得滿滿的。"
+        }
+      ],
+      "next": [
+        "gu-life-18-wait"
+      ]
+    },
+    {
+      "id": "gu-life-18-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-18-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-18-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-18",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天就是買菜、洗衣服、整理模型。普通的一天也挺舒服。"
+        }
+      ],
+      "next": [
+        "gu-life-19-wait"
+      ]
+    },
+    {
+      "id": "gu-life-19-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-19-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-19-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-19",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：看到一個城市散步活動，會經過幾棟老建築。有機會想去走走。"
+        }
+      ],
+      "next": [
+        "gu-life-20-wait"
+      ]
+    },
+    {
+      "id": "gu-life-20-wait",
+      "label": "顧時安自主生活等待",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "gu-life-20-arrive"
+      ]
+    },
+    {
+      "id": "gu-life-20-arrive",
+      "label": "顧時安自主生活訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-life-20",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：最近工作和生活都慢慢找到節奏了。謝謝妳願意聽我分享這些日常。"
         }
       ],
       "next": []
