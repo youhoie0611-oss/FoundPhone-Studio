@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "characterId": "CHANGE_ME",
+  "displayName": "待確認角色",
+  "status": "reference-pending",
+  "approvedAt": null,
+  "revision": 0,
+  "sourceAuthority": "作者明確確認的參考圖與設定優先",
+  "referenceImages": [
+    {
+      "role": "canonical-sheet",
+      "path": null,
+      "sha256": null,
+      "note": "需實際可讀的角色原圖；不能只填文字敘述"
+    }
+  ],
+  "identity": {
+    "age": null,
+    "heightCm": null,
+    "weightKg": null,
+    "face": "",
+    "eyes": "",
+    "hair": "",
+    "build": "",
+    "distinguishingFeatures": [],
+    "expressions": []
+  },
+  "wardrobe": {
+    "signature": [],
+    "dailyVariations": [],
+    "accessories": [],
+    "avoid": []
+  },
+  "photography": {
+    "habit": "",
+    "perspective": "",
+    "lighting": "",
+    "composition": "",
+    "editing": "",
+    "consistentMotifs": [],
+    "avoid": []
+  },
+  "dailyScenes": [],
+  "destinations": {
+    "chat": {
+      "path": null,
+      "style": "日常私訊，真實手持感"
+    },
+    "instagramStory": {
+      "path": null,
+      "style": "即時限動、常用9:16"
+    },
+    "instagramPost": {
+      "path": null,
+      "style": "精選貼文、常用1:1或4:5"
+    }
+  },
+  "generationChecklist": [
+    "讀取本檔與實際參考圖",
+    "保持人物五官髮型身形",
+    "依場景與服裝生成",
+    "先指定圖片目的地",
+    "回報提交目錄、commit、是否接入劇情"
+  ],
+  "notes": [
+    "未定稿角色不可宣稱 locked；人物參考圖必須實際可供生成工具參考"
+  ]
+}
