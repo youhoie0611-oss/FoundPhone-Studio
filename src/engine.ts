@@ -41,7 +41,8 @@ function apply(a: Action, s: Runtime, w: Work) {
       if (!s.unlocked.includes(a.key)) {
         s.unlocked.push(a.key);
         const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
-        if (item && !item.outgoing) {
+        // Stamp both authored player choices and NPC messages at actual delivery time.
+        if (item) {
           s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time }, deliveryElapsed: { ...((s.ui?.deliveryElapsed ?? {}) as Record<string, number>), [a.key]: s.elapsedMs ?? 0 } };
         }
       }
