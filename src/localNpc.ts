@@ -111,6 +111,14 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
+  // Qi Ye's terse opener is the first line of a longer parking-lot message.
+  // A direct request for him to speak plainly must advance that scene, not elicit a generic filler.
+  if (request.thread === "祁野" && /有事就直接說|有話直說|直接說吧|你想說什麼|你找我什麼事|找我幹嘛/.test(input)) {
+    return { reply: "行，我直說。上次停車場是我的車擋到妳，這事我不對。後來在活動上又碰到妳，我才認出來。就是想跟妳道個歉。", delayMs: 1600 };
+  }
+  if (request.thread === "祁野" && /^(你最近過得怎麼樣|最近過得怎麼樣)[？?。\\s]*$/.test(input)) {
+    return { reply: "還行。最近忙著處理車跟一堆雜事。倒是上次停車場那事，我一直沒正式跟妳道歉。", delayMs: 1500 };
+  }
   if (request.thread === "裴知聿" && /^(幹嘛|找我幹嘛|什麼事|有事嗎|找我什麼事)[？?！!。\\s]*$/.test(input)) {
     const aboutPast = /照片|收據|以前|分手|整理|想起/.test(recent);
     return {
