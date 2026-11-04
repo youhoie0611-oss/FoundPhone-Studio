@@ -22,7 +22,7 @@
         "偶爾毒舌"
       ]
     },
-    "hiddenInitialAffection": 0,
+    "hiddenInitialAffection": 70,
     "playerEmotionMustNotBeInferred": true,
     "approvedVisual": {
       "hair": "深黑色蓬鬆中長層次碎髮、微狼尾、較長的瀏海",
@@ -47,7 +47,26 @@
         "路邊遇到的貓",
         "吃飯"
       ],
-      "notAutomaticallyAPetOwner": true
+      "notAutomaticallyAPetOwner": true,
+      "canSelfie": true,
+      "occasionalFlirtySelfie": true,
+      "avoidExplicitContent": true
+    },
+    "currentFeelingsForPlayer": "仍然喜歡玩家，希望重新復合",
+    "affectionScale": {
+      "initial": 70,
+      "min": 0,
+      "max": 100,
+      "hiddenFromPlayer": true,
+      "notDatingStatus": true,
+      "rebuildingTrustStillNecessary": true,
+      "canChangeWithDecisionsAndEvents": true
+    },
+    "photoPersona": {
+      "title": "腹黑狐狸型",
+      "restrainedPercent": 70,
+      "intentionalAllurePercent": 30,
+      "notEverySelfieIntentionallyFlirty": true
     }
   },
   "pendingUserDecisions": [
@@ -113,5 +132,12 @@
     "mustLoadActualReferenceImage": true,
     "faceAndHairLocked": true,
     "photoHabitsLockedAsGuidance": true
+  },
+  "photoPolicyV2": {
+    "version": "V2.0",
+    "documentPath": "stories/pei-zhiyu/PHOTO_POLICY_V2.md",
+    "authorApproved": true,
+    "priorityOverPriorNoSelfieRule": true,
+    "notYetFullyIntegratedIntoRuntime": true
   }
 }
