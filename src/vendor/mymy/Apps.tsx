@@ -205,7 +205,11 @@ export function MymyKakao(p: SkinProps) {
                 const latest = lastMessage?.body ?? "";
                 // Match the complete delivered turn, not only a generic keyword.
                 // Earlier lines in the same message contain the actual question and context.
-                const options = p.thread === "顧時安" && /提案被退|失落|心情其實不太好/.test(latest)
+                const options = p.thread === "祁野" && /^(然後呢？|妳這話有後半句吧？)$/.test(latest)
+                  ? ["你先說清楚找我做什麼。", "所以你是來道歉的？", "我沒什麼要補充的。", "我現在沒空，改天再說。"]
+                  : p.thread === "祁野" && /就是想跟妳道個歉|一直沒正式跟妳道歉|上次停車場是我的車擋到妳/.test(latest)
+                    ? ["好，我接受你的道歉。", "你當時為什麼沒直接說？", "你只是為了道歉才找我？", "我現在不想繼續聊這件事。"]
+                  : p.thread === "顧時安" && /提案被退|失落|心情其實不太好/.test(latest)
                   ? ["想聊聊發生什麼事嗎？", "你接下來打算怎麼做？", "先休息吧，不用急著說。", "我現在也有點累，改天再聊。"]
                   : p.thread === "顧時安" && /建築展|一起逛|城市散步/.test(latest)
                     ? ["時間地點是什麼？", "我這次不方便去。", "你為什麼對這個展有興趣？", "我先看看工作安排。"]
