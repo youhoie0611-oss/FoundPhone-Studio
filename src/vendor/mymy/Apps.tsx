@@ -236,11 +236,16 @@ export function MymyKakao(p: SkinProps) {
                                   : /吃飯|聚餐|週末|約/.test(latest)
                                     ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
                                     : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
-                return options.map((reply, index) => (
-                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
-                    {reply}
+                return <>
+                  {options.map((reply, index) => (
+                    <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
+                      {reply}
+                    </button>
+                  ))}
+                  <button type="button" className="kkt-reply-skip" onClick={() => p.onThread("")} aria-label="暫不回覆，返回聊天列表">
+                    暫不回覆・返回聊天列表
                   </button>
-                ));
+                </>;
               })()}
             </div>
           )}
