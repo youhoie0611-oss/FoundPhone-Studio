@@ -68,3 +68,12 @@ npm run visual-memory:brief -- gu_shian instagram_post
 - 同一張已保存圖片只使用原圖，不重新生成第二版冒充同一事件。
 
 **祁野專屬**拍攝題材權重、情緒／關係變化與說話方式以 V3.0 文件為準，不擅自套用到其他角色。
+
+## 顧時安照片政策 V1.0（2026-11-04 作者確認）
+
+- 完整規格：`assets/characters/gu_shian/PHOTO_POLICY_V1.md`。
+- 結構化規格：`assets/characters/gu_shian/photo-policy-v1.json`。
+- 照片紀錄簿：`assets/characters/gu_shian/photo-ledger-v1.json`。
+- 新設定：6 月 18 日出生、單身，陽光真誠，黃金獵犬 85%＋成熟可靠 15%；自拍、建築、動物、食物、工作與朋友活動有明確長期權重。
+- 當天行程、情緒與劇情連續性高於題材權重；同一原始 photoId 不重生；KKT／IG Story／IG Post 分開保存，是否分享是獨立事件。
+- 規則檔建立後**不等於**遊戲在執行階段已能動態拍照；需素材與事件都已整合才算功能完成。

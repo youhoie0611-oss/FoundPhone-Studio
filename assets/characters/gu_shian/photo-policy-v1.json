@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "policyId": "gu_shian_photo_policy",
+  "version": "1.0",
+  "confirmedByAuthor": true,
+  "effectiveDate": "2026-11-04",
+  "sourceDocument": "assets/characters/gu_shian/PHOTO_POLICY_V1.md",
+  "status": {
+    "authoringRules": "approved",
+    "liveRuntime": "partial_existing_chat_scenes_only",
+    "automaticGenerationInGame": false,
+    "newPhotosThisCommit": 0,
+    "photoLedger": "asset_and_event_mapping_not_live_runtime_database"
+  },
+  "identity": {
+    "id": "gu_shian",
+    "name": "顧時安",
+    "age": 26,
+    "birthday": "06-18",
+    "heightCm": 183,
+    "weightKg": 76,
+    "occupation": "建築設計師",
+    "education": "建築學系畢業",
+    "relationshipStatus": "single",
+    "meetingWithPlayer": "因工作專案認識",
+    "temperament": {
+      "goldenRetrieverPercent": 85,
+      "matureReliablePercent": 15
+    },
+    "traits": [
+      "陽光",
+      "熱情",
+      "真誠",
+      "坦率",
+      "溫柔沉穩",
+      "細膩",
+      "聰明",
+      "有主見",
+      "樂觀",
+      "行動力強",
+      "尊重他人界線"
+    ],
+    "interests": [
+      "攝影",
+      "建築與街景",
+      "夕陽與自然風景",
+      "小動物（尤其狗）",
+      "戶外運動",
+      "書店",
+      "家具店",
+      "展覽",
+      "市集",
+      "料理",
+      "流行音樂",
+      "獨立音樂",
+      "爵士樂"
+    ]
+  },
+  "visual": {
+    "reference": "assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
+    "visualMemory": "assets/characters/gu_shian/visual-memory.json",
+    "lockIdentity": true,
+    "neverRegenerateSavedPhoto": true
+  },
+  "style": {
+    "identity": "成熟陽光型黃金獵犬",
+    "tone": [
+      "陽光",
+      "自然",
+      "溫暖",
+      "生活感強",
+      "偶爾具建築攝影美感",
+      "不需每張精緻"
+    ],
+    "rule": "照片可以普通且情緒多元，不把他變成只會建築、夕陽、咖啡館或擺拍寫真的人"
+  },
+  "longTermSubjectWeights": [
+    {
+      "key": "selfie_style",
+      "percent": 25,
+      "label": "自拍、個人近況與穿搭"
+    },
+    {
+      "key": "architecture_photography",
+      "percent": 25,
+      "label": "建築、街景、空間及攝影"
+    },
+    {
+      "key": "daily_animals_food",
+      "percent": 20,
+      "label": "日常生活、料理、食物及小動物"
+    },
+    {
+      "key": "work_projects",
+      "percent": 15,
+      "label": "工作、設計圖、模型及專案"
+    },
+    {
+      "key": "friends_outdoor_leisure",
+      "percent": 15,
+      "label": "朋友聚會、戶外活動及其他休閒"
+    }
+  ],
+  "weightsAreDailyQuota": false,
+  "scheduleAndCurrentEventOverrideWeights": true,
+  "selfie": {
+    "kinds": [
+      "出門鏡前自拍",
+      "上班途中",
+      "咖啡館",
+      "戶外散步",
+      "運動後",
+      "剛睡醒",
+      "在家休假",
+      "下班疲憊",
+      "穿搭"
+    ],
+    "emotions": [
+      "自然微笑",
+      "露齒開心",
+      "大笑",
+      "偶爾搞怪",
+      "不微笑",
+      "凌亂疲憊"
+    ],
+    "wardrobe": [
+      "低飽和素面衣",
+      "襯衫",
+      "休閒外套",
+      "簡約長褲",
+      "運動服"
+    ],
+    "avoid": [
+      "每張同角度",
+      "每張同笑容",
+      "全都男友視角",
+      "永遠西裝",
+      "過度磨皮",
+      "商業棚拍"
+    ]
+  },
+  "architecture": {
+    "subjects": [
+      "建築外觀",
+      "街道",
+      "樓梯",
+      "立面",
+      "室內空間",
+      "窗光",
+      "特殊材質",
+      "展覽",
+      "家具",
+      "夕陽",
+      "路邊小動物"
+    ],
+    "style": [
+      "自然光",
+      "偶爾幾何",
+      "偶爾對稱",
+      "前後景",
+      "局部材質",
+      "普通隨手拍"
+    ],
+    "notEveryPhotoMustBePerfect": true
+  },
+  "work": {
+    "subjects": [
+      "草圖",
+      "設計軟體模型",
+      "桌面",
+      "實體模型",
+      "材質樣本",
+      "設計討論",
+      "現場勘查",
+      "工地",
+      "竣工空間"
+    ],
+    "constraints": [
+      "專案設計內容穩定",
+      "尊重進度",
+      "工作時地合理",
+      "不進入不相關工地",
+      "不改既有同事身分",
+      "不外洩機密",
+      "不讓全部聊天都談工作"
+    ]
+  },
+  "emotionPhotos": {
+    "happy": {
+      "subjects": [
+        "自然笑",
+        "風景",
+        "食物",
+        "小動物",
+        "偶爾自拍"
+      ],
+      "chat": "較活潑"
+    },
+    "excited": {
+      "subjects": [
+        "成果",
+        "活動",
+        "一連串相關照片"
+      ],
+      "chat": "可能詳細講述"
+    },
+    "calm": {
+      "subjects": [
+        "普通自拍",
+        "工作桌",
+        "街景",
+        "料理",
+        "生活環境"
+      ],
+      "chat": "平常語氣"
+    },
+    "bored": {
+      "subjects": [
+        "料理",
+        "窗外",
+        "附近動物",
+        "休息自拍"
+      ],
+      "chat": "可能單純找人說話"
+    },
+    "tired": {
+      "subjects": [
+        "工作桌",
+        "晚餐",
+        "返家自拍",
+        "未完成工作",
+        "夜晚街景"
+      ],
+      "chat": "較簡短"
+    },
+    "angry": {
+      "subjects": [
+        "減少拍照",
+        "不分享",
+        "事件相關物"
+      ],
+      "chat": "可坦率表達不滿"
+    },
+    "sad": {
+      "subjects": [
+        "無笑容自拍",
+        "空工作室",
+        "窗景",
+        "夜街",
+        "安靜室內"
+      ],
+      "chat": "不必黑白，可說出情緒或先沉澱"
+    }
+  },
+  "withOtherNpc": {
+    "precondition": "已確定同行的 NPC 與事件、同行者均具正確人物參考圖",
+    "photographerMixLongTerm": {
+      "selfTakenPercent": 50,
+      "otherNpcHelpPercent": 20,
+      "npcGroupPhotoPercent": 30
+    },
+    "selfieSubjects": [
+      "自己",
+      "朋友",
+      "風景",
+      "食物",
+      "展覽",
+      "建築",
+      "小動物"
+    ],
+    "othersTakeSubjects": [
+      "走街",
+      "觀展",
+      "拍照",
+      "聊天",
+      "大笑",
+      "休息",
+      "戶外運動"
+    ],
+    "groupPose": [
+      "微笑",
+      "搭肩",
+      "比手勢",
+      "偶爾搞怪",
+      "自然互動"
+    ],
+    "neverInventPeople": true,
+    "neverIncludePlayer": true
+  },
+  "sending": {
+    "independentOfChatBeingOpen": true,
+    "noDailyFixedQuota": true,
+    "importantEventMaySendSeries": true,
+    "busyMayShareLess": true,
+    "playerOnlineNotTrigger": true,
+    "reasons": [
+      "有趣的建築",
+      "可愛的狗",
+      "料理成功",
+      "工作完成",
+      "出門自拍",
+      "看展",
+      "日常想分享",
+      "偶爾想到玩家"
+    ],
+    "doNotAlwaysSayThoughtOfYou": true,
+    "photoCanRemainPrivate": true,
+    "dialogueRules": [
+      "自然停頓",
+      "玩家回答再延續當前話題",
+      "尊重四選項",
+      "不重複固定開場",
+      "不全是關心玩家",
+      "能開玩笑",
+      "能說不滿",
+      "能談自己的事",
+      "尊重忙碌",
+      "可自然收尾"
+    ],
+    "examples": [
+      {
+        "id": "dog",
+        "messages": [
+          "剛剛路上遇到一隻狗。",
+          "[photo:dog]",
+          "牠一直跟著我走。",
+          "[pause]",
+          "差點以為自己要多養一隻了。"
+        ],
+        "waitForPlayer": true
+      },
+      {
+        "id": "work",
+        "messages": [
+          "今天終於把模型改完了。",
+          "[photo:model]",
+          "這個角度我還滿喜歡的。"
+        ],
+        "waitForPlayer": true
+      },
+      {
+        "id": "selfie",
+        "messages": [
+          "今天提早下班。",
+          "[photo:selfie]",
+          "難得還看得到太陽。"
+        ],
+        "waitForPlayer": true
+      }
+    ]
+  },
+  "relationshipStages": {
+    "acquaintance": [
+      "工作",
+      "展覽",
+      "普通日常",
+      "偶爾自拍",
+      "不過度親密"
+    ],
+    "becomingFamiliar": [
+      "生活細節",
+      "料理",
+      "運動",
+      "休假",
+      "工作外話題"
+    ],
+    "close": [
+      "疲憊",
+      "煩惱",
+      "一般自拍",
+      "負面情緒"
+    ],
+    "ambiguous": [
+      "更在意反應",
+      "偶爾挑選自拍",
+      "私人日常",
+      "不突然只會情話"
+    ],
+    "dating": [
+      "生活分享自然",
+      "睡醒",
+      "料理",
+      "運動後",
+      "偶爾特地拍照",
+      "維持工作與朋友家人"
+    ]
+  },
+  "neverAssumePlayerFeelings": true,
+  "continuity": {
+    "fixed": [
+      "五官",
+      "深棕眼",
+      "深棕黑自然蓬鬆短髮",
+      "身形比例"
+    ],
+    "contextual": [
+      "當日穿搭",
+      "工作專案及模型",
+      "同行 NPC",
+      "合理時間與光線",
+      "照片與文字",
+      "既有照片ID"
+    ],
+    "captureShareDeliverSeparate": true,
+    "photoIdSharedAcrossPlatforms": true,
+    "noRegenerationOfExistingPhoto": true
+  },
+  "recordFields": [
+    "photoId",
+    "capturedAt",
+    "captureLocation",
+    "photographerId",
+    "subjectNpcIds",
+    "mood",
+    "storyEventId",
+    "wardrobeStateId",
+    "shareStatus",
+    "deliveryStatus",
+    "deliveredAt",
+    "chatMessageId",
+    "readStatus",
+    "assetPath",
+    "assetGitHubStatus",
+    "platformDestinations"
+  ],
+  "folders": {
+    "chat": "assets/characters/gu_shian/chat/",
+    "instagramStory": "assets/characters/gu_shian/instagram/story/",
+    "instagramPost": "assets/characters/gu_shian/instagram/post/"
+  },
+  "offlineGame": {
+    "runtimeGeneratesPhotos": false,
+    "playerSuppliesPhotos": false,
+    "npcRequestsPlayerPhotos": false,
+    "playerNpcSelfie": false,
+    "photoExchange": false,
+    "playerInput": "scripted_dialogue_choices",
+    "npcSendWhenChatClosed": true,
+    "unreadPersistent": true,
+    "neverRewritePastPhotoEvents": true
+  },
+  "pipeline": [
+    "read_game_time_location",
+    "read_life_schedule",
+    "read_mood_story",
+    "decide_capture",
+    "choose_subject",
+    "choose_photographer_and_subjects",
+    "load_approved_visual_reference",
+    "check_identity_clothing_scene",
+    "generate_and_save_photo",
+    "select_primary_platform",
+    "decide_share_or_keep_private",
+    "schedule_delivery_or_post",
+    "write_character_tone_text",
+    "persist_unread",
+    "respond_after_choice",
+    "persist_event_memory"
+  ],
+  "noPhotoWhenNoMotive": true,
+  "prohibitions": [
+    "外貌變更",
+    "每張耍帥",
+    "只能建築夕陽",
+    "全部自拍同笑容",
+    "全部專業寫真",
+    "每日照片配額",
+    "忽略生活進度",
+    "只有正面情緒",
+    "所有對話都照顧玩家",
+    "捏造同行 NPC",
+    "與玩家合照",
+    "向玩家討照片",
+    "要求玩家上傳",
+    "忽略玩家回覆",
+    "重寫歷史照片事件",
+    "同原照重生成",
+    "人格混同沈硯舟或祁野"
+  ]
+}

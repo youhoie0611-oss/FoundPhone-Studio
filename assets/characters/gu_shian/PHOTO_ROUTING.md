@@ -42,3 +42,11 @@
 ## 正式視覺記憶基準
 
 所有新生成的顧時安照片必須先讀取 `assets/characters/gu_shian/visual-memory.json` 和 `assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg`。**原始五視圖優先於先前由 AI 生成的生活照**；不得沿用生成結果慢慢變成另一張臉。
+
+## V1.0 正式照片政策（作者已確認）
+
+正式完整規則：[`PHOTO_POLICY_V1.md`](./PHOTO_POLICY_V1.md)；機器可讀規格：[`photo-policy-v1.json`](./photo-policy-v1.json)；照片階段紀錄：[`photo-ledger-v1.json`](./photo-ledger-v1.json)。
+
+顧時安不是只拍建築、咖啡或夕陽：自拍／穿搭、建築攝影、生活食物與動物、工作及朋友活動的長期權重分別為 **25／25／20／15／15**，不是每日配額；任何照片必須先有合理行程與情緒動機。熟悉階段與玩家意願決定分享界線。生日 6/18、感情狀態單身、黃金獵犬 85%＋成熟可靠 15% 已正式確認。
+
+同一張照片跨 Chat／IG Story／IG Post 重用**相同 photoId**；拍攝、決定分享、實際送達為三個分立事件；尚未整合到引擎的記錄不得假裝已在遊戲送達。已生成的原圖不重新生成另一版本。照片作者端生成並驗證提交，非單機遊戲運行時 AI 生成。

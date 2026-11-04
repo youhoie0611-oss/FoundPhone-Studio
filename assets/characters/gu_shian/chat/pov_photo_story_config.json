@@ -3,7 +3,7 @@
   "characterId": "gu_shian",
   "status": "authored_not_runtime_integrated",
   "imageUploadStatus": "pending_binary_upload",
-  "photoStyle": "first-person hand-held smartphone photos; no face, no selfie, no other photographer",
+  "photoStyle": "本檔六張均為 POV 候選照，但 V1.0 已確認顧時安也會自然自拍及分享多元日常；六張未上傳的 POV 圖不能作為全角色唯一拍攝風格。",
   "assetFolder": "assets/characters/gu_shian/chat",
   "requirements": {
     "onlySendAfterWorkProjectAcquaintance": true,
@@ -16,7 +16,11 @@
     "sendSequentially": true,
     "notifyWithUnreadCount": true,
     "doNotForceRomanceOrPlayerFeelings": true,
-    "noImageIfRemoteAssetMissing": true
+    "noImageIfRemoteAssetMissing": true,
+    "noFixedDailyQuota": true,
+    "allowNaturalSelfies": true,
+    "noPlayerPhotoUpload": true,
+    "noPlayerNpcGroupPhoto": true
   },
   "scenes": [
     {
@@ -444,6 +448,9 @@
     "本檔是獨立場景源資料，不是已被既有手機執行器載入的事件。",
     "此版六張 JPG 尚未以 GitHub API 上傳，必須先確認遠端檔案存在，再啟用圖片事件。",
     "不應替玩家預設已回覆任何選項。",
-    "觸發應依據真實劇情生活事件與玩家已知資訊，不可固定每天傳圖。"
-  ]
+    "觸發應依據真實劇情生活事件與玩家已知資訊，不可固定每天傳圖。",
+    "由顧時安照片 V1.0 規則管理，不強制只拍 POV；未生成／未上傳／未劇情送達均需區別。"
+  ],
+  "photoPolicyVersion": "1.0",
+  "photoPolicyPath": "assets/characters/gu_shian/photo-policy-v1.json"
 }

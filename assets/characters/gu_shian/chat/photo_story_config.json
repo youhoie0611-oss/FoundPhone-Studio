@@ -12,6 +12,37 @@
       "細膩",
       "聰明",
       "有主見"
+    ],
+    "birthday": "06-18",
+    "relationshipStatus": "單身",
+    "personality": [
+      "陽光",
+      "熱情",
+      "真誠",
+      "坦率",
+      "溫柔沉穩",
+      "細膩",
+      "聰明",
+      "有主見",
+      "樂觀",
+      "行動力強",
+      "尊重他人界線"
+    ],
+    "temperament": "黃金獵犬85%＋成熟可靠15%",
+    "interests": [
+      "攝影",
+      "建築與街景",
+      "夕陽與自然風景",
+      "小動物（尤其狗）",
+      "戶外運動",
+      "書店",
+      "家具店",
+      "展覽",
+      "市集",
+      "料理",
+      "流行音樂",
+      "獨立音樂",
+      "爵士樂"
     ]
   },
   "assetBasePath": "assets/characters/gu_shian/chat",
@@ -20,7 +51,8 @@
     "四張 JPG 已存在本儲存庫，實際運行媒體由 scripts/story.mjs 複製至 public/characters。此檔仍為來源企劃，不是執行器自動直接載入的 JSON。",
     "正式可玩內容位於 stories/template/story.json，含四張照片、16 個選項及 NPC 回覆，並經 GitHub Actions 的故事驗證與建置流程。",
     "角色信任及好感保持隱藏，不得憑空預設玩家接受曖昧或交往。",
-    "前六張第一人稱主觀照片及其 24 個選項存於 pov_photo_story_config.json；圖片尚未上傳，暫未在遊戲啟用。"
+    "前六張第一人稱主觀照片及其 24 個選項存於 pov_photo_story_config.json；圖片尚未上傳，暫未在遊戲啟用。",
+    "顧時安照片規則 V1.0 於 2026-11-04 確認：新照片依生活動機、情緒、相機視角及權重；不可只拍建築夕陽，也不能預設與玩家交往。舊場景僅保留既有內容，不自動重寫圖片。"
   ],
   "dispatchPolicy": {
     "sendWithoutChatOpen": true,
@@ -33,7 +65,9 @@
     "playerChoiceCount": 4,
     "explicitBoundariesPersist": true,
     "doNotForcePlayerEmotion": true,
-    "cooldownIsMinimumNotFixedSchedule": true
+    "cooldownIsMinimumNotFixedSchedule": true,
+    "noFixedDailyPhotoQuota": true,
+    "photoCaptureShareDeliveryAreSeparateEventsRequiredForFutureScenes": true
   },
   "scenes": [
     {
@@ -419,5 +453,7 @@
       "runtimeMedia": "./characters/gu-shian-bookstore-cafe.jpg",
       "runtimeSceneId": "gu-photo-book"
     }
-  ]
+  ],
+  "photoPolicyVersion": "1.0",
+  "photoPolicyPath": "assets/characters/gu_shian/photo-policy-v1.json"
 }

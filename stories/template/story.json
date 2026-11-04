@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "机主",
     "date": "2026-11-04",
@@ -99,7 +99,7 @@
       "name": "顧時安",
       "phone": "",
       "avatar": "./characters/gu-shian-avatar.jpg",
-      "bio": "26 歲，183 公分，76 公斤。建築學系畢業，建築設計師。溫柔沉穩、細膩、聰明、有主見。與玩家因工作專案認識。"
+      "bio": "26 歲，生日 6 月 18 日，183 公分、76 公斤。建築學系畢業，建築設計師，單身。陽光熱情、真誠坦率，黃金獵犬 85%＋成熟可靠 15%；細膩聰明、有主見，尊重界線。熱愛攝影、建築街景、動物（尤其狗）、料理、戶外活動、展覽、市集與流行／獨立／爵士音樂。與玩家因工作專案認識。"
     },
     {
       "id": "qiye",
@@ -1499,7 +1499,11 @@
     "pei_last_topic": "",
     "pei_relationship_status": "former_partners",
     "qiye_photo_policy_version": "3.0",
-    "qiye_photo_runtime_integrated": false
+    "qiye_photo_runtime_integrated": false,
+    "gu_photo_policy_version": "1.0",
+    "gu_birthday": "06-18",
+    "gu_relationship_status": "single",
+    "gu_photo_capture_share_delivery_enabled": false
   },
   "events": [
     {
