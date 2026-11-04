@@ -72,6 +72,21 @@ function stableHash(value: string): number {
 export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const person = people[request.thread];
   if (!person) throw new Error("此角色尚未支援免費對話");
+  // Answer a direct follow-up from the current conversational context before using generic templates.
+  const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
+  const input = request.message.trim();
+  if (request.thread === "裴知聿" && /^(幹嘛|找我幹嘛|什麼事|有事嗎|找我什麼事)[？?！!。\\s]*$/.test(input)) {
+    const aboutPast = /照片|收據|以前|分手|整理|想起/.test(recent);
+    return {
+      reply: aboutPast
+        ? "我整理舊東西時看到我們以前的照片，才想聯絡妳。不是要妳立刻回頭，也不是想拿回憶逼妳做決定。"
+        : "想問妳最近過得好不好，也想找個機會把以前沒說清楚的事講明白。如果妳不想聊，我會尊重。",
+      delayMs: 1600,
+    };
+  }
+  if (request.thread === "裴知聿" && /哪件事|什麼照片|哪張照片|什麼收據/.test(input)) {
+    return { reply: "是我們以前常去那家店的收據，夾在舊相冊裡。我不是故意翻出來讓妳難受。", delayMs: 1800 };
+  }
   const intent = classifyMessage(request.message);
   const choices = person.responses[intent];
   const previousNpc = request.history.filter(x => !x.outgoing).at(-1)?.body;
