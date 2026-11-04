@@ -62,7 +62,7 @@ import {
   type Runtime,
   type UiValue,
 } from "./schema";
-import { dispatch, choose, visible, advance } from "./engine";
+import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { db } from "./persistence";
 export function AppIcon({
   id,
@@ -141,6 +141,8 @@ function PhoneRuntime({
   const [recent, setRecent] = useState<string[]>([]);
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
+  const [customReplyOpen, setCustomReplyOpen] = useState(false);
+  const [customReplyText, setCustomReplyText] = useState("");
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
@@ -578,19 +580,43 @@ function PhoneRuntime({
               )}
             </div>
           )}
-          {!creator && s.choices.length > 0 && !locked && !s.choices.every((choice) => /^(?:(reply|phase2|phase3)-(shen|pei|qi)-|(shen|pei|qi)-(?:r\d+|day\d+|major-event)-|lin-reply-)/.test(choice.target)) && (
-            <div className="story-overlay">
-              <span className="eyebrow">故事来到一个岔路口</span>
-              <h3>你会如何选择？</h3>
-              {s.choices.map((c) => (
-                <button
-                  key={c.target}
-                  onClick={() => update(choose(work, s, c.target))}
-                >
-                  {c.label}
+          {!creator && s.choices.length > 0 && !locked && (
+            <div className="story-overlay" style={{ maxHeight: "70%", overflowY: "auto" }}>
+              <span className="eyebrow">劇情選擇</span>
+              <h3>你會如何回應？</h3>
+              {s.choices.slice(0, 3).map((c, index) => (
+                <button key={c.target} onClick={() => {
+                  setCustomReplyOpen(false);
+                  update(choose(work, runtimeRef.current, c.target));
+                }}>
+                  {String.fromCharCode(65 + index)}. {c.label}
                   <ArrowUp size={15} />
                 </button>
               ))}
+              <button onClick={() => setCustomReplyOpen((open) => !open)}>
+                D. 【玩家自定義】
+              </button>
+              {customReplyOpen && (
+                <form onSubmit={(event) => {
+                  event.preventDefault();
+                  if (!customReplyText.trim()) return;
+                  update(submitCustomReply(runtimeRef.current, customReplyText));
+                  setCustomReplyText("");
+                  setCustomReplyOpen(false);
+                }}>
+                  <textarea
+                    aria-label="玩家自定義回覆"
+                    value={customReplyText}
+                    onChange={(event) => setCustomReplyText(event.target.value)}
+                    placeholder="輸入你真正想說的話（將原文保存，不自動套用預設選項）"
+                    maxLength={2000}
+                    rows={3}
+                    style={{ width: "100%", boxSizing: "border-box" }}
+                  />
+                  <button type="submit" disabled={!customReplyText.trim()}>保存自定義回覆</button>
+                  <small>目前保留原文與待選分支；NPC 語意回應尚未接入。</small>
+                </form>
+              )}
             </div>
           )}
           {!creator && s.endings.length > 0 && !locked && (
