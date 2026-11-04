@@ -174,13 +174,6 @@ function runQueue(
       } else {
         apply(a, s, w);
       }
-      // A delivered message may open reply options without being viewed.
-      // Reading the chat remains a separate user action.
-      if (a.type === "unlock") {
-        const item = Object.values(w.data).flat().find((i) => i.id === a.key);
-        if (item && !item.outgoing && /^(?:shen|pei|qi|lin)-/.test(item.id))
-          queue.push(...w.nodes.filter((node) => node.event === "read" && node.target === a.key).map((node) => node.id));
-      }
       if (a.type === "variable" && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
@@ -241,11 +234,6 @@ export function dispatch(
     )
     .map((n) => n.id);
   const next = runQueue(w, s, event, target, queue);
-  if (event === "start") {
-    const initial = Object.values(w.data).flat().filter((item) => !item.hidden && !item.outgoing && /^(?:shen|pei|qi|lin)-/.test(item.id));
-    const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
-    runQueue(w, next, "arrival", "", triggers);
-  }
   return next;
 }
 export function advance(
