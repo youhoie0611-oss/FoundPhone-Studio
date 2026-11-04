@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 28,
+  "revision": 29,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -273,7 +273,7 @@
         {
           "id": "shen-phase3-1-1-a-in",
           "title": "",
-          "body": "先問，再拍。\n如果對方不自在，我就收相機。\n照片可以重拍，人不該被勉強。",
+          "body": "會先把照片收起來。\n不想入鏡就不拍，已經拍到的也能刪掉。",
           "senderId": "shenyanzhou",
           "time": "22:18",
           "hidden": true,
@@ -358,7 +358,7 @@
         {
           "id": "shen-phase3-2-1-b-in",
           "title": "",
-          "body": "好啊，照妳的步調來。\n展覽比我重要，真的。",
+          "body": "好啊，妳可以自己慢慢逛。\n想打招呼再傳我就好。",
           "senderId": "shenyanzhou",
           "time": "22:18",
           "hidden": true,
@@ -494,7 +494,7 @@
         {
           "id": "shen-r4-b-in",
           "title": "",
-          "body": "沒事，妳先忙。\n那天活動結束後，我還去幫忙收器材。",
+          "body": "沒事，妳先忙。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -732,7 +732,7 @@
         {
           "id": "shen-r11-b-in",
           "title": "",
-          "body": "當然，不能說就別說。\n今天本來有個拍攝，結果臨時取消了。",
+          "body": "當然，不能說就別說。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -902,7 +902,7 @@
         {
           "id": "shen-r16-b-in",
           "title": "",
-          "body": "不會，妳也不用配合我。\n之前太忙忘記吃飯，朋友還念了我一頓。",
+          "body": "不會，妳也不用配合我。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -970,7 +970,7 @@
         {
           "id": "shen-r18-b-in",
           "title": "",
-          "body": "嗯，我也想多試幾種方向。\n我跟家裡聊了聊以後想走影像工作的事。",
+          "body": "嗯，我也想多試幾種方向。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1072,7 +1072,7 @@
         {
           "id": "shen-r21-b-in",
           "title": "",
-          "body": "好，妳也別加班太晚。\n下個月好像還有一場公開活動。",
+          "body": "好，妳也別加班太晚。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1106,7 +1106,7 @@
         {
           "id": "shen-r22-b-in",
           "title": "",
-          "body": "沒關係，妳的時間比較重要。\n剛才在路上看到很漂亮的夕陽，突然想分享。",
+          "body": "沒關係，妳的時間比較重要。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1140,7 +1140,7 @@
         {
           "id": "shen-r23-b-in",
           "title": "",
-          "body": "好，那我先不吵妳。\n我發現自己跟妳聊天會比較放鬆。",
+          "body": "好，那我先不吵妳。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1174,7 +1174,7 @@
         {
           "id": "shen-r24-b-in",
           "title": "",
-          "body": "那我慢慢說清楚，不讓妳猜。\n不過我們確實還沒認識很久。",
+          "body": "那我慢慢說清楚，不讓妳猜。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1242,7 +1242,7 @@
         {
           "id": "shen-r26-b-in",
           "title": "",
-          "body": "好，等妳想約再說。\n我突然想到，如果真的約出來聊天會不會尷尬。",
+          "body": "好，等妳想約再說。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1310,7 +1310,7 @@
         {
           "id": "shen-r28-b-in",
           "title": "",
-          "body": "我會尊重，不用擔心。\n我不希望妳因為我而覺得需要做決定。",
+          "body": "我會尊重，不用擔心。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1344,7 +1344,7 @@
         {
           "id": "shen-r29-b-in",
           "title": "",
-          "body": "好，先把日子過好。\n今天就先這樣吧，妳明天還要上班。",
+          "body": "好，先把日子過好。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1783,7 +1783,7 @@
         {
           "id": "pei-phase3-1-2-b-in",
           "title": "",
-          "body": "那就先休息。\n疲勞時討論，只會把簡單問題弄複雜。",
+          "body": "那就先休息。\n資料明天上班再看，不急。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -2089,7 +2089,7 @@
         {
           "id": "pei-r8-b-in",
           "title": "",
-          "body": "那就等明天當面談。\n這次分工有點模糊，我打算先把責任範圍寫清楚。",
+          "body": "那就等明天當面談。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2191,7 +2191,7 @@
         {
           "id": "pei-r11-b-in",
           "title": "",
-          "body": "合理，工作訊息我不會傳。\n這個專案的時程確實讓人有壓力。",
+          "body": "合理，工作訊息我不會傳。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2361,7 +2361,7 @@
         {
           "id": "pei-r16-b-in",
           "title": "",
-          "body": "我沒有那個打算。\n我知道自己在公司不太會主動聊天。",
+          "body": "我沒有那個打算。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2395,7 +2395,7 @@
         {
           "id": "pei-r17-b-in",
           "title": "",
-          "body": "不是勉強，我只是比較慢熱。\n今天看到一個錯誤，讓我想起以前犯過的失誤。",
+          "body": "不是勉強，我只是比較慢熱。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2633,7 +2633,7 @@
         {
           "id": "pei-r24-b-in",
           "title": "",
-          "body": "妳有權拒絕。\n我們合作的默契比一開始好很多。",
+          "body": "妳有權拒絕。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2701,7 +2701,7 @@
         {
           "id": "pei-r26-b-in",
           "title": "",
-          "body": "理解，我不會在公司提。\n如果我們在公司以外碰面，可能會被同事看到。",
+          "body": "理解，我不會在公司提。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2769,7 +2769,7 @@
         {
           "id": "pei-r28-b-in",
           "title": "",
-          "body": "抱歉，這句說得像考核。\n但我們畢竟還是同事，這件事得想清楚。",
+          "body": "抱歉，這句說得像考核。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -3276,7 +3276,7 @@
         {
           "id": "qi-phase3-2-1-b-in",
           "title": "",
-          "body": "那就試。\n別因為我一句話就改回去，太沒意思了。",
+          "body": "行啊，妳想怎麼做就怎麼做。\n我不會替妳決定。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3378,7 +3378,7 @@
         {
           "id": "qi-phase3-3-2-b-in",
           "title": "",
-          "body": "正在救。\n晚點沒消息就是我跟印表機同歸於盡了。",
+          "body": "什麼救檔案？\n我是在等合作方回覆啦，妳別亂猜。",
           "senderId": "qiye",
           "time": "22:18",
           "hidden": true,
@@ -3548,7 +3548,7 @@
         {
           "id": "qi-r8-b-in",
           "title": "",
-          "body": "那就不聊，換題。\n最近跟朋友弄一個活動合作案，不是純玩。",
+          "body": "那就不聊，換題。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3820,7 +3820,7 @@
         {
           "id": "qi-r16-b-in",
           "title": "",
-          "body": "不會叫妳收拾，那是我的事。\n上次那件事我有反省，別一副不信的樣子。",
+          "body": "不會叫妳收拾，那是我的事。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4160,7 +4160,7 @@
         {
           "id": "qi-r26-b-in",
           "title": "",
-          "body": "那就普通咖啡店，妳挑。\n我知道妳有自己的安排，不想出門也沒差。",
+          "body": "那就普通咖啡店，妳挑。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4194,7 +4194,7 @@
         {
           "id": "qi-r27-b-in",
           "title": "",
-          "body": "行，不催妳。\n妳每次都覺得我講話太直，是不是。",
+          "body": "行，不催妳。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4262,7 +4262,7 @@
         {
           "id": "qi-r29-b-in",
           "title": "",
-          "body": "妳忙妳的，我不查勤。\n好了，我也得去忙合作案了，改天再聊。",
+          "body": "妳忙妳的，我不查勤。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
