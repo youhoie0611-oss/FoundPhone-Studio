@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 37,
+  "revision": 38,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1174,7 +1174,7 @@
         {
           "id": "shen-r24-b-in",
           "title": "",
-          "body": "那我慢慢說清楚，不讓妳猜。",
+          "body": "好，那我認真跟妳說清楚。\n妳不確定就直接問我，不用一直猜。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
