@@ -64,6 +64,8 @@ import {
 } from "./schema";
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { db } from "./persistence";
+import { requestNpcReply } from "./aiChat";
+import { activePlayerId } from "./playerProfiles";
 export function AppIcon({
   id,
   name,
@@ -144,6 +146,7 @@ function PhoneRuntime({
   const [notificationThread, setNotificationThread] = useState("");
   const [customReplyOpen, setCustomReplyOpen] = useState(false);
   const [customReplyText, setCustomReplyText] = useState("");
+  const pendingNpcReplies = useRef(new Set<string>());
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
@@ -458,7 +461,34 @@ function PhoneRuntime({
                   state={s}
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
-                  onCustomMessage={(thread, message) => update(submitCustomReply(runtimeRef.current, message, app, thread))}
+                  onCustomMessage={(thread, message) => {
+                    const sourceApp = app;
+                    const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
+                    update(next);
+                    const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
+                    if (pendingNpcReplies.current.has(`${sourceApp}:${thread}`)) return;
+                    pendingNpcReplies.current.add(`${sourceApp}:${thread}`);
+                    const history = (next.messages[sourceApp] ?? []).filter((item) => item.title === thread)
+                      .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
+                    void requestNpcReply({ playerId: activePlayerId(), thread, message, history })
+                      .then(({ reply }) => {
+                        const current = runtimeRef.current;
+                        const incoming = makeItem({
+                          id: `ai-npc-${id}-${Date.now()}`,
+                          title: thread,
+                          sender: thread,
+                          body: reply,
+                          outgoing: false,
+                          time: `${current.date} ${current.time}`,
+                        });
+                        update({ ...current, messages: {
+                          ...current.messages,
+                          [sourceApp]: [...(current.messages[sourceApp] ?? []), incoming],
+                        } });
+                      })
+                      .catch((error: unknown) => setBanner(error instanceof Error ? error.message : "AI 暫時無法回覆"))
+                      .finally(() => pendingNpcReplies.current.delete(`${sourceApp}:${thread}`));
+                  }}
                   onEdit={(item) => onEdit?.(app, item)}
                   onAdd={() => onAdd?.(app)}
                   onBack={() => setApp("")}
