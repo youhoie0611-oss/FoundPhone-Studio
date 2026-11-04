@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 33,
+  "revision": 34,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -2941,7 +2941,7 @@
         {
           "id": "pei-major-event-reply-1-out",
           "title": "",
-          "body": "我們一起核對最新版資料。",
+          "body": "如果要重新開始，我需要看到真正的改變。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -2949,7 +2949,7 @@
         {
           "id": "pei-major-event-reply-1-in",
           "title": "",
-          "body": "好。\n我會把舊版差異逐項標出來。\n責任我會跟主管說清楚。",
+          "body": "我知道。\n我不會要求妳只憑我的話相信我。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -2958,7 +2958,7 @@
         {
           "id": "pei-major-event-reply-2-out",
           "title": "",
-          "body": "我有點不高興，你應該早點確認。",
+          "body": "我不想複合，請尊重我的決定。",
           "senderId": "owner",
           "time": "2026-11-06 18:30",
           "hidden": true
@@ -2966,7 +2966,7 @@
         {
           "id": "pei-major-event-reply-2-in",
           "title": "",
-          "body": "妳說得對。\n是我查證不夠完整。\n我道歉，不會拿忙當理由。",
+          "body": "好，我尊重。\n不會再以複合為理由打擾妳。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -17675,7 +17675,7 @@
     },
     {
       "id": "pei-major-event-reply-1",
-      "label": "我們一起核對最新版資料。",
+      "label": "如果要重新開始，我需要看到真正的改變。",
       "type": "action",
       "actions": [
         {
@@ -17699,7 +17699,7 @@
     },
     {
       "id": "pei-major-event-reply-1-arrival",
-      "label": "裴知聿｜回覆",
+      "label": "我知道。\n我不會要求妳只憑我的話相信我。",
       "type": "action",
       "actions": [
         {
@@ -17712,7 +17712,7 @@
     },
     {
       "id": "pei-major-event-reply-2",
-      "label": "我有點不高興，你應該早點確認。",
+      "label": "我不想複合，請尊重我的決定。",
       "type": "action",
       "actions": [
         {
@@ -17736,7 +17736,7 @@
     },
     {
       "id": "pei-major-event-reply-2-arrival",
-      "label": "裴知聿｜回覆",
+      "label": "好，我尊重。\n不會再以複合為理由打擾妳。",
       "type": "action",
       "actions": [
         {
