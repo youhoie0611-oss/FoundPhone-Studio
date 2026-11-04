@@ -63,39 +63,11 @@ function Back({ onClick }: { onClick: () => void }) {
 }
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
-    [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
   const list = grouped(p.items),
-    messages = [
-      ...p.items.filter((i) => i.title === p.thread),
-      ...sent.flatMap((raw, index) => {
-        try {
-          const entry: unknown = JSON.parse(raw);
-          if (
-            !Array.isArray(entry) ||
-            entry.length !== 3 ||
-            !entry.every((v) => typeof v === "string") ||
-            entry[0] !== p.thread
-          )
-            return [];
-          return [
-            makeItem({
-              id: "local-kkt-" + index,
-              title: entry[0],
-              body: entry[1],
-              time: entry[2],
-              sender: p.owner || "机主",
-              outgoing: true,
-              meta: { local: "true" },
-            }),
-          ];
-        } catch {
-          return [];
-        }
-      }),
-    ],
+    messages = p.items.filter((i) => i.title === p.thread),
     scroll = useRef<HTMLDivElement>(null);
   const [revealed, setRevealed] = useState<Record<string, number>>({});
   const lastMessage = messages[messages.length - 1];
@@ -161,7 +133,7 @@ export function MymyKakao(p: SkinProps) {
                   )}
                   {m.outgoing && run.last && (
                     <span className="kzt">
-                      {m.meta.unread || ""}
+                      {m.read ? "已讀" : ""}
                       <br />
                       {m.time.slice(-5)}
                     </span>
@@ -201,14 +173,7 @@ export function MymyKakao(p: SkinProps) {
             onSubmit={(e) => {
               e.preventDefault();
               if (draft.trim()) {
-                setSent([
-                  ...sent,
-                  JSON.stringify([
-                    p.thread,
-                    draft.trim(),
-                    p.virtualTime || "09:41",
-                  ]),
-                ]);
+                p.onCustomMessage?.(p.thread, draft);
                 setDraft("");
               }
             }}
