@@ -56,6 +56,7 @@ import {
 import { getApp, type AppPlugin } from "./registry";
 import {
   initialRuntime,
+  makeItem,
   safeMedia,
   type Work,
   type Item,
