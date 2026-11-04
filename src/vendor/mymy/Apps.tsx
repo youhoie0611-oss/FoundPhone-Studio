@@ -33,9 +33,9 @@ import "./ui.css";
 import "./adapter.css";
 /** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
 function messageClock(item: Item): number {
-  const match = item.time.match(/(\\d{1,2}):(\\d{2})(?::\\d{2})?$/);
+  const match = item.time.match(/(\d{1,2}):(\d{2})(?::\d{2})?$/);
   const clock = match ? Number(match[1]) * 60 + Number(match[2]) : -1;
-  const date = item.time.match(/^(\\d{4})-(\\d{2})-(\\d{2})/);
+  const date = item.time.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (!date) return clock;
   return Date.UTC(Number(date[1]), Number(date[2]) - 1, Number(date[3])) / 60000 + clock;
 }
