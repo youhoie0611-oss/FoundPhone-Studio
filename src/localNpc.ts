@@ -134,6 +134,12 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
       return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
     }
   }
+  if (request.thread === "顧時安" && /提案被退|失落|心情其實不太好/.test(recent)) {
+    if (/發生什麼|聊聊/.test(input)) return { reply: "工作提案被退回來了，我有點失落。謝謝妳願意聽我說。", delayMs: 1500 };
+    if (/打算|怎麼做/.test(input)) return { reply: "先休息，明天整理意見再修改。這次不想硬撐。", delayMs: 1500 };
+    if (/休息|不用急/.test(input)) return { reply: "好，我先休息。謝謝妳。", delayMs: 1400 };
+    if (/改天|有點累/.test(input)) return { reply: "沒問題，妳也早點休息。有空再聊。", delayMs: 1200 };
+  }
   if (request.thread === "顧時安" && /城市展覽|建築設計|這類活動/.test(recent)) {
     if (/沒興趣|不想|不用|不方便|不要/.test(input))
       return { reply: "收到！那我就不繼續推展覽啦。突然打擾妳不好意思！", delayMs: 1300 };
