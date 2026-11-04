@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 35,
+  "revision": 36,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -43,7 +43,7 @@
     {
       "id": "qiye",
       "name": "祁野",
-      "bio": "21歲｜偶然認識的富家少爺，張揚叛逆。",
+      "bio": "23歲｜家境優渥的紈褲少爺，因緣際會認識；野性運動系，張揚、好勝，卻有自己的生活與界線。",
       "phone": "",
       "avatar": "./characters/qi-ye-avatar.png"
     },
@@ -1512,6 +1512,84 @@
           "time": "2026-11-06 18:30",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-day1",
+          "title": "",
+          "body": "剛從球場回來。今天差點把相機忘在置物櫃。\n妳上次說工作忙，這週有比較好一點嗎？",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 20:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-day2",
+          "title": "",
+          "body": "我今天有課，下午要整理活動照片。\n上次那張照片我還留著，妳想看再跟我說就好。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 20:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-day3",
+          "title": "",
+          "body": "今天拍到一張很漂亮的天空。\n本來想直接傳，後來想想還是先問妳要不要看。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-1-out",
+          "title": "",
+          "body": "你還記得我說過工作忙喔？",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "shen-autonomy-v3-reply-1-in",
+          "title": "",
+          "body": "有啊。妳那天講得很累，我有記住。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-2-out",
+          "title": "",
+          "body": "先把你自己的事忙完吧。",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "shen-autonomy-v3-reply-2-in",
+          "title": "",
+          "body": "嗯，我先去上課。妳也別忙到忘記吃飯。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-3-out",
+          "title": "",
+          "body": "照片可以傳，但不要公開。",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "shen-autonomy-v3-reply-3-in",
+          "title": "",
+          "body": "當然。沒問過妳，我不會放出去。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -2969,6 +3047,84 @@
           "body": "好，我尊重。\n不會再以複合為理由打擾妳。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day1",
+          "title": "",
+          "body": "剛才整理抽屜，找到以前一起去那家店的收據。\n我知道突然提這個有點冒昧。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day2",
+          "title": "",
+          "body": "今天事情有點多，我晚點才有空回訊息。\n昨天那句話不是要妳給我答案，只是我不想再裝作什麼都沒發生。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day3",
+          "title": "",
+          "body": "今天沒有特別的事。\n只是想問問妳最近好不好。如果不方便回，也沒關係。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-1-out",
+          "title": "",
+          "body": "你想重新開始，具體想改變什麼？",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "pei-autonomy-v3-reply-1-in",
+          "title": "",
+          "body": "以前我總替妳決定什麼比較好。這點我做錯了。我不會再要求妳照我的方式生活。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-2-out",
+          "title": "",
+          "body": "我現在不想談我們的過去。",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "pei-autonomy-v3-reply-2-in",
+          "title": "",
+          "body": "好。我尊重妳，不會拿回憶逼妳回頭。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-3-out",
+          "title": "",
+          "body": "你最近過得怎麼樣？",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "pei-autonomy-v3-reply-3-in",
+          "title": "",
+          "body": "工作還是一樣忙。只是有些事情，我現在會停下來想清楚再說。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 20:39",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
         }
@@ -4430,6 +4586,84 @@
           "time": "2026-11-06 18:30",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-day1",
+          "title": "",
+          "body": "喂，上次那件事我處理完了。\n妳別想太多，我只是討厭事情拖著。",
+          "senderId": "qiye",
+          "time": "2026-11-04 20:30",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-day2",
+          "title": "",
+          "body": "今天被家裡叫去吃飯，聽了一整晚的生意經。\n煩死。妳今天過得怎樣？",
+          "senderId": "qiye",
+          "time": "2026-11-05 20:30",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-day3",
+          "title": "",
+          "body": "昨天跑去打球，手機沒怎麼看。\n欸，妳上次說的那家宵夜店還開著嗎？",
+          "senderId": "qiye",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-1-out",
+          "title": "",
+          "body": "所以你也會乖乖回家吃飯？",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "qi-autonomy-v3-reply-1-in",
+          "title": "",
+          "body": "少來。我只是去露個臉，不代表我聽他們的。",
+          "senderId": "qiye",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-2-out",
+          "title": "",
+          "body": "你要是不想說，可以不用說。",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "qi-autonomy-v3-reply-2-in",
+          "title": "",
+          "body": "……我又沒說不想講。就是有點煩。",
+          "senderId": "qiye",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-3-out",
+          "title": "",
+          "body": "我今天很累，改天再聊。",
+          "senderId": "owner",
+          "time": "2026-11-05 20:36",
+          "hidden": true
+        },
+        {
+          "id": "qi-autonomy-v3-reply-3-in",
+          "title": "",
+          "body": "行。妳先休息，我也去找點事做。",
+          "senderId": "qiye",
+          "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
         }
       ]
     },
@@ -4812,7 +5046,11 @@
       "id": "intro-observation",
       "label": "展覽前夕",
       "type": "start",
-      "next": []
+      "next": [
+        "shen-autonomy-v3-day1-delay",
+        "pei-autonomy-v3-day1-delay",
+        "qi-autonomy-v3-day1-delay"
+      ]
     },
     {
       "id": "observe-shen",
@@ -18614,6 +18852,711 @@
       "next": [
         "lin-reply-r4-1",
         "lin-reply-r4-2"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day1-delay",
+      "label": "沈硯舟獨立生活後主動聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 120000,
+      "next": [
+        "shen-autonomy-v3-day1-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day1-arrive",
+      "label": "沈硯舟主動訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-day1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-autonomy-v3-day2-delay"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day2-delay",
+      "label": "沈硯舟隔日自行安排",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "shen-autonomy-v3-day2-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day2-arrive",
+      "label": "沈硯舟隔日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-day2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-autonomy-v3-day3-delay"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day3-delay",
+      "label": "沈硯舟第三日自主聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "shen-autonomy-v3-day3-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day3-arrive",
+      "label": "沈硯舟第三日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-day3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-1",
+      "label": "你還記得我說過工作忙喔？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-1-delay"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-1-delay",
+      "label": "沈硯舟正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 25000,
+      "next": [
+        "shen-autonomy-v3-reply-1-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-1-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了"
+        }
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-2",
+      "label": "先把你自己的事忙完吧。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-2-delay"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-2-delay",
+      "label": "沈硯舟正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 65000,
+      "next": [
+        "shen-autonomy-v3-reply-2-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-2-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了"
+        }
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-3",
+      "label": "照片可以傳，但不要公開。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-3-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-3-delay"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-3-delay",
+      "label": "沈硯舟正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 105000,
+      "next": [
+        "shen-autonomy-v3-reply-3-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-3-arrive",
+      "label": "沈硯舟回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了"
+        }
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-day2-choice",
+      "label": "回覆沈硯舟的隔日訊息",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "shen-autonomy-v3-day2",
+      "next": [
+        "shen-autonomy-v3-reply-1",
+        "shen-autonomy-v3-reply-2",
+        "shen-autonomy-v3-reply-3"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day1-delay",
+      "label": "裴知聿獨立生活後主動聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 185000,
+      "next": [
+        "pei-autonomy-v3-day1-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day1-arrive",
+      "label": "裴知聿主動訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day2-delay"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day2-delay",
+      "label": "裴知聿隔日自行安排",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "pei-autonomy-v3-day2-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day2-arrive",
+      "label": "裴知聿隔日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day3-delay"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day3-delay",
+      "label": "裴知聿第三日自主聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "pei-autonomy-v3-day3-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day3-arrive",
+      "label": "裴知聿第三日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來新訊息"
+        }
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-1",
+      "label": "你想重新開始，具體想改變什麼？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-1-delay"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-1-delay",
+      "label": "裴知聿正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 25000,
+      "next": [
+        "pei-autonomy-v3-reply-1-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-1-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿回覆了"
+        }
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-2",
+      "label": "我現在不想談我們的過去。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-2-delay"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-2-delay",
+      "label": "裴知聿正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 65000,
+      "next": [
+        "pei-autonomy-v3-reply-2-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-2-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿回覆了"
+        }
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-3",
+      "label": "你最近過得怎麼樣？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-3-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-3-delay"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-3-delay",
+      "label": "裴知聿正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 105000,
+      "next": [
+        "pei-autonomy-v3-reply-3-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-3-arrive",
+      "label": "裴知聿回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿回覆了"
+        }
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day2-choice",
+      "label": "回覆裴知聿的隔日訊息",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "pei-autonomy-v3-day2",
+      "next": [
+        "pei-autonomy-v3-reply-1",
+        "pei-autonomy-v3-reply-2",
+        "pei-autonomy-v3-reply-3"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day1-delay",
+      "label": "祁野獨立生活後主動聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 250000,
+      "next": [
+        "qi-autonomy-v3-day1-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day1-arrive",
+      "label": "祁野主動訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-day1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": [
+        "qi-autonomy-v3-day2-delay"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day2-delay",
+      "label": "祁野隔日自行安排",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "qi-autonomy-v3-day2-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day2-arrive",
+      "label": "祁野隔日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-day2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ],
+      "next": [
+        "qi-autonomy-v3-day3-delay"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day3-delay",
+      "label": "祁野第三日自主聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "qi-autonomy-v3-day3-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day3-arrive",
+      "label": "祁野第三日聯絡",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-day3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來新訊息"
+        }
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-1",
+      "label": "所以你也會乖乖回家吃飯？",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-1-delay"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-1-delay",
+      "label": "祁野正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 25000,
+      "next": [
+        "qi-autonomy-v3-reply-1-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-1-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野回覆了"
+        }
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-2",
+      "label": "你要是不想說，可以不用說。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-2-delay"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-2-delay",
+      "label": "祁野正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 65000,
+      "next": [
+        "qi-autonomy-v3-reply-2-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-2-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野回覆了"
+        }
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-3",
+      "label": "我今天很累，改天再聊。",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-3-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-3-delay"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-3-delay",
+      "label": "祁野正在處理自己的事情",
+      "type": "delay",
+      "once": true,
+      "delayMs": 105000,
+      "next": [
+        "qi-autonomy-v3-reply-3-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-3-arrive",
+      "label": "祁野回覆",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-3-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野回覆了"
+        }
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-day2-choice",
+      "label": "回覆祁野的隔日訊息",
+      "type": "choice",
+      "once": true,
+      "event": "read",
+      "target": "qi-autonomy-v3-day2",
+      "next": [
+        "qi-autonomy-v3-reply-1",
+        "qi-autonomy-v3-reply-2",
+        "qi-autonomy-v3-reply-3"
       ]
     }
   ],
