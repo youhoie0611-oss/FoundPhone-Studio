@@ -112,6 +112,12 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
 
   const lastMessage = messages[messages.length - 1];
+  // Story-authored Gu Shian photo replies take priority over hard-coded suggestions.
+  // Never offer generic replies while one of his photo messages is still arriving.
+  const guScene = p.thread === "顧時安" ? lastMessage?.meta?.guScene : undefined;
+  const guSceneChoices = guScene
+    ? (p.choices ?? []).filter((choice) => choice.target.startsWith(`${guScene}-choice-`))
+    : [];
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
   const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
@@ -199,13 +205,13 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !lastMessage?.outgoing && (
+          {!p.creator && !isTyping && !lastMessage?.outgoing && (!guScene || guSceneChoices.length > 0) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
                 // Match the complete delivered turn, not only a generic keyword.
                 // Earlier lines in the same message contain the actual question and context.
-                const options = p.thread === "祁野" && /^(然後呢？|妳這話有後半句吧？)$/.test(latest)
+                const options = guSceneChoices.length > 0 ? guSceneChoices.map((choice) => choice.label) : p.thread === "祁野" && /^(然後呢？|妳這話有後半句吧？)$/.test(latest)
                   ? ["你先說清楚找我做什麼。", "所以你是來道歉的？", "我沒什麼要補充的。", "我現在沒空，改天再說。"]
                   : p.thread === "祁野" && /就是想跟妳道個歉|一直沒正式跟妳道歉|上次停車場是我的車擋到妳/.test(latest)
                     ? ["好，我接受你的道歉。", "你當時為什麼沒直接說？", "你只是為了道歉才找我？", "我現在不想繼續聊這件事。"]
@@ -238,7 +244,7 @@ export function MymyKakao(p: SkinProps) {
                                     : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
                 return <>
                   {options.map((reply, index) => (
-                    <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
+                    <button type="button" key={index} className="kkt-reply-choice" onClick={() => guSceneChoices.length > 0 ? p.onChoose?.(guSceneChoices[index].target) : p.onCustomMessage?.(p.thread, reply)}>
                       {reply}
                     </button>
                   ))}
