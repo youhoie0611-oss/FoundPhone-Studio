@@ -1,0 +1,391 @@
+{
+  "schema": "brick2.qiye.photo-policy.v3",
+  "version": "3.0",
+  "effectiveDate": "2026-11-04",
+  "status": "authoring_policy_not_runtime_engine",
+  "source": "作者於祁野專屬對話明確確認的《磚2》祁野專屬照片生成與傳送規則 V3.0",
+  "authoritativeDocument": "stories/qiye/PHOTO_POLICY_V3.md",
+  "character": {
+    "id": "qiye",
+    "age": 23,
+    "identity": "祁家次子，家境優渥",
+    "traits": [
+      "張揚",
+      "直球",
+      "叛逆",
+      "好勝",
+      "有自己的原則"
+    ],
+    "interests": [
+      "籃球",
+      "街頭運動",
+      "攝影",
+      "設計"
+    ],
+    "photographicCharacter": "隨性惡犬",
+    "guidingPrinciple": "想拍就拍、想傳就傳；真實生活優先，保有自己的朋友圈、行程與情緒",
+    "frequencyRelativeToShenYanzhou": "自拍及生活分享頻率較低；不固定每日發送"
+  },
+  "visualIdentity": {
+    "memory": "assets/characters/qiye/visual-memory.json",
+    "mustLoadActualReferenceImage": true,
+    "neverChangeFaceRandomly": true,
+    "wardrobeMustMatchSceneAndDay": true,
+    "actualPhotoMustBeReused": true
+  },
+  "longTermContentWeights": {
+    "sports_and_street_activities": 0.3,
+    "selfies_outfits_updates": 0.25,
+    "friends_outings": 0.2,
+    "photography_design_works": 0.15,
+    "food_scenery_everyday": 0.1
+  },
+  "weightsInterpretation": "僅長期參考權重；不可當每日配額、強制抽樣或無視事件的生成機率",
+  "selfieTypes": {
+    "handsome": [
+      "鏡子自拍",
+      "穿搭",
+      "側臉",
+      "運動後",
+      "耳機",
+      "偶爾精選角度"
+    ],
+    "casual": [
+      "沙發",
+      "飲料",
+      "街上",
+      "球場邊",
+      "剛睡醒",
+      "車內休息",
+      "無聊時隨手拍"
+    ],
+    "goofy": [
+      "怪低角度",
+      "近距離",
+      "無奈或嫌棄",
+      "和朋友惡搞",
+      "朋友拍到的奇怪表情"
+    ],
+    "messy": [
+      "滿頭汗",
+      "凌亂頭髮",
+      "熬夜疲態",
+      "運動後地上休息",
+      "設計後疲倦"
+    ],
+    "quiet": [
+      "發呆",
+      "不笑",
+      "看窗外",
+      "獨處",
+      "低落的普通自拍"
+    ]
+  },
+  "cameraStyle": {
+    "character": "實際手機拍攝感",
+    "preferredAngles": [
+      "偶爾低角度",
+      "側面",
+      "不對稱",
+      "鏡子",
+      "偶爾廣角"
+    ],
+    "allowedImperfections": [
+      "動態模糊",
+      "手震",
+      "失焦",
+      "逆光",
+      "不置中",
+      "裁切不完美"
+    ],
+    "noExcessiveSkinSmoothing": true,
+    "noStudioLightingWithoutContext": true,
+    "canSometimesHaveGoodComposition": true,
+    "distinguishPhotographyWorkFromCasualSnapshot": true,
+    "requirePhysicalCameraPlausibility": true
+  },
+  "moodPhotoMapping": {
+    "happy": {
+      "subjects": [
+        "贏球",
+        "得意自拍",
+        "朋友聚會",
+        "新物品",
+        "完成設計"
+      ],
+      "messageStyle": [
+        "得意",
+        "玩笑",
+        "炫耀成果"
+      ]
+    },
+    "excited": {
+      "subjects": [
+        "活動連拍",
+        "球場照",
+        "朋友合理幫拍"
+      ],
+      "maySendSequence": true,
+      "alwaysSendSequence": false
+    },
+    "calm": {
+      "subjects": [
+        "普通自拍",
+        "穿搭",
+        "食物",
+        "街景",
+        "草圖",
+        "房間角落"
+      ],
+      "specialMeaningRequired": false
+    },
+    "bored": {
+      "subjects": [
+        "莫名其妙的自拍",
+        "沙發坐著"
+      ],
+      "mayComplain": true,
+      "mayEndAfterSending": true
+    },
+    "tired": {
+      "subjects": [
+        "運動後",
+        "鞋子",
+        "桌面凌亂",
+        "未完成設計稿",
+        "休息"
+      ],
+      "messagesCanBeShort": true
+    },
+    "angry": {
+      "mayChooseNoPhotos": true,
+      "subjectMustRelateToEvent": true,
+      "noRoutineViolence": true
+    },
+    "sad": {
+      "subjects": [
+        "空球場",
+        "夜路",
+        "沒笑容的自拍",
+        "房間角落",
+        "相關物件"
+      ],
+      "responsePatterns": [
+        "可能嘴硬",
+        "可能直接承認"
+      ],
+      "noFixedDenialThenConfession": true
+    }
+  },
+  "outingPhotography": {
+    "onlyIfConfirmedSharedOutingAndPhotogenicEvent": true,
+    "longTermReferenceWeights": {
+      "selfCaptured": 0.5,
+      "companionCaptured": 0.2,
+      "groupPhotoWithKnownNPC": 0.3
+    },
+    "photographerMustExistInScene": true,
+    "companionsMustHaveExistingIdentity": true,
+    "useCompanionVisualMemoryIfVisible": true,
+    "noInventedFriends": true,
+    "noPlayerNPCJointPhotos": true,
+    "notEveryOutingRequiresPhoto": true
+  },
+  "captureDecisionFactors": [
+    "當天行程",
+    "當前事件",
+    "情緒狀態",
+    "分享動機",
+    "玩家關係狀態",
+    "是否忙碌",
+    "此前對話及事件"
+  ],
+  "autonomy": {
+    "captureCanOccurWhenPlayerChatClosed": true,
+    "sendCanOccurWhenPlayerChatClosed": true,
+    "noFixedDailyCaptureQuota": true,
+    "noFixedDailySendQuota": true,
+    "openingChatDoesNotTriggerGeneration": true,
+    "captureWithoutSendingAllowed": true,
+    "maySendOneImageNoText": true,
+    "maySendOneShortLine": true,
+    "maySendThenResumeLife": true,
+    "mayProvideLaterExplanation": true,
+    "mayNotReplyUntilAvailable": true,
+    "mayDecideNotToCaptureOrNotToSend": true,
+    "doesNotShareEverything": true
+  },
+  "messageInteraction": {
+    "useRealisticTurnTaking": true,
+    "fourMeaningfullyDifferentPlayerChoicesPerResponseNode": true,
+    "respondToPlayerSelectionFirst": true,
+    "pauseIfPlayerBusy": true,
+    "doNotForceContinuedConversation": true,
+    "prohibitRepeatedOpeners": [
+      "喂",
+      "怎樣",
+      "不然呢"
+    ],
+    "noPersistentOneLiners": true,
+    "noPersistentTeasing": true,
+    "noPersistentRomanticFlirting": true,
+    "noMessageFlooding": true,
+    "noIgnoringPlayerReply": true
+  },
+  "relationshipStage": {
+    "acquaintance": [
+      "運動",
+      "設計",
+      "一般活動",
+      "少量普通自拍",
+      "不過度私密"
+    ],
+    "getting_familiar": [
+      "更多主動分享可能性",
+      "穿搭",
+      "自拍",
+      "聚會",
+      "興趣話題"
+    ],
+    "close": [
+      "疲態",
+      "狼狽",
+      "家庭或生活煩惱",
+      "放下只分享得意一面"
+    ],
+    "ambiguous": [
+      "偶爾刻意挑好自拍",
+      "較在意玩家反應",
+      "偶爾借照片開玩笑",
+      "不必每次調情"
+    ],
+    "dating": [
+      "剛睡醒",
+      "運動後",
+      "休息",
+      "偶爾特別拍給玩家",
+      "保留獨立人生"
+    ]
+  },
+  "continuityChecklist": [
+    "五官、髮型及體態固定",
+    "同日衣服連續",
+    "同一活動場景連續",
+    "同行 NPC 身分與外貌固定",
+    "拍攝時間與光線合理",
+    "拍攝角度符合物理條件",
+    "照片內容符合事件",
+    "同一照片不可重新生成其他版本",
+    "再次查看使用既有素材",
+    "不要擅自造玩家情緒或交往"
+  ],
+  "photoRecordSchema": {
+    "id": "string stable unique",
+    "photoStatus": [
+      "not_captured",
+      "captured"
+    ],
+    "photographerId": "string or null",
+    "subjectIds": "array<string>",
+    "capturedAt": "in-game timestamp or null",
+    "locationId": "string or null",
+    "storyEventId": "string or null",
+    "characterMood": "string or null",
+    "wardrobeStateId": "string or null",
+    "assetPath": "existing project asset path or null",
+    "assetGitHubStatus": [
+      "pending_upload",
+      "uploaded",
+      "verified"
+    ],
+    "sharingDecision": [
+      "undecided",
+      "share",
+      "dont_share"
+    ],
+    "deliveryStatus": [
+      "not_scheduled",
+      "scheduled",
+      "delivered",
+      "cancelled"
+    ],
+    "deliveryTime": "in-game timestamp or null",
+    "chatMessageId": "string or null",
+    "readStatus": [
+      "unread",
+      "read",
+      "not_applicable"
+    ],
+    "reuseLockedOriginalAsset": true
+  },
+  "separatePhases": [
+    "capture",
+    "choose_to_share",
+    "deliver"
+  ],
+  "gameConstraints": {
+    "singlePlayer": true,
+    "playerRepliesViaChoicesOnly": true,
+    "noRealPhoneCamera": true,
+    "noPlayerImageUpload": true,
+    "noPlayerWithNPCPhotos": true,
+    "npcNeverRequestsPlayerPhoto": true,
+    "noPhotoExchangeSystem": true,
+    "offlineCharactersCanSend": true,
+    "persistentUnreadPhotos": true,
+    "openingChatShowsHistoryNotNewRandomScene": true,
+    "sharedAcrossAllCharacters": true,
+    "assetsPreGeneratedAtAuthoringTime": true
+  },
+  "eventFlow": [
+    "read_current_time_and_location",
+    "read_activity_and_schedule",
+    "read_mood_and_story_state",
+    "decide_whether_capture",
+    "choose_subject",
+    "choose_valid_photographer_and_viewpoint",
+    "load_qiye_visual_memory_and_real_reference_pixels",
+    "load_visible_npc_visual_memories",
+    "validate_outfit_people_scene_time_and_camera",
+    "create_and_save_asset_during_authoring_not_during_runtime",
+    "decide_share_to_player_or_no_share",
+    "schedule_send_if_shared",
+    "create_in_character_message",
+    "persist_unread",
+    "branch_on_player_choice",
+    "persist_photo_and_chat_history"
+  ],
+  "prohibitions": [
+    "隨機換臉",
+    "所有照片刻意耍帥",
+    "全部照片專業時尚寫真",
+    "每日固定拍攝量",
+    "與當日事件不符",
+    "虛構同伴或拍攝者",
+    "玩家與 NPC 合照",
+    "向玩家討照片",
+    "要求上傳真實圖片",
+    "忽略玩家回覆",
+    "重寫玩家開過的聊天室事件",
+    "同一照片重生新版本",
+    "照片總出現名車名錶豪宅",
+    "固定高冷霸道挑釁"
+  ],
+  "destinations": {
+    "chat": "assets/characters/qiye/chat/",
+    "instagramStory": "assets/characters/qiye/instagram/story/",
+    "instagramPost": "assets/characters/qiye/instagram/post/"
+  },
+  "implementation": {
+    "scope": "source_of_truth_for_future_asset_authoring_and_event_design",
+    "runtimeIntegration": "pending",
+    "runtimeEngineDoesNotGeneratePhotos": true,
+    "requiresUploadedAssets": true,
+    "requiresStoryCompilerValidEvents": true,
+    "requiredTests": [
+      "story:validate",
+      "story:test",
+      "build"
+    ]
+  }
+}
