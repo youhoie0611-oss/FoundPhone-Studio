@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "status": "authored_not_runtime_integrated",
+  "characterId": "pei-zhiyu",
+  "character": {
+    "name": "裴知聿",
+    "age": 25,
+    "occupation": "心理學研究所碩士生",
+    "relationship": "玩家前男友",
+    "breakupInitiatedBy": "玩家",
+    "reunionIntent": true,
+    "hiddenInitialAffection": 0
+  },
+  "guidelines": {
+    "photosAreSelfTaken": true,
+    "noSelfie": true,
+    "noOtherPhotographer": true,
+    "sendEvenWithoutOpeningChat": true,
+    "neverMassSend": true,
+    "neverRepeatSamePhoto": true,
+    "alwaysRespondToPlayersQuestionFirst": true,
+    "noForcedEmotionsForPlayer": true,
+    "noConfirmedBreakupCause": true,
+    "noForcedReunion": true,
+    "noUnpromptedDisclosureOfUnconfirmedSharedMemories": true,
+    "allInteractionsHaveFourMeaningfulChoices": true,
+    "doNotInterruptActiveConversation": true
+  },
+  "scenes": [
+    {
+      "id": "pei-pov-study",
+      "characterId": "pei-zhiyu",
+      "channel": "kkt",
+      "asset": "/assets/characters/pei-zhiyu/chat/pei-study-desk.jpg",
+      "assetRepositoryPath": "public/assets/characters/pei-zhiyu/chat/pei-study-desk.jpg",
+      "assetStatus": "committed",
+      "pointOfView": "first-person-self-shot",
+      "timeWindow": "22:00-23:30",
+      "initialMessage": "還在改資料。這杯喝完應該就收工。",
+      "sendRules": {
+        "canSendWithChatClosed": true,
+        "oneTime": true,
+        "onlyIfNotBlocked": true,
+        "noContactBoundaryStops": true,
+        "minHoursSinceLastPhoto": 48,
+        "queueWhenConversationActive": true,
+        "onlyAfterNormalContactEstablished": true
+      },
+      "choices": [
+        {
+          "id": "pei-pov-study-reply-1",
+          "player": "這麼晚還在忙？",
+          "peiReply": "最近有點趕進度。不過今天做完這份就停。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-study-reply-2",
+          "player": "你在看什麼？",
+          "peiReply": "整理研究資料。要講清楚可能得花點時間，妳確定想聽？",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-study-reply-3",
+          "player": "你的桌子有點亂。",
+          "peiReply": "還好吧。至少我還找得到筆。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-study-reply-4",
+          "player": "你先忙吧。",
+          "peiReply": "嗯，妳也早點休息。",
+          "outcome": "respect_boundary_or_pause"
+        }
+      ],
+      "continuity": {}
+    },
+    {
+      "id": "pei-pov-sunset",
+      "characterId": "pei-zhiyu",
+      "channel": "kkt",
+      "asset": "/assets/characters/pei-zhiyu/chat/pei-window-sunset.jpg",
+      "assetRepositoryPath": "public/assets/characters/pei-zhiyu/chat/pei-window-sunset.jpg",
+      "assetStatus": "committed",
+      "pointOfView": "first-person-self-shot",
+      "timeWindow": "17:00-19:00",
+      "initialMessage": "剛好看到窗外這個顏色。",
+      "sendRules": {
+        "canSendWithChatClosed": true,
+        "oneTime": true,
+        "onlyIfNotBlocked": true,
+        "noContactBoundaryStops": true,
+        "minHoursSinceLastPhoto": 48,
+        "queueWhenConversationActive": true,
+        "onlyAfterNormalContactEstablished": true
+      },
+      "choices": [
+        {
+          "id": "pei-pov-sunset-reply-1",
+          "player": "很好看耶。",
+          "peiReply": "嗯，剛剛比照片還好看。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-sunset-reply-2",
+          "player": "在哪拍的？",
+          "peiReply": "在窗邊隨手拍的，沒特地跑去哪。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-sunset-reply-3",
+          "player": "你不是很忙嗎？",
+          "peiReply": "忙裡偷閒，看個天空總可以吧。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-sunset-reply-4",
+          "player": "我現在不方便聊天。",
+          "peiReply": "知道了，妳先忙。",
+          "outcome": "respect_boundary_or_pause"
+        }
+      ],
+      "continuity": {}
+    },
+    {
+      "id": "pei-pov-cat",
+      "characterId": "pei-zhiyu",
+      "channel": "kkt",
+      "asset": "/assets/characters/pei-zhiyu/chat/pei-encountered-cat.jpg",
+      "assetRepositoryPath": "public/assets/characters/pei-zhiyu/chat/pei-encountered-cat.jpg",
+      "assetStatus": "committed",
+      "pointOfView": "first-person-self-shot",
+      "timeWindow": "12:00-21:00",
+      "initialMessage": "路上遇到一位不打算理我的。",
+      "sendRules": {
+        "canSendWithChatClosed": true,
+        "oneTime": true,
+        "onlyIfNotBlocked": true,
+        "noContactBoundaryStops": true,
+        "minHoursSinceLastPhoto": 48,
+        "queueWhenConversationActive": true,
+        "onlyAfterNormalContactEstablished": true
+      },
+      "choices": [
+        {
+          "id": "pei-pov-cat-reply-1",
+          "player": "牠是你養的？",
+          "peiReply": "不是。剛好遇到，睡得很安穩。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-cat-reply-2",
+          "player": "你也有喜歡貓的一面？",
+          "peiReply": "我有說過我不喜歡嗎？",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-cat-reply-3",
+          "player": "不要吵牠睡覺啦。",
+          "peiReply": "我連腳步都放輕了。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-cat-reply-4",
+          "player": "我不想看這種照片。",
+          "peiReply": "好，以後不傳這類給妳。",
+          "outcome": "respect_boundary_or_pause"
+        }
+      ],
+      "continuity": {
+        "catOwnership": "not-established; encountered cat only"
+      }
+    },
+    {
+      "id": "pei-pov-meal",
+      "characterId": "pei-zhiyu",
+      "channel": "kkt",
+      "asset": "/assets/characters/pei-zhiyu/chat/pei-ramen.jpg",
+      "assetRepositoryPath": "public/assets/characters/pei-zhiyu/chat/pei-ramen.jpg",
+      "assetStatus": "committed",
+      "pointOfView": "first-person-self-shot",
+      "timeWindow": "11:30-20:30",
+      "initialMessage": "今天第一餐。總算有時間坐下來吃。",
+      "sendRules": {
+        "canSendWithChatClosed": true,
+        "oneTime": true,
+        "onlyIfNotBlocked": true,
+        "noContactBoundaryStops": true,
+        "minHoursSinceLastPhoto": 48,
+        "queueWhenConversationActive": true,
+        "onlyAfterNormalContactEstablished": true
+      },
+      "choices": [
+        {
+          "id": "pei-pov-meal-reply-1",
+          "player": "你到現在才吃？",
+          "peiReply": "今天時間有點亂。現在吃到了，別念。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-meal-reply-2",
+          "player": "看起來不錯，哪家的？",
+          "peiReply": "在附近隨便找的店。味道比想像中好。",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-meal-reply-3",
+          "player": "吃飯還拍照喔？",
+          "peiReply": "難得覺得不錯，留個紀錄犯法了？",
+          "outcome": "continue_or_naturally_pause"
+        },
+        {
+          "id": "pei-pov-meal-reply-4",
+          "player": "好，你慢慢吃。",
+          "peiReply": "嗯，吃完再說。",
+          "outcome": "respect_boundary_or_pause"
+        }
+      ],
+      "continuity": {}
+    }
+  ]
+}
