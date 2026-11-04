@@ -128,9 +128,13 @@ function runQueue(
       .filter((item) => item && !item.outgoing)
       .map((item) => item!.title);
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
+    const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
     const blocked = incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
-      return last !== undefined && (s.elapsedMs ?? 0) - last < 120000;
+      const playerTime = recentPlayerReplies[thread];
+      const playerElapsed = playerTime === undefined ? undefined : Number(playerTime);
+      return (last !== undefined && (s.elapsedMs ?? 0) - last < 120000)
+        || (playerElapsed !== undefined && Number.isFinite(playerElapsed) && (s.elapsedMs ?? 0) - playerElapsed < 90000);
     });
     if (blocked) {
       s.scheduled ??= [];
