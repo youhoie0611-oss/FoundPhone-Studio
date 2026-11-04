@@ -21,7 +21,6 @@ import {
   User,
   Bell,
   X,
-  Smile,
   Menu,
   Compass,
 } from "lucide-react";
@@ -86,7 +85,6 @@ function Back({ onClick }: { onClick: () => void }) {
 }
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
-    [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
     [menu, setMenu] = useState(false);
   const list = grouped(p.items),
