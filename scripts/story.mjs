@@ -1,8 +1,8 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { createServer } from "vite";
 const [
   mode = "validate",
-  file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
+  file = process.env.STORY_FILE || "stories/template/story.json",
 ] = process.argv.slice(2);
 const server = await createServer({
   configFile: false,
@@ -102,6 +102,20 @@ try {
     );
   } else if (mode === "build") {
     await mkdir("public", { recursive: true });
+    // Copy approved Gu Shian photos to the runtime's safe ./characters/ URL space.
+    // Keep the original assets untouched. These are the four files present in Git.
+    const guSource = "assets/characters/gu_shian/chat/";
+    const guDest = "public/characters/";
+    await mkdir(guDest, { recursive: true });
+    for (const [source, dest] of [
+      ["site_visit_selfie.jpg", "gu-shian-site-visit-selfie.jpg"],
+      ["studio_mirror_selfie.jpg", "gu-shian-studio-mirror-selfie.jpg"],
+      ["late_night_studio.jpg", "gu-shian-late-night-studio.jpg"],
+      ["bookstore_cafe.jpg", "gu-shian-bookstore-cafe.jpg"],
+      ["studio_mirror_selfie.jpg", "gu-shian-avatar.jpg"],
+    ]) {
+      await copyFile(guSource + source, guDest + dest);
+    }
     await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
     const blank = compileStory(
       JSON.parse(await readFile("stories/blank/story.json", "utf8")),
