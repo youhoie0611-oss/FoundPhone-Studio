@@ -38,7 +38,13 @@ function apply(a: Action, s: Runtime, w: Work) {
       s.variables[a.key] = a.value;
       break;
     case "unlock":
-      if (!s.unlocked.includes(a.key)) s.unlocked.push(a.key);
+      if (!s.unlocked.includes(a.key)) {
+        s.unlocked.push(a.key);
+        const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
+        if (item && !item.outgoing) {
+          s.ui = { ...s.ui, deliveryTimes: { ...(s.ui?.deliveryTimes ?? {}), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time } };
+        }
+      }
       break;
     case "hide":
       if (!s.hidden.includes(a.key)) s.hidden.push(a.key);
@@ -264,6 +270,20 @@ export function advance(
       }
     }
     if (due && due.due <= s.elapsedMs) {
+      const node = w.nodes.find((entry) => entry.id === due.nodeId);
+      const incoming = (node?.actions ?? []).filter((action) => action.type === "unlock")
+        .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+        .filter((item) => item && !item.outgoing);
+      const lastReplies = s.ui?.lastFreeReply ?? {};
+      const isConversing = incoming.some((item) => {
+        const last = lastReplies[item!.title];
+        return last !== undefined && s.elapsedMs - Number(last) < 90000;
+      });
+      if (isConversing) {
+        due.due = s.elapsedMs + 15000;
+        continue;
+      }
+
       s.scheduled.splice(s.scheduled.indexOf(due), 1);
       resumes++;
       runQueue(w, s, "timer", due.nodeId, [due.nodeId], new Set([due.nodeId]));
@@ -289,7 +309,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   });
   return {
     ...s,
-    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] } },
+    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...(s.ui?.lastFreeReply ?? {}), [thread]: String(s.elapsedMs ?? 0) } },
     messages: {
       ...s.messages,
       [appId]: [...(s.messages[appId] ?? []), message],
