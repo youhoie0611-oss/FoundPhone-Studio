@@ -1,0 +1,479 @@
+{
+  "schema": "foundphone-qiye-photo-events-draft-v1",
+  "status": "authoring_data_not_runtime_integrated",
+  "character": {
+    "id": "qiye",
+    "name": "祁野",
+    "age": 23,
+    "identity": "祁家次子",
+    "relationshipStart": "偶然認識",
+    "hiddenInitialAffinity": 0,
+    "personality": "張揚、叛逆、直球、好勝；惡犬系75%、野狼系25%"
+  },
+  "assetRoot": "assets/characters/qiye/chat/",
+  "notes": [
+    "本檔為待整合的劇情策劃配置，尚未接入 stories/template/story.json 的正式事件引擎。",
+    "六張 JPG 需分別上傳至 assetRoot 後，mediaPath 才會有實際資源。",
+    "正式故事的媒體欄位依專案 STORY_SCHEMA，目前僅允許安全 data URL；整合時須按校驗器支援格式處理，不得直接假設路徑可用。",
+    "訊息逐則送達；角色可在玩家未開啟聊天室時主動傳送；四選項需保留不同回覆。",
+    "不可顯示隱藏好感度；不得依照片推斷狗的所有權或固定祁野的職業學籍。"
+  ],
+  "events": [
+    {
+      "id": "qiye_photo_basketball",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "夜間球場自拍",
+      "assetPath": "assets/characters/qiye/chat/qiye_basketball_selfie.jpg",
+      "assetStatus": "pending_upload",
+      "context": "運動結束後，祁野順手分享照片",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "今天打到快熄燈。這群人死不認輸。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_basketball_selfie.jpg"
+      },
+      "choices": [
+        {
+          "id": "basketball_1",
+          "text": "你們打到幾點？",
+          "response": "剛收。最後一場拖太久。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "basketball_2",
+          "text": "贏了沒？",
+          "response": "贏了。妳當我會輸？",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "basketball_3",
+          "text": "看起來很累，先休息吧。",
+          "response": "知道。喝完水就走。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "basketball_4",
+          "text": "你怎麼突然傳自拍？",
+          "response": "想傳就傳。怎樣，不行？",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    },
+    {
+      "id": "qiye_photo_skateboard",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "滑板與街頭地面",
+      "assetPath": "assets/characters/qiye/chat/qiye_skateboard.jpg",
+      "assetStatus": "pending_upload",
+      "context": "街頭運動後；只有玩家已知道祁野喜歡滑板時可直接聊技術",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "新板子試了半天，輪子還是有點怪。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_skateboard.jpg"
+      },
+      "choices": [
+        {
+          "id": "skateboard_1",
+          "text": "哪裡怪？",
+          "response": "落地時不夠穩，可能要再調。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "skateboard_2",
+          "text": "你自己會修嗎？",
+          "response": "會。不行再找店家處理。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "skateboard_3",
+          "text": "有沒有摔到？",
+          "response": "沒有。這次還算順。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "skateboard_4",
+          "text": "我不太懂滑板欸。",
+          "response": "沒事，我只是想吐槽一下。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    },
+    {
+      "id": "qiye_photo_design",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "深夜設計工作桌",
+      "assetPath": "assets/characters/qiye/chat/qiye_design_desk.jpg",
+      "assetStatus": "pending_upload",
+      "context": "忙於自己的設計計畫；不預設玩家知悉他的私人委託",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "改到第三版，還是覺得哪裡不對。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_design_desk.jpg"
+      },
+      "choices": [
+        {
+          "id": "design_1",
+          "text": "你在做什麼設計？",
+          "response": "自己做的概念圖，還沒定案。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "design_2",
+          "text": "第三版有差很多嗎？",
+          "response": "比第一版好，但還不夠。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "design_3",
+          "text": "先睡一覺再看？",
+          "response": "我再改一點就停。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "design_4",
+          "text": "你是想聽意見還是單純抱怨？",
+          "response": "先抱怨。要是妳真想看，我再傳細節。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    },
+    {
+      "id": "qiye_photo_dog",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "摸黑狗的照片",
+      "assetPath": "assets/characters/qiye/chat/qiye_dog.jpg",
+      "assetStatus": "pending_upload",
+      "context": "偶遇黑狗；照片不代表祁野飼養這隻狗",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "這傢伙剛才一直跟著我。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_dog.jpg"
+      },
+      "choices": [
+        {
+          "id": "dog_1",
+          "text": "牠是誰家的狗？",
+          "response": "不知道。附近有人認得牠，我問過了。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "dog_2",
+          "text": "牠看起來很親人。",
+          "response": "對我倒是挺不怕生。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "dog_3",
+          "text": "你有幫牠找主人嗎？",
+          "response": "有問附近的人，說牠常在這裡。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "dog_4",
+          "text": "你居然會拍狗。",
+          "response": "我又不是只會拍人。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    },
+    {
+      "id": "qiye_photo_sunset",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "河岸夕陽",
+      "assetPath": "assets/characters/qiye/chat/qiye_sunset.jpg",
+      "assetStatus": "pending_upload",
+      "context": "獨處路過河岸；可在普通朋友階段發生",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "路過看到的。今天這天色還行。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_sunset.jpg"
+      },
+      "choices": [
+        {
+          "id": "sunset_1",
+          "text": "在哪裡拍的？",
+          "response": "河邊。具體位置我等等找給妳。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "sunset_2",
+          "text": "顏色很好看。",
+          "response": "嗯，難得沒拍糊。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "sunset_3",
+          "text": "你平常也會拍風景？",
+          "response": "偶爾。看到順眼的就拍。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "sunset_4",
+          "text": "怎麼突然傳給我看？",
+          "response": "剛好想到妳可能會喜歡這種。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    },
+    {
+      "id": "qiye_photo_gym",
+      "characterId": "qiye",
+      "type": "character_initiated_chat_photo",
+      "title": "健身房鏡面自拍",
+      "assetPath": "assets/characters/qiye/chat/qiye_gym_selfie.jpg",
+      "assetStatus": "pending_upload",
+      "context": "健身結束；不得以此暗示已與玩家交往",
+      "eligibility": {
+        "relationship": [
+          "acquaintance",
+          "friend",
+          "close_friend",
+          "ambiguous",
+          "dating"
+        ],
+        "requiresKnownContext": true,
+        "notPreviouslySent": true,
+        "playerHasNotBlocked": true
+      },
+      "delivery": {
+        "maySendWhileChatClosed": true,
+        "notification": true,
+        "queueIfConversationActive": true,
+        "avoidDuplicate": true,
+        "sendOnlyWhenCharacterAvailable": true
+      },
+      "photoMessage": {
+        "senderId": "qiye",
+        "text": "今天的量總算做完。",
+        "mediaType": "image",
+        "mediaPath": "assets/characters/qiye/chat/qiye_gym_selfie.jpg"
+      },
+      "choices": [
+        {
+          "id": "gym_1",
+          "text": "你今天練什麼？",
+          "response": "上半身。明天應該會痠。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "gym_2",
+          "text": "看起來練得很累。",
+          "response": "是有點。待會就回去。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "gym_3",
+          "text": "你是想炫耀嗎？",
+          "response": "對啊。不能？",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        },
+        {
+          "id": "gym_4",
+          "text": "我要去忙了，晚點聊。",
+          "response": "行，妳忙。",
+          "stateEffects": {
+            "recordChoice": true,
+            "markPhotoSeen": true
+          }
+        }
+      ],
+      "afterward": {
+        "allowConversationToPause": true,
+        "noForcedRomance": true
+      }
+    }
+  ]
+}
