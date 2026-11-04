@@ -477,7 +477,7 @@ function PhoneRuntime({
                     const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
                     if (pendingNpcReplies.current.has(`${sourceApp}:${thread}`)) return;
                     pendingNpcReplies.current.add(`${sourceApp}:${thread}`);
-                    const history = (next.messages[sourceApp] ?? []).filter((item) => item.title === thread)
+                    const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
                     void requestNpcReply({ playerId: activePlayerId(), thread, message, history })
                       .then(async ({ reply, delayMs }) => {
