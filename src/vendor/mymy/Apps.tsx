@@ -363,6 +363,7 @@ export function MymyInstagram(p: SkinProps) {
     [saved, setSaved] = useSkinState<string[]>(p, "mymySaved", []),
     [replies, setReplies] = useSkinState<string[]>(p, "mymyReplies", []),
     [seen, setSeen] = useSkinState<string[]>(p, "mymySeen", []);
+  const [profileOwner, setProfileOwner] = useState<string | null>(null);
   const [sheet, setSheet] = useState<Item | null>(null),
     [selected, setSelected] = useState<Item | null>(null),
     [story, setStory] = useState(0),
@@ -373,7 +374,9 @@ export function MymyInstagram(p: SkinProps) {
     ),
     stories = p.items.filter((i) => i.meta.story === "true"),
     dms = p.items.filter((i) => i.folder === "私信"),
-    active = stories[story - 1];
+    active = stories[story - 1],
+    displayedProfile = profileOwner ?? p.owner ?? "妳",
+    profilePosts = posts.filter((item) => item.sender === displayedProfile);
   const toggle = (id: string, values: string[], set: (v: string[]) => void) =>
     set(values.includes(id) ? values.filter((v) => v !== id) : [...values, id]);
   useEffect(() => {
@@ -402,7 +405,7 @@ export function MymyInstagram(p: SkinProps) {
       <header className="igph">
         <Avatar name={i.sender} src={i.avatar} />
         <div className="igpn">
-          <button onClick={() => setTab("个人主页")}>
+          <button onClick={() => { setProfileOwner(i.sender); setSelected(null); setTab("个人主页"); }}>
             <b>{i.sender}</b>
           </button>
           <small>{i.meta.location || i.time}</small>
@@ -482,7 +485,7 @@ export function MymyInstagram(p: SkinProps) {
         <header className="igh">
           <button
             aria-label={selected ? "返回Instagram动态" : "关闭当前App"}
-            onClick={() => (selected ? setSelected(null) : p.onBack())}
+            onClick={() => (selected ? setSelected(null) : tab === "个人主页" && profileOwner ? (setProfileOwner(null), setTab("主页")) : p.onBack())}
           >
             <ArrowLeft />
           </button>
@@ -520,10 +523,10 @@ export function MymyInstagram(p: SkinProps) {
           {!selected && tab === "个人主页" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar name={displayedProfile} src={chatAvatar(displayedProfile)} />
                 <div className="ps">
                   <div>
-                    <b>{posts.length}</b>
+                    <b>{profilePosts.length}</b>
                     <small>帖子</small>
                   </div>
                   <div>
@@ -536,14 +539,14 @@ export function MymyInstagram(p: SkinProps) {
                   </div>
                 </div>
               </div>
-              <p className="pn">{p.owner}</p>
+              <p className="pn">{displayedProfile}</p>
               <div className="ptab">
                 <div className="on">
                   <Grid />
                 </div>
               </div>
               <div className="pg2">
-                {posts.map((i) => (
+                {profilePosts.map((i) => (
                   <button key={i.id} onClick={() => openPost(i)}>
                     <Media item={i} />
                   </button>
@@ -590,6 +593,7 @@ export function MymyInstagram(p: SkinProps) {
               }
               onClick={() => {
                 setSelected(null);
+                if (n === 3) setProfileOwner(null);
                 setTab(["主页", "搜索", "私信", "个人主页"][n]);
               }}
             >
