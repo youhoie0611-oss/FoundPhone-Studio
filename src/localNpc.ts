@@ -1,3 +1,4 @@
+import { enforceCanon } from "./characterCanon";
 import type { AiChatRequest, AiChatResponse } from "./aiChat";
 
 type Intent = "stop" | "refuse" | "gift" | "question" | "greeting" | "meeting" | "work" | "thanks" | "affection" | "other";
@@ -124,5 +125,5 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const candidates = choices.filter(x => x !== previousNpc);
   const pool = candidates.length ? candidates : choices;
   const index = stableHash(request.playerId + request.thread + request.message + request.history.length) % pool.length;
-  return { reply: pool[index], delayMs: intent === "stop" ? 800 : 1300 + stableHash(request.message) % 1900 };
+  return { reply: enforceCanon(request.thread, pool[index]), delayMs: intent === "stop" ? 800 : 1300 + stableHash(request.message) % 1900 };
 }
