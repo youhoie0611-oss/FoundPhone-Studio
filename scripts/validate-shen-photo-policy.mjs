@@ -44,7 +44,7 @@ for (const photo of index.photos) {
     check(item.meta?.photoId === photo.photoId, `Photo metadata ID mismatch: ${photo.photoId}`);
     check(item.meta?.photoPolicy === "V1.0", `Photo policy metadata mismatch: ${photo.photoId}`);
   }
-  check(photo.mediaPath === "./" + photo.repoPath.replace(/^public\\//, ""), `Media path and asset path differ: ${photo.photoId}`);
+  check(photo.repoPath.startsWith("public/") && photo.mediaPath === "./" + photo.repoPath.slice(7), `Media path and asset path differ: ${photo.photoId}`);
   check(exists(photo.repoPath), `Image asset missing from repository: ${photo.repoPath}`);
   const event = events.get(photo.eventId);
   check(Boolean(event) && event.actions?.some((action) => action.type === "unlock" && action.key === photo.photoId), `Image delivery event missing: ${photo.photoId}`);
