@@ -104,12 +104,14 @@
     "mediaAssetNotAutomaticallyRuntimeIntegrated": true
   },
   "visualMemory": {
-    "lockStatus": "approved_locked",
-    "manifestPath": "stories/visual-memory/characters/pei-zhiyu.json",
-    "referenceImage": "public/characters/pei-zhiyu.png",
-    "sourceConfirmation": "玩家明確確認這張多角度人物圖的外貌、髮型、穿搭與表情為裴知聿",
-    "sourceUploadSha256": "8c712ffa2b84fb1f1a85bf247d77cfcc0504297fcddff8f8fb89d92aa5dde133",
-    "identityMustBePreservedInFutureImageGeneration": true,
-    "mustLoadActualReferenceImage": true
+    "status": "confirmed_visual_identity",
+    "canonicalRegistry": "assets/characters/visual-memory-registry.json",
+    "manifestPath": "assets/characters/pei_zhiyu/visual-memory.json",
+    "referenceImage": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
+    "referenceGitBlobSha": "880cfa699f36dbe2aa54190ba6f1d57c12b003ed",
+    "approvedSourceFilename": "F94C1BA6-2CF7-41A9-8DFB-F6EE7DB86A7D.jpeg",
+    "mustLoadActualReferenceImage": true,
+    "faceAndHairLocked": true,
+    "photoHabitsLockedAsGuidance": true
   }
 }

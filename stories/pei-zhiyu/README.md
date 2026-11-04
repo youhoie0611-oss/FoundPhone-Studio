@@ -26,4 +26,4 @@
 新生成素材應符合裴知聿本人拍攝、自然隨手記錄的感覺，光線、生活用品與視角具連續性。不能把「已生成」等同「已上傳」；提交之後才提供真實資料夾連結並回報 commit。素材清單與規則另見 `photo-asset-index.json`、`public/assets/characters/pei-zhiyu/README.md`。
 
 ## 視覺記憶鎖定
-最新正式視覺參考：`public/characters/pei-zhiyu.png`；人物視覺記憶：`stories/visual-memory/characters/pei-zhiyu.json`。每次生成照片前必須同時讀取此檔與圖片，核對本人的五官、髮型、衣著習慣、手機拍攝視角與生活情境。圖片原標籤「沈硯舟」不影響本角色身分。其他角色不可套用此參考圖。
+最新正式視覺參考：`assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png`（與 `public/characters/pei-zhiyu.png` 為同一 Git blob）；人物視覺記憶：`assets/characters/pei_zhiyu/visual-memory.json`。每次生成照片前必須同時讀取此檔與圖片，核對本人的五官、髮型、衣著習慣、手機拍攝視角與生活情境。圖片原標籤「沈硯舟」不影響本角色身分。其他角色不可套用此參考圖。

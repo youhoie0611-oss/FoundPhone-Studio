@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pei_zhiyu",
+  "name": "裴知聿",
+  "visualIdentityStatus": "confirmed",
+  "reference": {
+    "version": 1,
+    "source": "玩家明確核准的多視角人物設定板（正面、3/4、側面、背面、表情、髮型及服飾特寫）",
+    "originalUploadedName": "F94C1BA6-2CF7-41A9-8DFB-F6EE7DB86A7D.jpeg",
+    "recentCopySha256": "8c712ffa2b84fb1f1a85bf247d77cfcc0504297fcddff8f8fb89d92aa5dde133",
+    "recentCopyDimensions": {
+      "width": 1212,
+      "height": 1297
+    },
+    "gitHubOriginalPath": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
+    "referenceGitBlobSha": "880cfa699f36dbe2aa54190ba6f1d57c12b003ed",
+    "originalHighResCopiedFrom": "public/characters/pei-zhiyu.png",
+    "originalHighResCopyStatus": "available_on_github_no_reencoding",
+    "priority": "玩家明確核准的臉型、五官、髮型、體型及日常服裝；角色背景以正式人物核心為準",
+    "labelConflict": "舊版參考圖內有『沈硯舟』與 24 歲等資訊，這是舊文案，不代表此人物是沈硯舟。使用者已確認此外貌正式歸裴知聿（25歲、心理學研究所碩士生、玩家前男友）。"
+  },
+  "immutableAppearance": {
+    "face": [
+      "清冷俊秀、較窄長的臉形",
+      "乾淨修長的下顎線",
+      "高挺鼻樑與自然淡粉色嘴唇",
+      "略狹長、眼尾微挑且眼神慵懶的眼型",
+      "細緻而不過分濃妝的五官"
+    ],
+    "hair": [
+      "深黑色的蓬鬆中長層次碎髮",
+      "長瀏海自然散在額前與眉眼周圍",
+      "帶輕微狼尾層次",
+      "蓬鬆略亂，不梳成服貼油頭"
+    ],
+    "body": [
+      "身形修長、偏精瘦",
+      "肩頸線自然",
+      "四肢與手指纖長"
+    ],
+    "distinguishingDetails": [
+      "銀色小耳釘",
+      "簡約銀色項鍊",
+      "常見灰色拉鍊連帽外套的輪廓"
+    ],
+    "identityNegativeConstraints": [
+      "不能用沈硯舟或祁野的另一張臉取代",
+      "不要因只知道姓名就生成新的陌生男性",
+      "不要照抄參考板舊姓名／職業／年齡欄",
+      "變換光影、情緒和衣服不能改動既定面容"
+    ]
+  },
+  "typicalWardrobe": {
+    "confirmedEverydayStyle": [
+      "灰色寬鬆拉鍊連帽外套",
+      "寬鬆深灰／黑色多口袋工裝褲",
+      "灰白運動鞋",
+      "簡約銀色耳釘與短項鍊"
+    ],
+    "reasonableVariations": [
+      "研究所日常可穿黑／灰／深藍上衣、襯衫或針織",
+      "更正式場合可依已發生劇情改穿其他服裝"
+    ],
+    "avoid": [
+      "所有場景被固定成同一套制服",
+      "突然換成祁野的張揚賽車機能造型",
+      "生活照大量使用棚拍化妝與商業攝影打光"
+    ]
+  },
+  "expressionReference": [
+    "平靜與清冷",
+    "小幅度微笑",
+    "真正開心的笑容",
+    "帶點狡黠的調侃",
+    "思考",
+    "驚訝",
+    "委屈",
+    "放鬆",
+    "倦怠"
+  ],
+  "cameraHabits": {
+    "status": "author_guidance_for_visual_consistency_not_a_log_of_factual_events",
+    "defaultOwner": "裴知聿本人",
+    "privateChat": [
+      "手機自己拍的工作桌與論文資料",
+      "坐在窗邊或路上拍暮色、街景",
+      "第一人稱拍餐點或遇到的小動物",
+      "偶爾自然自拍，但不能莫名出現第三人稱全身寫真"
+    ],
+    "instagramStory": [
+      "即時生活、外出、天空、研究所、咖啡等片刻",
+      "以直式 9:16 為主，少量文字可由遊戲 UI 疊加",
+      "與 KKT 私訊不同，不必以玩家為發佈對象"
+    ],
+    "instagramPost": [
+      "經本人挑選的攝影、旅行或具有個人意義的生活紀錄",
+      "適合 4:5 或 1:1，構圖較完整，但仍符合裴知聿本人會拍的照片"
+    ],
+    "consistentPhotoSignature": [
+      "黑灰低飽和與自然暖色燈光交替",
+      "不過度銳化、適度手機噪點",
+      "自然非對稱構圖及環境細節",
+      "偶爾重複出現深色杯子、筆記本和生活器物，但不強制每張都入鏡"
+    ],
+    "constraints": [
+      "本人手機不可能拍到的第三人稱視角要有合理拍攝者／自拍工具說明",
+      "不可每張都像同一個商業攝影棚",
+      "同一人拍攝並不等於所有照片色調、拍攝位置一樣"
+    ]
+  },
+  "commonScenes": {
+    "status": "possible_life_scenes_not_automatically_happened",
+    "locations": [
+      "研究所書桌與資料整理",
+      "窗邊夕陽、傍晚城市",
+      "閱讀、咖啡與簡單晚餐",
+      "夜間散步",
+      "偶遇路邊動物"
+    ],
+    "mood": [
+      "生活化、安靜、略帶觀察與克制",
+      "自然光和暖色室內光",
+      "少量真實手機畫面不完美"
+    ],
+    "continuity": [
+      "分手原因尚未確認，不把照片當作過去交往共同回憶",
+      "偶遇貓不代表他有養貓",
+      "生活照片應根據當下事件及關係自然發出"
+    ]
+  },
+  "photoDestinations": {
+    "kkt": "public/assets/characters/pei-zhiyu/chat/",
+    "instagramStory": "public/assets/characters/pei-zhiyu/instagram/story/",
+    "instagramPost": "public/assets/characters/pei-zhiyu/instagram/post/"
+  },
+  "mandatoryGenerationChecklist": [
+    "讀取官方 visual-memory-registry.json 與本 visual-memory.json",
+    "實際讀取 githubOriginalPath 圖片本體作為人物視覺參考，不只複述名字",
+    "核對正面、側面、表情與髮型，保持同一張臉",
+    "遵守人物個性、生活情境與界線；候選場景不等於已發生事件",
+    "本人自拍／自己拍照片採合理第一人稱手機角度",
+    "選擇唯一主要用途 KKT／Instagram Story／Instagram Post 並對應資料夾",
+    "生成後標註照片檔名、用途、情境、GitHub 資料夾 URL、實際提交狀態與 commit",
+    "如沒有真的把圖片上傳成功，不得宣稱遠端已有此圖或遊戲已引用"
+  ],
+  "linkedCharacterCanon": "stories/pei-zhiyu/character-profile.json"
+}

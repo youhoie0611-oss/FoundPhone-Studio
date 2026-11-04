@@ -19,6 +19,15 @@
 
 祁野設定以 23 歲、祁家次子為準，設定板上的 21 歲／大三生欄位只是原始示意，不能覆寫人物背景。
 
+## 裴知聿（已確認，原圖已在 GitHub）
+
+- 人物視覺記憶：`assets/characters/pei_zhiyu/visual-memory.json`。
+- 已鎖定高畫質多視角人物圖：`assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png`（從既有 `public/characters/pei-zhiyu.png` 以相同 Git blob 複用，無壓縮或畫質損失）。
+- 圖上的舊名字「沈硯舟」、年齡與職業欄不代表裴知聿設定；角色正史仍為 25 歲心理學研究所碩士生、玩家前男友。
+- 每次生成前讀取本人實際參考圖與外貌、服飾、拍攝習慣、場景，再選擇 `public/assets/characters/pei-zhiyu/chat/`、`instagram/story/` 或 `instagram/post/`。生成後附資料夾連結；實際提交後才能附 commit。
+- 可透過 `npm run visual-memory:brief -- pei_zhiyu chat` 或 `... instagram_story`、`... instagram_post` 取得引用路徑與檢查項；此工具不會自動提供像素給圖片生成模型。
+
+
 ## 生成品質檢查
 
 - 保留**同一張臉**：髮型、臉部輪廓、五官、飾品與辨識特徵。

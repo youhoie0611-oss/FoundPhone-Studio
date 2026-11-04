@@ -17,7 +17,6 @@
     "story:build": "node scripts/story.mjs build",
     "story:preview": "npm run dev",
     "story:test": "node scripts/story.mjs test",
-    "visual:validate": "node scripts/validate-visual-memory.mjs",
     "visual-memory:check": "node scripts/visual-memory.mjs check",
     "visual-memory:brief": "node scripts/visual-memory.mjs brief"
   },
