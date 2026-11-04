@@ -1,3 +1,4 @@
+import { localNpcReply } from "./localNpc";
 export interface AiChatRequest {
   playerId: string;
   thread: string;
@@ -9,7 +10,7 @@ const endpoint = import.meta.env.VITE_CHAT_API_URL as string | undefined;
 
 /** Public frontend never receives the provider API key. */
 export async function requestNpcReply(request: AiChatRequest): Promise<AiChatResponse> {
-  if (!endpoint) throw new Error("AI 聊天服務尚未設定");
+  if (!endpoint) return localNpcReply(request);
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 25000);
   try {
