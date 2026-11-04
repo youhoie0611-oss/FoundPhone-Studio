@@ -452,16 +452,23 @@ function PhoneRuntime({
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
                   }
                   items={[
-                    ...(work.data[app] ?? []).map((item) => {
+                    ...(work.data[app] ?? []).flatMap((item) => {
                       const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
-                      // Legacy saves predate deliveryTimes. Never display a delayed
-                      // scripted arrival with its obsolete authoring timestamp.
+                      const deliveryElapsed = (s.ui?.deliveryElapsed as Record<string, number> | undefined)?.[item.id];
                       const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
-                      return delivered && typeof delivered === "string"
-                        ? { ...item, time: delivered }
-                        : legacyDelivered
-                          ? { ...item, time: `${s.date ?? work.phone.date} ${s.time}` }
-                          : item;
+                      const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
+                      const base = { ...item, time: timestamp };
+                      // Render each incoming chat line as an independent bubble.
+                      // Unread and notifications continue to follow the underlying event.
+                      if (item.outgoing || !item.body.includes("\\n") || !["kakao", "messages"].includes(app)) return [base];
+                      const lines = item.body.split(/\\n+/).map((line) => line.trim()).filter(Boolean);
+                      if (lines.length < 2) return [base];
+                      const elapsed = s.elapsedMs ?? 0;
+                      const origin = deliveryElapsed ?? (item.hidden ? undefined : 0);
+                      return lines.flatMap((line, index) => {
+                        if (origin !== undefined && elapsed < origin + index * 2800) return [];
+                        return [{ ...base, id: `${item.id}-line-${index}`, body: line }];
+                      });
                     }),
                     ...(s.messages[app] ?? []),
                   ]}
