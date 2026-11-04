@@ -120,6 +120,30 @@ function runQueue(
       s.trace.push(`delay:${n.delayMs ?? 1000}ms → ${n.label}`);
       continue;
     }
+    // Never let autonomous story nodes flood a single conversation.
+    // Reschedule later rather than overwrite the player's active dialogue.
+    const incomingThreads = n.actions
+      .filter((action) => action.type === "unlock")
+      .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+      .filter((item) => item && !item.outgoing)
+      .map((item) => item!.title);
+    const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
+    const blocked = incomingThreads.some((thread) => {
+      const last = recentDeliveries[thread];
+      return last !== undefined && (s.elapsedMs ?? 0) - last < 120000;
+    });
+    if (blocked) {
+      s.scheduled ??= [];
+      if (!s.scheduled.some((entry) => entry.nodeId === id))
+        s.scheduled.push({ nodeId: id, due: (s.elapsedMs ?? 0) + 30000 });
+      continue;
+    }
+    if (incomingThreads.length) {
+      s.ui = { ...s.ui, scriptedThreadDelivery: {
+        ...recentDeliveries,
+        ...Object.fromEntries(incomingThreads.map((thread) => [thread, s.elapsedMs ?? 0])),
+      } };
+    }
     if (!s.completed.includes(id)) s.completed.push(id);
     s.trace.push(`${event}:${target} → ${n.label}`);
     // A scripted chat notification must describe the message unlocked by this event,
