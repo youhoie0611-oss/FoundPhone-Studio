@@ -194,49 +194,29 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          <div className="kkt-reply-tray" aria-label="選擇要傳送的回覆">
-            {!p.creator && !isTyping && !lastMessage?.outgoing && p.choices?.filter((choice) => {
-              const character = p.thread === "沈硯舟" ? "shen" : p.thread === "裴知聿" ? "pei" : p.thread === "祁野" ? "qi" : "";
-              return (p.thread === "林安" && choice.target.startsWith("lin-reply-")) || (character && (choice.target.startsWith("reply-" + character + "-") || choice.target.startsWith("phase2-" + character + "-") || choice.target.startsWith("phase3-" + character + "-") || choice.target.startsWith(character + "-r") || choice.target.startsWith(character + "-day") || choice.target.startsWith(character + "-major-event-")));
-            }).slice(-3).map((choice) => (
-              <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>
-                {choice.label}
-              </button>
-            ))}
-          </div>
-          <form
-            className="kzinp"
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (draft.trim()) {
-                p.onCustomMessage?.(p.thread, draft);
-                setDraft("");
-              }
-            }}
-          >
-            <button
-              type="button"
-              aria-label="添加聊天内容"
-              onClick={() => (p.creator ? p.onAdd() : setMenu(!menu))}
-            >
-              <Plus size={21} />
-            </button>
-            <input
-              aria-label="KKT消息"
-              placeholder="输入消息"
-              value={draft}
-              maxLength={2000}
-              onChange={(e) => setDraft(e.target.value)}
-            />
-            <Smile size={22} />
-            <button
-              className={draft.trim() ? "go" : ""}
-              aria-label="发送KKT消息"
-              disabled={!draft.trim()}
-            >
-              ↑
-            </button>
-          </form>
+          {!p.creator && !isTyping && !lastMessage?.outgoing && (
+            <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
+              {(() => {
+                const latest = lastMessage?.body ?? "";
+                const options = /週五|活動|現場/.test(latest)
+                  ? ["你週五也會去嗎？", "那天我可能沒空。", "活動具體是幾點？", "先不談活動，最近怎麼樣？"]
+                  : /照片|相機|拍/.test(latest)
+                    ? ["可以傳給我看看嗎？", "先不用傳，謝謝。", "那張照片是在哪裡拍的？", "你怎麼突然提起照片？"]
+                    : /前男友|分手|聯絡|想起妳|想起你/.test(latest)
+                      ? ["你找我到底有什麼事？", "我們不是說好先不要聯絡嗎？", "你最近過得怎麼樣？", "我現在不想談以前的事。"]
+                      : /停車場|擋路|車/.test(latest)
+                        ? ["你那天到底有沒有看到我？", "你先把那件事解釋清楚。", "算了，我不想再追究。", "你平常都這樣跟人搭話？"]
+                        : /吃飯|聚餐|週末|約/.test(latest)
+                          ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
+                          : ["怎麼突然找我？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
+                return options.map((reply, index) => (
+                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
+                    {reply}
+                  </button>
+                ));
+              })()}
+            </div>
+          )}
           {menu && (
             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
