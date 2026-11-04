@@ -10,8 +10,8 @@ describe("custom player reply", () => {
     const next = submitCustomReply(state, "我不想復合。  請不要再問。");
     expect(next.ui?.player?.customReplies).toEqual(["我不想復合。  請不要再問。"]);
     expect(next.choices).toEqual(state.choices);
-    expect(next.messages.messages?.at(-1)?.body).toBe("我不想復合。  請不要再問。");
-    expect(next.messages.messages?.at(-1)?.outgoing).toBe(true);
+    expect(next.messages.kakao?.at(-1)?.body).toBe("我不想復合。  請不要再問。");
+    expect(next.messages.kakao?.at(-1)?.outgoing).toBe(true);
   });
 
   it("ignores blank input and leaves runtime unchanged", () => {
