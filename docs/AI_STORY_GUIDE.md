@@ -14,3 +14,7 @@
 常用数据：chats 使用 participants 与 senderId 关联联系人；read 事件响应消息阅读；callEnded 可解锁隐藏动态。Instagram 的 meta.story="true" 标记快拍，folder="私信" 标记私信。具体字段以版本化 Schema 和编译器为准。
 
 正式默认模板为完整 App 测试预览，只有测试文字，没有内置剧情。正式构建也提供 ?preview=test。作者创作时可替换 stories/template/story.json，或从纯空白脚本开始。
+
+## 角色視覺生成前置檢查
+
+角色外貌初次確立後，必須讀取 `docs/VISUAL_MEMORY.md` 及 `stories/ambiguity-b/visual-memory/` 中的對應資料和可用圖片參考。沈硯舟必須加讀 `stories/ambiguity-b/characters/shen-yanzhou-photo-rules-v1.md`，不能以舊景物照片推定他不愛自拍。永久不得要求玩家回傳私人照片。分別驗證照片資產是否提交、JSON 是否引用和遊戲 UI 是否實際呈現。
