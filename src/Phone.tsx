@@ -141,6 +141,7 @@ function PhoneRuntime({
   const [recent, setRecent] = useState<string[]>([]);
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
+  const [notificationThread, setNotificationThread] = useState("");
   const [customReplyOpen, setCustomReplyOpen] = useState(false);
   const [customReplyText, setCustomReplyText] = useState("");
   const noticesSeen = useRef(0);
@@ -444,6 +445,7 @@ function PhoneRuntime({
                 origin={launchOrigin}
               >
                 <AppContent
+                  initialThread={notificationThread}
                   app={plugin}
                   name={
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
@@ -558,11 +560,14 @@ function PhoneRuntime({
                     <SystemNotifications
                       notices={s.notifications}
                       apps={work.apps}
-                      onOpen={() => {
+                      onOpen={(appId, title) => {
                         setPanel("");
-                        if (locked) beginUnlock();
-                        else if (installedApps.some((a) => a.id === "messages"))
-                          open("messages");
+                        if (locked) { beginUnlock(); return; }
+                        const target = installedApps.find((a) => a.id === appId) ? appId : "messages";
+                        const items = [...(work.data[target] ?? []), ...(runtimeRef.current.messages[target] ?? [])];
+                        const matching = items.find((item) => item.title === title || item.sender === title);
+                        setNotificationThread(matching?.title ?? "");
+                        open(target);
                       }}
                       onDismiss={dismissNotice}
                     />
@@ -882,6 +887,7 @@ function Media({ item }: { item: Item }) {
   );
 }
 function AppContent({
+  initialThread = "",
   app,
   name,
   items,
@@ -897,6 +903,7 @@ function AppContent({
   work,
 }: {
   app: AppPlugin;
+  initialThread?: string;
   name: string;
   items: Item[];
   creator: boolean;
@@ -911,7 +918,8 @@ function AppContent({
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
-  const [thread, setThread] = useState("");
+  const [thread, setThread] = useState(initialThread);
+  useEffect(() => { if (initialThread) setThread(initialThread); }, [initialThread]);
   const [tab, setTab] = useState(app.tabs[0]);
   const [q, setQ] = useState("");
   const [pw, setPw] = useState("");
