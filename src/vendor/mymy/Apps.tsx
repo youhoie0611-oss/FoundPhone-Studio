@@ -56,8 +56,15 @@ function grouped(items: Item[]) {
       .sort((a, b) => messageClock(a.item) - messageClock(b.item) || a.index - b.index)
       .map(({ item }) => item),
   }));
+  // The chat list is ordered by the time shown on screen, newest first.
+  // Legacy scripted records can carry dates from a different story day;
+  // comparing those dates against live HH:mm replies misorders the inbox.
+  const visibleMinute = (item: Item) => {
+    const match = item.time.match(/(\\d{1,2}):(\\d{2})(?::\\d{2})?$/);
+    return match ? Number(match[1]) * 60 + Number(match[2]) : -1;
+  };
   return groups.sort((a, b) =>
-    messageClock(b.items.at(-1)!) - messageClock(a.items.at(-1)!));
+    visibleMinute(b.items.at(-1)!) - visibleMinute(a.items.at(-1)!));
 }
 export function messageRun(items: Item[], index: number) {
   const m = items[index],
@@ -196,17 +203,25 @@ export function MymyKakao(p: SkinProps) {
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
-                const options = /週五|活動|現場/.test(latest)
-                  ? ["你週五也會去嗎？", "那天我可能沒空。", "活動具體是幾點？", "先不談活動，最近怎麼樣？"]
-                  : /照片|相機|拍/.test(latest)
-                    ? ["可以傳給我看看嗎？", "先不用傳，謝謝。", "那張照片是在哪裡拍的？", "你怎麼突然提起照片？"]
-                    : /前男友|分手|聯絡|想起妳|想起你/.test(latest)
-                      ? ["你找我到底有什麼事？", "我們不是說好先不要聯絡嗎？", "你最近過得怎麼樣？", "我現在不想談以前的事。"]
-                      : /停車場|擋路|車/.test(latest)
-                        ? ["你那天到底有沒有看到我？", "你先把那件事解釋清楚。", "算了，我不想再追究。", "你平常都這樣跟人搭話？"]
-                        : /吃飯|聚餐|週末|約/.test(latest)
-                          ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
-                          : ["怎麼突然找我？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
+                const options = p.thread === "沈硯舟" && /上次活動|那位|是妳|是你/.test(latest)
+                  ? ["對，是我。你還記得我？", "你是不是認錯人了？", "你怎麼認出我的？", "我們好像還不太熟，先說說你是誰吧。"]
+                  : p.thread === "裴知聿" && /最近還好|好嗎|想起|聯絡/.test(latest)
+                    ? ["我還好。你找我有事嗎？", "我們不是說好暫時不聯絡嗎？", "你突然聯絡我，是想說什麼？", "我現在不想聊這件事。"]
+                    : p.thread === "祁野" && /^(欸[。！!？?]?|喂[。！!？?]?)$/.test(latest.trim())
+                      ? ["幹嘛？", "有事就直接說。", "你怎麼會有我的聯絡方式？", "我現在不方便聊天。"]
+                      : /^(妳|你)最近還好嗎/.test(latest)
+                        ? ["我還不錯，你呢？", "突然問這個，是有什麼事嗎？", "我們不是說好先別聯絡？", "我現在不想談近況。"]
+                        : /週五|活動|現場/.test(latest)
+                          ? ["你說的是哪個活動？", "那天我可能沒空。", "活動是幾點開始？", "你怎麼突然提起這件事？"]
+                          : /照片|相機|拍/.test(latest)
+                            ? ["可以傳給我看看嗎？", "先不用傳，謝謝。", "那張照片在哪裡拍的？", "你怎麼突然提起照片？"]
+                            : /分手|聯絡|以前/.test(latest)
+                              ? ["你找我到底有什麼事？", "我不想再談以前的事。", "你現在是怎麼想的？", "我們先保持距離吧。"]
+                              : /停車場|擋路|車/.test(latest)
+                                ? ["你那天有看到我嗎？", "你先把那件事解釋清楚。", "算了，我不想再追究。", "你平常都這樣跟人搭話？"]
+                                : /吃飯|聚餐|週末|約/.test(latest)
+                                  ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
+                                  : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
                 return options.map((reply, index) => (
                   <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
                     {reply}
