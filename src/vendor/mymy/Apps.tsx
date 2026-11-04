@@ -34,8 +34,8 @@ import "./adapter.css";
 function grouped(items: Item[]) {
   return [...new Set(items.map((i) => i.title))].map((title) => ({
     title,
-    items: items.filter((i) => i.title === title),
-  }));
+    items: items.filter((i) => i.title === title).sort((a, b) => a.time.localeCompare(b.time)),
+  })).sort((a, b) => (b.items.at(-1)?.time ?? "").localeCompare(a.items.at(-1)?.time ?? ""));
 }
 export function messageRun(items: Item[], index: number) {
   const m = items[index],
