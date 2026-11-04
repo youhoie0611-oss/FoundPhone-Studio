@@ -56,15 +56,10 @@ function grouped(items: Item[]) {
       .sort((a, b) => messageClock(a.item) - messageClock(b.item) || a.index - b.index)
       .map(({ item }) => item),
   }));
-  // The chat list is ordered by the time shown on screen, newest first.
-  // Legacy scripted records can carry dates from a different story day;
-  // comparing those dates against live HH:mm replies misorders the inbox.
-  const visibleMinute = (item: Item) => {
-    const match = item.time.match(/(\\d{1,2}):(\\d{2})(?::\\d{2})?$/);
-    return match ? Number(match[1]) * 60 + Number(match[2]) : -1;
-  };
+  // Use the full delivered timestamp; sorting by HH:mm alone puts yesterday's
+  // late-night messages ahead of today's morning conversations.
   return groups.sort((a, b) =>
-    visibleMinute(b.items.at(-1)!) - visibleMinute(a.items.at(-1)!));
+    messageClock(b.items.at(-1)!) - messageClock(a.items.at(-1)!));
 }
 export function messageRun(items: Item[], index: number) {
   const m = items[index],
@@ -323,6 +318,9 @@ export function MymyKakao(p: SkinProps) {
               .filter((g) => g.title.includes(query.trim()))
               .map((g) => {
                 const last = g.items.at(-1)!;
+                // An outgoing reply must not replace the contact's portrait.
+                const avatar = g.items.find((item) => !item.outgoing && item.avatar)?.avatar
+                  ?? g.items.find((item) => item.avatar)?.avatar;
                 const unread = g.items.filter((item) =>
                   !item.outgoing && !item.read && !p.readIds?.includes(item.id)
                 ).length;
@@ -332,7 +330,7 @@ export function MymyKakao(p: SkinProps) {
                     key={g.title}
                     onClick={() => p.onThread(g.title)}
                   >
-                    <Avatar name={g.title} src={chatAvatar(g.title, last.avatar)} />
+                    <Avatar name={g.title} src={chatAvatar(g.title, avatar)} />
                     <span className="kzkn">
                       <b>{g.title}</b>
                       <small>{tab === "好友" ? last.sender : last.body}</small>
