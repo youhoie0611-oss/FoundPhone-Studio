@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
-  "revision": 4,
+  "revision": 5,
   "phone": {
     "owner": "机主",
     "date": "2026-11-04",
@@ -107,6 +107,13 @@
       "phone": "",
       "avatar": "",
       "bio": "23 歲。喜歡街頭運動、籃球、攝影與設計；說話直接、好勝，有自己的生活與界線。"
+    },
+    {
+      "id": "pei-zhiyu",
+      "name": "裴知聿",
+      "phone": "",
+      "avatar": "",
+      "bio": "25 歲，心理學研究所碩士生。女主角的前男友，當初由女主角主動提出分手。聰明、敏銳、克制、狡黠，偶爾毒舌。狐狸系 80% × 黑貓系 20%。"
     }
   ],
   "chats": [
@@ -902,6 +909,130 @@
         "qiye"
       ],
       "messages": []
+    },
+    {
+      "id": "pei-zhiyu-kkt",
+      "app": "kakao",
+      "title": "裴知聿",
+      "participants": [
+        "owner",
+        "pei-zhiyu"
+      ],
+      "messages": [
+        {
+          "id": "pei-intro-lead",
+          "senderId": "pei-zhiyu",
+          "body": "妳最近還好嗎？",
+          "time": "2026-11-04 10:02",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "relationship": "former-partners"
+          }
+        },
+        {
+          "id": "pei-intro-context",
+          "senderId": "pei-zhiyu",
+          "body": "突然這樣問，確實有點沒頭沒尾。只是想知道妳的近況。",
+          "time": "2026-11-04 10:04",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro"
+          }
+        },
+        {
+          "id": "pei-intro-player-ordinary",
+          "senderId": "owner",
+          "body": "還可以。你呢？",
+          "time": "2026-11-04 10:04",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-reply-ordinary",
+          "senderId": "pei-zhiyu",
+          "body": "也還可以。最近研究所的事比較多，日子沒什麼新鮮的。",
+          "time": "2026-11-04 10:06",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-player-ask",
+          "senderId": "owner",
+          "body": "你怎麼突然來找我？",
+          "time": "2026-11-04 10:04",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "pei-intro-reply-ask",
+          "senderId": "pei-zhiyu",
+          "body": "想重新跟妳說說話。不是要妳現在答應什麼。",
+          "time": "2026-11-04 10:06",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "pei-intro-player-direct",
+          "senderId": "owner",
+          "body": "有話就直接說。",
+          "time": "2026-11-04 10:04",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "direct"
+          }
+        },
+        {
+          "id": "pei-intro-reply-direct",
+          "senderId": "pei-zhiyu",
+          "body": "沒有急事。我只是想知道妳過得怎麼樣。妳不想聊，也可以直接說。",
+          "time": "2026-11-04 10:06",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "direct"
+          }
+        },
+        {
+          "id": "pei-intro-player-boundary",
+          "senderId": "owner",
+          "body": "我們分手了，我不想再聯絡。",
+          "time": "2026-11-04 10:04",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "boundary"
+          }
+        },
+        {
+          "id": "pei-intro-reply-boundary",
+          "senderId": "pei-zhiyu",
+          "body": "我知道。抱歉打擾妳，以後不會主動聯絡了。",
+          "time": "2026-11-04 10:06",
+          "hidden": true,
+          "meta": {
+            "peiScene": "pei-intro",
+            "choice": "boundary"
+          }
+        }
+      ]
     }
   ],
   "content": {
@@ -1361,7 +1492,12 @@
     "qiye_trust": 0,
     "qiye_relationship": "acquaintance",
     "qiye_last_topic": "",
-    "qiye_chat_media_ready": false
+    "qiye_chat_media_ready": false,
+    "pei_hidden_affection": 0,
+    "pei_contact_allowed": false,
+    "pei_no_contact": false,
+    "pei_last_topic": "",
+    "pei_relationship_status": "former_partners"
   },
   "events": [
     {
@@ -2913,6 +3049,279 @@
         "gu-photo-late-timer-1",
         "gu-photo-book-timer-1"
       ]
+    },
+    {
+      "id": "pei-intro-start",
+      "label": "裴知聿｜獨立生活初次聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "pei-intro-delay-start"
+      ]
+    },
+    {
+      "id": "pei-intro-delay-start",
+      "label": "前男友主動訊息｜開始前停頓",
+      "type": "delay",
+      "delayMs": 90000,
+      "actions": [],
+      "next": [
+        "pei-intro-deliver-lead"
+      ]
+    },
+    {
+      "id": "pei-intro-deliver-lead",
+      "label": "裴知聿主動傳訊",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：妳最近還好嗎？"
+        }
+      ],
+      "next": [
+        "pei-intro-delay-context"
+      ]
+    },
+    {
+      "id": "pei-intro-delay-context",
+      "label": "裴知聿補充訊息前的自然停頓",
+      "type": "delay",
+      "delayMs": 80000,
+      "actions": [],
+      "next": [
+        "pei-intro-deliver-context"
+      ]
+    },
+    {
+      "id": "pei-intro-deliver-context",
+      "label": "裴知聿補充來意",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-context",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-select"
+      ]
+    },
+    {
+      "id": "pei-intro-select",
+      "label": "裴知聿｜玩家四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "pei-intro-choice-ordinary",
+        "pei-intro-choice-ask",
+        "pei-intro-choice-direct",
+        "pei-intro-choice-boundary"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-ordinary",
+      "label": "還可以。你呢？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-player-ordinary",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_last_topic",
+          "value": "normal_catchup"
+        },
+        {
+          "type": "variable",
+          "key": "pei_contact_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-choice-ordinary-delay"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-ordinary-delay",
+      "label": "裴知聿閱讀後回覆停頓",
+      "type": "delay",
+      "delayMs": 85000,
+      "actions": [],
+      "next": [
+        "pei-intro-choice-ordinary-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-ordinary-reply",
+      "label": "裴知聿回應玩家選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-reply-ordinary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-choice-ask",
+      "label": "你怎麼突然來找我？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-player-ask",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_last_topic",
+          "value": "reason_for_contact"
+        },
+        {
+          "type": "variable",
+          "key": "pei_contact_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-choice-ask-delay"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-ask-delay",
+      "label": "裴知聿閱讀後回覆停頓",
+      "type": "delay",
+      "delayMs": 85000,
+      "actions": [],
+      "next": [
+        "pei-intro-choice-ask-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-ask-reply",
+      "label": "裴知聿回應玩家選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-reply-ask",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-choice-direct",
+      "label": "有話就直接說。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-player-direct",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_last_topic",
+          "value": "clarify_intent"
+        },
+        {
+          "type": "variable",
+          "key": "pei_contact_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-choice-direct-delay"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-direct-delay",
+      "label": "裴知聿閱讀後回覆停頓",
+      "type": "delay",
+      "delayMs": 85000,
+      "actions": [],
+      "next": [
+        "pei-intro-choice-direct-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-direct-reply",
+      "label": "裴知聿回應玩家選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-reply-direct",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-choice-boundary",
+      "label": "我們分手了，我不想再聯絡。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-player-boundary",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei_last_topic",
+          "value": "no_contact"
+        },
+        {
+          "type": "variable",
+          "key": "pei_contact_allowed",
+          "value": false
+        },
+        {
+          "type": "variable",
+          "key": "pei_no_contact",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-choice-boundary-delay"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-boundary-delay",
+      "label": "裴知聿閱讀後回覆停頓",
+      "type": "delay",
+      "delayMs": 85000,
+      "actions": [],
+      "next": [
+        "pei-intro-choice-boundary-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-choice-boundary-reply",
+      "label": "裴知聿回應玩家選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
@@ -2986,6 +3395,54 @@
       "expectUnlocked": [
         "gu-photo-site-player-busy",
         "gu-photo-site-reply-busy-1"
+      ]
+    },
+    {
+      "name": "裴知聿初次聯絡｜詢問原因",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 190000
+        },
+        {
+          "target": "",
+          "choose": "pei-intro-choice-ask"
+        },
+        {
+          "target": "",
+          "advanceMs": 95000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "pei-intro-lead",
+        "pei-intro-context",
+        "pei-intro-player-ask",
+        "pei-intro-reply-ask"
+      ]
+    },
+    {
+      "name": "裴知聿初次聯絡｜玩家拒絕",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 190000
+        },
+        {
+          "target": "",
+          "choose": "pei-intro-choice-boundary"
+        },
+        {
+          "target": "",
+          "advanceMs": 95000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "pei-intro-lead",
+        "pei-intro-context",
+        "pei-intro-player-boundary",
+        "pei-intro-reply-boundary"
       ]
     }
   ]

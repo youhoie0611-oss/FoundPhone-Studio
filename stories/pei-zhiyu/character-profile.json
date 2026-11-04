@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pei-zhiyu",
+  "sourceOfTruth": "本對話框使用者最新明確確認設定 + stories/ambiguity-b/characters/pei-zhiyu.md",
+  "sourceScope": "character-personal-canon-not-player-dialogue",
+  "canon": {
+    "name": "裴知聿",
+    "gender": "男",
+    "age": 25,
+    "occupation": "心理學研究所碩士生",
+    "relationshipToPlayer": "前男友",
+    "breakupInitiator": "玩家",
+    "reconciliationIntent": true,
+    "personality": {
+      "fox": 80,
+      "blackCat": 20,
+      "traits": [
+        "敏銳",
+        "聰明",
+        "克制",
+        "狡黠",
+        "偶爾毒舌"
+      ]
+    },
+    "hiddenInitialAffection": 0,
+    "playerEmotionMustNotBeInferred": true,
+    "approvedVisual": {
+      "hair": "深黑色蓬鬆中長層次碎髮、微狼尾、較長的瀏海",
+      "expression": "清冷、慵懶、微笑、調侃、思索、放鬆；以已核准多角度人物參考表為準",
+      "everydayClothes": [
+        "灰色寬鬆連帽外套",
+        "黑色寬鬆工裝褲",
+        "運動鞋",
+        "簡約銀色耳飾與項鍊"
+      ],
+      "referenceNote": "原圖標籤寫沈硯舟但使用者已確認此圖正式作為裴知聿外貌／髮型／穿搭／表情標準"
+    },
+    "dailyPhotoStyle": {
+      "selfTaken": true,
+      "handheldPhone": true,
+      "samePersonConsistency": true,
+      "naturalCandid": true,
+      "topics": [
+        "研究室或個人書桌",
+        "黃昏窗景",
+        "城市夜景",
+        "路邊遇到的貓",
+        "吃飯"
+      ],
+      "notAutomaticallyAPetOwner": true
+    }
+  },
+  "pendingUserDecisions": [
+    "具體分手原因",
+    "你們當初如何認識",
+    "第一輪人物性格訪談選項",
+    "玩家是否願意恢復聯絡或復合"
+  ],
+  "gameSync": {
+    "activeStory": "stories/template/story.json",
+    "kktChatId": "pei-zhiyu-kkt",
+    "characterCore": "stories/ambiguity-b/characters/pei-zhiyu.md",
+    "photoSceneConfig": "stories/pei-zhiyu/chat-photo-events.json",
+    "latestGeneratedImageUploadStillPending": true
+  }
+}

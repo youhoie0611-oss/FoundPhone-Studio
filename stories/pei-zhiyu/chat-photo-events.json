@@ -24,7 +24,21 @@
     "noForcedReunion": true,
     "noUnpromptedDisclosureOfUnconfirmedSharedMemories": true,
     "allInteractionsHaveFourMeaningfulChoices": true,
-    "doNotInterruptActiveConversation": true
+    "doNotInterruptActiveConversation": true,
+    "consistentPhotographerAcrossSet": true,
+    "samePhoneAndOwnerAesthetic": true,
+    "firstPersonHandheldMobilePhotography": true,
+    "candidEverydayNotStaged": true,
+    "plausiblePersonalItems": [
+      "灰色連帽袖口",
+      "黑色陶杯",
+      "閱讀與研究筆記",
+      "深色木質桌面"
+    ],
+    "visualTone": "低飽和、暖黃室內光與自然暮光、日常手機照片而非棚拍",
+    "contextSpecificVariety": true,
+    "followCurrentCharacterVisualCanon": true,
+    "noAssumedPetOwnership": true
   },
   "scenes": [
     {
@@ -217,5 +231,9 @@
       ],
       "continuity": {}
     }
-  ]
+  ],
+  "newerGeneratedPhotoSet": {
+    "status": "created_in_conversation_not_yet_uploaded",
+    "note": "最近一次同一人自攝感的四張大圖（研究書桌、窗邊夕陽、灰貓、拉麵）尚未替換本 JSON 所指向的既有 JPG 檔案；不可宣稱已完成新版圖片上傳。"
+  }
 }
