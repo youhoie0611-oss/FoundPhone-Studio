@@ -258,14 +258,14 @@ export function advance(
   return s;
 }
 /** Preserve custom player text without silently choosing a scripted response. */
-export function submitCustomReply(s: Runtime, raw: string): Runtime {
+export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
   if (!s.choices.length || !raw.trim()) return s;
   const history = Array.isArray(s.ui?.player?.customReplies)
     ? (s.ui.player.customReplies as string[])
     : [];
   const message = makeItem({
     id: `custom-reply-${history.length + 1}`,
-    title: "玩家自定義",
+    title: thread || "玩家自定義",
     sender: "我",
     body: raw,
     outgoing: true,
@@ -276,7 +276,7 @@ export function submitCustomReply(s: Runtime, raw: string): Runtime {
     ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] } },
     messages: {
       ...s.messages,
-      messages: [...(s.messages.messages ?? []), message],
+      [appId]: [...(s.messages[appId] ?? []), message],
     },
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   };
