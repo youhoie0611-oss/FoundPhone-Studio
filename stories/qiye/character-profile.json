@@ -18,7 +18,8 @@
       "張揚",
       "叛逆",
       "直球",
-      "好勝"
+      "好勝",
+      "有自己的原則"
     ],
     "interests": [
       "街頭運動",
@@ -69,9 +70,31 @@
       "每張照片要有祁野本人自拍或手機主觀視角的合理拍攝來源",
       "可以是運動、街頭、設計、用餐、雨天、動物、旅途、隨手風景",
       "照片與傳送時機需符合當日活動，不把生成的候選照片自動認定為已發生事件",
-      "尚未上傳的素材不得在遊戲內引用為可顯示圖片"
+      "尚未上傳的素材不得在遊戲內引用為可顯示圖片",
+      "照片涵蓋耍帥、隨性、搞怪、狼狽、安靜，不能每張都冷臉或時尚棚拍",
+      "第三人稱照片可以由確實同行的 NPC 幫拍，但須明確記錄攝影者，不能將幫拍誤寫為自拍",
+      "所有照片需先拍攝並保存原圖，之後可決定不分享，分享與實際傳送需分開記錄",
+      "所有角色共通：不生成玩家與 NPC 合照，不要求玩家上傳圖片或交換照片"
     ],
-    "authoredPhotoEventConfig": "stories/qiye/photo-events.json"
+    "authoredPhotoEventConfig": "stories/qiye/photo-events.json",
+    "photoPolicy": {
+      "version": "3.0",
+      "policyDocument": "stories/qiye/PHOTO_POLICY_V3.md",
+      "structuredPolicy": "stories/qiye/photo-policy-v3.json",
+      "positioning": "隨性惡犬，想拍就拍、想傳就傳；生活優先於戀愛展示",
+      "prioritization": "先看行程、事件、情緒與分享動機，後看長期比例",
+      "photoFrequency": "不設定每日上限或下限；生活細節分享及自拍頻率低於沈硯舟",
+      "separateStates": [
+        "captured",
+        "decided_to_share",
+        "actually_delivered"
+      ],
+      "offlineInitiative": true,
+      "doNotGenerateAtChatOpen": true,
+      "interaction": "玩家正式遊戲僅四選項回覆，NPC 不向玩家索照，也不和玩家交換照片",
+      "outings": "確認同行 NPC 才能安排朋友幫拍或 NPC 合照，依 V3 長期 50/20/30 參考權重",
+      "photoDeliveryStatus": "pending_story_engine_integration"
+    }
   },
   "storyline": {
     "growth": "從摩擦與挑釁逐步走向理解與尊重",
