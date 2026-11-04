@@ -31,6 +31,15 @@ import { useSkinState } from "../../skinState";
 import type { Item } from "../../schema";
 import "./ui.css";
 import "./adapter.css";
+const characterAvatar: Record<string, string> = {
+  "沈硯舟": "shen-yanzhou-avatar.png",
+  "裴知聿": "pei-zhiyu-avatar.png",
+  "祁野": "qi-ye-avatar.png",
+};
+function chatAvatar(name: string, fallback?: string) {
+  const file = characterAvatar[name];
+  return file ? `${import.meta.env.BASE_URL}characters/${file}` : fallback;
+}
 /** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
 function messageClock(item: Item): number {
   const match = item.time.match(/(\d{1,2}):(\d{2})(?::\d{2})?$/);
@@ -152,7 +161,7 @@ export function MymyKakao(p: SkinProps) {
                   {!m.outgoing && run.first && (
                     <>
                       <div className="kzmav">
-                        <Avatar name={m.sender} src={m.avatar} />
+                        <Avatar name={m.sender} src={chatAvatar(m.sender, m.avatar)} />
                       </div>
                       <div className="kzmn">{m.sender}</div>
                     </>
@@ -304,7 +313,7 @@ export function MymyKakao(p: SkinProps) {
                     key={g.title}
                     onClick={() => p.onThread(g.title)}
                   >
-                    <Avatar name={last.sender || g.title} src={last.avatar} />
+                    <Avatar name={g.title} src={chatAvatar(g.title, last.avatar)} />
                     <span className="kzkn">
                       <b>{g.title}</b>
                       <small>{tab === "好友" ? last.sender : last.body}</small>
