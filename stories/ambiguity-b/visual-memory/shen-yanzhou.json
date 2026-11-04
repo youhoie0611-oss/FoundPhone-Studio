@@ -4,7 +4,7 @@
   "displayName": "沈硯舟",
   "status": "locked",
   "approvedAt": "2026-11-04",
-  "revision": 1,
+  "revision": 2,
   "sourceAuthority": "作者提供並確認的五視角／表情／髮型設定圖是最高優先級；圖片下方職業與戀愛關係的文字不覆蓋《磚2》已確立設定",
   "referenceImages": [
     {
@@ -14,8 +14,9 @@
       "originalWidth": 1212,
       "originalHeight": 1297,
       "sha256": "43a3a1afb26ac974820884264715dfd5522e712232ac6e08053bfd0b9d7f3019",
-      "repositoryPath": null,
-      "note": "作者真正的五視角、表情、髮型、身形定稿原圖。提交原圖到 GitHub 前，須在可取得附件的生成環境使用本圖；不能只根據姓名生成。"
+      "repositoryPath": "public/assets/characters/shen-yanzhou/visual-reference/canonical-sheet.webp",
+      "note": "作者定稿五視角原圖的 GitHub WebP 預覽／參考副本，已提交並驗證 sha。原始高解析度 JPEG 的 SHA-256 記錄保留，兩者不是相同位元檔；視覺生成時必須真的讀取圖像內容，不可只輸入 URL。",
+      "githubBlobSha": "6fa8b6045f984b711f0ca43889db4844cfece91e"
     },
     {
       "role": "repository-full-body-secondary",
@@ -93,12 +94,13 @@
     ]
   },
   "photography": {
-    "habit": "平時喜歡以手機或相機記錄運動、校園生活、天空光線與街景；傳玩家的照片像本人拍完直接分享",
-    "perspective": "以本人第一人稱手持視角為主，偶爾手、鞋、腿、背包入鏡；明確自拍例外；非自拍照片不得平白出現第三人為他拍攝",
-    "lighting": "自然光、校園室內光、夕陽、夜間街燈與雨後反射；色調略暖、低飽和，不追求影棚完美",
-    "composition": "有留意光線與幾何線條的習慣，但普通生活照可略歪、稍有模糊與雜訊，構圖不能每次都像商業大片",
-    "editing": "輕微手機自動調整即可；不重度HDR、磨皮、過度電影感、假光斑或完全不同濾鏡",
+    "habit": "非常喜歡自拍、活潑聒噪、會主動分享生活趣事，也會拍健身、校園、食物、朋友與雨後街景；拍照與傳給玩家分別判斷，不是所有照片都為討好玩家而拍。",
+    "perspective": "自拍是主要長期類型（40%）；其餘為本人手持第一人稱隨拍、朋友／運動活動及少數攝影作品。實際有人同行才可生成幫拍或合照；若是玩家合照，玩家必須確實出席且同意拍照。",
+    "lighting": "自然光、課堂與咖啡館混合光、球場傍晚、夜街；允許逆光、噪點及常見手機成像，不擅自將心情低落的照片全部改成黑白。",
+    "composition": "同一人長期使用手機的真實拍照習慣：有時有攝影眼光，有時角度很怪、半張臉、偏斜、手震、失焦或失敗照；不每張都像藝術照。",
+    "editing": "輕微手機內建調整，保留真實皮膚紋理與失敗照；不濫用棚拍級完美打光、重度磨皮、HDR或電影調色。",
     "consistentMotifs": [
+      "自拍：課桌趴睡、亂髮、運動後大汗、穿搭、半臉搞怪、朋友合照",
       "手邊訓練用品",
       "咖啡館與筆記",
       "球場傍晚天空",
@@ -109,7 +111,10 @@
       "明顯由攝影團隊打光的完美日常照",
       "與劇情時間不符的日夜光線",
       "同一事件中互相矛盾的服飾、物品、拍攝角度",
-      "隨意將自拍、他拍照、第一人稱照混為一談"
+      "隨意將自拍、他拍照、第一人稱照混為一談",
+      "即使進入曖昧或交往仍向玩家索取任何私人照片",
+      "每次生成都固定圖→問『妳覺得怎麼樣』",
+      "因為喜歡自拍便讓他永遠開心或完全沒有個人行程"
     ]
   },
   "dailyScenes": [
@@ -138,15 +143,46 @@
   "characterSettingPath": "stories/ambiguity-b/characters/shen-yanzhou.md",
   "storyScriptPath": "stories/ambiguity-b/story.json",
   "generationChecklist": [
+    "先讀 V1.0 規則並區分自拍／日常隨拍／活動／風景類型；避免全部都是景物",
     "先取得並查看作者定稿原圖和本JSON，不可只輸入名字",
     "檢查正側後臉型、髮型、身材比例與耳飾",
     "對照當日穿搭與場景、是否由本人拍攝",
     "選定 CHAT / IG STORY / IG POST 資料夾",
-    "圖片提交後回報真實 GitHub folder、commit 和是否接入遊戲"
+    "圖片提交後回報真實 GitHub folder、commit 和是否接入遊戲",
+    "禁止向玩家索取私人照片；記錄 photoId、事件、檔名、拍攝者及聊天室送達規則"
   ],
   "notes": [
     "現行遊戲身分是24歲大學生、活動認識玩家；原圖欄位中『運動復健師／兼職健身教練』『你的男朋友』不可直接視為目前時間點已成立",
     "隱藏初始好感度為10；外貌不能自行改寫人物關係",
     "此JSON保存創作參考，不代表圖像生成工具已直接讀取到原始圖片"
-  ]
+  ],
+  "photoGenerationPolicy": {
+    "version": "1.0",
+    "rulesPath": "stories/ambiguity-b/characters/shen-yanzhou-photo-rules-v1.md",
+    "photoIndexPath": "stories/ambiguity-b/characters/shen-yanzhou-photo-index.json",
+    "mixWeights": {
+      "selfie": 0.4,
+      "dailyCandid": 0.25,
+      "peopleSportsActivity": 0.2,
+      "landscapePhotographicWork": 0.15
+    },
+    "mixWeightScope": "長期建議，不是每日配額；當天劇情、情緒、條件限制優先",
+    "withOthersConditionalWeights": {
+      "selfTaken": 0.5,
+      "companionTaken": 0.2,
+      "togetherSelfieOrPhoto": 0.3
+    },
+    "photographyAndSendingSeparate": true,
+    "spontaneousPhotoSharing": true,
+    "chatAutoDeliveryIndependentlyOfOpening": true,
+    "possibleMultiplePhotosPerEvent": true,
+    "photoSequenceRequiresSameSceneAndWardrobe": true,
+    "reuseExistingPhotoById": true,
+    "forbidden": {
+      "askPlayerToSendAnyPhoto": true,
+      "appliesAtAllRelationshipStages": true,
+      "pressureOrExchange": true
+    },
+    "supportsMoodVariation": true
+  }
 }
