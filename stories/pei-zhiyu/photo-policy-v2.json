@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "version": "2.0",
+  "characterId": "pei-zhiyu",
+  "approvedOn": "2026-11-04",
+  "canon": {
+    "age": 25,
+    "occupation": "心理學研究所碩士生",
+    "relationship": "玩家前男友",
+    "breakupInitiator": "玩家",
+    "stillInLove": true,
+    "wantsReconciliation": true
+  },
+  "affection": {
+    "initial": 70,
+    "min": 0,
+    "max": 100,
+    "privateToPlayer": true,
+    "notEquivalentToRelationshipStatus": true,
+    "trustRebuildingRequired": true,
+    "canIncreaseAndDecrease": true,
+    "neverAutoReconcile": true
+  },
+  "personality": {
+    "foxPercent": 80,
+    "blackCatPercent": 20,
+    "photoStyle": "腹黑狐狸型",
+    "restraintPercent": 70,
+    "intentionalAllurePercent": 30
+  },
+  "contentWeights": {
+    "graduateStudy": 25,
+    "everydayLife": 20,
+    "normalSelfiesAndOutfits": 20,
+    "subtleFlirtySelfies": 15,
+    "friendsAndOutings": 10,
+    "sceneryAndHobbies": 10
+  },
+  "weightsAre": "long_term_guidance_not_daily_quota",
+  "types": [
+    {
+      "id": "after_shower",
+      "context": "剛洗完澡",
+      "visual": "微濕髮、完整的寬鬆居家上衣、毛巾搭肩、自然露出頸部鎖骨、上半身鏡前自拍"
+    },
+    {
+      "id": "post_workout",
+      "context": "剛運動完",
+      "visual": "運動背心、自然微汗、稍亂髮型、健身房休息或運動後鏡前穿搭"
+    },
+    {
+      "id": "lazy_home",
+      "context": "在家休息或剛起床",
+      "visual": "寬鬆T恤、沙發或床頭、自然凌亂髮型"
+    },
+    {
+      "id": "outfit",
+      "context": "出門前",
+      "visual": "襯衫領口自然微開或捲袖、簡約上衣、深色高領、鏡前穿搭"
+    },
+    {
+      "id": "chosen_angle",
+      "context": "玩笑或想引起注意",
+      "visual": "微低頭、側臉、輕微笑、自然亂髮；看似隨手拍實際挑過角度"
+    }
+  ],
+  "motivation": [
+    "運動後",
+    "洗澡後",
+    "準備出門",
+    "剛睡醒",
+    "家中休息",
+    "與玩家玩笑",
+    "想吸引玩家注意",
+    "試探感覺"
+  ],
+  "responseRules": {
+    "positive": "可適度增加自然玩笑曖昧，但不預設復合",
+    "neutral": "正常接話，不強行撩",
+    "tease": "可以狡黠回嘴或自然換話題",
+    "refusal": "停止當前試探並停止同類照片施壓"
+  },
+  "required": {
+    "plausibleStoryEvent": true,
+    "naturalCameraPOV": true,
+    "useApprovedIdentityReference": true,
+    "naturalPauseAndFourChoices": true,
+    "canDeliverWithChatClosed": true,
+    "neverSpam": true,
+    "neverIgnoreRefusal": true,
+    "notAllInteractionsSexual": true,
+    "noExplicitNudity": true,
+    "noExplicitSexualActs": true,
+    "noPlayerPhotoRequests": true,
+    "noPlayerPhotoUploads": true,
+    "noPlayerNpcJointPhotos": true,
+    "noPhotoExchange": true,
+    "onlyUsesPreauthoredSavedImages": true,
+    "reuseOriginalImage": true,
+    "noForcedRomance": true,
+    "independentLife": true
+  },
+  "folders": {
+    "kkt": "public/assets/characters/pei-zhiyu/chat/",
+    "instagramStory": "public/assets/characters/pei-zhiyu/instagram/story/",
+    "instagramPost": "public/assets/characters/pei-zhiyu/instagram/post/"
+  },
+  "visualReference": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
+  "sceneTemplates": "stories/pei-zhiyu/chat-photo-events.json",
+  "integration": {
+    "configIsAuthoringOnly": true,
+    "newSubtleSelfieImageFilesUploaded": false,
+    "imagesMustExistBeforeSceneRuns": true
+  }
+}
