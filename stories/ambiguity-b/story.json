@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 26,
+  "revision": 27,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -4503,6 +4503,102 @@
           "body": "正常啦，才見過一次。\n慢慢認識就好。",
           "senderId": "linan",
           "time": "18:32",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r2-1-out",
+          "title": "",
+          "body": "七點半喔？我下班如果來得及就過去。",
+          "senderId": "owner",
+          "time": "18:45",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r2-1-in",
+          "title": "",
+          "body": "好啊，妳不用趕。\n到了再傳訊息給我就好。",
+          "senderId": "linan",
+          "time": "18:55",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r2-2-out",
+          "title": "",
+          "body": "收到，但我那天可能要加班，先不答應。",
+          "senderId": "owner",
+          "time": "18:45",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r2-2-in",
+          "title": "",
+          "body": "沒關係啦，妳先顧工作。\n活動下次還有機會。",
+          "senderId": "linan",
+          "time": "18:55",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r3-1-out",
+          "title": "",
+          "body": "對啊，我跟裴知聿同部門。妳在哪遇到他的？",
+          "senderId": "owner",
+          "time": "18:46",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r3-1-in",
+          "title": "",
+          "body": "公司附近的咖啡店。\n他看起來超認真，走路都像在趕報告。",
+          "senderId": "linan",
+          "time": "18:56",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r3-2-out",
+          "title": "",
+          "body": "哈哈，他在公司也一樣，一副很忙的樣子。",
+          "senderId": "owner",
+          "time": "18:46",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r3-2-in",
+          "title": "",
+          "body": "我就猜到了。\n不過他是不是其實人不錯？",
+          "senderId": "linan",
+          "time": "18:56",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r4-1-out",
+          "title": "",
+          "body": "有，他有來道歉，講話還是一樣很欠。",
+          "senderId": "owner",
+          "time": "18:47",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r4-1-in",
+          "title": "",
+          "body": "哈哈哈，果然是他。\n但至少知道自己有錯啦。",
+          "senderId": "linan",
+          "time": "18:57",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r4-2-out",
+          "title": "",
+          "body": "他有說清楚了，我想這件事就算了。",
+          "senderId": "owner",
+          "time": "18:47",
+          "hidden": true
+        },
+        {
+          "id": "lin-reply-r4-2-in",
+          "title": "",
+          "body": "好，那不提他。\n妳今天上班累不累？",
+          "senderId": "linan",
+          "time": "18:57",
           "hidden": true
         }
       ]
@@ -18234,6 +18330,291 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "lin-reply-r2-1",
+      "label": "七點半喔？我下班如果來得及就過去。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r2-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r2-1-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r2-1-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r2-1-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r2-1-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r2-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-reply-r2-2",
+      "label": "收到，但我那天可能要加班，先不答應。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r2-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r2-2-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r2-2-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r2-2-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r2-2-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r2-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-choice-r2",
+      "label": "回覆林安",
+      "type": "choice",
+      "event": "read",
+      "target": "lin-02",
+      "next": [
+        "lin-reply-r2-1",
+        "lin-reply-r2-2"
+      ]
+    },
+    {
+      "id": "lin-reply-r3-1",
+      "label": "對啊，我跟裴知聿同部門。妳在哪遇到他的？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r3-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r3-1-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r3-1-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r3-1-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r3-1-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r3-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-reply-r3-2",
+      "label": "哈哈，他在公司也一樣，一副很忙的樣子。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r3-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r3-2-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r3-2-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r3-2-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r3-2-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r3-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-choice-r3",
+      "label": "回覆林安",
+      "type": "choice",
+      "event": "read",
+      "target": "lin-03",
+      "next": [
+        "lin-reply-r3-1",
+        "lin-reply-r3-2"
+      ]
+    },
+    {
+      "id": "lin-reply-r4-1",
+      "label": "有，他有來道歉，講話還是一樣很欠。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r4-1-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r4-1-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r4-1-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r4-1-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r4-1-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r4-1-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-reply-r4-2",
+      "label": "他有說清楚了，我想這件事就算了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r4-2-out",
+          "value": true
+        }
+      ],
+      "next": [
+        "lin-reply-r4-2-delay"
+      ]
+    },
+    {
+      "id": "lin-reply-r4-2-delay",
+      "label": "林安正在回覆",
+      "type": "delay",
+      "delayMs": 6000,
+      "next": [
+        "lin-reply-r4-2-arrive"
+      ]
+    },
+    {
+      "id": "lin-reply-r4-2-arrive",
+      "label": "林安回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "lin-reply-r4-2-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：林安傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lin-choice-r4",
+      "label": "回覆林安",
+      "type": "choice",
+      "event": "read",
+      "target": "lin-04",
+      "next": [
+        "lin-reply-r4-1",
+        "lin-reply-r4-2"
+      ]
     }
   ],
   "tests": [
