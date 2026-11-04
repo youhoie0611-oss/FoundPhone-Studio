@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 35,
+  "revision": 36,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1428,6 +1428,97 @@
           "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
+          "id": "shen-photo-gym-opening",
+          "title": "",
+          "body": "剛從健身房出來，今天練腿練到差點不想走路。\n收東西時順手拍了一張，頭髮整個亂掉。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-gym-image",
+          "title": "",
+          "body": "健身房練完的鏡前自拍",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "kind": "image",
+          "media": "./assets/characters/shen-yanzhou/shenyanzhou_gym_selfie.png",
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "meta": {
+            "photoScene": "gym"
+          }
+        },
+        {
+          "id": "shen-photo-gym-opt-a-out",
+          "title": "",
+          "body": "你不是說練腿很累？怎麼笑得這麼開心？",
+          "senderId": "owner",
+          "time": "2026-11-04 19:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-gym-opt-a-in",
+          "title": "",
+          "body": "笑是因為終於練完了啦。\n明天走樓梯大概會後悔。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-gym-opt-b-out",
+          "title": "",
+          "body": "你有記得休息嗎？不要練過頭。",
+          "senderId": "owner",
+          "time": "2026-11-04 19:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-gym-opt-b-in",
+          "title": "",
+          "body": "有啦，今天有乖乖做收操。\n我知道休息也很重要。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-gym-opt-c-out",
+          "title": "",
+          "body": "你平常都自己去健身嗎？",
+          "senderId": "owner",
+          "time": "2026-11-04 19:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-gym-opt-c-in",
+          "title": "",
+          "body": "大部分自己去，有時候會約同學。\n一個人比較能照自己的節奏練。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-gym-opt-d-out",
+          "title": "",
+          "body": "我不太習慣收到自拍，之後先不要傳。",
+          "senderId": "owner",
+          "time": "2026-11-04 19:42",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-gym-opt-d-in",
+          "title": "",
+          "body": "好，抱歉，這次沒先問妳。\n之後不會再突然傳自拍了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-04 19:42",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
           "id": "shen-day21-opening",
           "title": "",
           "body": "早安。\n系上臨時找我去支援活動攝影。\n我想起妳上次說工作忙。\n先跟妳說聲早，不用急著回。",
@@ -1471,6 +1562,188 @@
           "avatar": "./characters/shen-yanzhou-avatar.png"
         },
         {
+          "id": "shen-photo-cafe-opening",
+          "title": "",
+          "body": "活動終於收工了，我找了間咖啡店備份照片。\n還有課堂筆記沒補完，今天應該會坐到很晚。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-cafe-image",
+          "title": "",
+          "body": "咖啡館裡整理筆記與照片的日常照",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "kind": "image",
+          "media": "./assets/characters/shen-yanzhou/shenyanzhou_cafe_study.png",
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "meta": {
+            "photoScene": "cafe"
+          }
+        },
+        {
+          "id": "shen-photo-cafe-opt-a-out",
+          "title": "",
+          "body": "你都忙完活動了，還要讀書？",
+          "senderId": "owner",
+          "time": "2026-11-05 17:25",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-cafe-opt-a-in",
+          "title": "",
+          "body": "明天要上課，拖下去只會更慘。\n我先補完一點就回去。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-cafe-opt-b-out",
+          "title": "",
+          "body": "你每次出門都帶相機嗎？",
+          "senderId": "owner",
+          "time": "2026-11-05 17:25",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-cafe-opt-b-in",
+          "title": "",
+          "body": "不一定，今天有拍攝才帶。\n平常看到喜歡的光線會想順手拍下來。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-cafe-opt-c-out",
+          "title": "",
+          "body": "那杯咖啡看起來很好喝。",
+          "senderId": "owner",
+          "time": "2026-11-05 17:25",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-cafe-opt-c-in",
+          "title": "",
+          "body": "冰拿鐵，現在就是靠它撐著。\n不過喝完這杯就不續了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-cafe-opt-d-out",
+          "title": "",
+          "body": "我在忙，照片不用一直傳給我。",
+          "senderId": "owner",
+          "time": "2026-11-05 17:25",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-cafe-opt-d-in",
+          "title": "",
+          "body": "收到，妳先忙。\n以後傳這種生活照前我會先問妳。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-05 17:25",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-basketball-opening",
+          "title": "",
+          "body": "剛跟朋友打完球，球場的夕陽很漂亮。\n最後一球我沒投進，已經被他們笑一路了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-basketball-image",
+          "title": "",
+          "body": "夕陽籃球場的汗水自拍",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "kind": "image",
+          "media": "./assets/characters/shen-yanzhou/shenyanzhou_basketball_sunset.png",
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "meta": {
+            "photoScene": "basketball"
+          }
+        },
+        {
+          "id": "shen-photo-basketball-opt-a-out",
+          "title": "",
+          "body": "最後誰贏了？",
+          "senderId": "owner",
+          "time": "2026-11-06 17:26",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-basketball-opt-a-in",
+          "title": "",
+          "body": "他們贏兩分。\n我那球如果進了，至少還能加賽一場。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-basketball-opt-b-out",
+          "title": "",
+          "body": "夕陽真的好好看，難怪你想拍。",
+          "senderId": "owner",
+          "time": "2026-11-06 17:26",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-basketball-opt-b-in",
+          "title": "",
+          "body": "對吧！\n本來要回去了，結果光線太好又站著看了一下。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-basketball-opt-c-out",
+          "title": "",
+          "body": "打完球還有力氣拍照喔？",
+          "senderId": "owner",
+          "time": "2026-11-06 17:26",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-basketball-opt-c-in",
+          "title": "",
+          "body": "自拍只要三秒啊。\n真正痛苦的是等一下要騎車回去。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-basketball-opt-d-out",
+          "title": "",
+          "body": "我今天有點累，先不聊了。",
+          "senderId": "owner",
+          "time": "2026-11-06 17:26",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-basketball-opt-d-in",
+          "title": "",
+          "body": "好，妳先休息。\n我也去洗澡，晚點就不吵妳了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 17:26",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
           "id": "shen-major-event-opening",
           "title": "",
           "body": "有件事想先問妳。\n活動主辦方想把那天拍到妳的照片放上宣傳頁。\n我還沒交出去。\n這是妳的肖像，妳不同意我就不提供。",
@@ -1510,6 +1783,97 @@
           "body": "好，我會直接回絕。\n妳不用解釋理由。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-night-opening",
+          "title": "",
+          "body": "剛把今天的照片備份好，出去走了一小段路。\n街上的燈剛亮起來，這個光線我很喜歡。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-night-image",
+          "title": "",
+          "body": "夜色街頭背著相機的生活照",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "kind": "image",
+          "media": "./assets/characters/shen-yanzhou/shenyanzhou_night_photowalk.png",
+          "avatar": "./characters/shen-yanzhou-avatar.png",
+          "meta": {
+            "photoScene": "night"
+          }
+        },
+        {
+          "id": "shen-photo-night-opt-a-out",
+          "title": "",
+          "body": "你今天又拍了什麼？",
+          "senderId": "owner",
+          "time": "2026-11-06 21:10",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-night-opt-a-in",
+          "title": "",
+          "body": "主要拍街景和幾個轉角的光。\n等我整理好，有適合分享的再給妳看。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-night-opt-b-out",
+          "title": "",
+          "body": "你這麼晚一個人還在外面？",
+          "senderId": "owner",
+          "time": "2026-11-06 21:10",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-night-opt-b-in",
+          "title": "",
+          "body": "沒有走很遠，就住的附近。\n我等一下就回去，明天還有課。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-night-opt-c-out",
+          "title": "",
+          "body": "這張是別人幫你拍的嗎？",
+          "senderId": "owner",
+          "time": "2026-11-06 21:10",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-night-opt-c-in",
+          "title": "",
+          "body": "對，剛好遇到一起拍照的朋友。\n他說我一直拍別人，應該也留一張自己的。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-photo-night-opt-d-out",
+          "title": "",
+          "body": "我準備睡了，晚安。",
+          "senderId": "owner",
+          "time": "2026-11-06 21:10",
+          "hidden": true
+        },
+        {
+          "id": "shen-photo-night-opt-d-in",
+          "title": "",
+          "body": "晚安，妳明天還要上班。\n早點休息，不用回我了。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
         }
@@ -4805,7 +5169,13 @@
     "qi_vulnerability": 0,
     "qi_public_recognition": 0,
     "qi_ambiguity": 0,
-    "qi_relationship_definition": 0
+    "qi_relationship_definition": 0,
+    "shen_photo_pause": false,
+    "shen_photo_last_scene": "",
+    "shen_photo_gym_reaction": "",
+    "shen_photo_cafe_reaction": "",
+    "shen_photo_basketball_reaction": "",
+    "shen_photo_night_reaction": ""
   },
   "events": [
     {
@@ -18615,6 +18985,1120 @@
         "lin-reply-r4-1",
         "lin-reply-r4-2"
       ]
+    },
+    {
+      "id": "shen-photo-gym-trigger-shen-day11-reply-1-in",
+      "label": "沈硯舟｜gym生活照排程",
+      "type": "event",
+      "event": "read",
+      "target": "shen-day11-reply-1-in",
+      "once": true,
+      "conditions": [
+        {
+          "key": "shen_photo_pause",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "next": [
+        "shen-photo-gym-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-wait",
+      "label": "沈硯舟｜生活安排完成後再傳照片",
+      "type": "delay",
+      "delayMs": 65000,
+      "next": [
+        "shen-photo-gym-opening-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opening-arrival",
+      "label": "沈硯舟｜傳來生活近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-photo-gym-image-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-image-wait",
+      "label": "沈硯舟｜挑選照片",
+      "type": "delay",
+      "delayMs": 4200,
+      "next": [
+        "shen-photo-gym-image-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-image-arrival",
+      "label": "沈硯舟｜傳送生活照",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-image",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_last_scene",
+          "value": "gym"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-gym-choice",
+      "label": "沈硯舟｜回覆生活照",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-photo-gym-image",
+      "once": true,
+      "next": [
+        "shen-photo-gym-choice-a",
+        "shen-photo-gym-choice-b",
+        "shen-photo-gym-choice-c",
+        "shen-photo-gym-choice-d"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-choice-a",
+      "label": "你不是說練腿很累？怎麼笑得這麼開心？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-a-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_gym_reaction",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "shen-photo-gym-opt-a-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-a-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 18000,
+      "next": [
+        "shen-photo-gym-opt-a-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-a-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-gym-choice-b",
+      "label": "你有記得休息嗎？不要練過頭。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-b-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_gym_reaction",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "shen-photo-gym-opt-b-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-b-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 24000,
+      "next": [
+        "shen-photo-gym-opt-b-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-b-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-gym-choice-c",
+      "label": "你平常都自己去健身嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-c-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_gym_reaction",
+          "value": "c"
+        }
+      ],
+      "next": [
+        "shen-photo-gym-opt-c-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-c-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "shen-photo-gym-opt-c-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-c-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-c-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-gym-choice-d",
+      "label": "我不太習慣收到自拍，之後先不要傳。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-d-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_gym_reaction",
+          "value": "d"
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_pause",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-photo-gym-opt-d-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-d-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 36000,
+      "next": [
+        "shen-photo-gym-opt-d-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-gym-opt-d-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-gym-opt-d-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-cafe-trigger-shen-day21-reply-1-in",
+      "label": "沈硯舟｜cafe生活照排程",
+      "type": "event",
+      "event": "read",
+      "target": "shen-day21-reply-1-in",
+      "once": true,
+      "conditions": [
+        {
+          "key": "shen_photo_pause",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-wait",
+      "label": "沈硯舟｜生活安排完成後再傳照片",
+      "type": "delay",
+      "delayMs": 80000,
+      "next": [
+        "shen-photo-cafe-opening-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opening-arrival",
+      "label": "沈硯舟｜傳來生活近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-image-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-image-wait",
+      "label": "沈硯舟｜挑選照片",
+      "type": "delay",
+      "delayMs": 4200,
+      "next": [
+        "shen-photo-cafe-image-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-image-arrival",
+      "label": "沈硯舟｜傳送生活照",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-image",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_last_scene",
+          "value": "cafe"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-cafe-choice",
+      "label": "沈硯舟｜回覆生活照",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-photo-cafe-image",
+      "once": true,
+      "next": [
+        "shen-photo-cafe-choice-a",
+        "shen-photo-cafe-choice-b",
+        "shen-photo-cafe-choice-c",
+        "shen-photo-cafe-choice-d"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-choice-a",
+      "label": "你都忙完活動了，還要讀書？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-a-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_cafe_reaction",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-opt-a-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-a-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 18000,
+      "next": [
+        "shen-photo-cafe-opt-a-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-a-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-cafe-choice-b",
+      "label": "你每次出門都帶相機嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-b-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_cafe_reaction",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-opt-b-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-b-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 24000,
+      "next": [
+        "shen-photo-cafe-opt-b-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-b-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-cafe-choice-c",
+      "label": "那杯咖啡看起來很好喝。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-c-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_cafe_reaction",
+          "value": "c"
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-opt-c-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-c-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "shen-photo-cafe-opt-c-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-c-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-c-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-cafe-choice-d",
+      "label": "我在忙，照片不用一直傳給我。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-d-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_cafe_reaction",
+          "value": "d"
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_pause",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-photo-cafe-opt-d-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-d-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 36000,
+      "next": [
+        "shen-photo-cafe-opt-d-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-cafe-opt-d-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-cafe-opt-d-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-basketball-trigger-shen-r30-a-in",
+      "label": "沈硯舟｜basketball生活照排程",
+      "type": "event",
+      "event": "read",
+      "target": "shen-r30-a-in",
+      "once": true,
+      "conditions": [
+        {
+          "key": "shen_photo_pause",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-wait",
+      "label": "沈硯舟｜生活安排完成後再傳照片",
+      "type": "delay",
+      "delayMs": 55000,
+      "next": [
+        "shen-photo-basketball-opening-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opening-arrival",
+      "label": "沈硯舟｜傳來生活近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-image-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-image-wait",
+      "label": "沈硯舟｜挑選照片",
+      "type": "delay",
+      "delayMs": 4200,
+      "next": [
+        "shen-photo-basketball-image-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-image-arrival",
+      "label": "沈硯舟｜傳送生活照",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-image",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_last_scene",
+          "value": "basketball"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-basketball-choice",
+      "label": "沈硯舟｜回覆生活照",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-photo-basketball-image",
+      "once": true,
+      "next": [
+        "shen-photo-basketball-choice-a",
+        "shen-photo-basketball-choice-b",
+        "shen-photo-basketball-choice-c",
+        "shen-photo-basketball-choice-d"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-choice-a",
+      "label": "最後誰贏了？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-a-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_basketball_reaction",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-opt-a-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-a-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 18000,
+      "next": [
+        "shen-photo-basketball-opt-a-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-a-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-basketball-choice-b",
+      "label": "夕陽真的好好看，難怪你想拍。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-b-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_basketball_reaction",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-opt-b-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-b-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 24000,
+      "next": [
+        "shen-photo-basketball-opt-b-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-b-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-basketball-choice-c",
+      "label": "打完球還有力氣拍照喔？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-c-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_basketball_reaction",
+          "value": "c"
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-opt-c-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-c-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "shen-photo-basketball-opt-c-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-c-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-c-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-basketball-choice-d",
+      "label": "我今天有點累，先不聊了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-d-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_basketball_reaction",
+          "value": "d"
+        }
+      ],
+      "next": [
+        "shen-photo-basketball-opt-d-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-d-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 36000,
+      "next": [
+        "shen-photo-basketball-opt-d-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-basketball-opt-d-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-basketball-opt-d-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-night-trigger-shen-major-event-reply-1-in",
+      "label": "沈硯舟｜night生活照排程",
+      "type": "event",
+      "event": "read",
+      "target": "shen-major-event-reply-1-in",
+      "once": true,
+      "conditions": [
+        {
+          "key": "shen_photo_pause",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "next": [
+        "shen-photo-night-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-wait",
+      "label": "沈硯舟｜生活安排完成後再傳照片",
+      "type": "delay",
+      "delayMs": 85000,
+      "next": [
+        "shen-photo-night-opening-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opening-arrival",
+      "label": "沈硯舟｜傳來生活近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來新訊息"
+        }
+      ],
+      "next": [
+        "shen-photo-night-image-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-image-wait",
+      "label": "沈硯舟｜挑選照片",
+      "type": "delay",
+      "delayMs": 4200,
+      "next": [
+        "shen-photo-night-image-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-image-arrival",
+      "label": "沈硯舟｜傳送生活照",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-image",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_last_scene",
+          "value": "night"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-night-choice",
+      "label": "沈硯舟｜回覆生活照",
+      "type": "choice",
+      "event": "read",
+      "target": "shen-photo-night-image",
+      "once": true,
+      "next": [
+        "shen-photo-night-choice-a",
+        "shen-photo-night-choice-b",
+        "shen-photo-night-choice-c",
+        "shen-photo-night-choice-d"
+      ]
+    },
+    {
+      "id": "shen-photo-night-choice-a",
+      "label": "你今天又拍了什麼？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-a-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_night_reaction",
+          "value": "a"
+        }
+      ],
+      "next": [
+        "shen-photo-night-opt-a-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-a-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 18000,
+      "next": [
+        "shen-photo-night-opt-a-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-a-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-a-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-night-choice-b",
+      "label": "你這麼晚一個人還在外面？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-b-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_night_reaction",
+          "value": "b"
+        }
+      ],
+      "next": [
+        "shen-photo-night-opt-b-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-b-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 24000,
+      "next": [
+        "shen-photo-night-opt-b-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-b-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-b-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-night-choice-c",
+      "label": "這張是別人幫你拍的嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-c-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_night_reaction",
+          "value": "c"
+        }
+      ],
+      "next": [
+        "shen-photo-night-opt-c-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-c-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 30000,
+      "next": [
+        "shen-photo-night-opt-c-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-c-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-c-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-photo-night-choice-d",
+      "label": "我準備睡了，晚安。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-d-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen_photo_night_reaction",
+          "value": "d"
+        }
+      ],
+      "next": [
+        "shen-photo-night-opt-d-wait"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-d-wait",
+      "label": "沈硯舟｜回覆前先處理自己的事",
+      "type": "delay",
+      "delayMs": 36000,
+      "next": [
+        "shen-photo-night-opt-d-arrival"
+      ]
+    },
+    {
+      "id": "shen-photo-night-opt-d-arrival",
+      "label": "沈硯舟｜回應生活照話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-photo-night-opt-d-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟回覆了訊息"
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
