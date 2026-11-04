@@ -119,6 +119,14 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   if (request.thread === "周予晴" && /^(好呀|好啊|好|可以|有興趣|想去)[！!。\\s]*$/.test(input)) {
     return { reply: "那就約週末！我先看看市集的時間，晚點把資訊傳妳。", delayMs: 1500 };
   }
+  if (request.thread === "林安") {
+    if (/在哪(?:裡|裏|儿)|哪(?:裡|裏|儿)遇到|在哪看到/.test(input) && /裴知聿|前男友|公司附近|咖啡店|停車場/.test(request.history.map(x => x.body).slice(-12).join(" "))) {
+      return { reply: "就在妳公司附近的咖啡店門口。我剛好路過看到他，沒跟他說話。", delayMs: 1700 };
+    }
+    if (/加班|不能去|沒辦法去|不一定能去|先不答應/.test(input) && /聚餐|週五|七點半|吃飯|約/.test(request.history.map(x => x.body).slice(-12).join(" "))) {
+      return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
+    }
+  }
   const intent = classifyMessage(request.message);
   const choices = person.responses[intent];
   const previousNpc = request.history.filter(x => !x.outgoing).at(-1)?.body;
