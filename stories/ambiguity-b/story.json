@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 36,
+  "revision": 37,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1590,6 +1590,33 @@
           "time": "2026-11-05 20:39",
           "hidden": true,
           "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-1-next-day",
+          "title": "",
+          "body": "今天的課提早結束，我把那幾張照片整理好了。\n不急，妳有空再看。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-2-next-day",
+          "title": "",
+          "body": "今天練球練到手痠。\n妳昨天說要忙，我就沒打擾。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
+        },
+        {
+          "id": "shen-autonomy-v3-reply-3-next-day",
+          "title": "",
+          "body": "剛才看到活動的後續公告。\n我先確認過，沒有公開妳的照片。",
+          "senderId": "shenyanzhou",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/shen-yanzhou-avatar.png"
         }
       ]
     },
@@ -3127,6 +3154,33 @@
           "time": "2026-11-05 20:39",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-1-next-day",
+          "title": "",
+          "body": "妳昨天問我的事，我想了一晚。\n我不想只靠一句道歉就要求妳相信我。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-2-next-day",
+          "title": "",
+          "body": "我明白了。昨天之後我沒有再提那件事。\n妳不需要替我的情緒負責。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-3-next-day",
+          "title": "",
+          "body": "昨天聊完我去處理工作了。\n今天想問問妳近況，但不必勉強回覆。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
         }
       ]
     },
@@ -4662,6 +4716,33 @@
           "body": "行。妳先休息，我也去找點事做。",
           "senderId": "qiye",
           "time": "2026-11-05 20:39",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-1-next-day",
+          "title": "",
+          "body": "昨天被家裡叫去應酬，現在才有空。\n反正那種場合我待不久。",
+          "senderId": "qiye",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-2-next-day",
+          "title": "",
+          "body": "昨天我去打球了。\n有些事我不想跟家裡吵，但也不想照單全收。",
+          "senderId": "qiye",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/qi-ye-avatar.png"
+        },
+        {
+          "id": "qi-autonomy-v3-reply-3-next-day",
+          "title": "",
+          "body": "妳說累，我就沒繼續吵。\n今天有比較好一點沒？不想聊也行。",
+          "senderId": "qiye",
+          "time": "2026-11-06 21:10",
           "hidden": true,
           "avatar": "./characters/qi-ye-avatar.png"
         }
@@ -9085,7 +9166,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-day11-wake"
+      ]
     },
     {
       "id": "shen-r10-b",
@@ -9127,7 +9210,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-day11-wake"
+      ]
     },
     {
       "id": "choice-shen-r11-after-shen-r10-a-in",
@@ -10145,7 +10230,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-day21-wake"
+      ]
     },
     {
       "id": "shen-r20-b",
@@ -10187,7 +10274,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-day21-wake"
+      ]
     },
     {
       "id": "choice-shen-r21-after-shen-r20-a-in",
@@ -11205,7 +11294,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-major-event-wake"
+      ]
     },
     {
       "id": "shen-r30-b",
@@ -11247,7 +11338,9 @@
           "value": "KKT：沈硯舟傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "shen-major-event-wake"
+      ]
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-a-in",
@@ -12057,7 +12150,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-day11-wake"
+      ]
     },
     {
       "id": "pei-r10-b",
@@ -12099,7 +12194,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-day11-wake"
+      ]
     },
     {
       "id": "choice-pei-r11-after-pei-r10-a-in",
@@ -13117,7 +13214,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-day21-wake"
+      ]
     },
     {
       "id": "pei-r20-b",
@@ -13159,7 +13258,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-day21-wake"
+      ]
     },
     {
       "id": "choice-pei-r21-after-pei-r20-a-in",
@@ -14177,7 +14278,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-major-event-wake"
+      ]
     },
     {
       "id": "pei-r30-b",
@@ -14219,7 +14322,9 @@
           "value": "KKT：裴知聿傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "pei-major-event-wake"
+      ]
     },
     {
       "id": "choice-qi-r4-after-qi-phase3-1-1-a-in",
@@ -15029,7 +15134,9 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-day11-wake"
+      ]
     },
     {
       "id": "qi-r10-b",
@@ -15071,7 +15178,9 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-day11-wake"
+      ]
     },
     {
       "id": "choice-qi-r11-after-qi-r10-a-in",
@@ -16089,7 +16198,9 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-day21-wake"
+      ]
     },
     {
       "id": "qi-r20-b",
@@ -16131,7 +16242,9 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-day21-wake"
+      ]
     },
     {
       "id": "choice-qi-r21-after-qi-r20-a-in",
@@ -17149,7 +17262,9 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-major-event-wake"
+      ]
     },
     {
       "id": "qi-r30-b",
@@ -17191,27 +17306,25 @@
           "value": "KKT：祁野傳來新訊息"
         }
       ],
-      "next": []
+      "next": [
+        "qi-major-event-wake"
+      ]
     },
     {
       "id": "shen-day11-trigger-shen-r10-a-in",
       "label": "沈硯舟｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r10-a-in",
-      "next": [
-        "shen-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-day11-trigger-shen-r10-b-in",
       "label": "沈硯舟｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r10-b-in",
-      "next": [
-        "shen-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-day11-wake",
@@ -17220,7 +17333,8 @@
       "delayMs": 90000,
       "next": [
         "shen-day11-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "shen-day11-arrival",
@@ -17328,22 +17442,18 @@
     {
       "id": "shen-day21-trigger-shen-r20-a-in",
       "label": "沈硯舟｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r20-a-in",
-      "next": [
-        "shen-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-day21-trigger-shen-r20-b-in",
       "label": "沈硯舟｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r20-b-in",
-      "next": [
-        "shen-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-day21-wake",
@@ -17352,7 +17462,8 @@
       "delayMs": 90000,
       "next": [
         "shen-day21-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "shen-day21-arrival",
@@ -17460,22 +17571,18 @@
     {
       "id": "shen-major-event-trigger-shen-r30-a-in",
       "label": "沈硯舟｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r30-a-in",
-      "next": [
-        "shen-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-major-event-trigger-shen-r30-b-in",
       "label": "沈硯舟｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "shen-r30-b-in",
-      "next": [
-        "shen-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "shen-major-event-wake",
@@ -17484,7 +17591,8 @@
       "delayMs": 110000,
       "next": [
         "shen-major-event-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "shen-major-event-arrival",
@@ -17592,22 +17700,18 @@
     {
       "id": "pei-day11-trigger-pei-r10-a-in",
       "label": "裴知聿｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r10-a-in",
-      "next": [
-        "pei-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-day11-trigger-pei-r10-b-in",
       "label": "裴知聿｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r10-b-in",
-      "next": [
-        "pei-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-day11-wake",
@@ -17616,7 +17720,8 @@
       "delayMs": 90000,
       "next": [
         "pei-day11-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "pei-day11-arrival",
@@ -17724,22 +17829,18 @@
     {
       "id": "pei-day21-trigger-pei-r20-a-in",
       "label": "裴知聿｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r20-a-in",
-      "next": [
-        "pei-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-day21-trigger-pei-r20-b-in",
       "label": "裴知聿｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r20-b-in",
-      "next": [
-        "pei-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-day21-wake",
@@ -17748,7 +17849,8 @@
       "delayMs": 90000,
       "next": [
         "pei-day21-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "pei-day21-arrival",
@@ -17856,22 +17958,18 @@
     {
       "id": "pei-major-event-trigger-pei-r30-a-in",
       "label": "裴知聿｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r30-a-in",
-      "next": [
-        "pei-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-major-event-trigger-pei-r30-b-in",
       "label": "裴知聿｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "pei-r30-b-in",
-      "next": [
-        "pei-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "pei-major-event-wake",
@@ -17880,7 +17978,8 @@
       "delayMs": 110000,
       "next": [
         "pei-major-event-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "pei-major-event-arrival",
@@ -17988,22 +18087,18 @@
     {
       "id": "qi-day11-trigger-qi-r10-a-in",
       "label": "祁野｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r10-a-in",
-      "next": [
-        "qi-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-day11-trigger-qi-r10-b-in",
       "label": "祁野｜day11後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r10-b-in",
-      "next": [
-        "qi-day11-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-day11-wake",
@@ -18012,7 +18107,8 @@
       "delayMs": 90000,
       "next": [
         "qi-day11-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "qi-day11-arrival",
@@ -18120,22 +18216,18 @@
     {
       "id": "qi-day21-trigger-qi-r20-a-in",
       "label": "祁野｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r20-a-in",
-      "next": [
-        "qi-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-day21-trigger-qi-r20-b-in",
       "label": "祁野｜day21後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r20-b-in",
-      "next": [
-        "qi-day21-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-day21-wake",
@@ -18144,7 +18236,8 @@
       "delayMs": 90000,
       "next": [
         "qi-day21-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "qi-day21-arrival",
@@ -18252,22 +18345,18 @@
     {
       "id": "qi-major-event-trigger-qi-r30-a-in",
       "label": "祁野｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r30-a-in",
-      "next": [
-        "qi-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-major-event-trigger-qi-r30-b-in",
       "label": "祁野｜major-event後主動聯絡",
-      "type": "event",
-      "event": "read",
-      "target": "qi-r30-b-in",
-      "next": [
-        "qi-major-event-wake"
-      ]
+      "type": "comment",
+      "event": "",
+      "target": "",
+      "next": []
     },
     {
       "id": "qi-major-event-wake",
@@ -18276,7 +18365,8 @@
       "delayMs": 110000,
       "next": [
         "qi-major-event-arrival"
-      ]
+      ],
+      "once": true
     },
     {
       "id": "qi-major-event-arrival",
@@ -18986,6 +19076,9 @@
           "key": "",
           "value": "KKT：沈硯舟回覆了"
         }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-1-next-day-wait"
       ]
     },
     {
@@ -19030,6 +19123,9 @@
           "key": "",
           "value": "KKT：沈硯舟回覆了"
         }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-2-next-day-wait"
       ]
     },
     {
@@ -19074,6 +19170,9 @@
           "key": "",
           "value": "KKT：沈硯舟回覆了"
         }
+      ],
+      "next": [
+        "shen-autonomy-v3-reply-3-next-day-wait"
       ]
     },
     {
@@ -19221,6 +19320,9 @@
           "key": "",
           "value": "KKT：裴知聿回覆了"
         }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-1-next-day-wait"
       ]
     },
     {
@@ -19265,6 +19367,9 @@
           "key": "",
           "value": "KKT：裴知聿回覆了"
         }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-2-next-day-wait"
       ]
     },
     {
@@ -19309,6 +19414,9 @@
           "key": "",
           "value": "KKT：裴知聿回覆了"
         }
+      ],
+      "next": [
+        "pei-autonomy-v3-reply-3-next-day-wait"
       ]
     },
     {
@@ -19456,6 +19564,9 @@
           "key": "",
           "value": "KKT：祁野回覆了"
         }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-1-next-day-wait"
       ]
     },
     {
@@ -19500,6 +19611,9 @@
           "key": "",
           "value": "KKT：祁野回覆了"
         }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-2-next-day-wait"
       ]
     },
     {
@@ -19544,6 +19658,9 @@
           "key": "",
           "value": "KKT：祁野回覆了"
         }
+      ],
+      "next": [
+        "qi-autonomy-v3-reply-3-next-day-wait"
       ]
     },
     {
@@ -19558,6 +19675,267 @@
         "qi-autonomy-v3-reply-2",
         "qi-autonomy-v3-reply-3"
       ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-1-next-day-wait",
+      "label": "沈硯舟隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "shen-autonomy-v3-reply-1-next-day-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-1-next-day-arrive",
+      "label": "沈硯舟隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-1-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-autonomy-v3-reply-2-next-day-wait",
+      "label": "沈硯舟隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "shen-autonomy-v3-reply-2-next-day-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-2-next-day-arrive",
+      "label": "沈硯舟隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-2-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-autonomy-v3-reply-3-next-day-wait",
+      "label": "沈硯舟隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "shen-autonomy-v3-reply-3-next-day-arrive"
+      ]
+    },
+    {
+      "id": "shen-autonomy-v3-reply-3-next-day-arrive",
+      "label": "沈硯舟隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-autonomy-v3-reply-3-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：沈硯舟傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-autonomy-v3-reply-1-next-day-wait",
+      "label": "裴知聿隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "pei-autonomy-v3-reply-1-next-day-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-1-next-day-arrive",
+      "label": "裴知聿隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-1-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-autonomy-v3-reply-2-next-day-wait",
+      "label": "裴知聿隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "pei-autonomy-v3-reply-2-next-day-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-2-next-day-arrive",
+      "label": "裴知聿隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-2-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-autonomy-v3-reply-3-next-day-wait",
+      "label": "裴知聿隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "pei-autonomy-v3-reply-3-next-day-arrive"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-reply-3-next-day-arrive",
+      "label": "裴知聿隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-3-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：裴知聿傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-autonomy-v3-reply-1-next-day-wait",
+      "label": "祁野隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "qi-autonomy-v3-reply-1-next-day-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-1-next-day-arrive",
+      "label": "祁野隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-1-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-autonomy-v3-reply-2-next-day-wait",
+      "label": "祁野隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "qi-autonomy-v3-reply-2-next-day-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-2-next-day-arrive",
+      "label": "祁野隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-2-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來後續訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qi-autonomy-v3-reply-3-next-day-wait",
+      "label": "祁野隔日依照先前回覆再聯絡",
+      "type": "delay",
+      "once": true,
+      "delayMs": 86400000,
+      "next": [
+        "qi-autonomy-v3-reply-3-next-day-arrive"
+      ]
+    },
+    {
+      "id": "qi-autonomy-v3-reply-3-next-day-arrive",
+      "label": "祁野隔日延續",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qi-autonomy-v3-reply-3-next-day",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：祁野傳來後續訊息"
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
