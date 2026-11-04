@@ -200,6 +200,9 @@ export function safeMedia(value: string) {
   // Relative paths work under GitHub Pages project subdirectories.
   if (/^\.\/characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(value))
     return value;
+  // Local Shen Yanzhou photo assets are bundled, not remote URLs.
+  if (/^\.\/assets\/characters\/shen-yanzhou\/shenyanzhou_(?:gym_selfie|cafe_study|basketball_sunset|night_photowalk)\.png$/.test(value))
+    return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
     value,
   )
