@@ -278,6 +278,16 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
       ...s.messages,
       [appId]: [...(s.messages[appId] ?? []), message],
     },
+    // A free-text answer resolves the currently offered choices for this conversation.
+    choices: s.choices.filter((choice) => {
+      const target = choice.target;
+      const belongs = thread === "林安" ? target.startsWith("lin-reply-")
+        : thread === "沈硯舟" ? /^(reply-shen-|phase[23]-shen-|shen-r|shen-day|shen-major-event-)/.test(target)
+        : thread === "裴知聿" ? /^(reply-pei-|phase[23]-pei-|pei-r|pei-day|pei-major-event-)/.test(target)
+        : thread === "祁野" ? /^(reply-qi-|phase[23]-qi-|qi-r|qi-day|qi-major-event-)/.test(target)
+        : false;
+      return !belongs;
+    }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   };
 }
