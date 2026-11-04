@@ -605,7 +605,7 @@ function PhoneRuntime({
                 <form onSubmit={(event) => {
                   event.preventDefault();
                   if (!customReplyText.trim()) return;
-                  update(submitCustomReply(runtimeRef.current, customReplyText));
+                  update(submitCustomReply(runtimeRef.current, customReplyText, app || "kakao", notificationThread || (runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "shen" ? "沈硯舟" : runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "pei" ? "裴知聿" : runtimeRef.current.choices[0]?.target.match(/shen|pei|qi|lin/)?.[0] === "qi" ? "祁野" : "林安")));
                   setCustomReplyText("");
                   setCustomReplyOpen(false);
                 }}>
