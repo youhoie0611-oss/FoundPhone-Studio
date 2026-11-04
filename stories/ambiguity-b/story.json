@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 30,
+  "revision": 31,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -1528,7 +1528,7 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "早。\n昨天會議提到的資料我整理好了。\n第二頁的數字跟原始表格不一致。\n妳有空再確認一下。",
+          "body": "妳最近還好嗎？\n我知道我們分手後很久沒聯絡。\n整理東西時翻到以前的照片，突然想起妳。\n如果這則訊息讓妳不舒服，我先說聲抱歉。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png"
         },
@@ -1536,7 +1536,7 @@
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
-          "body": "先提醒，報表的摘要跟明細有兩個地方對不上。",
+          "body": "我沒有要妳現在回答什麼。\n只是想確認妳過得好不好。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -1544,7 +1544,7 @@
         {
           "id": "pei-03",
           "title": "",
-          "body": "如果是給主管看的版本，我建議先確認第二頁。",
+          "body": "有些話以前沒說清楚，是我的問題。",
           "senderId": "peizhiyu",
           "time": "20:19",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1553,7 +1553,7 @@
         {
           "id": "pei-04",
           "title": "",
-          "body": "我還在公司，等採購部門確認最後一筆資料。",
+          "body": "我知道自己當初總是用工作忙當藉口。",
           "senderId": "peizhiyu",
           "time": "20:31",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1562,7 +1562,7 @@
         {
           "id": "pei-05",
           "title": "",
-          "body": "週五的部門會議我可能晚到。\n客戶那邊臨時改了時程。",
+          "body": "如果妳願意，哪天我想好好向妳道歉。",
           "senderId": "peizhiyu",
           "time": "21:17",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -1572,7 +1572,7 @@
           "id": "pei-branch-1-out",
           "title": "",
           "senderId": "owner",
-          "body": "哪個數字有問題？你標給我看。",
+          "body": "怎麼突然想到聯絡我？",
           "time": "21:22",
           "hidden": true
         },
@@ -1580,7 +1580,7 @@
           "id": "pei-branch-1-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "第二頁的統計區間。\n我已經標註了，妳確認後再交主管。",
+          "body": "整理抽屜時翻到我們以前的照片。\n我猶豫了很久才傳這則訊息。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -1589,7 +1589,7 @@
           "id": "pei-branch-2-out",
           "title": "",
           "senderId": "owner",
-          "body": "你是在說我們的簡報只有排版好看？",
+          "body": "我們不是說好分手後先不要聯絡？",
           "time": "21:22",
           "hidden": true
         },
@@ -1597,7 +1597,7 @@
           "id": "pei-branch-2-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我是說數字有問題，不是妳做得不好。\n簡報可以漂亮，但資料得先正確。",
+          "body": "是，我記得。\n我不該擅自打破約定。對不起。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -1606,7 +1606,7 @@
           "id": "pei-branch-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "收到，我晚點確認資料。",
+          "body": "我最近很好，你不用擔心。",
           "time": "21:22",
           "hidden": true
         },
@@ -1614,7 +1614,7 @@
           "id": "pei-branch-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。\n明天開會前確認就行，不用現在回報。",
+          "body": "那就好。\n我不會因為傳了訊息就要求妳回應。",
           "time": "21:35",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -1622,7 +1622,7 @@
         {
           "id": "pei-phase2-1-1-out",
           "title": "",
-          "body": "我也覺得那個數字怪怪的，你標的地方我看一下。",
+          "body": "那些照片你還留著？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1630,7 +1630,7 @@
         {
           "id": "pei-phase2-1-1-in",
           "title": "",
-          "body": "我標在第二頁右側了。\n妳先看統計區間，那邊和原始資料不一致。",
+          "body": "留著一些。\n如果妳介意，我不會拿來打擾妳。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1639,7 +1639,7 @@
         {
           "id": "pei-phase2-1-2-out",
           "title": "",
-          "body": "收到，我先把原始表格打開。",
+          "body": "你猶豫這麼久，是想說什麼？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1647,7 +1647,7 @@
         {
           "id": "pei-phase2-1-2-in",
           "title": "",
-          "body": "好。\n原始表格的日期欄記得一起核對，摘要有漏掉一段。",
+          "body": "想道歉。\n以前我總是讓妳一個人面對問題。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1656,7 +1656,7 @@
         {
           "id": "pei-phase2-2-1-out",
           "title": "",
-          "body": "我知道數字要對，但你剛剛那句也太直接了吧。",
+          "body": "你知道那時候我有多難受嗎？",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1664,7 +1664,7 @@
         {
           "id": "pei-phase2-2-1-in",
           "title": "",
-          "body": "嗯，我說得太直接了。\n不是在批評妳，只是這份資料確實有問題。",
+          "body": "我知道自己傷了妳。\n但我不會假裝完全理解妳當時的感受。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1673,7 +1673,7 @@
         {
           "id": "pei-phase2-2-2-out",
           "title": "",
-          "body": "好啦，先不跟你鬥嘴。問題到底出在哪？",
+          "body": "我現在還不想談以前的事。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1681,7 +1681,7 @@
         {
           "id": "pei-phase2-2-2-in",
           "title": "",
-          "body": "第二頁的統計區間跟原始表格對不上。\n我把差異標給妳。",
+          "body": "好。\n我會尊重妳，不再往下追問。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1690,7 +1690,7 @@
         {
           "id": "pei-phase2-3-1-out",
           "title": "",
-          "body": "你提醒的第二頁真的有幫助。",
+          "body": "你現在跟以前真的不太一樣。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1698,7 +1698,7 @@
         {
           "id": "pei-phase2-3-1-in",
           "title": "",
-          "body": "那就好。能省妳一點時間，也不算白傳。",
+          "body": "我還在學著把話說清楚。\n但妳不需要因為這樣就給我機會。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1707,7 +1707,7 @@
         {
           "id": "pei-phase2-3-2-out",
           "title": "",
-          "body": "我整理完資料再跟你確認。",
+          "body": "謝謝關心，但我們先保持距離。",
           "senderId": "owner",
           "time": "21:48",
           "hidden": true
@@ -1715,7 +1715,7 @@
         {
           "id": "pei-phase2-3-2-in",
           "title": "",
-          "body": "可以，妳有自己的進度就照自己的來。",
+          "body": "明白。\n我不會再突然傳訊息打擾妳。",
           "senderId": "peizhiyu",
           "time": "22:06",
           "hidden": true,
@@ -1724,7 +1724,7 @@
         {
           "id": "pei-phase3-1-1-a-out",
           "title": "",
-          "body": "那如果換成你寫，你會怎麼下結論？",
+          "body": "你以前為什麼總是不願意講？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1732,7 +1732,7 @@
         {
           "id": "pei-phase3-1-1-a-in",
           "title": "",
-          "body": "我會寫『目前資料不足以支持這個結論』。\n不好聽，但比較負責。",
+          "body": "因為我怕衝突，卻讓妳承受更多。\n是我處理得不好。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1741,7 +1741,7 @@
         {
           "id": "pei-phase3-1-1-b-out",
           "title": "",
-          "body": "懂了，我先把資料讀完。",
+          "body": "我需要時間消化這些話。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1749,7 +1749,7 @@
         {
           "id": "pei-phase3-1-1-b-in",
           "title": "",
-          "body": "嗯。\n不必急著接受我的結論。",
+          "body": "好。\n不用急著回我。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1758,7 +1758,7 @@
         {
           "id": "pei-phase3-1-2-a-out",
           "title": "",
-          "body": "你是不是很喜歡同事反駁你？",
+          "body": "你是認真想道歉，還是想讓自己好過？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1766,7 +1766,7 @@
         {
           "id": "pei-phase3-1-2-a-in",
           "title": "",
-          "body": "喜歡有根據的反駁。\n單純唱反調很浪費時間。\n妳剛才那句不算。",
+          "body": "兩者可能都有。\n但我不想拿道歉換妳原諒。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1775,7 +1775,7 @@
         {
           "id": "pei-phase3-1-2-b-out",
           "title": "",
-          "body": "我現在腦袋不太能思考了。",
+          "body": "我現在不想繼續這個話題。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1783,7 +1783,7 @@
         {
           "id": "pei-phase3-1-2-b-in",
           "title": "",
-          "body": "那就先休息。\n資料明天上班再看，不急。",
+          "body": "知道了。\n我會停在這裡。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1792,7 +1792,7 @@
         {
           "id": "pei-phase3-2-1-a-out",
           "title": "",
-          "body": "這句話倒是比三頁摘要好懂。",
+          "body": "你終於願意承認那時候的問題了。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1800,7 +1800,7 @@
         {
           "id": "pei-phase3-2-1-a-in",
           "title": "",
-          "body": "因為我不是在寫摘要。\n妳要是拿去交報告，記得自己補證據。",
+          "body": "嗯。\n我不會再把責任推給妳。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1809,7 +1809,7 @@
         {
           "id": "pei-phase3-2-1-b-out",
           "title": "",
-          "body": "好，我先去核對原始表格。",
+          "body": "我不確定能不能相信你。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1817,7 +1817,7 @@
         {
           "id": "pei-phase3-2-1-b-in",
           "title": "",
-          "body": "去吧。\n有疑問再問，不必逐頁報告。",
+          "body": "妳不用現在相信。\n我會尊重妳的懷疑。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1826,7 +1826,7 @@
         {
           "id": "pei-phase3-2-2-a-out",
           "title": "",
-          "body": "你覺得這份報表最值得懷疑哪裡？",
+          "body": "你這次倒是沒有繼續逼問。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1834,7 +1834,7 @@
         {
           "id": "pei-phase3-2-2-a-in",
           "title": "",
-          "body": "資料來源太集中。\n簡報卻寫得像能代表全部客戶。",
+          "body": "因為我終於明白，沉默或拒絕都是妳的權利。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1843,7 +1843,7 @@
         {
           "id": "pei-phase3-2-2-b-out",
           "title": "",
-          "body": "謝謝，我會自己整理重點。",
+          "body": "那就先這樣吧。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1851,7 +1851,7 @@
         {
           "id": "pei-phase3-2-2-b-in",
           "title": "",
-          "body": "好。\n自己整理過，印象會比較深。",
+          "body": "好。\n照顧好自己。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1860,7 +1860,7 @@
         {
           "id": "pei-phase3-3-1-a-out",
           "title": "",
-          "body": "你平常也會幫其他同事找資料嗎？",
+          "body": "你為什麼現在才想把話說清楚？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1868,7 +1868,7 @@
         {
           "id": "pei-phase3-3-1-a-in",
           "title": "",
-          "body": "看分工。\n這份報表本來就跟我負責的部分有關。\n妳不用當成人情。",
+          "body": "因為我花了太久才肯面對自己的問題。\n這不是妳的責任。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1877,7 +1877,7 @@
         {
           "id": "pei-phase3-3-1-b-out",
           "title": "",
-          "body": "嗯，真的幫我省很多時間。",
+          "body": "我還沒準備好聽這些。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1885,7 +1885,7 @@
         {
           "id": "pei-phase3-3-1-b-in",
           "title": "",
-          "body": "那就好。\n我不喜歡做沒用的事。",
+          "body": "明白。\n那我先不說了。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1894,7 +1894,7 @@
         {
           "id": "pei-phase3-3-2-a-out",
           "title": "",
-          "body": "如果我整理完有不同意見，可以傳給你嗎？",
+          "body": "我們真的還能好好說話嗎？",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1902,7 +1902,7 @@
         {
           "id": "pei-phase3-3-2-a-in",
           "title": "",
-          "body": "可以。\n但請告訴我妳不同意哪個前提。\n我比較容易接上妳的思路。",
+          "body": "可以試試。\n但要以妳覺得自在為前提。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -1911,7 +1911,7 @@
         {
           "id": "pei-phase3-3-2-b-out",
           "title": "",
-          "body": "好，那就各忙各的。",
+          "body": "我想先一個人靜一靜。",
           "senderId": "owner",
           "time": "22:14",
           "hidden": true
@@ -1919,7 +1919,7 @@
         {
           "id": "pei-phase3-3-2-b-in",
           "title": "",
-          "body": "嗯。\n有需要再聯絡。",
+          "body": "好。\n我不打擾。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -5031,7 +5031,7 @@
     },
     {
       "id": "reply-pei-1",
-      "label": "哪個數字有問題？你標給我看。",
+      "label": "怎麼突然想到聯絡我？",
       "type": "action",
       "once": true,
       "actions": [
@@ -5079,7 +5079,7 @@
     },
     {
       "id": "reply-pei-2",
-      "label": "你是在說我們的簡報只有排版好看？",
+      "label": "我們不是說好分手後先不要聯絡？",
       "type": "action",
       "once": true,
       "actions": [
@@ -5127,7 +5127,7 @@
     },
     {
       "id": "reply-pei-3",
-      "label": "收到，我晚點確認資料。",
+      "label": "我最近很好，你不用擔心。",
       "type": "action",
       "once": true,
       "actions": [
@@ -5707,7 +5707,7 @@
     },
     {
       "id": "phase2-pei-1-a",
-      "label": "我也覺得那個數字怪怪的，你標的地方我看一下。",
+      "label": "那些照片你還留著？",
       "type": "action",
       "actions": [
         {
@@ -5754,7 +5754,7 @@
     },
     {
       "id": "phase2-pei-1-b",
-      "label": "收到，我先把原始表格打開。",
+      "label": "你猶豫這麼久，是想說什麼？",
       "type": "action",
       "actions": [
         {
@@ -5813,7 +5813,7 @@
     },
     {
       "id": "phase2-pei-2-a",
-      "label": "我知道數字要對，但你剛剛那句也太直接了吧。",
+      "label": "你知道那時候我有多難受嗎？",
       "type": "action",
       "actions": [
         {
@@ -5860,7 +5860,7 @@
     },
     {
       "id": "phase2-pei-2-b",
-      "label": "好啦，先不跟你鬥嘴。問題到底出在哪？",
+      "label": "我現在還不想談以前的事。",
       "type": "action",
       "actions": [
         {
@@ -5919,7 +5919,7 @@
     },
     {
       "id": "phase2-pei-3-a",
-      "label": "你提醒的第二頁真的有幫助。",
+      "label": "你現在跟以前真的不太一樣。",
       "type": "action",
       "actions": [
         {
@@ -5966,7 +5966,7 @@
     },
     {
       "id": "phase2-pei-3-b",
-      "label": "我整理完資料再跟你確認。",
+      "label": "謝謝關心，但我們先保持距離。",
       "type": "action",
       "actions": [
         {
@@ -6912,7 +6912,7 @@
     },
     {
       "id": "pei-phase3-1-1-a",
-      "label": "那如果換成你寫，你會怎麼下結論？",
+      "label": "你以前為什麼總是不願意講？",
       "type": "action",
       "actions": [
         {
@@ -6954,7 +6954,7 @@
     },
     {
       "id": "pei-phase3-1-1-b",
-      "label": "懂了，我先把資料讀完。",
+      "label": "我需要時間消化這些話。",
       "type": "action",
       "actions": [
         {
@@ -7007,7 +7007,7 @@
     },
     {
       "id": "pei-phase3-1-2-a",
-      "label": "你是不是很喜歡同事反駁你？",
+      "label": "你是認真想道歉，還是想讓自己好過？",
       "type": "action",
       "actions": [
         {
@@ -7049,7 +7049,7 @@
     },
     {
       "id": "pei-phase3-1-2-b",
-      "label": "我現在腦袋不太能思考了。",
+      "label": "我現在不想繼續這個話題。",
       "type": "action",
       "actions": [
         {
@@ -7102,7 +7102,7 @@
     },
     {
       "id": "pei-phase3-2-1-a",
-      "label": "這句話倒是比三頁摘要好懂。",
+      "label": "你終於願意承認那時候的問題了。",
       "type": "action",
       "actions": [
         {
@@ -7144,7 +7144,7 @@
     },
     {
       "id": "pei-phase3-2-1-b",
-      "label": "好，我先去核對原始表格。",
+      "label": "我不確定能不能相信你。",
       "type": "action",
       "actions": [
         {
@@ -7197,7 +7197,7 @@
     },
     {
       "id": "pei-phase3-2-2-a",
-      "label": "你覺得這份報表最值得懷疑哪裡？",
+      "label": "你這次倒是沒有繼續逼問。",
       "type": "action",
       "actions": [
         {
@@ -7239,7 +7239,7 @@
     },
     {
       "id": "pei-phase3-2-2-b",
-      "label": "謝謝，我會自己整理重點。",
+      "label": "那就先這樣吧。",
       "type": "action",
       "actions": [
         {
@@ -7292,7 +7292,7 @@
     },
     {
       "id": "pei-phase3-3-1-a",
-      "label": "你平常也會幫其他同事找資料嗎？",
+      "label": "你為什麼現在才想把話說清楚？",
       "type": "action",
       "actions": [
         {
@@ -7334,7 +7334,7 @@
     },
     {
       "id": "pei-phase3-3-1-b",
-      "label": "嗯，真的幫我省很多時間。",
+      "label": "我還沒準備好聽這些。",
       "type": "action",
       "actions": [
         {
@@ -7387,7 +7387,7 @@
     },
     {
       "id": "pei-phase3-3-2-a",
-      "label": "如果我整理完有不同意見，可以傳給你嗎？",
+      "label": "我們真的還能好好說話嗎？",
       "type": "action",
       "actions": [
         {
@@ -7429,7 +7429,7 @@
     },
     {
       "id": "pei-phase3-3-2-b",
-      "label": "好，那就各忙各的。",
+      "label": "我想先一個人靜一靜。",
       "type": "action",
       "actions": [
         {
