@@ -1,0 +1,25 @@
+name: Build and test feature branch
+on:
+  push:
+    branches:
+      - feature/character-autonomy-v3
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Unit tests
+        run: npm test
+      - name: Story validation
+        run: npm run story:validate
+      - name: Production build
+        run: npm run build

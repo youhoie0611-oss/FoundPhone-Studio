@@ -38,7 +38,13 @@ function apply(a: Action, s: Runtime, w: Work) {
       s.variables[a.key] = a.value;
       break;
     case "unlock":
-      if (!s.unlocked.includes(a.key)) s.unlocked.push(a.key);
+      if (!s.unlocked.includes(a.key)) {
+        s.unlocked.push(a.key);
+        const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
+        if (item && !item.outgoing) {
+          s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time }, deliveryElapsed: { ...((s.ui?.deliveryElapsed ?? {}) as Record<string, number>), [a.key]: s.elapsedMs ?? 0 } };
+        }
+      }
       break;
     case "hide":
       if (!s.hidden.includes(a.key)) s.hidden.push(a.key);
@@ -114,8 +120,42 @@ function runQueue(
       s.trace.push(`delay:${n.delayMs ?? 1000}ms → ${n.label}`);
       continue;
     }
+    // Never let autonomous story nodes flood a single conversation.
+    // Reschedule later rather than overwrite the player's active dialogue.
+    const incomingThreads = n.actions
+      .filter((action) => action.type === "unlock")
+      .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+      .filter((item) => item && !item.outgoing)
+      .map((item) => item!.title);
+    const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
+    const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
+    const blocked = incomingThreads.some((thread) => {
+      const last = recentDeliveries[thread];
+      const playerTime = recentPlayerReplies[thread];
+      const playerElapsed = playerTime === undefined ? undefined : Number(playerTime);
+      return (last !== undefined && (s.elapsedMs ?? 0) - last < 120000)
+        || (playerElapsed !== undefined && Number.isFinite(playerElapsed) && (s.elapsedMs ?? 0) - playerElapsed < 90000);
+    });
+    if (blocked) {
+      s.scheduled ??= [];
+      if (!s.scheduled.some((entry) => entry.nodeId === id))
+        s.scheduled.push({ nodeId: id, due: (s.elapsedMs ?? 0) + 30000 });
+      continue;
+    }
+    if (incomingThreads.length) {
+      s.ui = { ...s.ui, scriptedThreadDelivery: {
+        ...recentDeliveries,
+        ...Object.fromEntries(incomingThreads.map((thread) => [thread, s.elapsedMs ?? 0])),
+      } };
+    }
     if (!s.completed.includes(id)) s.completed.push(id);
     s.trace.push(`${event}:${target} → ${n.label}`);
+    // A scripted chat notification must describe the message unlocked by this event,
+    // never a placeholder such as "稍後回覆了訊息".
+    const unlockedIncoming = n.actions
+      .filter((action) => action.type === "unlock")
+      .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+      .filter((item) => item && !item.outgoing && item.body.trim());
     for (const a of n.actions) {
       const previous =
         a.type === "variable"
@@ -123,7 +163,24 @@ function runQueue(
           : a.type === "time"
             ? s.time
             : undefined;
-      apply(a, s, w);
+      if (a.type === "notification" && /^KKT[：:]|(?:傳來新訊息|稍後回覆了訊息|回覆了訊息)/.test(String(a.value))) {
+        const latest = unlockedIncoming.at(-1);
+        if (latest) {
+          const sender = latest.id.startsWith("friends-group-") ? "下班後五人組" : (latest.sender || latest.title);
+          const body = latest.body.trim().split("\\n").filter(Boolean).at(-1) ?? latest.body.trim();
+          s.notifications.push(`${sender}：${body}`);
+        }
+        // Do not show misleading generic text when no actual message was delivered.
+      } else {
+        apply(a, s, w);
+      }
+      // A delivered message may open reply options without being viewed.
+      // Reading the chat remains a separate user action.
+      if (a.type === "unlock") {
+        const item = Object.values(w.data).flat().find((i) => i.id === a.key);
+        if (item && !item.outgoing && /^(?:shen|pei|qi|lin)-/.test(item.id))
+          queue.push(...w.nodes.filter((node) => node.event === "read" && node.target === a.key).map((node) => node.id));
+      }
       if (a.type === "variable" && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
@@ -167,7 +224,11 @@ export function dispatch(
   target = "",
 ): Runtime {
   const s = structuredClone(previous);
-  if (event === "choose") s.choices = [];
+  if (event === "choose") {
+    const group = w.nodes.find((node) => node.type === "choice" && node.next.includes(target));
+    const siblings = new Set(group?.next ?? [target]);
+    s.choices = s.choices.filter((choice) => !siblings.has(choice.target));
+  }
   if (event === "openApp" && !s.visited.includes(target))
     s.visited.push(target);
   if (event === "read" && !s.read.includes(target)) s.read.push(target);
@@ -179,7 +240,13 @@ export function dispatch(
         (n.event === event && (!n.target || n.target === target)),
     )
     .map((n) => n.id);
-  return runQueue(w, s, event, target, queue);
+  const next = runQueue(w, s, event, target, queue);
+  if (event === "start") {
+    const initial = Object.values(w.data).flat().filter((item) => !item.hidden && !item.outgoing && /^(?:shen|pei|qi|lin)-/.test(item.id));
+    const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
+    runQueue(w, next, "arrival", "", triggers);
+  }
+  return next;
 }
 export function advance(
   w: Work,
@@ -216,6 +283,13 @@ export function advance(
           String(Math.floor(value / 60)).padStart(2, "0") +
           ":" +
           String(value % 60).padStart(2, "0");
+        if (value === 0) {
+          const currentDate = new Date(`${s.date ?? w.phone.date}T12:00:00Z`);
+          if (!Number.isNaN(currentDate.getTime())) {
+            currentDate.setUTCDate(currentDate.getUTCDate() + 1);
+            s.date = currentDate.toISOString().slice(0, 10);
+          }
+        }
         if (w.mode !== "explore")
           runQueue(
             w,
@@ -231,6 +305,23 @@ export function advance(
       }
     }
     if (due && due.due <= s.elapsedMs) {
+      const node = w.nodes.find((entry) => entry.id === due.nodeId);
+      const following = node?.type === "delay"
+        ? (node.next ?? []).flatMap((id) => w.nodes.find((entry) => entry.id === id)?.actions ?? [])
+        : node?.actions ?? [];
+      const incoming = following.filter((action) => action.type === "unlock")
+        .map((action) => Object.values(w.data).flat().find((item) => item.id === action.key))
+        .filter((item) => item && !item.outgoing);
+      const lastReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
+      const isConversing = incoming.some((item) => {
+        const last = lastReplies[item!.title];
+        return last !== undefined && (s.elapsedMs ?? 0) - Number(last) < 90000;
+      });
+      if (isConversing) {
+        due.due = (s.elapsedMs ?? 0) + 15000;
+        continue;
+      }
+
       s.scheduled.splice(s.scheduled.indexOf(due), 1);
       resumes++;
       runQueue(w, s, "timer", due.nodeId, [due.nodeId], new Set([due.nodeId]));
@@ -240,6 +331,41 @@ export function advance(
   }
   return s;
 }
+/** Preserve custom player text without silently choosing a scripted response. */
+export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
+  if (!raw.trim()) return s;
+  const history = Array.isArray(s.ui?.player?.customReplies)
+    ? (s.ui.player.customReplies as string[])
+    : [];
+  const message = makeItem({
+    id: `custom-reply-${history.length + 1}`,
+    title: thread || "玩家自定義",
+    sender: "我",
+    body: raw,
+    outgoing: true,
+    time: `${s.date ?? "2026-11-03"} ${s.time}`,
+  });
+  return {
+    ...s,
+    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
+    messages: {
+      ...s.messages,
+      [appId]: [...(s.messages[appId] ?? []), message],
+    },
+    // A free-text answer resolves the currently offered choices for this conversation.
+    choices: s.choices.filter((choice) => {
+      const target = choice.target;
+      const belongs = thread === "林安" ? target.startsWith("lin-reply-")
+        : thread === "沈硯舟" ? /^(reply-shen-|phase[23]-shen-|shen-r|shen-day|shen-major-event-)/.test(target)
+        : thread === "裴知聿" ? /^(reply-pei-|phase[23]-pei-|pei-r|pei-day|pei-major-event-)/.test(target)
+        : thread === "祁野" ? /^(reply-qi-|phase[23]-qi-|qi-r|qi-day|qi-major-event-)/.test(target)
+        : false;
+      return !belongs;
+    }),
+    trace: [...s.trace, `player-custom-reply:${message.id}`],
+  };
+}
+
 export function choose(w: Work, s: Runtime, id: string) {
   const node = w.nodes.find((n) => n.id === id);
   if (!node || !s.choices.some((c) => c.target === id)) return s;

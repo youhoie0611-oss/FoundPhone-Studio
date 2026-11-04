@@ -49,21 +49,23 @@ import {
   Heart,
   MessageCircle,
   MoreHorizontal,
-  ArrowUp,
   Folder,
   Phone as PhoneIcon,
 } from "lucide-react";
 import { getApp, type AppPlugin } from "./registry";
 import {
   initialRuntime,
+  makeItem,
   safeMedia,
   type Work,
   type Item,
   type Runtime,
   type UiValue,
 } from "./schema";
-import { dispatch, choose, visible, advance } from "./engine";
+import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { db } from "./persistence";
+import { requestNpcReply } from "./aiChat";
+import { activePlayerId } from "./playerProfiles";
 export function AppIcon({
   id,
   name,
@@ -141,6 +143,9 @@ function PhoneRuntime({
   const [recent, setRecent] = useState<string[]>([]);
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
+  const [notificationThread, setNotificationThread] = useState("");
+  const pendingNpcReplies = useRef(new Set<string>());
+  const npcReplyQueue = useRef(new Map<string, Promise<void>>());
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
@@ -442,17 +447,69 @@ function PhoneRuntime({
                 origin={launchOrigin}
               >
                 <AppContent
+                  initialThread={notificationThread}
                   app={plugin}
                   name={
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
                   }
                   items={[
-                    ...(work.data[app] ?? []),
+                    ...(work.data[app] ?? []).flatMap((item) => {
+                      const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
+                      const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
+                      const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
+                      const base = { ...item, time: timestamp };
+                      // Render each incoming chat line as an independent bubble.
+                      // Unread and notifications continue to follow the underlying event.
+                      if (item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
+                      const lines = item.body.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+                      if (lines.length < 2) return [base];
+                      return [{ ...base, body: lines[0] }];
+                    }),
                     ...(s.messages[app] ?? []),
                   ]}
                   creator={creator}
                   state={s}
                   onRead={(id) => event("read", id)}
+                  onChoose={(target) => update(choose(work, runtimeRef.current, target))}
+                  onCustomMessage={(thread, message) => {
+                    const sourceApp = app;
+                    const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
+                    update(next);
+                    const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
+                    const threadKey = `${sourceApp}:${thread}`;
+                    pendingNpcReplies.current.add(threadKey);
+                    const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
+                      .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
+                    const priorReply = npcReplyQueue.current.get(threadKey) ?? Promise.resolve();
+                    const replyTask = priorReply.catch(() => undefined).then(() => requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
+                      .then(async ({ reply, delayMs }) => {
+                        if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
+                        const current = runtimeRef.current;
+                        const incoming = makeItem({
+                          id: `ai-npc-${id}-${Date.now()}`,
+                          title: thread,
+                          sender: thread,
+                          body: reply,
+                          outgoing: false,
+                          time: `${current.date} ${current.time}`,
+                        });
+                        update({ ...current, messages: {
+                          ...current.messages,
+                          [sourceApp]: [...(current.messages[sourceApp] ?? []), incoming],
+                        }, notifications: [
+                          ...current.notifications,
+                          `${thread}：${reply}`,
+                        ] });
+                      })
+                      .catch((error: unknown) => setBanner(error instanceof Error ? error.message : "AI 暫時無法回覆"))
+                      .finally(() => {
+                        if (npcReplyQueue.current.get(threadKey) === replyTask) {
+                          npcReplyQueue.current.delete(threadKey);
+                          pendingNpcReplies.current.delete(threadKey);
+                        }
+                      });
+                    npcReplyQueue.current.set(threadKey, replyTask);
+                  }}
                   onEdit={(item) => onEdit?.(app, item)}
                   onAdd={() => onAdd?.(app)}
                   onBack={() => setApp("")}
@@ -555,11 +612,14 @@ function PhoneRuntime({
                     <SystemNotifications
                       notices={s.notifications}
                       apps={work.apps}
-                      onOpen={() => {
+                      onOpen={(appId, title) => {
                         setPanel("");
-                        if (locked) beginUnlock();
-                        else if (installedApps.some((a) => a.id === "messages"))
-                          open("messages");
+                        if (locked) { beginUnlock(); return; }
+                        const target = installedApps.find((a) => a.id === appId) ? appId : "messages";
+                        const items = [...(work.data[target] ?? []), ...(runtimeRef.current.messages[target] ?? [])];
+                        const matching = items.find((item) => item.title === title || item.sender === title);
+                        setNotificationThread(matching?.title ?? "");
+                        open(target);
                       }}
                       onDismiss={dismissNotice}
                     />
@@ -575,21 +635,6 @@ function PhoneRuntime({
               ) : (
                 <h2>手电筒已打开</h2>
               )}
-            </div>
-          )}
-          {!creator && s.choices.length > 0 && !locked && (
-            <div className="story-overlay">
-              <span className="eyebrow">故事来到一个岔路口</span>
-              <h3>你会如何选择？</h3>
-              {s.choices.map((c) => (
-                <button
-                  key={c.target}
-                  onClick={() => update(choose(work, s, c.target))}
-                >
-                  {c.label}
-                  <ArrowUp size={15} />
-                </button>
-              ))}
             </div>
           )}
           {!creator && s.endings.length > 0 && !locked && (
@@ -682,8 +727,15 @@ function PhoneRuntime({
             <button
               className="device-banner"
               onClick={() => {
+                const notice = notificationContent(banner, work.apps);
                 setBanner("");
-                setPanel("notification");
+                const target = installedApps.some((a) => a.id === notice.appId)
+                  ? notice.appId : "messages";
+                const items = [...(work.data[target] ?? []), ...(runtimeRef.current.messages[target] ?? [])];
+                const matching = items.find((item) => item.title === notice.title || item.sender === notice.title);
+                setNotificationThread(matching?.title ?? "");
+                if (locked) beginUnlock();
+                else open(target);
               }}
             >
               <AppIcon
@@ -855,12 +907,15 @@ function Media({ item }: { item: Item }) {
   );
 }
 function AppContent({
+  initialThread = "",
   app,
   name,
   items,
   creator,
   state,
   onRead,
+  onChoose,
+  onCustomMessage,
   onEdit,
   onAdd,
   onBack,
@@ -869,11 +924,14 @@ function AppContent({
   work,
 }: {
   app: AppPlugin;
+  initialThread?: string;
   name: string;
   items: Item[];
   creator: boolean;
   state: Runtime;
   onRead: (id: string) => void;
+  onChoose: (target: string) => void;
+  onCustomMessage?: (thread: string, message: string) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
@@ -882,7 +940,8 @@ function AppContent({
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
-  const [thread, setThread] = useState("");
+  const [thread, setThread] = useState(initialThread);
+  useEffect(() => { if (initialThread) setThread(initialThread); }, [initialThread]);
   const [tab, setTab] = useState(app.tabs[0]);
   const [q, setQ] = useState("");
   const [pw, setPw] = useState("");
@@ -995,11 +1054,25 @@ function AppContent({
               items={shown}
               creator={creator}
               onRead={onRead}
+              readIds={state.read}
               onItem={read}
               onAdd={onAdd}
               onBack={onBack}
               thread={thread}
-              onThread={setThread}
+              choices={state.choices}
+              onChoose={onChoose}
+              onCustomMessage={onCustomMessage}
+              onThread={(nextThread) => {
+                setThread(nextThread);
+                // Reading a KKT conversation includes its latest visible incoming
+                // message. Otherwise story choices only unlock when a bubble is tapped.
+                if (app.id === "kakao" && nextThread && !creator) {
+                  const latestIncoming = [...shown]
+                    .reverse()
+                    .find((item) => item.title === nextThread && !item.outgoing);
+                  if (latestIncoming) onRead(latestIncoming.id);
+                }
+              }}
             />
           </Suspense>
         </div>

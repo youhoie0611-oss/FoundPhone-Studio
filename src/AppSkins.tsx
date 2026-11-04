@@ -42,11 +42,15 @@ export type SkinProps = {
   items: Item[];
   creator: boolean;
   onRead: (id: string) => void;
+  readIds?: string[];
   onItem: (i: Item) => void;
   onAdd: () => void;
   onBack: () => void;
   thread: string;
   onThread: (s: string) => void;
+  choices?: { label: string; target: string }[];
+  onChoose?: (target: string) => void;
+  onCustomMessage?: (thread: string, message: string) => void;
 };
 function Avatar({
   name,

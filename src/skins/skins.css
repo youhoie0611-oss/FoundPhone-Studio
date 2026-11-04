@@ -4130,3 +4130,20 @@
 .catalog-slot[hidden] {
   display: none;
 }
+
+/* KKT: in-chat player replies, never a separate story modal. */
+.mymy-kakao .kkt-reply-choice { display:block; width:calc(100% - 32px); margin:8px 16px; padding:12px 14px; border:1px solid rgba(40,55,70,.18); border-radius:14px; background:#fff9df; color:#28231b; font-size:14px; text-align:left; white-space:normal; cursor:pointer; }
+.mymy-kakao .kkt-reply-choice:active { background:#ffe779; }
+
+/* Keep story reply options in a compact tray directly above the KKT composer. */
+.mymy-kakao .kkt-reply-tray { flex: 0 0 auto; max-height: 38%; overflow-y: auto; padding: 0 10px; scrollbar-width: thin; }
+.mymy-kakao .kkt-reply-tray:empty { display: none; }
+.mymy-kakao .kkt-reply-tray .kkt-reply-choice { width: 100%; margin: 6px 0; padding: 10px 13px; border-radius: 12px; background: #fff8db; font-size: 14px; line-height: 1.4; }
+
+/* Group consecutive short messages from the same sender. */
+.mymy-kakao .kkt-bubble-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; min-width: 0; }
+.mymy-kakao .kzmy .kkt-bubble-stack { align-items: flex-end; }
+.mymy-kakao .kkt-bubble-stack .kzbub { display: block; width: fit-content; max-width: 100%; text-align: left; white-space: pre-wrap; }
+
+/* Incoming KKT messages arrive one bubble at a time. */
+.mymy-kakao .kkt-typing { align-self: flex-start; width: fit-content; margin: 6px 14px 10px 52px; padding: 8px 12px; border-radius: 12px; background: rgba(255,255,255,.75); color: #536777; font-size: 12px; }
