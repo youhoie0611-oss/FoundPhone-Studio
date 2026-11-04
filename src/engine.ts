@@ -259,7 +259,7 @@ export function advance(
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
-  if (!s.choices.length || !raw.trim()) return s;
+  if (!raw.trim()) return s;
   const history = Array.isArray(s.ui?.player?.customReplies)
     ? (s.ui.player.customReplies as string[])
     : [];
