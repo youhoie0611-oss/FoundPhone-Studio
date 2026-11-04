@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜四人交錯",
   "description": "上班族玩家與沈硯舟、想復合的前男友裴知聿、祁家次子祁野、因工作專案認識的建築設計師顧時安各自發展關係。加入情敵傳聞、合作背叛、家族壓力、建築提案爭議與友情危機。四位男主不永久退場，感情及選擇皆由玩家決定。",
-  "revision": 40,
+  "revision": 41,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -22858,7 +22858,7 @@
       "label": "裴知聿｜後續生活事件等待",
       "type": "delay",
       "once": true,
-      "delayMs": 92700000,
+      "delayMs": 86400000,
       "next": [
         "drama5-pei2-arrive"
       ]
@@ -23157,7 +23157,7 @@
       "label": "祁野｜後續生活事件等待",
       "type": "delay",
       "once": true,
-      "delayMs": 96000000,
+      "delayMs": 86400000,
       "next": [
         "drama5-qi2-arrive"
       ]
@@ -23456,7 +23456,7 @@
       "label": "顧時安｜後續生活事件等待",
       "type": "delay",
       "once": true,
-      "delayMs": 100800000,
+      "delayMs": 86400000,
       "next": [
         "drama5-gu2-arrive"
       ]
@@ -23760,7 +23760,7 @@
       "label": "下班後五人組｜後續生活事件等待",
       "type": "delay",
       "once": true,
-      "delayMs": 126000000,
+      "delayMs": 86400000,
       "next": [
         "drama5-zhou2-arrive"
       ]
