@@ -4952,6 +4952,14 @@
           "body": "許棠今天輪班，我自己去買晚餐。妳最近有沒有看到什麼好看的劇？",
           "time": "2026-11-06 19:15",
           "hidden": true
+        },
+        {
+          "id": "friends-linan-ownlife",
+          "title": "",
+          "senderId": "linan",
+          "body": "我今天跟許棠有點小摩擦，不是什麼大事。她剛下夜班，我也剛提案失敗，兩個人都累。晚點我們會自己聊聊。",
+          "time": "2026-11-09 20:10",
+          "hidden": true
         }
       ]
     },
@@ -4985,6 +4993,14 @@
           "title": "",
           "body": "週末市集我還是會去，妳想來就來，不用為了陪我硬排時間。",
           "time": "2026-11-06 19:15",
+          "hidden": true
+        },
+        {
+          "id": "friends-zhouyu-ownlife",
+          "title": "",
+          "senderId": "zhouyu",
+          "body": "今天跟以衡討論旅行預算，發現我們想去的地方完全不同。先各自列清單，週末再一起選。",
+          "time": "2026-11-09 20:10",
           "hidden": true
         }
       ]
@@ -5020,6 +5036,14 @@
           "body": "店我先留五個位子，妳加班也沒關係，晚點跟我說就好。",
           "time": "2026-11-06 19:15",
           "hidden": true
+        },
+        {
+          "id": "friends-chenyiheng-ownlife",
+          "title": "",
+          "senderId": "chenyiheng",
+          "body": "予晴想去看海，我想去山裡。後來覺得不如排兩次短旅行，誰也不用委屈。",
+          "time": "2026-11-09 20:10",
+          "hidden": true
         }
       ]
     },
@@ -5053,6 +5077,14 @@
           "title": "",
           "body": "這週我值班可能沒辦法聚餐，妳們去就好，別為了我改時間。",
           "time": "2026-11-06 19:15",
+          "hidden": true
+        },
+        {
+          "id": "friends-xutang-ownlife",
+          "title": "",
+          "senderId": "xutang",
+          "body": "我跟林安談過了。輪班真的很容易錯過彼此，但我們有找到比較舒服的安排。妳不用擔心。",
+          "time": "2026-11-09 20:10",
           "hidden": true
         }
       ]
@@ -5106,6 +5138,78 @@
           "title": "",
           "body": "我會帶桌遊，但不保證大家都想玩。",
           "time": "2026-11-08 19:15",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-join-out",
+          "senderId": "owner",
+          "title": "",
+          "body": "我週五下班後過去，可能晚一點。",
+          "time": "2026-11-04 18:14",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-join-in",
+          "senderId": "linan",
+          "title": "",
+          "body": "好，妳慢慢來！我先幫妳留位子。",
+          "time": "2026-11-04 18:16",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-join-follow",
+          "senderId": "linan",
+          "title": "",
+          "body": "妳到了再跟我說，我們在裡面靠窗那桌。",
+          "time": "2026-11-04 20:10",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-busy-out",
+          "senderId": "owner",
+          "title": "",
+          "body": "這週工作太滿了，我先不去了。",
+          "time": "2026-11-04 18:14",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-busy-in",
+          "senderId": "linan",
+          "title": "",
+          "body": "收到，不用勉強。工作忙完我們再單獨約。",
+          "time": "2026-11-04 18:16",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-busy-follow",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "今天吃飯有聊到妳，不是八卦啦，是予晴說下次想找妳逛市集。",
+          "time": "2026-11-04 20:10",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-ask-out",
+          "senderId": "owner",
+          "title": "",
+          "body": "你們最近還好嗎？怎麼突然約聚餐？",
+          "time": "2026-11-04 18:14",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-ask-in",
+          "senderId": "linan",
+          "title": "",
+          "body": "沒有什麼大事，就是大家最近各忙各的，想見個面。",
+          "time": "2026-11-04 18:16",
+          "hidden": true
+        },
+        {
+          "id": "friends-gather-ask-follow",
+          "senderId": "zhouyu",
+          "title": "",
+          "body": "我跟以衡最近因為生活安排有點磨合，但我們會自己談，不用妳幫忙站隊。",
+          "time": "2026-11-04 20:10",
           "hidden": true
         }
       ]
@@ -20503,6 +20607,387 @@
           "type": "notification",
           "key": "",
           "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-gather-join",
+      "label": "我週五下班後過去，可能晚一點。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-join-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "friend_gathering_join",
+          "value": true
+        }
+      ],
+      "next": [
+        "friends-gather-join-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-join-wait",
+      "label": "群組成員稍後回覆",
+      "type": "delay",
+      "delayMs": 14000,
+      "next": [
+        "friends-gather-join-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-join-arrive",
+      "label": "林安回覆聚餐選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-join-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-gather-join-follow-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-join-follow-wait",
+      "label": "聚餐後續",
+      "type": "delay",
+      "delayMs": 140000,
+      "next": [
+        "friends-gather-join-follow-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-join-follow-arrive",
+      "label": "朋友依玩家選擇接續生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-join-follow",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-gather-busy",
+      "label": "這週工作太滿了，我先不去了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-busy-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "friend_gathering_busy",
+          "value": true
+        }
+      ],
+      "next": [
+        "friends-gather-busy-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-busy-wait",
+      "label": "群組成員稍後回覆",
+      "type": "delay",
+      "delayMs": 14000,
+      "next": [
+        "friends-gather-busy-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-busy-arrive",
+      "label": "林安回覆聚餐選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-busy-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-gather-busy-follow-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-busy-follow-wait",
+      "label": "聚餐後續",
+      "type": "delay",
+      "delayMs": 140000,
+      "next": [
+        "friends-gather-busy-follow-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-busy-follow-arrive",
+      "label": "朋友依玩家選擇接續生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-busy-follow",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-gather-ask",
+      "label": "你們最近還好嗎？怎麼突然約聚餐？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-ask-out",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "friend_gathering_checkin",
+          "value": true
+        }
+      ],
+      "next": [
+        "friends-gather-ask-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-ask-wait",
+      "label": "群組成員稍後回覆",
+      "type": "delay",
+      "delayMs": 14000,
+      "next": [
+        "friends-gather-ask-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-ask-arrive",
+      "label": "林安回覆聚餐選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-ask-in",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": [
+        "friends-gather-ask-follow-wait"
+      ]
+    },
+    {
+      "id": "friends-gather-ask-follow-wait",
+      "label": "聚餐後續",
+      "type": "delay",
+      "delayMs": 140000,
+      "next": [
+        "friends-gather-ask-follow-arrive"
+      ]
+    },
+    {
+      "id": "friends-gather-ask-follow-arrive",
+      "label": "朋友依玩家選擇接續生活",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-gather-ask-follow",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：下班後五人組傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-gathering-invite-choice",
+      "label": "五人聚餐｜妳的回覆",
+      "type": "choice",
+      "event": "read",
+      "target": "friends-group-opening",
+      "once": true,
+      "next": [
+        "friends-gather-join",
+        "friends-gather-busy",
+        "friends-gather-ask"
+      ]
+    },
+    {
+      "id": "friends-linan-ownlife-start",
+      "label": "朋友各自的感情與工作",
+      "type": "start",
+      "next": [
+        "friends-linan-ownlife-wait"
+      ]
+    },
+    {
+      "id": "friends-linan-ownlife-wait",
+      "label": "朋友生活推進",
+      "type": "delay",
+      "delayMs": 270000,
+      "next": [
+        "friends-linan-ownlife-arrive"
+      ]
+    },
+    {
+      "id": "friends-linan-ownlife-arrive",
+      "label": "朋友主動分享近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-linan-ownlife",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：朋友傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-xutang-ownlife-start",
+      "label": "朋友各自的感情與工作",
+      "type": "start",
+      "next": [
+        "friends-xutang-ownlife-wait"
+      ]
+    },
+    {
+      "id": "friends-xutang-ownlife-wait",
+      "label": "朋友生活推進",
+      "type": "delay",
+      "delayMs": 315000,
+      "next": [
+        "friends-xutang-ownlife-arrive"
+      ]
+    },
+    {
+      "id": "friends-xutang-ownlife-arrive",
+      "label": "朋友主動分享近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-xutang-ownlife",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：朋友傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-zhouyu-ownlife-start",
+      "label": "朋友各自的感情與工作",
+      "type": "start",
+      "next": [
+        "friends-zhouyu-ownlife-wait"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-ownlife-wait",
+      "label": "朋友生活推進",
+      "type": "delay",
+      "delayMs": 390000,
+      "next": [
+        "friends-zhouyu-ownlife-arrive"
+      ]
+    },
+    {
+      "id": "friends-zhouyu-ownlife-arrive",
+      "label": "朋友主動分享近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-zhouyu-ownlife",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：朋友傳來新訊息"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "friends-chenyiheng-ownlife-start",
+      "label": "朋友各自的感情與工作",
+      "type": "start",
+      "next": [
+        "friends-chenyiheng-ownlife-wait"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-ownlife-wait",
+      "label": "朋友生活推進",
+      "type": "delay",
+      "delayMs": 435000,
+      "next": [
+        "friends-chenyiheng-ownlife-arrive"
+      ]
+    },
+    {
+      "id": "friends-chenyiheng-ownlife-arrive",
+      "label": "朋友主動分享近況",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "friends-chenyiheng-ownlife",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "KKT：朋友傳來新訊息"
         }
       ],
       "next": []
