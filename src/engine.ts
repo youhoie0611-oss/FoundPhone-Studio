@@ -280,10 +280,10 @@ export function advance(
       const lastReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
       const isConversing = incoming.some((item) => {
         const last = lastReplies[item!.title];
-        return last !== undefined && s.elapsedMs - Number(last) < 90000;
+        return last !== undefined && (s.elapsedMs ?? 0) - Number(last) < 90000;
       });
       if (isConversing) {
-        due.due = s.elapsedMs + 15000;
+        due.due = (s.elapsedMs ?? 0) + 15000;
         continue;
       }
 
