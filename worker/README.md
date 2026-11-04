@@ -1,3 +1,7 @@
+# 免費模式（無需 API 金鑰）
+
+目前前端已整合 `src/localNpc.ts`。**不設定 `VITE_CHAT_API_URL` 時，Kakao 玩家自由輸入會直接由瀏覽器內的規則式引擎生成 NPC 回覆**，無需 Worker、OpenAI 帳戶或 API 金鑰。角色支援沈硯舟、裴知聿、祁野、林安。具備有限意圖辨識與短暫回覆延遲，不能理解所有語意、長期記憶或自動推進完整故事。要讓公開 GitHub Pages 使用，仍須將開發分支建置並部署。
+
 # AI 聊天服務部署
 
 前端位於 GitHub Pages，不能安全保存 OpenAI API Key，因此使用獨立 Cloudflare Worker。
