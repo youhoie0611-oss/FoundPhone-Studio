@@ -54,6 +54,13 @@
     "casualSelfTakenPhoto": true,
     "publishCrossSurfaceOnlyIfStorySupportsIt": true,
     "avoidSpoilersOrAssumedPetOwnership": true,
-    "verifyActualFileOnGithubBeforeReportingSuccess": true
+    "verifyActualFileOnGithubBeforeReportingSuccess": true,
+    "affectionPolicyVersion": "V2.0",
+    "flirtySelfiesAllowed": true,
+    "subtleFlirtOnly": true,
+    "stopAfterPlayerRefusal": true,
+    "neverRequestPlayerPhoto": true,
+    "canonicalReference": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
+    "policy": "stories/pei-zhiyu/photo-policy-v2.json"
   }
 }
