@@ -14,3 +14,7 @@
 常用数据：chats 使用 participants 与 senderId 关联联系人；read 事件响应消息阅读；callEnded 可解锁隐藏动态。Instagram 的 meta.story="true" 标记快拍，folder="私信" 标记私信。具体字段以版本化 Schema 和编译器为准。
 
 正式默认模板为完整 App 测试预览，只有测试文字，没有内置剧情。正式构建也提供 ?preview=test。作者创作时可替换 stories/template/story.json，或从纯空白脚本开始。
+\n## 角色視覺記憶庫（生成照片前必讀）
+`stories/visual-memory/index.json` 列出已確認外貌的角色，`characters/<id>.json` 記錄鎖定參考圖、臉型、髮型、常穿服飾、角色拍照習慣與常見生活場景。**不能只用角色名字直接生成照片**；應先讀 manifest 並實際載入該角色 GitHub 高畫質參考圖，才可製作身份一致的自拍、聊天與 IG 素材。裴知聿多視角圖中舊版姓名「沈硯舟」不適用於人物身份。
+
+照片按對話 / IG Story / IG Post 指定資料夾和事件存放。生成後逐張標記拍攝者、分類、用途、相對路徑、上傳狀態和 GitHub link；沒實際提交不可冒稱已上傳。替換鎖定圖要玩家確認，並更新 blob SHA，再跑 `npm run visual:validate`。這是創作工具的編輯規範，不會讓遊戲本身自動產生新照片。

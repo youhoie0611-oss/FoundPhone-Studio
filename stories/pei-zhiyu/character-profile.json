@@ -102,5 +102,14 @@
     "uploadInCurrentTurnIfAvailable": true,
     "doNotClaimUploadBeforeVerified": true,
     "mediaAssetNotAutomaticallyRuntimeIntegrated": true
+  },
+  "visualMemory": {
+    "lockStatus": "approved_locked",
+    "manifestPath": "stories/visual-memory/characters/pei-zhiyu.json",
+    "referenceImage": "public/characters/pei-zhiyu.png",
+    "sourceConfirmation": "玩家明確確認這張多角度人物圖的外貌、髮型、穿搭與表情為裴知聿",
+    "sourceUploadSha256": "8c712ffa2b84fb1f1a85bf247d77cfcc0504297fcddff8f8fb89d92aa5dde133",
+    "identityMustBePreservedInFutureImageGeneration": true,
+    "mustLoadActualReferenceImage": true
   }
 }

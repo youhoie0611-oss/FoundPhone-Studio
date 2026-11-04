@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "characterId": "qi-ye",
+  "name": "祁野",
+  "lockStatus": "approved_locked",
+  "identityReference": {
+    "source": "既有專案中由玩家核准的人物設定圖",
+    "repositoryPath": "public/characters/qi-ye.png",
+    "publicUrl": "/characters/qi-ye.png",
+    "gitBlobSha": "1b06a71ab6e44f75391e9d9f89eddb0c7af282f5",
+    "primaryReferenceRequiredForGeneration": true,
+    "avatarOnlyIsInsufficient": true,
+    "poseOrClothesMayVaryWithoutChangingFace": true
+  },
+  "linkedCharacterCanon": "stories/ambiguity-b/characters/qi-ye.md",
+  "generatedMediaDefaultRules": {
+    "noCharacterIdentitySwap": true,
+    "preserveFaceHairBodyDetails": true,
+    "mustUseRealPhotoReferenceNotNameOnly": true,
+    "selfShotNeedsPlausibleCameraAccess": true,
+    "consistencyAcrossPhotosWithoutRepeatedFraming": true,
+    "photosMustFitLifeTimeline": true,
+    "noUnapprovedRelationshipOrOwnershipClaims": true
+  },
+  "approvedAppearance": {
+    "face": [
+      "高挺鼻樑、銳利眼型",
+      "較硬朗的下顎與眉骨",
+      "較張揚的表情"
+    ],
+    "hair": [
+      "深黑棕色短層次狼尾碎髮",
+      "略凌亂、偏硬的髮質"
+    ],
+    "body": [
+      "高挑、寬肩、運動型"
+    ],
+    "clothing": [
+      "黑色 T 恤",
+      "街頭機能或賽車風外套",
+      "寬鬆工裝褲",
+      "球鞋"
+    ],
+    "accessories": [
+      "銀色耳飾",
+      "銀色戒指與項鍊"
+    ],
+    "constraints": [
+      "參考圖中未確認的年齡、就學身分或細節不能自動變成故事事實",
+      "不因造型元素就任意新增刺青或穿環為不可逆設定"
+    ]
+  },
+  "photoHabits": {
+    "owner": "祁野本人",
+    "typicalCaptureDevice": "手機（如已有相機使用情節，可使用既有攝影裝備）",
+    "pointOfView": [
+      "街頭球場或運動空檔",
+      "設計與速寫",
+      "車輛與夜間城市",
+      "友人聚會與餐食",
+      "角度自然的隨手自拍"
+    ],
+    "aesthetic": [
+      "街頭氛圍、較強明暗或霓虹",
+      "偏黑灰暗紅與洗舊色調",
+      "隨手捕捉，避免虛構跟拍攝影師"
+    ],
+    "constraints": [
+      "不與裴知聿或沈硯舟互換人物五官",
+      "不得無故使用他無法拍到的第三人稱攝影視角"
+    ]
+  },
+  "commonLifeScenes": [
+    "街頭運動及籃球",
+    "設計與攝影",
+    "夜間城市",
+    "家族應酬或朋友聚會",
+    "外出飲食"
+  ],
+  "photoFolderPolicy": "依角色個人社群分類設定和劇情事件指定路徑，不擅自取用裴知聿資料夾。"
+}

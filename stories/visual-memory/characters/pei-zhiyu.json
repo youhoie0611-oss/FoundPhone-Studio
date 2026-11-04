@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pei-zhiyu",
+  "name": "裴知聿",
+  "lockStatus": "approved_locked",
+  "identityReference": {
+    "source": "既有專案中由玩家核准的人物設定圖",
+    "repositoryPath": "public/characters/pei-zhiyu.png",
+    "publicUrl": "/characters/pei-zhiyu.png",
+    "gitBlobSha": "880cfa699f36dbe2aa54190ba6f1d57c12b003ed",
+    "primaryReferenceRequiredForGeneration": true,
+    "avatarOnlyIsInsufficient": true,
+    "poseOrClothesMayVaryWithoutChangingFace": true
+  },
+  "linkedCharacterCanon": "stories/pei-zhiyu/character-profile.json",
+  "generatedMediaDefaultRules": {
+    "noCharacterIdentitySwap": true,
+    "preserveFaceHairBodyDetails": true,
+    "mustUseRealPhotoReferenceNotNameOnly": true,
+    "selfShotNeedsPlausibleCameraAccess": true,
+    "consistencyAcrossPhotosWithoutRepeatedFraming": true,
+    "photosMustFitLifeTimeline": true,
+    "noUnapprovedRelationshipOrOwnershipClaims": true
+  },
+  "approvedReferenceSheet": {
+    "status": "confirmed_by_user",
+    "sheetContent": "正面、四分之三側面、側面、背面、表情、髮型特寫、服飾細節、身形比例",
+    "previouslyApprovedHighResolutionImage": "public/characters/pei-zhiyu.png",
+    "newConfirmationImage": {
+      "sourceKind": "本次對話上傳的 JPEG 複本",
+      "sha256": "8c712ffa2b84fb1f1a85bf247d77cfcc0504297fcddff8f8fb89d92aa5dde133",
+      "dimensions": [
+        1212,
+        1297
+      ],
+      "repoCopyStatus": "not_uploaded_separately",
+      "note": "此複本用於確認同一視覺設計；高畫質人物設定圖已在 GitHub，且已與此前上傳 PNG 的 Git blob SHA 對上。"
+    },
+    "identityOverride": "圖中舊版姓名與身分欄顯示『沈硯舟／24歲／運動健身相關』，但玩家明確指定該外貌歸裴知聿。不可沿用圖中字面姓名、年齡、職業、體重或關係。"
+  },
+  "approvedAppearance": {
+    "facialStructure": [
+      "清秀偏窄的臉形",
+      "清楚但不僵硬的下顎線",
+      "高挺鼻樑",
+      "淡色薄唇",
+      "狹長略慵懶的眼形與微挑眼尾"
+    ],
+    "hair": [
+      "深黑色蓬鬆中長層次碎髮",
+      "髮尾帶輕微狼尾",
+      "瀏海自然散落眉眼前",
+      "微亂而非整齊油頭"
+    ],
+    "build": [
+      "身形修長偏精瘦",
+      "肩線較窄而自然",
+      "手指纖長"
+    ],
+    "frequentClothing": [
+      "灰色寬鬆拉鍊連帽外套",
+      "黑色寬鬆側袋工裝褲",
+      "灰白色運動鞋"
+    ],
+    "recurringAccessories": [
+      "銀色耳釘或小耳飾",
+      "簡約銀色項鍊"
+    ],
+    "expressionRange": [
+      "平靜",
+      "若有似無的微笑",
+      "開心大笑",
+      "輕微挑釁或調侃",
+      "思考",
+      "調皮",
+      "驚訝",
+      "委屈",
+      "放鬆",
+      "懶倦"
+    ],
+    "visualNegativeConstraints": [
+      "不能換成沈硯舟的其他外貌",
+      "不可憑文字名字重做陌生男子臉",
+      "不能因灰色帽外套就把所有照片改成棚拍模特",
+      "不強制每張都穿一模一樣的衣服"
+    ]
+  },
+  "photoHabits": {
+    "owner": "裴知聿本人",
+    "typicalCaptureDevice": "手機",
+    "pointOfView": [
+      "坐著時手持手機拍研究資料",
+      "窗前或外出時隨手拍夕陽街景",
+      "用餐前快速拍一張餐點",
+      "偶遇小動物時從自然距離拍攝",
+      "需要有情境時才拍自拍"
+    ],
+    "typicalAesthetic": [
+      "低飽和、中性與暖灰色調",
+      "室內偏暖燈光、戶外自然傍晚光",
+      "保留自然手機噪點、非完美構圖",
+      "桌面與生活器物有適度連續性",
+      "偶爾傾斜或略有遮擋，非商業棚拍"
+    ],
+    "recurringProps": [
+      "深色杯子",
+      "筆記與心理學書籍",
+      "筆電",
+      "灰色袖口（穿著該衣物時）"
+    ],
+    "neverAssume": [
+      "不是每張都要出現手／袖口",
+      "不因貓咪照推定養貓",
+      "不因同一窗口背景推定每張皆在家拍攝",
+      "不因分享照片推定與玩家復合"
+    ]
+  },
+  "commonLifeScenes": [
+    "研究所課業、資料整理",
+    "夜間閱讀與工作桌",
+    "窗邊黃昏／城市夜景",
+    "咖啡、簡單晚餐",
+    "夜間散步",
+    "偶遇小動物"
+  ],
+  "mediaRouting": {
+    "kkt_chat": "public/assets/characters/pei-zhiyu/chat/",
+    "instagram_story": "public/assets/characters/pei-zhiyu/instagram/story/",
+    "instagram_post": "public/assets/characters/pei-zhiyu/instagram/post/"
+  },
+  "visualContrastWithOtherLeads": "裴知聿偏觀察與克制、冷灰和暖光的私密生活紀錄；不沿用沈硯舟活潑校園運動風或祁野張揚街頭運動風。"
+}
