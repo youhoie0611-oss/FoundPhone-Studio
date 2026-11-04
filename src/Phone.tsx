@@ -463,12 +463,7 @@ function PhoneRuntime({
                       if (item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
                       const lines = item.body.split(/\n+/).map((line) => line.trim()).filter(Boolean);
                       if (lines.length < 2) return [base];
-                      const elapsed = s.elapsedMs ?? 0;
-                      const origin = deliveryElapsed ?? (item.hidden ? undefined : 0);
-                      return lines.flatMap((line, index) => {
-                        if (origin !== undefined && elapsed < origin + index * 2800) return [];
-                        return [{ ...base, id: index === 0 ? item.id : `${item.id}-line-${index}`, body: line }];
-                      });
+                      return [{ ...base, body: lines[0] }];
                     }),
                     ...(s.messages[app] ?? []),
                   ]}
