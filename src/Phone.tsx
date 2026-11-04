@@ -453,7 +453,7 @@ function PhoneRuntime({
                   }
                   items={[
                     ...(work.data[app] ?? []).map((item) => {
-                      const delivered = s.ui?.deliveryTimes?.[item.id];
+                      const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
                       return delivered && typeof delivered === "string"
                         ? { ...item, time: delivered }
                         : item;
