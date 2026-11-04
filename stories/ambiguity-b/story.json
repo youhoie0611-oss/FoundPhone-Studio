@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 38,
+  "revision": 39,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -85,7 +85,7 @@
         {
           "id": "shen-03",
           "title": "",
-          "body": "喔對，我先去洗澡。剛從健身房回來，整個人都是汗。",
+          "body": "喔對，我先去洗澡，剛練完腿。\n頭髮現在亂得像被颱風吹過哈哈哈。\n本來想自拍一下，但手機差點被汗淹死。",
           "senderId": "shenyanzhou",
           "time": "19:27",
           "avatar": "./characters/shen-yanzhou-avatar.png",
@@ -1430,7 +1430,7 @@
         {
           "id": "shen-photo-gym-opening",
           "title": "",
-          "body": "今天訓練告一段落了。\n剛休息的時候順手拍了器材區，準備收東西回去洗澡。",
+          "body": "哈哈哈哈我練完腿差點不會走路。\n休息的時候順手拍了一張，妳看我水壺跟毛巾被我丟成怎樣。",
           "senderId": "shenyanzhou",
           "time": "2026-11-04 19:42",
           "hidden": true,
@@ -1449,7 +1449,13 @@
           "meta": {
             "photoScene": "gym",
             "cameraPerspective": "first-person",
-            "photographer": "shenyanzhou"
+            "photographer": "shenyanzhou",
+            "photoId": "shen-photo-gym-image",
+            "photoPolicy": "V1.0",
+            "eventId": "shen-photo-gym-image-arrival",
+            "assetCategory": "chat",
+            "sceneSeriesId": "gym",
+            "sceneSequence": "1"
           }
         },
         {
@@ -1463,7 +1469,7 @@
         {
           "id": "shen-photo-gym-opt-a-in",
           "title": "",
-          "body": "腿跟核心。\n明天上下樓梯可能會很慢。",
+          "body": "腿跟核心。\n本來覺得還行，結果一走樓梯就知道錯了哈哈。",
           "senderId": "shenyanzhou",
           "time": "2026-11-04 19:42",
           "hidden": true,
@@ -1480,7 +1486,7 @@
         {
           "id": "shen-photo-gym-opt-b-in",
           "title": "",
-          "body": "沒有啦，我有排休息日。\n每天硬練也不會比較有效。",
+          "body": "有啦，我今天有乖乖休息跟收操。\n不然明天可能真的要扶牆走。",
           "senderId": "shenyanzhou",
           "time": "2026-11-04 19:42",
           "hidden": true,
@@ -1566,7 +1572,7 @@
         {
           "id": "shen-photo-cafe-opening",
           "title": "",
-          "body": "今天拍的檔案備份完了，順便在咖啡店補課堂筆記。\n坐下來才發現事情還不少。",
+          "body": "剛把今天的照片備份完。\n結果翻開筆記才發現還有一大段沒讀：）\n我現在人在咖啡店繼續補進度。",
           "senderId": "shenyanzhou",
           "time": "2026-11-05 17:25",
           "hidden": true,
@@ -1585,7 +1591,13 @@
           "meta": {
             "photoScene": "cafe",
             "cameraPerspective": "first-person",
-            "photographer": "shenyanzhou"
+            "photographer": "shenyanzhou",
+            "photoId": "shen-photo-cafe-image",
+            "photoPolicy": "V1.0",
+            "eventId": "shen-photo-cafe-image-arrival",
+            "assetCategory": "chat",
+            "sceneSeriesId": "cafe",
+            "sceneSequence": "1"
           }
         },
         {
@@ -1633,7 +1645,7 @@
         {
           "id": "shen-photo-cafe-opt-c-in",
           "title": "",
-          "body": "我點熱拿鐵。\n還不錯，這家店也不太吵。",
+          "body": "熱拿鐵！\n這杯還不錯欸，而且這間不會太吵，我可以多坐一下。",
           "senderId": "shenyanzhou",
           "time": "2026-11-05 17:25",
           "hidden": true,
@@ -1659,7 +1671,7 @@
         {
           "id": "shen-photo-basketball-opening",
           "title": "",
-          "body": "剛跟朋友打完球。\n抬頭看到這片夕陽，忍不住把手機拿出來拍一下。",
+          "body": "欸妳看這個天空！\n我剛跟朋友打完球，最後一球投歪被笑一路。\n但這個夕陽真的值得拍一下。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 17:26",
           "hidden": true,
@@ -1678,7 +1690,13 @@
           "meta": {
             "photoScene": "basketball",
             "cameraPerspective": "first-person",
-            "photographer": "shenyanzhou"
+            "photographer": "shenyanzhou",
+            "photoId": "shen-photo-basketball-image",
+            "photoPolicy": "V1.0",
+            "eventId": "shen-photo-basketball-image-arrival",
+            "assetCategory": "chat",
+            "sceneSeriesId": "basketball",
+            "sceneSequence": "1"
           }
         },
         {
@@ -1709,7 +1727,7 @@
         {
           "id": "shen-photo-basketball-opt-b-in",
           "title": "",
-          "body": "對吧！\n本來要走了，看一眼還是想拍下來。",
+          "body": "對吧！！！\n我們本來要走了，我還叫他們等我三秒拍完哈哈。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 17:26",
           "hidden": true,
@@ -1795,7 +1813,7 @@
         {
           "id": "shen-photo-night-opening",
           "title": "",
-          "body": "剛把照片備份好，出去走了一下。\n雨剛停，路面反光很漂亮，我在騎樓下拍了這張。",
+          "body": "剛把照片備份完，出去走走。\n雨停了，路上都是光的倒影。\n在騎樓下隨手拍了一張，還滿喜歡的。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 21:10",
           "hidden": true,
@@ -1814,7 +1832,13 @@
           "meta": {
             "photoScene": "night",
             "cameraPerspective": "first-person",
-            "photographer": "shenyanzhou"
+            "photographer": "shenyanzhou",
+            "photoId": "shen-photo-night-image",
+            "photoPolicy": "V1.0",
+            "eventId": "shen-photo-night-image-arrival",
+            "assetCategory": "chat",
+            "sceneSeriesId": "night",
+            "sceneSequence": "1"
           }
         },
         {
@@ -1862,7 +1886,7 @@
         {
           "id": "shen-photo-night-opt-c-in",
           "title": "",
-          "body": "可能是相機拿久了。\n走路都會不自覺看哪裡有好看的光。",
+          "body": "可能拿相機久了吧。\n走到哪都會看一下光打在哪裡。\n有時候覺得自己像在找寶藏哈哈。",
           "senderId": "shenyanzhou",
           "time": "2026-11-06 21:10",
           "hidden": true,
