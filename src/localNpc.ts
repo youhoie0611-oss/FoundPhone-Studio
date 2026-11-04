@@ -127,6 +127,38 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
       return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
     }
   }
+  // Resolve character-specific opening scenes before generic intent classification.
+  if (request.thread === "沈硯舟" && /介意我傳|入鏡|上次活動/.test(recent)) {
+    if (/可以|傳給我|傳來|看看/.test(input))
+      return { reply: "好，我先挑那張妳入鏡的照片給妳看。放心，我不會擅自公開。", delayMs: 1300 };
+    if (/不太想|不要|不用|不方便/.test(input))
+      return { reply: "好，那我不傳，也不會把有妳的照片公開。抱歉，應該先確認妳的意思。", delayMs: 1200 };
+    if (/哪一張|哪張|拍到/.test(input))
+      return { reply: "是活動現場那張合照的邊角，妳剛好在協助處理流程。我還沒把照片傳給別人。", delayMs: 1400 };
+    if (/怎麼知道|怎麼認出|認得/.test(input))
+      return { reply: "那天我拿相機在現場跑來跑去，看到妳幫忙處理流程。整理照片時才又想起來。", delayMs: 1400 };
+    if (/認錯|不是我/.test(input))
+      return { reply: "啊，那可能是我認錯了。抱歉突然打擾妳，我先不傳照片。", delayMs: 1200 };
+  }
+  if (request.thread === "裴知聿" && /分手|照片|聯絡|還好嗎/.test(recent)) {
+    if (/說好|先不要聯絡|不想聊|保持距離/.test(input))
+      return { reply: "我記得。是我先打破約定，對不起。我不會再逼妳回應。", delayMs: 1500 };
+    if (/想說什麼|找我|什麼事/.test(input))
+      return { reply: "我整理東西時翻到我們以前的照片，想問妳過得好不好。也知道我不該突然打擾妳。", delayMs: 1500 };
+    if (/最近還好|你呢/.test(input))
+      return { reply: "我還好，工作照常忙。謝謝妳願意回我，妳不用為了我勉強多說。", delayMs: 1600 };
+  }
+  if (request.thread === "祁野" && /停車場|擋路|生氣/.test(recent)) {
+    if (/擋到|應該先道歉/.test(input))
+      return { reply: "行，這件事是我不對。那天車擋到妳，我跟妳道歉。", delayMs: 1100 };
+    if (/怎麼知道|怎麼認出/.test(input))
+      return { reply: "後來在同一場活動又看到妳，我才把人對上。不是故意查妳。", delayMs: 1200 };
+    if (/算了|別再提/.test(input))
+      return { reply: "行，不提了。下次我會注意，不會再擋妳的路。", delayMs: 1000 };
+  }
+  if (/下班|工作/.test(recent) && /剛下班|還沒|今天.*累|晚點再聊/.test(input)) {
+    return { reply: /晚點再聊/.test(input) ? "好，妳先忙，等妳有空再說。" : /還沒/.test(input) ? "那妳先把工作忙完，別急著回訊息。" : "辛苦了，先吃點東西休息一下。", delayMs: 1400 };
+  }
   // Resolve the player's actual question before any generic intent templates.
   // Never invent a location, promise, or completed event from a vague prompt.
   const recentContext = request.history.filter(x => !x.outgoing).slice(-4).map(x => x.body).join(" ");
