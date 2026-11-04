@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "characterId": "gu_shian",
+  "petId": "gu_shian_dog_01",
+  "ownership": "owned_by_gu_shian",
+  "authorConfirmed": true,
+  "species": "dog",
+  "breed": "台灣米克斯",
+  "size": "中型",
+  "coat": "奶茶色短毛",
+  "chest": "白色胸口",
+  "ears": "半垂耳",
+  "eyes": "深棕色",
+  "personality": [
+    "活潑",
+    "親人",
+    "有點調皮"
+  ],
+  "age": null,
+  "sex": null,
+  "name": null,
+  "visualIdentityStatus": "visual_concept_confirmed_reference_not_uploaded",
+  "visualReferencePath": null,
+  "approvedByAuthor": "2026-11-04 同意依性格推薦的米克斯外型",
+  "rules": [
+    "保持同一隻狗的毛色、胸前白色、半垂耳及臉型",
+    "不能把街邊偶遇的任何狗直接視為顧時安的狗",
+    "未確認狗名字、性別、年齡、收養經過；不得直接變成故事事實",
+    "新生成完整設定板中自動出現的名字『阿麥』或先前『阿布』均屬非正式文字，不能作為犬名",
+    "未得到原圖且未通過外貌核對時不得用別隻狗冒充此犬",
+    "狗狗照應符合顧時安當時日程與情緒"
+  ]
+}

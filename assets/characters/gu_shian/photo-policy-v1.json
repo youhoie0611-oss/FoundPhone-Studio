@@ -54,7 +54,9 @@
       "流行音樂",
       "獨立音樂",
       "爵士樂"
-    ]
+    ],
+    "ownsDog": true,
+    "wearsGlasses": true
   },
   "visual": {
     "reference": "assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
@@ -399,7 +401,9 @@
       "同行 NPC",
       "合理時間與光線",
       "照片與文字",
-      "既有照片ID"
+      "既有照片ID",
+      "自己飼養的同一隻米克斯犬外貌一致；不把路邊偶遇的狗混同",
+      "日常眼鏡款式為暖茶色半透明圓角方框，依行程選擇配戴"
     ],
     "captureShareDeliverSeparate": true,
     "photoIdSharedAcrossPlatforms": true,
@@ -476,5 +480,17 @@
     "重寫歷史照片事件",
     "同原照重生成",
     "人格混同沈硯舟或祁野"
-  ]
+  ],
+  "pets": {
+    "ownsDog": true,
+    "petId": "gu_shian_dog_01",
+    "profilePath": "assets/characters/gu_shian/pet-memory.json",
+    "visualContinuityRequired": true
+  },
+  "glasses": {
+    "wearsGlasses": true,
+    "confirmedFrame": "半透明暖茶色圓角方框",
+    "notAlwaysWorn": true,
+    "mustPreserveFace": true
+  }
 }
