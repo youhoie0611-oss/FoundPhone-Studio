@@ -62,5 +62,45 @@
     "characterCore": "stories/ambiguity-b/characters/pei-zhiyu.md",
     "photoSceneConfig": "stories/pei-zhiyu/chat-photo-events.json",
     "latestGeneratedImageUploadStillPending": true
+  },
+  "assetRouting": {
+    "kkt_chat": {
+      "repositoryDirectory": "public/assets/characters/pei-zhiyu/chat/",
+      "publicDirectory": "/assets/characters/pei-zhiyu/chat/",
+      "description": "裴知聿私下傳給玩家的 KKT／聊天照片",
+      "githubDirectoryUrl": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/chat"
+    },
+    "instagram_story": {
+      "repositoryDirectory": "public/assets/characters/pei-zhiyu/instagram/story/",
+      "publicDirectory": "/assets/characters/pei-zhiyu/instagram/story/",
+      "description": "裴知聿發在 Instagram 限時動態的照片",
+      "githubDirectoryUrl": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/instagram/story"
+    },
+    "instagram_post": {
+      "repositoryDirectory": "public/assets/characters/pei-zhiyu/instagram/post/",
+      "publicDirectory": "/assets/characters/pei-zhiyu/instagram/post/",
+      "description": "裴知聿發在 Instagram 正式貼文的照片",
+      "githubDirectoryUrl": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/instagram/post"
+    }
+  },
+  "mediaRules": {
+    "autoClassifyEachNewImage": true,
+    "classificationByNarrativeUseNotAppearance": true,
+    "eachImageMustState": [
+      "媒體類別",
+      "照片檔名",
+      "拍攝情境",
+      "相對路徑",
+      "GitHub 資料夾連結",
+      "提交結果與 commit"
+    ],
+    "preferOwnSmartphonePOV": true,
+    "consistentPhotographer": true,
+    "avoidProfessionalPhotoshootForCandidDailyPhoto": true,
+    "doNotAssumeSharedAcrossApps": true,
+    "sourceIsConversationSupplementNotPlayerMessage": true,
+    "uploadInCurrentTurnIfAvailable": true,
+    "doNotClaimUploadBeforeVerified": true,
+    "mediaAssetNotAutomaticallyRuntimeIntegrated": true
   }
 }

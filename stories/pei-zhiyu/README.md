@@ -15,3 +15,12 @@
 4. 正式遊戲回覆採四個態度／意圖有實質差異的選項；須區分分支、回覆停頓、未讀推送，尊重拒絕與斷聯。
 5. 不用用戶在此補充的元訊息冒充女主角 KKT 發言。避免壓迫式復合、未同意親密接觸與強行好感跳升。
 6. 提交後應檢查腳本引用與劇情連續性；未完成 npm 驗證／瀏覽器測試時必須明確標示。
+
+## 照片分類資料夾（自 2026-11-04 起）
+- **KKT 私訊／聊天**：`public/assets/characters/pei-zhiyu/chat/`（既有資料夾；原本檔案保留）。
+- **Instagram Story**：`public/assets/characters/pei-zhiyu/instagram/story/`（新增，用於限時動態）。
+- **Instagram Post**：`public/assets/characters/pei-zhiyu/instagram/post/`（新增，用於正式貼文）。
+
+從現在起，本對話框每次要求產生裴知聿照片時，依照片的**劇情用途**決定應放的資料夾，並在交付中主動標示：照片用途、檔名、生活事件、實際上傳路徑、GitHub 資料夾連結、提交紀錄。若同張圖片要同時用於聊天及 Instagram，需另有合理的劇情原因，不預設跨平台重複使用；Story/貼文不是傳給玩家的 KKT 私訊。
+
+新生成素材應符合裴知聿本人拍攝、自然隨手記錄的感覺，光線、生活用品與視角具連續性。不能把「已生成」等同「已上傳」；提交之後才提供真實資料夾連結並回報 commit。素材清單與規則另見 `photo-asset-index.json`、`public/assets/characters/pei-zhiyu/README.md`。

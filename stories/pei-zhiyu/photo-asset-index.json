@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pei-zhiyu",
+  "basePath": "public/assets/characters/pei-zhiyu",
+  "note": "Index for authoring and routing assets; file existence does not imply that story runtime has integrated images.",
+  "categories": {
+    "kkt_chat": {
+      "folder": "public/assets/characters/pei-zhiyu/chat/",
+      "url": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/chat",
+      "assets": [
+        "pei-encountered-cat.jpg",
+        "pei-ramen.jpg",
+        "pei-study-desk.jpg",
+        "pei-window-sunset.jpg",
+        "裴知聿_夜間自拍.png",
+        "裴知聿_深夜城市.png",
+        "裴知聿_研究所書桌.png",
+        "裴知聿_貓咪日常.png"
+      ],
+      "annotation": "private KKT chat photos (existing repository files)"
+    },
+    "instagram_story": {
+      "folder": "public/assets/characters/pei-zhiyu/instagram/story/",
+      "url": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/instagram/story",
+      "assets": [],
+      "annotation": "ephemeral public/close-friends story posts; specify audience if required"
+    },
+    "instagram_post": {
+      "folder": "public/assets/characters/pei-zhiyu/instagram/post/",
+      "url": "https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/public/assets/characters/pei-zhiyu/instagram/post",
+      "assets": [],
+      "annotation": "permanent Instagram feed posts; add caption and narrative trigger"
+    }
+  },
+  "newAssetContract": {
+    "classifyEachImageBeforeUpload": true,
+    "singlePrimaryCategoryRequired": true,
+    "format": "prefer .jpg for mobile everyday photos; .png allowed if needed",
+    "fileNameConvention": "pei-{short-scene-slug}-{sequence}.jpg",
+    "mandatoryMetadata": [
+      "assetId",
+      "category",
+      "filename",
+      "photographer",
+      "capturedContext",
+      "inStorySendTimeOrPublicationTime",
+      "visibility",
+      "relativePublicPath",
+      "githubFolderUrl",
+      "uploadVerifiedCommit"
+    ],
+    "photographer": "pei-zhiyu",
+    "shouldFeelLikeSamePerson": true,
+    "casualSelfTakenPhoto": true,
+    "publishCrossSurfaceOnlyIfStorySupportsIt": true,
+    "avoidSpoilersOrAssumedPetOwnership": true,
+    "verifyActualFileOnGithubBeforeReportingSuccess": true
+  }
+}
