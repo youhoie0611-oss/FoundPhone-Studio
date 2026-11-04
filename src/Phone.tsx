@@ -454,7 +454,6 @@ function PhoneRuntime({
                   items={[
                     ...(work.data[app] ?? []).flatMap((item) => {
                       const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
-                      const deliveryElapsed = (s.ui?.deliveryElapsed as Record<string, number> | undefined)?.[item.id];
                       const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
                       const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
                       const base = { ...item, time: timestamp };
