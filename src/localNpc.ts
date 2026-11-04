@@ -38,6 +38,34 @@ const people: Record<string, { name: string; responses: Record<Intent, string[]>
     affection: ["妳這話有點犯規啊。", "再說一遍？我剛才沒看錯吧。"],
     other: ["然後呢？", "妳這話有後半句吧？"],
   }},
+  "周予晴": { name: "周予晴", responses: {
+    stop: ["好，先不打擾妳。"], refuse: ["那我們改天再約，妳先忙。"],
+    gift: ["真的嗎？謝謝妳想到我。"], question: ["妳想問哪件事？我看一下。"],
+    greeting: ["嗨，妳今天過得怎麼樣？"], meeting: ["好呀，週末一起去逛！妳下班後再跟我說時間就好。"],
+    work: ["工作辛苦了，先忙完再說。"], thanks: ["不客氣啦。"],
+    affection: ["突然這樣說，我有點意外。"], other: ["今天改稿改到眼睛快花了，妳呢？"],
+  }},
+  "陳以衡": { name: "陳以衡", responses: {
+    stop: ["好，先不打擾妳。"], refuse: ["沒關係，我先不算妳的人數。"],
+    gift: ["真的嗎？謝謝妳想到我。"], question: ["妳想問哪件事？我看一下。"],
+    greeting: ["嗨，妳今天過得怎麼樣？"], meeting: ["好，我先確認訂位，晚點把餐廳資訊傳妳。"],
+    work: ["工作辛苦了，先忙完再說。"], thanks: ["不客氣啦。"],
+    affection: ["突然這樣說，我有點意外。"], other: ["最近在忙新菜單企劃，還算順利。"],
+  }},
+  "許棠": { name: "許棠", responses: {
+    stop: ["好，先不打擾妳。"], refuse: ["好，妳不用勉強。"],
+    gift: ["真的嗎？謝謝妳想到我。"], question: ["妳想問哪件事？我看一下。"],
+    greeting: ["嗨，妳今天過得怎麼樣？"], meeting: ["好啊，等我排班確定再跟妳說。"],
+    work: ["工作辛苦了，先忙完再說。"], thanks: ["不客氣啦。"],
+    affection: ["突然這樣說，我有點意外。"], other: ["我剛下班，打算先補眠，晚點再聊。"],
+  }},
+  "下班後五人組": { name: "下班後五人組", responses: {
+    stop: ["好，先不打擾妳。"], refuse: ["沒關係，下次再一起約。"],
+    gift: ["真的嗎？謝謝妳想到我。"], question: ["妳想問哪件事？我看一下。"],
+    greeting: ["嗨，妳今天過得怎麼樣？"], meeting: ["好，那我先幫妳留位置。時間有變再說一聲。"],
+    work: ["工作辛苦了，先忙完再說。"], thanks: ["不客氣啦。"],
+    affection: ["突然這樣說，我有點意外。"], other: ["大家今天各自忙什麼？我先去訂位。"],
+  }},
   "林安": { name: "林安", responses: {
     stop: ["好，我先不吵妳。", "收到，晚點聊。"],
     refuse: ["好啊，沒事。", "那就算啦。"],
@@ -86,6 +114,9 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   }
   if (request.thread === "裴知聿" && /哪件事|什麼照片|哪張照片|什麼收據/.test(input)) {
     return { reply: "是我們以前常去那家店的收據，夾在舊相冊裡。我不是故意翻出來讓妳難受。", delayMs: 1800 };
+  }
+  if (request.thread === "周予晴" && /^(好呀|好啊|好|可以|有興趣|想去)[！!。\\s]*$/.test(input)) {
+    return { reply: "那就約週末！我先看看市集的時間，晚點把資訊傳妳。", delayMs: 1500 };
   }
   const intent = classifyMessage(request.message);
   const choices = person.responses[intent];
