@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "玩家是上班族。沈硯舟是在活動認識的大學生；裴知聿是玩家的同事；祁野是偶然認識的紈褲子弟。",
-  "revision": 27,
+  "revision": 28,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -469,7 +469,7 @@
         {
           "id": "shen-r4-a-out",
           "title": "",
-          "body": "你今天不用上課嗎？",
+          "body": "你今天不是還要上課？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -477,7 +477,7 @@
         {
           "id": "shen-r4-a-in",
           "title": "",
-          "body": "下午才有課。上午在整理活動照片。\n對了，你怎麼會來那場活動？",
+          "body": "下午才有課。上午在整理活動照片。\n那天活動結束後，我還去幫忙收器材。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -494,7 +494,7 @@
         {
           "id": "shen-r4-b-in",
           "title": "",
-          "body": "沒事，妳先忙。\n對了，你怎麼會來那場活動？",
+          "body": "沒事，妳先忙。\n那天活動結束後，我還去幫忙收器材。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -503,7 +503,7 @@
         {
           "id": "shen-r5-a-out",
           "title": "",
-          "body": "你怎麼會來那場活動？",
+          "body": "你那天怎麼會接到這場活動？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -511,7 +511,7 @@
         {
           "id": "shen-r5-a-in",
           "title": "",
-          "body": "系上老師介紹的攝影工作。\n對了，你平常課業很重嗎？",
+          "body": "系上老師介紹的攝影工作。\n最近一邊上課一邊接活動拍攝，時間有點擠。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -528,7 +528,7 @@
         {
           "id": "shen-r5-b-in",
           "title": "",
-          "body": "對，差點連水都忘記喝。\n對了，你平常課業很重嗎？",
+          "body": "對，差點連水都忘記喝。\n最近一邊上課一邊接活動拍攝，時間有點擠。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -537,7 +537,7 @@
         {
           "id": "shen-r6-a-out",
           "title": "",
-          "body": "你平常課業很重嗎？",
+          "body": "你這樣不會耽誤課業嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -545,7 +545,7 @@
         {
           "id": "shen-r6-a-in",
           "title": "",
-          "body": "這學期還好，期末會比較忙。\n對了，你喜歡拍什麼？",
+          "body": "這學期還好，期末會比較忙。\n我最近拍了不少街景，也拍到一些現場人物。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -562,7 +562,7 @@
         {
           "id": "shen-r6-b-in",
           "title": "",
-          "body": "知道啦，我不會為了聊天翹課。\n對了，你喜歡拍什麼？",
+          "body": "知道啦，我不會為了聊天翹課。\n我最近拍了不少街景，也拍到一些現場人物。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -571,7 +571,7 @@
         {
           "id": "shen-r7-a-out",
           "title": "",
-          "body": "你喜歡拍什麼？",
+          "body": "那你最喜歡拍什麼？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -579,7 +579,7 @@
         {
           "id": "shen-r7-a-in",
           "title": "",
-          "body": "街景跟人的自然表情。\n對了，你會把照片公開嗎？",
+          "body": "街景跟人的自然表情。\n有人問我能不能把活動照片放到社群上。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -596,7 +596,7 @@
         {
           "id": "shen-r7-b-in",
           "title": "",
-          "body": "那我就不拍妳，真的。\n對了，你會把照片公開嗎？",
+          "body": "那我就不拍妳，真的。\n有人問我能不能把活動照片放到社群上。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -605,7 +605,7 @@
         {
           "id": "shen-r8-a-out",
           "title": "",
-          "body": "你會把照片公開嗎？",
+          "body": "你會先問過當事人才公開吧？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -613,7 +613,7 @@
         {
           "id": "shen-r8-a-in",
           "title": "",
-          "body": "先問過當事人才會。\n對了，你今天又去健身？",
+          "body": "先問過當事人才會。\n今天剛運動完，腿快不是自己的了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -630,7 +630,7 @@
         {
           "id": "shen-r8-b-in",
           "title": "",
-          "body": "好，這件事我記住。\n對了，你今天又去健身？",
+          "body": "好，這件事我記住。\n今天剛運動完，腿快不是自己的了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -639,7 +639,7 @@
         {
           "id": "shen-r9-a-out",
           "title": "",
-          "body": "你今天又去健身？",
+          "body": "你不是才忙完活動，今天又去健身？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -647,7 +647,7 @@
         {
           "id": "shen-r9-a-in",
           "title": "",
-          "body": "對，練完腿現在走樓梯像老人。\n對了，你會在意年齡差嗎？",
+          "body": "對，練完腿現在走樓梯像老人。\n有時候想想，妳上班我上課，作息真的不太一樣。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -664,7 +664,7 @@
         {
           "id": "shen-r9-b-in",
           "title": "",
-          "body": "哈哈，那就躺，辛苦了。\n對了，你會在意年齡差嗎？",
+          "body": "哈哈，那就躺，辛苦了。\n有時候想想，妳上班我上課，作息真的不太一樣。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -673,7 +673,7 @@
         {
           "id": "shen-r10-a-out",
           "title": "",
-          "body": "你會在意年齡差嗎？",
+          "body": "說真的，你會在意我們的年齡差嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -681,7 +681,7 @@
         {
           "id": "shen-r10-a-in",
           "title": "",
-          "body": "我知道妳已經工作，我還在讀書。\n對了，你會不會覺得上班很無聊？",
+          "body": "我知道妳已經工作，我還在讀書。\n妳上班應該也有很多不能隨便講的事吧。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -698,7 +698,7 @@
         {
           "id": "shen-r10-b-in",
           "title": "",
-          "body": "嗯，我不會假裝沒差。\n對了，你會不會覺得上班很無聊？",
+          "body": "嗯，我不會假裝沒差。\n妳上班應該也有很多不能隨便講的事吧。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -707,7 +707,7 @@
         {
           "id": "shen-r11-a-out",
           "title": "",
-          "body": "你會不會覺得上班很無聊？",
+          "body": "聽我講上班的事會不會很無聊？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -715,7 +715,7 @@
         {
           "id": "shen-r11-a-in",
           "title": "",
-          "body": "不會，我還想聽妳講工作的事。\n對了，你今天心情怎麼樣？",
+          "body": "不會，我還想聽妳講工作的事。\n今天本來有個拍攝，結果臨時取消了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -732,7 +732,7 @@
         {
           "id": "shen-r11-b-in",
           "title": "",
-          "body": "當然，不能說就別說。\n對了，你今天心情怎麼樣？",
+          "body": "當然，不能說就別說。\n今天本來有個拍攝，結果臨時取消了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -741,7 +741,7 @@
         {
           "id": "shen-r12-a-out",
           "title": "",
-          "body": "你今天心情怎麼樣？",
+          "body": "今天怎麼了，心情不好嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -749,7 +749,7 @@
         {
           "id": "shen-r12-a-in",
           "title": "",
-          "body": "拍攝被臨時取消，有點失落。\n對了，你會跟朋友講心事嗎？",
+          "body": "拍攝被臨時取消，有點失落。\n我剛跟朋友聊了一下，心情好多了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -766,7 +766,7 @@
         {
           "id": "shen-r12-b-in",
           "title": "",
-          "body": "嗯，我去球場走走。\n對了，你會跟朋友講心事嗎？",
+          "body": "嗯，我去球場走走。\n我剛跟朋友聊了一下，心情好多了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -775,7 +775,7 @@
         {
           "id": "shen-r13-a-out",
           "title": "",
-          "body": "你會跟朋友講心事嗎？",
+          "body": "你心情不好會找朋友聊嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -783,7 +783,7 @@
         {
           "id": "shen-r13-a-in",
           "title": "",
-          "body": "會，挑信得過的人。\n對了，你上次說的照片呢？",
+          "body": "會，挑信得過的人。\n對了，上次那批照片我終於整理好了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -800,7 +800,7 @@
         {
           "id": "shen-r13-b-in",
           "title": "",
-          "body": "不用安慰，聽一下就好。\n對了，你上次說的照片呢？",
+          "body": "不用安慰，聽一下就好。\n對了，上次那批照片我終於整理好了。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -809,7 +809,7 @@
         {
           "id": "shen-r14-a-out",
           "title": "",
-          "body": "你上次說的照片呢？",
+          "body": "欸，你上次說的照片整理好了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -817,7 +817,7 @@
         {
           "id": "shen-r14-a-in",
           "title": "",
-          "body": "我挑好了，只留妳同意的那幾張。\n對了，你週末還要拍活動？",
+          "body": "我挑好了，只留妳同意的那幾張。\n這週末又接到一場活動攝影。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -834,7 +834,7 @@
         {
           "id": "shen-r14-b-in",
           "title": "",
-          "body": "好，妳看完再決定。\n對了，你週末還要拍活動？",
+          "body": "好，妳看完再決定。\n這週末又接到一場活動攝影。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -843,7 +843,7 @@
         {
           "id": "shen-r15-a-out",
           "title": "",
-          "body": "你週末還要拍活動？",
+          "body": "週末還要拍？你也太忙了吧。",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -851,7 +851,7 @@
         {
           "id": "shen-r15-a-in",
           "title": "",
-          "body": "要，這次是校外志工活動。\n對了，你怎麼安排時間？",
+          "body": "要，這次是校外志工活動。\n我剛把課表和拍攝時間排進行事曆。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -868,7 +868,7 @@
         {
           "id": "shen-r15-b-in",
           "title": "",
-          "body": "所以我會先把時間安排好。\n對了，你怎麼安排時間？",
+          "body": "所以我會先把時間安排好。\n我剛把課表和拍攝時間排進行事曆。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -877,7 +877,7 @@
         {
           "id": "shen-r16-a-out",
           "title": "",
-          "body": "你怎麼安排時間？",
+          "body": "你到底怎麼把這些行程排進去的？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -885,7 +885,7 @@
         {
           "id": "shen-r16-a-in",
           "title": "",
-          "body": "用行事曆，還是常常高估自己。\n對了，你會不會太照顧別人？",
+          "body": "用行事曆，還是常常高估自己。\n之前太忙忘記吃飯，朋友還念了我一頓。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -902,7 +902,7 @@
         {
           "id": "shen-r16-b-in",
           "title": "",
-          "body": "不會，妳也不用配合我。\n對了，你會不會太照顧別人？",
+          "body": "不會，妳也不用配合我。\n之前太忙忘記吃飯，朋友還念了我一頓。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -911,7 +911,7 @@
         {
           "id": "shen-r17-a-out",
           "title": "",
-          "body": "你會不會太照顧別人？",
+          "body": "你是不是很容易忙到忘記照顧自己？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -919,7 +919,7 @@
         {
           "id": "shen-r17-a-in",
           "title": "",
-          "body": "以前會，現在學著留點力氣給自己。\n對了，你想過畢業後做什麼？",
+          "body": "以前會，現在學著留點力氣給自己。\n系上最近在問大家畢業後的打算。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -936,7 +936,7 @@
         {
           "id": "shen-r17-b-in",
           "title": "",
-          "body": "收到，我今天有吃晚餐。\n對了，你想過畢業後做什麼？",
+          "body": "收到，我今天有吃晚餐。\n系上最近在問大家畢業後的打算。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -945,7 +945,7 @@
         {
           "id": "shen-r18-a-out",
           "title": "",
-          "body": "你想過畢業後做什麼？",
+          "body": "你有想過畢業後要做什麼嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -953,7 +953,7 @@
         {
           "id": "shen-r18-a-in",
           "title": "",
-          "body": "想做影像相關工作，還在摸索。\n對了，你家人支持你拍照嗎？",
+          "body": "想做影像相關工作，還在摸索。\n我跟家裡聊了聊以後想走影像工作的事。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -970,7 +970,7 @@
         {
           "id": "shen-r18-b-in",
           "title": "",
-          "body": "嗯，我也想多試幾種方向。\n對了，你家人支持你拍照嗎？",
+          "body": "嗯，我也想多試幾種方向。\n我跟家裡聊了聊以後想走影像工作的事。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -979,7 +979,7 @@
         {
           "id": "shen-r19-a-out",
           "title": "",
-          "body": "你家人支持你拍照嗎？",
+          "body": "那你家裡支持你拍照嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -987,7 +987,7 @@
         {
           "id": "shen-r19-a-in",
           "title": "",
-          "body": "有些擔心，但願意聽我說。\n對了，你會因為別人的期待改變嗎？",
+          "body": "有些擔心，但願意聽我說。\n有些人覺得我應該選比較穩定的路。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1004,7 +1004,7 @@
         {
           "id": "shen-r19-b-in",
           "title": "",
-          "body": "我知道，最後還是我負責。\n對了，你會因為別人的期待改變嗎？",
+          "body": "我知道，最後還是我負責。\n有些人覺得我應該選比較穩定的路。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1013,7 +1013,7 @@
         {
           "id": "shen-r20-a-out",
           "title": "",
-          "body": "你會因為別人的期待改變嗎？",
+          "body": "如果別人不看好，你會改變想法嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1021,7 +1021,7 @@
         {
           "id": "shen-r20-a-in",
           "title": "",
-          "body": "會參考，但不想失去自己的想法。\n對了，你現在是不是有點累？",
+          "body": "會參考，但不想失去自己的想法。\n我剛交完期中作業，終於可以喘口氣。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1038,7 +1038,7 @@
         {
           "id": "shen-r20-b-in",
           "title": "",
-          "body": "那我們這點倒挺像。\n對了，你現在是不是有點累？",
+          "body": "那我們這點倒挺像。\n我剛交完期中作業，終於可以喘口氣。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1047,7 +1047,7 @@
         {
           "id": "shen-r21-a-out",
           "title": "",
-          "body": "你現在是不是有點累？",
+          "body": "你是不是累壞了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1055,7 +1055,7 @@
         {
           "id": "shen-r21-a-in",
           "title": "",
-          "body": "是，剛交完期中作業。\n對了，你下次活動還會來？",
+          "body": "是，剛交完期中作業。\n下個月好像還有一場公開活動。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1072,7 +1072,7 @@
         {
           "id": "shen-r21-b-in",
           "title": "",
-          "body": "好，妳也別加班太晚。\n對了，你下次活動還會來？",
+          "body": "好，妳也別加班太晚。\n下個月好像還有一場公開活動。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1081,7 +1081,7 @@
         {
           "id": "shen-r22-a-out",
           "title": "",
-          "body": "你下次活動還會來？",
+          "body": "那你下次活動還會去嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1089,7 +1089,7 @@
         {
           "id": "shen-r22-a-in",
           "title": "",
-          "body": "如果課表允許，應該會。\n對了，你想跟我分享什麼？",
+          "body": "如果課表允許，應該會。\n剛才在路上看到很漂亮的夕陽，突然想分享。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1106,7 +1106,7 @@
         {
           "id": "shen-r22-b-in",
           "title": "",
-          "body": "沒關係，妳的時間比較重要。\n對了，你想跟我分享什麼？",
+          "body": "沒關係，妳的時間比較重要。\n剛才在路上看到很漂亮的夕陽，突然想分享。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1115,7 +1115,7 @@
         {
           "id": "shen-r23-a-out",
           "title": "",
-          "body": "你想跟我分享什麼？",
+          "body": "你剛剛拍到什麼了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1123,7 +1123,7 @@
         {
           "id": "shen-r23-a-in",
           "title": "",
-          "body": "今天拍到一片很好看的夕陽。\n對了，你對人都這麼熱心嗎？",
+          "body": "今天拍到一片很好看的夕陽。\n我發現自己跟妳聊天會比較放鬆。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1140,7 +1140,7 @@
         {
           "id": "shen-r23-b-in",
           "title": "",
-          "body": "好，那我先不吵妳。\n對了，你對人都這麼熱心嗎？",
+          "body": "好，那我先不吵妳。\n我發現自己跟妳聊天會比較放鬆。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1149,7 +1149,7 @@
         {
           "id": "shen-r24-a-out",
           "title": "",
-          "body": "你對人都這麼熱心嗎？",
+          "body": "你是不是對大家都這麼貼心？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1157,7 +1157,7 @@
         {
           "id": "shen-r24-a-in",
           "title": "",
-          "body": "我喜歡幫忙，但不會每個人都聊這麼久。\n對了，你會不會太快相信別人？",
+          "body": "我喜歡幫忙，但不會每個人都聊這麼久。\n不過我們確實還沒認識很久。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1174,7 +1174,7 @@
         {
           "id": "shen-r24-b-in",
           "title": "",
-          "body": "那我慢慢說清楚，不讓妳猜。\n對了，你會不會太快相信別人？",
+          "body": "那我慢慢說清楚，不讓妳猜。\n不過我們確實還沒認識很久。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1183,7 +1183,7 @@
         {
           "id": "shen-r25-a-out",
           "title": "",
-          "body": "你會不會太快相信別人？",
+          "body": "我們其實還不算很熟，對吧？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1191,7 +1191,7 @@
         {
           "id": "shen-r25-a-in",
           "title": "",
-          "body": "以前會，現在會觀察。\n對了，你有沒有想過一起喝咖啡？",
+          "body": "以前會，現在會觀察。\n有家咖啡店我一直想去，還沒找到時間。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1208,7 +1208,7 @@
         {
           "id": "shen-r25-b-in",
           "title": "",
-          "body": "同意，慢慢來比較好。\n對了，你有沒有想過一起喝咖啡？",
+          "body": "同意，慢慢來比較好。\n有家咖啡店我一直想去，還沒找到時間。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1217,7 +1217,7 @@
         {
           "id": "shen-r26-a-out",
           "title": "",
-          "body": "你有沒有想過一起喝咖啡？",
+          "body": "你這是在暗示要約我喝咖啡嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1225,7 +1225,7 @@
         {
           "id": "shen-r26-a-in",
           "title": "",
-          "body": "有，但我不想讓妳有壓力。\n對了，如果見面你會緊張嗎？",
+          "body": "有，但我不想讓妳有壓力。\n我突然想到，如果真的約出來聊天會不會尷尬。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1242,7 +1242,7 @@
         {
           "id": "shen-r26-b-in",
           "title": "",
-          "body": "好，等妳想約再說。\n對了，如果見面你會緊張嗎？",
+          "body": "好，等妳想約再說。\n我突然想到，如果真的約出來聊天會不會尷尬。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1251,7 +1251,7 @@
         {
           "id": "shen-r27-a-out",
           "title": "",
-          "body": "如果見面你會緊張嗎？",
+          "body": "如果真的見面，你會不會緊張？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1259,7 +1259,7 @@
         {
           "id": "shen-r27-a-in",
           "title": "",
-          "body": "會啊，我又不是完全不會緊張。\n對了，你希望我們怎麼相處？",
+          "body": "會啊，我又不是完全不會緊張。\n其實我覺得現在這樣慢慢聊天也不錯。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1276,7 +1276,7 @@
         {
           "id": "shen-r27-b-in",
           "title": "",
-          "body": "那至少不是我一個人尷尬。\n對了，你希望我們怎麼相處？",
+          "body": "那至少不是我一個人尷尬。\n其實我覺得現在這樣慢慢聊天也不錯。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1285,7 +1285,7 @@
         {
           "id": "shen-r28-a-out",
           "title": "",
-          "body": "你希望我們怎麼相處？",
+          "body": "你希望我們之後怎麼相處？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1293,7 +1293,7 @@
         {
           "id": "shen-r28-a-in",
           "title": "",
-          "body": "自然一點，彼此都有自己的生活。\n對了，你會等我慢慢想嗎？",
+          "body": "自然一點，彼此都有自己的生活。\n我不希望妳因為我而覺得需要做決定。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1310,7 +1310,7 @@
         {
           "id": "shen-r28-b-in",
           "title": "",
-          "body": "我會尊重，不用擔心。\n對了，你會等我慢慢想嗎？",
+          "body": "我會尊重，不用擔心。\n我不希望妳因為我而覺得需要做決定。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1319,7 +1319,7 @@
         {
           "id": "shen-r29-a-out",
           "title": "",
-          "body": "你會等我慢慢想嗎？",
+          "body": "我想慢慢來，你會介意嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1327,7 +1327,7 @@
         {
           "id": "shen-r29-a-in",
           "title": "",
-          "body": "我不會催妳給答案。\n對了，那我們先這樣保持聯絡？",
+          "body": "我不會催妳給答案。\n今天就先這樣吧，妳明天還要上班。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1344,7 +1344,7 @@
         {
           "id": "shen-r29-b-in",
           "title": "",
-          "body": "好，先把日子過好。\n對了，那我們先這樣保持聯絡？",
+          "body": "好，先把日子過好。\n今天就先這樣吧，妳明天還要上班。",
           "senderId": "shenyanzhou",
           "time": "22:23",
           "hidden": true,
@@ -1353,7 +1353,7 @@
         {
           "id": "shen-r30-a-out",
           "title": "",
-          "body": "那我們先這樣保持聯絡？",
+          "body": "好，那我們有空再聊？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1928,7 +1928,7 @@
         {
           "id": "pei-r4-a-out",
           "title": "",
-          "body": "明天的會議你準備好了嗎？",
+          "body": "明天會議的資料你都準備好了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1936,7 +1936,7 @@
         {
           "id": "pei-r4-a-in",
           "title": "",
-          "body": "資料整理好了，還差最後一輪校對。\n對了，你每次都這麼仔細？",
+          "body": "資料整理好了，還差最後一輪校對。\n剛剛又發現一個數字填錯，還好還沒送出。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -1953,7 +1953,7 @@
         {
           "id": "pei-r4-b-in",
           "title": "",
-          "body": "需要我核對的部分直接標給我。\n對了，你每次都這麼仔細？",
+          "body": "需要我核對的部分直接標給我。\n剛剛又發現一個數字填錯，還好還沒送出。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -1962,7 +1962,7 @@
         {
           "id": "pei-r5-a-out",
           "title": "",
-          "body": "你每次都這麼仔細？",
+          "body": "你怎麼連這種細節都注意得到？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -1970,7 +1970,7 @@
         {
           "id": "pei-r5-a-in",
           "title": "",
-          "body": "不想讓小錯誤變成大問題。\n對了，午休你都去哪？",
+          "body": "不想讓小錯誤變成大問題。\n午休總算到了，今天上午的會議有點長。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -1987,7 +1987,7 @@
         {
           "id": "pei-r5-b-in",
           "title": "",
-          "body": "對事不對人。\n對了，午休你都去哪？",
+          "body": "對事不對人。\n午休總算到了，今天上午的會議有點長。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -1996,7 +1996,7 @@
         {
           "id": "pei-r6-a-out",
           "title": "",
-          "body": "午休你都去哪？",
+          "body": "你午休通常去哪吃？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2004,7 +2004,7 @@
         {
           "id": "pei-r6-a-in",
           "title": "",
-          "body": "通常去樓下買咖啡。\n對了，你會加班到很晚嗎？",
+          "body": "通常去樓下買咖啡。\n今天客戶又臨時改需求，恐怕得晚點走。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2021,7 +2021,7 @@
         {
           "id": "pei-r6-b-in",
           "title": "",
-          "body": "可以，午休本來就是自己的時間。\n對了，你會加班到很晚嗎？",
+          "body": "可以，午休本來就是自己的時間。\n今天客戶又臨時改需求，恐怕得晚點走。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2030,7 +2030,7 @@
         {
           "id": "pei-r7-a-out",
           "title": "",
-          "body": "你會加班到很晚嗎？",
+          "body": "你今天是不是又得加班？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2038,7 +2038,7 @@
         {
           "id": "pei-r7-a-in",
           "title": "",
-          "body": "偶爾，但我不鼓勵常態加班。\n對了，剛剛主管那句話你怎麼看？",
+          "body": "偶爾，但我不鼓勵常態加班。\n剛才主管在會議上的說法，我覺得需要釐清。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2055,7 +2055,7 @@
         {
           "id": "pei-r7-b-in",
           "title": "",
-          "body": "有需要交接的明天處理。\n對了，剛剛主管那句話你怎麼看？",
+          "body": "有需要交接的明天處理。\n剛才主管在會議上的說法，我覺得需要釐清。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2064,7 +2064,7 @@
         {
           "id": "pei-r8-a-out",
           "title": "",
-          "body": "剛剛主管那句話你怎麼看？",
+          "body": "剛剛主管那句話，你怎麼理解？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2072,7 +2072,7 @@
         {
           "id": "pei-r8-a-in",
           "title": "",
-          "body": "要求不夠明確，應該再確認範圍。\n對了，你會幫同事擋工作嗎？",
+          "body": "要求不夠明確，應該再確認範圍。\n這次分工有點模糊，我打算先把責任範圍寫清楚。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2089,7 +2089,7 @@
         {
           "id": "pei-r8-b-in",
           "title": "",
-          "body": "那就等明天當面談。\n對了，你會幫同事擋工作嗎？",
+          "body": "那就等明天當面談。\n這次分工有點模糊，我打算先把責任範圍寫清楚。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2098,7 +2098,7 @@
         {
           "id": "pei-r9-a-out",
           "title": "",
-          "body": "你會幫同事擋工作嗎？",
+          "body": "這次的分工你覺得合理嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2106,7 +2106,7 @@
         {
           "id": "pei-r9-a-in",
           "title": "",
-          "body": "會釐清分工，不會替誰做決定。\n對了，你是不是不太喜歡閒聊？",
+          "body": "會釐清分工，不會替誰做決定。\n工作訊息終於處理完，現在不是上班時間了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2123,7 +2123,7 @@
         {
           "id": "pei-r9-b-in",
           "title": "",
-          "body": "好，我尊重妳的處理方式。\n對了，你是不是不太喜歡閒聊？",
+          "body": "好，我尊重妳的處理方式。\n工作訊息終於處理完，現在不是上班時間了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2132,7 +2132,7 @@
         {
           "id": "pei-r10-a-out",
           "title": "",
-          "body": "你是不是不太喜歡閒聊？",
+          "body": "你下班後也這麼不愛聊天？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2140,7 +2140,7 @@
         {
           "id": "pei-r10-a-in",
           "title": "",
-          "body": "看場合。上班時我比較專心。\n對了，你休假都做什麼？",
+          "body": "看場合。上班時我比較專心。\n週末我想把手機的工作通知關掉。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2157,7 +2157,7 @@
         {
           "id": "pei-r10-b-in",
           "title": "",
-          "body": "嗯，所以我現在有時間聽。\n對了，你休假都做什麼？",
+          "body": "嗯，所以我現在有時間聽。\n週末我想把手機的工作通知關掉。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2166,7 +2166,7 @@
         {
           "id": "pei-r11-a-out",
           "title": "",
-          "body": "你休假都做什麼？",
+          "body": "你休假通常做什麼？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2174,7 +2174,7 @@
         {
           "id": "pei-r11-a-in",
           "title": "",
-          "body": "看書、走路，偶爾看電影。\n對了，你最近壓力大嗎？",
+          "body": "看書、走路，偶爾看電影。\n這個專案的時程確實讓人有壓力。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2191,7 +2191,7 @@
         {
           "id": "pei-r11-b-in",
           "title": "",
-          "body": "合理，工作訊息我不會傳。\n對了，你最近壓力大嗎？",
+          "body": "合理，工作訊息我不會傳。\n這個專案的時程確實讓人有壓力。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2200,7 +2200,7 @@
         {
           "id": "pei-r12-a-out",
           "title": "",
-          "body": "你最近壓力大嗎？",
+          "body": "你最近壓力是不是很大？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2208,7 +2208,7 @@
         {
           "id": "pei-r12-a-in",
           "title": "",
-          "body": "專案時程有點緊。\n對了，你有沒有跟主管意見不合過？",
+          "body": "專案時程有點緊。\n我剛跟主管討論過那份報表，意見不太一致。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2225,7 +2225,7 @@
         {
           "id": "pei-r12-b-in",
           "title": "",
-          "body": "表情少不代表沒壓力。\n對了，你有沒有跟主管意見不合過？",
+          "body": "表情少不代表沒壓力。\n我剛跟主管討論過那份報表，意見不太一致。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2234,7 +2234,7 @@
         {
           "id": "pei-r13-a-out",
           "title": "",
-          "body": "你有沒有跟主管意見不合過？",
+          "body": "你跟主管意見不同時會怎麼處理？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2242,7 +2242,7 @@
         {
           "id": "pei-r13-a-in",
           "title": "",
-          "body": "有，我會提出依據。\n對了，你剛剛是不是打斷我了？",
+          "body": "有，我會提出依據。\n剛剛會議我說話太快，可能打斷妳了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2259,7 +2259,7 @@
         {
           "id": "pei-r13-b-in",
           "title": "",
-          "body": "我知道，下次會等妳說完。\n對了，你剛剛是不是打斷我了？",
+          "body": "我知道，下次會等妳說完。\n剛剛會議我說話太快，可能打斷妳了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2268,7 +2268,7 @@
         {
           "id": "pei-r14-a-out",
           "title": "",
-          "body": "你剛剛是不是打斷我了？",
+          "body": "剛剛你是不是打斷我了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2276,7 +2276,7 @@
         {
           "id": "pei-r14-a-in",
           "title": "",
-          "body": "是，我太急著補充。抱歉。\n對了，你怎麼看團隊合作？",
+          "body": "是，我太急著補充。抱歉。\n我把交接清單整理好了，晚點放共享資料夾。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2293,7 +2293,7 @@
         {
           "id": "pei-r14-b-in",
           "title": "",
-          "body": "應該的，這不是人情。\n對了，你怎麼看團隊合作？",
+          "body": "應該的，這不是人情。\n我把交接清單整理好了，晚點放共享資料夾。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2302,7 +2302,7 @@
         {
           "id": "pei-r15-a-out",
           "title": "",
-          "body": "你怎麼看團隊合作？",
+          "body": "你覺得這次交接還有哪裡要改？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2310,7 +2310,7 @@
         {
           "id": "pei-r15-a-in",
           "title": "",
-          "body": "分工清楚，遇到問題能直接說。\n對了，你會記得同事的習慣嗎？",
+          "body": "分工清楚，遇到問題能直接說。\n合作久了，有些工作習慣自然會記得。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2327,7 +2327,7 @@
         {
           "id": "pei-r15-b-in",
           "title": "",
-          "body": "我下午整理一份給妳。\n對了，你會記得同事的習慣嗎？",
+          "body": "我下午整理一份給妳。\n合作久了，有些工作習慣自然會記得。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2336,7 +2336,7 @@
         {
           "id": "pei-r16-a-out",
           "title": "",
-          "body": "你會記得同事的習慣嗎？",
+          "body": "你連我的工作習慣都記得？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2344,7 +2344,7 @@
         {
           "id": "pei-r16-a-in",
           "title": "",
-          "body": "跟合作有關的會記得。\n對了，你是不是很難親近？",
+          "body": "跟合作有關的會記得。\n我知道自己在公司不太會主動聊天。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2361,7 +2361,7 @@
         {
           "id": "pei-r16-b-in",
           "title": "",
-          "body": "我沒有那個打算。\n對了，你是不是很難親近？",
+          "body": "我沒有那個打算。\n我知道自己在公司不太會主動聊天。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2370,7 +2370,7 @@
         {
           "id": "pei-r17-a-out",
           "title": "",
-          "body": "你是不是很難親近？",
+          "body": "你是不是本來就比較慢熱？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2378,7 +2378,7 @@
         {
           "id": "pei-r17-a-in",
           "title": "",
-          "body": "可能是我表達得不夠清楚。\n對了，你有沒有在工作中犯過錯？",
+          "body": "可能是我表達得不夠清楚。\n今天看到一個錯誤，讓我想起以前犯過的失誤。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2395,7 +2395,7 @@
         {
           "id": "pei-r17-b-in",
           "title": "",
-          "body": "不是勉強，我只是比較慢熱。\n對了，你有沒有在工作中犯過錯？",
+          "body": "不是勉強，我只是比較慢熱。\n今天看到一個錯誤，讓我想起以前犯過的失誤。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2404,7 +2404,7 @@
         {
           "id": "pei-r18-a-out",
           "title": "",
-          "body": "你有沒有在工作中犯過錯？",
+          "body": "你以前也犯過這種錯嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2412,7 +2412,7 @@
         {
           "id": "pei-r18-a-in",
           "title": "",
-          "body": "有，而且代價不小。\n對了，你會因為失誤討厭同事嗎？",
+          "body": "有，而且代價不小。\n我覺得犯錯跟隱瞞是兩回事。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2429,7 +2429,7 @@
         {
           "id": "pei-r18-b-in",
           "title": "",
-          "body": "先承認，再把影響降到最低。\n對了，你會因為失誤討厭同事嗎？",
+          "body": "先承認，再把影響降到最低。\n我覺得犯錯跟隱瞞是兩回事。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2438,7 +2438,7 @@
         {
           "id": "pei-r19-a-out",
           "title": "",
-          "body": "你會因為失誤討厭同事嗎？",
+          "body": "如果同事犯錯，你會很介意嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2446,7 +2446,7 @@
         {
           "id": "pei-r19-a-in",
           "title": "",
-          "body": "不會，除非對方一直隱瞞。\n對了，你今天怎麼還在公司？",
+          "body": "不會，除非對方一直隱瞞。\n客戶的最後一封信還沒回，我暫時走不了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2463,7 +2463,7 @@
         {
           "id": "pei-r19-b-in",
           "title": "",
-          "body": "我也這麼認為。\n對了，你今天怎麼還在公司？",
+          "body": "我也這麼認為。\n客戶的最後一封信還沒回，我暫時走不了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2472,7 +2472,7 @@
         {
           "id": "pei-r20-a-out",
           "title": "",
-          "body": "你今天怎麼還在公司？",
+          "body": "你怎麼還沒下班？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2480,7 +2480,7 @@
         {
           "id": "pei-r20-a-in",
           "title": "",
-          "body": "等一份客戶回覆。\n對了，你是不是有點累？",
+          "body": "等一份客戶回覆。\n今天連開四場會，腦袋有點轉不動。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2497,7 +2497,7 @@
         {
           "id": "pei-r20-b-in",
           "title": "",
-          "body": "知道，等確認完就走。\n對了，你是不是有點累？",
+          "body": "知道，等確認完就走。\n今天連開四場會，腦袋有點轉不動。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2506,7 +2506,7 @@
         {
           "id": "pei-r21-a-out",
           "title": "",
-          "body": "你是不是有點累？",
+          "body": "你今天真的累了吧？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2514,7 +2514,7 @@
         {
           "id": "pei-r21-a-in",
           "title": "",
-          "body": "有，今天會議太多。\n對了，你喜歡什麼類型的書？",
+          "body": "有，今天會議太多。\n桌上那本推理小說，我已經看一半了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2531,7 +2531,7 @@
         {
           "id": "pei-r21-b-in",
           "title": "",
-          "body": "好，換個輕鬆的話題。\n對了，你喜歡什麼類型的書？",
+          "body": "好，換個輕鬆的話題。\n桌上那本推理小說，我已經看一半了。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2540,7 +2540,7 @@
         {
           "id": "pei-r22-a-out",
           "title": "",
-          "body": "你喜歡什麼類型的書？",
+          "body": "你桌上那本是什麼書？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2548,7 +2548,7 @@
         {
           "id": "pei-r22-a-in",
           "title": "",
-          "body": "推理，最好線索公平。\n對了，你有沒有想過換工作？",
+          "body": "推理，最好線索公平。\n最近同事在聊職涯規劃，我也想了一下。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2565,7 +2565,7 @@
         {
           "id": "pei-r22-b-in",
           "title": "",
-          "body": "沒關係，不需要有相同嗜好。\n對了，你有沒有想過換工作？",
+          "body": "沒關係，不需要有相同嗜好。\n最近同事在聊職涯規劃，我也想了一下。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2574,7 +2574,7 @@
         {
           "id": "pei-r23-a-out",
           "title": "",
-          "body": "你有沒有想過換工作？",
+          "body": "你有想過換工作嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2582,7 +2582,7 @@
         {
           "id": "pei-r23-a-in",
           "title": "",
-          "body": "想過，但會先評估。\n對了，你會把私人情緒帶進工作嗎？",
+          "body": "想過，但會先評估。\n工作再忙，也不應該把情緒丟給別人。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2599,7 +2599,7 @@
         {
           "id": "pei-r23-b-in",
           "title": "",
-          "body": "如果妳想討論，我可以聽。\n對了，你會把私人情緒帶進工作嗎？",
+          "body": "如果妳想討論，我可以聽。\n工作再忙，也不應該把情緒丟給別人。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2608,7 +2608,7 @@
         {
           "id": "pei-r24-a-out",
           "title": "",
-          "body": "你會把私人情緒帶進工作嗎？",
+          "body": "你會怎麼處理工作上的情緒？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2616,7 +2616,7 @@
         {
           "id": "pei-r24-a-in",
           "title": "",
-          "body": "會有情緒，但不該拿同事出氣。\n對了，你會信任工作上的人嗎？",
+          "body": "會有情緒，但不該拿同事出氣。\n我們合作的默契比一開始好很多。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2633,7 +2633,7 @@
         {
           "id": "pei-r24-b-in",
           "title": "",
-          "body": "妳有權拒絕。\n對了，你會信任工作上的人嗎？",
+          "body": "妳有權拒絕。\n我們合作的默契比一開始好很多。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2642,7 +2642,7 @@
         {
           "id": "pei-r25-a-out",
           "title": "",
-          "body": "你會信任工作上的人嗎？",
+          "body": "你覺得我們現在合作得還行嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2650,7 +2650,7 @@
         {
           "id": "pei-r25-a-in",
           "title": "",
-          "body": "信任靠合作累積，不是口頭保證。\n對了，你有沒有想過下班一起吃飯？",
+          "body": "信任靠合作累積，不是口頭保證。\n今天下班後我剛好有空，不過這不是公事。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2667,7 +2667,7 @@
         {
           "id": "pei-r25-b-in",
           "title": "",
-          "body": "可以這麼說。\n對了，你有沒有想過下班一起吃飯？",
+          "body": "可以這麼說。\n今天下班後我剛好有空，不過這不是公事。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2676,7 +2676,7 @@
         {
           "id": "pei-r26-a-out",
           "title": "",
-          "body": "你有沒有想過下班一起吃飯？",
+          "body": "等等，你是在約我下班吃飯？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2684,7 +2684,7 @@
         {
           "id": "pei-r26-a-in",
           "title": "",
-          "body": "有，但不是工作邀約。\n對了，如果同事問起我們呢？",
+          "body": "有，但不是工作邀約。\n如果我們在公司以外碰面，可能會被同事看到。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2701,7 +2701,7 @@
         {
           "id": "pei-r26-b-in",
           "title": "",
-          "body": "理解，我不會在公司提。\n對了，如果同事問起我們呢？",
+          "body": "理解，我不會在公司提。\n如果我們在公司以外碰面，可能會被同事看到。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2710,7 +2710,7 @@
         {
           "id": "pei-r27-a-out",
           "title": "",
-          "body": "如果同事問起我們呢？",
+          "body": "你不怕同事誤會嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2718,7 +2718,7 @@
         {
           "id": "pei-r27-a-in",
           "title": "",
-          "body": "我會尊重妳的說法。\n對了，你對我有什麼不同看法？",
+          "body": "我會尊重妳的說法。\n我發現自己對妳的工作方式有了新的理解。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2735,7 +2735,7 @@
         {
           "id": "pei-r27-b-in",
           "title": "",
-          "body": "我也會把界線守好。\n對了，你對我有什麼不同看法？",
+          "body": "我也會把界線守好。\n我發現自己對妳的工作方式有了新的理解。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2744,7 +2744,7 @@
         {
           "id": "pei-r28-a-out",
           "title": "",
-          "body": "你對我有什麼不同看法？",
+          "body": "你現在對我的看法有改變嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2752,7 +2752,7 @@
         {
           "id": "pei-r28-a-in",
           "title": "",
-          "body": "妳處理問題比我最初想的更有彈性。\n對了，你會急著定義關係嗎？",
+          "body": "妳處理問題比我最初想的更有彈性。\n但我們畢竟還是同事，這件事得想清楚。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2769,7 +2769,7 @@
         {
           "id": "pei-r28-b-in",
           "title": "",
-          "body": "抱歉，這句說得像考核。\n對了，你會急著定義關係嗎？",
+          "body": "抱歉，這句說得像考核。\n但我們畢竟還是同事，這件事得想清楚。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2778,7 +2778,7 @@
         {
           "id": "pei-r29-a-out",
           "title": "",
-          "body": "你會急著定義關係嗎？",
+          "body": "你會想現在就把關係說清楚嗎？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -2786,7 +2786,7 @@
         {
           "id": "pei-r29-a-in",
           "title": "",
-          "body": "不會，尤其我們還是同事。\n對了，那我們先好好相處？",
+          "body": "不會，尤其我們還是同事。\n明天還要一起開會，先把工作做好吧。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2803,7 +2803,7 @@
         {
           "id": "pei-r29-b-in",
           "title": "",
-          "body": "可以，我不會越界。\n對了，那我們先好好相處？",
+          "body": "可以，我不會越界。\n明天還要一起開會，先把工作做好吧。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -2812,7 +2812,7 @@
         {
           "id": "pei-r30-a-out",
           "title": "",
-          "body": "那我們先好好相處？",
+          "body": "那明天公司見？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3387,7 +3387,7 @@
         {
           "id": "qi-r4-a-out",
           "title": "",
-          "body": "你今天不用忙嗎？",
+          "body": "你今天居然有空？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3395,7 +3395,7 @@
         {
           "id": "qi-r4-a-in",
           "title": "",
-          "body": "剛從車行出來，車送去保養。\n對了，你上次開那台車是你的？",
+          "body": "剛從車行出來，車送去保養。\n那台車保養完了，車行的人還笑我停車技術。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3412,7 +3412,7 @@
         {
           "id": "qi-r4-b-in",
           "title": "",
-          "body": "喂，我也有自己的事好嗎。\n對了，你上次開那台車是你的？",
+          "body": "喂，我也有自己的事好嗎。\n那台車保養完了，車行的人還笑我停車技術。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3421,7 +3421,7 @@
         {
           "id": "qi-r5-a-out",
           "title": "",
-          "body": "你上次開那台車是你的？",
+          "body": "所以那台車真的是你的？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3429,7 +3429,7 @@
         {
           "id": "qi-r5-a-in",
           "title": "",
-          "body": "對，家裡給的，別用那種眼神看我。\n對了，你平常都這麼高調？",
+          "body": "對，家裡給的，別用那種眼神看我。\n朋友說我出場太高調，叫我收斂一點。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3446,7 +3446,7 @@
         {
           "id": "qi-r5-b-in",
           "title": "",
-          "body": "那最好，我也不是來炫耀的。\n對了，你平常都這麼高調？",
+          "body": "那最好，我也不是來炫耀的。\n朋友說我出場太高調，叫我收斂一點。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3455,7 +3455,7 @@
         {
           "id": "qi-r6-a-out",
           "title": "",
-          "body": "你平常都這麼高調？",
+          "body": "你平常都這麼招搖喔？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3463,7 +3463,7 @@
         {
           "id": "qi-r6-a-in",
           "title": "",
-          "body": "看心情，反正我不太會裝乖。\n對了，你家裡是不是很有錢？",
+          "body": "看心情，反正我不太會裝乖。\n有人看到我的車就開始問家裡的事。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3480,7 +3480,7 @@
         {
           "id": "qi-r6-b-in",
           "title": "",
-          "body": "行，我可以小聲點。\n對了，你家裡是不是很有錢？",
+          "body": "行，我可以小聲點。\n有人看到我的車就開始問家裡的事。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3489,7 +3489,7 @@
         {
           "id": "qi-r7-a-out",
           "title": "",
-          "body": "你家裡是不是很有錢？",
+          "body": "你家裡應該很有錢吧？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3497,7 +3497,7 @@
         {
           "id": "qi-r7-a-in",
           "title": "",
-          "body": "算吧，但那不是我自己賺的。\n對了，你跟家裡關係好嗎？",
+          "body": "算吧，但那不是我自己賺的。\n我爸剛又打電話問我去哪了。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3514,7 +3514,7 @@
         {
           "id": "qi-r7-b-in",
           "title": "",
-          "body": "不然要我假裝白手起家？\n對了，你跟家裡關係好嗎？",
+          "body": "不然要我假裝白手起家？\n我爸剛又打電話問我去哪了。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3523,7 +3523,7 @@
         {
           "id": "qi-r8-a-out",
           "title": "",
-          "body": "你跟家裡關係好嗎？",
+          "body": "家裡又在管你了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3531,7 +3531,7 @@
         {
           "id": "qi-r8-a-in",
           "title": "",
-          "body": "有好有壞，他們很愛管。\n對了，你有自己的工作嗎？",
+          "body": "有好有壞，他們很愛管。\n最近跟朋友弄一個活動合作案，不是純玩。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3548,7 +3548,7 @@
         {
           "id": "qi-r8-b-in",
           "title": "",
-          "body": "那就不聊，換題。\n對了，你有自己的工作嗎？",
+          "body": "那就不聊，換題。\n最近跟朋友弄一個活動合作案，不是純玩。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3557,7 +3557,7 @@
         {
           "id": "qi-r9-a-out",
           "title": "",
-          "body": "你有自己的工作嗎？",
+          "body": "所以你現在也有認真在做事？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3565,7 +3565,7 @@
         {
           "id": "qi-r9-a-in",
           "title": "",
-          "body": "跟朋友弄活動企劃，還在學。\n對了，你做活動會遇到麻煩嗎？",
+          "body": "跟朋友弄活動企劃，還在學。\n贊助商昨天突然改條件，煩死。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3582,7 +3582,7 @@
         {
           "id": "qi-r9-b-in",
           "title": "",
-          "body": "有啊，別把我當只會刷卡的人。\n對了，你做活動會遇到麻煩嗎？",
+          "body": "有啊，別把我當只會刷卡的人。\n贊助商昨天突然改條件，煩死。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3591,7 +3591,7 @@
         {
           "id": "qi-r10-a-out",
           "title": "",
-          "body": "你做活動會遇到麻煩嗎？",
+          "body": "你們合作案遇到什麼問題？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3599,7 +3599,7 @@
         {
           "id": "qi-r10-a-in",
           "title": "",
-          "body": "遇到過，贊助商臨時反悔。\n對了，你是不是很容易發火？",
+          "body": "遇到過，贊助商臨時反悔。\n剛才差點跟合作方吵起來，還好忍住了。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3616,7 +3616,7 @@
         {
           "id": "qi-r10-b-in",
           "title": "",
-          "body": "自己去談，總不能只會生氣。\n對了，你是不是很容易發火？",
+          "body": "自己去談，總不能只會生氣。\n剛才差點跟合作方吵起來，還好忍住了。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3625,7 +3625,7 @@
         {
           "id": "qi-r11-a-out",
           "title": "",
-          "body": "你是不是很容易發火？",
+          "body": "你剛剛是不是又想跟人吵架？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3633,7 +3633,7 @@
         {
           "id": "qi-r11-a-in",
           "title": "",
-          "body": "會不爽，但不代表可以亂罵人。\n對了，你平常都跟誰出去玩？",
+          "body": "會不爽，但不代表可以亂罵人。\n晚上朋友又揪我出去，但我有點懶。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3650,7 +3650,7 @@
         {
           "id": "qi-r11-b-in",
           "title": "",
-          "body": "嗯，那次我道歉。\n對了，你平常都跟誰出去玩？",
+          "body": "嗯，那次我道歉。\n晚上朋友又揪我出去，但我有點懶。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3659,7 +3659,7 @@
         {
           "id": "qi-r12-a-out",
           "title": "",
-          "body": "你平常都跟誰出去玩？",
+          "body": "你朋友平常都揪你去哪？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3667,7 +3667,7 @@
         {
           "id": "qi-r12-a-in",
           "title": "",
-          "body": "一群從小認識的朋友。\n對了，你會去夜店嗎？",
+          "body": "一群從小認識的朋友。\n他們說要去很吵的地方，我還在想。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3684,7 +3684,7 @@
         {
           "id": "qi-r12-b-in",
           "title": "",
-          "body": "沒叫妳一定要去。\n對了，你會去夜店嗎？",
+          "body": "沒叫妳一定要去。\n他們說要去很吵的地方，我還在想。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3693,7 +3693,7 @@
         {
           "id": "qi-r13-a-out",
           "title": "",
-          "body": "你會去夜店嗎？",
+          "body": "你真的喜歡那麼吵的地方？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3701,7 +3701,7 @@
         {
           "id": "qi-r13-a-in",
           "title": "",
-          "body": "偶爾，但我不會拖人去。\n對了，你會在意別人怎麼看你？",
+          "body": "偶爾，但我不會拖人去。\n我有時候講話確實太欠揍。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3718,7 +3718,7 @@
         {
           "id": "qi-r13-b-in",
           "title": "",
-          "body": "行，安靜也不錯。\n對了，你會在意別人怎麼看你？",
+          "body": "行，安靜也不錯。\n我有時候講話確實太欠揍。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3727,7 +3727,7 @@
         {
           "id": "qi-r14-a-out",
           "title": "",
-          "body": "你會在意別人怎麼看你？",
+          "body": "你也知道自己講話很欠揍喔？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3735,7 +3735,7 @@
         {
           "id": "qi-r14-a-in",
           "title": "",
-          "body": "會一點，但懶得每句都解釋。\n對了，你為什麼會跟我聊天？",
+          "body": "會一點，但懶得每句都解釋。\n不過妳上次罵我擋路，我倒是記得很清楚。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3752,7 +3752,7 @@
         {
           "id": "qi-r14-b-in",
           "title": "",
-          "body": "哈哈，這句我聽習慣了。\n對了，你為什麼會跟我聊天？",
+          "body": "哈哈，這句我聽習慣了。\n不過妳上次罵我擋路，我倒是記得很清楚。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3761,7 +3761,7 @@
         {
           "id": "qi-r15-a-out",
           "title": "",
-          "body": "你為什麼會跟我聊天？",
+          "body": "所以你幹嘛一直找我聊天？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3769,7 +3769,7 @@
         {
           "id": "qi-r15-a-in",
           "title": "",
-          "body": "因為妳沒因為我的車就客氣。\n對了，你是不是常常闖禍？",
+          "body": "因為妳沒因為我的車就客氣。\n以前我真的闖過不少禍，現在不想再那樣。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3786,7 +3786,7 @@
         {
           "id": "qi-r15-b-in",
           "title": "",
-          "body": "我知道，妳罵得有理。\n對了，你是不是常常闖禍？",
+          "body": "我知道，妳罵得有理。\n以前我真的闖過不少禍，現在不想再那樣。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3795,7 +3795,7 @@
         {
           "id": "qi-r16-a-out",
           "title": "",
-          "body": "你是不是常常闖禍？",
+          "body": "你以前是不是常常闖禍？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3803,7 +3803,7 @@
         {
           "id": "qi-r16-a-in",
           "title": "",
-          "body": "以前是，現在會先想後果。\n對了，你會主動道歉嗎？",
+          "body": "以前是，現在會先想後果。\n上次那件事我有反省，別一副不信的樣子。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3820,7 +3820,7 @@
         {
           "id": "qi-r16-b-in",
           "title": "",
-          "body": "不會叫妳收拾，那是我的事。\n對了，你會主動道歉嗎？",
+          "body": "不會叫妳收拾，那是我的事。\n上次那件事我有反省，別一副不信的樣子。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3829,7 +3829,7 @@
         {
           "id": "qi-r17-a-out",
           "title": "",
-          "body": "你會主動道歉嗎？",
+          "body": "你這次倒是有認真道歉。",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3837,7 +3837,7 @@
         {
           "id": "qi-r17-a-in",
           "title": "",
-          "body": "該道歉就道歉，嘴硬沒用。\n對了，你最近在忙什麼？",
+          "body": "該道歉就道歉，嘴硬沒用。\n我最近忙著談一場車展的活動合作。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3854,7 +3854,7 @@
         {
           "id": "qi-r17-b-in",
           "title": "",
-          "body": "收到，這次真的記住。\n對了，你最近在忙什麼？",
+          "body": "收到，這次真的記住。\n我最近忙著談一場車展的活動合作。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3863,7 +3863,7 @@
         {
           "id": "qi-r18-a-out",
           "title": "",
-          "body": "你最近在忙什麼？",
+          "body": "你最近在忙的就是那個合作案？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3871,7 +3871,7 @@
         {
           "id": "qi-r18-a-in",
           "title": "",
-          "body": "跟朋友談一個車展合作。\n對了，你對那個合作認真嗎？",
+          "body": "跟朋友談一個車展合作。\n這次我想自己把案子談成，不靠家裡。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3888,7 +3888,7 @@
         {
           "id": "qi-r18-b-in",
           "title": "",
-          "body": "欸，終於有人不笑我了。\n對了，你對那個合作認真嗎？",
+          "body": "欸，終於有人不笑我了。\n這次我想自己把案子談成，不靠家裡。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3897,7 +3897,7 @@
         {
           "id": "qi-r19-a-out",
           "title": "",
-          "body": "你對那個合作認真嗎？",
+          "body": "這次真的想靠自己談成？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3905,7 +3905,7 @@
         {
           "id": "qi-r19-a-in",
           "title": "",
-          "body": "認真，這次我想自己談成。\n對了，你是不是有點緊張？",
+          "body": "認真，這次我想自己談成。\n明天就要跟合作方正式談，說不緊張是假的。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3922,7 +3922,7 @@
         {
           "id": "qi-r19-b-in",
           "title": "",
-          "body": "我知道，所以我沒找家裡幫。\n對了，你是不是有點緊張？",
+          "body": "我知道，所以我沒找家裡幫。\n明天就要跟合作方正式談，說不緊張是假的。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3939,7 +3939,7 @@
         {
           "id": "qi-r20-a-in",
           "title": "",
-          "body": "有，第一次自己扛整個案子。\n對了，你會找朋友幫忙嗎？",
+          "body": "有，第一次自己扛整個案子。\n我朋友一直說要幫我出面，我沒答應。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3956,7 +3956,7 @@
         {
           "id": "qi-r20-b-in",
           "title": "",
-          "body": "廢話，我又不是鋼鐵做的。\n對了，你會找朋友幫忙嗎？",
+          "body": "廢話，我又不是鋼鐵做的。\n我朋友一直說要幫我出面，我沒答應。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3965,7 +3965,7 @@
         {
           "id": "qi-r21-a-out",
           "title": "",
-          "body": "你會找朋友幫忙嗎？",
+          "body": "朋友想幫你，你怎麼不答應？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -3973,7 +3973,7 @@
         {
           "id": "qi-r21-a-in",
           "title": "",
-          "body": "會問意見，但決定自己做。\n對了，你今天怎麼這麼安靜？",
+          "body": "會問意見，但決定自己做。\n今天合作方還沒回訊息，等得有夠煩。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -3990,7 +3990,7 @@
         {
           "id": "qi-r21-b-in",
           "title": "",
-          "body": "沒要妳幫，我只是想講。\n對了，你今天怎麼這麼安靜？",
+          "body": "沒要妳幫，我只是想講。\n今天合作方還沒回訊息，等得有夠煩。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4007,7 +4007,7 @@
         {
           "id": "qi-r22-a-in",
           "title": "",
-          "body": "合作方還沒回覆，煩。\n對了，結果出來了嗎？",
+          "body": "合作方還沒回覆，煩。\n欸，對方終於回了，合作有機會成。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4024,7 +4024,7 @@
         {
           "id": "qi-r22-b-in",
           "title": "",
-          "body": "嗯，晚點再找妳。\n對了，結果出來了嗎？",
+          "body": "嗯，晚點再找妳。\n欸，對方終於回了，合作有機會成。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4033,7 +4033,7 @@
         {
           "id": "qi-r23-a-out",
           "title": "",
-          "body": "結果出來了嗎？",
+          "body": "所以合作有結果了？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4041,7 +4041,7 @@
         {
           "id": "qi-r23-a-in",
           "title": "",
-          "body": "成了，但條件還要再談。\n對了，你會怎麼慶祝？",
+          "body": "成了，但條件還要再談。\n朋友說談成要辦一場大的慶祝。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4058,7 +4058,7 @@
         {
           "id": "qi-r23-b-in",
           "title": "",
-          "body": "……謝啦，這句我收下。\n對了，你會怎麼慶祝？",
+          "body": "……謝啦，這句我收下。\n朋友說談成要辦一場大的慶祝。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4067,7 +4067,7 @@
         {
           "id": "qi-r24-a-out",
           "title": "",
-          "body": "你會怎麼慶祝？",
+          "body": "你想怎麼慶祝？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4075,7 +4075,7 @@
         {
           "id": "qi-r24-a-in",
           "title": "",
-          "body": "想找朋友吃飯，別太誇張。\n對了，你會不會因為有錢就看不起人？",
+          "body": "想找朋友吃飯，別太誇張。\n我最討厭有人覺得有錢就能替別人做主。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4092,7 +4092,7 @@
         {
           "id": "qi-r24-b-in",
           "title": "",
-          "body": "偶爾也想低調一次，不行？\n對了，你會不會因為有錢就看不起人？",
+          "body": "偶爾也想低調一次，不行？\n我最討厭有人覺得有錢就能替別人做主。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4101,7 +4101,7 @@
         {
           "id": "qi-r25-a-out",
           "title": "",
-          "body": "你會不會因為有錢就看不起人？",
+          "body": "難得聽你講這種話。",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4109,7 +4109,7 @@
         {
           "id": "qi-r25-a-in",
           "title": "",
-          "body": "不會。看不起人很沒品。\n對了，你想約我出去？",
+          "body": "不會。看不起人很沒品。\n我本來想約妳出去吃個飯，但不知道妳想不想。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4126,7 +4126,7 @@
         {
           "id": "qi-r25-b-in",
           "title": "",
-          "body": "懂，我不會拿錢逼妳。\n對了，你想約我出去？",
+          "body": "懂，我不會拿錢逼妳。\n我本來想約妳出去吃個飯，但不知道妳想不想。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4135,7 +4135,7 @@
         {
           "id": "qi-r26-a-out",
           "title": "",
-          "body": "你想約我出去？",
+          "body": "你這是在約我出去？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4143,7 +4143,7 @@
         {
           "id": "qi-r26-a-in",
           "title": "",
-          "body": "想啊，但妳不想就算。\n對了，你能接受被拒絕嗎？",
+          "body": "想啊，但妳不想就算。\n我知道妳有自己的安排，不想出門也沒差。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4160,7 +4160,7 @@
         {
           "id": "qi-r26-b-in",
           "title": "",
-          "body": "那就普通咖啡店，妳挑。\n對了，你能接受被拒絕嗎？",
+          "body": "那就普通咖啡店，妳挑。\n我知道妳有自己的安排，不想出門也沒差。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4169,7 +4169,7 @@
         {
           "id": "qi-r27-a-out",
           "title": "",
-          "body": "你能接受被拒絕嗎？",
+          "body": "如果我說不想去，你會怎樣？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4177,7 +4177,7 @@
         {
           "id": "qi-r27-a-in",
           "title": "",
-          "body": "能，不爽一下也不會纏人。\n對了，你是不是對每個人都這麼直接？",
+          "body": "能，不爽一下也不會纏人。\n妳每次都覺得我講話太直，是不是。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4194,7 +4194,7 @@
         {
           "id": "qi-r27-b-in",
           "title": "",
-          "body": "行，不催妳。\n對了，你是不是對每個人都這麼直接？",
+          "body": "行，不催妳。\n妳每次都覺得我講話太直，是不是。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4211,7 +4211,7 @@
         {
           "id": "qi-r28-a-in",
           "title": "",
-          "body": "我講話本來直，但不是對誰都花時間。\n對了，你想讓我們變熟嗎？",
+          "body": "我講話本來直，但不是對誰都花時間。\n我是真的想多認識妳，不是沒事找樂子。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4228,7 +4228,7 @@
         {
           "id": "qi-r28-b-in",
           "title": "",
-          "body": "知道，我也沒要妳現在答應什麼。\n對了，你想讓我們變熟嗎？",
+          "body": "知道，我也沒要妳現在答應什麼。\n我是真的想多認識妳，不是沒事找樂子。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4237,7 +4237,7 @@
         {
           "id": "qi-r29-a-out",
           "title": "",
-          "body": "你想讓我們變熟嗎？",
+          "body": "你是真的想跟我變熟？",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -4245,7 +4245,7 @@
         {
           "id": "qi-r29-a-in",
           "title": "",
-          "body": "想，但得看妳願不願意。\n對了，那我們先繼續聊？",
+          "body": "想，但得看妳願不願意。\n好了，我也得去忙合作案了，改天再聊。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4262,7 +4262,7 @@
         {
           "id": "qi-r29-b-in",
           "title": "",
-          "body": "妳忙妳的，我不查勤。\n對了，那我們先繼續聊？",
+          "body": "妳忙妳的，我不查勤。\n好了，我也得去忙合作案了，改天再聊。",
           "senderId": "qiye",
           "time": "22:23",
           "hidden": true,
@@ -4271,7 +4271,7 @@
         {
           "id": "qi-r30-a-out",
           "title": "",
-          "body": "那我們先繼續聊？",
+          "body": "行，那就有空再聊。",
           "senderId": "owner",
           "time": "22:20",
           "hidden": true
@@ -8173,7 +8173,7 @@
     },
     {
       "id": "shen-r4-a",
-      "label": "你今天不用上課嗎？",
+      "label": "你今天不是還要上課？",
       "type": "action",
       "actions": [
         {
@@ -8279,7 +8279,7 @@
     },
     {
       "id": "shen-r5-a",
-      "label": "你怎麼會來那場活動？",
+      "label": "你那天怎麼會接到這場活動？",
       "type": "action",
       "actions": [
         {
@@ -8385,7 +8385,7 @@
     },
     {
       "id": "shen-r6-a",
-      "label": "你平常課業很重嗎？",
+      "label": "你這樣不會耽誤課業嗎？",
       "type": "action",
       "actions": [
         {
@@ -8491,7 +8491,7 @@
     },
     {
       "id": "shen-r7-a",
-      "label": "你喜歡拍什麼？",
+      "label": "那你最喜歡拍什麼？",
       "type": "action",
       "actions": [
         {
@@ -8597,7 +8597,7 @@
     },
     {
       "id": "shen-r8-a",
-      "label": "你會把照片公開嗎？",
+      "label": "你會先問過當事人才公開吧？",
       "type": "action",
       "actions": [
         {
@@ -8703,7 +8703,7 @@
     },
     {
       "id": "shen-r9-a",
-      "label": "你今天又去健身？",
+      "label": "你不是才忙完活動，今天又去健身？",
       "type": "action",
       "actions": [
         {
@@ -8809,7 +8809,7 @@
     },
     {
       "id": "shen-r10-a",
-      "label": "你會在意年齡差嗎？",
+      "label": "說真的，你會在意我們的年齡差嗎？",
       "type": "action",
       "actions": [
         {
@@ -8915,7 +8915,7 @@
     },
     {
       "id": "shen-r11-a",
-      "label": "你會不會覺得上班很無聊？",
+      "label": "聽我講上班的事會不會很無聊？",
       "type": "action",
       "actions": [
         {
@@ -9021,7 +9021,7 @@
     },
     {
       "id": "shen-r12-a",
-      "label": "你今天心情怎麼樣？",
+      "label": "今天怎麼了，心情不好嗎？",
       "type": "action",
       "actions": [
         {
@@ -9127,7 +9127,7 @@
     },
     {
       "id": "shen-r13-a",
-      "label": "你會跟朋友講心事嗎？",
+      "label": "你心情不好會找朋友聊嗎？",
       "type": "action",
       "actions": [
         {
@@ -9233,7 +9233,7 @@
     },
     {
       "id": "shen-r14-a",
-      "label": "你上次說的照片呢？",
+      "label": "欸，你上次說的照片整理好了？",
       "type": "action",
       "actions": [
         {
@@ -9339,7 +9339,7 @@
     },
     {
       "id": "shen-r15-a",
-      "label": "你週末還要拍活動？",
+      "label": "週末還要拍？你也太忙了吧。",
       "type": "action",
       "actions": [
         {
@@ -9445,7 +9445,7 @@
     },
     {
       "id": "shen-r16-a",
-      "label": "你怎麼安排時間？",
+      "label": "你到底怎麼把這些行程排進去的？",
       "type": "action",
       "actions": [
         {
@@ -9551,7 +9551,7 @@
     },
     {
       "id": "shen-r17-a",
-      "label": "你會不會太照顧別人？",
+      "label": "你是不是很容易忙到忘記照顧自己？",
       "type": "action",
       "actions": [
         {
@@ -9657,7 +9657,7 @@
     },
     {
       "id": "shen-r18-a",
-      "label": "你想過畢業後做什麼？",
+      "label": "你有想過畢業後要做什麼嗎？",
       "type": "action",
       "actions": [
         {
@@ -9763,7 +9763,7 @@
     },
     {
       "id": "shen-r19-a",
-      "label": "你家人支持你拍照嗎？",
+      "label": "那你家裡支持你拍照嗎？",
       "type": "action",
       "actions": [
         {
@@ -9869,7 +9869,7 @@
     },
     {
       "id": "shen-r20-a",
-      "label": "你會因為別人的期待改變嗎？",
+      "label": "如果別人不看好，你會改變想法嗎？",
       "type": "action",
       "actions": [
         {
@@ -9975,7 +9975,7 @@
     },
     {
       "id": "shen-r21-a",
-      "label": "你現在是不是有點累？",
+      "label": "你是不是累壞了？",
       "type": "action",
       "actions": [
         {
@@ -10081,7 +10081,7 @@
     },
     {
       "id": "shen-r22-a",
-      "label": "你下次活動還會來？",
+      "label": "那你下次活動還會去嗎？",
       "type": "action",
       "actions": [
         {
@@ -10187,7 +10187,7 @@
     },
     {
       "id": "shen-r23-a",
-      "label": "你想跟我分享什麼？",
+      "label": "你剛剛拍到什麼了？",
       "type": "action",
       "actions": [
         {
@@ -10293,7 +10293,7 @@
     },
     {
       "id": "shen-r24-a",
-      "label": "你對人都這麼熱心嗎？",
+      "label": "你是不是對大家都這麼貼心？",
       "type": "action",
       "actions": [
         {
@@ -10399,7 +10399,7 @@
     },
     {
       "id": "shen-r25-a",
-      "label": "你會不會太快相信別人？",
+      "label": "我們其實還不算很熟，對吧？",
       "type": "action",
       "actions": [
         {
@@ -10505,7 +10505,7 @@
     },
     {
       "id": "shen-r26-a",
-      "label": "你有沒有想過一起喝咖啡？",
+      "label": "你這是在暗示要約我喝咖啡嗎？",
       "type": "action",
       "actions": [
         {
@@ -10611,7 +10611,7 @@
     },
     {
       "id": "shen-r27-a",
-      "label": "如果見面你會緊張嗎？",
+      "label": "如果真的見面，你會不會緊張？",
       "type": "action",
       "actions": [
         {
@@ -10717,7 +10717,7 @@
     },
     {
       "id": "shen-r28-a",
-      "label": "你希望我們怎麼相處？",
+      "label": "你希望我們之後怎麼相處？",
       "type": "action",
       "actions": [
         {
@@ -10823,7 +10823,7 @@
     },
     {
       "id": "shen-r29-a",
-      "label": "你會等我慢慢想嗎？",
+      "label": "我想慢慢來，你會介意嗎？",
       "type": "action",
       "actions": [
         {
@@ -10929,7 +10929,7 @@
     },
     {
       "id": "shen-r30-a",
-      "label": "那我們先這樣保持聯絡？",
+      "label": "好，那我們有空再聊？",
       "type": "action",
       "actions": [
         {
@@ -11145,7 +11145,7 @@
     },
     {
       "id": "pei-r4-a",
-      "label": "明天的會議你準備好了嗎？",
+      "label": "明天會議的資料你都準備好了？",
       "type": "action",
       "actions": [
         {
@@ -11251,7 +11251,7 @@
     },
     {
       "id": "pei-r5-a",
-      "label": "你每次都這麼仔細？",
+      "label": "你怎麼連這種細節都注意得到？",
       "type": "action",
       "actions": [
         {
@@ -11357,7 +11357,7 @@
     },
     {
       "id": "pei-r6-a",
-      "label": "午休你都去哪？",
+      "label": "你午休通常去哪吃？",
       "type": "action",
       "actions": [
         {
@@ -11463,7 +11463,7 @@
     },
     {
       "id": "pei-r7-a",
-      "label": "你會加班到很晚嗎？",
+      "label": "你今天是不是又得加班？",
       "type": "action",
       "actions": [
         {
@@ -11569,7 +11569,7 @@
     },
     {
       "id": "pei-r8-a",
-      "label": "剛剛主管那句話你怎麼看？",
+      "label": "剛剛主管那句話，你怎麼理解？",
       "type": "action",
       "actions": [
         {
@@ -11675,7 +11675,7 @@
     },
     {
       "id": "pei-r9-a",
-      "label": "你會幫同事擋工作嗎？",
+      "label": "這次的分工你覺得合理嗎？",
       "type": "action",
       "actions": [
         {
@@ -11781,7 +11781,7 @@
     },
     {
       "id": "pei-r10-a",
-      "label": "你是不是不太喜歡閒聊？",
+      "label": "你下班後也這麼不愛聊天？",
       "type": "action",
       "actions": [
         {
@@ -11887,7 +11887,7 @@
     },
     {
       "id": "pei-r11-a",
-      "label": "你休假都做什麼？",
+      "label": "你休假通常做什麼？",
       "type": "action",
       "actions": [
         {
@@ -11993,7 +11993,7 @@
     },
     {
       "id": "pei-r12-a",
-      "label": "你最近壓力大嗎？",
+      "label": "你最近壓力是不是很大？",
       "type": "action",
       "actions": [
         {
@@ -12099,7 +12099,7 @@
     },
     {
       "id": "pei-r13-a",
-      "label": "你有沒有跟主管意見不合過？",
+      "label": "你跟主管意見不同時會怎麼處理？",
       "type": "action",
       "actions": [
         {
@@ -12205,7 +12205,7 @@
     },
     {
       "id": "pei-r14-a",
-      "label": "你剛剛是不是打斷我了？",
+      "label": "剛剛你是不是打斷我了？",
       "type": "action",
       "actions": [
         {
@@ -12311,7 +12311,7 @@
     },
     {
       "id": "pei-r15-a",
-      "label": "你怎麼看團隊合作？",
+      "label": "你覺得這次交接還有哪裡要改？",
       "type": "action",
       "actions": [
         {
@@ -12417,7 +12417,7 @@
     },
     {
       "id": "pei-r16-a",
-      "label": "你會記得同事的習慣嗎？",
+      "label": "你連我的工作習慣都記得？",
       "type": "action",
       "actions": [
         {
@@ -12523,7 +12523,7 @@
     },
     {
       "id": "pei-r17-a",
-      "label": "你是不是很難親近？",
+      "label": "你是不是本來就比較慢熱？",
       "type": "action",
       "actions": [
         {
@@ -12629,7 +12629,7 @@
     },
     {
       "id": "pei-r18-a",
-      "label": "你有沒有在工作中犯過錯？",
+      "label": "你以前也犯過這種錯嗎？",
       "type": "action",
       "actions": [
         {
@@ -12735,7 +12735,7 @@
     },
     {
       "id": "pei-r19-a",
-      "label": "你會因為失誤討厭同事嗎？",
+      "label": "如果同事犯錯，你會很介意嗎？",
       "type": "action",
       "actions": [
         {
@@ -12841,7 +12841,7 @@
     },
     {
       "id": "pei-r20-a",
-      "label": "你今天怎麼還在公司？",
+      "label": "你怎麼還沒下班？",
       "type": "action",
       "actions": [
         {
@@ -12947,7 +12947,7 @@
     },
     {
       "id": "pei-r21-a",
-      "label": "你是不是有點累？",
+      "label": "你今天真的累了吧？",
       "type": "action",
       "actions": [
         {
@@ -13053,7 +13053,7 @@
     },
     {
       "id": "pei-r22-a",
-      "label": "你喜歡什麼類型的書？",
+      "label": "你桌上那本是什麼書？",
       "type": "action",
       "actions": [
         {
@@ -13159,7 +13159,7 @@
     },
     {
       "id": "pei-r23-a",
-      "label": "你有沒有想過換工作？",
+      "label": "你有想過換工作嗎？",
       "type": "action",
       "actions": [
         {
@@ -13265,7 +13265,7 @@
     },
     {
       "id": "pei-r24-a",
-      "label": "你會把私人情緒帶進工作嗎？",
+      "label": "你會怎麼處理工作上的情緒？",
       "type": "action",
       "actions": [
         {
@@ -13371,7 +13371,7 @@
     },
     {
       "id": "pei-r25-a",
-      "label": "你會信任工作上的人嗎？",
+      "label": "你覺得我們現在合作得還行嗎？",
       "type": "action",
       "actions": [
         {
@@ -13477,7 +13477,7 @@
     },
     {
       "id": "pei-r26-a",
-      "label": "你有沒有想過下班一起吃飯？",
+      "label": "等等，你是在約我下班吃飯？",
       "type": "action",
       "actions": [
         {
@@ -13583,7 +13583,7 @@
     },
     {
       "id": "pei-r27-a",
-      "label": "如果同事問起我們呢？",
+      "label": "你不怕同事誤會嗎？",
       "type": "action",
       "actions": [
         {
@@ -13689,7 +13689,7 @@
     },
     {
       "id": "pei-r28-a",
-      "label": "你對我有什麼不同看法？",
+      "label": "你現在對我的看法有改變嗎？",
       "type": "action",
       "actions": [
         {
@@ -13795,7 +13795,7 @@
     },
     {
       "id": "pei-r29-a",
-      "label": "你會急著定義關係嗎？",
+      "label": "你會想現在就把關係說清楚嗎？",
       "type": "action",
       "actions": [
         {
@@ -13901,7 +13901,7 @@
     },
     {
       "id": "pei-r30-a",
-      "label": "那我們先好好相處？",
+      "label": "那明天公司見？",
       "type": "action",
       "actions": [
         {
@@ -14117,7 +14117,7 @@
     },
     {
       "id": "qi-r4-a",
-      "label": "你今天不用忙嗎？",
+      "label": "你今天居然有空？",
       "type": "action",
       "actions": [
         {
@@ -14223,7 +14223,7 @@
     },
     {
       "id": "qi-r5-a",
-      "label": "你上次開那台車是你的？",
+      "label": "所以那台車真的是你的？",
       "type": "action",
       "actions": [
         {
@@ -14329,7 +14329,7 @@
     },
     {
       "id": "qi-r6-a",
-      "label": "你平常都這麼高調？",
+      "label": "你平常都這麼招搖喔？",
       "type": "action",
       "actions": [
         {
@@ -14435,7 +14435,7 @@
     },
     {
       "id": "qi-r7-a",
-      "label": "你家裡是不是很有錢？",
+      "label": "你家裡應該很有錢吧？",
       "type": "action",
       "actions": [
         {
@@ -14541,7 +14541,7 @@
     },
     {
       "id": "qi-r8-a",
-      "label": "你跟家裡關係好嗎？",
+      "label": "家裡又在管你了？",
       "type": "action",
       "actions": [
         {
@@ -14647,7 +14647,7 @@
     },
     {
       "id": "qi-r9-a",
-      "label": "你有自己的工作嗎？",
+      "label": "所以你現在也有認真在做事？",
       "type": "action",
       "actions": [
         {
@@ -14753,7 +14753,7 @@
     },
     {
       "id": "qi-r10-a",
-      "label": "你做活動會遇到麻煩嗎？",
+      "label": "你們合作案遇到什麼問題？",
       "type": "action",
       "actions": [
         {
@@ -14859,7 +14859,7 @@
     },
     {
       "id": "qi-r11-a",
-      "label": "你是不是很容易發火？",
+      "label": "你剛剛是不是又想跟人吵架？",
       "type": "action",
       "actions": [
         {
@@ -14965,7 +14965,7 @@
     },
     {
       "id": "qi-r12-a",
-      "label": "你平常都跟誰出去玩？",
+      "label": "你朋友平常都揪你去哪？",
       "type": "action",
       "actions": [
         {
@@ -15071,7 +15071,7 @@
     },
     {
       "id": "qi-r13-a",
-      "label": "你會去夜店嗎？",
+      "label": "你真的喜歡那麼吵的地方？",
       "type": "action",
       "actions": [
         {
@@ -15177,7 +15177,7 @@
     },
     {
       "id": "qi-r14-a",
-      "label": "你會在意別人怎麼看你？",
+      "label": "你也知道自己講話很欠揍喔？",
       "type": "action",
       "actions": [
         {
@@ -15283,7 +15283,7 @@
     },
     {
       "id": "qi-r15-a",
-      "label": "你為什麼會跟我聊天？",
+      "label": "所以你幹嘛一直找我聊天？",
       "type": "action",
       "actions": [
         {
@@ -15389,7 +15389,7 @@
     },
     {
       "id": "qi-r16-a",
-      "label": "你是不是常常闖禍？",
+      "label": "你以前是不是常常闖禍？",
       "type": "action",
       "actions": [
         {
@@ -15495,7 +15495,7 @@
     },
     {
       "id": "qi-r17-a",
-      "label": "你會主動道歉嗎？",
+      "label": "你這次倒是有認真道歉。",
       "type": "action",
       "actions": [
         {
@@ -15601,7 +15601,7 @@
     },
     {
       "id": "qi-r18-a",
-      "label": "你最近在忙什麼？",
+      "label": "你最近在忙的就是那個合作案？",
       "type": "action",
       "actions": [
         {
@@ -15707,7 +15707,7 @@
     },
     {
       "id": "qi-r19-a",
-      "label": "你對那個合作認真嗎？",
+      "label": "這次真的想靠自己談成？",
       "type": "action",
       "actions": [
         {
@@ -15919,7 +15919,7 @@
     },
     {
       "id": "qi-r21-a",
-      "label": "你會找朋友幫忙嗎？",
+      "label": "朋友想幫你，你怎麼不答應？",
       "type": "action",
       "actions": [
         {
@@ -16131,7 +16131,7 @@
     },
     {
       "id": "qi-r23-a",
-      "label": "結果出來了嗎？",
+      "label": "所以合作有結果了？",
       "type": "action",
       "actions": [
         {
@@ -16237,7 +16237,7 @@
     },
     {
       "id": "qi-r24-a",
-      "label": "你會怎麼慶祝？",
+      "label": "你想怎麼慶祝？",
       "type": "action",
       "actions": [
         {
@@ -16343,7 +16343,7 @@
     },
     {
       "id": "qi-r25-a",
-      "label": "你會不會因為有錢就看不起人？",
+      "label": "難得聽你講這種話。",
       "type": "action",
       "actions": [
         {
@@ -16449,7 +16449,7 @@
     },
     {
       "id": "qi-r26-a",
-      "label": "你想約我出去？",
+      "label": "你這是在約我出去？",
       "type": "action",
       "actions": [
         {
@@ -16555,7 +16555,7 @@
     },
     {
       "id": "qi-r27-a",
-      "label": "你能接受被拒絕嗎？",
+      "label": "如果我說不想去，你會怎樣？",
       "type": "action",
       "actions": [
         {
@@ -16767,7 +16767,7 @@
     },
     {
       "id": "qi-r29-a",
-      "label": "你想讓我們變熟嗎？",
+      "label": "你是真的想跟我變熟？",
       "type": "action",
       "actions": [
         {
@@ -16873,7 +16873,7 @@
     },
     {
       "id": "qi-r30-a",
-      "label": "那我們先繼續聊？",
+      "label": "行，那就有空再聊。",
       "type": "action",
       "actions": [
         {
