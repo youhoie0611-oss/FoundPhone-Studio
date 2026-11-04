@@ -28,7 +28,7 @@ import {
 import type { SkinProps } from "../../AppSkins";
 import { Avatar, Media } from "../../skins/shared";
 import { useSkinState } from "../../skinState";
-import { makeItem, type Item } from "../../schema";
+import type { Item } from "../../schema";
 import "./ui.css";
 import "./adapter.css";
 /** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
