@@ -37,7 +37,8 @@ const characterAvatar: Record<string, string> = {
   "祁野": "qi-ye-avatar.png",
 };
 function chatAvatar(name: string, fallback?: string) {
-  const file = characterAvatar[name];
+  const normalized = name.trim().replace(/^[\\s　]+|[\\s　]+$/g, "");
+  const file = characterAvatar[normalized] ?? Object.entries(characterAvatar).find(([character]) => normalized.includes(character))?.[1];
   return file ? `${import.meta.env.BASE_URL}characters/${file}` : fallback;
 }
 /** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
