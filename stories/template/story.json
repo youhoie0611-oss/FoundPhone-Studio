@@ -2,12 +2,12 @@
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
   "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
+  "revision": 3,
   "phone": {
     "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
+    "date": "2026-11-04",
+    "time": "10:00",
     "battery": 94,
     "network": "5G",
     "wallpaper": "apple-wwdc26"
@@ -93,6 +93,13 @@
       "name": "测试联系人",
       "phone": "",
       "bio": "这是一条测试内容。"
+    },
+    {
+      "id": "gu-shian",
+      "name": "顧時安",
+      "phone": "",
+      "avatar": "./characters/gu-shian-avatar.jpg",
+      "bio": "26 歲，183 公分，76 公斤。建築學系畢業，建築設計師。溫柔沉穩、細膩、聰明、有主見。與玩家因工作專案認識。"
     }
   ],
   "chats": [
@@ -242,6 +249,640 @@
           "id": "test-reply-kakao",
           "body": "这是一条测试回复。",
           "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "gu-shian-kkt",
+      "app": "kakao",
+      "title": "顧時安",
+      "participants": [
+        "owner",
+        "gu-shian"
+      ],
+      "messages": [
+        {
+          "id": "gu-shian-intro",
+          "senderId": "gu-shian",
+          "body": "今天會去現場看一些細節，晚點再跟妳說。",
+          "time": "2026-11-04 10:00",
+          "meta": {
+            "guContext": "work_project"
+          }
+        },
+        {
+          "id": "gu-photo-site-lead",
+          "senderId": "gu-shian",
+          "body": "今天來現場看一下細節。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-image",
+          "senderId": "gu-shian",
+          "body": "",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          },
+          "kind": "image",
+          "media": "./characters/gu-shian-site-visit-selfie.jpg"
+        },
+        {
+          "id": "gu-photo-site-caption",
+          "senderId": "gu-shian",
+          "body": "陽光剛好照到這面清水模，現場比照片還好看。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-player-detail",
+          "senderId": "owner",
+          "body": "這是清水模嗎？現場質感看起來很好。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-site-reply-detail-1",
+          "senderId": "gu-shian",
+          "body": "對，妳眼力很好。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-reply-detail-2",
+          "senderId": "gu-shian",
+          "body": "近看會看到模板留下的細節，光影一變感覺也不太一樣。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-player-safety",
+          "senderId": "owner",
+          "body": "你在工地還自拍，注意安全。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-site-reply-safety-1",
+          "senderId": "gu-shian",
+          "body": "放心，我是在已開放的安全區域拍的。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-reply-safety-2",
+          "senderId": "gu-shian",
+          "body": "等一下進去就先把手機收起來。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-player-question",
+          "senderId": "owner",
+          "body": "這個案子是你設計的嗎？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-site-reply-question-1",
+          "senderId": "gu-shian",
+          "body": "有參與設計，不過不是我一個人完成的。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-reply-question-2",
+          "senderId": "gu-shian",
+          "body": "現場很多決定都要和團隊一起確認。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-player-busy",
+          "senderId": "owner",
+          "body": "我正在忙，晚點再看。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-site-reply-busy-1",
+          "senderId": "gu-shian",
+          "body": "好，妳先忙。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-site-reply-busy-2",
+          "senderId": "gu-shian",
+          "body": "不急著回我。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-site"
+          }
+        },
+        {
+          "id": "gu-photo-studio-lead",
+          "senderId": "gu-shian",
+          "body": "今天總算把這一版圖面收好了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-image",
+          "senderId": "gu-shian",
+          "body": "",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          },
+          "kind": "image",
+          "media": "./characters/gu-shian-studio-mirror-selfie.jpg"
+        },
+        {
+          "id": "gu-photo-studio-caption",
+          "senderId": "gu-shian",
+          "body": "剛準備下班，順手拍了一張。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-player-accept",
+          "senderId": "owner",
+          "body": "看起來忙了一整天，總算可以休息了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-studio-reply-accept-1",
+          "senderId": "gu-shian",
+          "body": "確實有點久。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-reply-accept-2",
+          "senderId": "gu-shian",
+          "body": "但收尾的時候反而會比較踏實。妳今天也忙嗎？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-player-ask",
+          "senderId": "owner",
+          "body": "後面那個模型是你正在做的案子嗎？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-studio-reply-ask-1",
+          "senderId": "gu-shian",
+          "body": "對，是最近在調整的量體模型。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-reply-ask-2",
+          "senderId": "gu-shian",
+          "body": "照片裡看不太清楚，實際上還有幾個地方在改。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-player-tease",
+          "senderId": "owner",
+          "body": "你是在拍工作室，還是在拍自己？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-studio-reply-tease-1",
+          "senderId": "gu-shian",
+          "body": "被妳發現了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-reply-tease-2",
+          "senderId": "gu-shian",
+          "body": "本來想拍後面的模型，結果人站得太前面。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-player-boundary",
+          "senderId": "owner",
+          "body": "你不用特地跟我報備下班啦。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-studio-reply-boundary-1",
+          "senderId": "gu-shian",
+          "body": "好，我知道了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-studio-reply-boundary-2",
+          "senderId": "gu-shian",
+          "body": "之後有跟專案相關的事再找妳。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-studio"
+          }
+        },
+        {
+          "id": "gu-photo-late-lead",
+          "senderId": "gu-shian",
+          "body": "本來想再改一個地方，結果一抬頭就這個時間了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-image",
+          "senderId": "gu-shian",
+          "body": "",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          },
+          "kind": "image",
+          "media": "./characters/gu-shian-late-night-studio.jpg"
+        },
+        {
+          "id": "gu-photo-late-caption",
+          "senderId": "gu-shian",
+          "body": "咖啡好像買得太晚。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-player-rest",
+          "senderId": "owner",
+          "body": "都這麼晚了，改不完就明天再改吧。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-late-reply-rest-1",
+          "senderId": "gu-shian",
+          "body": "妳說得有道理。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-reply-rest-2",
+          "senderId": "gu-shian",
+          "body": "我把手上這段標記完就收工，不再往下開新的部分。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-player-work",
+          "senderId": "owner",
+          "body": "你到底在改哪個地方？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-late-reply-work-1",
+          "senderId": "gu-shian",
+          "body": "主要是在對照平面和立面的開口位置。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-reply-work-2",
+          "senderId": "gu-shian",
+          "body": "看起來只是幾條線，改動其實會連到不少地方。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-player-joke",
+          "senderId": "owner",
+          "body": "這杯咖啡看起來已經救不了你了。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-late-reply-joke-1",
+          "senderId": "gu-shian",
+          "body": "我也有這個懷疑。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-reply-joke-2",
+          "senderId": "gu-shian",
+          "body": "現在只是心理安慰比較多。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-player-no_late",
+          "senderId": "owner",
+          "body": "太晚了，我不太希望這個時間收到訊息。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-late-reply-no_late-1",
+          "senderId": "gu-shian",
+          "body": "抱歉，沒注意到時間。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-late-reply-no_late-2",
+          "senderId": "gu-shian",
+          "body": "之後非急事我會白天再傳。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-late"
+          }
+        },
+        {
+          "id": "gu-photo-book-lead",
+          "senderId": "gu-shian",
+          "body": "本來只是想進來找一本書。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-image",
+          "senderId": "gu-shian",
+          "body": "",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          },
+          "kind": "image",
+          "media": "./characters/gu-shian-bookstore-cafe.jpg"
+        },
+        {
+          "id": "gu-photo-book-caption",
+          "senderId": "gu-shian",
+          "body": "結果坐下來畫了快一個下午。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-player-ask_place",
+          "senderId": "owner",
+          "body": "這家店在哪裡？感覺很舒服。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-book-reply-ask_place-1",
+          "senderId": "gu-shian",
+          "body": "是在我今天路過的書店咖啡館。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-reply-ask_place-2",
+          "senderId": "gu-shian",
+          "body": "我把店名確認一下再傳給妳，免得記錯。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-player-sketch",
+          "senderId": "owner",
+          "body": "你休假還在畫建築喔？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-book-reply-sketch-1",
+          "senderId": "gu-shian",
+          "body": "習慣了，看到有趣的空間就想記一下。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-reply-sketch-2",
+          "senderId": "gu-shian",
+          "body": "不過這次不是工作，純粹自己想畫。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-player-tease",
+          "senderId": "owner",
+          "body": "你是不是不太會真正休息？",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-book-reply-tease-1",
+          "senderId": "gu-shian",
+          "body": "可能有一點。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-reply-tease-2",
+          "senderId": "gu-shian",
+          "body": "但對我來說，坐著慢慢畫反而很放鬆。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-photo-book-player-neutral",
+          "senderId": "owner",
+          "body": "不錯耶，祝你休假愉快。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          },
+          "outgoing": true
+        },
+        {
+          "id": "gu-photo-book-reply-neutral-1",
+          "senderId": "gu-shian",
+          "body": "謝謝，妳也過得順利。",
+          "time": "2026-11-04 10:00",
+          "hidden": true,
+          "meta": {
+            "guScene": "gu-photo-book"
+          }
         }
       ]
     }
@@ -693,7 +1334,1637 @@
       }
     ]
   },
-  "variables": {},
-  "events": [],
-  "tests": []
+  "variables": {
+    "gu_personal_allowed": false,
+    "gu_studio_answered": false,
+    "gu_quiet_hours": false,
+    "gu_last_topic": "",
+    "gu_pov_assets_ready": false
+  },
+  "events": [
+    {
+      "id": "gu-photo-site-timer-1",
+      "label": "現場勘查：行程等待 1",
+      "type": "delay",
+      "delayMs": 60000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-deliver-lead"
+      ]
+    },
+    {
+      "id": "gu-photo-site-deliver-lead",
+      "label": "現場勘查：自主傳訊",
+      "type": "action",
+      "conditions": [],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天來現場看一下細節。"
+        }
+      ],
+      "next": [
+        "gu-photo-site-wait-image"
+      ]
+    },
+    {
+      "id": "gu-photo-site-wait-image",
+      "label": "現場勘查：傳照停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-deliver-image"
+      ]
+    },
+    {
+      "id": "gu-photo-site-deliver-image",
+      "label": "現場勘查：照片",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-image",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-wait-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-site-wait-caption",
+      "label": "現場勘查：文字停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-deliver-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-site-deliver-caption",
+      "label": "現場勘查：照片後續說明",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-caption",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-select"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-detail",
+      "label": "這是清水模嗎？現場質感看起來很好。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-player-detail",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "material_detail"
+        },
+        {
+          "type": "variable",
+          "key": "gu_personal_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-detail-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-detail-wait1",
+      "label": "現場勘查：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-detail-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-detail-reply1",
+      "label": "現場勘查：detail 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-detail-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-detail-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-detail-wait2",
+      "label": "現場勘查：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-detail-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-detail-reply2",
+      "label": "現場勘查：detail 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-detail-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-site-choice-safety",
+      "label": "你在工地還自拍，注意安全。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-player-safety",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "site_safety"
+        },
+        {
+          "type": "variable",
+          "key": "gu_personal_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-safety-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-safety-wait1",
+      "label": "現場勘查：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-safety-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-safety-reply1",
+      "label": "現場勘查：safety 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-safety-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-safety-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-safety-wait2",
+      "label": "現場勘查：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-safety-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-safety-reply2",
+      "label": "現場勘查：safety 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-safety-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-site-choice-question",
+      "label": "這個案子是你設計的嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-player-question",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "teamwork"
+        },
+        {
+          "type": "variable",
+          "key": "gu_personal_allowed",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-question-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-question-wait1",
+      "label": "現場勘查：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-question-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-question-reply1",
+      "label": "現場勘查：question 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-question-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-question-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-question-wait2",
+      "label": "現場勘查：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-question-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-question-reply2",
+      "label": "現場勘查：question 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-question-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-site-choice-busy",
+      "label": "我正在忙，晚點再看。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-player-busy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "pause"
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-busy-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-busy-wait1",
+      "label": "現場勘查：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-busy-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-busy-reply1",
+      "label": "現場勘查：busy 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-busy-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-site-choice-busy-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-busy-wait2",
+      "label": "現場勘查：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-busy-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-site-choice-busy-reply2",
+      "label": "現場勘查：busy 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-site-reply-busy-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-site-select",
+      "label": "現場勘查：玩家四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "gu-photo-site-choice-detail",
+        "gu-photo-site-choice-safety",
+        "gu-photo-site-choice-question",
+        "gu-photo-site-choice-busy"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-timer-1",
+      "label": "工作室的收尾：行程等待 1",
+      "type": "delay",
+      "delayMs": 30600000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-deliver-lead"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-deliver-lead",
+      "label": "工作室的收尾：自主傳訊",
+      "type": "action",
+      "conditions": [
+        {
+          "key": "gu_personal_allowed",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：今天總算把這一版圖面收好了。"
+        }
+      ],
+      "next": [
+        "gu-photo-studio-wait-image"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-wait-image",
+      "label": "工作室的收尾：傳照停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-deliver-image"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-deliver-image",
+      "label": "工作室的收尾：照片",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-image",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-wait-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-wait-caption",
+      "label": "工作室的收尾：文字停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-deliver-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-deliver-caption",
+      "label": "工作室的收尾：照片後續說明",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-caption",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-select"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-accept",
+      "label": "看起來忙了一整天，總算可以休息了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-player-accept",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "daily_work"
+        },
+        {
+          "type": "variable",
+          "key": "gu_studio_answered",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-accept-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-accept-wait1",
+      "label": "工作室的收尾：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-accept-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-accept-reply1",
+      "label": "工作室的收尾：accept 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-accept-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-accept-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-accept-wait2",
+      "label": "工作室的收尾：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-accept-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-accept-reply2",
+      "label": "工作室的收尾：accept 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-accept-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-studio-choice-ask",
+      "label": "後面那個模型是你正在做的案子嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-player-ask",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "architecture_project"
+        },
+        {
+          "type": "variable",
+          "key": "gu_studio_answered",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-ask-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-ask-wait1",
+      "label": "工作室的收尾：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-ask-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-ask-reply1",
+      "label": "工作室的收尾：ask 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-ask-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-ask-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-ask-wait2",
+      "label": "工作室的收尾：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-ask-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-ask-reply2",
+      "label": "工作室的收尾：ask 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-ask-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-studio-choice-tease",
+      "label": "你是在拍工作室，還是在拍自己？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-player-tease",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "light_banter"
+        },
+        {
+          "type": "variable",
+          "key": "gu_studio_answered",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-tease-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-tease-wait1",
+      "label": "工作室的收尾：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-tease-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-tease-reply1",
+      "label": "工作室的收尾：tease 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-tease-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-tease-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-tease-wait2",
+      "label": "工作室的收尾：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-tease-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-tease-reply2",
+      "label": "工作室的收尾：tease 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-tease-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-studio-choice-boundary",
+      "label": "你不用特地跟我報備下班啦。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-player-boundary",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": ""
+        },
+        {
+          "type": "variable",
+          "key": "gu_personal_allowed",
+          "value": false
+        },
+        {
+          "type": "variable",
+          "key": "gu_studio_answered",
+          "value": false
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-boundary-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-boundary-wait1",
+      "label": "工作室的收尾：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-boundary-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-boundary-reply1",
+      "label": "工作室的收尾：boundary 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-boundary-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-studio-choice-boundary-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-boundary-wait2",
+      "label": "工作室的收尾：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-boundary-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-studio-choice-boundary-reply2",
+      "label": "工作室的收尾：boundary 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-studio-reply-boundary-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-studio-select",
+      "label": "工作室的收尾：玩家四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "gu-photo-studio-choice-accept",
+        "gu-photo-studio-choice-ask",
+        "gu-photo-studio-choice-tease",
+        "gu-photo-studio-choice-boundary"
+      ]
+    },
+    {
+      "id": "gu-photo-late-timer-1",
+      "label": "深夜改圖：行程等待 1",
+      "type": "delay",
+      "delayMs": 82800000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-timer-2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-timer-2",
+      "label": "深夜改圖：行程等待 2",
+      "type": "delay",
+      "delayMs": 50400000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-deliver-lead"
+      ]
+    },
+    {
+      "id": "gu-photo-late-deliver-lead",
+      "label": "深夜改圖：自主傳訊",
+      "type": "action",
+      "conditions": [
+        {
+          "key": "gu_studio_answered",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "gu_quiet_hours",
+          "op": "eq",
+          "value": false
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：本來想再改一個地方，結果一抬頭就這個時間了。"
+        }
+      ],
+      "next": [
+        "gu-photo-late-wait-image"
+      ]
+    },
+    {
+      "id": "gu-photo-late-wait-image",
+      "label": "深夜改圖：傳照停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-deliver-image"
+      ]
+    },
+    {
+      "id": "gu-photo-late-deliver-image",
+      "label": "深夜改圖：照片",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-image",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-wait-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-late-wait-caption",
+      "label": "深夜改圖：文字停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-deliver-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-late-deliver-caption",
+      "label": "深夜改圖：照片後續說明",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-caption",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-select"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-rest",
+      "label": "都這麼晚了，改不完就明天再改吧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-player-rest",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "rest"
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-rest-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-rest-wait1",
+      "label": "深夜改圖：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-rest-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-rest-reply1",
+      "label": "深夜改圖：rest 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-rest-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-rest-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-rest-wait2",
+      "label": "深夜改圖：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-rest-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-rest-reply2",
+      "label": "深夜改圖：rest 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-rest-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-late-choice-work",
+      "label": "你到底在改哪個地方？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-player-work",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "design_revision"
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-work-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-work-wait1",
+      "label": "深夜改圖：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-work-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-work-reply1",
+      "label": "深夜改圖：work 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-work-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-work-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-work-wait2",
+      "label": "深夜改圖：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-work-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-work-reply2",
+      "label": "深夜改圖：work 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-work-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-late-choice-joke",
+      "label": "這杯咖啡看起來已經救不了你了。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-player-joke",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "humor"
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-joke-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-joke-wait1",
+      "label": "深夜改圖：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-joke-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-joke-reply1",
+      "label": "深夜改圖：joke 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-joke-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-joke-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-joke-wait2",
+      "label": "深夜改圖：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-joke-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-joke-reply2",
+      "label": "深夜改圖：joke 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-joke-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-late-choice-no_late",
+      "label": "太晚了，我不太希望這個時間收到訊息。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-player-no_late",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": ""
+        },
+        {
+          "type": "variable",
+          "key": "gu_quiet_hours",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-no_late-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-no_late-wait1",
+      "label": "深夜改圖：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-no_late-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-no_late-reply1",
+      "label": "深夜改圖：no_late 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-no_late-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-late-choice-no_late-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-no_late-wait2",
+      "label": "深夜改圖：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-no_late-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-late-choice-no_late-reply2",
+      "label": "深夜改圖：no_late 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-late-reply-no_late-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-late-select",
+      "label": "深夜改圖：玩家四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "gu-photo-late-choice-rest",
+        "gu-photo-late-choice-work",
+        "gu-photo-late-choice-joke",
+        "gu-photo-late-choice-no_late"
+      ]
+    },
+    {
+      "id": "gu-photo-book-timer-1",
+      "label": "書店裡的午後：行程等待 1",
+      "type": "delay",
+      "delayMs": 82800000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-timer-2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-timer-2",
+      "label": "書店裡的午後：行程等待 2",
+      "type": "delay",
+      "delayMs": 82800000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-timer-3"
+      ]
+    },
+    {
+      "id": "gu-photo-book-timer-3",
+      "label": "書店裡的午後：行程等待 3",
+      "type": "delay",
+      "delayMs": 36000000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-deliver-lead"
+      ]
+    },
+    {
+      "id": "gu-photo-book-deliver-lead",
+      "label": "書店裡的午後：自主傳訊",
+      "type": "action",
+      "conditions": [
+        {
+          "key": "gu_personal_allowed",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "gu_studio_answered",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：本來只是想進來找一本書。"
+        }
+      ],
+      "next": [
+        "gu-photo-book-wait-image"
+      ]
+    },
+    {
+      "id": "gu-photo-book-wait-image",
+      "label": "書店裡的午後：傳照停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-deliver-image"
+      ]
+    },
+    {
+      "id": "gu-photo-book-deliver-image",
+      "label": "書店裡的午後：照片",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-image",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-book-wait-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-book-wait-caption",
+      "label": "書店裡的午後：文字停頓",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-deliver-caption"
+      ]
+    },
+    {
+      "id": "gu-photo-book-deliver-caption",
+      "label": "書店裡的午後：照片後續說明",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-caption",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-book-select"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-ask_place",
+      "label": "這家店在哪裡？感覺很舒服。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-player-ask_place",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "cafe_location"
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-ask_place-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-ask_place-wait1",
+      "label": "書店裡的午後：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-ask_place-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-ask_place-reply1",
+      "label": "書店裡的午後：ask_place 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-ask_place-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-ask_place-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-ask_place-wait2",
+      "label": "書店裡的午後：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-ask_place-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-ask_place-reply2",
+      "label": "書店裡的午後：ask_place 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-ask_place-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-book-choice-sketch",
+      "label": "你休假還在畫建築喔？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-player-sketch",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "sketching"
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-sketch-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-sketch-wait1",
+      "label": "書店裡的午後：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-sketch-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-sketch-reply1",
+      "label": "書店裡的午後：sketch 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-sketch-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-sketch-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-sketch-wait2",
+      "label": "書店裡的午後：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-sketch-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-sketch-reply2",
+      "label": "書店裡的午後：sketch 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-sketch-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-book-choice-tease",
+      "label": "你是不是不太會真正休息？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-player-tease",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "rest_style"
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-tease-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-tease-wait1",
+      "label": "書店裡的午後：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-tease-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-tease-reply1",
+      "label": "書店裡的午後：tease 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-tease-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-tease-wait2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-tease-wait2",
+      "label": "書店裡的午後：回覆前停頓 2",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-tease-reply2"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-tease-reply2",
+      "label": "書店裡的午後：tease 分支回覆 2",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-tease-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-book-choice-neutral",
+      "label": "不錯耶，祝你休假愉快。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-player-neutral",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu_last_topic",
+          "value": "conversation_end"
+        }
+      ],
+      "next": [
+        "gu-photo-book-choice-neutral-wait1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-neutral-wait1",
+      "label": "書店裡的午後：回覆前停頓 1",
+      "type": "delay",
+      "delayMs": 125000,
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-neutral-reply1"
+      ]
+    },
+    {
+      "id": "gu-photo-book-choice-neutral-reply1",
+      "label": "書店裡的午後：neutral 分支回覆 1",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-photo-book-reply-neutral-1",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-photo-book-select",
+      "label": "書店裡的午後：玩家四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "gu-photo-book-choice-ask_place",
+        "gu-photo-book-choice-sketch",
+        "gu-photo-book-choice-tease",
+        "gu-photo-book-choice-neutral"
+      ]
+    },
+    {
+      "id": "gu-photo-start",
+      "label": "顧時安的獨立生活訊息",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "gu-photo-site-timer-1",
+        "gu-photo-studio-timer-1",
+        "gu-photo-late-timer-1",
+        "gu-photo-book-timer-1"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "顧時安四張照片與主要四選項分支流程",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 350000
+        },
+        {
+          "target": "",
+          "choose": "gu-photo-site-choice-detail"
+        },
+        {
+          "target": "",
+          "advanceMs": 30600000
+        },
+        {
+          "target": "",
+          "choose": "gu-photo-studio-choice-accept"
+        },
+        {
+          "target": "",
+          "advanceMs": 86400000
+        },
+        {
+          "target": "",
+          "advanceMs": 21600000
+        },
+        {
+          "target": "",
+          "choose": "gu-photo-late-choice-rest"
+        },
+        {
+          "target": "",
+          "advanceMs": 64800000
+        },
+        {
+          "target": "",
+          "choose": "gu-photo-book-choice-sketch"
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "gu-photo-site-image",
+        "gu-photo-studio-image",
+        "gu-photo-late-image",
+        "gu-photo-book-image",
+        "gu-photo-site-reply-detail-1",
+        "gu-photo-book-player-sketch"
+      ]
+    },
+    {
+      "name": "玩家忙碌後保留界線",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 350000
+        },
+        {
+          "target": "",
+          "choose": "gu-photo-site-choice-busy"
+        },
+        {
+          "target": "",
+          "advanceMs": 350000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "gu-photo-site-player-busy",
+        "gu-photo-site-reply-busy-1"
+      ]
+    }
+  ]
 }
