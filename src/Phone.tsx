@@ -145,6 +145,7 @@ function PhoneRuntime({
   const [banner, setBanner] = useState("");
   const [notificationThread, setNotificationThread] = useState("");
   const pendingNpcReplies = useRef(new Set<string>());
+  const npcReplyQueue = useRef(new Map<string, Promise<void>>());
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
@@ -475,11 +476,12 @@ function PhoneRuntime({
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
                     update(next);
                     const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
-                    if (pendingNpcReplies.current.has(`${sourceApp}:${thread}`)) return;
-                    pendingNpcReplies.current.add(`${sourceApp}:${thread}`);
+                    const threadKey = `${sourceApp}:${thread}`;
+                    pendingNpcReplies.current.add(threadKey);
                     const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
-                    void requestNpcReply({ playerId: activePlayerId(), thread, message, history })
+                    const priorReply = npcReplyQueue.current.get(threadKey) ?? Promise.resolve();
+                    const replyTask = priorReply.catch(() => undefined).then(() => requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
                       .then(async ({ reply, delayMs }) => {
                         if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
                         const current = runtimeRef.current;
@@ -500,7 +502,13 @@ function PhoneRuntime({
                         ] });
                       })
                       .catch((error: unknown) => setBanner(error instanceof Error ? error.message : "AI 暫時無法回覆"))
-                      .finally(() => pendingNpcReplies.current.delete(`${sourceApp}:${thread}`));
+                      .finally(() => {
+                        if (npcReplyQueue.current.get(threadKey) === replyTask) {
+                          npcReplyQueue.current.delete(threadKey);
+                          pendingNpcReplies.current.delete(threadKey);
+                        }
+                      });
+                    npcReplyQueue.current.set(threadKey, replyTask);
                   }}
                   onEdit={(item) => onEdit?.(app, item)}
                   onAdd={() => onAdd?.(app)}
