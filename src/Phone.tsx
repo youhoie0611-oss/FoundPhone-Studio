@@ -145,8 +145,6 @@ function PhoneRuntime({
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
   const [notificationThread, setNotificationThread] = useState("");
-  const [customReplyOpen, setCustomReplyOpen] = useState(false);
-  const [customReplyText, setCustomReplyText] = useState("");
   const pendingNpcReplies = useRef(new Set<string>());
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
