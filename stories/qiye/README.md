@@ -11,3 +11,15 @@
 - **交付要求**：有要求提交時，需要回報實際 GitHub commit 及路徑；未完成整合或未驗證的部分應分開標明。聊天本身不會自動在背景推送 GitHub。
 
 主要設定依《磚2》核心世界觀及分支企劃；玩家可維持單身，祁野有獨立生活，不是只為推動戀愛存在。
+
+## 祁野照片分類與上傳（2026-11-04 起）
+
+已在 GitHub 建立三個獨立素材資料夾：
+
+- KKT 聊天照片：`assets/characters/qiye/chat/`
+- Instagram Story：`assets/characters/qiye/instagram/story/`
+- Instagram Post：`assets/characters/qiye/instagram/post/`
+
+今後每次生成祁野照片，都要由創作方主動標明：照片主題、用途分類、建議檔名、目標資料夾路徑，並附上 GitHub 的對應資料夾**上傳頁面**連結。若圖片已實際提交 GitHub，也附上 commit 與檔案連結；否則明確註明「僅生成，未上傳圖片」，不得以文字設定檔的 commit 冒充圖片 commit。
+
+素材僅是候選圖片，照片必須符合祁野自己拍攝的自拍／第一人稱視角。社群照片與私訊照片要分開管理。放入素材資料夾不等於遊戲已顯示；照片出現與否由事件與玩家選擇決定。
