@@ -38,3 +38,7 @@
 - [聊天照片資料夾](https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/assets/characters/gu_shian/chat)
 - [Instagram Story 資料夾](https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/assets/characters/gu_shian/instagram/story)
 - [Instagram Post 資料夾](https://github.com/youhoie0611-oss/FoundPhone-Studio/tree/main/assets/characters/gu_shian/instagram/post)
+
+## 正式視覺記憶基準
+
+所有新生成的顧時安照片必須先讀取 `assets/characters/gu_shian/visual-memory.json` 和 `assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg`。**原始五視圖優先於先前由 AI 生成的生活照**；不得沿用生成結果慢慢變成另一張臉。

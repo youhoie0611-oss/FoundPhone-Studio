@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "characterId": "gu_shian",
+  "name": "顧時安",
+  "visualIdentityStatus": "confirmed",
+  "reference": {
+    "version": 1,
+    "source": "作者於顧時安專屬對話提供並確認的五視角、表情、細節、髮型與身形比例角色設定全覽",
+    "sourceUploadedFilename": "40CAA994-639D-440D-B6AB-11484B09A26D.jpeg",
+    "githubPath": "assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
+    "previewPath": "assets/characters/gu_shian/reference/gu_shian_reference_preview_v1.jpg",
+    "githubUploadStatus": "verified_in_commit",
+    "originalFileSha256": "a1f5883e54c1d88bcda82f490d4f1751c4dc45cbf8cac6a23ffade33bc140c28",
+    "originalDimensions": {
+      "width": 1213,
+      "height": 1296
+    },
+    "priority": "原始五視圖及右側大頭臉部特寫為最高視覺依據；以照片判斷五官、髮型與體型；角色身份與感情背景依正式企劃，不由照片推定",
+    "confidence": "author_confirmed"
+  },
+  "coreIdentity": {
+    "age": 26,
+    "heightCm": 183,
+    "weightKg": 76,
+    "profession": "建築設計師",
+    "education": "建築學系畢業",
+    "meetingWithPlayer": "因工作專案認識",
+    "personality": [
+      "溫柔沉穩",
+      "細膩",
+      "聰明",
+      "有主見"
+    ],
+    "note": "初始隱藏好感度、家庭、戀愛經驗及詳細性格尚未確立；不可據此推定關係發展"
+  },
+  "immutableAppearance": {
+    "face": [
+      "東亞男性，整體臉型乾淨柔和、下顎線自然，維持原圖的臉寬與五官比例",
+      "自然深棕色眼睛、眼型柔和，眉型順直略有弧度",
+      "鼻樑立體而不誇張，嘴唇輪廓自然，微笑時嘴角微上揚",
+      "膚色偏白且呈自然膚質，勿過度磨皮或改成不同膚色"
+    ],
+    "hair": [
+      "深棕黑色短髮，蓬鬆有層次、輕微側分",
+      "自然鬆散瀏海落在額頭，髮尾蓬鬆但不過度凌亂",
+      "保持參考圖髮量、前額分線和耳側輪廓"
+    ],
+    "body": [
+      "183 公分、76 公斤，高挑、比例勻稱，肩線自然",
+      "四肢修長、體態精實但非健美肌肉型",
+      "不同鏡頭不要將身高比例或肩寬明顯變動"
+    ],
+    "identifyingNotes": [
+      "黑色或深海軍藍針織上衣與白色內搭可作為基準穿搭，但不是永遠不變的制服",
+      "參考圖穿銀色金屬腕錶；未確認為永久貼身物品",
+      "未提供固定刺青、痣或穿環的設定，不要自行新增顯眼辨識標誌"
+    ],
+    "negativeConstraints": [
+      "不得更換成外貌相似但實際五官不同的模特兒臉",
+      "不得將頭髮改為金色、長髮、油頭或厚重齊瀏海",
+      "不得任意改變眼型、鼻型、下顎比例、膚色、身高體態",
+      "不要讓不同照片呈現明顯不同年齡的人物"
+    ]
+  },
+  "typicalWardrobe": {
+    "referenceOutfit": [
+      "深海軍藍偏黑色圓領長袖針織衫，胸前有小型白色月桂葉標誌",
+      "白色內搭在領口及下襬露出少許",
+      "米白色寬鬆多口袋工裝長褲",
+      "淺灰白休閒運動鞋，銀色金屬腕錶"
+    ],
+    "stylingDirection": [
+      "乾淨舒適、簡約、有質感的低彩度衣著",
+      "衣著符合建築設計工作和日常場景，不必每張照片穿相同衣服"
+    ],
+    "optionalVariations": [
+      "灰色、黑色、藏藍色素面上衣或襯衫",
+      "米色、灰色、黑色休閒長褲",
+      "現場勘查時配戴符合安全規範的安全帽與鞋履"
+    ],
+    "avoid": [
+      "過度繁複的金色華麗配飾",
+      "每張都是棚拍模特兒造型",
+      "缺乏場合理由的正式禮服、極端街頭風格或高調奢侈品穿搭"
+    ],
+    "certainty": "reference outfit author-confirmed; daily variations suggested, not canon"
+  },
+  "expressionReference": [
+    "平靜",
+    "微笑",
+    "開心",
+    "大笑",
+    "思考",
+    "驚訝",
+    "疑惑",
+    "不滿",
+    "認真",
+    "調皮",
+    "放鬆"
+  ],
+  "cameraHabits": {
+    "status": "creator_requested_style_guidance_not_fully_confirmed_biography",
+    "photoOwner": "顧時安本人",
+    "chat": [
+      "與玩家分享工作或生活時，優先手機第一人稱 POV 的隨手拍：設計桌、建築模型、材料、窗景、咖啡、晚餐、街景",
+      "自然光、工作現場光或夜間實際燈光；可以有合理的小幅傾斜與手機鏡頭感",
+      "只有情節有理由時才拍前鏡頭自拍或鏡前自拍；不能把旁人替他拍的全身棚拍宣稱是自己拍的"
+    ],
+    "instagramStory": [
+      "預設 9:16 直式、自然即時紀錄",
+      "建築空間、工地局部、街景、日常飲食或書店",
+      "無須為了讓玩家看到而固定頻率更新"
+    ],
+    "instagramPost": [
+      "預設 4:5、構圖略講究、仍像本人攝影作品",
+      "可選建築攝影、街道光影、旅行與工作之外的個人觀察",
+      "多圖輪播需要自然因果，不等於給玩家發私訊"
+    ],
+    "constraints": [
+      "不得拍出攝影者本人無法手持手機取得的第三人稱角度",
+      "不得讓每張照片都像專業寫真或廣告棚拍",
+      "照片不自動代表劇情已發生、玩家已回覆或社群已發布"
+    ]
+  },
+  "commonScenes": {
+    "status": "已建立素材方向和候選日常；不代表每件事在故事中都已發生",
+    "confirmedContexts": [
+      "建築設計工作室與桌面圖紙",
+      "外出工地勘查",
+      "書店咖啡館、建築速寫",
+      "夜間工作室及下班後街景"
+    ],
+    "candidateLocations": [
+      "城市街道和建築外觀",
+      "下雨後的窗邊天空",
+      "工作桌上的材料與模型",
+      "簡單用餐的餐桌",
+      "休假看書與咖啡"
+    ],
+    "mood": [
+      "溫和、自然、安靜但不刻意抒情",
+      "低飽和的都市生活觀察",
+      "少量生活瑕疵，避免過分精修"
+    ],
+    "continuity": [
+      "發照片前需有與當時工作／生活事件相符的理由",
+      "與玩家因工作專案認識，不預設兩人已在交往",
+      "不擅自拍到保密工地或客戶個資"
+    ]
+  },
+  "photoDestinations": {
+    "kkt": "assets/characters/gu_shian/chat/",
+    "instagramStory": "assets/characters/gu_shian/instagram/story/",
+    "instagramPost": "assets/characters/gu_shian/instagram/post/"
+  },
+  "mandatoryGenerationChecklist": [
+    "從 visual-memory-registry.json 查到角色 ID 和 approvedReferenceVersion",
+    "實際讀取 visual-memory.json 和原圖 reference/gu_shian_reference_sheet_v1.jpg，若讀不到不得宣稱比對成功",
+    "有人入鏡時逐項對照原圖五官、髮線、髮色、肩寬與臉部表情",
+    "以典型衣著作基準，但允許符合場景的合理變化",
+    "確認影像由角色本人可以合理拍出，尤其 POV 與自拍角度",
+    "按用途選 Chat、IG Story、IG Post 的唯一主存放位置，設定檔名",
+    "先生成再核實 GitHub 實際圖片檔存在；資料配置提交不等於圖片上傳",
+    "如果要遊戲出現照片，另更新正式劇本與事件並執行遊戲測試"
+  ]
+}

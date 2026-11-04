@@ -8,7 +8,10 @@
     "穩定外觀特徵必須跨場景維持；穿搭、表情、背景可依事件合理變化",
     "未被作者確認的照片場景、寵物、學籍、戀愛狀態不得寫入角色既定事實",
     "新生成圖片需標註 chat / instagram_story / instagram_post、目標路徑、實際上傳狀態及事件用途",
-    "視覺基準變更採用版本化，不可無聲覆蓋已確認的角色形象"
+    "視覺基準變更採用版本化，不可無聲覆蓋已確認的角色形象",
+    "生成前先查登錄索引；confirmed 角色必須載入 visual-memory.json 和 GitHub 上的原始參考圖片，缺一不可",
+    "Instagram Story、Post、KKT 的生成圖在提交 GitHub 前要標註用途和檔名，必須以遠端檔案確認上傳完成",
+    "對作者尚未確認的場景、服裝變化、拍攝習慣保留為生成建議，不得當成既定角色歷史"
   ],
   "characters": {
     "qiye": {
@@ -18,6 +21,30 @@
       "referenceAssetPath": "assets/characters/qiye/reference/qiye_reference_sheet_v1.jpg",
       "referenceAssetStatus": "pending_github_upload",
       "sourceImageUploadedName": "7F73BC76-F8E9-4D06-A12E-03575F53FF2E.jpeg"
+    },
+    "gu_shian": {
+      "name": "顧時安",
+      "status": "confirmed_visual_identity",
+      "memoryFile": "assets/characters/gu_shian/visual-memory.json",
+      "referenceAssetPath": "assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
+      "referencePreviewPath": "assets/characters/gu_shian/reference/gu_shian_reference_preview_v1.jpg",
+      "referenceAssetStatus": "available_on_github",
+      "approvedReferenceVersion": 1,
+      "sourceImageUploadedName": "40CAA994-639D-440D-B6AB-11484B09A26D.jpeg"
+    },
+    "shen_yanzhou": {
+      "name": "沈硯舟",
+      "status": "pending_visual_confirmation",
+      "memoryFile": null,
+      "referenceAssetPath": null,
+      "referenceAssetStatus": "not_yet_registered"
+    },
+    "pei_zhiyu": {
+      "name": "裴知聿",
+      "status": "pending_visual_confirmation",
+      "memoryFile": null,
+      "referenceAssetPath": null,
+      "referenceAssetStatus": "not_yet_registered"
     }
   }
 }
