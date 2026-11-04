@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "机主",
     "date": "2026-11-04",
@@ -1497,7 +1497,9 @@
     "pei_contact_allowed": false,
     "pei_no_contact": false,
     "pei_last_topic": "",
-    "pei_relationship_status": "former_partners"
+    "pei_relationship_status": "former_partners",
+    "qiye_photo_policy_version": "3.0",
+    "qiye_photo_runtime_integrated": false
   },
   "events": [
     {
