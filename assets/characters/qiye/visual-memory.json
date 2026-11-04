@@ -15,7 +15,10 @@
       "height": 1296
     },
     "priority": "人物面貌、五官、髮型、氣質、體態比例最高優先；角色身分與年齡以核心設定為準",
-    "note": "GitHub 尚未放入這張原圖。生成前必須實際提供這張原圖（本對話附件或日後 GitHub 影像），不能僅根據檔名宣稱參照。"
+    "note": "GitHub 尚未放入這張原圖。生成前必須實際提供這張原圖（本對話附件或日後 GitHub 影像），不能僅根據檔名宣稱參照。",
+    "sourceSha256": "41b1976f553474e28c6aa19f9796e595a011f4aa55b3031c03d46e0de38c53d0",
+    "sourceOriginalFileSizeBytes": 492130,
+    "matchRequirement": "若 GitHub 原圖上傳，使用 SHA-256 校驗與作者此次提供的參考圖相同，避免日後錯誤替換。"
   },
   "immutableAppearance": {
     "face": [
