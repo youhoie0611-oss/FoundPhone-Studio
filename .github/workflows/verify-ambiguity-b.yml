@@ -17,6 +17,8 @@ jobs:
       - run: npm ci
       - name: Validate story
         run: npm run story:validate
+      - name: Validate Shen photo V1.0 policy
+        run: npm run story:photo-policy
       - name: Test story
         run: npm run story:test
       - name: Build player
