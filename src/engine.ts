@@ -132,7 +132,7 @@ function runQueue(
       if (a.type === "notification" && /^KKT[：:]|(?:傳來新訊息|稍後回覆了訊息|回覆了訊息)/.test(String(a.value))) {
         const latest = unlockedIncoming.at(-1);
         if (latest) {
-          const sender = latest.sender || latest.title;
+          const sender = latest.id.startsWith("friends-group-") ? "下班後五人組" : (latest.sender || latest.title);
           const body = latest.body.trim().split("\\n").filter(Boolean).at(-1) ?? latest.body.trim();
           s.notifications.push(`${sender}：${body}`);
         }
