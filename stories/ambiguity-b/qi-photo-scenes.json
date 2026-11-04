@@ -1,0 +1,56 @@
+{
+  "character": "祁野",
+  "source": "祁野的六幕城市生活.png",
+  "status": "awaiting-image-assets",
+  "layout": "3 columns × 2 rows",
+  "photos": [
+    {
+      "id": "qi-basketball-night",
+      "row": 0,
+      "column": 0,
+      "caption": "剛打完球。今晚這場打得還行。",
+      "scene": "夜間籃球"
+    },
+    {
+      "id": "qi-skateboard",
+      "row": 0,
+      "column": 1,
+      "caption": "板子磨成這樣，該換了。",
+      "scene": "滑板日常"
+    },
+    {
+      "id": "qi-design-desk",
+      "row": 0,
+      "column": 2,
+      "caption": "改圖改到現在，先喝口咖啡。",
+      "scene": "深夜設計"
+    },
+    {
+      "id": "qi-dog",
+      "row": 1,
+      "column": 0,
+      "caption": "這傢伙今天倒是挺黏人。",
+      "scene": "狗狗日常"
+    },
+    {
+      "id": "qi-riverside",
+      "row": 1,
+      "column": 1,
+      "caption": "剛路過，天色還不錯。",
+      "scene": "河岸夕陽"
+    },
+    {
+      "id": "qi-gym",
+      "row": 1,
+      "column": 2,
+      "caption": "練完了。",
+      "scene": "健身房自拍"
+    }
+  ],
+  "rules": [
+    "每張照片僅在對應劇情時發送",
+    "玩家拒絕分享時不得發送該照片",
+    "原始圖片必須先放入公開素材目錄才能在聊天中引用",
+    "不得在素材缺失時顯示破圖"
+  ]
+}
