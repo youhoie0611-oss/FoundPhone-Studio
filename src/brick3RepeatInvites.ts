@@ -84,8 +84,7 @@ function affinity(s: Runtime, a: Activity): number {
 }
 function allowed(w: Work, s: Runtime, a: Activity): boolean {
   return lastContactExists(w, a)
-    && (!("requiresFlag" in a) || s.variables[a.requiresFlag] === true)
-    && !s.unlocked.includes(oncePhotoId(a));
+    && (!("requiresFlag" in a) || s.variables[a.requiresFlag] === true);
 }
 function deferNext(s: Runtime, a: Activity, p: Brick3InviteProgress) {
   p.phase = "idle";
@@ -100,6 +99,10 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
   for (const a of keys) {
     if (!allowed(w, s, a)) continue;
     const p = progressFor(s, a);
+    if (!p.completed && s.unlocked.includes(oncePhotoId(a))) {
+      p.completed = true; // Existing save: do not invite again for a collected photo.
+      p.phase = "completed";
+    }
     if (p.completed) {
       if (!p.followUpSent && p.followUpAtMs !== undefined && now(s) >= p.followUpAtMs) {
         const selection = (p.followUpVariant ?? 0) % a.followUps.length;
@@ -183,4 +186,17 @@ export function chooseBrick3Invitation(w: Work, previous: Runtime, target: strin
     ? choice === 1 ? "arrival_yes" : "arrival_no"
     : choice === 1 ? "accept" : choice === 3 ? "details" : "decline";
   return s;
+}
+
+/** A free-form reply is not silently treated as consenting to an outing. */
+export function dismissBrick3InvitationOnCustomReply(s: Runtime, thread: string): void {
+  for (const a of keys) {
+    if (a.characterName !== thread) continue;
+    const p = s.brick3Invites?.[a.id];
+    if (!p || (p.phase !== "invited" && p.phase !== "arrival")) continue;
+    const pending = [choicePrefix(a.id), choicePrefix(a.id + "_arrival")];
+    if (!s.choices.some(c => pending.some(prefix => c.target.startsWith(prefix)))) continue;
+    s.choices = s.choices.filter(c => !pending.some(prefix => c.target.startsWith(prefix)));
+    deferNext(s, a, p);
+  }
 }
