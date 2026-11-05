@@ -262,6 +262,35 @@ export function chooseBrick3Invitation(w: Work, previous: Runtime, target: strin
   return s;
 }
 
+/** Route a free-text decision into the same invitation state machine as scripted choices.
+ * Returns true only when a live invitation was consumed; callers must not queue a second NPC reply.
+ */
+export function respondToBrick3InvitationText(s: Runtime, thread: string, raw: string): boolean {
+  const a = keys.find(activity => activity.characterName === thread &&
+    (s.brick3Invites?.[activity.id]?.phase === "invited" || s.brick3Invites?.[activity.id]?.phase === "arrival"));
+  if (!a) return false;
+  const p = s.brick3Invites?.[a.id];
+  if (!p) return false;
+  const atDoor = p.phase === "arrival";
+  const refused = /不去|不能去|沒空|不方便|不想|不要|拒絕|改天|下次|先不|不會去/.test(raw);
+  const details = /幾點|時間|在哪|哪裡|地點|地址|什麼時候|哪天|怎麼去/.test(raw);
+  const accepted = /^(好|好啊|好呀|可以|我去|我會去|算我一個|有空|願意)[！!。\\s]*$/.test(raw.trim());
+  if (!refused && !details && !accepted) return false;
+  const choice = atDoor ? (accepted ? 1 : 2) : refused ? 2 : details ? 3 : 1;
+  const prefix = choicePrefix(eventId(a, atDoor));
+  s.choices = s.choices.filter(option => !option.target.startsWith(prefix));
+  p.peiQueue = undefined;
+  p.anxiousFollowUpAtMs = undefined;
+  p.anxiousFollowUpStep = undefined;
+  p.phase = "reply_pending";
+  p.responseAtMs = now(s) + 2200;
+  p.responseText = (atDoor ? a.arrivalResponses : a.responses)[choice - 1];
+  p.responseMode = atDoor ? (accepted ? "arrival_yes" : "arrival_no")
+    : refused ? "decline" : details ? "details" : "accept";
+  if (p.responseMode === "details") p.detailRequests = (p.detailRequests ?? 0) + 1;
+  return true;
+}
+
 /** A free-form reply is not silently treated as consenting to an outing. */
 export function dismissBrick3InvitationOnCustomReply(s: Runtime, thread: string): void {
   for (const a of keys) {
