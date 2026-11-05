@@ -93,13 +93,16 @@ export function MymyKakao(p: SkinProps) {
   const list = grouped(p.items),
     messages = grouped(p.items).find((g) => g.title === p.thread)?.items ?? [],
     scroll = useRef<HTMLDivElement>(null);
-  // The chat inbox contains only conversations with delivered messages.
-  // Contacts who have never exchanged messages remain in the Friends tab,
-  // and must not appear as empty threads in the Chats tab.
-  const inbox = list.filter((group) =>
-    group.items.length > 0 &&
+  // Friends may be listed before messaging; Chats must only contain real messages.
+  const knownFriends = ["沈硯舟", "裴知聿", "祁野", "林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
+  const activeChats = list.filter((group) => group.items.some((item) =>
+    Boolean(item.body.trim() || item.media) &&
     !/^(測試會話|测试会话|測試联系人|测试联系人)$/.test(group.title)
-  );
+  ));
+  const inbox = tab === "好友"
+    ? [...list, ...knownFriends.filter((name) => !list.some((group) => group.title === name))
+      .map((title) => ({ title, items: [] as Item[] }))]
+    : activeChats;
   const [revealed, setRevealed] = useState<Record<string, number>>({});
   const [awaitingReply, setAwaitingReply] = useState<{ thread: string; afterId: string } | null>(null);
   // A thread is read when opened; never mark other conversations or outgoing messages.
