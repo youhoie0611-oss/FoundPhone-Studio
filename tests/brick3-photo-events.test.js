@@ -15,25 +15,19 @@ describe("Brick3 photo event integration", () => {
     const story = makeStory();
     const nodeIds = story.events.map((n) => n.id);
     expect(new Set(nodeIds).size).toBe(nodeIds.length);
-    for (const scene of ["photo_morning_breakfast", "photo_design_review", "photo_dinner_invite", "photo_camera_walk", "photo_practice_update", "photo_night_view", "photo_weekend_sport"]) {
+    for (const scene of ["photo_morning_breakfast", "photo_design_review", "photo_camera_walk", "photo_practice_update", "photo_night_view", "photo_weekend_sport"]) {
       const options = story.events.find((n) => n.id === "brick3-photo-" + scene + "-options");
       expect(options?.next).toHaveLength(4);
       expect(options.next.every((id) => story.events.some((n) => n.id === id))).toBe(true);
     }
   });
 
-  it("does not import a dinner visit merely for receiving an invitation", () => {
+  it("leaves Pei's former fixed-day dinner to the affinity-based invitation runtime", () => {
     const story = makeStory();
-    const invite = story.events.find((n) => n.id === "brick3-photo-photo_dinner_invite-arrive");
-    const accept = story.events.find((n) => n.id === "brick3-photo-photo_dinner_invite-choice-1");
-    const reject = story.events.find((n) => n.id === "brick3-photo-photo_dinner_invite-choice-3");
-    const visit = story.events.find((n) => n.id === "brick3-photo-photo_dinner_at_home-arrive");
-    const hands = "brick3-photo-photo_dinner_at_home-album-4";
-    expect(actions(invite).some((a) => a.key === hands)).toBe(false);
-    expect(accept.next).toContain("brick3-photo-visit-travel");
-    expect(reject.next).not.toContain("brick3-photo-visit-travel");
-    expect(hasUnlock(visit, hands)).toBe(false);
-    expect(hasUnlock(story.events.find((n) => n.id === "brick3-photo-photo_dinner_at_home-choice-2-reply-arrive"), hands)).toBe(true);
+    expect(story.events.some((e) => e.id === "brick3-photo-photo_dinner_invite-arrive")).toBe(false);
+    expect(story.events.some((e) => e.id === "brick3-photo-photo_dinner_at_home-arrive")).toBe(false);
+    const manifest = readJson("docs/brick3-photo-events-v1.json");
+    expect(manifest.events.find((e) => e.eventId === "photo_dinner_at_home").images).toHaveLength(1);
   });
 
   it("keeps missing images as external safe assets and the fifth lead gated", () => {
