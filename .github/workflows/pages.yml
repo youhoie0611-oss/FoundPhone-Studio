@@ -32,10 +32,21 @@ jobs:
         with:
           ref: rebuild-zhuan2-v1
           path: rebuild-source
-      - name: Publish isolated rebuild under /rebuild/
+      - name: Install rebuilt FoundPhone dependencies
+        run: npm ci
+        working-directory: rebuild-source
+      - name: Validate rebuilt FoundPhone story
         run: |
-          mkdir -p dist/rebuild
-          cp rebuild-source/rebuild/index.html dist/rebuild/index.html
+          npm run typecheck
+          npm run story:validate
+          npm run story:test
+        working-directory: rebuild-source
+      - name: Build isolated FoundPhone-based game
+        run: |
+          npm run build
+          mkdir -p ../dist/rebuild
+          cp -a dist/. ../dist/rebuild/
+        working-directory: rebuild-source
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
