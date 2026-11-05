@@ -19,6 +19,8 @@ export type Brick3InviteProgress = {
   /** Pei may send a separate anxious follow-up after a soft refusal. */
   anxiousFollowUpAtMs?: number;
   anxiousFollowUpStep?: number;
+  /** Queued Pei KKT bubbles; delivered by game time, even with the chat closed. */
+  peiQueue?: { suffix: string; parts: string[]; index: number; nextAtMs: number; photoEvent: string };
   completed?: boolean;
   /** Only set on a newly confirmed arrival, never a migrated old save. */
   completedAtMs?: number;
@@ -58,6 +60,28 @@ function message(state: Runtime, a: Activity, suffix: string, body: string, outg
     meta: photoEvent ? { photoEventId: photoEvent, source: "brick3-repeat-invitation" } : { source: "brick3-repeat-invitation" },
   }));
   if (!outgoing) state.notifications.push(`${a.characterName}：${body.split("\n")[0]}`);
+}
+function speak(state: Runtime, a: Activity, suffix: string, body: string, photoEvent = "") {
+  if (a.id !== "pei_dinner_outing") {
+    message(state, a, suffix, body, false, photoEvent);
+    return;
+  }
+  const parts = body.split("\\n").map(v => v.trim()).filter(Boolean);
+  if (parts.length <= 1) {
+    message(state, a, suffix, body, false, photoEvent);
+    return;
+  }
+  const p = progressFor(state, a);
+  message(state, a, suffix + "-part-1", parts[0], false, photoEvent);
+  p.peiQueue = { suffix, parts, index: 1, nextAtMs: now(state) + 2500, photoEvent };
+}
+function tickPeiQueue(state: Runtime, a: Activity, p: Brick3InviteProgress) {
+  const q = p.peiQueue;
+  if (!q || now(state) < q.nextAtMs) return;
+  message(state, a, q.suffix + "-part-" + (q.index + 1), q.parts[q.index], false, q.photoEvent);
+  q.index++;
+  q.nextAtMs = now(state) + 2500 + (q.index % 2) * 1200;
+  if (q.index >= q.parts.length) p.peiQueue = undefined;
 }
 function photoMessage(state: Runtime, a: Activity, suffix: string, filename: string, album = false) {
   const id = album ? oncePhotoId(a) : `brick3-repeat-${a.id}-${suffix}`;
@@ -127,6 +151,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
   for (const a of keys) {
     if (!allowed(w, s, a)) continue;
     const p = progressFor(s, a);
+    if (a.id === "pei_dinner_outing") tickPeiQueue(s, a, p);
     if (!p.completed && s.unlocked.includes(oncePhotoId(a))) {
       p.completed = true; // Existing save: do not invite again for a collected photo.
       p.phase = "completed";
@@ -138,7 +163,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         "我剛剛又看了一次妳的訊息。\\n……妳是不是不想再跟我單獨見面了？",
         "對不起，我又一直問。\\n我只是很怕，連見妳一面都變得不可能。",
       ];
-      message(s, a, "anxious-followup-" + p.attempts + "-" + step,
+      speak(s, a, "anxious-followup-" + p.attempts + "-" + step,
         lines[step].replace(/\\n/g, "\n"));
       p.anxiousFollowUpStep = step + 1;
       p.anxiousFollowUpAtMs = step === 0 ? now(s) + 45000 : undefined;
@@ -147,7 +172,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
     if (p.completed) {
       if (!p.followUpSent && p.followUpAtMs !== undefined && now(s) >= p.followUpAtMs) {
         const selection = (p.followUpVariant ?? 0) % a.followUps.length;
-        message(s, a, "aftercare-" + p.attempts, a.followUps[selection]);
+        speak(s, a, "aftercare-" + p.attempts, a.followUps[selection]);
         // The optional NPC snapshot appears in KKT only if the WebP is published.
         // Missing photo is filtered by useStoryPhotoAvailability without suppressing this text.
         photoMessage(s, a, "aftercare-photo-" + p.attempts, a.followUpPhoto);
@@ -157,7 +182,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
     }
     if (p.phase === "reply_pending" && p.responseAtMs !== undefined && now(s) >= p.responseAtMs) {
       const detailSuffix = p.responseMode === "details" ? "-ask-" + (p.detailRequests ?? 0) : "";
-      message(s, a, "response-" + p.attempts + "-" + p.responseMode + detailSuffix, p.responseText ?? "知道了。");
+      speak(s, a, "response-" + p.attempts + "-" + p.responseMode + detailSuffix, p.responseText ?? "知道了。");
       const mode = p.responseMode;
       p.responseAtMs = undefined;
       if (mode === "accept") {
@@ -191,7 +216,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
     if (p.phase === "travel" && p.travelAtMs !== undefined && now(s) >= p.travelAtMs) {
       p.phase = "arrival";
       p.travelAtMs = undefined;
-      message(s, a, "arrival-question-" + p.attempts, a.arrival, false, eventId(a, true));
+      speak(s, a, "arrival-question-" + p.attempts, a.arrival, eventId(a, true));
       offerOptions(s, a, true);
       continue;
     }
@@ -201,8 +226,8 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
       if (now(s) - last < 120000) continue;
       p.phase = "invited";
       p.attempts++;
-      const text = p.attempts === 1 ? a.invite : `之前那次沒約成。我沒有要催妳，只是想再問一次：${a.invite}`;
-      message(s, a, "invitation-" + p.attempts, text, false, a.id);
+      const text = p.attempts === 1 ? a.invite : a.id === "pei_dinner_outing" ? `上次沒約成。\\n我後來又想了很久。\\n這次妳願意來嗎？\\n……我還是想見妳。`.replace(/\\n/g, "\n") : `之前那次沒約成。我沒有要催妳，只是想再問一次：${a.invite}`;
+      speak(s, a, "invitation-" + p.attempts, text, a.id);
       offerOptions(s, a, false);
       s.ui ??= {};
       s.ui.scriptedThreadDelivery = { ...incomingDelivery, [a.characterName]: now(s) };
@@ -244,6 +269,7 @@ export function dismissBrick3InvitationOnCustomReply(s: Runtime, thread: string)
     if (!p) continue;
     p.anxiousFollowUpAtMs = undefined;
     p.anxiousFollowUpStep = undefined;
+    p.peiQueue = undefined;
     if (p.phase !== "invited" && p.phase !== "arrival") continue;
     const pending = [choicePrefix(a.id), choicePrefix(a.id + "_arrival")];
     if (!s.choices.some(c => pending.some(prefix => c.target.startsWith(prefix)))) continue;
