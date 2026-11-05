@@ -111,6 +111,7 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
+  const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
   // Explicit opening-scene questions must resolve to facts and a next action.
   // Do not fall back to vague "let me think" messages for these story gates.
   if (request.thread === "沈硯舟" && /還記得我|記得我嗎|你還記得|認得我|認出我|怎麼認出|怎麼認得/.test(input)) {
@@ -126,7 +127,7 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
     return { reply: "太好了，我還怕認錯人。那天妳一直忙著協調現場，我沒好意思打擾。對了，我整理出一張有妳入鏡的照片，妳想先看看，還是我不要傳？", delayMs: 1600 };
   }
   // Scene facts take precedence over generic question templates for every contact.
-  const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
+
   const asksTime = /(?:幾點|几点|什麼時候|什么时候|何時|何时|時間|时间).*(?:開始|开始|聚|活動|活动|見面|见面)?|(?:活動|活动|聚餐|聚會|聚会).*(?:幾點|几点|時間|时间)/.test(input);
   if (asksTime && /七點半|7[:：]30|19[:：]30|七点半/.test(context) && /活動|聚餐|聚會|聚会|週五|周五|時間|时间/.test(context)) {
     return { reply: request.thread === "林安"
