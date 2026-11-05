@@ -203,9 +203,6 @@ export function safeMedia(value: string) {
     return value;
   if (/^\.\/characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(value))
     return value;
-  // Accept only registered local Brick3 image filenames, never external URLs.
-  if (/^\.\/story-photos\/(?:shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(value))
-    return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
     value,
   )
