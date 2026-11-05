@@ -139,7 +139,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         "對不起，我又一直問。\\n我只是很怕，連見妳一面都變得不可能。",
       ];
       message(s, a, "anxious-followup-" + p.attempts + "-" + step,
-        lines[step].replace(/\\n/g, "\\n"));
+        lines[step].replace(/\\n/g, "\n"));
       p.anxiousFollowUpStep = step + 1;
       p.anxiousFollowUpAtMs = step === 0 ? now(s) + 45000 : undefined;
       continue;
@@ -241,7 +241,10 @@ export function dismissBrick3InvitationOnCustomReply(s: Runtime, thread: string)
   for (const a of keys) {
     if (a.characterName !== thread) continue;
     const p = s.brick3Invites?.[a.id];
-    if (!p || (p.phase !== "invited" && p.phase !== "arrival")) continue;
+    if (!p) continue;
+    p.anxiousFollowUpAtMs = undefined;
+    p.anxiousFollowUpStep = undefined;
+    if (p.phase !== "invited" && p.phase !== "arrival") continue;
     const pending = [choicePrefix(a.id), choicePrefix(a.id + "_arrival")];
     if (!s.choices.some(c => pending.some(prefix => c.target.startsWith(prefix)))) continue;
     s.choices = s.choices.filter(c => !pending.some(prefix => c.target.startsWith(prefix)));
