@@ -466,12 +466,26 @@ function PhoneRuntime({
                       const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
                       const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
                       const base = { ...item, time: timestamp };
-                      // Render each incoming chat line as an independent bubble.
-                      // Unread and notifications continue to follow the underlying event.
-                      if (item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
-                      const lines = item.body.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+                      // Release every line as a separate message over simulated time.
+                      // This runs independently of whether the player opens the chat.
+                      if (creator || item.outgoing || !item.body.includes("\\n") || !["kakao", "messages"].includes(app)) return [base];
+                      const lines = item.body.split(/\\n+/).map((line) => line.trim()).filter(Boolean);
                       if (lines.length < 2) return [base];
-                      return [{ ...base, body: lines[0] }];
+                      const deliveredAt = (s.ui?.deliveryElapsed as Record<string, number> | undefined)?.[item.id];
+                      const elapsed = s.elapsedMs ?? 0;
+                      const interval = item.title === "裴知聿" ? 1800 : item.title === "祁野" ? 1000 : 1400;
+                      const count = deliveredAt === undefined ? lines.length
+                        : Math.min(lines.length, Math.max(1, Math.floor((elapsed - deliveredAt) / interval) + 1));
+                      return lines.slice(0, count).map((line, index) => ({
+                        ...base,
+                        id: index === 0 ? item.id : `${item.id}-line-${index}`,
+                        body: line,
+                        time: index === 0 || deliveredAt === undefined ? timestamp : (() => {
+                          const start = new Date(timestamp.replace(" ", "T"));
+                          if (Number.isNaN(start.getTime())) return timestamp;
+                          return new Date(start.getTime() + index * interval).toLocaleString("sv-SE").slice(0, 16);
+                        })(),
+                      }));
                     }),
                     ...(s.messages[app] ?? []),
                   ]}
