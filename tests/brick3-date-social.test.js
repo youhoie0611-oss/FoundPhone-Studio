@@ -117,7 +117,7 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
     expect(found).toBe(true);
   });
 
-  it("Pei speaks like a restrained, sharp ex rather than a politely detached friend", () => {
+  it("Pei admits jealousy and fear of loss rather than playing a detached flirt", () => {
     const w = work(), a = invitationConfig.activities[0];
     let low, intense;
     for (let minute = 1; minute <= 35 && (!low || !intense); minute++) {
