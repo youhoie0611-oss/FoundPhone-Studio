@@ -98,6 +98,7 @@ export function MymyKakao(p: SkinProps) {
     ? [...list, ...knownFriends.filter((name) => !list.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
     : list;
   const [revealed, setRevealed] = useState<Record<string, number>>({});
+  const [awaitingReply, setAwaitingReply] = useState<{ thread: string; afterId: string } | null>(null);
   // A thread is read when opened; never mark other conversations or outgoing messages.
   const acknowledged = useRef(new Set<string>());
   useEffect(() => {
@@ -112,6 +113,12 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
 
   const lastMessage = messages[messages.length - 1];
+  const latestIncomingId = [...messages].reverse().find((m) => !m.outgoing)?.id ?? "";
+  useEffect(() => {
+    if (awaitingReply && awaitingReply.thread === p.thread && latestIncomingId !== awaitingReply.afterId) {
+      setAwaitingReply(null);
+    }
+  }, [awaitingReply, latestIncomingId, p.thread]);
   // Story-authored Gu Shian photo replies take priority over hard-coded suggestions.
   // Never offer generic replies while one of his photo messages is still arriving.
   const guScene = p.thread === "顧時安" ? lastMessage?.meta?.guScene : undefined;
@@ -202,10 +209,11 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
+            {awaitingReply?.thread === p.thread && <div className="kkt-typing" role="status">{p.thread} 正在回覆…</div>}
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !lastMessage?.outgoing && (!guScene || guSceneChoices.length > 0) && (
+          {!p.creator && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
@@ -244,7 +252,7 @@ export function MymyKakao(p: SkinProps) {
                                     : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
                 return <>
                   {options.map((reply, index) => (
-                    <button type="button" key={index} className="kkt-reply-choice" onClick={() => guSceneChoices.length > 0 ? p.onChoose?.(guSceneChoices[index].target) : p.onCustomMessage?.(p.thread, reply)}>
+                    <button type="button" key={index} className="kkt-reply-choice" onClick={() => { setAwaitingReply({ thread: p.thread, afterId: latestIncomingId }); if (guSceneChoices.length > 0) p.onChoose?.(guSceneChoices[index].target); else p.onCustomMessage?.(p.thread, reply); }}>
                       {reply}
                     </button>
                   ))}
