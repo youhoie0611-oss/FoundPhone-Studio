@@ -198,6 +198,9 @@ export function validateWork(input: unknown): Work {
 export function safeMedia(value: string) {
   // Only allow bundled character images or supported inline media.
   // Relative paths work under GitHub Pages project subdirectories.
+  // Only author-controlled story photo WebP files; no arbitrary URLs or traversal.
+  if (/^\.\/story-photos\/(?:shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(value))
+    return value;
   if (/^\.\/characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(value))
     return value;
   // Accept only registered local Brick3 image filenames, never external URLs.
