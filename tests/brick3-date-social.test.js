@@ -31,7 +31,7 @@ function socialAfterCompletion(w, activity, time = 1000, privateLu = false) {
   return s;
 }
 const socialItems = s => (s.messages.instagram ?? []).filter(i => i.meta.source === "brick3-date-social");
-const inquiries = s => (s.messages.kakao ?? []).filter(i => i.id.startsWith("brick3-social-") && i.id.includes("-inquiry-"));
+const inquiries = s => (s.messages.kakao ?? []).filter(i => i.id.startsWith("brick3-social-") && (i.id.includes("-inquiry-") || i.id.includes("-question-pei-part-")));
 
 describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private inquiries", () => {
   it("publishes exactly one dated Story or post for each of the five male leads", () => {
@@ -109,7 +109,7 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
       expect(answer.choices.some(c => c.target.startsWith(prefix + event + "-choice-"))).toBe(false);
       expect(answer.messages.kakao.some(m => m.id.endsWith("-choice-pei") && m.outgoing)).toBe(true);
       const responded = advance(w, answer, 4000);
-      expect(responded.messages.kakao.some(m => m.id.endsWith("-response-pei") && m.sender === "裴知聿")).toBe(true);
+      expect(responded.messages.kakao.some(m => m.id.includes("-reply-pei-part-") && m.sender === "裴知聿")).toBe(true);
       expect(responded.brick3DateSocial[a.id].inquiries.pei.answered).toBe(true);
       const persisted = JSON.parse(JSON.stringify(responded));
       expect(socialItems(advance(w, persisted, 1000))).toHaveLength(1);
@@ -135,11 +135,30 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
     expect(lowQuestion.body).toMatch(/限動|照片/);
     expect(lowQuestion.body).not.toMatch(/希望妳過得不錯|今天還順利嗎|祝妳/);
     const intenseQuestion = inquiries(intense).find(m => m.sender === "裴知聿");
-    expect(intenseQuestion.body).toMatch(/喜歡的人|想到我/);
+    expect(intenseQuestion.body).toMatch(/妳是不是|妳跟他/);
     const answered = advance(w,
       choose(w, intense, prefix + intenseQuestion.meta.photoEventId + "-choice-3"), 4000);
-    expect(answered.messages.kakao.find(m => m.id.endsWith("-response-pei"))?.body)
-      .toMatch(/我吃醋了/);
+    expect(answered.messages.kakao.find(m => m.id.includes("-reply-pei-part-"))?.body)
+      .toMatch(/我在吃醋|我知道|對/);
+  });
+
+  it("Pei sends spaced bubbles and stops the unfinished sequence when the player answers", () => {
+    const w = work(), a = invitationConfig.activities[0];
+    let s;
+    for (let minute = 1; minute <= 35 && !s; minute++) {
+      const candidate = advance(w, advance(w, socialAfterCompletion(w, a, minute * 60000, true), 3 * 3600000), 5 * 3600000);
+      if (inquiries(candidate).some(m => m.sender === "裴知聿")) s = candidate;
+    }
+    expect(s).toBeDefined();
+    const event = inquiries(s).find(m => m.sender === "裴知聿").meta.photoEventId;
+    const pending = s.brick3DateSocial[a.id].inquiries.pei;
+    if (pending.sequence) {
+      const count = inquiries(s).filter(m => m.sender === "裴知聿").length;
+      const next = advance(w, s, 4000);
+      expect(inquiries(next).filter(m => m.sender === "裴知聿").length).toBeGreaterThan(count);
+      const answered = choose(w, next, prefix + event + "-choice-3");
+      expect(answered.brick3DateSocial[a.id].inquiries.pei.sequence).toBeUndefined();
+    }
   });
 
   it("custom text dismisses the current question without silently choosing an answer", () => {
