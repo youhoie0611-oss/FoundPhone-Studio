@@ -1,0 +1,536 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "磚3 動態照片事件配置",
+  "status": "asset_manifest_and_story_spec_not_runtime_wired",
+  "branch": "feature/character-autonomy-v3",
+  "imagesFormat": "webp",
+  "assetRoot": "public/story-photos",
+  "naming": "{characterId}_{scene}_{shot}.webp",
+  "characterIds": [
+    "shen_yanzhou",
+    "pei_zhiyu",
+    "qi_ye",
+    "gu_shian",
+    "lu_chenchuan"
+  ],
+  "rules": {
+    "doNotUnlockOnInvitationAlone": true,
+    "chatDeliveryIndependentOfOpenChat": true,
+    "saveToGalleryOnlyAfterRealEvent": true,
+    "noUnapprovedPlayerActions": true,
+    "assetMissing": "show_text_only_and_log_missing_asset",
+    "characterConsistency": "use each character project reference; never swap appearance",
+    "visibility": "private photos cannot be seen by other NPCs without authorized sharing",
+    "imageGeneration": "external generation in separate character chats, manually upload named assets"
+  },
+  "events": [
+    {
+      "eventId": "photo_morning_breakfast",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "早。早餐放桌上了，記得吃。",
+      "choices": [
+        {
+          "id": "morning_breakfast_choice_1",
+          "text": "你什麼時候準備的？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_2",
+          "text": "看起來很好吃。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_3",
+          "text": "你是不是把我當小孩照顧？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_4",
+          "text": "謝謝，不過下次不用特地準備。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "gu_shian_breakfast_chat_01",
+          "filename": "gu_shian_breakfast_chat_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_breakfast_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "木質餐桌上的吐司、煎蛋與咖啡，晨光，手機生活照"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_design_review",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "今天提案總算告一段落。",
+      "choices": [
+        {
+          "id": "design_review_choice_1",
+          "text": "辛苦了，順利嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_2",
+          "text": "模型做得很好看。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_3",
+          "text": "終於可以休息了吧？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_4",
+          "text": "我晚點再找你。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "gu_shian_studio_chat_01",
+          "filename": "gu_shian_studio_chat_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_studio_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "建築設計工作桌，模型與草圖，傍晚自然光"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_dinner_invite",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "今天煮多了。要不要過來吃？",
+      "choices": [
+        {
+          "id": "dinner_invite_choice_1",
+          "text": "好啊，我等等過去。",
+          "branches": "accept_visit"
+        },
+        {
+          "id": "dinner_invite_choice_2",
+          "text": "你居然會主動邀請我？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "dinner_invite_choice_3",
+          "text": "今天不方便，下次吧。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "dinner_invite_choice_4",
+          "text": "只有吃飯？",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_dinner_chat_01",
+          "filename": "pei_zhiyu_dinner_chat_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "住家廚房與餐桌上兩三道家常菜"
+        }
+      ],
+      "onChoiceRules": {
+        "accept_visit": [
+          "dinner_invite_choice_1"
+        ],
+        "visitEvent": "photo_dinner_at_home",
+        "rejectMustNotUnlockVisit": true
+      }
+    },
+    {
+      "eventId": "photo_dinner_at_home",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "conditional_visit",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": true,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "已接受邀請且實際抵達裴知聿住處",
+      "choices": [
+        {
+          "id": "dinner_at_home_choice_1",
+          "text": "今晚吃得很開心。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "dinner_at_home_choice_2",
+          "text": "你還記得我的口味？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "dinner_at_home_choice_3",
+          "text": "我們先別談以前。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "dinner_at_home_choice_4",
+          "text": "我差不多該回去了。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_dinner_visit_table_01",
+          "filename": "pei_zhiyu_dinner_visit_table_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_table_01.webp",
+          "usage": "gallery_event",
+          "unlock": {
+            "requiresEventCompleted": true
+          },
+          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
+        },
+        {
+          "assetId": "pei_zhiyu_dinner_visit_cooking_02",
+          "filename": "pei_zhiyu_dinner_visit_cooking_02.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_cooking_02.webp",
+          "usage": "gallery_event",
+          "unlock": {
+            "requiresEventCompleted": true
+          },
+          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
+        },
+        {
+          "assetId": "pei_zhiyu_dinner_visit_livingroom_03",
+          "filename": "pei_zhiyu_dinner_visit_livingroom_03.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_livingroom_03.webp",
+          "usage": "gallery_event",
+          "unlock": {
+            "requiresEventCompleted": true
+          },
+          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
+        },
+        {
+          "assetId": "pei_zhiyu_dinner_visit_hands_04",
+          "filename": "pei_zhiyu_dinner_visit_hands_04.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_hands_04.webp",
+          "usage": "gallery_event",
+          "unlock": {
+            "requiresConsent": true,
+            "requiresActualInteraction": "hand_holding"
+          },
+          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_camera_walk",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "剛整理完今天拍的照片，給你看一張。",
+      "choices": [
+        {
+          "id": "camera_walk_choice_1",
+          "text": "這張光線好好看。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "camera_walk_choice_2",
+          "text": "你在哪裡拍的？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "camera_walk_choice_3",
+          "text": "下次可以一起去嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "camera_walk_choice_4",
+          "text": "我不太懂攝影欸。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "shen_yanzhou_photo_walk_chat_01",
+          "filename": "shen_yanzhou_photo_walk_chat_01.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_photo_walk_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "城市街景抓拍，傍晚逆光，攝影愛好者手機傳圖"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_practice_update",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "剛打完球。今天手感不錯。",
+      "choices": [
+        {
+          "id": "practice_update_choice_1",
+          "text": "贏了嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "practice_update_choice_2",
+          "text": "你也太有精神。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "practice_update_choice_3",
+          "text": "有照片嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "practice_update_choice_4",
+          "text": "先去休息吧。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "shen_yanzhou_basketball_chat_01",
+          "filename": "shen_yanzhou_basketball_chat_01.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_basketball_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "傍晚室外籃球場，球鞋、籃球與運動水瓶"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_night_view",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "路過這裡。夜景還行。",
+      "choices": [
+        {
+          "id": "night_view_choice_1",
+          "text": "這裡是哪？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "night_view_choice_2",
+          "text": "你拍照居然還不錯。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "night_view_choice_3",
+          "text": "你現在在外面？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "night_view_choice_4",
+          "text": "早點回家。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "qi_ye_night_drive_chat_01",
+          "filename": "qi_ye_night_drive_chat_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_night_drive_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "城市夜景與停車場邊緣，隨手手機照片，無車牌特寫"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_weekend_sport",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "今天有人約我打球。",
+      "choices": [
+        {
+          "id": "weekend_sport_choice_1",
+          "text": "你也會認真練？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "weekend_sport_choice_2",
+          "text": "玩得開心。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "weekend_sport_choice_3",
+          "text": "下次帶我看看。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "weekend_sport_choice_4",
+          "text": "我先忙了。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "qi_ye_street_sport_chat_01",
+          "filename": "qi_ye_street_sport_chat_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_street_sport_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "街頭運動場景、球與運動服細節、自然隨手拍"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_off_duty",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "收工。終於能坐一下。",
+      "choices": [
+        {
+          "id": "off_duty_choice_1",
+          "text": "今天很忙？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "off_duty_choice_2",
+          "text": "你看起來累了。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "off_duty_choice_3",
+          "text": "要不要吃點東西？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "off_duty_choice_4",
+          "text": "那你先休息。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_after_work_chat_01",
+          "filename": "lu_chenchuan_after_work_chat_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_after_work_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "深夜休息室桌面，外套、飲品與柔和燈光，私人手機快照"
+        }
+      ]
+    },
+    {
+      "eventId": "photo_commercial_shoot",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true
+      },
+      "message": "今天的拍攝現場。",
+      "choices": [
+        {
+          "id": "commercial_shoot_choice_1",
+          "text": "你工作時真的不一樣。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "commercial_shoot_choice_2",
+          "text": "拍什麼主題？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "commercial_shoot_choice_3",
+          "text": "辛苦了。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "commercial_shoot_choice_4",
+          "text": "有空再聊。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_shoot_chat_01",
+          "filename": "lu_chenchuan_shoot_chat_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_shoot_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "商業拍攝現場側拍，燈架、服裝與攝影棚，工作紀錄"
+        }
+      ]
+    }
+  ]
+}
