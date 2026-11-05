@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import type { Work, Item } from "../schema";
 import { IOSToggle } from "../vendor/konsta/Toggle";
+import { db } from "../persistence";
 import { NavigationPage, useNavigation } from "./Navigation";
 type Row = [ComponentType<{ size?: number }>, string, string];
 const groups: Row[][] = [
@@ -63,7 +64,30 @@ export function NativeSettings({
     [airplane, setAirplane] = useState(false),
     [wifi, setWifi] = useState(true),
     [bluetooth, setBluetooth] = useState(true),
-    [lowPower, setLowPower] = useState(false);
+    [lowPower, setLowPower] = useState(false),
+    [refreshing, setRefreshing] = useState(false);
+  const refreshStoryData = async () => {
+    if (refreshing || !window.confirm("重新刷新資料會清除目前《磚3》的遊戲進度，並重新載入最新部署的劇情。確定繼續嗎？")) return;
+    setRefreshing(true);
+    try {
+      if ("serviceWorker" in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map((registration) => registration.unregister()));
+      }
+      if ("caches" in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((key) => caches.delete(key)));
+      }
+      await db.saves.delete(work.id);
+      const url = new URL(window.location.href);
+      url.searchParams.set("refresh", String(Date.now()));
+      window.location.replace(url.toString());
+    } catch (error) {
+      setRefreshing(false);
+      window.alert("刷新失敗，請稍後再試。遊戲資料未必已清除。");
+      console.error("Failed to refresh story data", error);
+    }
+  };
   const row = (label: string, value?: string, click?: () => void) => (
     <button key={label} className="settings-native-row" onClick={click}>
       <span>{label}</span>
@@ -215,6 +239,15 @@ export function NativeSettings({
                 </div>
                 <ChevronRight size={17} />
               </button>
+            )}
+            {(!query || "重新刷新資料".includes(query)) && (
+              <div className="settings-group">
+                <button className="settings-native-row" type="button" disabled={refreshing} onClick={() => void refreshStoryData()}>
+                  <span>重新刷新資料</span>
+                  <span className="settings-detail-value">{refreshing ? "正在刷新…" : "載入最新劇情"}</span>
+                  <ChevronRight size={16} />
+                </button>
+              </div>
             )}
             {groups.map((group, n) => (
               <div className="settings-group" key={n}>
