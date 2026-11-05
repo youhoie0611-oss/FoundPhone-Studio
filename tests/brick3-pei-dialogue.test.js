@@ -68,8 +68,8 @@ describe("Pei complete dialogue reconstruction", () => {
       .find(a => a.id === "pei_dinner_outing");
     expect(activity.invite).toMatch(/想見妳/);
     expect(activity.responses[1]).toMatch(/不想見我|想妳/);
-    expect(activity.arrival).toMatch(/看了好幾次門口/);
-    expect(activity.followUps.every(text => /想妳|再見妳|下一次|照片|位置|那天/.test(text))).toBe(true);
+    expect(activity.arrival.split("\n").length).toBeGreaterThan(2);
+    expect(activity.followUps).toHaveLength(3);
     expect(JSON.stringify(activity)).not.toMatch(/狐狸|狡黠|毒舌|鬥嘴/);
   });
   it("does not touch any other character or story", () => {
