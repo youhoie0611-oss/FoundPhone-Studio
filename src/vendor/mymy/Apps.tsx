@@ -93,14 +93,13 @@ export function MymyKakao(p: SkinProps) {
   const list = grouped(p.items),
     messages = grouped(p.items).find((g) => g.title === p.thread)?.items ?? [],
     scroll = useRef<HTMLDivElement>(null);
-  // Keep established friends accessible even before their first story message.
-  const knownFriends = ["沈硯舟", "裴知聿", "祁野", "林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
-  // The KKT skin can be mounted through different app IDs in legacy saves.
-  // Always display the canonical cast and exclude retired demo threads.
-  const canonicalThreads = list.filter((group) => !/^(測試會話|测试会话|測試联系人|测试联系人)$/.test(group.title));
-  const inbox = !p.creator
-    ? [...canonicalThreads, ...knownFriends.filter((name) => !canonicalThreads.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
-    : list;
+  // The chat inbox contains only conversations with delivered messages.
+  // Contacts who have never exchanged messages remain in the Friends tab,
+  // and must not appear as empty threads in the Chats tab.
+  const inbox = list.filter((group) =>
+    group.items.length > 0 &&
+    !/^(測試會話|测试会话|測試联系人|测试联系人)$/.test(group.title)
+  );
   const [revealed, setRevealed] = useState<Record<string, number>>({});
   const [awaitingReply, setAwaitingReply] = useState<{ thread: string; afterId: string } | null>(null);
   // A thread is read when opened; never mark other conversations or outgoing messages.
