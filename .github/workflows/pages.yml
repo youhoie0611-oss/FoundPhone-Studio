@@ -27,6 +27,7 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
+      # Refresh the isolated 磚3 preview after chat-list fixes.
       - name: Build isolated 磚3 preview using FoundPhone
         uses: actions/checkout@v4
         with:
