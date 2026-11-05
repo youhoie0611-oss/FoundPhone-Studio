@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "game": "磚3",
+  "characterId": "pei_zhiyu",
+  "characterName": "裴知聿",
+  "identityStatus": "approved_latest_visual",
+  "imageAvailability": "pending_github_binary_upload",
+  "approvedOn": "2026-11-05",
+  "priority": "本次玩家提供之黑色高領多視角人物板高於舊灰色連帽外套設定；已鎖定五官髮型、表情與常見造型",
+  "reference": {
+    "version": 2,
+    "confirmedInConversation": true,
+    "sourceOriginalFilename": "093175CA-C33E-471C-8FCB-CF78C8C327BA.jpeg",
+    "expectedRepositoryPath": "磚3/characters/裴知聿/profile/reference/pei_zhiyu_reference_v2.jpeg",
+    "repositoryFileExists": false,
+    "sourceImageSha256": "90f7e514f98ad57a314e9ff232ee6b4b31ad116c1f6fbb25cbdebff5357758c5",
+    "sourceGitBlobSha": "a0ef02bca4a1fe3b4e3b8a8dd40be48d9af6c8a8",
+    "sourceDimensions": {
+      "width": 1122,
+      "height": 1402
+    },
+    "mimeType": "image/jpeg",
+    "olderReferenceForHistoryOnly": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
+    "mustLoadExactV2PixelsBeforeFaceGeneration": true,
+    "ifImageMissing": "禁止只靠姓名、臉部文字或舊 v1 圖生成『已符合新版』的肖像；應告知需要先上傳真正的 v2 圖。"
+  },
+  "approvedVisual": {
+    "face": "清冷、精緻、略窄的輪廓；柔和但清晰的下顎，鼻樑挺直，淡粉唇色；整體偏自然白皙膚色",
+    "eyes": "略狹長、看起來慵懶或沉思的眼形，眼神略帶疏離，微微上挑",
+    "hair": "深黑色、蓬鬆自然的中長層次碎髮；長瀏海落在眉眼附近，耳後與後頸略有狼尾層次",
+    "optionalDistinctiveMarks": "設定板特寫中唇下有細小痣樣特徵；生成時依實際參考圖而非自行誇大",
+    "build": "修長偏瘦、肩頸線自然、四肢修長；不突然變成寬肩壯碩體型",
+    "accessories": [
+      "黑色細框或窄矩形眼鏡（有時戴）",
+      "簡約銀色小耳飾",
+      "細戒指與腕錶（依場合）"
+    ],
+    "expressions": [
+      "平靜清冷",
+      "淡笑",
+      "真正開心",
+      "狡黠調侃",
+      "低頭思考",
+      "嘴硬或不耐",
+      "放鬆",
+      "疲憊"
+    ],
+    "forbiddenChanges": [
+      "不得因穿搭、光線或情緒改變五官與年齡感",
+      "不得用其他角色的臉或重新隨機生成的陌生臉",
+      "眼鏡不是每張都必須戴"
+    ]
+  },
+  "signatureWardrobe": {
+    "primary": [
+      "黑色高領針織衫",
+      "黑色寬鬆打褶長褲",
+      "黑色鞋履",
+      "簡約銀色飾品"
+    ],
+    "confirmedAlternateLooks": [
+      "灰色 V 領針織衫搭襯衫（設定板表情參考）",
+      "黑色高領搭窄框眼鏡"
+    ],
+    "narrativeVariations": [
+      "日常襯衫、寬鬆 T 恤、休閒深色外套",
+      "運動服或居家服，須有當下生活動機"
+    ],
+    "notLockedUniform": true,
+    "priorStyle": "灰色連帽外套可當舊版/替換穿搭，不作最新預設"
+  },
+  "photographyHabits": {
+    "owner": "裴知聿本人，除非已寫明他人持機拍攝",
+    "device": "以日常手機攝影為主",
+    "signature": "克制、低飽和黑灰色系與自然光；偶爾略有傾斜、雜訊或真實生活的不完美",
+    "privateChat": [
+      "研究所書桌、筆電、資料及咖啡的第一人稱隨拍",
+      "臨時遇到的街景、晚霞與餐點",
+      "偶爾鏡前穿搭自拍、運動後與居家慵懶自拍",
+      "少量有意選角度的非露骨曖昧照片，需符合角色與玩家的互動界線"
+    ],
+    "instagramStory": [
+      "即時的路途、研究所、咖啡、生活小事與隨拍",
+      "以直式 9:16 為主；可以透過 UI 疊文字而非燒入圖片"
+    ],
+    "instagramPost": [
+      "本人選擇保留的攝影、服飾、活動或外出照片",
+      "4:5 或 1:1 為主；可稍有構圖感，但不可一律棚拍"
+    ],
+    "never": [
+      "不合理的第三人稱全身棚拍冒充自拍",
+      "每張自拍都故意性感或同一表情",
+      "玩家拒絕後反覆傳同類試探照片",
+      "為了固定比例強制發照片"
+    ]
+  },
+  "commonScenes": {
+    "confirmedContext": [
+      "心理學研究所學生",
+      "與玩家有過交往關係、現在是前任",
+      "有自己的學業及社交生活"
+    ],
+    "plausiblePhotoScenes": [
+      "研究資料與讀書桌",
+      "夜間書店、校園周邊街道",
+      "窗邊與城市夜景",
+      "餐點與咖啡",
+      "朋友外出活動",
+      "出門前穿搭",
+      "運動後休息",
+      "在家沙發休息"
+    ],
+    "notAutomaticallyEstablished": [
+      "照片中的每個場景都已發生",
+      "養貓或養其他寵物",
+      "與玩家同住或玩家在他拍照現場",
+      "研究所課題、分手細節與約會歷史未經確認的具體內容"
+    ]
+  },
+  "personalityForExpression": {
+    "archetype": "狐狸系80%＋黑貓系20%；腹黑、克制、敏銳、狡黠；面對前任可能吃醋與情緒反覆",
+    "photoPersona": "克制70%＋偶爾刻意挑選魅力照片30%；不是每天都在誘惑",
+    "rule": "外貌一致性與照片語氣要配合最新《磚3》人物設定；不可把情緒設計成永遠冷淡"
+  },
+  "referenceSheetLabels": {
+    "ageYears": 25,
+    "heightCm": 187,
+    "weightKg": 72,
+    "note": "此處忠實記錄新版參考板上印製的數值；不在本次視覺記憶提交中擅自更動既有劇情人物的身高體重，若與既有文字資料不同需另行核對。"
+  },
+  "imageDestinations": {
+    "chat": "磚3/characters/裴知聿/messages/photos/",
+    "instagramStory": "磚3/characters/裴知聿/instagram/photos/story/",
+    "instagramPost": "磚3/characters/裴知聿/instagram/photos/post/",
+    "storyMetadata": "磚3/characters/裴知聿/instagram/stories/",
+    "chatDialogueMetadata": "磚3/characters/裴知聿/messages/dialogues/"
+  },
+  "mandatoryPhotoWorkflow": [
+    "先從磚3/visual-memory/registry.json 解析角色，而非從名字重抽一張臉",
+    "讀取該角色的 visual-memory.json 並實際載入目前最新已核准的人物圖片位元資料",
+    "如果參考圖顯示 pending，不生成聲稱符合已核准 V2 的肖像，先確認/上傳圖片",
+    "檢查髮型、臉部輪廓、飾品、同日服飾與時間場景、拍攝者與可行鏡位",
+    "先分類私訊、IG Story 或 IG Post，依照對應目錄保存圖片，不能混用",
+    "記錄照片 ID、事件／日期、發送或發布時間、可見權限、路徑及情境",
+    "同一原始照片不得因重播而重新生成；應重用已保存原圖",
+    "提交後附正確 GitHub 資料夾及 commit；未上傳則明確註記"
+  ]
+}
