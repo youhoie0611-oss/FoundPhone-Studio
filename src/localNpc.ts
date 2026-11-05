@@ -142,6 +142,20 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
       return { reply: "收到，那我先不把妳算進確定人數。妳忙完再跟我說就好，別趕。", delayMs: 1400 };
     }
   }
+  if (request.thread === "顧時安") {
+    const history = request.history.map((x) => x.body).slice(-12).join(" ");
+    if (/整理模型|新鮮事/.test(recent) || /整理模型|新鮮事/.test(history)) {
+      if (/你想說什麼|有事就直接說|你找我|什麼事/.test(input))
+        return { reply: "其實是想問妳，上次活動那個空間配置妳後來有沒有新想法？我整理模型時想到一個做法。", delayMs: 1500 };
+      if (/晚點|有點忙|先忙|改天/.test(input))
+        return { reply: "好，妳先忙工作。我把想到的地方記下來，等妳有空再說。", delayMs: 1400 };
+      if (/最近|過得怎麼樣/.test(input))
+        return { reply: "最近忙著改模型和跑現場，偶爾帶狗出去走走。妳呢，工作還順利嗎？", delayMs: 1500 };
+      if (/新鮮|今天|發生|有趣/.test(input))
+        return { reply: "今天在現場看到一個很巧妙的採光設計，回工作室還在想怎麼用進提案。", delayMs: 1500 };
+      return { reply: "對了，我剛剛說的模型是最近的設計提案。還有幾個細節沒定案，等整理好再跟妳分享。", delayMs: 1500 };
+    }
+  }
   if (request.thread === "顧時安" && /提案被退|失落|心情其實不太好/.test(recent)) {
     if (/發生什麼|聊聊/.test(input)) return { reply: "工作提案被退回來了，我有點失落。謝謝妳願意聽我說。", delayMs: 1500 };
     if (/打算|怎麼做/.test(input)) return { reply: "先休息，明天整理意見再修改。這次不想硬撐。", delayMs: 1500 };
