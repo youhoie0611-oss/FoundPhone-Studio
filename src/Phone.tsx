@@ -476,6 +476,10 @@ function PhoneRuntime({
                     const sourceApp = app;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
                     update(next);
+                    // The invitation engine will deliver its own timed response; do not duplicate it via local NPC chat.
+                    const lastCustomId = next.messages[sourceApp]?.at(-1)?.id;
+                    const scripted = (next.ui?.scriptedInvitationReply ?? {}) as Record<string, string>;
+                    if (scripted[thread] && scripted[thread] === lastCustomId) return;
                     const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
                     const threadKey = `${sourceApp}:${thread}`;
                     pendingNpcReplies.current.add(threadKey);
