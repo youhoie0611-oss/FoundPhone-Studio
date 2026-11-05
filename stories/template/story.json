@@ -3438,7 +3438,7 @@
       "steps": [
         {
           "target": "",
-          "advanceMs": 190000
+          "advanceMs": 250000
         },
         {
           "target": "",
@@ -3446,7 +3446,7 @@
         },
         {
           "target": "",
-          "advanceMs": 95000
+          "advanceMs": 150000
         }
       ],
       "ending": "",
@@ -3462,7 +3462,7 @@
       "steps": [
         {
           "target": "",
-          "advanceMs": 190000
+          "advanceMs": 250000
         },
         {
           "target": "",
@@ -3470,7 +3470,7 @@
         },
         {
           "target": "",
-          "advanceMs": 95000
+          "advanceMs": 150000
         }
       ],
       "ending": "",
