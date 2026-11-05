@@ -1,5 +1,6 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
+import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply } from "./brick3RepeatInvites";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
@@ -37,6 +38,13 @@ function apply(a: Action, s: Runtime, w: Work) {
     case "variable":
       s.variables[a.key] = a.value;
       break;
+    case "affinity": {
+      // Hidden favorability is cumulative, bounded and never shown in UI.
+      const previous = typeof s.variables[a.key] === "number" ? Number(s.variables[a.key]) : 0;
+      const delta = typeof a.value === "number" ? a.value : 0;
+      s.variables[a.key] = Math.max(0, Math.min(100, previous + delta));
+      break;
+    }
     case "unlock":
       if (!s.unlocked.includes(a.key)) {
         s.unlocked.push(a.key);
@@ -161,7 +169,7 @@ function runQueue(
       .filter((item) => item && !item.outgoing && item.body.trim());
     for (const a of n.actions) {
       const previous =
-        a.type === "variable"
+        (a.type === "variable" || a.type === "affinity")
           ? s.variables[a.key]
           : a.type === "time"
             ? s.time
@@ -184,7 +192,7 @@ function runQueue(
         if (item && !item.outgoing && /^(?:shen|pei|qi|lin)-/.test(item.id))
           queue.push(...w.nodes.filter((node) => node.event === "read" && node.target === a.key).map((node) => node.id));
       }
-      if (a.type === "variable" && previous !== s.variables[a.key])
+      if ((a.type === "variable" || a.type === "affinity") && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
             .filter(
@@ -249,7 +257,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return next;
+  return tickBrick3Invitations(w, next);
 }
 export function advance(
   w: Work,
@@ -332,7 +340,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return s;
+  return tickBrick3Invitations(w, s);
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -348,7 +356,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     outgoing: true,
     time: `${s.date ?? "2026-11-03"} ${s.time}`,
   });
-  return {
+  const next = {
     ...s,
     ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
     messages: {
@@ -375,10 +383,14 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
       return !belongs;
     }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
-  };
+  } as Runtime;
+  dismissBrick3InvitationOnCustomReply(next, thread);
+  return next;
 }
 
 export function choose(w: Work, s: Runtime, id: string) {
+  const special = chooseBrick3Invitation(w, s, id);
+  if (special !== null) return special;
   const node = w.nodes.find((n) => n.id === id);
   if (!node || !s.choices.some((c) => c.target === id)) return s;
   return dispatch(
