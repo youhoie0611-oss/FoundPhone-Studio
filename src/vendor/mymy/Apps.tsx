@@ -93,7 +93,7 @@ export function MymyKakao(p: SkinProps) {
     messages = grouped(p.items).find((g) => g.title === p.thread)?.items ?? [],
     scroll = useRef<HTMLDivElement>(null);
   // Keep established friends accessible even before their first story message.
-  const knownFriends = ["林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
+  const knownFriends = ["沈硯舟", "裴知聿", "祁野", "林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
   const inbox = p.appId === "kakao" && !p.creator
     ? [...list, ...knownFriends.filter((name) => !list.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
     : list;
