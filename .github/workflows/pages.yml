@@ -1,7 +1,7 @@
 name: Validate and deploy Pages
 on:
   push:
-    branches: [main, feature/ambiguity-b-prototype, feature/character-autonomy-v3]
+    branches: [main, develop-zhuan2, feature/ambiguity-b-prototype, feature/character-autonomy-v3]
   workflow_dispatch:
 permissions:
   contents: read
@@ -32,6 +32,7 @@ jobs:
         with:
           path: dist
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
