@@ -160,8 +160,8 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         now(s) >= p.anxiousFollowUpAtMs) {
       const step = p.anxiousFollowUpStep ?? 0;
       const lines = [
-        "我剛剛又看了一次妳的訊息。\\n……妳是不是不想再跟我單獨見面了？",
-        "對不起，我又一直問。\\n我只是很怕，連見妳一面都變得不可能。",
+        "妳還在嗎\\n我剛剛又看了一次妳的訊息\\n妳是不是不想再見我了",
+        "我真的很想妳\\n妳可以再跟我說一句話嗎\\n不要就這樣不理我",
       ];
       speak(s, a, "anxious-followup-" + p.attempts + "-" + step,
         lines[step].replace(/\\n/g, "\n"));
