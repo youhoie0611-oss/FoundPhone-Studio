@@ -9,6 +9,8 @@ const anchors = {
   photo_practice_update: "shen-autonomy-v3-day1",
   photo_night_view: "qi-autonomy-v3-day2",
   photo_weekend_sport: "qi-autonomy-v3-day3",
+  photo_off_duty: "v7-lu-private-1",
+  photo_commercial_shoot: "v7-lu-private-2",
 };
 const delayed = {
   photo_design_review: 90000,
@@ -17,6 +19,8 @@ const delayed = {
   photo_practice_update: 120000,
   photo_night_view: 120000,
   photo_weekend_sport: 86400000,
+  photo_off_duty: 180000,
+  photo_commercial_shoot: 240000,
 };
 const alternatives = {
   photo_dinner_invite: ["可以，妳到了再傳訊息給我。", "嗯，還是要先問妳願不願意。", "好，我自己吃也沒關係。", "只有吃飯。其他的事，妳沒答應我就不會擅自決定。"],
