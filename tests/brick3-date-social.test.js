@@ -117,6 +117,31 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
     expect(found).toBe(true);
   });
 
+  it("Pei speaks like a restrained, sharp ex rather than a politely detached friend", () => {
+    const w = work(), a = invitationConfig.activities[0];
+    let low, intense;
+    for (let minute = 1; minute <= 35 && (!low || !intense); minute++) {
+      const start = socialAfterCompletion(w, a, minute * 60000, true);
+      const ordinary = advance(w, advance(w, start, 3 * 3600000), 5 * 3600000);
+      if (!low && inquiries(ordinary).some(m => m.sender === "裴知聿")) low = ordinary;
+      const dramaticStart = socialAfterCompletion(w, a, minute * 60000, true);
+      dramaticStart.variables.pei_jealousy = 42;
+      const dramatic = advance(w, advance(w, dramaticStart, 3 * 3600000), 5 * 3600000);
+      if (!intense && inquiries(dramatic).some(m => m.sender === "裴知聿")) intense = dramatic;
+    }
+    expect(low).toBeDefined();
+    expect(intense).toBeDefined();
+    const lowQuestion = inquiries(low).find(m => m.sender === "裴知聿");
+    expect(lowQuestion.body).toMatch(/配文|貼文/);
+    expect(lowQuestion.body).not.toMatch(/希望妳過得不錯|今天還順利嗎|祝妳/);
+    const intenseQuestion = inquiries(intense).find(m => m.sender === "裴知聿");
+    expect(intenseQuestion.body).toMatch(/你們現在|怎麼看待/);
+    const answered = advance(w,
+      choose(w, intense, prefix + intenseQuestion.meta.photoEventId + "-choice-3"), 4000);
+    expect(answered.messages.kakao.find(m => m.id.endsWith("-response-pei"))?.body)
+      .toBe("妳明知道，還要我親口說？");
+  });
+
   it("custom text dismisses the current question without silently choosing an answer", () => {
     const w = work();
     const a = invitationConfig.activities[0];
