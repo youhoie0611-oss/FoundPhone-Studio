@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 39,
+  "revision": 40,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -8444,6 +8444,78 @@
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "brick3-pei-d1-m1",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "21:23",
+          "body": "我本來只想問妳最近過得怎麼樣。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d1-m2",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "21:25",
+          "body": "但剛剛看見那張照片，突然想到以前的事。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d1-m3",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "21:31",
+          "body": "算了，這些不是妳現在需要承擔的。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d1-m4",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "21:36",
+          "body": "晚安。妳不用特地回我。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d2-m1",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "20:47",
+          "body": "今天經過我們以前常去的那家店。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d2-m2",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "20:50",
+          "body": "菜單都換了。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d2-m3",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "20:56",
+          "body": "我居然還記得妳那時候點什麼。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
+        },
+        {
+          "id": "brick3-pei-d2-m4",
+          "title": "",
+          "senderId": "peizhiyu",
+          "time": "21:04",
+          "body": "抱歉，我又提以前的事了。",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": true
         }
       ]
     },
@@ -28157,7 +28229,7 @@
         }
       ],
       "next": [
-        "pei-autonomy-v3-day2-delay"
+        "brick3-pei-d1-wait-1"
       ]
     },
     {
@@ -28188,7 +28260,7 @@
         }
       ],
       "next": [
-        "pei-autonomy-v3-day3-delay"
+        "brick3-pei-d2-wait-1"
       ]
     },
     {
@@ -52865,6 +52937,254 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "brick3-pei-d1-wait-1",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 47000,
+      "next": [
+        "brick3-pei-d1-arrive-1"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-arrive-1",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d1-m1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我本來只想問妳最近過得怎麼樣。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d1-wait-2"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-wait-2",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 112000,
+      "next": [
+        "brick3-pei-d1-arrive-2"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-arrive-2",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d1-m2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：但剛剛看見那張照片，突然想到以前的事。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d1-wait-3"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-wait-3",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 310000,
+      "next": [
+        "brick3-pei-d1-arrive-3"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-arrive-3",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d1-m3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：算了，這些不是妳現在需要承擔的。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d1-wait-4"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-wait-4",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 295000,
+      "next": [
+        "brick3-pei-d1-arrive-4"
+      ]
+    },
+    {
+      "id": "brick3-pei-d1-arrive-4",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d1-m4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：晚安。妳不用特地回我。"
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day2-delay"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-wait-1",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 92000,
+      "next": [
+        "brick3-pei-d2-arrive-1"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-arrive-1",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d2-m1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：今天經過我們以前常去的那家店。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d2-wait-2"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-wait-2",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 176000,
+      "next": [
+        "brick3-pei-d2-arrive-2"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-arrive-2",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d2-m2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：菜單都換了。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d2-wait-3"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-wait-3",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 362000,
+      "next": [
+        "brick3-pei-d2-arrive-3"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-arrive-3",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d2-m3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：我居然還記得妳那時候點什麼。"
+        }
+      ],
+      "next": [
+        "brick3-pei-d2-wait-4"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-wait-4",
+      "label": "裴知聿｜分段訊息停頓",
+      "type": "delay",
+      "once": true,
+      "delayMs": 480000,
+      "next": [
+        "brick3-pei-d2-arrive-4"
+      ]
+    },
+    {
+      "id": "brick3-pei-d2-arrive-4",
+      "label": "裴知聿｜獨立主動補訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "brick3-pei-d2-m4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：抱歉，我又提以前的事了。"
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day3-delay"
+      ]
     }
   ],
   "tests": [
