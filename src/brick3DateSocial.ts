@@ -154,7 +154,7 @@ function startPeiSequence(s: Runtime, a: DateActivity, pending: Brick3JealousInq
   const parts = splitPeiMessage(text);
   pending.sequence = { parts, index: 1, nextAtMs: now(s) + 3500, kind };
   sendKkt(s, lead, `brick3-social-${a.id}-${kind}-pei-part-1`, parts[0],
-    kind === "question" && parts.length === 1 ? eventName(a, lead) : "");
+    kind === "question" ? eventName(a, lead) : "");
 }
 function continuePeiSequence(s: Runtime, a: DateActivity, pending: Brick3JealousInquiry) {
   const seq = pending.sequence;
