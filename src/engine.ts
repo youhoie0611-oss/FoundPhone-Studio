@@ -41,7 +41,7 @@ function apply(a: Action, s: Runtime, w: Work) {
       if (!s.unlocked.includes(a.key)) {
         s.unlocked.push(a.key);
         const item = Object.values(w.data).flat().find((entry) => entry.id === a.key);
-        if (item && !item.outgoing) {
+        if (item) {
           s.ui = { ...s.ui, deliveryTimes: { ...((s.ui?.deliveryTimes ?? {}) as Record<string, string>), [a.key]: String(s.date ?? w.phone.date ?? "2026-11-03") + " " + s.time }, deliveryElapsed: { ...((s.ui?.deliveryElapsed ?? {}) as Record<string, number>), [a.key]: s.elapsedMs ?? 0 } };
         }
       }
@@ -129,13 +129,14 @@ function runQueue(
       .map((item) => item!.title);
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
     const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
-    const blocked = incomingThreads.some((thread) => {
+    const blocked = !n.id.startsWith("brick3-photo-") || !n.id.endsWith("-reply-arrive")
+      ? incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
       const playerTime = recentPlayerReplies[thread];
       const playerElapsed = playerTime === undefined ? undefined : Number(playerTime);
       return (last !== undefined && (s.elapsedMs ?? 0) - last < 120000)
         || (playerElapsed !== undefined && Number.isFinite(playerElapsed) && (s.elapsedMs ?? 0) - playerElapsed < 90000);
-    });
+    }) : false;
     if (blocked) {
       s.scheduled ??= [];
       if (!s.scheduled.some((entry) => entry.nodeId === id))
