@@ -58,6 +58,7 @@ export const storySchema = z
           phone: z.string().default(""),
           avatar: z.string().default(""),
           bio: z.string().default(""),
+          hidden: z.boolean().default(false),
         }),
       )
       .default([]),
@@ -173,6 +174,7 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
           body: c.bio,
           meta: { phone: c.phone },
           avatar: c.avatar,
+          hidden: c.hidden,
         },
         `contacts.${n}`,
       );
