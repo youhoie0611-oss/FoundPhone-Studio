@@ -112,6 +112,13 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
   const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
+  // Privacy objections are boundaries, not consent to receive or redistribute photos.
+  if (request.thread === "沈硯舟" && /照片|相片|拍到|拍照/.test(context) && /不太想|不想|不要|介意|擔心|不希望|不方便|別傳|別給|刪掉|刪除|公開|傳來傳去/.test(input)) {
+    return { reply: "抱歉，是我沒有先考慮妳的感受。照片我不會傳給別人，也不會公開。妳如果希望我刪掉，我就刪掉，不需要解釋原因。", delayMs: 1300 };
+  }
+  if (request.thread === "沈硯舟" && /照片|相片|拍到|拍照/.test(context) && /哪一張|哪張|拍到什麼|什麼照片/.test(input)) {
+    return { reply: "是活動現場那張，妳站在工作人員旁邊協調流程，剛好入鏡。我先不傳，妳確認願意看我再給妳。", delayMs: 1400 };
+  }
   // Explicit opening-scene questions must resolve to facts and a next action.
   // Do not fall back to vague "let me think" messages for these story gates.
   if (request.thread === "沈硯舟" && /還記得我|記得我嗎|你還記得|認得我|認出我|怎麼認出|怎麼認得/.test(input)) {
