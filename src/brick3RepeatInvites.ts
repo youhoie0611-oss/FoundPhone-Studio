@@ -98,6 +98,27 @@ function deferNext(s: Runtime, a: Activity, p: Brick3InviteProgress) {
 /** Invites are assessed by hidden favorability and game time, never by opening KKT. */
 export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
   if (w.id !== "between-the-lines-b-demo") return s;
+  // Existing v43 saves may contain a Pei dinner from the retired four-photo
+  // sequence. Treat that attendance as complete; do not invite again.
+  const oldDinner = "brick3-photo-photo_dinner_at_home-";
+  const legacyDone = s.unlocked.some(id => id.startsWith(oldDinner + "album-"));
+  if (legacyDone) {
+    const pei = keys.find(a => a.id === "pei_dinner_outing");
+    if (pei) {
+      const prior = progressFor(s, pei);
+      prior.completed = true;
+      prior.phase = "completed";
+      prior.followUpSent = true; // no artificial backdated message
+    }
+  }
+  // Remove obsolete choices and abandoned old travel timers from pre-migration saves.
+  s.choices = s.choices.filter(choice =>
+    !choice.target.startsWith("brick3-photo-photo_dinner_invite-choice-") &&
+    !choice.target.startsWith("brick3-photo-photo_dinner_at_home-choice-") &&
+    !choice.target.startsWith("brick3-photo-photo_dinner_arrival-choice-"));
+  s.scheduled = (s.scheduled ?? []).filter(t =>
+    t.nodeId !== "brick3-photo-visit-travel" &&
+    !t.nodeId.startsWith("brick3-photo-photo_dinner_"));
   for (const a of keys) {
     if (!allowed(w, s, a)) continue;
     const p = progressFor(s, a);
