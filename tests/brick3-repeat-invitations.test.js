@@ -135,6 +135,31 @@ describe("Brick3 affection-gated repeatable invitations", () => {
     expect(rewards[0].media).toBe("./story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_table_01.webp");
   });
 
+  it("Pei responds to soft refusal with separate delayed, emotionally vulnerable messages", () => {
+    const w = makeWork();
+    const s = begin(w, 30, "pei_dinner_outing", "pei_attraction");
+    const declined = advance(w, choose(w, s, prefix + "pei_dinner_outing-choice-2"), 3000);
+    const received = () => declined.messages.kakao.filter(m => m.id.includes("anxious-followup"));
+    expect(received()).toHaveLength(0);
+    const first = advance(w, declined, 15000);
+    const one = first.messages.kakao.filter(m => m.id.includes("anxious-followup"));
+    expect(one).toHaveLength(1);
+    expect(one[0].body).toMatch(/不想再跟我/);
+    const second = advance(w, first, 45000);
+    expect(second.messages.kakao.filter(m => m.id.includes("anxious-followup"))).toHaveLength(2);
+    expect(second.brick3Invites.pei_dinner_outing.anxiousFollowUpAtMs).toBeUndefined();
+    expect(second.messages.photos ?? []).toHaveLength(0);
+  });
+
+  it("Pei stops scheduled anxious followups when the player answers in free text", () => {
+    const w = makeWork();
+    const s = begin(w, 30, "pei_dinner_outing", "pei_attraction");
+    const declined = advance(w, choose(w, s, prefix + "pei_dinner_outing-choice-2"), 3000);
+    const replied = submitCustomReply(declined, "我不想繼續談這件事", "kakao", "裴知聿");
+    const later = advance(w, replied, 120000);
+    expect(later.messages.kakao.filter(m => m.id.includes("anxious-followup"))).toHaveLength(0);
+  });
+
   it("respects old saves that already unlocked a Pei dinner photo", () => {
     const w = makeWork();
     const s = initialRuntime(w);
