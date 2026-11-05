@@ -177,8 +177,11 @@ describe("Brick3 affection-gated repeatable invitations", () => {
     const s = begin(w, 30);
     const text = submitCustomReply(s, "今天先不去了", "kakao", "沈硯舟");
     expect(choices(text, "shen_night_view_outing")).toHaveLength(0);
-    expect(text.brick3Invites.shen_night_view_outing.nextThreshold).toBe(40);
-    expect(text.messages.photos ?? []).toHaveLength(0);
+    expect(text.brick3Invites.shen_night_view_outing.phase).toBe("reply_pending");
+    expect(text.brick3Invites.shen_night_view_outing.responseMode).toBe("decline");
+    const settled = advance(w, text, 3000);
+    expect(settled.brick3Invites.shen_night_view_outing.nextThreshold).toBe(40);
+    expect(settled.messages.photos ?? []).toHaveLength(0);
   });
 
   it("player choices increase hidden attraction only once; NPC autonomous messages do not", () => {
