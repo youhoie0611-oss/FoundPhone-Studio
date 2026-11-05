@@ -140,19 +140,20 @@ export function injectBrick3PhotoEvents(story, manifest) {
       const next = [optionId + "-reply-wait"];
       if (entry.eventId === "photo_dinner_invite" && index === 0)
         next.push("brick3-photo-visit-travel");
+      const replyActions = [unlock(responseId)];
       if (visit && index === 1) {
-        // This choice is an explicitly authored request, not an automatic contact.
-        // The asset is only saved after mutual consent is represented by this branch.
+        // Unlock a hand-holding photo only after the player's explicit request
+        // AND the NPC's consenting response has arrived.
         const hands = uploadedImages.find((photo) => /hands/.test(photo.filename));
         const handsId = hands && prefix + "-album-" + (uploadedImages.indexOf(hands) + 1);
-        if (handsId) actions.push(unlock(handsId));
+        if (handsId) replyActions.push(unlock(handsId));
       }
       story.events.push(node(optionId, "action", { label: choiceText, actions, next }));
       story.events.push(node(optionId + "-reply-wait", "delay", {
         delayMs: 1800, next: [optionId + "-reply-arrive"],
       }));
       story.events.push(node(optionId + "-reply-arrive", "action", {
-        actions: [unlock(responseId)],
+        actions: replyActions,
       }));
     });
     if (visit) {
