@@ -104,10 +104,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
           meta: { photoEventId: entry.eventId, assetId: photo.assetId, source: "brick3-photo-event" },
         });
         arrivalActions.push(unlock(assetId));
-        if (entry.eventId === "photo_night_view") {
-          const albumId = addAlbum(story, prefix + "-album-" + (index + 1), photo, entry.characterName, "祁野・夜景");
-          if (albumId) arrivalActions.push(unlock(albumId));
-        }
+        // A chat attachment stays in KKT; it is not silently copied to the player's private gallery.
       });
     }
     arrivalActions.push({
@@ -157,11 +154,58 @@ export function injectBrick3PhotoEvents(story, manifest) {
       }));
     });
     if (visit) {
-      // Arrival is conditional on explicitly accepting the invitation.
-      story.events.push(node("brick3-photo-visit-travel", "delay", {
-        delayMs: 1200000, next: [arriveId],
+      // Accepting an invitation is not the same as arriving. An explicit choice
+      // is required before player-taken gallery images become visible.
+      const travelId = "brick3-photo-visit-travel";
+      const checkpoint = "brick3-photo-visit-checkpoint";
+      const arrivalScene = "photo_dinner_arrival";
+      const arrivalPrefix = "brick3-photo-" + arrivalScene;
+      const arrivalPromptId = arrivalPrefix + "-prompt";
+      addChat(chat, arrivalPromptId, senderId,
+        "我把晚餐留著了。妳現在到門口了嗎？",
+        { meta: { photoEventId: arrivalScene, source: "brick3-photo-event" } });
+      story.events.push(node(travelId, "delay", {
+        delayMs: 1200000, next: [checkpoint],
       }));
-      // No independent "start" or passive unlock for visited-home albums.
+      story.events.push(node(checkpoint, "action", {
+        actions: [unlock(arrivalPromptId)],
+        next: [arrivalPrefix + "-options"],
+      }));
+      const arrivalOptions = [
+        ["我到了，現在進去。", "門沒鎖，進來吧。飯還熱著。", true],
+        ["我還在路上，今天可能來不及。", "沒關係。妳先顧好自己，不用趕。", false],
+        ["臨時有事，今晚沒辦法過去。", "嗯，知道了。改天再說。", false],
+        ["我改變主意了，今晚先不去了。", "好。妳不用勉強。", false],
+      ];
+      const arrivalIds = arrivalOptions.map((_, i) => arrivalPrefix + "-choice-" + (i + 1));
+      story.events.push(node(arrivalPrefix + "-options", "choice", { next: arrivalIds }));
+      arrivalOptions.forEach(([reply, response, actuallyArrived], index) => {
+        const id = arrivalIds[index];
+        const outgoingId = id + "-out";
+        const incomingId = id + "-reply";
+        addChat(chat, outgoingId, "owner", reply, {
+          outgoing: true, meta: { photoEventId: arrivalScene, source: "brick3-photo-event" },
+        });
+        addChat(chat, incomingId, senderId, response, {
+          meta: { photoEventId: arrivalScene, source: "brick3-photo-event" },
+        });
+        story.events.push(node(id, "action", {
+          label: reply,
+          actions: [
+            unlock(outgoingId),
+            setFlag("brick3_photo_dinner_arrived", Boolean(actuallyArrived)),
+          ],
+          next: [id + "-reply-wait"],
+        }));
+        story.events.push(node(id + "-reply-wait", "delay", {
+          delayMs: 1800, next: [id + "-reply-arrive"],
+        }));
+        story.events.push(node(id + "-reply-arrive", "action", {
+          actions: [unlock(incomingId)],
+          next: actuallyArrived ? [arriveId] : [],
+        }));
+      });
+      // The visit has no independent start or timed auto-completion path.
       continue;
     }
     if (entry.eventId === "photo_morning_breakfast") {
