@@ -50,4 +50,17 @@ describe("custom player reply", () => {
     const after = advance(work, replied, 86400000);
     expect(after.messages.kakao?.some(m => m.id.startsWith("brick3-memory-祁野-conflict"))).toBe(true);
   });
+  it("keeps a requested boundary and does not schedule another follow-up", () => {
+    const state = initialRuntime(testWork);
+    const next = submitCustomReply(state, "你讓我很失望，請保持距離", "kakao", "裴知聿");
+    expect(next.brick3Memory?.find(m => m.thread === "裴知聿" && m.topic === "conflict")?.resolution).toBe("boundary");
+    expect(next.brick3Memory?.find(m => m.thread === "裴知聿" && m.topic === "conflict")?.followUpAt).toBeUndefined();
+  });
+
+  it("updates an unresolved conflict when the player agrees to talk", () => {
+    const state = submitCustomReply(initialRuntime(testWork), "我很失望", "kakao", "沈硯舟");
+    const next = submitCustomReply(state, "我們談談", "kakao", "沈硯舟");
+    expect(next.brick3Memory?.find(m => m.thread === "沈硯舟" && m.topic === "conflict")?.resolution).toBe("reconciled");
+  });
+
 });
