@@ -134,7 +134,7 @@ export function injectBrick3PeiDialogue(story) {
     for (const action of event.actions ?? []) {
       if (action.type !== "notification" || typeof action.value !== "string" ||
           !action.value.startsWith("裴知聿：")) continue;
-      action.value = "裴知聿：" + body.replace(/\\n/g, " ");
+      action.value = "裴知聿：" + body.replace(/\n/g, " ");
     }
   }
   const missing = Object.keys(peiDialogue).filter(id => !found.has(id));
