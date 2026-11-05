@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createServer } from "vite";
+import { injectBrick3PhotoEvents } from "./brick3-photo-events.mjs";
 const [
   mode = "validate",
   file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
@@ -82,6 +83,12 @@ try {
         .length - 1;
   }
   const raw = JSON.parse(json);
+  // Keep game prose and photo filenames in a separate manifest. New uploaded
+  // files become active after the normal GitHub Pages rebuild.
+  if (raw.id === "between-the-lines-b-demo") {
+    const manifest = JSON.parse(await readFile("docs/brick3-photo-events-v1.json", "utf8"));
+    injectBrick3PhotoEvents(raw, manifest);
+  }
   const { compileStory, storySchema } = await server.ssrLoadModule(
     "/src/story-engine/compiler.ts",
   );
