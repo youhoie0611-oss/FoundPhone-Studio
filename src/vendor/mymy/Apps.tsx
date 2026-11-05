@@ -34,11 +34,11 @@ const characterAvatar: Record<string, string> = {
   "沈硯舟": "shen-yanzhou-avatar.png",
   "裴知聿": "pei-zhiyu-avatar.png",
   "祁野": "qi-ye-avatar.png",
-  "顧時安": "gu-shian-site-visit-selfie.jpg",
+  "顧時安": "gu-shian-avatar.jpg",
 };
 function chatAvatar(name: string, fallback?: string) {
   const normalized = name.trim().replace(/^[\s\u3000]+|[\s\u3000]+$/g, "");
-  const file = characterAvatar[normalized] ?? Object.entries(characterAvatar).find(([character]) => normalized.includes(character))?.[1];
+  const file = characterAvatar[normalized] ?? undefined;
   return file ? `${import.meta.env.BASE_URL}characters/${file}` : fallback;
 }
 /** Sort by actual displayed timestamp, not by string prefix (HH:mm vs YYYY-MM-DD HH:mm). */
