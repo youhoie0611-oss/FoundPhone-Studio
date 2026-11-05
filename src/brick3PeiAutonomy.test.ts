@@ -43,6 +43,35 @@ describe("Pei autonomous emotional pacing", () => {
     tickPeiAutonomy(work, s);
     expect(autonomous(s)).toHaveLength(1);
   });
+  it("treats today being busy as a delayed request rather than a breakup", () => {
+    const s = setup();
+    s.messages.kakao.push(makeItem({ id: "busy", title: "裴知聿", sender: "我", body: "今天沒空，改天吧", outgoing: true }));
+    stopPeiAutonomyOnPlayerReply(s, "裴知聿");
+    expect(s.peiAutonomy?.phase).toBe("busy");
+    s.elapsedMs = 179999;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s)).toHaveLength(0);
+    s.elapsedMs = 180000;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s)[0].body).toBe("今天不行嗎");
+    s.messages.kakao.push(makeItem({ id: "reply-busy", title: "裴知聿", sender: "我", body: "明天可以", outgoing: true }));
+    stopPeiAutonomyOnPlayerReply(s, "裴知聿");
+    s.elapsedMs += 86400000;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s)).toHaveLength(1);
+  });
+  it("delivers a reconciliation panic in separate timed bubbles", () => {
+    const s = setup();
+    s.messages.kakao.push(makeItem({ id: "yes", title: "裴知聿", sender: "我", body: "我願意復合", outgoing: true }));
+    stopPeiAutonomyOnPlayerReply(s, "裴知聿");
+    expect(s.peiAutonomy?.phase).toBe("reconcile");
+    s.elapsedMs = 30000;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s).map(m => m.body)).toEqual(["妳剛剛說什麼"]);
+    s.elapsedMs = 35500;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s).map(m => m.body)).toEqual(["妳剛剛說什麼", "妳說願意再給我一次機會？"]);
+  });
   it("honors explicit no-contact even when jealousy rises", () => {
     const s = setup();
     s.messages.kakao.push(makeItem({ id: "stop", title: "裴知聿", sender: "我", body: "不要再傳訊息給我", outgoing: true }));
