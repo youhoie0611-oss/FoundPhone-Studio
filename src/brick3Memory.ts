@@ -38,8 +38,10 @@ export function rememberBrick3Reply(state: Runtime, thread: string, raw: string,
   const records = state.brick3Memory ?? [];
   // A new decision supersedes the previous one for the same topic and character.
   const updated = records.filter(m => !(m.thread === thread && m.topic === topic));
-  updated.push({ thread, topic, status, text: raw, at: now,
-    followUpAt: topic === "personal" ? undefined : now + 86400000 });
+  const resolution = /保持距離|不要再問|不想聊|不要聯絡/.test(raw) ? "boundary" : /原諒|沒關係|抱歉|對不起|我們談談/.test(raw) ? "reconciled" : "unresolved";
+  updated.push({ thread, topic, status, text: raw, at: now, resolution,
+    followUpAt: topic === "personal" || resolution === "boundary" ? undefined : now + 86400000 });
+  if (topic === "conflict" || topic === "jealousy") state.variables[`brick3:relationship:${thread}:${topic}`] = resolution;
   state.brick3Memory = updated.slice(-80);
 }
 export function tickBrick3Memory(work: Work, state: Runtime): Runtime {
