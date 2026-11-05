@@ -128,6 +128,42 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   if (/^(?:活動是幾點開始|活动是几点开始)[？?]?$/.test(input) && !/七點半|七点半|7[:：]30|19[:：]30/.test(context)) {
     return { reply: "我還沒拿到確定的開始時間，確認後再告訴妳，不想亂報時間。", delayMs: 1400 };
   }
+  // Supporting cast: resolve the actual scene and player decision, not a reusable filler line.
+  const affirmative = /^(好|好啊|好呀|可以|行|我去|我會去|算我一個)[！!。\\s]*$/.test(input);
+  const decline = /不去|沒空|不能去|不方便|不想去|先不要|改天|下次|沒興趣/.test(input);
+  const details = /在哪|哪裡|地點|地址|幾點|時間|哪天|什麼時候|怎麼去|什麼展|哪個/.test(input);
+  const eventContext = /聚餐|聚會|市集|展覽|餐廳|訂位|約|週末|週五|活動|排班/.test(context);
+  if (request.thread === "周予晴" && /市集|週末|逛/.test(context)) {
+    if (details) return { reply: "我還在確認市集的時間跟地點，確定後把資訊傳妳。妳想先保留週末哪一天？", delayMs: 1400 };
+    if (decline) return { reply: "好，那這次先不約妳。等有別的市集我再問，不用勉強。", delayMs: 1200 };
+    if (affirmative) return { reply: "那我先把妳列進週末市集的邀約，等時間確認再跟妳敲定，不會直接算妳答應整天。", delayMs: 1400 };
+  }
+  if (request.thread === "陳以衡" && /餐廳|訂位|新菜單|吃飯|聚餐/.test(context)) {
+    if (details) return { reply: "餐廳和訂位細節我還在確認，現在不想報錯。等店家回覆我就把地址跟時間一起傳妳。", delayMs: 1500 };
+    if (decline) return { reply: "知道了，我先不把妳算進訂位人數，免得佔了位置。", delayMs: 1300 };
+    if (affirmative) return { reply: "好，我先記下妳有意願，訂位成功再跟妳確認一次時間。", delayMs: 1400 };
+    if (/菜單|企劃|進度/.test(input)) return { reply: "還在調整新菜單的搭配，主要卡在試菜和成本。我想先把這兩件事處理好。", delayMs: 1500 };
+  }
+  if (request.thread === "許棠" && /排班|下班|補眠|值班|約/.test(context)) {
+    if (details) return { reply: "我班表還沒完全排定，確定休假日再跟妳約，不想先答應又臨時取消。", delayMs: 1400 };
+    if (decline) return { reply: "好，這次先不約。等我們兩個都有空再說。", delayMs: 1200 };
+    if (affirmative && eventContext) return { reply: "好，等我班表出來就跟妳確認，現在還不能保證哪天能休。", delayMs: 1300 };
+    if (/累|辛苦|休息|睡/.test(input)) return { reply: "真的有點累，我先補眠。醒來再看訊息，妳也別太晚睡。", delayMs: 1200 };
+  }
+  if (request.thread === "下班後五人組" && eventContext) {
+    if (details) return { reply: "時間地點還要等大家確認，我先在群組統一整理，確定了再通知，避免有人跑錯。", delayMs: 1300 };
+    if (decline) return { reply: "收到，這次先不把妳算進人數；之後想來再說。", delayMs: 1200 };
+    if (affirmative) return { reply: "先記妳有意願！等大家時間對好，再正式確認人數。", delayMs: 1200 };
+  }
+  if (request.thread === "顧時安" && /提案|改稿|設計圖|展覽/.test(context)) {
+    if (/提案|被退|怎麼了|發生什麼/.test(input)) return { reply: "提案被退回來了，我還在整理修改意見。最難的是對方只說方向不對，卻沒說哪裡不對。", delayMs: 1400 };
+    if (/需要幫忙|幫你|給我看|看看/.test(input)) return { reply: "謝謝妳。我先把可以公開的部分整理出來，再問妳對版面有沒有想法。", delayMs: 1500 };
+    if (/展覽/.test(context) && details) return { reply: "是城市空間和建築設計相關的展覽。我先確認日期、場地和票務再傳妳，不想給錯資訊。", delayMs: 1500 };
+    if (decline) return { reply: "好，不勉強。那我先把手邊的圖改完，有空再聊。", delayMs: 1300 };
+  }
+  if (request.thread === "林安" && eventContext && decline) {
+    return { reply: "好，那我先不把妳算進聚會人數。時間確定後我會告訴妳，妳再決定就好。", delayMs: 1300 };
+  }
   if (request.thread === "裴知聿" && /^(幹嘛|找我幹嘛|什麼事|有事嗎|找我什麼事)[？?！!。\\s]*$/.test(input)) {
     const aboutPast = /照片|收據|以前|分手|整理|想起/.test(recent);
     return {
