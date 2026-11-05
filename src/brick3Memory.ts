@@ -8,6 +8,7 @@ export type Brick3Memory = {
   at: number;
   followUpAt?: number;
   followedUp?: boolean;
+  resolution?: "reconciled" | "boundary" | "unresolved";
 };
 const cast = new Set(["沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川", "林安", "周予晴", "陳以衡", "許棠", "下班後五人組"]);
 const followUps: Record<string, Record<string, string>> = {
@@ -26,7 +27,8 @@ function classify(raw: string, context: string): Brick3Memory["topic"] | null {
 }
 export function rememberBrick3Reply(state: Runtime, thread: string, raw: string, context: string): void {
   if (!cast.has(thread)) return;
-  const topic = classify(raw, context);
+  const prior = (state.brick3Memory ?? []).find(m => m.thread === thread && (m.topic === "conflict" || m.topic === "jealousy"));
+  const topic = classify(raw, context) ?? (prior && /原諒|沒關係|保持距離|不要再問|我們談談/.test(raw) ? prior.topic : null);
   if (!topic) return;
   const now = state.elapsedMs ?? 0;
   const status = /不去|不能去|沒空|不方便|不想|不要|拒絕|改天|下次|先不/.test(raw) ? "declined"
