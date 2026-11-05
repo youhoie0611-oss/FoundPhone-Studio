@@ -468,8 +468,8 @@ function PhoneRuntime({
                       const base = { ...item, time: timestamp };
                       // Release every line as a separate message over simulated time.
                       // This runs independently of whether the player opens the chat.
-                      if (creator || item.outgoing || !item.body.includes("\\n") || !["kakao", "messages"].includes(app)) return [base];
-                      const lines = item.body.split(/\\n+/).map((line) => line.trim()).filter(Boolean);
+                      if (creator || item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
+                      const lines = item.body.split(/\n+/).map((line) => line.trim()).filter(Boolean);
                       if (lines.length < 2) return [base];
                       const deliveredAt = (s.ui?.deliveryElapsed as Record<string, number> | undefined)?.[item.id];
                       const elapsed = s.elapsedMs ?? 0;
