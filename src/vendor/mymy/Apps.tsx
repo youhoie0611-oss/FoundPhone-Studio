@@ -28,6 +28,7 @@ import type { SkinProps } from "../../AppSkins";
 import { Avatar, Media } from "../../skins/shared";
 import { useSkinState } from "../../skinState";
 import type { Item } from "../../schema";
+import { pendingBrick3PhotoOptions } from "../../brick3PhotoChoices";
 import "./ui.css";
 import "./adapter.css";
 const characterAvatar: Record<string, string> = {
@@ -112,6 +113,7 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
 
   const lastMessage = messages[messages.length - 1];
+  const photoOptions = pendingBrick3PhotoOptions(messages, p.choices ?? []);
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
   const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
@@ -199,13 +201,9 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !lastMessage?.outgoing && (
+          {!p.creator && !isTyping && (!lastMessage?.outgoing || photoOptions.length === 4) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
-                const photoEvent = lastMessage?.meta?.photoEventId ?? "";
-                const photoOptions = photoEvent ? (p.choices ?? []).filter((choice) =>
-                  choice.target.startsWith("brick3-photo-" + photoEvent + "-choice-")
-                ) : [];
                 if (photoOptions.length === 4) return photoOptions.map((choice) => (
                   <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
