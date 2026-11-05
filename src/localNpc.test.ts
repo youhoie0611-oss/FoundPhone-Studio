@@ -45,7 +45,7 @@ describe("free NPC chat", () => {
   ])("uses %s's established scene to answer a meaningful player choice", (thread, body, message, expected) => {
     const reply = localNpcReply({
       ...request(thread, message),
-      history: [{ outgoing: false, body }],
+      history: [{ sender: thread, outgoing: false, body }],
     }).reply;
     expect(reply).toMatch(expected);
   });
