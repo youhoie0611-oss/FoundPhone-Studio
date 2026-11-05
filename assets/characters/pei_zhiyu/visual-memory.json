@@ -4,20 +4,20 @@
   "name": "裴知聿",
   "visualIdentityStatus": "confirmed",
   "reference": {
-    "version": 1,
+    "version": 2,
     "source": "玩家明確核准的多視角人物設定板（正面、3/4、側面、背面、表情、髮型及服飾特寫）",
-    "originalUploadedName": "F94C1BA6-2CF7-41A9-8DFB-F6EE7DB86A7D.jpeg",
+    "originalUploadedName": "ChatGPT 圖像 2026年11月5日 下午06_36_41.jpg",
     "recentCopySha256": "8c712ffa2b84fb1f1a85bf247d77cfcc0504297fcddff8f8fb89d92aa5dde133",
     "recentCopyDimensions": {
       "width": 1212,
       "height": 1297
     },
-    "gitHubOriginalPath": "assets/characters/pei_zhiyu/reference/pei_zhiyu_reference_sheet_v1.png",
-    "referenceGitBlobSha": "880cfa699f36dbe2aa54190ba6f1d57c12b003ed",
+    "gitHubOriginalPath": "assets/characters/pei_zhiyu/reference/ChatGPT 圖像 2026年11月5日 下午06_36_41.jpg",
+    "referenceGitBlobSha": "a0ef02bca4a1fe3b4e3b8a8dd40be48d9af6c8a8",
     "originalHighResCopiedFrom": "public/characters/pei-zhiyu.png",
     "originalHighResCopyStatus": "available_on_github_no_reencoding",
-    "priority": "玩家明確核准的臉型、五官、髮型、體型及日常服裝；角色背景以正式人物核心為準",
-    "labelConflict": "舊版參考圖內有『沈硯舟』與 24 歲等資訊，這是舊文案，不代表此人物是沈硯舟。使用者已確認此外貌正式歸裴知聿（25歲、心理學研究所碩士生、玩家前男友）。"
+    "priority": "2026-11-05 玩家確認的黑色高領與眼鏡多視角設定圖為最新優先參考；v1 僅歷史備份",
+    "labelConflict": "舊版 v1 灰色連帽外套不是最新形象，角色身分以裴知聿為準"
   },
   "immutableAppearance": {
     "face": [
@@ -39,9 +39,9 @@
       "四肢與手指纖長"
     ],
     "distinguishingDetails": [
-      "銀色小耳釘",
-      "簡約銀色項鍊",
-      "常見灰色拉鍊連帽外套的輪廓"
+      "黑色細框眼鏡（可依場景取下）",
+      "小型銀色耳飾、簡約戒指與腕錶",
+      "黑色高領針織與深色寬褲為 v2 主要造型"
     ],
     "identityNegativeConstraints": [
       "不能用沈硯舟或祁野的另一張臉取代",
@@ -52,10 +52,9 @@
   },
   "typicalWardrobe": {
     "confirmedEverydayStyle": [
-      "灰色寬鬆拉鍊連帽外套",
-      "寬鬆深灰／黑色多口袋工裝褲",
-      "灰白運動鞋",
-      "簡約銀色耳釘與短項鍊"
+      "黑色高領針織毛衣",
+      "寬鬆黑色西裝長褲與黑鞋",
+      "黑框眼鏡與簡約銀色配飾"
     ],
     "reasonableVariations": [
       "研究所日常可穿黑／灰／深藍上衣、襯衫或針織",
@@ -65,7 +64,8 @@
     "avoid": [
       "所有場景被固定成同一套制服",
       "突然換成祁野的張揚賽車機能造型",
-      "生活照大量使用棚拍化妝與商業攝影打光"
+      "生活照大量使用棚拍化妝與商業攝影打光",
+      "不得將 v1 灰色連帽外套視為主要固定造型"
     ]
   },
   "expressionReference": [
@@ -141,6 +141,7 @@
     "instagramPost": "public/assets/characters/pei-zhiyu/instagram/post/"
   },
   "mandatoryGenerationChecklist": [
+    "以 v2 已上傳的正式參考圖為優先視覺依據，v1 僅供歷史參照",
     "讀取官方 visual-memory-registry.json 與本 visual-memory.json",
     "實際讀取 githubOriginalPath 圖片本體作為人物視覺參考，不只複述名字",
     "核對正面、側面、表情與髮型，保持同一張臉",
