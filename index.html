@@ -11,6 +11,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/runtime/StoryPlayer.tsx"></script>
+    <script>\n      if ("serviceWorker" in navigator) {\n        navigator.serviceWorker.getRegistrations().then((registrations) => {\n          registrations.forEach((registration) => registration.unregister());\n        });\n      }\n    </script>\n    <script type="module" src="/src/runtime/StoryPlayer.tsx"></script>
   </body>
 </html>
