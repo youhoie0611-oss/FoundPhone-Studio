@@ -63,6 +63,7 @@ import {
   type UiValue,
 } from "./schema";
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
+import { storyPhotoUrl, useStoryPhotoAvailability } from "./storyPhotoAssets";
 import { db } from "./persistence";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
@@ -888,7 +889,7 @@ function Media({ item }: { item: Item }) {
     ) : item.kind === "video" ? (
       <video controls playsInline src={src} />
     ) : (
-      <img loading="lazy" src={src} alt={item.title} />
+      <img loading="lazy" src={storyPhotoUrl(src)} alt={item.title} />
     )
   ) : (
     <div
@@ -948,8 +949,10 @@ function AppContent({
   const [unlocks, setUnlocks] = useState<string[]>([]);
   const [pwError, setPwError] = useState("");
   const [likes, setLikes] = useState<string[]>([]);
+  const photoAssetExists = useStoryPhotoAvailability(items);
   const shown = items
     .filter((i) => creator || visible(i, state))
+    .filter((i) => creator || photoAssetExists(i))
     .filter((i) =>
       (i.title + i.body + i.sender).toLowerCase().includes(q.toLowerCase()),
     );
