@@ -22,3 +22,26 @@ describe("free NPC chat", () => {
     expect(() => localNpcReply(request("陌生人", "你好"))).toThrow();
   });
 });
+
+
+describe("磚3 group conversation regression", () => {
+  const group = (message: string, context = "林安：大家週五晚上有空嗎？要不要一起吃飯？") =>
+    localNpcReply({ playerId: "player-a", thread: "下班後五人組", message,
+      history: [{ sender: "林安", body: context, outgoing: false }] }).reply;
+
+  it("answers a challenge to a sudden topic change instead of repeating generic filler", () => {
+    expect(group("你怎麼突然提起這件事？")).toMatch(/林安：.*週五聚餐/);
+  });
+  it("does not invent a confirmed restaurant or time", () => {
+    expect(group("餐廳在哪裡？幾點？")).toMatch(/還沒訂/);
+  });
+  it("does not treat an undecided invitation as a confirmed RSVP", () => {
+    expect(group("好啊，時間地點呢？")).toMatch(/還沒訂/);
+  });
+  it("respects a refusal and does not reserve a place", () => {
+    expect(group("我可能要加班，先別算我。")).toMatch(/先不算妳/);
+  });
+  it("identifies a human group speaker", () => {
+    expect(group("還有誰會去？")).toMatch(/^林安：/);
+  });
+});
