@@ -25,14 +25,14 @@ const leads: Lead[] = [
   {
     key: "pei", name: "裴知聿",
     questions: [
-      "我看到那則動態了。照片倒是拍得不錯。至於配文……他挺會讓人多想的。妳跟他去的？",
-      "他那篇貼文寫得很巧。明明沒提名字，卻又像生怕別人看不懂。妳怎麼看？",
+      "我看到他的限動了。妳跟他一起出去？……妳現在是不是比較喜歡他？",
+      "那張照片妳笑得很開心。以前跟我出去的時候也是那樣。……我是不是不該問？",
     ],
     responses: [
-      "我猜到了。倒是他，挺會挑時間發文的。",
-      "我有說你們不是朋友嗎？妳倒是先替他澄清了。",
-      "妳明知道，還要我親口說？",
-      "好。既然不想談，就當我沒問。",
+      "我知道了。只是看到妳跟他一起，心裡不太舒服。我沒辦法裝作不在意。",
+      "只是朋友？……好。對不起，我剛才有點急。",
+      "對，我吃醋了。妳明知道我還喜歡妳，卻偏偏要我親口承認。",
+      "……好。我不問了。但妳別一直不理我，好不好？",
     ],
   },
   {
@@ -77,8 +77,8 @@ const leads: Lead[] = [
 ];
 // Higher jealousy sharpens Pei's questions; he gets quieter, not louder.
 const peiIntenseQuestions = [
-  "我看到那則動態了。妳應該知道，我在意的不是照片拍得好不好。……你們現在很常一起出去？",
-  "他發那篇貼文，留了不少讓人猜的空間。我倒是想知道，妳怎麼看待你們現在的關係。",
+  "妳是不是有別的喜歡的人了？我看到那張照片就一直在想。……妳能不能告訴我？",
+  "妳跟他出去的時候，有沒有一瞬間想到我？……抱歉，我知道這樣問很難看。",
 ];
 const replies = [
   "嗯，我們剛好一起去走走。",
@@ -235,7 +235,16 @@ export function chooseBrick3JealousyInquiry(w: Work, previous: Runtime, target: 
     const p = s.brick3DateSocial![a.id].inquiries[observer.key];
     p.answered = true;
     p.replyAtMs = now(s) + 2200;
-    p.replyText = observer.responses[index];
+    const jealousy = Number(s.variables[observer.key + "_jealousy"] ?? 0);
+    const attraction = Number(s.variables[observer.key + "_attraction"] ?? 0);
+    p.replyText = observer.key === "pei" && jealousy >= 40 && attraction >= 40
+      ? [
+        "我知道妳有自己的生活。可是看到他發妳的照片，我真的會嫉妒。……我還沒辦法放下妳。",
+        "妳說只是朋友，我想相信。可我還是會怕，怕妳真的不需要我了。",
+        "對，我在吃醋。我不想看著妳跟別人越走越近，然後連問一句都不敢。",
+        "對不起，我剛才太急了。妳不想說，我就不逼妳。……但可以別一直不理我嗎？",
+      ][index]
+      : observer.responses[index];
     s.choices = s.choices.filter(c => !c.target.startsWith(prefix));
     sendKkt(s, observer, `brick3-social-${a.id}-choice-${observer.key}`, replies[index], "", true);
     // A reassuring or teasing answer may change jealousy slightly, never revealing it.
