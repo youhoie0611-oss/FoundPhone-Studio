@@ -14,7 +14,10 @@ describe("Pei complete dialogue reconstruction", () => {
     const chat = s.chats.find(c => c.title === "裴知聿");
     const old = new Map(chat.messages.map(m => [m.id, m.body]));
     injectBrick3PeiDialogue(s);
-    expect(Object.keys(peiDialogue).length).toBeGreaterThanOrEqual(50);
+    const incoming = chat.messages.filter(m => m.senderId !== "owner");
+    expect(incoming).toHaveLength(108);
+    expect(Object.keys(peiDialogue)).toHaveLength(incoming.length);
+    expect(incoming.every(m => Object.hasOwn(peiDialogue, m.id))).toBe(true);
     for (const [id, body] of Object.entries(peiDialogue)) {
       expect(chat.messages.find(m => m.id === id)?.body).toBe(body);
       expect(old.get(id)).not.toBe(body);
@@ -38,6 +41,19 @@ describe("Pei complete dialogue reconstruction", () => {
       .toBe(JSON.stringify(base().events.map(e=>e.id)));
     expect(originalEvents).toContain("reply-pei-1");
     expect(() => compileStory(s)).not.toThrow();
+  });
+  it("remains idempotent and preserves every scripted Pei branch", () => {
+    const s = base();
+    const original = s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions }));
+    injectBrick3PeiDialogue(s);
+    const first = JSON.stringify(s.chats.find(c => c.title === "裴知聿"));
+    injectBrick3PeiDialogue(s);
+    expect(JSON.stringify(s.chats.find(c => c.title === "裴知聿"))).toBe(first);
+    expect(s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions }))).toEqual(original);
+    const bodies = Object.values(peiDialogue);
+    expect(bodies.every(body => typeof body === "string" && body.trim().length > 0)).toBe(true);
+    expect(bodies.some(body => /我還喜歡妳/.test(body))).toBe(true);
+    expect(bodies.some(body => /不再提復合|不再提這個|那就不見/.test(body))).toBe(true);
   });
   it("does not touch any other character or story", () => {
     const s = base();
