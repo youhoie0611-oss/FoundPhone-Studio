@@ -489,22 +489,31 @@ function PhoneRuntime({
                     const replyTask = priorReply.catch(() => undefined).then(() => requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
                       .then(async ({ reply, delayMs }) => {
                         if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
-                        const current = runtimeRef.current;
-                        const incoming = makeItem({
-                          id: `ai-npc-${id}-${Date.now()}`,
-                          title: thread,
-                          sender: thread,
-                          body: reply,
-                          outgoing: false,
-                          time: `${current.date} ${current.time}`,
-                        });
-                        update({ ...current, messages: {
-                          ...current.messages,
-                          [sourceApp]: [...(current.messages[sourceApp] ?? []), incoming],
-                        }, notifications: [
-                          ...current.notifications,
-                          `${thread}：${reply}`,
-                        ] });
+                        // Deliver each natural speech beat as a separate message, with a visible pause.
+                        // Queue is per contact, so a later answer cannot overtake an earlier one.
+                        const chunks = /^(沈硯舟|裴知聿|祁野|顧時安|陸沉川)$/.test(thread)
+                          ? (reply.match(/[^。！？!?\\n]+[。！？!?]?/g) ?? [reply]).map(part => part.trim()).filter(Boolean)
+                          : [reply];
+                        const parts = chunks.length > 5 ? [...chunks.slice(0, 4), chunks.slice(4).join("")] : chunks;
+                        for (let part = 0; part < parts.length; part++) {
+                          if (part > 0) await new Promise<void>(resolve => setTimeout(resolve, 850 + Math.min(parts[part].length * 35, 1150)));
+                          const current = runtimeRef.current;
+                          const incoming = makeItem({
+                            id: `ai-npc-${id}-${part}-${Date.now()}`,
+                            title: thread,
+                            sender: thread,
+                            body: parts[part],
+                            outgoing: false,
+                            time: `${current.date} ${current.time}`,
+                          });
+                          update({ ...current, messages: {
+                            ...current.messages,
+                            [sourceApp]: [...(current.messages[sourceApp] ?? []), incoming],
+                          }, notifications: [
+                            ...current.notifications,
+                            `${thread}：${parts[part]}`,
+                          ] });
+                        }
                       })
                       .catch((error: unknown) => setBanner(error instanceof Error ? error.message : "AI 暫時無法回覆"))
                       .finally(() => {
