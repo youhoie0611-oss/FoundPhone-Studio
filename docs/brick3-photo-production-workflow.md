@@ -39,4 +39,14 @@
 
 ## 已接入的執行路徑（2026-11-05）
 
-`src/schema.ts` 驗證本機圖片路徑；`src/storyPhotoAssets.ts` 檢查 WebP 是否實際已發佈並處理 Pages 基底路徑；`scripts/story.mjs` 讀取配置並經 `scripts/brick3-photo-events.mjs` 轉為事件；`src/vendor/mymy/Apps.tsx` 使用劇情四選項；`src/Phone.tsx` 在 KKT、相簿前過濾缺圖素材。此功能不會在遊玩時動態呼叫圖片 AI。陸沉川尚未在目前的四男主故事中正式建立聯絡，須由 V7 劇情完成合理導入後才開啟私人照片事件。
+`src/schema.ts` 驗證本機圖片路徑；`src/storyPhotoAssets.ts` 檢查 WebP 是否實際已發佈並處理 Pages 基底路徑；`scripts/story.mjs` 讀取配置並經 `scripts/brick3-photo-events.mjs` 轉為事件；`src/vendor/mymy/Apps.tsx` 使用劇情四選項；`src/Phone.tsx` 在 KKT、相簿前過濾缺圖素材。此功能不會在遊玩時動態呼叫圖片 AI。第五男主陸沉川已由 `scripts/brick3-v7-lu.mjs` 的 V7 SE-004 可拒絕入場、公開攝影再次見面、明確交換聯絡流程接入；玩家未取得私人聯絡前，其 KKT 及私訊照片維持隱藏。
+
+
+## V7 第五男主接入（2026-11-05）
+
+- 陸沉川角色設定：`stories/ambiguity-b/characters/lu-chenchuan.md`。
+- `scripts/story.mjs` 先套用 V7 SE-004，再將照片設定編成事件；因此人物接觸條件可阻擋無根據的私人照片。
+- 林安活動邀請、是否真的入場、再度參加攝影活動、是否交換聯絡，均有四個實際事件分支；未選擇不等於同意。
+- 照片依然需要作者自行上傳 WebP，並在 Pages 重新部署後才能出現。
+- 相簿：接受裴知聿晚餐邀請**不等於抵達**，需另外確認抵達；祁野私訊照片留在 KKT，不自動複製到私人相簿。
+- GitHub CI 會執行 `tests/brick3-photo-runtime.test.js`、`tests/brick3-v7-lu.test.js`，檢查到訪/取消/聯絡交換及缺圖路徑規則。
