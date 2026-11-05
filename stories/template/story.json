@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
   "title": "磚3",
-  "description": "《磚3》互動戀愛聊天遊戲：沿用 FoundPhone 手機系統，重新建立角色自主生活、雙向對話與多日劇情。",
-  "revision": 13,
+  "description": "五位男主的成人都市戀愛生活模擬：獨立生活、主動聯絡、非排他親密關係與隱藏忌妒值觸發的雄競分歧。玩家保有完整選擇權。",
+  "revision": 14,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -93,6 +93,13 @@
       "phone": "",
       "avatar": "",
       "bio": "下班後朋友群組"
+    },
+    {
+      "id": "lu-chenchuan",
+      "name": "陸沉川",
+      "phone": "",
+      "avatar": "",
+      "bio": "26歲；男公關、平面模特兒與商業攝影工作；視覺傳達設計系畢業。黑貓65%＋狐狸35%，獨立而重視私人界線。"
     }
   ],
   "chats": [
@@ -727,6 +734,212 @@
           "meta": {
             "guScene": "gu-photo-book"
           }
+        },
+        {
+          "id": "z3-v6-gu-lead",
+          "senderId": "gu-shian",
+          "body": "這兩天在整理一個品牌空間提案，發現照片和實際材質的落差比想像中大。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-gu-follow",
+          "senderId": "gu-shian",
+          "body": "不急著回覆。只是想問問妳，工作上有沒有遇過類似問題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-gu-player-warm",
+          "senderId": "owner",
+          "body": "有，照片真的常常看不出實際質地。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-gu-reply-warm",
+          "senderId": "gu-shian",
+          "body": "我也是這麼想。下次有樣板可以一起比較。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-gu-player-honest",
+          "senderId": "owner",
+          "body": "我現在也在認識別的人，想先說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-gu-reply-honest",
+          "senderId": "gu-shian",
+          "body": "謝謝妳坦白。我需要想想彼此期待的界線，但我很重視誠實。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-gu-player-tease",
+          "senderId": "owner",
+          "body": "你這是在找話題跟我聊天嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-gu-reply-tease",
+          "senderId": "gu-shian",
+          "body": "被妳發現了。不過工作上的問題也是真的。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-gu-player-busy",
+          "senderId": "owner",
+          "body": "今天工作太多，改天再聊。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-v6-gu-reply-busy",
+          "senderId": "gu-shian",
+          "body": "當然。先把手上的事處理完，不用勉強回覆。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-lead",
+          "senderId": "gu-shian",
+          "body": "今天跟陸沉川討論了一點品牌影像的事，還挺有想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-reply-reassure",
+          "senderId": "gu-shian",
+          "body": "我明白。每段關係都要靠自己的相處建立。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-reply-question",
+          "senderId": "gu-shian",
+          "body": "有些情緒我也得花時間整理。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-reply-clarify",
+          "senderId": "gu-shian",
+          "body": "謝謝妳說清楚，我們可以慢慢談界線。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-gu-lu-reply-boundary",
+          "senderId": "gu-shian",
+          "body": "妳說得對。我不該把這件事變成比較。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
         }
       ]
     },
@@ -738,7 +951,308 @@
         "owner",
         "qiye"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "z3-v6-qi-lead",
+          "senderId": "qiye",
+          "body": "今天路過一家展店，招牌設計有夠奇怪。妳不是會看這種東西？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-qi-follow",
+          "senderId": "qiye",
+          "body": "我有拍照。不是要請妳做免費顧問，只是想吐槽。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-qi-player-warm",
+          "senderId": "owner",
+          "body": "傳來看看，我也想吐槽。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-qi-reply-warm",
+          "senderId": "qiye",
+          "body": "這才對。等等，這張真的很荒謬。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-qi-player-honest",
+          "senderId": "owner",
+          "body": "我最近也有跟別的男生約會。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-qi-reply-honest",
+          "senderId": "qiye",
+          "body": "……妳幹嘛突然跟我報備。好，我知道了。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-qi-player-tease",
+          "senderId": "owner",
+          "body": "你不會是在吃醋吧？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-qi-reply-tease",
+          "senderId": "qiye",
+          "body": "誰吃醋？妳想太多。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-qi-player-busy",
+          "senderId": "owner",
+          "body": "現在不方便聊天。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-v6-qi-reply-busy",
+          "senderId": "qiye",
+          "body": "行。等妳有空再說。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-lead",
+          "senderId": "qiye",
+          "body": "今天看到顧時安的提案了。做事還挺認真。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-reply-reassure",
+          "senderId": "qiye",
+          "body": "……行。我有我的本事，不用比。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-reply-question",
+          "senderId": "qiye",
+          "body": "在意又怎樣？至少我沒裝沒事。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-reply-clarify",
+          "senderId": "qiye",
+          "body": "講清楚就好。我不想用猜的。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-gu-reply-boundary",
+          "senderId": "qiye",
+          "body": "知道了。我收回剛才那句。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-lead",
+          "senderId": "qiye",
+          "body": "今天見到陸沉川本人了。比我想像中更不愛講話。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-reply-reassure",
+          "senderId": "qiye",
+          "body": "……行。我有我的本事，不用比。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-reply-question",
+          "senderId": "qiye",
+          "body": "在意又怎樣？至少我沒裝沒事。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-reply-clarify",
+          "senderId": "qiye",
+          "body": "講清楚就好。我不想用猜的。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-qi-lu-reply-boundary",
+          "senderId": "qiye",
+          "body": "知道了。我收回剛才那句。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        }
+      ]
     },
     {
       "id": "pei-zhiyu-kkt",
@@ -861,6 +1375,400 @@
             "peiScene": "pei-intro",
             "choice": "boundary"
           }
+        },
+        {
+          "id": "z3-v6-pei-lead",
+          "senderId": "pei-zhiyu",
+          "body": "突然想到，妳以前說過想看的那本書我在研究室看到了。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-pei-follow",
+          "senderId": "pei-zhiyu",
+          "body": "我沒有要妳回想什麼，只是覺得妳可能還會有興趣。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-pei-player-warm",
+          "senderId": "owner",
+          "body": "你居然還記得。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-pei-reply-warm",
+          "senderId": "pei-zhiyu",
+          "body": "有些事記性太好也不一定是優點。妳想看我再把書名傳給妳。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-pei-player-honest",
+          "senderId": "owner",
+          "body": "我現在也在認識其他人，先跟你說一聲。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-pei-reply-honest",
+          "senderId": "pei-zhiyu",
+          "body": "知道了。謝謝妳講清楚，我需要一點時間消化。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-pei-player-tease",
+          "senderId": "owner",
+          "body": "你是想跟其他人競爭嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-pei-reply-tease",
+          "senderId": "pei-zhiyu",
+          "body": "妳倒是替我下結論下得很快。……我確實不太想輸。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-pei-player-busy",
+          "senderId": "owner",
+          "body": "我暫時不想跟你聊感情。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-v6-pei-reply-busy",
+          "senderId": "pei-zhiyu",
+          "body": "明白，我不會拿以前的關係逼妳回答。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-lead",
+          "senderId": "pei-zhiyu",
+          "body": "今天在活動遇到祁野。他似乎很不喜歡別人問太多。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-reply-reassure",
+          "senderId": "pei-zhiyu",
+          "body": "知道。我不會把過去當成妳現在的答案。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-reply-question",
+          "senderId": "pei-zhiyu",
+          "body": "妳倒是很會問。……我有一點在意。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-reply-clarify",
+          "senderId": "pei-zhiyu",
+          "body": "可以談，但我不會假裝自己馬上就接受。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-qi-reply-boundary",
+          "senderId": "pei-zhiyu",
+          "body": "我聽到了，不會用前任身分替妳下決定。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-lead",
+          "senderId": "pei-zhiyu",
+          "body": "今天在研討會遇到顧時安。他說話倒是很有分寸。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-reply-reassure",
+          "senderId": "pei-zhiyu",
+          "body": "知道。我不會把過去當成妳現在的答案。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-reply-question",
+          "senderId": "pei-zhiyu",
+          "body": "妳倒是很會問。……我有一點在意。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-reply-clarify",
+          "senderId": "pei-zhiyu",
+          "body": "可以談，但我不會假裝自己馬上就接受。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-gu-reply-boundary",
+          "senderId": "pei-zhiyu",
+          "body": "我聽到了，不會用前任身分替妳下決定。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-lead",
+          "senderId": "pei-zhiyu",
+          "body": "今天碰到陸沉川。很少有人回答我的問題回答得那麼快。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-reply-reassure",
+          "senderId": "pei-zhiyu",
+          "body": "知道。我不會把過去當成妳現在的答案。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-reply-question",
+          "senderId": "pei-zhiyu",
+          "body": "妳倒是很會問。……我有一點在意。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-reply-clarify",
+          "senderId": "pei-zhiyu",
+          "body": "可以談，但我不會假裝自己馬上就接受。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-pei-lu-reply-boundary",
+          "senderId": "pei-zhiyu",
+          "body": "我聽到了，不會用前任身分替妳下決定。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
         }
       ]
     },
@@ -872,7 +1780,496 @@
         "owner",
         "shen-yanzhou"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "z3-v6-shen-lead",
+          "senderId": "shen-yanzhou",
+          "body": "我剛整理完那場活動拍的照片。有張光線很特別，想到妳之前說過喜歡那種感覺。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-shen-follow",
+          "senderId": "shen-yanzhou",
+          "body": "不是要妳立刻看，妳有空再回我就好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-v6-shen-player-warm",
+          "senderId": "owner",
+          "body": "好啊，傳給我看看。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-shen-reply-warm",
+          "senderId": "shen-yanzhou",
+          "body": "好！我挑一張最接近原本現場氛圍的，妳幫我看看。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "warm"
+          }
+        },
+        {
+          "id": "z3-v6-shen-player-honest",
+          "senderId": "owner",
+          "body": "最近我也在跟其他人約會，我想先說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-shen-reply-honest",
+          "senderId": "shen-yanzhou",
+          "body": "謝謝妳跟我說。我有點在意，但不會要妳現在做選擇。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "honest"
+          }
+        },
+        {
+          "id": "z3-v6-shen-player-tease",
+          "senderId": "owner",
+          "body": "你這麼積極，是在跟誰比賽嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-shen-reply-tease",
+          "senderId": "shen-yanzhou",
+          "body": "欸，沒有啦。……好吧，我可能真的有一點想表現。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "z3-v6-shen-player-busy",
+          "senderId": "owner",
+          "body": "我今天很忙，改天聊。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-v6-shen-reply-busy",
+          "senderId": "shen-yanzhou",
+          "body": "沒問題，先忙妳的。我還要趕一份攝影作業。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7",
+            "choice": "busy"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-lead",
+          "senderId": "shen-yanzhou",
+          "body": "妳以前提過的那位研究生，今天剛好在攝影講座遇到。原來是他。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-reply-reassure",
+          "senderId": "shen-yanzhou",
+          "body": "妳這樣說我有比較放心。但我還是想把自己的事做好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-reply-question",
+          "senderId": "shen-yanzhou",
+          "body": "我不是不服輸，只是有點在意妳怎麼看我們。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-reply-clarify",
+          "senderId": "shen-yanzhou",
+          "body": "可以，我想先聽妳希望怎麼相處。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-pei-reply-boundary",
+          "senderId": "shen-yanzhou",
+          "body": "好，我不會拿妳跟誰見面當比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-lead",
+          "senderId": "shen-yanzhou",
+          "body": "今天球場遇到祁野。他講話真的很直接。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-reply-reassure",
+          "senderId": "shen-yanzhou",
+          "body": "妳這樣說我有比較放心。但我還是想把自己的事做好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-reply-question",
+          "senderId": "shen-yanzhou",
+          "body": "我不是不服輸，只是有點在意妳怎麼看我們。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-reply-clarify",
+          "senderId": "shen-yanzhou",
+          "body": "可以，我想先聽妳希望怎麼相處。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-qi-reply-boundary",
+          "senderId": "shen-yanzhou",
+          "body": "好，我不會拿妳跟誰見面當比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-lead",
+          "senderId": "shen-yanzhou",
+          "body": "今天拍建築活動時遇到顧時安，他對光線的要求很細。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-reply-reassure",
+          "senderId": "shen-yanzhou",
+          "body": "妳這樣說我有比較放心。但我還是想把自己的事做好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-reply-question",
+          "senderId": "shen-yanzhou",
+          "body": "我不是不服輸，只是有點在意妳怎麼看我們。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-reply-clarify",
+          "senderId": "shen-yanzhou",
+          "body": "可以，我想先聽妳希望怎麼相處。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-gu-reply-boundary",
+          "senderId": "shen-yanzhou",
+          "body": "好，我不會拿妳跟誰見面當比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-lead",
+          "senderId": "shen-yanzhou",
+          "body": "品牌拍攝遇到陸沉川。攝影棚裡他跟私下看起來差很多。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-player-reassure",
+          "senderId": "owner",
+          "body": "你不用跟他比，我想了解你自己的想法。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-reply-reassure",
+          "senderId": "shen-yanzhou",
+          "body": "妳這樣說我有比較放心。但我還是想把自己的事做好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-player-question",
+          "senderId": "owner",
+          "body": "你真的那麼在意他？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-reply-question",
+          "senderId": "shen-yanzhou",
+          "body": "我不是不服輸，只是有點在意妳怎麼看我們。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-player-clarify",
+          "senderId": "owner",
+          "body": "我們還沒約定專一，先把各自的期待說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-reply-clarify",
+          "senderId": "shen-yanzhou",
+          "body": "可以，我想先聽妳希望怎麼相處。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-player-boundary",
+          "senderId": "owner",
+          "body": "不要把我當成你們的比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-pair-shen-lu-reply-boundary",
+          "senderId": "shen-yanzhou",
+          "body": "好，我不會拿妳跟誰見面當比較題。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        }
+      ]
     },
     {
       "id": "lin-an-kkt",
@@ -888,6 +2285,140 @@
           "senderId": "lin-an",
           "body": "今天下班後有空嗎？我想跟大家約個時間吃飯。",
           "time": "2026-11-05 10:00"
+        },
+        {
+          "id": "z3-lin-night-invite",
+          "senderId": "lin-an",
+          "body": "欸，妳下班後有沒有興趣一起去看看那家男模會館？就當換個地方聊天，不想去也完全沒關係。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-night-yes",
+          "senderId": "owner",
+          "body": "好啊，我跟妳去看看。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-night-ask",
+          "senderId": "owner",
+          "body": "先跟我說清楚是什麼活動。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-night-later",
+          "senderId": "owner",
+          "body": "我再想想，先別幫我報名。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-night-no",
+          "senderId": "owner",
+          "body": "不用，我不想去。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-night-yes-reply",
+          "senderId": "lin-an",
+          "body": "好，我把集合地點跟規則傳給妳。服務是工作，別有壓力；我也會一起去。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-night-ask-reply",
+          "senderId": "lin-an",
+          "body": "就是正規的陪聊服務，要付費但不代表任何私人感情。妳不去也沒關係。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-night-later-reply",
+          "senderId": "lin-an",
+          "body": "知道，我先不訂位。有消息再說。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-night-no-reply",
+          "senderId": "lin-an",
+          "body": "收到，那我們改天去吃飯就好。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-night-after",
+          "senderId": "lin-an",
+          "body": "剛才那位叫陸沉川，平常也接平面拍攝。要留他的私人聯絡方式嗎？妳自己決定。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-lu-contact-yes",
+          "senderId": "owner",
+          "body": "可以交換聯絡方式，先正常聊聊。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-lu-contact-photo",
+          "senderId": "owner",
+          "body": "我想多了解他的攝影工作，但先不用私人聯絡。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-lu-contact-later",
+          "senderId": "owner",
+          "body": "暫時不用，我還不確定。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-lu-contact-no",
+          "senderId": "owner",
+          "body": "不用，今天就到這裡。",
+          "time": "2026-11-05 17:00",
+          "hidden": true,
+          "outgoing": true
+        },
+        {
+          "id": "z3-lin-lu-contact-yes-reply",
+          "senderId": "lin-an",
+          "body": "好，我先確認他也願意，再幫你們交換。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-lu-contact-photo-reply",
+          "senderId": "lin-an",
+          "body": "好，我傳他公開的作品資訊給妳，不會替妳加好友。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-lu-contact-later-reply",
+          "senderId": "lin-an",
+          "body": "沒問題，妳決定就好。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
+        },
+        {
+          "id": "z3-lin-lu-contact-no-reply",
+          "senderId": "lin-an",
+          "body": "好，那就當一次普通體驗，不用有後續。",
+          "time": "2026-11-05 17:00",
+          "hidden": true
         }
       ]
     },
@@ -956,6 +2487,215 @@
           "senderId": "after-work-group",
           "body": "林安：大家週五晚上有空嗎？要不要一起吃飯？",
           "time": "2026-11-05 10:00"
+        }
+      ]
+    },
+    {
+      "id": "lu-chenchuan-kkt",
+      "app": "kakao",
+      "title": "陸沉川",
+      "participants": [
+        "owner",
+        "lu-chenchuan"
+      ],
+      "messages": [
+        {
+          "id": "z3-lu-private-intro",
+          "senderId": "lu-chenchuan",
+          "body": "我是陸沉川。妳方便現在聊兩句嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-context",
+          "senderId": "lu-chenchuan",
+          "body": "不是工作訊息。若妳現在不方便，晚點再聊。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-player-free",
+          "senderId": "owner",
+          "body": "可以，你現在下班了？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-reply-free",
+          "senderId": "lu-chenchuan",
+          "body": "嗯。這次不用把聊天當成工作。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-player-design",
+          "senderId": "owner",
+          "body": "我比較好奇你做過哪些設計拍攝。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-reply-design",
+          "senderId": "lu-chenchuan",
+          "body": "做過服裝和品牌形象。大學念視傳，這些我真的有興趣。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-player-skeptic",
+          "senderId": "owner",
+          "body": "你不是對每個客人都這樣嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-reply-skeptic",
+          "senderId": "lu-chenchuan",
+          "body": "工作時會。但現在我沒上班。妳不用因為這句話就信我。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-player-busy",
+          "senderId": "owner",
+          "body": "現在不方便，改天再聊。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-private-reply-busy",
+          "senderId": "lu-chenchuan",
+          "body": "好，妳有空再說。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-question",
+          "senderId": "lu-chenchuan",
+          "body": "有件事想問。妳覺得兩個人在了解彼此的時候，一定要只跟一個人約會嗎？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-player-honest",
+          "senderId": "owner",
+          "body": "我目前也可能跟其他人約會，我希望坦白說清楚。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-reply-honest",
+          "senderId": "lu-chenchuan",
+          "body": "謝謝妳直接說。我要想想自己能接受到哪裡，不會替妳做決定。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-player-exclusive",
+          "senderId": "owner",
+          "body": "我比較想先一對一慢慢認識。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-reply-exclusive",
+          "senderId": "lu-chenchuan",
+          "body": "可以。若以後想法變了，直接說就好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-player-uncertain",
+          "senderId": "owner",
+          "body": "我還沒想好，你呢？",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-reply-uncertain",
+          "senderId": "lu-chenchuan",
+          "body": "我也不是一開始就知道答案。先把話說清楚，比硬裝大方好。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-player-privacy",
+          "senderId": "owner",
+          "body": "我不想現在談這個。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
+        },
+        {
+          "id": "z3-lu-rel-reply-privacy",
+          "senderId": "lu-chenchuan",
+          "body": "好。這件事可以不用現在決定。",
+          "time": "2026-11-05 18:00",
+          "hidden": true,
+          "meta": {
+            "story": "zhuan3-v6-v7"
+          }
         }
       ]
     }
@@ -1029,6 +2769,116 @@
         "sender": "测试用户",
         "kind": "text",
         "meta": {}
+      },
+      {
+        "id": "z3-lu-brand-post",
+        "kind": "post",
+        "sender": "brand.studio",
+        "body": "公開品牌影像企劃：本次合作模特兒陸沉川，採開放的設計與攝影交流方式。聯絡請走公開合作窗口。",
+        "title": "公開品牌影像企劃：本次合作模特兒陸沉川，採開放的設計與攝影交流方",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-shen-pei-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "攝影工作坊裡，沈硯舟與裴知聿因公開講座短暫交流。 #公開活動 #現在的陪伴與過去的回憶",
+        "title": "攝影工作坊裡，沈硯舟與裴知聿因公開講座短暫交流。 #公開活動 #",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-shen-qi-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "一場校外球賽，沈硯舟與祁野互相認出對方。 #公開活動 #熱情對上好勝",
+        "title": "一場校外球賽，沈硯舟與祁野互相認出對方。 #公開活動 #熱情對上",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-shen-gu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "沈硯舟在建築開放日為顧時安參與的空間拍攝。 #公開活動 #攝影新手與成熟設計師",
+        "title": "沈硯舟在建築開放日為顧時安參與的空間拍攝。 #公開活動 #攝影新",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-shen-lu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "沈硯舟參與商業攝影企劃，模特兒名單上有陸沉川。 #公開活動 #攝影者與被攝影者",
+        "title": "沈硯舟參與商業攝影企劃，模特兒名單上有陸沉川。 #公開活動 #攝",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-pei-qi-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "裴知聿與祁野在一場公共活動中交談，兩人對話火藥味十足。 #公開活動 #試探對上直球",
+        "title": "裴知聿與祁野在一場公共活動中交談，兩人對話火藥味十足。 #公開活",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-pei-gu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "裴知聿在跨領域研討活動與顧時安交換工作看法。 #公開活動 #前任熟悉感與成熟穩定",
+        "title": "裴知聿在跨領域研討活動與顧時安交換工作看法。 #公開活動 #前任",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-pei-lu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "裴知聿在公開影像活動接觸陸沉川，兩人談到工作與私人界線。 #公開活動 #冷靜試探與直接回應",
+        "title": "裴知聿在公開影像活動接觸陸沉川，兩人談到工作與私人界線。 #公開",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-qi-gu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "祁野在家族合作品牌活動遇到負責空間提案的顧時安。 #公開活動 #衝動與克制",
+        "title": "祁野在家族合作品牌活動遇到負責空間提案的顧時安。 #公開活動 #",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-qi-lu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "祁野在品牌活動遇到擔任形象模特兒的陸沉川。 #公開活動 #富家少爺與獨立工作者",
+        "title": "祁野在品牌活動遇到擔任形象模特兒的陸沉川。 #公開活動 #富家少",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
+      },
+      {
+        "id": "z3-pair-gu-lu-public-post",
+        "kind": "post",
+        "sender": "zhuan3.brand",
+        "body": "顧時安於品牌空間企劃與形象模特兒陸沉川接觸。 #公開活動 #兩個成熟男人的感情觀",
+        "title": "顧時安於品牌空間企劃與形象模特兒陸沉川接觸。 #公開活動 #兩個",
+        "time": "2026-11-06 19:00",
+        "hidden": true,
+        "likes": 18
       }
     ]
   },
@@ -1043,7 +2893,7 @@
     "qiye_relationship": "acquaintance",
     "qiye_last_topic": "",
     "qiye_chat_media_ready": false,
-    "pei_hidden_affection": 70,
+    "pei_hidden_affection": 0,
     "pei_contact_allowed": false,
     "pei_no_contact": false,
     "pei_last_topic": "",
@@ -1060,7 +2910,56 @@
     "pei_reconciliation_intent": true,
     "pei_flirty_photo_blocked": false,
     "shen_hidden_affection": 10,
-    "shen_relationship": "acquaintance"
+    "shen_relationship": "acquaintance",
+    "z3_affection_shen": 10,
+    "z3_trust_shen": 0,
+    "z3_intimacy_shen": 0,
+    "z3_jealousy_shen": 0,
+    "z3_relation_shen": "acquaintance",
+    "z3_exclusivity_shen": "undiscussed",
+    "z3_rivals_known_shen": false,
+    "z3_affection_pei": 0,
+    "z3_trust_pei": 0,
+    "z3_intimacy_pei": 0,
+    "z3_jealousy_pei": 0,
+    "z3_relation_pei": "former_partners",
+    "z3_exclusivity_pei": "undiscussed",
+    "z3_rivals_known_pei": false,
+    "z3_affection_qi": 0,
+    "z3_trust_qi": 0,
+    "z3_intimacy_qi": 0,
+    "z3_jealousy_qi": 0,
+    "z3_relation_qi": "acquaintance",
+    "z3_exclusivity_qi": "undiscussed",
+    "z3_rivals_known_qi": false,
+    "z3_affection_gu": 0,
+    "z3_trust_gu": 0,
+    "z3_intimacy_gu": 0,
+    "z3_jealousy_gu": 0,
+    "z3_relation_gu": "acquaintance",
+    "z3_exclusivity_gu": "undiscussed",
+    "z3_rivals_known_gu": false,
+    "z3_affection_lu": 0,
+    "z3_trust_lu": 0,
+    "z3_intimacy_lu": 0,
+    "z3_jealousy_lu": 0,
+    "z3_relation_lu": "acquaintance",
+    "z3_exclusivity_lu": "undiscussed",
+    "z3_rivals_known_lu": false,
+    "z3_lu_met": false,
+    "z3_lu_private_contact": false,
+    "z3_lu_work_boundary": true,
+    "z3_nonexclusive_preference": "undiscussed",
+    "z3_pair_known_shen_pei": false,
+    "z3_pair_known_shen_qi": false,
+    "z3_pair_known_shen_gu": false,
+    "z3_pair_known_shen_lu": false,
+    "z3_pair_known_pei_qi": false,
+    "z3_pair_known_pei_gu": false,
+    "z3_pair_known_pei_lu": false,
+    "z3_pair_known_qi_gu": false,
+    "z3_pair_known_qi_lu": false,
+    "z3_pair_known_gu_lu": false
   },
   "events": [
     {
@@ -2910,6 +4809,6093 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "z3-lu-intro-start",
+      "label": "林安自主提出夜間活動",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-delay"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-message"
+      ],
+      "delayMs": 240000
+    },
+    {
+      "id": "z3-lu-invite-message",
+      "label": "林安傳來不強制邀約",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-invite",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "林安：下班後有沒有興趣去看看那家會館？"
+        }
+      ],
+      "next": [
+        "z3-lu-invite-select"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-yes",
+        "z3-lu-invite-ask",
+        "z3-lu-invite-later",
+        "z3-lu-invite-no"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-yes",
+      "label": "林安邀約：yes",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_lu_met",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-invite-wait-yes"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-wait-yes",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-response-yes"
+      ],
+      "delayMs": 90000
+    },
+    {
+      "id": "z3-lu-invite-response-yes",
+      "label": "林安回應：yes",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-yes-reply",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-venue-wait"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-ask",
+      "label": "林安邀約：ask",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-ask",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-invite-wait-ask"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-wait-ask",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-response-ask"
+      ],
+      "delayMs": 90000
+    },
+    {
+      "id": "z3-lu-invite-response-ask",
+      "label": "林安回應：ask",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-ask-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-invite-later",
+      "label": "林安邀約：later",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-later",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-invite-wait-later"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-wait-later",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-response-later"
+      ],
+      "delayMs": 90000
+    },
+    {
+      "id": "z3-lu-invite-response-later",
+      "label": "林安回應：later",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-later-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-invite-no",
+      "label": "林安邀約：no",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-no",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-invite-wait-no"
+      ]
+    },
+    {
+      "id": "z3-lu-invite-wait-no",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-invite-response-no"
+      ],
+      "delayMs": 90000
+    },
+    {
+      "id": "z3-lu-invite-response-no",
+      "label": "林安回應：no",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-no-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-venue-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-venue-deliver"
+      ],
+      "delayMs": 360000
+    },
+    {
+      "id": "z3-lu-venue-deliver",
+      "label": "玩家明確赴約後林安分享聯絡意願",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-night-after",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-contact-select"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-lu-contact-yes",
+        "z3-lu-contact-photo",
+        "z3-lu-contact-later",
+        "z3-lu-contact-no"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-yes",
+      "label": "私人聯絡自主決定：yes",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_lu_private_contact",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-contact-wait-yes"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-wait-yes",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-contact-response-yes"
+      ],
+      "delayMs": 70000
+    },
+    {
+      "id": "z3-lu-contact-response-yes",
+      "label": "林安尊重私人聯絡選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-yes-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-contact-photo",
+      "label": "私人聯絡自主決定：photo",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-photo",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-contact-wait-photo"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-wait-photo",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-contact-response-photo"
+      ],
+      "delayMs": 70000
+    },
+    {
+      "id": "z3-lu-contact-response-photo",
+      "label": "林安尊重私人聯絡選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-photo-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-contact-later",
+      "label": "私人聯絡自主決定：later",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-later",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-contact-wait-later"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-wait-later",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-contact-response-later"
+      ],
+      "delayMs": 70000
+    },
+    {
+      "id": "z3-lu-contact-response-later",
+      "label": "林安尊重私人聯絡選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-later-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-contact-no",
+      "label": "私人聯絡自主決定：no",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-no",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-contact-wait-no"
+      ]
+    },
+    {
+      "id": "z3-lu-contact-wait-no",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-contact-response-no"
+      ],
+      "delayMs": 70000
+    },
+    {
+      "id": "z3-lu-contact-response-no",
+      "label": "林安尊重私人聯絡選擇",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lin-lu-contact-no-reply",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-brand-start",
+      "label": "商業攝影公開活動",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-brand-delay"
+      ]
+    },
+    {
+      "id": "z3-brand-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-brand-show"
+      ],
+      "delayMs": 43200000
+    },
+    {
+      "id": "z3-brand-show",
+      "label": "公開社群資訊出現",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-brand-post",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-brand-read",
+      "label": "玩家查看公開品牌消息",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-brand-select"
+      ],
+      "event": "read",
+      "target": "z3-lu-brand-post"
+    },
+    {
+      "id": "z3-brand-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-brand-choice-work",
+        "z3-brand-choice-follow",
+        "z3-brand-choice-later",
+        "z3-brand-choice-ignore"
+      ]
+    },
+    {
+      "id": "z3-brand-choice-work",
+      "label": "詢問他是否願意聊攝影合作。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_nonexclusive_preference",
+          "value": "undiscussed"
+        },
+        {
+          "type": "variable",
+          "key": "z3_lu_private_contact",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-brand-choice-follow",
+      "label": "先追蹤公開作品就好。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_nonexclusive_preference",
+          "value": "undiscussed"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-brand-choice-later",
+      "label": "把這個活動留著，改天再看。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_nonexclusive_preference",
+          "value": "undiscussed"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-brand-choice-ignore",
+      "label": "沒有興趣。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_nonexclusive_preference",
+          "value": "undiscussed"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-private-ready",
+      "label": "玩家允許私人聯絡",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-lu-private-delay"
+      ],
+      "event": "variable",
+      "target": "z3_lu_private_contact",
+      "conditions": [
+        {
+          "key": "z3_lu_private_contact",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-lu-private-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-first"
+      ],
+      "delayMs": 120000
+    },
+    {
+      "id": "z3-lu-private-first",
+      "label": "陸沉川下班後首次私人訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-intro",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "陸沉川：妳方便現在聊兩句嗎？"
+        }
+      ],
+      "next": [
+        "z3-lu-private-wait"
+      ]
+    },
+    {
+      "id": "z3-lu-private-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-context-node"
+      ],
+      "delayMs": 90000
+    },
+    {
+      "id": "z3-lu-private-context-node",
+      "label": "陸沉川補充私人界線",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-context",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-private-select"
+      ]
+    },
+    {
+      "id": "z3-lu-private-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-lu-private-choice-free",
+        "z3-lu-private-choice-design",
+        "z3-lu-private-choice-skeptic",
+        "z3-lu-private-choice-busy"
+      ]
+    },
+    {
+      "id": "z3-lu-private-choice-free",
+      "label": "可以，你現在下班了？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-player-free",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 6
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 5
+        }
+      ],
+      "next": [
+        "z3-lu-private-response-wait-free"
+      ]
+    },
+    {
+      "id": "z3-lu-private-response-wait-free",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-reply-node-free"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-lu-private-reply-node-free",
+      "label": "陸沉川回覆所選話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-reply-free",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-relationship-delay-free"
+      ]
+    },
+    {
+      "id": "z3-lu-relationship-delay-free",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-check-free"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "z3-lu-rel-question-check-free",
+      "label": "隔日私人感情觀交流",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-delay"
+      ],
+      "conditions": [
+        {
+          "key": "z3_lu_private_contact",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-lu-private-choice-design",
+      "label": "我比較好奇你做過哪些設計拍攝。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-player-design",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 4
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 3
+        }
+      ],
+      "next": [
+        "z3-lu-private-response-wait-design"
+      ]
+    },
+    {
+      "id": "z3-lu-private-response-wait-design",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-reply-node-design"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-lu-private-reply-node-design",
+      "label": "陸沉川回覆所選話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-reply-design",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-relationship-delay-design"
+      ]
+    },
+    {
+      "id": "z3-lu-relationship-delay-design",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-check-design"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "z3-lu-rel-question-check-design",
+      "label": "隔日私人感情觀交流",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-delay"
+      ],
+      "conditions": [
+        {
+          "key": "z3_lu_private_contact",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-lu-private-choice-skeptic",
+      "label": "你不是對每個客人都這樣嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-player-skeptic",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 2
+        }
+      ],
+      "next": [
+        "z3-lu-private-response-wait-skeptic"
+      ]
+    },
+    {
+      "id": "z3-lu-private-response-wait-skeptic",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-reply-node-skeptic"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-lu-private-reply-node-skeptic",
+      "label": "陸沉川回覆所選話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-reply-skeptic",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-relationship-delay-skeptic"
+      ]
+    },
+    {
+      "id": "z3-lu-relationship-delay-skeptic",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-check-skeptic"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "z3-lu-rel-question-check-skeptic",
+      "label": "隔日私人感情觀交流",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-delay"
+      ],
+      "conditions": [
+        {
+          "key": "z3_lu_private_contact",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-lu-private-choice-busy",
+      "label": "現在不方便，改天再聊。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-player-busy",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "acquaintance"
+        }
+      ],
+      "next": [
+        "z3-lu-private-response-wait-busy"
+      ]
+    },
+    {
+      "id": "z3-lu-private-response-wait-busy",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-private-reply-node-busy"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-lu-private-reply-node-busy",
+      "label": "陸沉川回覆所選話題",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-private-reply-busy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-rel-question-delay",
+      "label": "陸沉川自主延續談話",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-question-deliver"
+      ],
+      "delayMs": 250000
+    },
+    {
+      "id": "z3-lu-rel-question-deliver",
+      "label": "陸沉川談非排他關係",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-lu-rel-select"
+      ],
+      "conditions": [
+        {
+          "key": "z3_lu_private_contact",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-lu-rel-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-choice-honest",
+        "z3-lu-rel-choice-exclusive",
+        "z3-lu-rel-choice-uncertain",
+        "z3-lu-rel-choice-privacy"
+      ]
+    },
+    {
+      "id": "z3-lu-rel-choice-honest",
+      "label": "我目前也可能跟其他人約會，我希望坦白說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-player-honest",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_rivals_known_lu",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 7
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 22
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_lu",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-lu-rel-wait-honest"
+      ]
+    },
+    {
+      "id": "z3-lu-rel-wait-honest",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-reply-node-honest"
+      ],
+      "delayMs": 75000
+    },
+    {
+      "id": "z3-lu-rel-reply-node-honest",
+      "label": "陸沉川依關係立場回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-reply-honest",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-rel-choice-exclusive",
+      "label": "我比較想先一對一慢慢認識。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -12
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 7
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_lu",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-lu-rel-wait-exclusive"
+      ]
+    },
+    {
+      "id": "z3-lu-rel-wait-exclusive",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-reply-node-exclusive"
+      ],
+      "delayMs": 75000
+    },
+    {
+      "id": "z3-lu-rel-reply-node-exclusive",
+      "label": "陸沉川依關係立場回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-reply-exclusive",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-rel-choice-uncertain",
+      "label": "我還沒想好，你呢？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-player-uncertain",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 2
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 5
+        }
+      ],
+      "next": [
+        "z3-lu-rel-wait-uncertain"
+      ]
+    },
+    {
+      "id": "z3-lu-rel-wait-uncertain",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-reply-node-uncertain"
+      ],
+      "delayMs": 75000
+    },
+    {
+      "id": "z3-lu-rel-reply-node-uncertain",
+      "label": "陸沉川依關係立場回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-reply-uncertain",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-lu-rel-choice-privacy",
+      "label": "我不想現在談這個。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-player-privacy",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-lu-rel-wait-privacy"
+      ]
+    },
+    {
+      "id": "z3-lu-rel-wait-privacy",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-lu-rel-reply-node-privacy"
+      ],
+      "delayMs": 75000
+    },
+    {
+      "id": "z3-lu-rel-reply-node-privacy",
+      "label": "陸沉川依關係立場回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-lu-rel-reply-privacy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-shen-start",
+      "label": "沈硯舟依日程主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-delay"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-deliver"
+      ],
+      "delayMs": 1800000
+    },
+    {
+      "id": "z3-v6-shen-deliver",
+      "label": "沈硯舟主動發訊不依賴玩家打開聊天室",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-shen-follow-wait"
+      ],
+      "conditions": []
+    },
+    {
+      "id": "z3-v6-shen-follow-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-follow-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-shen-follow-node",
+      "label": "沈硯舟補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-follow",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-shen-select"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-choice-warm",
+      "label": "好啊，傳給我看看。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-player-warm",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 7
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -6
+        }
+      ],
+      "next": [
+        "z3-v6-shen-choice-warm-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-choice-warm-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-choice-warm-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-shen-choice-warm-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-reply-warm",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-shen-choice-honest",
+      "label": "最近我也在跟其他人約會，我想先說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-player-honest",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 6
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 22
+        },
+        {
+          "type": "variable",
+          "key": "z3_rivals_known_shen",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-v6-shen-choice-honest-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-choice-honest-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-choice-honest-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-shen-choice-honest-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-reply-honest",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-shen-choice-tease",
+      "label": "你這麼積極，是在跟誰比賽嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-player-tease",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 4
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 16
+        }
+      ],
+      "next": [
+        "z3-v6-shen-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-choice-tease-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-choice-tease-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-shen-choice-tease-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-shen-choice-busy",
+      "label": "我今天很忙，改天聊。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-player-busy",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-v6-shen-choice-busy-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-shen-choice-busy-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-choice-busy-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-shen-choice-busy-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-shen-reply-busy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-shen-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-v6-shen-choice-warm",
+        "z3-v6-shen-choice-honest",
+        "z3-v6-shen-choice-tease",
+        "z3-v6-shen-choice-busy"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-start",
+      "label": "祁野依日程主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-delay"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-deliver"
+      ],
+      "delayMs": 7200000
+    },
+    {
+      "id": "z3-v6-qi-deliver",
+      "label": "祁野主動發訊不依賴玩家打開聊天室",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-qi-follow-wait"
+      ],
+      "conditions": []
+    },
+    {
+      "id": "z3-v6-qi-follow-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-follow-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-qi-follow-node",
+      "label": "祁野補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-follow",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-qi-select"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-choice-warm",
+      "label": "傳來看看，我也想吐槽。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-player-warm",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 7
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -6
+        }
+      ],
+      "next": [
+        "z3-v6-qi-choice-warm-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-choice-warm-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-choice-warm-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-qi-choice-warm-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-reply-warm",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-qi-choice-honest",
+      "label": "我最近也有跟別的男生約會。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-player-honest",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 6
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 22
+        },
+        {
+          "type": "variable",
+          "key": "z3_rivals_known_qi",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-v6-qi-choice-honest-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-choice-honest-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-choice-honest-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-qi-choice-honest-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-reply-honest",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-qi-choice-tease",
+      "label": "你不會是在吃醋吧？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-player-tease",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 4
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 16
+        }
+      ],
+      "next": [
+        "z3-v6-qi-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-choice-tease-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-choice-tease-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-qi-choice-tease-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-qi-choice-busy",
+      "label": "現在不方便聊天。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-player-busy",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-v6-qi-choice-busy-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-qi-choice-busy-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-choice-busy-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-qi-choice-busy-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-qi-reply-busy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-qi-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-v6-qi-choice-warm",
+        "z3-v6-qi-choice-honest",
+        "z3-v6-qi-choice-tease",
+        "z3-v6-qi-choice-busy"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-start",
+      "label": "顧時安依日程主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-delay"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-deliver"
+      ],
+      "delayMs": 14400000
+    },
+    {
+      "id": "z3-v6-gu-deliver",
+      "label": "顧時安主動發訊不依賴玩家打開聊天室",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-gu-follow-wait"
+      ],
+      "conditions": []
+    },
+    {
+      "id": "z3-v6-gu-follow-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-follow-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-gu-follow-node",
+      "label": "顧時安補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-follow",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-gu-select"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-choice-warm",
+      "label": "有，照片真的常常看不出實際質地。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-player-warm",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 7
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -6
+        }
+      ],
+      "next": [
+        "z3-v6-gu-choice-warm-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-choice-warm-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-choice-warm-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-gu-choice-warm-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-reply-warm",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-gu-choice-honest",
+      "label": "我現在也在認識別的人，想先說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-player-honest",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 6
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 22
+        },
+        {
+          "type": "variable",
+          "key": "z3_rivals_known_gu",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_gu",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-v6-gu-choice-honest-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-choice-honest-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-choice-honest-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-gu-choice-honest-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-reply-honest",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-gu-choice-tease",
+      "label": "你這是在找話題跟我聊天嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-player-tease",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 4
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 16
+        }
+      ],
+      "next": [
+        "z3-v6-gu-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-choice-tease-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-choice-tease-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-gu-choice-tease-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-gu-choice-busy",
+      "label": "今天工作太多，改天再聊。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-player-busy",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-v6-gu-choice-busy-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-gu-choice-busy-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-choice-busy-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-gu-choice-busy-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-gu-reply-busy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-gu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-v6-gu-choice-warm",
+        "z3-v6-gu-choice-honest",
+        "z3-v6-gu-choice-tease",
+        "z3-v6-gu-choice-busy"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-start",
+      "label": "裴知聿依日程主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-delay"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-delay",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-deliver"
+      ],
+      "delayMs": 21600000
+    },
+    {
+      "id": "z3-v6-pei-deliver",
+      "label": "裴知聿主動發訊不依賴玩家打開聊天室",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-pei-follow-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-v6-pei-follow-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-follow-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-pei-follow-node",
+      "label": "裴知聿補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-follow",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-v6-pei-select"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-choice-warm",
+      "label": "你居然還記得。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-player-warm",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 7
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -6
+        }
+      ],
+      "next": [
+        "z3-v6-pei-choice-warm-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-choice-warm-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-choice-warm-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-pei-choice-warm-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-reply-warm",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-pei-choice-honest",
+      "label": "我現在也在認識其他人，先跟你說一聲。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-player-honest",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 6
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 22
+        },
+        {
+          "type": "variable",
+          "key": "z3_rivals_known_pei",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-v6-pei-choice-honest-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-choice-honest-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-choice-honest-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-pei-choice-honest-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-reply-honest",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-pei-choice-tease",
+      "label": "你是想跟其他人競爭嗎？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-player-tease",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 4
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 16
+        }
+      ],
+      "next": [
+        "z3-v6-pei-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-choice-tease-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-choice-tease-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-pei-choice-tease-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-pei-choice-busy",
+      "label": "我暫時不想跟你聊感情。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-player-busy",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-v6-pei-choice-busy-wait"
+      ]
+    },
+    {
+      "id": "z3-v6-pei-choice-busy-wait",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-choice-busy-reply-node"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-v6-pei-choice-busy-reply-node",
+      "label": "依玩家選項回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-v6-pei-reply-busy",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-v6-pei-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-v6-pei-choice-warm",
+        "z3-v6-pei-choice-honest",
+        "z3-v6-pei-choice-tease",
+        "z3-v6-pei-choice-busy"
+      ]
+    },
+    {
+      "id": "z3-pair-timeline-start",
+      "label": "五人獨立生活與公開交集",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "z3-pair-delay-first"
+      ]
+    },
+    {
+      "id": "z3-pair-delay-first",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-0"
+      ],
+      "delayMs": 50400000
+    },
+    {
+      "id": "z3-pair-publish-0",
+      "label": "公開跨圈活動紀錄：現在的陪伴與過去的回憶",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-0"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-0",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-1"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-shen-pei-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_shen_pei",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-shen-pei-public-post"
+    },
+    {
+      "id": "z3-pair-shen-pei-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_shen_pei",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_shen",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-trigger-shen",
+      "label": "已知競爭者且忌妒達40觸發：現在的陪伴與過去的回憶",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-pei"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_shen",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_shen",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-pei-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-trigger-pei",
+      "label": "已知競爭者且忌妒達40觸發：現在的陪伴與過去的回憶",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-pei"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_pei",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_pei",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-pei-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-shen-pei",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-shen-pei-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-choice-reassure",
+        "z3-pair-shen-pei-choice-question",
+        "z3-pair-shen-pei-choice-clarify",
+        "z3-pair-shen-pei-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-pei-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-pei-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-pei-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-shen-pei-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-pei-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-pei-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-shen-pei-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-pei-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-pei-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-pei-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-pei-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-pei-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-pei-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-pei-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-1",
+      "label": "公開跨圈活動紀錄：熱情對上好勝",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-1"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-1",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-2"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-shen-qi-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_shen_qi",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-shen-qi-public-post"
+    },
+    {
+      "id": "z3-pair-shen-qi-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_shen_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_shen",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-trigger-shen",
+      "label": "已知競爭者且忌妒達40觸發：熱情對上好勝",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-qi"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_shen",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_shen",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-qi-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-trigger-qi",
+      "label": "已知競爭者且忌妒達40觸發：熱情對上好勝",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-qi"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_qi",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-qi-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-shen-qi",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-shen-qi-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-choice-reassure",
+        "z3-pair-shen-qi-choice-question",
+        "z3-pair-shen-qi-choice-clarify",
+        "z3-pair-shen-qi-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-qi-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-qi-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-qi-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-shen-qi-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-qi-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-qi-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-shen-qi-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-qi-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-qi-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-qi-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-qi-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-qi-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-qi-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-qi-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-2",
+      "label": "公開跨圈活動紀錄：攝影新手與成熟設計師",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-2"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-2",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-3"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-shen-gu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_shen_gu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-shen-gu-public-post"
+    },
+    {
+      "id": "z3-pair-shen-gu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_shen_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_shen",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-trigger-shen",
+      "label": "已知競爭者且忌妒達40觸發：攝影新手與成熟設計師",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_shen",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_shen",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-trigger-gu",
+      "label": "已知競爭者且忌妒達40觸發：攝影新手與成熟設計師",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_gu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-shen-gu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-shen-gu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-choice-reassure",
+        "z3-pair-shen-gu-choice-question",
+        "z3-pair-shen-gu-choice-clarify",
+        "z3-pair-shen-gu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-gu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-gu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-gu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-shen-gu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-gu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-gu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-shen-gu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-gu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-gu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-gu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-gu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-gu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-gu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-gu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-3",
+      "label": "公開跨圈活動紀錄：攝影者與被攝影者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-3"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-3",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-4"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-shen-lu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_shen_lu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-shen-lu-public-post"
+    },
+    {
+      "id": "z3-pair-shen-lu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_shen_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_shen",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-trigger-shen",
+      "label": "已知競爭者且忌妒達40觸發：攝影者與被攝影者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_shen",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_shen",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-trigger-lu",
+      "label": "已知競爭者且忌妒達40觸發：攝影者與被攝影者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-shen-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_shen_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_lu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-shen-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-shen-lu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-shen-lu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-choice-reassure",
+        "z3-pair-shen-lu-choice-question",
+        "z3-pair-shen-lu-choice-clarify",
+        "z3-pair-shen-lu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-lu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-lu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-lu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-shen-lu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-lu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-lu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-shen-lu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-lu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-shen-lu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-shen-lu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-shen-lu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-shen-lu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-shen-lu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-shen-lu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-4",
+      "label": "公開跨圈活動紀錄：試探對上直球",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-4"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-4",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-5"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-pei-qi-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_pei_qi",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-pei-qi-public-post"
+    },
+    {
+      "id": "z3-pair-pei-qi-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_pei_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-trigger-pei",
+      "label": "已知競爭者且忌妒達40觸發：試探對上直球",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-qi"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_pei",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_pei",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-qi-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-trigger-qi",
+      "label": "已知競爭者且忌妒達40觸發：試探對上直球",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-qi"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_qi",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-qi-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-pei-qi",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-pei-qi-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-choice-reassure",
+        "z3-pair-pei-qi-choice-question",
+        "z3-pair-pei-qi-choice-clarify",
+        "z3-pair-pei-qi-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-qi-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-qi-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-qi-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-pei-qi-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-qi-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-qi-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-pei-qi-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-qi-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-qi-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-qi-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-qi-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-qi-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-qi-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-qi-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-5",
+      "label": "公開跨圈活動紀錄：前任熟悉感與成熟穩定",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-5"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-5",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-6"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-pei-gu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_pei_gu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-pei-gu-public-post"
+    },
+    {
+      "id": "z3-pair-pei-gu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_pei_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-trigger-pei",
+      "label": "已知競爭者且忌妒達40觸發：前任熟悉感與成熟穩定",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_pei",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_pei",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-trigger-gu",
+      "label": "已知競爭者且忌妒達40觸發：前任熟悉感與成熟穩定",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_gu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-pei-gu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-pei-gu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-choice-reassure",
+        "z3-pair-pei-gu-choice-question",
+        "z3-pair-pei-gu-choice-clarify",
+        "z3-pair-pei-gu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-gu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-gu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-gu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-pei-gu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-gu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-gu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-pei-gu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-gu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-gu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-gu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-gu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-gu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-gu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-gu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-6",
+      "label": "公開跨圈活動紀錄：冷靜試探與直接回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-6"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-6",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-7"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-pei-lu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_pei_lu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-pei-lu-public-post"
+    },
+    {
+      "id": "z3-pair-pei-lu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_pei_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_pei",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-trigger-pei",
+      "label": "已知競爭者且忌妒達40觸發：冷靜試探與直接回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_pei",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_pei",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-trigger-lu",
+      "label": "已知競爭者且忌妒達40觸發：冷靜試探與直接回應",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-pei-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_pei_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_lu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-pei-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-pei-lu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-pei-lu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-choice-reassure",
+        "z3-pair-pei-lu-choice-question",
+        "z3-pair-pei-lu-choice-clarify",
+        "z3-pair-pei-lu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-lu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-lu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-lu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-pei-lu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-lu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-lu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-pei-lu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-lu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-pei-lu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-pei-lu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-pei-lu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-pei-lu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-pei-lu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-pei-lu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-7",
+      "label": "公開跨圈活動紀錄：衝動與克制",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-7"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-7",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-8"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-qi-gu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_qi_gu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-qi-gu-public-post"
+    },
+    {
+      "id": "z3-pair-qi-gu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_qi_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-trigger-qi",
+      "label": "已知競爭者且忌妒達40觸發：衝動與克制",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-qi-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_qi",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-qi-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-trigger-gu",
+      "label": "已知競爭者且忌妒達40觸發：衝動與克制",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-qi-gu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_gu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-qi-gu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-qi-gu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-qi-gu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-choice-reassure",
+        "z3-pair-qi-gu-choice-question",
+        "z3-pair-qi-gu-choice-clarify",
+        "z3-pair-qi-gu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-qi-gu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-gu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-gu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-qi-gu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-gu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-gu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-qi-gu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-gu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-gu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-qi-gu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-gu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-gu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-gu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-gu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-8",
+      "label": "公開跨圈活動紀錄：富家少爺與獨立工作者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-public-post",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-public-wait-8"
+      ]
+    },
+    {
+      "id": "z3-pair-public-wait-8",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-publish-9"
+      ],
+      "delayMs": 5400000
+    },
+    {
+      "id": "z3-pair-qi-lu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_qi_lu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-qi-lu-public-post"
+    },
+    {
+      "id": "z3-pair-qi-lu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_qi_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_qi",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-trigger-qi",
+      "label": "已知競爭者且忌妒達40觸發：富家少爺與獨立工作者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-qi-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_qi",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_qi",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-qi-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-trigger-lu",
+      "label": "已知競爭者且忌妒達40觸發：富家少爺與獨立工作者",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-qi-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_qi_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_lu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-qi-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-qi-lu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-qi-lu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-choice-reassure",
+        "z3-pair-qi-lu-choice-question",
+        "z3-pair-qi-lu-choice-clarify",
+        "z3-pair-qi-lu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-qi-lu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-lu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-lu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-qi-lu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-lu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-lu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-qi-lu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-lu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-qi-lu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-qi-lu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-qi-lu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-qi-lu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-qi-lu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-qi-lu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-publish-9",
+      "label": "公開跨圈活動紀錄：兩個成熟男人的感情觀",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-public-post",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-gu-lu-read",
+      "label": "玩家查看公開交集（不假定玩家在場）",
+      "type": "action",
+      "actions": [
+        {
+          "type": "variable",
+          "key": "z3_pair_known_gu_lu",
+          "value": true
+        }
+      ],
+      "next": [],
+      "event": "read",
+      "target": "z3-pair-gu-lu-public-post"
+    },
+    {
+      "id": "z3-pair-gu-lu-jealous-add",
+      "label": "已雙方知情時由公開交集增加忌妒",
+      "type": "action",
+      "actions": [
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 20
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": 20
+        }
+      ],
+      "next": [],
+      "event": "variable",
+      "target": "z3_pair_known_gu_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_gu_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_gu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_rivals_known_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-trigger-gu",
+      "label": "已知競爭者且忌妒達40觸發：兩個成熟男人的感情觀",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-gu-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_gu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_gu_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_gu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-gu-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-trigger-lu",
+      "label": "已知競爭者且忌妒達40觸發：兩個成熟男人的感情觀",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-lead",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-pair-dialogue-delay-gu-lu"
+      ],
+      "event": "variable",
+      "target": "z3_jealousy_lu",
+      "conditions": [
+        {
+          "key": "z3_pair_known_gu_lu",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "z3_jealousy_lu",
+          "op": "gt",
+          "value": 39
+        },
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "key": "unlocked:z3-pair-gu-lu-lead",
+          "op": "eq",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "z3-pair-dialogue-delay-gu-lu",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-select"
+      ],
+      "delayMs": 150000
+    },
+    {
+      "id": "z3-pair-gu-lu-select",
+      "label": "玩家自主選擇（四個不同回覆）",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-choice-reassure",
+        "z3-pair-gu-lu-choice-question",
+        "z3-pair-gu-lu-choice-clarify",
+        "z3-pair-gu-lu-choice-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-choice-reassure",
+      "label": "你不用跟他比，我想了解你自己的想法。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-player-reassure",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -15
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 10
+        }
+      ],
+      "next": [
+        "z3-pair-gu-lu-wait-reassure"
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-wait-reassure",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-reply-node-reassure"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-gu-lu-reply-node-reassure",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-reply-reassure",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-gu-lu-choice-question",
+      "label": "你真的那麼在意他？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-player-question",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": 8
+        }
+      ],
+      "next": [
+        "z3-pair-gu-lu-wait-question"
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-wait-question",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-reply-node-question"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-gu-lu-reply-node-question",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-reply-question",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-gu-lu-choice-clarify",
+      "label": "我們還沒約定專一，先把各自的期待說清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-player-clarify",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -8
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_gu",
+          "value": "discussing_nonexclusive"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 7
+        }
+      ],
+      "next": [
+        "z3-pair-gu-lu-wait-clarify"
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-wait-clarify",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-reply-node-clarify"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-gu-lu-reply-node-clarify",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-reply-clarify",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-pair-gu-lu-choice-boundary",
+      "label": "不要把我當成你們的比較題。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-player-boundary",
+          "value": true
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -10
+        }
+      ],
+      "next": [
+        "z3-pair-gu-lu-wait-boundary"
+      ]
+    },
+    {
+      "id": "z3-pair-gu-lu-wait-boundary",
+      "label": "自然停頓與背景時間推進",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-pair-gu-lu-reply-node-boundary"
+      ],
+      "delayMs": 85000
+    },
+    {
+      "id": "z3-pair-gu-lu-reply-node-boundary",
+      "label": "專屬雄競分支回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-pair-gu-lu-reply-boundary",
+          "value": true
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
@@ -3031,6 +11017,52 @@
         "pei-intro-context",
         "pei-intro-player-boundary",
         "pei-intro-reply-boundary"
+      ]
+    },
+    {
+      "name": "陸沉川：拒絕林安邀約不建立私人關係",
+      "steps": [
+        {
+          "advanceMs": 330000
+        },
+        {
+          "choose": "z3-lu-invite-no"
+        },
+        {
+          "advanceMs": 95000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "z3-lin-night-invite",
+        "z3-lin-night-no",
+        "z3-lin-night-no-reply"
+      ]
+    },
+    {
+      "name": "陸沉川：玩家同意赴約與私人聯絡才開啟KKT",
+      "steps": [
+        {
+          "advanceMs": 330000
+        },
+        {
+          "choose": "z3-lu-invite-yes"
+        },
+        {
+          "advanceMs": 550000
+        },
+        {
+          "choose": "z3-lu-contact-yes"
+        },
+        {
+          "advanceMs": 320000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "z3-lin-night-after",
+        "z3-lin-lu-contact-yes",
+        "z3-lu-private-intro"
       ]
     }
   ]

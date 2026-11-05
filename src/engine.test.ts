@@ -118,3 +118,26 @@ describe("import and schema safety", () => {
     }
   });
 });
+
+
+describe("磚3 V6/V7 hidden jealousy", () => {
+  it("increments, decrements and clamps at 0/100 without mutating prior state", () => {
+    const w = createWork();
+    w.variables.z3_jealousy_lu = 94;
+    w.nodes[0].actions.push({ type: "adjust", key: "z3_jealousy_lu", value: 22 });
+    w.nodes.push({ ...w.nodes[0], id: "z3-calm", label: "回應與澄清", type: "event", event: "read", target: "z3-note", next: [], actions: [{ type: "adjust", key: "z3_jealousy_lu", value: -120 }] });
+    const before = initialRuntime(w);
+    const high = dispatch(w, before, "start");
+    expect(high.variables.z3_jealousy_lu).toBe(100);
+    expect(before.variables.z3_jealousy_lu).toBe(94);
+    const calm = dispatch(w, high, "read", "z3-note");
+    expect(calm.variables.z3_jealousy_lu).toBe(0);
+  });
+  it("triggers variable-driven scenes only after the threshold", () => {
+    const w = createWork();
+    w.variables.z3_jealousy_shen = 10;
+    w.nodes[0].actions.push({ type: "adjust", key: "z3_jealousy_shen", value: 32 });
+    w.nodes.push({ ...w.nodes[0], id: "z3-jealousy-trigger", label: "雄競", type: "event", event: "variable", target: "z3_jealousy_shen", conditions: [{ key: "z3_jealousy_shen", op: "gt", value: 39 }], next: [], actions: [{ type: "variable", key: "z3-rivalry-fired", value: true }] });
+    expect(dispatch(w, initialRuntime(w), "start").variables["z3-rivalry-fired"]).toBe(true);
+  });
+});

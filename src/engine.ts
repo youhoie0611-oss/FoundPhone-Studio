@@ -37,6 +37,13 @@ function apply(a: Action, s: Runtime, w: Work) {
     case "variable":
       s.variables[a.key] = a.value;
       break;
+    case "adjust": {
+      const delta = Number(a.value);
+      const current = s.variables[a.key];
+      if (typeof current === "number" && Number.isFinite(delta))
+        s.variables[a.key] = Math.max(0, Math.min(100, current + delta));
+      break;
+    }
     case "unlock":
       if (!s.unlocked.includes(a.key)) {
         s.unlocked.push(a.key);
@@ -159,7 +166,7 @@ function runQueue(
       .filter((item) => item && !item.outgoing && item.body.trim());
     for (const a of n.actions) {
       const previous =
-        a.type === "variable"
+        (a.type === "variable" || a.type === "adjust")
           ? s.variables[a.key]
           : a.type === "time"
             ? s.time
@@ -175,7 +182,7 @@ function runQueue(
       } else {
         apply(a, s, w);
       }
-      if (a.type === "variable" && previous !== s.variables[a.key])
+      if ((a.type === "variable" || a.type === "adjust") && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
             .filter(
