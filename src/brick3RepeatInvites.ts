@@ -17,6 +17,8 @@ export type Brick3InviteProgress = {
   followUpVariant?: number;
   detailRequests?: number;
   completed?: boolean;
+  /** Only set on a newly confirmed arrival, never a migrated old save. */
+  completedAtMs?: number;
 };
 
 const PREFIX = "brick3-photo-";
@@ -152,6 +154,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
       } else if (mode === "arrival_yes") {
         p.phase = "completed";
         p.completed = true;
+        p.completedAtMs = now(s);
         photoMessage(s, a, "one-gallery-photo", a.eventPhoto, true);
         const seed = Array.from(a.id).reduce((total, x) => total + x.charCodeAt(0), 0) + p.attempts * 13 + now(s);
         p.followUpVariant = Math.abs(seed) % a.followUps.length;
