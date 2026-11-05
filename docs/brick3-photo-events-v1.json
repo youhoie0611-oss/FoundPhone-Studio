@@ -33,13 +33,23 @@
         "requiresNpcSchedule": true,
         "requiresPastContinuity": true,
         "requiresPlayerAttendance": false,
-        "requiresPlayerConsentForIntimacy": true
+        "requiresPlayerConsentForIntimacy": true,
+        "mustMatchActualMeal": "gu_shian_prepared_his_own_breakfast",
+        "requiresEstablishedChatContact": true,
+        "respectsBoundaryFlags": [
+          "gu_no_early_unsolicited_photos",
+          "gu_personal_photos_opted_out"
+        ],
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "noAssumptionOfCohabitation": true
       },
-      "message": "早。早餐放桌上了，記得吃。",
+      "message": "早，今天早餐難得沒失手。",
       "choices": [
         {
           "id": "morning_breakfast_choice_1",
-          "text": "你什麼時候準備的？",
+          "text": "你早餐都自己做？",
           "branches": "contextual_response"
         },
         {
@@ -49,12 +59,12 @@
         },
         {
           "id": "morning_breakfast_choice_3",
-          "text": "你是不是把我當小孩照顧？",
+          "text": "你是在炫耀廚藝嗎？",
           "branches": "contextual_response"
         },
         {
           "id": "morning_breakfast_choice_4",
-          "text": "謝謝，不過下次不用特地準備。",
+          "text": "我早上通常沒什麼時間聊天。",
           "branches": "contextual_response"
         }
       ],
@@ -65,11 +75,131 @@
           "path": "public/story-photos/gu_shian/gu_shian_breakfast_chat_01.webp",
           "usage": "chat_attachment",
           "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualPrompt": "顧時安親自拍的普通早餐手機照：吐司、煎蛋及飲品，符合當天是否在家與既有餐桌環境；溫暖自然晨光，無玩家身影、無兩人同居暗示。",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_breakfast_chat_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "早，今天早餐難得沒失手。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_breakfast_chat_01",
+          "senderId": "gu_shian",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "吐司差點烤過頭，不過最後還行。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "morning_breakfast_choice_1": {
+          "reply": [
+            "有時間就會自己弄。",
+            "今天那顆蛋差點翻壞，還好有救回來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_1",
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "木質餐桌上的吐司、煎蛋與咖啡，晨光，手機生活照"
+          "stateEffects": {
+            "recordTopic": "gu_cooking_habits",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_2": {
+          "reply": [
+            "謝謝，我自己也滿滿意的。",
+            "難得早上沒有手忙腳亂。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_breakfast",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_3": {
+          "reply": [
+            "有一點，被妳發現了。",
+            "失敗的那幾次我就沒有拍下來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_light_banter",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_4": {
+          "reply": [
+            "知道了，妳先忙。",
+            "這種生活照以後不會一早就打擾妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_morning_boundary",
+            "setFlag": "gu_no_early_unsolicited_photos",
+            "flagValue": true,
+            "relationshipAssumptions": []
+          }
         }
-      ]
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerMeal": true,
+        "noAssumedPlayerVisited": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_breakfast_event",
+          "capturedAt": null,
+          "location": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "mood": null
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人訊息附件；未設計自動儲存玩家相簿。實際送達後仍可於聊天紀錄查看。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
     },
     {
       "eventId": "photo_design_review",
@@ -80,9 +210,16 @@
         "requiresNpcSchedule": true,
         "requiresPastContinuity": true,
         "requiresPlayerAttendance": false,
-        "requiresPlayerConsentForIntimacy": true
+        "requiresPlayerConsentForIntimacy": true,
+        "mustMatchActualWorkEvent": "architecture_design_proposal_review_completed",
+        "requiresProjectContinuity": true,
+        "requiresSharingPermissionFromProject": true,
+        "requiresNpcAtConfirmedWorkLocation": true,
+        "requiresEstablishedChatContact": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true
       },
-      "message": "今天提案總算告一段落。",
+      "message": "今天的提案總算告一段落。",
       "choices": [
         {
           "id": "design_review_choice_1",
@@ -112,11 +249,128 @@
           "path": "public/story-photos/gu_shian/gu_shian_studio_chat_01.webp",
           "usage": "chat_attachment",
           "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true,
+            "requiresClientClearance": true
+          },
+          "visualPrompt": "顧時安自行拿手機拍攝同一建築專案的工作桌、模型和草圖一角，符合當天已完成的提案、模型與材質連續性；傍晚光線，不透露未授權客戶與機密。",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_studio_chat_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天的提案總算告一段落。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_studio_chat_01",
+          "senderId": "gu_shian",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "這個角度我還滿喜歡的。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "design_review_choice_1": {
+          "reply": [
+            "大方向算順利。",
+            "還有一些細節要整理，不過今天終於把重點說清楚了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_1",
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "建築設計工作桌，模型與草圖，傍晚自然光"
+          "stateEffects": {
+            "recordTopic": "gu_proposal_outcome"
+          }
+        },
+        "design_review_choice_2": {
+          "reply": [
+            "謝謝。",
+            "這個角度我調了很久，現在光線進來的感覺比較對了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_architecture_process"
+          }
+        },
+        "design_review_choice_3": {
+          "reply": [
+            "今天先不改模型了。",
+            "明天再把剩下的部分收一收。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_rest"
+          }
+        },
+        "design_review_choice_4": {
+          "reply": [
+            "好，妳先忙。",
+            "我也剛好還有資料要整理。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_pause",
+            "waitForPlayer": true
+          }
         }
-      ]
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedSharedMeetingAttendance": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_actual_project_review",
+          "capturedAt": null,
+          "location": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "projectId": null,
+          "workStage": "review_completed"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true,
+          "requiresClientClearance": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "工作近況的聊天照片不自動匯入玩家相簿。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
     },
     {
       "eventId": "photo_dinner_invite",
@@ -532,5 +786,92 @@
         }
       ]
     }
-  ]
+  ],
+  "lastAuthoringUpdate": "2026-11-05",
+  "authoringNotes": [
+    "此 JSON 是《磚3》照片事件企劃與資產清單；非已接入 Runtime 的正式劇本。照片由作者外部生成、玩家手動上傳 WebP。",
+    "本次只補強顧時安既有兩個事件，不變動其他角色事件及圖片路徑。",
+    "事件觸發、玩家選擇、照片拍攝、決定分享、傳送、相簿保存為不同狀態，不得以腳本或照片檔存在推定玩家已參與或親密。"
+  ],
+  "guShianAuthoringRulesV1": {
+    "characterId": "gu_shian",
+    "narrative": {
+      "age": 26,
+      "profession": "建築設計師",
+      "relationshipStart": "因工作專案認識",
+      "initialHiddenAffinity": 0,
+      "traits": [
+        "成熟",
+        "溫柔",
+        "沉穩",
+        "細膩",
+        "有主見",
+        "陽光",
+        "真誠",
+        "尊重界線"
+      ],
+      "relationshipMustFollowChoices": true
+    },
+    "characterContinuity": {
+      "referenceImage": "https://github.com/youhoie0611-oss/FoundPhone-Studio/blob/6a8fb3e8afa4dd90c907c84c8a12c46c41420261/assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
+      "referenceStatus": "confirmed_earlier_and_available_in_repository_history; not_embedded_in_this_branch",
+      "face": "沿用作者確認五視圖：深棕色眼睛、深棕黑色蓬鬆短髮、183公分76公斤的勻稱身形。不能變臉。",
+      "eyeglasses": {
+        "confirmed": true,
+        "style": "半透明暖茶色圓角方框",
+        "notMandatoryInEveryPhoto": true
+      },
+      "petDog": {
+        "confirmed": true,
+        "breed": "中型奶茶色短毛米克斯",
+        "whiteChest": true,
+        "semiFloppyEars": true,
+        "darkBrownEyes": true,
+        "name": null,
+        "age": null,
+        "sex": null
+      },
+      "homeLocationAndInterior": "not_yet_confirmed; never_invent_a_fixed_apartment_or_renovate_between_photos",
+      "wardrobeAndArchitecture": "track per in-game day and active architecture project; same-day outfits and models remain consistent",
+      "socialCircle": "only depict named/established NPC companions; never invent player appearance or attendance"
+    },
+    "composition": {
+      "photoTakenByGuOrConfirmedCompanion": true,
+      "default": "ordinary smartphone photo: warm natural, sometimes unpolished",
+      "longTermWeights": {
+        "selfieStyle": 25,
+        "architectureStreets": 25,
+        "foodDailyAnimals": 20,
+        "workDesign": 15,
+        "friendsOutdoors": 15
+      },
+      "doNotEnforceDailyQuota": true,
+      "ifNoPlausiblePhotoMotive": "do_not_create_a_photo"
+    },
+    "upload": {
+      "root": "public/story-photos/gu_shian/",
+      "filenamePattern": "gu_shian_{event_slug}_{shot_number}.webp",
+      "imageBodyUploadResponsibility": "player_manual_upload_only",
+      "imageAssetUploadedThisChange": false,
+      "neverReportImageUploadedWithoutRemoteVerification": true,
+      "missingAsset": "keep_story_text_and_log_missing_asset; do_not_show_a_broken_image",
+      "reuseSamePhotoIdAcrossSurfaces": true,
+      "dontRegenerateExistingApprovedPhoto": true
+    },
+    "eventRuntimeContract": {
+      "captureSharingDeliveryDistinct": true,
+      "gatePlayerAttendanceByExplicitAcceptanceAndActualArrival": true,
+      "rejectOrUnavailableMeansNoPlayerInScene": true,
+      "noPlayerPhotoUploadOrPhotoExchange": true,
+      "neverAskPlayerForPhotos": true,
+      "playerUsesFourWrittenChoices": true,
+      "waitForPlayerAnswerBeforeContinuingThisConversation": true,
+      "individualMessagesWithNaturalPauses": true,
+      "mayDeliverWhenChatClosed": true,
+      "preserveUnreadAndPhotoOnceDelivered": true,
+      "neverOverwritePriorEventOnChatOpen": true,
+      "noAutomaticRomanceOrIntimacy": true,
+      "noPermanentCharacterExitOnRejection": true
+    }
+  }
 }
