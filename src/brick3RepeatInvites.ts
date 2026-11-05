@@ -16,6 +16,9 @@ export type Brick3InviteProgress = {
   followUpSent?: boolean;
   followUpVariant?: number;
   detailRequests?: number;
+  /** Pei may send a separate anxious follow-up after a soft refusal. */
+  anxiousFollowUpAtMs?: number;
+  anxiousFollowUpStep?: number;
   completed?: boolean;
   /** Only set on a newly confirmed arrival, never a migrated old save. */
   completedAtMs?: number;
@@ -128,6 +131,19 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
       p.completed = true; // Existing save: do not invite again for a collected photo.
       p.phase = "completed";
     }
+    if (a.id === "pei_dinner_outing" && p.anxiousFollowUpAtMs !== undefined &&
+        now(s) >= p.anxiousFollowUpAtMs) {
+      const step = p.anxiousFollowUpStep ?? 0;
+      const lines = [
+        "我剛剛又看了一次妳的訊息。\\n……妳是不是不想再跟我單獨見面了？",
+        "對不起，我又一直問。\\n我只是很怕，連見妳一面都變得不可能。",
+      ];
+      message(s, a, "anxious-followup-" + p.attempts + "-" + step,
+        lines[step].replace(/\\n/g, "\\n"));
+      p.anxiousFollowUpStep = step + 1;
+      p.anxiousFollowUpAtMs = step === 0 ? now(s) + 45000 : undefined;
+      continue;
+    }
     if (p.completed) {
       if (!p.followUpSent && p.followUpAtMs !== undefined && now(s) >= p.followUpAtMs) {
         const selection = (p.followUpVariant ?? 0) % a.followUps.length;
@@ -163,6 +179,10 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         p.followUpAtMs = now(s) + hours * 3600000;
       } else if (mode === "arrival_no" || mode === "decline") {
         deferNext(s, a, p);
+        if (a.id === "pei_dinner_outing" && mode === "decline") {
+          p.anxiousFollowUpStep = 0;
+          p.anxiousFollowUpAtMs = now(s) + 15000;
+        }
       }
       p.responseMode = undefined;
       p.responseText = undefined;
@@ -226,5 +246,7 @@ export function dismissBrick3InvitationOnCustomReply(s: Runtime, thread: string)
     if (!s.choices.some(c => pending.some(prefix => c.target.startsWith(prefix)))) continue;
     s.choices = s.choices.filter(c => !pending.some(prefix => c.target.startsWith(prefix)));
     deferNext(s, a, p);
+    p.anxiousFollowUpAtMs = undefined;
+    p.anxiousFollowUpStep = undefined;
   }
 }
