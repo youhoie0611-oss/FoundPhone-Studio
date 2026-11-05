@@ -20,7 +20,7 @@ const delayed = {
 };
 const alternatives = {
   photo_dinner_invite: ["可以，妳到了再傳訊息給我。", "嗯，還是要先問妳願不願意。", "好，我自己吃也沒關係。", "只有吃飯。其他的事，妳沒答應我就不會擅自決定。"],
-  photo_dinner_at_home: ["我也很高興，今晚就先好好吃飯。", "我記得，但妳現在喜歡的可能已經不一樣了。", "好，妳不想聊就先不聊。", "好，我幫妳把東西收一收。"],
+  photo_dinner_at_home: ["我也很高興，今晚就先好好吃飯。", "可以。妳願意的話，我牽妳。", "好，妳不想聊就先不聊。", "好，我幫妳把東西收一收。"],
   photo_camera_walk: ["那時候剛好夕陽出來，我也很喜歡。", "在活動附近的街口，我拍完就回學校了。", "可以，妳有空再約，不用勉強。", "沒關係，我也只是想分享今天看到的。"],
   photo_practice_update: ["有贏，最後一球差點沒投進。", "哈哈，現在累到只想坐著。", "有，不過剛打完球的樣子很狼狽。", "嗯，我去洗澡，晚點再說。"],
   photo_weekend_sport: ["誰說我不練？只是沒必要一直講。", "嗯，今天打得還行。", "有機會再說，得先看妳有沒有空。", "行，那妳先忙。"],
@@ -124,7 +124,8 @@ export function injectBrick3PhotoEvents(story, manifest) {
       const optionId = optionIds[index];
       const outgoingId = optionId + "-out";
       const responseId = optionId + "-response";
-      addChat(chat, outgoingId, "owner", option.text, {
+      const choiceText = visit && index === 1 ? "可以牽你的手嗎？" : option.text;
+      addChat(chat, outgoingId, "owner", choiceText, {
         outgoing: true, meta: { source: "brick3-photo-event" },
       });
       addChat(chat, responseId, senderId, replyFor(entry, option, index), {
@@ -146,7 +147,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
         const handsId = hands && prefix + "-album-" + (uploadedImages.indexOf(hands) + 1);
         if (handsId) actions.push(unlock(handsId));
       }
-      story.events.push(node(optionId, "action", { actions, next }));
+      story.events.push(node(optionId, "action", { label: choiceText, actions, next }));
       story.events.push(node(optionId + "-reply-wait", "delay", {
         delayMs: 1800, next: [optionId + "-reply-arrive"],
       }));
