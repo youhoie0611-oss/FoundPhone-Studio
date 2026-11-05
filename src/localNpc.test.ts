@@ -6,6 +6,24 @@ const request = (thread: string, message: string) => ({
 });
 
 describe("free NPC chat", () => {
+  it("answers Shen's recognition follow-up instead of using a generic question reply", () => {
+    const reply = localNpcReply({
+      ...request("沈硯舟", "對，是我。你還記得我？"),
+      history: [{ sender: "沈硯舟", body: "欸，妳是上次活動現場的那位吧？", outgoing: false }],
+    }).reply;
+    expect(reply).toMatch(/活動|現場/);
+    expect(reply).toMatch(/照片/);
+    expect(reply).not.toMatch(/得想一下/);
+  });
+  it("acknowledges Gu's unexplained contact source without inventing a mutual friend", () => {
+    const reply = localNpcReply({
+      ...request("顧時安", "你怎麼會有我的聯絡方式？"),
+      history: [{ sender: "顧時安", body: "我是顧時安，26歲，在做建築設計。", outgoing: false }],
+    }).reply;
+    expect(reply).toMatch(/聯絡|來源|資料/);
+    expect(reply).not.toMatch(/妳是指剛剛那件事/);
+  });
+
   it("understands a chocolate gift without needing an API key", () => {
     expect(classifyMessage("送你巧克力")).toBe("gift");
     expect(localNpcReply(request("沈硯舟", "送你巧克力")).reply).toMatch(/巧克力|給我/);
