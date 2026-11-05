@@ -34,6 +34,7 @@ const characterAvatar: Record<string, string> = {
   "沈硯舟": "shen-yanzhou-avatar.png",
   "裴知聿": "pei-zhiyu-avatar.png",
   "祁野": "qi-ye-avatar.png",
+  "顧時安": "gu-shian-site-visit-selfie.jpg",
 };
 function chatAvatar(name: string, fallback?: string) {
   const normalized = name.trim().replace(/^[\s\u3000]+|[\s\u3000]+$/g, "");
@@ -116,6 +117,7 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
 
   const lastMessage = messages[messages.length - 1];
+  const threadAvatar = messages.find((item) => !item.outgoing && item.avatar)?.avatar;
   const latestIncomingId = [...messages].reverse().find((m) => !m.outgoing)?.id ?? "";
   useEffect(() => {
     if (awaitingReply && awaitingReply.thread === p.thread && latestIncomingId !== awaitingReply.afterId) {
@@ -180,10 +182,10 @@ export function MymyKakao(p: SkinProps) {
                     (run.first ? " first" : "")
                   }
                 >
-                  {!m.outgoing && run.first && (
+                  {!m.outgoing && (
                     <>
                       <div className="kzmav">
-                        <Avatar name={m.sender} src={chatAvatar(m.sender, m.avatar)} />
+                        <Avatar name={m.sender} src={chatAvatar(m.sender, m.avatar || threadAvatar)} />
                       </div>
                       <div className="kzmn">{m.sender}</div>
                     </>
@@ -263,9 +265,6 @@ export function MymyKakao(p: SkinProps) {
                       {reply}
                     </button>
                   ))}
-                  <button type="button" className="kkt-reply-skip" onClick={() => p.onThread("")} aria-label="暫不回覆，返回聊天列表">
-                    暫不回覆・返回聊天列表
-                  </button>
                 </>;
               })()}
             </div>
