@@ -9,14 +9,16 @@ function StoryPlayer() {
     [error, setError] = useState("");
   useEffect(() => {
     const abort = new AbortController();
-    fetch(
-      new URLSearchParams(location.search).get("preview") === "test"
-        ? "./test-work.json"
-        : new URLSearchParams(location.search).get("template") === "blank"
-          ? "./blank-work.json"
-          : "./work.json",
-      { signal: abort.signal },
-    )
+    // Always fetch the latest published story; an installed PWA must not
+    // silently keep serving an older work.json after a deployment.
+    const storyFile = new URLSearchParams(location.search).get("preview") === "test"
+      ? "./test-work.json"
+      : new URLSearchParams(location.search).get("template") === "blank"
+        ? "./blank-work.json"
+        : "./work.json";
+    const storyUrl = new URL(storyFile, window.location.href);
+    storyUrl.searchParams.set("revision", String(Date.now()));
+    fetch(storyUrl.toString(), { signal: abort.signal, cache: "no-store" })
       .then((r) => {
         if (!r.ok) throw Error("缺少作品文件，请运行 npm run story:build");
         return r.json();
