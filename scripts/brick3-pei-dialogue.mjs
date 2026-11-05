@@ -137,6 +137,52 @@ export function injectBrick3PeiDialogue(story) {
       action.value = "裴知聿：" + body.replace(/\n/g, " ");
     }
   }
+  // Screenshot-style KKT: one thought per bubble, delivered in sequence.
+  // Keep the first message's stable ID so all original choices still trigger.
+  // Follow-up bubbles arrive 3–7 seconds apart even when the chat is closed.
+  const originalEvents = [...(story.events ?? [])];
+  for (const event of originalEvents) {
+    const unlocked = (event.actions ?? [])
+      .filter(action => action.type === "unlock" && found.has(action.key));
+    for (const action of unlocked) {
+      const msg = chat.messages.find(m => m.id === action.key);
+      if (!msg || !msg.body.includes("\\n")) continue;
+      const parts = msg.body.split("\\n").map(x => x.trim()).filter(Boolean);
+      if (parts.length < 2) continue;
+      msg.body = parts[0];
+      let previous = event;
+      parts.slice(1).forEach((body, index) => {
+        const suffix = "-bubble-" + (index + 2);
+        const id = msg.id + suffix;
+        chat.messages.push({ ...msg, id, body, hidden: true });
+        const delayId = "brick3-pei-" + id + "-wait";
+        const deliverId = "brick3-pei-" + id + "-deliver";
+        const delay = {
+          id: delayId, label: "裴知聿正在輸入",
+          type: "delay", once: true, delayMs: 3200 + (index % 3) * 1700,
+          next: [deliverId],
+        };
+        const delivery = {
+          id: deliverId, label: "裴知聿繼續傳訊",
+          type: "action", once: true,
+          actions: [{ type: "unlock", key: id, value: true },
+            { type: "notification", key: "", value: "裴知聿：" + body }],
+          next: [],
+        };
+        story.events.push(delay, delivery);
+        previous.next ??= [];
+        previous.next.push(delayId);
+        previous = delivery;
+      });
+      for (const notification of event.actions ?? []) {
+        if (notification.type === "notification" &&
+            typeof notification.value === "string" &&
+            notification.value.startsWith("裴知聿：")) {
+          notification.value = "裴知聿：" + parts[0];
+        }
+      }
+    }
+  }
   const missing = Object.keys(peiDialogue).filter(id => !found.has(id));
   if (missing.length) throw Error("Missing Pei dialogue IDs: " + missing.join(","));
   return story;
