@@ -85,6 +85,10 @@ describe("Brick3 V7 Lu Chenchuan entry respects boundaries", () => {
     expect(reached.variables.lu_private_contact).toBe(true);
     expect(has(reached, "luchenchuan-card")).toBe(true);
     expect(has(reached, "v7-lu-private-1")).toBe(true);
+    expect(four(reached, "v7_lu_private")).toHaveLength(4);
+    const chosen = choose(w, reached, "brick3-photo-v7_lu_private-choice-1");
+    expect(chosen.variables.brick3_v7_lu_private_choice).toBe(1);
+    expect(chosen.unlocked.includes("brick3-photo-v7_lu_private-choice-1-out")).toBe(true);
     const firstPrivate = w.nodes.find((n) => n.id === "v7-lu-private-contact-arrive");
     expect(firstPrivate?.next.some((x) => x === "brick3-photo-photo_off_duty-wait")).toBe(true);
     expect(has(reached, "brick3-photo-photo_off_duty-image-1")).toBe(false);
