@@ -75,7 +75,7 @@ const leads: Lead[] = [
     ],
   },
 ];
-// Higher jealousy sharpens Pei's questions; he gets quieter, not louder.
+// Higher jealousy makes Pei more anxious and explicit about abandonment, not detached or sly.
 const peiIntenseQuestions = [
   "妳是不是有別的喜歡的人了？我看到那張照片就一直在想。……妳能不能告訴我？",
   "妳跟他出去的時候，有沒有一瞬間想到我？……抱歉，我知道這樣問很難看。",
