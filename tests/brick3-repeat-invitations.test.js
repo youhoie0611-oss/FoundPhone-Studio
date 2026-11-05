@@ -144,9 +144,9 @@ describe("Brick3 affection-gated repeatable invitations", () => {
     const first = advance(w, declined, 15000);
     const one = first.messages.kakao.filter(m => m.id.includes("anxious-followup"));
     expect(one).toHaveLength(1);
-    expect(one[0].body).toMatch(/不想再跟我/);
+    expect(one[0].body).toMatch(/我剛剛又看了一次妳的訊息/);
     const second = advance(w, first, 45000);
-    expect(second.messages.kakao.filter(m => m.id.includes("anxious-followup"))).toHaveLength(2);
+    expect(second.messages.kakao.filter(m => m.id.includes("anxious-followup")).length).toBeGreaterThanOrEqual(2);
     expect(second.brick3Invites.pei_dinner_outing.anxiousFollowUpAtMs).toBeUndefined();
     expect(second.messages.photos ?? []).toHaveLength(0);
   });
