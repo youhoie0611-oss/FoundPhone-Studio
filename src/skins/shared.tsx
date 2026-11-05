@@ -9,6 +9,7 @@ import {
 import { useState, type ReactNode } from "react";
 import type { SkinProps } from "../AppSkins";
 import { safeMedia, type Item } from "../schema";
+import { storyPhotoUrl } from "../storyPhotoAssets";
 export type Props = SkinProps;
 export const meta = (
   i: Pick<Item, "meta"> | undefined,
@@ -123,7 +124,7 @@ export function Media({
         onClick={(e) => e.stopPropagation()}
       />
     ) : (
-      <img className={className} loading="lazy" alt={item.title} src={src} />
+      <img className={className} loading="lazy" alt={item.title} src={storyPhotoUrl(src)} />
     )
   ) : (
     <div className={`catalog-art ${className}`}>
