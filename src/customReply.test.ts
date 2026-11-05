@@ -19,4 +19,14 @@ describe("custom player reply", () => {
     state.choices = [{ label: "拒絕", target: "decline" }];
     expect(submitCustomReply(state, "   ")).toBe(state);
   });
+  it("records a player's invitation decision without silently choosing a scripted branch", () => {
+    const state = initialRuntime(testWork);
+    state.messages.kakao = [{ id: "invite", title: "林安", sender: "林安", body: "週五聚餐要不要來？", outgoing: false } as never];
+    state.choices = [{ label: "答應", target: "accept" }];
+    const next = submitCustomReply(state, "這次我不去", "kakao", "林安");
+    expect((next.ui?.player?.storyDecisions as Array<{ status: string; thread: string }>)[0]).toMatchObject({
+      thread: "林安", status: "declined",
+    });
+    expect(next.choices).toEqual(state.choices);
+  });
 });
