@@ -1,5 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createServer } from "vite";
+import { injectBrick3V7Lu } from "./brick3-v7-lu.mjs";
 import { injectBrick3PhotoEvents } from "./brick3-photo-events.mjs";
 const [
   mode = "validate",
@@ -87,6 +88,7 @@ try {
   // files become active after the normal GitHub Pages rebuild.
   if (raw.id === "between-the-lines-b-demo") {
     const manifest = JSON.parse(await readFile("docs/brick3-photo-events-v1.json", "utf8"));
+    injectBrick3V7Lu(raw);
     injectBrick3PhotoEvents(raw, manifest);
   }
   const { compileStory, storySchema } = await server.ssrLoadModule(
