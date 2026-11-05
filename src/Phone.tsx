@@ -883,6 +883,14 @@ function AppSearch({
 }
 function Media({ item }: { item: Item }) {
   const src = safeMedia(item.media);
+  if (!src && item.meta?.source === "brick3-date-social")
+    return (
+      <div className="original-art art-rain" aria-label={item.title}>
+        <span>{item.meta.story === "true" ? "INSTAGRAM STORY" : "INSTAGRAM POST"}</span>
+        <strong>{item.sender}</strong>
+        <small>{item.body}</small>
+      </div>
+    );
   return src ? (
     item.kind === "audio" ? (
       <audio controls src={src} />
@@ -952,6 +960,11 @@ function AppContent({
   const photoAssetExists = useStoryPhotoAvailability(items);
   const shown = items
     .filter((i) => creator || visible(i, state))
+    // A dated IG Story or post is still readable before the user uploads its
+    // optional WebP. Reuse the activity's single image when it becomes available.
+    .map((i) => !creator && app.id === "instagram" &&
+      i.meta?.source === "brick3-date-social" && !photoAssetExists(i)
+      ? { ...i, media: "" } : i)
     .filter((i) => creator || photoAssetExists(i))
     .filter((i) =>
       (i.title + i.body + i.sender).toLowerCase().includes(q.toLowerCase()),
