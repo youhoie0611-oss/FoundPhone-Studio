@@ -46,6 +46,7 @@ export const actionSchema = z.object({
   type: z.enum([
     "date",
     "variable",
+    "affinity",
     "unlock",
     "hide",
     "notification",
@@ -154,6 +155,7 @@ export type Runtime = {
   endings: string[];
   choices: { label: string; target: string }[];
   messages: Record<string, Item[]>;
+  brick3Invites?: Record<string, import("./brick3RepeatInvites").Brick3InviteProgress>;
   time: string;
   trace: string[];
 };
