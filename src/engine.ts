@@ -37,6 +37,9 @@ function apply(a: Action, s: Runtime, w: Work) {
     case "variable":
       s.variables[a.key] = a.value;
       break;
+    case "clearChoices":
+      s.choices = s.choices.filter((choice) => !choice.target.startsWith(a.key));
+      break;
     case "adjust": {
       const delta = Number(a.value);
       const current = s.variables[a.key];
@@ -351,7 +354,11 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     // A free-text answer resolves the currently offered choices for this conversation.
     choices: s.choices.filter((choice) => {
       const target = choice.target;
-      const belongs = thread === "林安" ? target.startsWith("lin-reply-")
+      const belongs = (Object.entries({ "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi", "顧時安": "gu", "陸沉川": "lu" }).some(([name, key]) => thread === name && target.startsWith(`z3-long-${key}-`)))
+        || (thread === "陸沉川" && target.startsWith("z3-lu-"))
+        || thread === "林安" && target.startsWith("z3-lu-invite-")
+        || thread === "林安" && target.startsWith("z3-lu-contact-")
+        || thread === "林安" ? target.startsWith("lin-reply-")
         : thread === "沈硯舟" ? /^(reply-shen-|phase[23]-shen-|shen-r|shen-day|shen-major-event-)/.test(target)
         : thread === "裴知聿" ? /^(reply-pei-|phase[23]-pei-|pei-r|pei-day|pei-major-event-)/.test(target)
         : thread === "祁野" ? /^(reply-qi-|phase[23]-qi-|qi-r|qi-day|qi-major-event-)/.test(target)

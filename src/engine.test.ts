@@ -141,3 +141,15 @@ describe("磚3 V6/V7 hidden jealousy", () => {
     expect(dispatch(w, initialRuntime(w), "start").variables["z3-rivalry-fired"]).toBe(true);
   });
 });
+
+
+describe("磚3 longform continuing conversations", () => {
+  it("clears only the superseded choices in one NPC conversation", () => {
+    const w = createWork();
+    w.nodes[0].actions.push({ type: "clearChoices", key: "z3-long-shen-", value: true });
+    const s = initialRuntime(w);
+    s.choices = [{ label: "舊話題", target: "z3-long-shen-c1-choice-ask" }, { label: "其他人的訊息", target: "z3-long-gu-c1-choice-ask" }];
+    const next = dispatch(w, s, "start");
+    expect(next.choices.map(c => c.target)).toEqual(["z3-long-gu-c1-choice-ask"]);
+  });
+});

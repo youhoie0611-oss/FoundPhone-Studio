@@ -47,6 +47,7 @@ export const actionSchema = z.object({
     "date",
     "variable",
     "adjust",
+    "clearChoices",
     "unlock",
     "hide",
     "notification",
