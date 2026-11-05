@@ -66,7 +66,7 @@ function speak(state: Runtime, a: Activity, suffix: string, body: string, photoE
     message(state, a, suffix, body, false, photoEvent);
     return;
   }
-  const parts = body.split("\\n").map(v => v.trim()).filter(Boolean);
+  const parts = body.split("\n").map(v => v.trim()).filter(Boolean);
   if (parts.length <= 1) {
     message(state, a, suffix, body, false, photoEvent);
     return;
