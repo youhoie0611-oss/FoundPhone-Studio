@@ -172,6 +172,26 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
     if (/忙|晚點|改天/.test(input))
       return { reply: "沒問題，妳先忙！我也還有張圖要改，有空再聊。", delayMs: 1400 };
   }
+  // Group chat replies must come from an identifiable member and answer the
+  // player's actual question. Never treat the group name as a speaking person.
+  if (request.thread === "下班後五人組") {
+    const context = request.history.filter(x => !x.outgoing).slice(-5).map(x => x.body).join(" ");
+    if (/突然|怎麼.*提|為什麼.*提|剛剛那件事|說清楚|哪件事/.test(input))
+      return { reply: "林安：抱歉，我剛剛那句話說得太突然了。是想先確認週五聚餐的事，沒有要逼誰表態。", delayMs: 1500 };
+    if (/誰會去|還有誰|哪些人|大家.*去/.test(input))
+      return { reply: "林安：我還在問大家，目前沒有全部確認。等人數確定我再跟妳說。", delayMs: 1400 };
+    if (/幾點|時間|週五|星期五|禮拜五|在哪|哪間|吃什麼/.test(input))
+      return { reply: "林安：餐廳跟時間都還沒訂，我先確認大家有沒有空，再把選項丟群組。", delayMs: 1500 };
+    if (/沒空|不去|不想去|不參加|別算我|加班|不能去/.test(input))
+      return { reply: "林安：收到，這次先不算妳。之後有機會再一起吃飯。", delayMs: 1300 };
+    if (/可以|有空|我會去|算我|好啊|一起吃/.test(input))
+      return { reply: "林安：好，我先記妳有意願。時間跟地點確認後再問妳一次，不會直接幫妳決定。", delayMs: 1400 };
+    if (/^([？?]|什麼|蛤|啊)/.test(input) || /[？?]/.test(input))
+      return { reply: "林安：妳是問聚餐的事嗎？目前只是先問大家時間，還沒有決定要去哪裡。", delayMs: 1300 };
+    return { reply: /聚餐|吃飯/.test(context)
+      ? "林安：好，我有看到妳說的。聚餐的時間還沒定，等大家回覆再一起討論。"
+      : "周予晴：我看到了，等我把手邊的工作收完再回群組。", delayMs: 1600 };
+  }
   // Resolve character-specific opening scenes before generic intent classification.
   if (request.thread === "沈硯舟" && /介意我傳|入鏡|上次活動/.test(recent)) {
     if (/可以|傳給我|傳來|看看/.test(input))
