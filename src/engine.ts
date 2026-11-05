@@ -129,7 +129,9 @@ function runQueue(
       .map((item) => item!.title);
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
     const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
-    const blocked = !n.id.startsWith("brick3-photo-") || !n.id.endsWith("-reply-arrive")
+    const immediatePhotoResponse = n.id.startsWith("brick3-photo-")
+      && (/-option-\\d+-response$/.test(n.id) || /-(arrival-notify|visit-arrive|hand-question)$/.test(n.id) || n.id.endsWith("-reply-arrive"));
+    const blocked = !immediatePhotoResponse
       ? incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
       const playerTime = recentPlayerReplies[thread];
@@ -356,11 +358,20 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     // A free-text answer resolves the currently offered choices for this conversation.
     choices: s.choices.filter((choice) => {
       const target = choice.target;
-      const belongs = thread === "林安" ? target.startsWith("lin-reply-")
+      const photoScenes: Record<string, string[]> = {
+        "顧時安": ["photo_morning_breakfast", "photo_design_review"],
+        "裴知聿": ["photo_dinner_invite", "photo_dinner_arrival", "photo_dinner_at_home", "photo_dinner_hand"],
+        "沈硯舟": ["photo_camera_walk", "photo_practice_update"],
+        "祁野": ["photo_night_view", "photo_weekend_sport"],
+        "陸沉川": ["photo_off_duty", "photo_commercial_shoot"],
+      };
+      const belongsToPhoto = (photoScenes[thread] ?? []).some((id) =>
+        target.startsWith(`brick3-photo-${id}-option-`));
+      const belongs = belongsToPhoto || (thread === "林安" ? target.startsWith("lin-reply-")
         : thread === "沈硯舟" ? /^(reply-shen-|phase[23]-shen-|shen-r|shen-day|shen-major-event-)/.test(target)
         : thread === "裴知聿" ? /^(reply-pei-|phase[23]-pei-|pei-r|pei-day|pei-major-event-)/.test(target)
         : thread === "祁野" ? /^(reply-qi-|phase[23]-qi-|qi-r|qi-day|qi-major-event-)/.test(target)
-        : false;
+        : false);
       return !belongs;
     }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
