@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "rules": {
+    "maxAffection": 100,
+    "firstThreshold": 30,
+    "below60Step": 10,
+    "at60AndAboveStep": 5,
+    "refusalCooldownMinutes": 180,
+    "travelMinutes": 20,
+    "followUpDelayHours": [
+      18,
+      72
+    ],
+    "photoPerCompletedOuting": 1,
+    "affectionVisibleToPlayer": false
+  },
+  "activities": [
+    {
+      "id": "shen_night_view_outing",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "affectionKey": "shen_attraction",
+      "minAffection": 30,
+      "invite": "我發現一個看夜景的地方，傍晚光線很好。妳哪天有空要不要一起去？",
+      "choices": [
+        "好啊，我想去看看。",
+        "今天先不要，我最近比較忙。",
+        "是什麼地方？我還想想。",
+        "這次先不去了，下次再說。"
+      ],
+      "responses": [
+        "好，那天再跟妳確認時間。",
+        "沒關係，妳忙完再說。",
+        "在山坡旁的觀景步道。我先把交通資訊整理好。",
+        "嗯，不急。改天有機會再問妳。"
+      ],
+      "arrival": "我已經到步道入口了。妳到了嗎？不用勉強趕來。",
+      "arriveChoices": [
+        "我到了，一起上去吧。",
+        "我還在路上，今天來不及了。",
+        "我改變主意了，今天先不去了。",
+        "臨時有事，我要先回家。"
+      ],
+      "arrivalResponses": [
+        "好，走吧。我有帶相機。",
+        "沒關係，安全第一，今天就別趕了。",
+        "好，我自己走走。別有壓力。",
+        "知道了，妳先處理事情。"
+      ],
+      "eventPhoto": "shen_yanzhou_night_view_event_01.webp",
+      "followUpPhoto": "shen_yanzhou_night_view_followup_01.webp",
+      "albumTitle": "沈硯舟・一起去看的夜景",
+      "albumFolder": "夜景散步",
+      "followUps": [
+        "那天的夜景我還記得。我整理照片時又想到了，下次有空再去別的地方走走吧。",
+        "前幾天一起看的燈光真的很漂亮。我回去看了照片好幾次，下次再一起出門？",
+        "那天走回來以後，我還一直想著那片夜景。等妳有空，我們再去找別的拍攝點。"
+      ]
+    },
+    {
+      "id": "pei_dinner_outing",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "affectionKey": "pei_attraction",
+      "minAffection": 30,
+      "invite": "這週有空嗎？我想煮一頓晚餐。妳願意過來一起吃嗎？只吃飯，不會勉強妳談以前的事。",
+      "choices": [
+        "好，我想過去吃晚餐。",
+        "先不了，我還需要一點時間。",
+        "你怎麼突然想約我？",
+        "今天沒空，改天再說。"
+      ],
+      "responses": [
+        "嗯，我會先把菜準備好。妳到了再跟我說。",
+        "我明白。妳不需要為了我改變安排。",
+        "因為我想好好跟妳相處一次。如果妳不願意，也沒關係。",
+        "好，我不急。"
+      ],
+      "arrival": "菜還熱著。妳真的到門口了嗎？如果不方便，現在改主意也沒關係。",
+      "arriveChoices": [
+        "我到了，現在進去。",
+        "我還在路上，今天趕不上了。",
+        "臨時有事，我今天不去了。",
+        "想了想，我還是先不要去了。"
+      ],
+      "arrivalResponses": [
+        "進來吧。先吃飯，其他事慢慢來。",
+        "沒關係，我先收起來。",
+        "知道了，妳先處理事情。",
+        "好。我尊重妳的決定。"
+      ],
+      "eventPhoto": "pei_zhiyu_dinner_visit_table_01.webp",
+      "followUpPhoto": "pei_zhiyu_dinner_chat_01.webp",
+      "albumTitle": "裴知聿・晚餐",
+      "albumFolder": "晚餐",
+      "followUps": [
+        "那天吃飯的事，我有好好放在心上。後來整理照片，又想起妳說的那句話。",
+        "上次的晚餐我記得很清楚。不是要妳給我答案，只是謝謝妳願意來。",
+        "那天煮的菜我後來又做了一次。想到妳有來，還是想跟妳說聲謝謝。"
+      ]
+    },
+    {
+      "id": "qi_city_lights_outing",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "affectionKey": "qi_attraction",
+      "minAffection": 30,
+      "invite": "欸，我知道有個地方晚上看城市燈光不錯。妳想不想一起去？不想就直說。",
+      "choices": [
+        "可以，一起去看看。",
+        "這次不想出去。",
+        "在哪裡？先說清楚。",
+        "今天有事，下次再問我吧。"
+      ],
+      "responses": [
+        "行。我先查好路線，不會讓妳白跑一趟。",
+        "知道了，我不會一直煩妳。",
+        "公開的觀景平台。想去再說。",
+        "好，下次再問。"
+      ],
+      "arrival": "我到觀景平台入口了。妳到了沒？沒來也不用硬趕。",
+      "arriveChoices": [
+        "我到了，走吧。",
+        "我今天可能趕不上。",
+        "臨時不想去了。",
+        "有事要回家，先不去了。"
+      ],
+      "arrivalResponses": [
+        "走，今天風還不錯。",
+        "嗯，安全第一。",
+        "行，我自己看。",
+        "知道了，妳先回去。"
+      ],
+      "eventPhoto": "qi_ye_city_lights_event_01.webp",
+      "followUpPhoto": "qi_ye_city_lights_followup_01.webp",
+      "albumTitle": "祁野・城市燈光",
+      "albumFolder": "夜間散步",
+      "followUps": [
+        "上次那個地方的夜景我還記得。之後有空再去別的地方晃晃。",
+        "欸，我整理手機時看到那晚拍的燈光。還不錯，下次帶妳看別的。",
+        "上次散步挺好的。別想太多，就當下次再出門走走。"
+      ]
+    },
+    {
+      "id": "gu_architecture_walk",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "affectionKey": "gu_attraction",
+      "minAffection": 30,
+      "invite": "這週末有個老屋街區的建築導覽，我很想去。妳有興趣一起走走嗎？",
+      "choices": [
+        "有興趣，我跟你一起去。",
+        "這週不方便，下次吧。",
+        "導覽會看什麼？",
+        "這次先不參加。"
+      ],
+      "responses": [
+        "好，我把公開資訊整理給妳。",
+        "沒關係，工作重要。下次有機會再問。",
+        "會看屋頂結構跟街區變遷，我覺得應該很有意思。",
+        "好，那我自己先去看看。"
+      ],
+      "arrival": "我到導覽集合點了。妳到了嗎？如果沒空就別趕。",
+      "arriveChoices": [
+        "我到了，一起進去吧。",
+        "我來不及到集合點。",
+        "我臨時有事不能去了。",
+        "今天想自己休息，改天。"
+      ],
+      "arrivalResponses": [
+        "太好了，我們先去報到。",
+        "沒關係，今天就別趕了。",
+        "好，妳先忙。",
+        "嗯，改天再約。"
+      ],
+      "eventPhoto": "gu_shian_architecture_walk_event_01.webp",
+      "followUpPhoto": "gu_shian_architecture_walk_followup_01.webp",
+      "albumTitle": "顧時安・老屋導覽",
+      "albumFolder": "建築散步",
+      "followUps": [
+        "那天一起看的老屋我後來又查了資料。把當天的照片整理好了，有機會再一起走別的街區吧。",
+        "我還在想上次導覽的建築細節。那天很開心，下次再邀妳去看看別的地方。",
+        "上次街區散步的照片我整理了一下。那天的光真的很好看。"
+      ]
+    },
+    {
+      "id": "lu_photo_exhibit",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "affectionKey": "lu_attraction",
+      "minAffection": 30,
+      "requiresFlag": "lu_private_contact",
+      "invite": "最近有一場公開的攝影展，和工作無關。妳有興趣一起去看看嗎？不用特地配合我的時間。",
+      "choices": [
+        "可以，一起去看。",
+        "這次先不了。",
+        "展覽主題是什麼？",
+        "我近期很忙，等之後吧。"
+      ],
+      "responses": [
+        "好，我把展覽資料傳妳。",
+        "沒關係，不急。",
+        "主要是城市肖像與光影關係。妳有興趣再說。",
+        "好，妳先把事情忙完。"
+      ],
+      "arrival": "我到了展場入口。妳到了嗎？如果累了，今天不一定要來。",
+      "arriveChoices": [
+        "我到入口了，走吧。",
+        "我今天趕不上。",
+        "臨時沒辦法過去。",
+        "今天改變心意，不去了。"
+      ],
+      "arrivalResponses": [
+        "嗯，先從第一區看起。",
+        "知道了，別趕。",
+        "好，妳先處理自己的事。",
+        "沒關係。"
+      ],
+      "eventPhoto": "lu_chenchuan_photo_exhibit_event_01.webp",
+      "followUpPhoto": "lu_chenchuan_photo_exhibit_followup_01.webp",
+      "albumTitle": "陸沉川・攝影展",
+      "albumFolder": "攝影展",
+      "followUps": [
+        "那天展覽的光影我後來還想到。整理照片時想起妳說的話，下次有適合的展再一起去。",
+        "上次的攝影展有幾張作品，我回家後又查了作者。那天一起看展很自在。",
+        "前幾天一起看展的照片我整理好了。下次碰到有意思的公開展覽再跟妳說。"
+      ]
+    }
+  ]
+}
