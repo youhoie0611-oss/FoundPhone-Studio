@@ -202,6 +202,13 @@ export function MymyKakao(p: SkinProps) {
           {!p.creator && !isTyping && !lastMessage?.outgoing && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
+                const photoEvent = lastMessage?.meta?.photoEventId ?? "";
+                const photoOptions = photoEvent ? (p.choices ?? []).filter((choice) =>
+                  choice.target.startsWith("brick3-photo-" + photoEvent + "-choice-")
+                ) : [];
+                if (photoOptions.length === 4) return photoOptions.map((choice) => (
+                  <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
+                ));
                 const latest = lastMessage?.body ?? "";
                 // Match the complete delivered turn, not only a generic keyword.
                 // Earlier lines in the same message contain the actual question and context.
