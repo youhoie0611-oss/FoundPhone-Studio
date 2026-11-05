@@ -27,6 +27,15 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
+      - name: Add independent 磚2 rebuild preview
+        uses: actions/checkout@v4
+        with:
+          ref: rebuild-zhuan2-v1
+          path: rebuild-source
+      - name: Publish isolated rebuild under /rebuild/
+        run: |
+          mkdir -p dist/rebuild
+          cp rebuild-source/rebuild/index.html dist/rebuild/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
