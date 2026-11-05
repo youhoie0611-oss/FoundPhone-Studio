@@ -22,13 +22,13 @@ describe("free NPC chat", () => {
     expect(() => localNpcReply(request("陌生人", "你好"))).toThrow();
   });
   it("answers Lin An's event time from established dialogue", () => {
-    const history = [{ outgoing: false, body: "對了，我們週五那攤聚會時間改成七點半。" }];
+    const history = [{ sender: "林安", outgoing: false, body: "對了，我們週五那攤聚會時間改成七點半。" }];
     const reply = localNpcReply({ ...request("林安", "活動是幾點開始？"), history }).reply;
     expect(reply).toMatch(/七點半/);
     expect(reply).not.toMatch(/想想|哪件事/);
   });
   it("explains how Shen recognized the player instead of evading", () => {
-    const history = [{ outgoing: false, body: "欸，妳是上次活動現場的那位吧？" }];
+    const history = [{ sender: "沈硯舟", outgoing: false, body: "欸，妳是上次活動現場的那位吧？" }];
     const reply = localNpcReply({ ...request("沈硯舟", "你怎麼認出我的？"), history }).reply;
     expect(reply).toMatch(/現場|照片/);
     expect(reply).toMatch(/認出|同一個人/);
