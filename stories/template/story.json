@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》互動戀愛聊天遊戲：沿用 FoundPhone 手機系統，重新建立角色自主生活、雙向對話與多日劇情。",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -926,7 +926,7 @@
       "app": "kakao",
       "title": "沈硯舟",
       "participants": [
-        "player",
+        "owner",
         "shen-yanzhou"
       ],
       "messages": []
