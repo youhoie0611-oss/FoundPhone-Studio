@@ -121,6 +121,22 @@ export function injectBrick3PeiDialogue(story) {
       found.add(msg.id);
     }
   }
+  // Story notifications must reflect the rewritten KKT lines, not stale
+  // pre-rewrite dialogue embedded in action values.
+  const incomingById = new Map(chat.messages
+    .filter(msg => msg.senderId !== "owner")
+    .map(msg => [msg.id, msg.body]));
+  for (const event of story.events ?? []) {
+    const unlockedPei = (event.actions ?? [])
+      .filter(action => action.type === "unlock" && incomingById.has(action.key));
+    if (!unlockedPei.length) continue;
+    const body = incomingById.get(unlockedPei[unlockedPei.length - 1].key);
+    for (const action of event.actions ?? []) {
+      if (action.type !== "notification" || typeof action.value !== "string" ||
+          !action.value.startsWith("裴知聿：")) continue;
+      action.value = "裴知聿：" + body.replace(/\\n/g, " ");
+    }
+  }
   const missing = Object.keys(peiDialogue).filter(id => !found.has(id));
   if (missing.length) throw Error("Missing Pei dialogue IDs: " + missing.join(","));
   return story;
