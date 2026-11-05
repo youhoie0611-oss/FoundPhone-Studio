@@ -38,6 +38,8 @@ jobs:
       - name: Validate rebuilt FoundPhone story
         run: |
           npm run typecheck
+          npm run lint
+          npm test
           npm run story:validate
           npm run story:test
         working-directory: rebuild-source
@@ -46,6 +48,8 @@ jobs:
           npm run build
           mkdir -p ../dist/rebuild
           cp -a dist/. ../dist/rebuild/
+          test -s ../dist/rebuild/index.html
+          echo "磚3 preview packaged at /rebuild/index.html"
         working-directory: rebuild-source
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
