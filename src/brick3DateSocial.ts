@@ -100,6 +100,8 @@ export type Brick3JealousInquiry = {
   answered: boolean;
   replyAtMs?: number;
   replyText?: string;
+  /** Pei sends short, spaced messages instead of one monologue. */
+  sequence?: { parts: string[]; index: number; nextAtMs: number; kind: "question" | "reply" };
 };
 export type Brick3DateSocialProgress = {
   postAtMs: number;
@@ -136,6 +138,35 @@ function sendKkt(s: Runtime, lead: Lead, id: string, body: string, optionsEvent 
     meta: { source: "brick3-date-social", ...(optionsEvent ? { photoEventId: optionsEvent } : {}) },
   }));
   if (!outgoing) s.notifications.push(`${lead.name}：${body}`);
+}
+function splitPeiMessage(text: string): string[] {
+  // Separate emotional beats at natural pauses, retaining the speaker's original words.
+  const fragments = text.split(/(?<=。|？|！)(?=……|妳|我|對|可是|只是|抱歉|好|以前|他)/u)
+    .map(part => part.trim()).filter(Boolean);
+  if (fragments.length > 1) return fragments;
+  const pivot = text.indexOf("……");
+  if (pivot > 0 && pivot < text.length - 2)
+    return [text.slice(0, pivot).trim(), text.slice(pivot).trim()];
+  return [text];
+}
+function startPeiSequence(s: Runtime, a: DateActivity, pending: Brick3JealousInquiry, text: string, kind: "question" | "reply") {
+  const lead = leads.find(l => l.key === "pei")!;
+  const parts = splitPeiMessage(text);
+  pending.sequence = { parts, index: 1, nextAtMs: now(s) + 3500, kind };
+  sendKkt(s, lead, `brick3-social-${a.id}-${kind}-pei-part-1`, parts[0],
+    kind === "question" && parts.length === 1 ? eventName(a, lead) : "");
+}
+function continuePeiSequence(s: Runtime, a: DateActivity, pending: Brick3JealousInquiry) {
+  const seq = pending.sequence;
+  if (!seq || now(s) < seq.nextAtMs) return;
+  const lead = leads.find(l => l.key === "pei")!;
+  const number = seq.index + 1;
+  const last = seq.index === seq.parts.length - 1;
+  sendKkt(s, lead, `brick3-social-${a.id}-${seq.kind}-pei-part-${number}`,
+    seq.parts[seq.index], seq.kind === "question" && last ? eventName(a, lead) : "");
+  seq.index++;
+  seq.nextAtMs = now(s) + 3500;
+  if (last) pending.sequence = undefined;
 }
 function canMessage(w: Work, s: Runtime, lead: Lead) {
   return (!lead.contactFlag || s.variables[lead.contactFlag] === true)
@@ -203,7 +234,11 @@ export function tickBrick3DateSocial(w: Work, s: Runtime): Runtime {
         const questionPool = observer.key === "pei" && jealousy >= 40
           ? peiIntenseQuestions : observer.questions;
         const body = questionPool[pick(s, a, observer.key + "-line") % questionPool.length];
-        sendKkt(s, observer, `brick3-social-${a.id}-inquiry-${observer.key}`, body, eventName(a, observer));
+        if (observer.key === "pei") {
+          startPeiSequence(s, a, pending, body, "question");
+        } else {
+          sendKkt(s, observer, `brick3-social-${a.id}-inquiry-${observer.key}`, body, eventName(a, observer));
+        }
         s.choices.push(...replies.map((label, i) => ({
           label, target: optionPrefix(a, observer) + (i + 1),
         })));
@@ -212,10 +247,15 @@ export function tickBrick3DateSocial(w: Work, s: Runtime): Runtime {
       }
       if (pending.replyAtMs !== undefined && now(s) >= pending.replyAtMs) {
         pending.replyAtMs = undefined;
-        sendKkt(s, observer, `brick3-social-${a.id}-response-${observer.key}`,
-          pending.replyText ?? "知道了，我不再問了。");
+        if (observer.key === "pei") {
+          startPeiSequence(s, a, pending, pending.replyText ?? "知道了。", "reply");
+        } else {
+          sendKkt(s, observer, `brick3-social-${a.id}-response-${observer.key}`,
+            pending.replyText ?? "知道了，我不再問了。");
+        }
         pending.replyText = undefined;
       }
+      if (observer.key === "pei" && pending.sequence) continuePeiSequence(s, a, pending);
     }
   }
   return s;
