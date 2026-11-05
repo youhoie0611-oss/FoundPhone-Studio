@@ -5,7 +5,8 @@ export type PeiAutonomy = {
   lastPlayerId: string;
   lastPeiId: string;
   lastSocialCount: number;
-  phase: "idle" | "waiting" | "rejected" | "jealous" | "stopped";
+  phase: "idle" | "waiting" | "busy" | "rejected" | "reconcile" | "jealous" | "stopped";
+  pendingChoice?: string;
   startedAt: number;
   step: number;
   nextAt: number;
@@ -22,17 +23,28 @@ const socialCount = (s: Runtime) => (s.messages.instagram ?? []).filter(m =>
 const level = (s: Runtime) => Math.max(0, Number(s.variables.pei_jealousy ?? 0));
 const affection = (s: Runtime) => Math.max(0, Number(s.variables.pei_attraction ?? 0));
 const last = <T>(xs: T[]) => xs[xs.length - 1];
-const rejection = /不想|不要|別再|分手|不可能|不會復合|不會複合|別找我|不要聯絡|不見面|拒絕/;
-const hardStop = /不要再傳|不要聯絡|別再聯絡|封鎖|別找我|停止傳訊|不要再找/;
+const rejection = /不想見|不想復合|不想複合|不要復合|不要複合|不會復合|不會複合|不可能|拒絕|不想再見|不想繼續/;
+const busy = /今天沒空|今天不行|今晚沒空|今晚不行|改天|最近很忙|要加班|沒時間|明天再說|週末再說/;
+const reconcile = /我願意復合|我願意複合|我們復合|我們複合|重新開始|再給你一次機會|再給妳一次機會|我還愛你|我還愛妳/;
+const hardStop = /不要再傳|不要聯絡|別再聯絡|封鎖|別找我|停止傳訊|不要再找|不要再聯絡|別再傳訊|別再傳|別聯絡我|不想再聯絡|不想跟你聯絡|不想跟妳聯絡/;
 const delay = (s: Runtime, p: PeiAutonomy) => {
   const intensity = level(s) + affection(s) / 2;
   return intensity >= 65 ? 120000 : intensity >= 35 ? 240000 : 480000;
 };
-const lines: Record<"waiting" | "rejected" | "jealous", string[][]> = {
+const lines: Record<"waiting" | "busy" | "rejected" | "reconcile" | "jealous", string[][]> = {
   waiting: [
     ["妳在忙嗎", "我剛剛一直在看手機", "……看到的話回我一句好不好"],
     ["是不是我說錯什麼了", "妳以前不會這麼久不理我", "我知道我們分手了", "可我真的還不習慣"],
     ["妳是不是不想跟我說話了", "我真的很想妳", "妳理理我好不好"],
+  ],
+  busy: [
+    ["今天不行嗎", "那明天呢", "我真的很想見妳"],
+    ["妳是不是只是不想見我", "我知道我很煩", "可是我一直在等妳說有空"],
+  ],
+  reconcile: [
+    ["妳剛剛說什麼", "妳說願意再給我一次機會？", "我是不是看錯了"],
+    ["等一下", "我現在手都在抖", "妳不要突然反悔好不好"],
+    ["我真的很想妳", "我一直以為妳不會再回頭了", "我可以見妳嗎"],
   ],
   rejected: [
     ["為什麼", "是我哪裡又做錯了嗎", "妳真的一點都不想我了嗎"],
@@ -64,7 +76,7 @@ function begin(s: Runtime, p: PeiAutonomy, phase: PeiAutonomy["phase"]) {
   p.startedAt = now(s);
   p.step = 0;
   p.cycle++;
-  p.nextAt = now(s) + (phase === "waiting" ? delay(s, p) : 30000);
+  p.nextAt = now(s) + (phase === "waiting" ? delay(s, p) : phase === "busy" ? 180000 : 30000);
 }
 
 export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
@@ -88,7 +100,9 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
     if (hardStop.test(body)) {
       p.phase = "stopped";
       p.nextAt = Infinity;
-    } else if (rejection.test(body)) begin(s, p, "rejected");
+    } else if (reconcile.test(body)) begin(s, p, "reconcile");
+    else if (busy.test(body)) begin(s, p, "busy");
+    else if (rejection.test(body)) begin(s, p, "rejected");
     else {
       p.phase = "idle";
       p.nextAt = Infinity;
@@ -103,7 +117,7 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
       p.nextAt = now(s) + delay(s, p);
     }
   }
-  if (count > p.lastSocialCount && p.phase !== "stopped") {
+  if (count > p.lastSocialCount && p.phase !== "stopped" && p.phase !== "reconcile") {
     const activeSocial = Object.values(s.brick3DateSocial ?? {}).some(event =>
       event.inquiries.pei && !event.inquiries.pei.answered);
     if (activeSocial) { p.lastSocialCount = count; return s; }
@@ -122,6 +136,8 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
   const flat = pool.flat();
   const threshold = p.phase === "waiting" ? 3 + (level(s) >= 40 ? 5 : 0)
     : p.phase === "jealous" ? 3 + (level(s) >= 40 ? 5 : 0)
+    : p.phase === "busy" ? 3 + (affection(s) >= 40 ? 3 : 0)
+    : p.phase === "reconcile" ? 3 + (affection(s) >= 40 ? 6 : 0)
     : 4 + (affection(s) >= 40 ? 4 : 0);
   if (p.step >= threshold) { p.phase = "idle"; return s; }
   // Avoid colliding with another character's current scripted Pei dialogue.
@@ -141,7 +157,12 @@ export function stopPeiAutonomyOnPlayerReply(s: Runtime, thread: string) {
   if (thread !== NAME || !s.peiAutonomy) return;
   const p = s.peiAutonomy;
   const reply = last(player(s));
-  p.phase = reply && hardStop.test(reply.body) ? "stopped" : "idle";
-  p.nextAt = Infinity;
+  if (reply && hardStop.test(reply.body)) {
+    p.phase = "stopped";
+    p.nextAt = Infinity;
+  } else if (reply && reconcile.test(reply.body)) begin(s, p, "reconcile");
+  else if (reply && busy.test(reply.body)) begin(s, p, "busy");
+  else if (reply && rejection.test(reply.body)) begin(s, p, "rejected");
+  else { p.phase = "idle"; p.nextAt = Infinity; }
   p.lastPlayerId = reply?.id ?? p.lastPlayerId;
 }
