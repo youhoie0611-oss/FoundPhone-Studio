@@ -32,7 +32,7 @@ describe("Brick3 independent NPC photo messages", () => {
     const attachments = w.data.kakao.filter(i => i.id.startsWith("brick3-photo-photo_camera_walk-image-"));
     expect(attachments).toHaveLength(1);
     expect(state.unlocked).toContain(attachments[0].id);
-    expect(w.data.photos.some(i => i.id.startsWith("brick3-photo-photo_camera_walk-album-"))).toBe(false);
+    expect((w.data.photos ?? []).some(i => i.id.startsWith("brick3-photo-photo_camera_walk-album-"))).toBe(false);
   });
 
   it("keeps the old Pei invitation disabled and exposes only one dinner reward in the new manifest", () => {
@@ -48,7 +48,7 @@ describe("Brick3 independent NPC photo messages", () => {
     const photo = w.data.kakao.find(i => i.id === "brick3-photo-photo_night_view-image-1");
     expect(visible(photo, state)).toBe(true);
     expect(state.read).not.toContain(photo.id);
-    expect(w.data.photos.some(i => i.id.startsWith("brick3-photo-photo_night_view-album-"))).toBe(false);
+    expect((w.data.photos ?? []).some(i => i.id.startsWith("brick3-photo-photo_night_view-album-"))).toBe(false);
   });
 
   it("only permits local safe WebP paths; unuploaded images remain eligible for missing-asset filtering", () => {
