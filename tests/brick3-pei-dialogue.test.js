@@ -44,12 +44,20 @@ describe("Pei complete dialogue reconstruction", () => {
   });
   it("remains idempotent and preserves every scripted Pei branch", () => {
     const s = base();
-    const original = s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions }));
+    const original = s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions?.filter(a => a.type !== "notification") }));
     injectBrick3PeiDialogue(s);
     const first = JSON.stringify(s.chats.find(c => c.title === "裴知聿"));
     injectBrick3PeiDialogue(s);
     expect(JSON.stringify(s.chats.find(c => c.title === "裴知聿"))).toBe(first);
-    expect(s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions }))).toEqual(original);
+    expect(s.events.map(e => ({ id: e.id, next: e.next, actions: e.actions?.filter(a => a.type !== "notification") }))).toEqual(original);
+    const pei = s.chats.find(c => c.title === "裴知聿");
+    const byId = new Map(pei.messages.map(m => [m.id, m.body]));
+    for (const event of s.events) {
+      const incoming = (event.actions ?? []).filter(a => a.type === "unlock" && byId.has(a.key) && pei.messages.find(m => m.id === a.key)?.senderId !== "owner");
+      if (!incoming.length) continue;
+      const preview = (event.actions ?? []).find(a => a.type === "notification" && a.value?.startsWith("裴知聿："));
+      if (preview) expect(preview.value).toBe("裴知聿：" + byId.get(incoming.at(-1).key).replace(/\n/g, " "));
+    }
     const bodies = Object.values(peiDialogue);
     expect(bodies.every(body => typeof body === "string" && body.trim().length > 0)).toBe(true);
     expect(bodies.some(body => /我還喜歡妳/.test(body))).toBe(true);
