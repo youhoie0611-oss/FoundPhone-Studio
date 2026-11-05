@@ -63,6 +63,15 @@ describe("Pei complete dialogue reconstruction", () => {
     expect(bodies.some(body => /我還喜歡妳/.test(body))).toBe(true);
     expect(bodies.some(body => /不再提復合|不再提這個|那就不見/.test(body))).toBe(true);
   });
+  it("keeps Pei's repeat dinner invitation and followups in the same heavy-attachment voice", () => {
+    const activity = load("docs/brick3-repeat-invitations-v1.json").activities
+      .find(a => a.id === "pei_dinner_outing");
+    expect(activity.invite).toMatch(/很想見妳/);
+    expect(activity.responses[1]).toMatch(/失望/);
+    expect(activity.arrival).toMatch(/看了好幾次門口/);
+    expect(activity.followUps.every(text => /想妳|下次|照片/.test(text))).toBe(true);
+    expect(JSON.stringify(activity)).not.toMatch(/狐狸|狡黠|毒舌|鬥嘴/);
+  });
   it("does not touch any other character or story", () => {
     const s = base();
     const others = JSON.stringify(s.chats.filter(c => c.title !== "裴知聿"));
