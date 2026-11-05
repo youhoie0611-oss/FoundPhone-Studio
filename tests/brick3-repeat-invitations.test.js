@@ -118,6 +118,35 @@ describe("Brick3 affection-gated repeatable invitations", () => {
     expect(choices(s, "lu_photo_exhibit")).toHaveLength(4);
   });
 
+  it("uses hidden Pei affection for dinner, with a single reward and no old fixed-day invitation", () => {
+    const w = makeWork();
+    expect(w.nodes.some(n => n.id === "brick3-photo-photo_dinner_invite-arrive")).toBe(false);
+    const s = initialRuntime(w);
+    s.variables.pei_attraction = 29;
+    tickBrick3Invitations(w, s);
+    expect(choices(s, "pei_dinner_outing")).toHaveLength(0);
+    s.variables.pei_attraction = 30;
+    tickBrick3Invitations(w, s);
+    expect(choices(s, "pei_dinner_outing")).toHaveLength(4);
+    const atDoor = goToDoor(w, s, "pei_dinner_outing");
+    const confirmed = advance(w, choose(w, atDoor, prefix + "pei_dinner_outing_arrival-choice-1"), 3000);
+    const rewards = (confirmed.messages.photos ?? []).filter(i => i.id.startsWith(prefix + "pei_dinner_outing-album-"));
+    expect(rewards).toHaveLength(1);
+    expect(rewards[0].media).toBe("./story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_table_01.webp");
+  });
+
+  it("respects old saves that already unlocked a Pei dinner photo", () => {
+    const w = makeWork();
+    const s = initialRuntime(w);
+    s.variables.pei_attraction = 80;
+    s.unlocked.push("brick3-photo-photo_dinner_at_home-album-1");
+    s.choices.push({ label: "舊邀請", target: "brick3-photo-photo_dinner_invite-choice-1" });
+    tickBrick3Invitations(w, s);
+    expect(s.brick3Invites.pei_dinner_outing.completed).toBe(true);
+    expect(choices(s, "pei_dinner_outing")).toHaveLength(0);
+    expect(s.choices.some(c => c.target.includes("photo_dinner_invite"))).toBe(false);
+  });
+
   it("a free-form answer does not count as consent and will not award an event photo", () => {
     const w = makeWork();
     const s = begin(w, 30);
