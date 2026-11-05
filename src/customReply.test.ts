@@ -29,4 +29,16 @@ describe("custom player reply", () => {
     });
     expect(next.choices).toEqual(state.choices);
   });
+  it("routes a free-text refusal to an active invitation instead of leaving it stuck", () => {
+    const state = initialRuntime(testWork);
+    state.brick3Invites = { pei_dinner_outing: {
+      phase: "invited", attempts: 1, nextThreshold: 30, retryAtMs: 0,
+    } };
+    state.choices = [{ label: "答應", target: "brick3-photo-pei_dinner_outing-choice-1" }];
+    const next = submitCustomReply(state, "我不去", "kakao", "裴知聿");
+    expect(next.brick3Invites?.pei_dinner_outing?.phase).toBe("reply_pending");
+    expect(next.brick3Invites?.pei_dinner_outing?.responseMode).toBe("decline");
+    expect(next.choices).toEqual([]);
+    expect(next.ui?.scriptedInvitationReply?.["裴知聿"]).toBe(next.messages.kakao?.at(-1)?.id);
+  });
 });
