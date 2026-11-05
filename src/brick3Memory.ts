@@ -50,7 +50,15 @@ export function tickBrick3Memory(work: Work, state: Runtime): Runtime {
   for (const memory of state.brick3Memory ?? []) {
     if (memory.followedUp || memory.followUpAt === undefined || now < memory.followUpAt) continue;
     memory.followedUp = true;
-    const line = followUps[memory.thread]?.[memory.topic];
+    const styles: Record<string, [string, string]> = {
+      "沈硯舟": ["我有聽進去妳說的話。下次我會先問清楚。", "我想了一晚，還是想好好聽妳說。"],
+      "裴知聿": ["妳願意談，我很珍惜。但以前的問題不會因為一句話就消失。", "分手的原因我沒有忘。妳不需要現在就回答我。"],
+      "祁野": ["行，妳說的我聽到了。我也有不對的地方。", "那天我嘴太快了。妳要生氣就生氣，我不會催妳。"],
+    };
+    const pair = styles[memory.thread];
+    const line = memory.topic === "conflict" && pair
+      ? pair[memory.resolution === "reconciled" ? 0 : 1]
+      : followUps[memory.thread]?.[memory.topic];
     if (!line) continue;
     // Avoid an automatic follow-up after the player asked for no further contact.
     if (/不要再聯絡|別再傳|不要聯絡|別找我/.test(memory.text)) continue;
