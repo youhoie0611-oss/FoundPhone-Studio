@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》互動戀愛聊天遊戲：沿用 FoundPhone 手機系統，重新建立角色自主生活、雙向對話與多日劇情。",
-  "revision": 10,
+  "revision": 11,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -115,6 +115,41 @@
       "phone": "",
       "avatar": "",
       "bio": "24 歲，大學生；與玩家在活動中認識。溫暖、真誠、細心、開朗且有原則；有自己的課業、朋友、運動與攝影生活。"
+    },
+    {
+      "id": "lin-an",
+      "name": "林安",
+      "phone": "",
+      "avatar": "",
+      "bio": "朋友，關心玩家的工作與聚會"
+    },
+    {
+      "id": "zhou-yuqing",
+      "name": "周予晴",
+      "phone": "",
+      "avatar": "",
+      "bio": "朋友，喜歡分享週末活動"
+    },
+    {
+      "id": "chen-yiheng",
+      "name": "陳以衡",
+      "phone": "",
+      "avatar": "",
+      "bio": "朋友，餐飲工作者"
+    },
+    {
+      "id": "xu-tang",
+      "name": "許棠",
+      "phone": "",
+      "avatar": "",
+      "bio": "朋友，輪班工作"
+    },
+    {
+      "id": "after-work-group",
+      "name": "下班後五人組",
+      "phone": "",
+      "avatar": "",
+      "bio": "下班後朋友群組"
     }
   ],
   "chats": [
@@ -895,6 +930,91 @@
         "shen-yanzhou"
       ],
       "messages": []
+    },
+    {
+      "id": "lin-an-kkt",
+      "app": "kakao",
+      "title": "林安",
+      "participants": [
+        "owner",
+        "lin-an"
+      ],
+      "messages": [
+        {
+          "id": "lin-an-intro",
+          "senderId": "lin-an",
+          "body": "今天下班後有空嗎？我想跟大家約個時間吃飯。",
+          "time": "2026-11-05 10:00"
+        }
+      ]
+    },
+    {
+      "id": "zhou-yuqing-kkt",
+      "app": "kakao",
+      "title": "周予晴",
+      "participants": [
+        "owner",
+        "zhou-yuqing"
+      ],
+      "messages": [
+        {
+          "id": "zhou-yuqing-intro",
+          "senderId": "zhou-yuqing",
+          "body": "我看到週末有個小市集，妳會有興趣嗎？",
+          "time": "2026-11-05 10:00"
+        }
+      ]
+    },
+    {
+      "id": "chen-yiheng-kkt",
+      "app": "kakao",
+      "title": "陳以衡",
+      "participants": [
+        "owner",
+        "chen-yiheng"
+      ],
+      "messages": [
+        {
+          "id": "chen-yiheng-intro",
+          "senderId": "chen-yiheng",
+          "body": "今天忙著試新菜，終於有空坐下來喝口水。",
+          "time": "2026-11-05 10:00"
+        }
+      ]
+    },
+    {
+      "id": "xu-tang-kkt",
+      "app": "kakao",
+      "title": "許棠",
+      "participants": [
+        "owner",
+        "xu-tang"
+      ],
+      "messages": [
+        {
+          "id": "xu-tang-intro",
+          "senderId": "xu-tang",
+          "body": "今天排班剛出來，這週終於能休息一天。",
+          "time": "2026-11-05 10:00"
+        }
+      ]
+    },
+    {
+      "id": "after-work-group-kkt",
+      "app": "kakao",
+      "title": "下班後五人組",
+      "participants": [
+        "owner",
+        "after-work-group"
+      ],
+      "messages": [
+        {
+          "id": "after-work-group-intro",
+          "senderId": "after-work-group",
+          "body": "林安：大家週五晚上有空嗎？要不要一起吃飯？",
+          "time": "2026-11-05 10:00"
+        }
+      ]
     }
   ],
   "content": {
