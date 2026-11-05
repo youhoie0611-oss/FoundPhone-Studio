@@ -7,6 +7,5 @@ export default defineConfig(({ command }) => ({
   plugins: [
     localIconPlugin(command),
     react(),
-,
   ],
 }));
