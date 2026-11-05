@@ -141,7 +141,7 @@ function sendKkt(s: Runtime, lead: Lead, id: string, body: string, optionsEvent 
 }
 function splitPeiMessage(text: string): string[] {
   // Separate emotional beats at natural pauses, retaining the speaker's original words.
-  const fragments = text.split(/(?<=。|？|！)(?=……|妳|我|對|可是|只是|抱歉|好|以前|他)/u)
+  const fragments = text.split(/\n|(?<=。|？|！)(?=……|妳|我|對|可是|只是|抱歉|好|以前|他)/u)
     .map(part => part.trim()).filter(Boolean);
   if (fragments.length > 1) return fragments;
   const pivot = text.indexOf("……");
