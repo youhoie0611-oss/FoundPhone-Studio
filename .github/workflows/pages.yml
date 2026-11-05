@@ -27,7 +27,7 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
-      - name: Add independent 磚2 rebuild preview
+      - name: Build isolated 磚3 preview using FoundPhone
         uses: actions/checkout@v4
         with:
           ref: rebuild-zhuan2-v1
