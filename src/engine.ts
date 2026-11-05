@@ -394,7 +394,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
       return !belongs;
     }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
-  } satisfies Runtime;
+  } as Runtime;
   stopPeiAutonomyOnPlayerReply(next, thread);
   const handledInvitation = appId === "kakao" && respondToBrick3InvitationText(next, thread, raw);
   if (handledInvitation) {
