@@ -366,7 +366,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   const decision = isInvitation && (refusal || acceptance || detailRequest)
     ? { thread, event: "invitation", status: refusal ? "declined" : acceptance ? "interested" : "details_requested", text: raw, at: s.elapsedMs ?? 0 }
     : null;
-  const priorDecisions = Array.isArray(s.ui?.player?.storyDecisions) ? s.ui.player.storyDecisions as typeof decision[] : [];
+  const priorDecisions = Array.isArray(s.ui?.player?.storyDecisions) ? s.ui.player.storyDecisions as NonNullable<typeof decision>[] : [];
   const next = {
     ...s,
     ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw], storyDecisions: decision ? [...priorDecisions, decision] : priorDecisions }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
@@ -394,7 +394,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
       return !belongs;
     }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
-  } as Runtime;
+  } satisfies Runtime;
   stopPeiAutonomyOnPlayerReply(next, thread);
   dismissBrick3InvitationOnCustomReply(next, thread);
   dismissBrick3JealousyOnCustomReply(next, thread);
