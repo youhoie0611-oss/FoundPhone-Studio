@@ -78,7 +78,7 @@ const people: Record<string, { name: string; responses: Record<Intent, string[]>
     stop: ["好，我先不吵妳。", "收到，晚點聊。"],
     refuse: ["好啊，沒事。", "那就算啦。"],
     gift: ["哇，送禮物？給誰的？", "巧克力！哪家買的？"],
-    question: ["妳說，我聽著。", "這題我得想想。"],
+    question: ["妳問的是剛才那件事嗎？我可以把細節說清楚。"],
     greeting: ["嗨！", "怎麼啦？"],
     meeting: ["我看一下時間，等等回妳。", "可以先說想約哪天嗎？"],
     work: ["辛苦啦，先把工作處理完。", "又忙起來了？"],
@@ -92,12 +92,12 @@ export function classifyMessage(raw: string): Intent {
   if (/別再|不要再|停止|住手|別聯絡|不想聊|stop|leave me alone/.test(s)) return "stop";
   if (/不想|不要|拒絕|不行|算了|沒興趣|不用了|no thanks/.test(s)) return "refuse";
   if (/送你|送妳|給你|給妳|禮物|巧克力|gift|chocolate/.test(s)) return "gift";
+  if (/[?？]|為什麼|怎麼|什麼|是否|可不可以|嗎$|幾點|几点|何時|何时/.test(s)) return "question";
   if (/見面|約會|吃飯|出來|週末|明天見|約個|meet/.test(s)) return "meeting";
   if (/工作|加班|上班|忙|開會|報告|work/.test(s)) return "work";
   if (/謝謝|感謝|thanks|thank you/.test(s)) return "thanks";
   if (/喜歡你|喜歡妳|想你|想妳|愛你|愛妳|miss you|love you/.test(s)) return "affection";
   if (/你好|嗨|哈囉|早安|晚安|hello|^hi$/.test(s)) return "greeting";
-  if (/[?？]|為什麼|怎麼|什麼|是否|可不可以|嗎$/.test(s)) return "question";
   return "other";
 }
 function stableHash(value: string): number {
@@ -111,6 +111,23 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
+  // Scene facts take precedence over generic question templates for every contact.
+  const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
+  const asksTime = /(?:幾點|几点|什麼時候|什么时候|何時|何时|時間|时间).*(?:開始|开始|聚|活動|活动|見面|见面)?|(?:活動|活动|聚餐|聚會|聚会).*(?:幾點|几点|時間|时间)/.test(input);
+  if (asksTime && /七點半|7[:：]30|19[:：]30|七点半/.test(context) && /活動|聚餐|聚會|聚会|週五|周五|時間|时间/.test(context)) {
+    return { reply: request.thread === "林安"
+      ? "週五晚上七點半開始。我剛才說改到七點半，妳有空過來嗎？不行我就先不算妳。"
+      : "前面說的是晚上七點半開始。妳要我再確認地點嗎？", delayMs: 1400 };
+  }
+  if (request.thread === "沈硯舟" && /怎麼認出|怎麼知道是我|怎麼認得|怎么认出|怎麼認識/.test(input) && /活動|現場|相機|照片|入鏡/.test(context)) {
+    return { reply: "上次活動妳在幫忙處理現場流程，我拿相機經過時有跟妳打過照面。後來整理照片看到妳，才認出是同一個人。妳還記得那天嗎？", delayMs: 1500 };
+  }
+  if (request.thread === "林安" && /(?:活動|聚餐|聚會|聚会).*(?:哪|什麼|什么)|(?:哪|什麼|什么).*(?:活動|聚餐|聚會|聚会)/.test(input) && /聚餐|聚會|聚会|週五|周五/.test(context)) {
+    return { reply: "就是我剛提的週五聚會，不是另一場活動。時間改成晚上七點半了，妳要來嗎？", delayMs: 1400 };
+  }
+  if (/^(?:活動是幾點開始|活动是几点开始)[？?]?$/.test(input) && !/七點半|七点半|7[:：]30|19[:：]30/.test(context)) {
+    return { reply: "我還沒拿到確定的開始時間，確認後再告訴妳，不想亂報時間。", delayMs: 1400 };
+  }
   if (request.thread === "裴知聿" && /^(幹嘛|找我幹嘛|什麼事|有事嗎|找我什麼事)[？?！!。\\s]*$/.test(input)) {
     const aboutPast = /照片|收據|以前|分手|整理|想起/.test(recent);
     return {
