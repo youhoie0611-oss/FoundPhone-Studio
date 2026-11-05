@@ -428,7 +428,8 @@
         ],
         "visitEvent": "photo_dinner_at_home",
         "rejectMustNotUnlockVisit": true
-      }
+      },
+      "runtimePolicy": "affinity_gated_repeatable_invitation"
     },
     {
       "eventId": "photo_dinner_at_home",
@@ -474,39 +475,15 @@
             "requiresEventCompleted": true
           },
           "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
-        },
-        {
-          "assetId": "pei_zhiyu_dinner_visit_cooking_02",
-          "filename": "pei_zhiyu_dinner_visit_cooking_02.webp",
-          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_cooking_02.webp",
-          "usage": "gallery_event",
-          "unlock": {
-            "requiresEventCompleted": true
-          },
-          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
-        },
-        {
-          "assetId": "pei_zhiyu_dinner_visit_livingroom_03",
-          "filename": "pei_zhiyu_dinner_visit_livingroom_03.webp",
-          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_livingroom_03.webp",
-          "usage": "gallery_event",
-          "unlock": {
-            "requiresEventCompleted": true
-          },
-          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
-        },
-        {
-          "assetId": "pei_zhiyu_dinner_visit_hands_04",
-          "filename": "pei_zhiyu_dinner_visit_hands_04.webp",
-          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_dinner_visit_hands_04.webp",
-          "usage": "gallery_event",
-          "unlock": {
-            "requiresConsent": true,
-            "requiresActualInteraction": "hand_holding"
-          },
-          "visualPrompt": "兩套餐具的餐桌、廚房背影、坐在沙發旁的生活照、經雙方同意後的牽手局部照片"
         }
-      ]
+      ],
+      "runtimePolicy": "affinity_gated_single_photo_outing",
+      "gallery": {
+        "entersPlayerAlbum": true,
+        "unlockRule": "player_explicitly_confirms_arrival_only_one_photo",
+        "sourceEvent": "pei_dinner_outing",
+        "albumPhotoCount": 1
+      }
     },
     {
       "eventId": "photo_camera_walk",
