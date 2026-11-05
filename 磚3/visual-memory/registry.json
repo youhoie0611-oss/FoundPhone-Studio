@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "game": "磚3",
+  "scope": "磚3/ only",
+  "purpose": "首次確立外貌後鎖定角色參考圖、日常穿搭、拍照習慣和常見生活場景；每次新照片必須參照實際圖片與角色記憶，不能只靠角色名字",
+  "registeredAt": "2026-11-05",
+  "characters": {
+    "夏予薇": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "江若寧": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "沈硯舟": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "祁野": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "裴知聿": {
+      "status": "approved_latest_visual_reference_upload_pending",
+      "visualMemoryFile": "磚3/characters/裴知聿/profile/visual-memory.json",
+      "approvedReferencePath": "磚3/characters/裴知聿/profile/reference/pei_zhiyu_reference_v2.jpeg",
+      "sourceVisualSha256": "90f7e514f98ad57a314e9ff232ee6b4b31ad116c1f6fbb25cbdebff5357758c5"
+    },
+    "陳以衡": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "陸沉川": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "顧明妍": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "顧時安": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    },
+    "黎澄": {
+      "status": "not_registered_in_zhuan3_visual_memory",
+      "visualMemoryFile": null,
+      "approvedReferencePath": null,
+      "sourceVisualSha256": null
+    }
+  },
+  "rules": {
+    "addOnFirstApproval": true,
+    "lockIdentityPerCharacter": true,
+    "requireActualReferencePixels": true,
+    "refuseNameOnlyIdentityGeneration": true,
+    "preservePriorApprovedVersions": true,
+    "sceneWardrobeCanChangeWithoutChangingFace": true,
+    "distinguishConfirmedFactsFromSuggestions": true,
+    "neverUseAnotherCharacterReference": true,
+    "eachPhotoNeedsCategoryAndLocation": true,
+    "onlyDeclareUploadedAfterRemoteVerification": true,
+    "maintainWithinProject": "磚3"
+  }
+}
