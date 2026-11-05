@@ -112,11 +112,6 @@ export function MymyKakao(p: SkinProps) {
   }, [p.thread, p.creator, p.items, p.readIds, p.onRead]);
 
   const lastMessage = messages[messages.length - 1];
-  // Photo events use actual engine choices, not ad-hoc text replies.
-  const activePhotoEvent = !p.creator && !lastMessage?.outgoing ? lastMessage?.meta?.photoEventId : "";
-  const photoChoices = activePhotoEvent
-    ? (p.choices ?? []).filter((option) => option.target.startsWith(`brick3-photo-${activePhotoEvent}-option-`))
-    : [];
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
   const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
@@ -244,11 +239,6 @@ export function MymyKakao(p: SkinProps) {
                                   : /吃飯|聚餐|週末|約/.test(latest)
                                     ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
                                     : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
-                if (photoChoices.length === 4) return photoChoices.map((option) => (
-                  <button type="button" key={option.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(option.target)}>
-                    {option.label}
-                  </button>
-                ));
                 return options.map((reply, index) => (
                   <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
                     {reply}
