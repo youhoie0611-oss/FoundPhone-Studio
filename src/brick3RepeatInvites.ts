@@ -83,8 +83,9 @@ function affinity(s: Runtime, a: Activity): number {
   const v = s.variables[a.affectionKey]; return typeof v === "number" ? v : 0;
 }
 function allowed(w: Work, s: Runtime, a: Activity): boolean {
+  const flag = "requiresFlag" in a ? a.requiresFlag : undefined;
   return lastContactExists(w, a)
-    && (!("requiresFlag" in a) || s.variables[a.requiresFlag] === true);
+    && (!flag || s.variables[flag] === true);
 }
 function deferNext(s: Runtime, a: Activity, p: Brick3InviteProgress) {
   p.phase = "idle";
