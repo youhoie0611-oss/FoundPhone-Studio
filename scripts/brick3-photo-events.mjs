@@ -77,6 +77,10 @@ export function injectBrick3PhotoEvents(story, manifest) {
   if (!(story.installedApps ?? []).some((a) => (typeof a === "string" ? a : a.id) === "photos")) return story;
 
   for (const entry of manifest.events) {
+    // Dinner is now one affinity-gated, repeatable invitation with a single
+    // gallery reward and an explicit attendance confirmation.
+    // Never also deliver the old fixed-day invitation/4-photo visit.
+    if (entry.eventId === "photo_dinner_invite" || entry.eventId === "photo_dinner_at_home") continue;
     if (!Array.isArray(entry.choices) || entry.choices.length !== 4) continue;
     const chat = story.chats.find((c) => c.app === "kakao" && c.title === entry.characterName);
     // Lu Chen-chuan is added only when his real introduction/contact exists.
