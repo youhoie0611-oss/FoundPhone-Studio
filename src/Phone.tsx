@@ -245,7 +245,17 @@ function PhoneRuntime({
       const previous = runtimeRef.current;
       const next = advance(work, previous, 1000);
       runtimeRef.current = next;
+      const deliveryElapsed = (next.ui?.deliveryElapsed ?? {}) as Record<string, number>;
+      const pendingLines = (work.data.kakao ?? []).some((item) => {
+        if (!item.body.includes("\n") || item.outgoing || !next.unlocked.includes(item.id)) return false;
+        const start = deliveryElapsed[item.id];
+        if (start === undefined) return false;
+        const interval = item.title === "裴知聿" ? 1800 : item.title === "祁野" ? 1000 : 1400;
+        const lineCount = item.body.split(/\n+/).filter(Boolean).length;
+        return (next.elapsedMs ?? 0) - start < (lineCount - 1) * interval + 1000;
+      });
       const changed =
+        pendingLines ||
         next.time !== previous.time ||
         next.trace.join() !== previous.trace.join() ||
         (next.scheduled?.length ?? 0) !== (previous.scheduled?.length ?? 0) ||
