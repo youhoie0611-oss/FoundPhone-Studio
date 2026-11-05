@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "purpose": "角色初次確定外貌後的長期視覺記憶與生成前檢查入口",
   "rules": [
     "每位角色只有在作者確認外貌後才可標記 confirmed",
@@ -11,7 +11,8 @@
     "視覺基準變更採用版本化，不可無聲覆蓋已確認的角色形象",
     "生成前先查登錄索引；confirmed 角色必須載入 visual-memory.json 和 GitHub 上的原始參考圖片，缺一不可",
     "Instagram Story、Post、KKT 的生成圖在提交 GitHub 前要標註用途和檔名，必須以遠端檔案確認上傳完成",
-    "對作者尚未確認的場景、服裝變化、拍攝習慣保留為生成建議，不得當成既定角色歷史"
+    "對作者尚未確認的場景、服裝變化、拍攝習慣保留為生成建議，不得當成既定角色歷史",
+    "角色生成必須使用最新作者核准的實際參考圖；未上傳新圖不得用舊圖冒充"
   ],
   "characters": {
     "qiye": {
@@ -48,7 +49,46 @@
       "approvedReferenceVersion": 1,
       "sourceImageUploadedName": "F94C1BA6-2CF7-41A9-8DFB-F6EE7DB86A7D.jpeg",
       "referenceGitBlobSha": "880cfa699f36dbe2aa54190ba6f1d57c12b003ed",
-      "copiedWithoutReencodingFrom": "public/characters/pei-zhiyu.png"
+      "copiedWithoutReencodingFrom": "public/characters/pei-zhiyu.png",
+      "latestApprovedVersion": 2,
+      "latestReferenceStatus": "awaiting_binary_upload",
+      "latestAppearance": "黑色高領、黑框眼鏡、黑色中長碎髮、清冷精瘦"
+    },
+    "lu_chenchuan": {
+      "name": "陸沉川",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
+    },
+    "lin_an": {
+      "name": "林安",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
+    },
+    "zhou_yuqing": {
+      "name": "周予晴",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
+    },
+    "chen_yiheng": {
+      "name": "陳以衡",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
+    },
+    "xu_tang": {
+      "name": "許棠",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
+    },
+    "jiang_xubai": {
+      "name": "江敘白",
+      "status": "pending_visual_reference_registration",
+      "memoryFile": null,
+      "referenceAssetPath": null
     }
   }
 }
