@@ -3,6 +3,7 @@ import { createServer } from "vite";
 import { injectBrick3V7Lu } from "./brick3-v7-lu.mjs";
 import { injectBrick3PhotoEvents } from "./brick3-photo-events.mjs";
 import { injectBrick3Affinity } from "./brick3-affinity.mjs";
+import { injectBrick3PeiDialogue } from "./brick3-pei-dialogue.mjs";
 const [
   mode = "validate",
   file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
@@ -90,6 +91,7 @@ try {
   if (raw.id === "between-the-lines-b-demo") {
     const manifest = JSON.parse(await readFile("docs/brick3-photo-events-v1.json", "utf8"));
     injectBrick3V7Lu(raw);
+    injectBrick3PeiDialogue(raw);
     injectBrick3PhotoEvents(raw, manifest);
     injectBrick3Affinity(raw);
   }
