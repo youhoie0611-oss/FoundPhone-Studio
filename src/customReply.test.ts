@@ -41,4 +41,13 @@ describe("custom player reply", () => {
     expect(next.choices).toEqual([]);
     expect(next.ui?.scriptedInvitationReply?.["裴知聿"]).toBe(next.messages.kakao?.at(-1)?.id);
   });
+  it("remembers a conflict and delivers a follow-up after a game day", async () => {
+    const { advance } = await import("./engine");
+    const state = initialRuntime(testWork);
+    const replied = submitCustomReply(state, "你剛才那樣說我很失望", "kakao", "祁野");
+    expect(replied.brick3Memory?.some(m => m.thread === "祁野" && m.topic === "conflict")).toBe(true);
+    const work = { ...testWork, id: "between-the-lines-b-demo", mode: "story", nodes: [], data: {}, variables: {} } as unknown as Work;
+    const after = advance(work, replied, 86400000);
+    expect(after.messages.kakao?.some(m => m.id.startsWith("brick3-memory-祁野-conflict"))).toBe(true);
+  });
 });
