@@ -25,14 +25,14 @@ const leads: Lead[] = [
   {
     key: "pei", name: "裴知聿",
     questions: [
-      "剛看到他的貼文。妳今天出門了？希望妳過得不錯。",
-      "看到那則動態，想起妳以前也喜歡那種地方。今天還順利嗎？",
+      "我看到那則動態了。照片倒是拍得不錯。至於配文……他挺會讓人多想的。妳跟他去的？",
+      "他那篇貼文寫得很巧。明明沒提名字，卻又像生怕別人看不懂。妳怎麼看？",
     ],
     responses: [
-      "知道了。謝謝妳願意告訴我。",
-      "嗯，我沒有資格替妳定義這件事。妳自己開心就好。",
-      "……可能有一點。但那是我自己的情緒，我會處理。",
-      "好。我不會繼續問。",
+      "我猜到了。倒是他，挺會挑時間發文的。",
+      "我有說你們不是朋友嗎？妳倒是先替他澄清了。",
+      "妳明知道，還要我親口說？",
+      "好。既然不想談，就當我沒問。",
     ],
   },
   {
@@ -74,6 +74,11 @@ const leads: Lead[] = [
       "好。我不會追問。",
     ],
   },
+];
+// Higher jealousy sharpens Pei's questions; he gets quieter, not louder.
+const peiIntenseQuestions = [
+  "我看到那則動態了。妳應該知道，我在意的不是照片拍得好不好。……你們現在很常一起出去？",
+  "他發那篇貼文，留了不少讓人猜的空間。我倒是想知道，妳怎麼看待你們現在的關係。",
 ];
 const replies = [
   "嗯，我們剛好一起去走走。",
@@ -194,7 +199,10 @@ export function tickBrick3DateSocial(w: Work, s: Runtime): Runtime {
         const recent = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
         if (recent[observer.name] !== undefined && now(s) - recent[observer.name] < 120000) continue;
         pending.sent = true;
-        const body = observer.questions[pick(s, a, observer.key + "-line") % observer.questions.length];
+        const jealousy = Number(s.variables[observer.key + "_jealousy"] ?? 0);
+        const questionPool = observer.key === "pei" && jealousy >= 40
+          ? peiIntenseQuestions : observer.questions;
+        const body = questionPool[pick(s, a, observer.key + "-line") % questionPool.length];
         sendKkt(s, observer, `brick3-social-${a.id}-inquiry-${observer.key}`, body, eventName(a, observer));
         s.choices.push(...replies.map((label, i) => ({
           label, target: optionPrefix(a, observer) + (i + 1),
