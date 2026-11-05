@@ -66,12 +66,35 @@ describe("Brick3 photo choices and gallery runtime", () => {
     const accepted = choose(w, invited, scene("photo_dinner_invite-choice-1"));
     expect(accepted.scheduled.some((n) => n.nodeId === "brick3-photo-visit-travel")).toBe(true);
     expect(isUnlocked(accepted, "photo_dinner_at_home-album-1")).toBe(false);
-    const visited = advance(w, accepted, 22 * 60 * 1000);
+    const atDoor = advance(w, accepted, 22 * 60 * 1000);
+    expect(atDoor.choices.filter((c) => c.target.startsWith(scene("photo_dinner_arrival-choice-")))).toHaveLength(4);
+    expect(isUnlocked(atDoor, "photo_dinner_at_home-caption")).toBe(false);
+    expect(isUnlocked(atDoor, "photo_dinner_at_home-album-1")).toBe(false);
+    const confirmed = choose(w, atDoor, scene("photo_dinner_arrival-choice-1"));
+    const visited = advance(w, confirmed, 4000);
     expect(isUnlocked(visited, "photo_dinner_at_home-caption")).toBe(true);
     for (const n of [1, 2, 3])
       expect(isUnlocked(visited, "photo_dinner_at_home-album-" + n)).toBe(true);
     expect(isUnlocked(visited, "photo_dinner_at_home-album-4")).toBe(false);
     expect(visited.choices.filter((c) => c.target.startsWith(scene("photo_dinner_at_home-choice-")))).toHaveLength(4);
+  });
+
+  it("keeps visit and intimacy photos locked when the player cancels at the door", () => {
+    const w = preparedWork();
+    const invited = startAt(w, "photo_dinner_invite");
+    const accepted = choose(w, invited, scene("photo_dinner_invite-choice-1"));
+    const checkpoint = advance(w, accepted, 22 * 60 * 1000);
+    const cancelled = choose(w, checkpoint, scene("photo_dinner_arrival-choice-3"));
+    const later = advance(w, cancelled, 60 * 1000);
+    expect(later.variables.brick3_photo_dinner_arrived).toBe(false);
+    for (const n of [1, 2, 3, 4])
+      expect(isUnlocked(later, "photo_dinner_at_home-album-" + n)).toBe(false);
+  });
+
+  it("keeps NPC night-view attachments out of the private gallery", () => {
+    const w = preparedWork();
+    expect(w.data.kakao.some((i) => i.id === scene("photo_night_view-image-1"))).toBe(true);
+    expect(w.data.photos.some((i) => i.id.startsWith(scene("photo_night_view-album-")))).toBe(false);
   });
 
   it("persists delivered photos across state serialization without replay", () => {
