@@ -150,7 +150,14 @@ export function injectBrick3V7Lu(story) {
     delayMs: 60000, next: ["v7-lu-private-contact-arrive"],
   }));
   addMessage(lu, "v7-lu-private-1", "luchenchuan",
-    "是陸沉川。\n妳剛剛提到那個構圖角度，我後來又想了一下。\n如果妳還有興趣，改天可以聊。");
+    "是陸沉川。\n妳剛剛提到那個構圖角度，我後來又想了一下。\n如果妳還有興趣，改天可以聊。",
+    "v7_lu_private");
+  addOptions(story, lu, "v7_lu_private", [
+    ["你後來想到什麼了？", "我覺得換個低一點的拍攝角度，也許更接近剛才想要的感覺。"],
+    ["有公開攝影活動可以再告訴我。", "有適合的公開場，我再分享資訊。妳不用特地排時間。"],
+    ["你不是剛下班嗎？", "嗯，剛收工。現在不算在工作。"],
+    ["我現在比較忙，改天聊。", "好，妳先忙。"],
+  ], () => [], "luchenchuan");
   story.events.push(node("v7-lu-private-contact-arrive", "action", {
     actions: [
       set("lu_private_contact", true),
@@ -158,15 +165,23 @@ export function injectBrick3V7Lu(story) {
       unlock("v7-lu-private-1"),
       notice("陸沉川", "是陸沉川。關於剛剛聊的攝影構圖。"),
     ],
-    next: ["v7-lu-private-second-wait"],
+    next: ["brick3-photo-v7_lu_private-options", "v7-lu-private-second-wait"],
   }));
   story.events.push(node("v7-lu-private-second-wait", "delay", {
     delayMs: 18000000, next: ["v7-lu-private-second-arrive"],
   }));
   addMessage(lu, "v7-lu-private-2", "luchenchuan",
-    "今天有個商業攝影要收尾。\n工作的照片整理完，如果可以分享，我再傳給妳。");
+    "今天有個商業攝影要收尾。\n工作的照片整理完，如果可以分享，我再傳給妳。",
+    "v7_lu_shoot");
+  addOptions(story, lu, "v7_lu_shoot", [
+    ["拍攝還順利嗎？", "大致順利。只是有幾張畫面需要重新調整。"],
+    ["公開以後可以給我看嗎？", "能公開的可以。客戶還沒發布的，我不能先傳。"],
+    ["你平常都工作到這麼晚？", "看檔期，不是每天都這麼晚。"],
+    ["那你先把工作忙完。", "好。妳也別太晚睡。"],
+  ], () => [], "luchenchuan");
   story.events.push(node("v7-lu-private-second-arrive", "action", {
     actions: [unlock("v7-lu-private-2")],
+    next: ["brick3-photo-v7_lu_shoot-options"],
   }));
   // Preserve prior saves only when the actual author revision changes.
   story.revision = Math.max(story.revision, 43);
