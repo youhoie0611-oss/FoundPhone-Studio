@@ -274,6 +274,7 @@ export function chooseBrick3JealousyInquiry(w: Work, previous: Runtime, target: 
     const s = structuredClone(previous);
     const p = s.brick3DateSocial![a.id].inquiries[observer.key];
     p.answered = true;
+    p.sequence = undefined; // The player interrupted his train of thought; do not send stale follow-up questions.
     p.replyAtMs = now(s) + 2200;
     const jealousy = Number(s.variables[observer.key + "_jealousy"] ?? 0);
     const attraction = Number(s.variables[observer.key + "_attraction"] ?? 0);
@@ -304,6 +305,7 @@ export function dismissBrick3JealousyOnCustomReply(s: Runtime, thread: string): 
     const prefix = optionPrefix(a, lead);
     if (!s.choices.some(choice => choice.target.startsWith(prefix))) continue;
     pending.answered = true;
+    pending.sequence = undefined;
     s.choices = s.choices.filter(choice => !choice.target.startsWith(prefix));
   }
 }
