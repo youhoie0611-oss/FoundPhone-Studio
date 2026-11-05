@@ -67,6 +67,7 @@ import { storyPhotoUrl, useStoryPhotoAvailability } from "./storyPhotoAssets";
 import { db } from "./persistence";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
+import { brick3PhotoPaths, isBrick3Photo } from "./brick3Photos";
 export function AppIcon({
   id,
   name,
@@ -170,6 +171,26 @@ function PhoneRuntime({
   const [own, setOwn] = useState(() => initialRuntime(work));
   const [ready, setReady] = useState(creator || !!external);
   const [loadError, setLoadError] = useState("");
+  // Check only author-controlled bundled WebP paths. A missing upload never renders a broken tile.
+  const [readyPhotoPaths, setReadyPhotoPaths] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    let active = true;
+    const paths = brick3PhotoPaths(work);
+    if (!paths.length) return;
+    void Promise.all(paths.map(async (path) => {
+      try {
+        const response = await fetch(new URL(path, document.baseURI).toString(), { method: "HEAD" });
+        return response.ok && (response.headers.get("content-type") ?? "").startsWith("image/") ? path : "";
+      } catch {
+        return "";
+      }
+    })).then((found) => {
+      if (active) setReadyPhotoPaths(new Set(found.filter(Boolean)));
+    });
+    return () => { active = false; };
+  }, [work.id, work.updatedAt]);
+  const uploadedPhoto = (item: Item) => !isBrick3Photo(item.media) || readyPhotoPaths.has(item.media);
+
   useEffect(() => {
     const el = shell.current;
     if (!el) return;
@@ -210,15 +231,15 @@ function PhoneRuntime({
       .then((saved) => {
         if (!active) return;
         if (saved && saved.state.revision === work.updatedAt)
-          setOwn(saved.state);
+          setOwn(dispatch(work, saved.state, "brick3PhotoBootstrap"));
         else {
-          setOwn(dispatch(work, initialRuntime(work), "start"));
+          setOwn(dispatch(work, dispatch(work, initialRuntime(work), "start"), "brick3PhotoBootstrap"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
         }
         setReady(true);
       })
       .catch(() => {
-        setOwn(dispatch(work, initialRuntime(work), "start"));
+        setOwn(dispatch(work, dispatch(work, initialRuntime(work), "start"), "brick3PhotoBootstrap"));
         setLoadError("无法读取本地存档。本次仍可游玩。");
         setReady(true);
       });
@@ -454,7 +475,7 @@ function PhoneRuntime({
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
                   }
                   items={[
-                    ...(work.data[app] ?? []).flatMap((item) => {
+                    ...(work.data[app] ?? []).filter(uploadedPhoto).flatMap((item) => {
                       const delivered = (s.ui?.deliveryTimes as Record<string, string> | undefined)?.[item.id];
                       const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
                       const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
@@ -466,7 +487,7 @@ function PhoneRuntime({
                       if (lines.length < 2) return [base];
                       return [{ ...base, body: lines[0] }];
                     }),
-                    ...(s.messages[app] ?? []),
+                    ...(s.messages[app] ?? []).filter(uploadedPhoto),
                   ]}
                   creator={creator}
                   state={s}
