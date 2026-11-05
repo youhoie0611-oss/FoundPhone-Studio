@@ -243,6 +243,7 @@ export function chooseBrick3Invitation(w: Work, previous: Runtime, target: strin
   if (!previous.choices.some(c => c.target === target)) return previous;
   const s = structuredClone(previous);
   const p = progressFor(s, a);
+  p.peiQueue = undefined;
   const atDoor = target.startsWith(choicePrefix(a.id + "_arrival"));
   const prefix = choicePrefix(eventId(a, atDoor));
   const choice = Number(target.slice(prefix.length));
