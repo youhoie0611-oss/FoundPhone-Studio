@@ -111,6 +111,20 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
+  // Explicit opening-scene questions must resolve to facts and a next action.
+  // Do not fall back to vague "let me think" messages for these story gates.
+  if (request.thread === "沈硯舟" && /還記得我|記得我嗎|你還記得|認得我|認出我|怎麼認出|怎麼認得/.test(input)) {
+    if (/還記得我|記得我嗎|你還記得/.test(input)) {
+      return { reply: "記得。上次活動妳在現場幫忙處理流程，我拿相機經過時跟妳打過照面。後來整理照片又看到妳。其實我一直想問，那張有拍到妳的照片，妳想看看嗎？", delayMs: 1700 };
+    }
+    return { reply: "那天妳在活動現場幫忙處理流程，我拿相機經過時有跟妳打過照面。後來整理照片才又認出妳。說起來，我有張照片拍到妳，妳介意我傳給妳確認嗎？", delayMs: 1700 };
+  }
+  if (request.thread === "顧時安" && /聯絡方式|聯繫方式|電話|怎麼有我的|怎麼會有我的|怎麼知道我的|從哪.*找到|誰給你的|為什麼.*聯絡/.test(input)) {
+    return { reply: "妳問得對，我應該先交代清楚，不該突然傳訊息。現在我沒辦法確認聯絡資料的來源，所以先不拿別的理由搪塞妳。我會去核對，確認前不再打擾妳；如果妳不願意我聯絡，我就到此為止。", delayMs: 1600 };
+  }
+  if (request.thread === "沈硯舟" && /對|是我|我還記得|記得那天/.test(input) && /活動|現場|照片|相機/.test(context)) {
+    return { reply: "太好了，我還怕認錯人。那天妳一直忙著協調現場，我沒好意思打擾。對了，我整理出一張有妳入鏡的照片，妳想先看看，還是我不要傳？", delayMs: 1600 };
+  }
   // Scene facts take precedence over generic question templates for every contact.
   const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
   const asksTime = /(?:幾點|几点|什麼時候|什么时候|何時|何时|時間|时间).*(?:開始|开始|聚|活動|活动|見面|见面)?|(?:活動|活动|聚餐|聚會|聚会).*(?:幾點|几点|時間|时间)/.test(input);
