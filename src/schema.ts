@@ -130,7 +130,7 @@ export const workSchema = z.object({
   mode: z.enum(["explore", "story", "mixed"]),
 });
 export type Work = z.infer<typeof workSchema>;
-export type UiValue = string | number | boolean | string[];
+export type UiValue = string | number | boolean | string[] | Array<{ thread: string; event: string; status: string; text: string; at: number }>;
 export type Runtime = {
   date?: string;
   elapsedMs?: number;
