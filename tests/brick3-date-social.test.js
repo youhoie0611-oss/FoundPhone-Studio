@@ -135,13 +135,34 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
     expect(lowQuestion.body).toMatch(/限動|照片/);
     expect(lowQuestion.body).not.toMatch(/希望妳過得不錯|今天還順利嗎|祝妳/);
     const intenseQuestion = inquiries(intense).find(m => m.sender === "裴知聿");
-    expect(intenseQuestion.body).toMatch(/妳是不是|妳跟他/);
+    expect(intenseQuestion.body).toMatch(/妳跟他|照片/);
     const answered = advance(w,
       choose(w, intense, prefix + intenseQuestion.meta.photoEventId + "-choice-3"), 4000);
     expect(answered.messages.kakao.find(m => m.id.includes("-reply-pei-part-"))?.body)
-      .toMatch(/我在吃醋|我知道|對/);
+      .toMatch(/我知道|對|只是朋友/);
   });
 
+  it("Pei starts with defensive curiosity, then reveals replacement anxiety in spaced bubbles", () => {
+    const w = work(), a = invitationConfig.activities[0];
+    let s;
+    for (let minute = 1; minute <= 35 && !s; minute++) {
+      const candidate = socialAfterCompletion(w, a, minute * 60000, true);
+      candidate.variables.pei_jealousy = 45;
+      const ready = advance(w, advance(w, candidate, 3 * 3600000), 5 * 3600000);
+      if (inquiries(ready).some(m => m.sender === "裴知聿")) s = ready;
+    }
+    expect(s).toBeDefined();
+    const question = inquiries(s).find(m => m.sender === "裴知聿");
+    expect(question.body).toMatch(/妳跟他|照片/);
+    const event = question.meta.photoEventId;
+    const answered = choose(w, s, prefix + event + "-choice-3");
+    const after = advance(w, answered, 4000);
+    const parts = (after.messages.kakao ?? []).filter(m => m.id.includes("-reply-pei-part-"));
+    expect(parts).toHaveLength(1);
+    expect(parts[0].body).toBe("對");
+    const later = advance(w, after, 4000);
+    expect(later.messages.kakao.filter(m => m.id.includes("-reply-pei-part-"))).toHaveLength(2);
+  });
   it("Pei sends spaced bubbles and stops the unfinished sequence when the player answers", () => {
     const w = work(), a = invitationConfig.activities[0];
     let s;
