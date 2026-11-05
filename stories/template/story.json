@@ -1,11 +1,11 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "保留既有手機介面資料，新增顧時安的職場相識與生活照互動支線",
+  "title": "磚2",
+  "description": "《磚2》互動戀愛聊天故事：沈硯舟、裴知聿、祁野，以及朋友們各自展開的日常與分歧。",
   "revision": 9,
   "phone": {
-    "owner": "机主",
+    "owner": "我",
     "date": "2026-11-04",
     "time": "10:00",
     "battery": 94,
@@ -114,6 +114,13 @@
       "phone": "",
       "avatar": "",
       "bio": "25 歲，心理學研究所碩士生。女主角的前男友，當初由女主角主動提出分手。聰明、敏銳、克制、狡黠，偶爾毒舌。狐狸系 80% × 黑貓系 20%。"
+    },
+    {
+      "id": "shen-yanzhou",
+      "name": "沈硯舟",
+      "phone": "",
+      "avatar": "",
+      "bio": "24 歲，大學生；與玩家在活動中認識。溫暖、真誠、細心、開朗且有原則；有自己的課業、朋友、運動與攝影生活。"
     }
   ],
   "chats": [
@@ -1033,6 +1040,16 @@
           }
         }
       ]
+    },
+    {
+      "id": "shen-yanzhou-kkt",
+      "app": "kakao",
+      "title": "沈硯舟",
+      "participants": [
+        "player",
+        "shen-yanzhou"
+      ],
+      "messages": []
     }
   ],
   "content": {
@@ -1508,7 +1525,9 @@
     "gu_wears_glasses": true,
     "gu_pet_id": "gu_shian_dog_01",
     "pei_reconciliation_intent": true,
-    "pei_flirty_photo_blocked": false
+    "pei_flirty_photo_blocked": false,
+    "shen_hidden_affection": 10,
+    "shen_relationship": "acquaintance"
   },
   "events": [
     {
