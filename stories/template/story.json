@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "五位男主的成人都市戀愛生活模擬：獨立生活、主動聯絡、非排他親密關係與隱藏忌妒值觸發的雄競分歧。玩家保有完整選擇權。",
-  "revision": 14,
+  "revision": 15,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -2786,7 +2786,7 @@
         "sender": "zhuan3.brand",
         "body": "攝影工作坊裡，沈硯舟與裴知聿因公開講座短暫交流。 #公開活動 #現在的陪伴與過去的回憶",
         "title": "攝影工作坊裡，沈硯舟與裴知聿因公開講座短暫交流。 #公開活動 #",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-05 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2796,7 +2796,7 @@
         "sender": "zhuan3.brand",
         "body": "一場校外球賽，沈硯舟與祁野互相認出對方。 #公開活動 #熱情對上好勝",
         "title": "一場校外球賽，沈硯舟與祁野互相認出對方。 #公開活動 #熱情對上",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-06 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2806,7 +2806,7 @@
         "sender": "zhuan3.brand",
         "body": "沈硯舟在建築開放日為顧時安參與的空間拍攝。 #公開活動 #攝影新手與成熟設計師",
         "title": "沈硯舟在建築開放日為顧時安參與的空間拍攝。 #公開活動 #攝影新",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-07 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2816,7 +2816,7 @@
         "sender": "zhuan3.brand",
         "body": "沈硯舟參與商業攝影企劃，模特兒名單上有陸沉川。 #公開活動 #攝影者與被攝影者",
         "title": "沈硯舟參與商業攝影企劃，模特兒名單上有陸沉川。 #公開活動 #攝",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-08 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2826,7 +2826,7 @@
         "sender": "zhuan3.brand",
         "body": "裴知聿與祁野在一場公共活動中交談，兩人對話火藥味十足。 #公開活動 #試探對上直球",
         "title": "裴知聿與祁野在一場公共活動中交談，兩人對話火藥味十足。 #公開活",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-09 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2836,7 +2836,7 @@
         "sender": "zhuan3.brand",
         "body": "裴知聿在跨領域研討活動與顧時安交換工作看法。 #公開活動 #前任熟悉感與成熟穩定",
         "title": "裴知聿在跨領域研討活動與顧時安交換工作看法。 #公開活動 #前任",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-10 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2846,7 +2846,7 @@
         "sender": "zhuan3.brand",
         "body": "裴知聿在公開影像活動接觸陸沉川，兩人談到工作與私人界線。 #公開活動 #冷靜試探與直接回應",
         "title": "裴知聿在公開影像活動接觸陸沉川，兩人談到工作與私人界線。 #公開",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-11 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2856,7 +2856,7 @@
         "sender": "zhuan3.brand",
         "body": "祁野在家族合作品牌活動遇到負責空間提案的顧時安。 #公開活動 #衝動與克制",
         "title": "祁野在家族合作品牌活動遇到負責空間提案的顧時安。 #公開活動 #",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-12 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2866,7 +2866,7 @@
         "sender": "zhuan3.brand",
         "body": "祁野在品牌活動遇到擔任形象模特兒的陸沉川。 #公開活動 #富家少爺與獨立工作者",
         "title": "祁野在品牌活動遇到擔任形象模特兒的陸沉川。 #公開活動 #富家少",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-13 00:00",
         "hidden": true,
         "likes": 18
       },
@@ -2876,7 +2876,7 @@
         "sender": "zhuan3.brand",
         "body": "顧時安於品牌空間企劃與形象模特兒陸沉川接觸。 #公開活動 #兩個成熟男人的感情觀",
         "title": "顧時安於品牌空間企劃與形象模特兒陸沉川接觸。 #公開活動 #兩個",
-        "time": "2026-11-06 19:00",
+        "time": "2026-11-14 00:00",
         "hidden": true,
         "likes": 18
       }
@@ -4611,7 +4611,7 @@
         {
           "type": "variable",
           "key": "pei_hidden_affection",
-          "value": 71
+          "value": 1
         }
       ],
       "next": [
@@ -4664,7 +4664,7 @@
         {
           "type": "variable",
           "key": "pei_hidden_affection",
-          "value": 70
+          "value": 0
         }
       ],
       "next": [
@@ -4717,7 +4717,7 @@
         {
           "type": "variable",
           "key": "pei_hidden_affection",
-          "value": 69
+          "value": 0
         }
       ],
       "next": [
@@ -4775,7 +4775,7 @@
         {
           "type": "variable",
           "key": "pei_hidden_affection",
-          "value": 65
+          "value": 0
         },
         {
           "type": "variable",
@@ -7092,7 +7092,7 @@
       "next": [
         "z3-pair-publish-1"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-shen-pei-read",
@@ -7476,7 +7476,7 @@
       "next": [
         "z3-pair-publish-2"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-shen-qi-read",
@@ -7860,7 +7860,7 @@
       "next": [
         "z3-pair-publish-3"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-shen-gu-read",
@@ -8244,7 +8244,7 @@
       "next": [
         "z3-pair-publish-4"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-shen-lu-read",
@@ -8628,7 +8628,7 @@
       "next": [
         "z3-pair-publish-5"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-pei-qi-read",
@@ -9012,7 +9012,7 @@
       "next": [
         "z3-pair-publish-6"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-pei-gu-read",
@@ -9396,7 +9396,7 @@
       "next": [
         "z3-pair-publish-7"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-pei-lu-read",
@@ -9780,7 +9780,7 @@
       "next": [
         "z3-pair-publish-8"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-qi-gu-read",
@@ -10164,7 +10164,7 @@
       "next": [
         "z3-pair-publish-9"
       ],
-      "delayMs": 5400000
+      "delayMs": 86400000
     },
     {
       "id": "z3-pair-qi-lu-read",
