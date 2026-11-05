@@ -366,7 +366,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
         "陸沉川": ["photo_off_duty", "photo_commercial_shoot"],
       };
       const belongsToPhoto = (photoScenes[thread] ?? []).some((id) =>
-        target.startsWith(`brick3-photo-${id}-option-`));
+        target.startsWith(`brick3-photo-${id}-choice-`));
       const belongs = belongsToPhoto || (thread === "林安" ? target.startsWith("lin-reply-")
         : thread === "沈硯舟" ? /^(reply-shen-|phase[23]-shen-|shen-r|shen-day|shen-major-event-)/.test(target)
         : thread === "裴知聿" ? /^(reply-pei-|phase[23]-pei-|pei-r|pei-day|pei-major-event-)/.test(target)
