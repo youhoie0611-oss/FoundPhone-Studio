@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "五位男主的成人都市戀愛生活模擬：獨立生活、主動聯絡、非排他親密關係與隱藏忌妒值觸發的雄競分歧。玩家保有完整選擇權。",
-  "revision": 16,
+  "revision": 17,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -2452,6 +2452,149 @@
             "rival": "lu",
             "stage": "high"
           }
+        },
+        {
+          "id": "z3-final-gu-question",
+          "body": "有些話我想確認。關於我們接下來要怎麼相處，妳希望是什麼關係？",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-player-exclusive",
+          "body": "我希望我們認真談談一對一交往。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-reply-exclusive",
+          "body": "我希望關係可以穩定，也希望妳保有自己的工作與生活。",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-player-open",
+          "body": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-reply-open",
+          "body": "我們可以把界線寫清楚，但我不會承諾自己還沒想明白的事。",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-player-friend",
+          "body": "我想維持朋友關係，不繼續曖昧。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-reply-friend",
+          "body": "當朋友也很好。我們還有很多工作以外的話題。",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-player-pause",
+          "body": "我現在不想確定關係，先各自生活。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-reply-pause",
+          "body": "我尊重這個距離。工作上的合作仍會照原本的專業處理。",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-player-repair",
+          "body": "如果還有機會，我希望先把以前的問題談清楚。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-gu-reply-repair",
+          "body": "如果要重新靠近，我想先修復彼此失去的信任。",
+          "senderId": "gu-shian",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
         }
       ]
     },
@@ -4298,6 +4441,149 @@
             "longform": "V6V7",
             "rival": "lu",
             "stage": "high"
+          }
+        },
+        {
+          "id": "z3-final-qi-question",
+          "body": "有些話我想確認。關於我們接下來要怎麼相處，妳希望是什麼關係？",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-player-exclusive",
+          "body": "我希望我們認真談談一對一交往。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-reply-exclusive",
+          "body": "我不想靠輸贏決定我們的關係。我想問妳願不願意跟我認真試試。",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-player-open",
+          "body": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-reply-open",
+          "body": "我可以試著理解，但不會因為不服輸就答應我做不到的事。",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-player-friend",
+          "body": "我想維持朋友關係，不繼續曖昧。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-reply-friend",
+          "body": "行，朋友就朋友。我的生活還有球賽和設計，不會一直圍著妳轉。",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-player-pause",
+          "body": "我現在不想確定關係，先各自生活。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-reply-pause",
+          "body": "妳慢慢想。我也去處理家裡那堆事。",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-player-repair",
+          "body": "如果還有機會，我希望先把以前的問題談清楚。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-qi-reply-repair",
+          "body": "我之前說話太衝，這次先聽妳講完。",
+          "senderId": "qiye",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
           }
         }
       ]
@@ -6376,6 +6662,149 @@
             "longform": "V6V7",
             "rival": "lu",
             "stage": "high"
+          }
+        },
+        {
+          "id": "z3-final-pei-question",
+          "body": "有些話我想確認。關於我們接下來要怎麼相處，妳希望是什麼關係？",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-player-exclusive",
+          "body": "我希望我們認真談談一對一交往。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-reply-exclusive",
+          "body": "我想復合，但我不能拿我們的過去當成妳的義務。",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-player-open",
+          "body": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-reply-open",
+          "body": "如果是非排他關係，我需要先確定自己做得到，而不是嘴上說可以。",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-player-friend",
+          "body": "我想維持朋友關係，不繼續曖昧。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-reply-friend",
+          "body": "我會尊重妳不想復合的選擇。我們不必再把每次見面當成試探。",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-player-pause",
+          "body": "我現在不想確定關係，先各自生活。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-reply-pause",
+          "body": "我明白。妳不需要因為我等著就給答案。",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-player-repair",
+          "body": "如果還有機會，我希望先把以前的問題談清楚。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-pei-reply-repair",
+          "body": "如果要重來，我想先談當初為什麼分手。那個原因不能略過。",
+          "senderId": "pei-zhiyu",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
           }
         }
       ]
@@ -8460,6 +8889,149 @@
             "rival": "lu",
             "stage": "high"
           }
+        },
+        {
+          "id": "z3-final-shen-question",
+          "body": "有些話我想確認。關於我們接下來要怎麼相處，妳希望是什麼關係？",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-player-exclusive",
+          "body": "我希望我們認真談談一對一交往。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-reply-exclusive",
+          "body": "我想跟妳認真交往，但我不會用攝影作品或努力來換妳的答案。",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-player-open",
+          "body": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-reply-open",
+          "body": "我還需要時間理解。我喜歡妳，不代表我已經能接受所有安排。",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-player-friend",
+          "body": "我想維持朋友關係，不繼續曖昧。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-reply-friend",
+          "body": "我可以當妳的朋友。那份喜歡我會自己整理，不會丟給妳。",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-player-pause",
+          "body": "我現在不想確定關係，先各自生活。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-reply-pause",
+          "body": "那我們先別急。我也得把畢業作品做完。",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-player-repair",
+          "body": "如果還有機會，我希望先把以前的問題談清楚。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-shen-reply-repair",
+          "body": "我想重新認識妳，這次不靠猜。",
+          "senderId": "shen-yanzhou",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
         }
       ]
     },
@@ -10376,6 +10948,149 @@
             "chapter": 12,
             "choice": "pause"
           }
+        },
+        {
+          "id": "z3-final-lu-question",
+          "body": "有些話我想確認。關於我們接下來要怎麼相處，妳希望是什麼關係？",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-player-exclusive",
+          "body": "我希望我們認真談談一對一交往。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-reply-exclusive",
+          "body": "如果這是妳認真想要的，我願意試著在工作之外跟妳建立關係。",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-player-open",
+          "body": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-reply-open",
+          "body": "我不是不能談非排他，只是不想把自己的界線當成交換條件。",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-player-friend",
+          "body": "我想維持朋友關係，不繼續曖昧。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-reply-friend",
+          "body": "我們可以只當朋友。妳不用為了我去會館消費。",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-player-pause",
+          "body": "我現在不想確定關係，先各自生活。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-reply-pause",
+          "body": "好。我的工作會繼續，妳的生活也不用為我停下來。",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-player-repair",
+          "body": "如果還有機會，我希望先把以前的問題談清楚。",
+          "senderId": "owner",
+          "outgoing": true,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
+        },
+        {
+          "id": "z3-final-lu-reply-repair",
+          "body": "那就從下班後的普通聊天重新開始，不靠工作話術。",
+          "senderId": "lu-chenchuan",
+          "outgoing": false,
+          "hidden": true,
+          "time": "2027-01-15 20:00",
+          "meta": {
+            "story": "V6V7",
+            "chapter": "12",
+            "arc": "resolution"
+          }
         }
       ]
     }
@@ -11559,7 +12274,17 @@
     "z3_jealousy_qi_towards_lu": 0,
     "z3_jealousy_lu_towards_qi": 0,
     "z3_jealousy_gu_towards_lu": 0,
-    "z3_jealousy_lu_towards_gu": 0
+    "z3_jealousy_lu_towards_gu": 0,
+    "z3_chapter_complete_shen": false,
+    "z3_route_resolution_shen": "unresolved",
+    "z3_chapter_complete_pei": false,
+    "z3_route_resolution_pei": "unresolved",
+    "z3_chapter_complete_qi": false,
+    "z3_route_resolution_qi": "unresolved",
+    "z3_chapter_complete_gu": false,
+    "z3_route_resolution_gu": "unresolved",
+    "z3_chapter_complete_lu": false,
+    "z3_route_resolution_lu": "unresolved"
   },
   "events": [
     {
@@ -19599,9 +20324,9 @@
       "type": "delay",
       "actions": [],
       "next": [
-        "z3-long-shen-chapter-1"
+        "z3-long-shen-initial-second"
       ],
-      "delayMs": 90600000
+      "delayMs": 86400000
     },
     {
       "id": "z3-long-shen-chapter-1",
@@ -22811,6 +23536,11 @@
           "type": "unlock",
           "key": "z3-long-shen-c12-reply-ask",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_shen",
+          "value": true
         }
       ],
       "next": []
@@ -22864,6 +23594,11 @@
           "type": "unlock",
           "key": "z3-long-shen-c12-reply-support",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_shen",
+          "value": true
         }
       ],
       "next": []
@@ -22906,6 +23641,11 @@
         {
           "type": "unlock",
           "key": "z3-long-shen-c12-reply-challenge",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_shen",
           "value": true
         }
       ],
@@ -22950,6 +23690,11 @@
           "type": "unlock",
           "key": "z3-long-shen-c12-reply-pause",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_shen",
+          "value": true
         }
       ],
       "next": []
@@ -22969,9 +23714,9 @@
       "type": "delay",
       "actions": [],
       "next": [
-        "z3-long-pei-chapter-1"
+        "z3-long-pei-initial-second"
       ],
-      "delayMs": 94200000
+      "delayMs": 86400000
     },
     {
       "id": "z3-long-pei-chapter-1",
@@ -26253,6 +26998,11 @@
           "type": "unlock",
           "key": "z3-long-pei-c12-reply-ask",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_pei",
+          "value": true
         }
       ],
       "next": []
@@ -26306,6 +27056,11 @@
           "type": "unlock",
           "key": "z3-long-pei-c12-reply-support",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_pei",
+          "value": true
         }
       ],
       "next": []
@@ -26348,6 +27103,11 @@
         {
           "type": "unlock",
           "key": "z3-long-pei-c12-reply-challenge",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_pei",
           "value": true
         }
       ],
@@ -26392,6 +27152,11 @@
           "type": "unlock",
           "key": "z3-long-pei-c12-reply-pause",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_pei",
+          "value": true
         }
       ],
       "next": []
@@ -26411,9 +27176,9 @@
       "type": "delay",
       "actions": [],
       "next": [
-        "z3-long-qi-chapter-1"
+        "z3-long-qi-initial-second"
       ],
-      "delayMs": 97500000
+      "delayMs": 86400000
     },
     {
       "id": "z3-long-qi-chapter-1",
@@ -29623,6 +30388,11 @@
           "type": "unlock",
           "key": "z3-long-qi-c12-reply-ask",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_qi",
+          "value": true
         }
       ],
       "next": []
@@ -29676,6 +30446,11 @@
           "type": "unlock",
           "key": "z3-long-qi-c12-reply-support",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_qi",
+          "value": true
         }
       ],
       "next": []
@@ -29718,6 +30493,11 @@
         {
           "type": "unlock",
           "key": "z3-long-qi-c12-reply-challenge",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_qi",
           "value": true
         }
       ],
@@ -29762,6 +30542,11 @@
           "type": "unlock",
           "key": "z3-long-qi-c12-reply-pause",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_qi",
+          "value": true
         }
       ],
       "next": []
@@ -29781,9 +30566,9 @@
       "type": "delay",
       "actions": [],
       "next": [
-        "z3-long-gu-chapter-1"
+        "z3-long-gu-initial-second"
       ],
-      "delayMs": 101100000
+      "delayMs": 86400000
     },
     {
       "id": "z3-long-gu-chapter-1",
@@ -32993,6 +33778,11 @@
           "type": "unlock",
           "key": "z3-long-gu-c12-reply-ask",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_gu",
+          "value": true
         }
       ],
       "next": []
@@ -33046,6 +33836,11 @@
           "type": "unlock",
           "key": "z3-long-gu-c12-reply-support",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_gu",
+          "value": true
         }
       ],
       "next": []
@@ -33088,6 +33883,11 @@
         {
           "type": "unlock",
           "key": "z3-long-gu-c12-reply-challenge",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_gu",
           "value": true
         }
       ],
@@ -33132,6 +33932,11 @@
           "type": "unlock",
           "key": "z3-long-gu-c12-reply-pause",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_gu",
+          "value": true
         }
       ],
       "next": []
@@ -33151,9 +33956,9 @@
       "type": "delay",
       "actions": [],
       "next": [
-        "z3-long-lu-chapter-1"
+        "z3-long-lu-initial-second"
       ],
-      "delayMs": 105200000
+      "delayMs": 86400000
     },
     {
       "id": "z3-long-lu-chapter-1",
@@ -36435,6 +37240,11 @@
           "type": "unlock",
           "key": "z3-long-lu-c12-reply-ask",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_lu",
+          "value": true
         }
       ],
       "next": []
@@ -36488,6 +37298,11 @@
           "type": "unlock",
           "key": "z3-long-lu-c12-reply-support",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_lu",
+          "value": true
         }
       ],
       "next": []
@@ -36531,6 +37346,11 @@
           "type": "unlock",
           "key": "z3-long-lu-c12-reply-challenge",
           "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_lu",
+          "value": true
         }
       ],
       "next": []
@@ -36573,6 +37393,11 @@
         {
           "type": "unlock",
           "key": "z3-long-lu-c12-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_chapter_complete_lu",
           "value": true
         }
       ],
@@ -38357,6 +39182,1961 @@
           "type": "variable",
           "key": "z3_lu_private_contact",
           "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-long-shen-initial-second",
+      "label": "第1章前的剩餘日程",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-long-shen-chapter-1"
+      ],
+      "delayMs": 4200000
+    },
+    {
+      "id": "z3-long-pei-initial-second",
+      "label": "第1章前的剩餘日程",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-long-pei-chapter-1"
+      ],
+      "delayMs": 7800000
+    },
+    {
+      "id": "z3-long-qi-initial-second",
+      "label": "第1章前的剩餘日程",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-long-qi-chapter-1"
+      ],
+      "delayMs": 11100000
+    },
+    {
+      "id": "z3-long-gu-initial-second",
+      "label": "第1章前的剩餘日程",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-long-gu-chapter-1"
+      ],
+      "delayMs": 14700000
+    },
+    {
+      "id": "z3-long-lu-initial-second",
+      "label": "第1章前的剩餘日程",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-long-lu-chapter-1"
+      ],
+      "delayMs": 18800000
+    },
+    {
+      "id": "z3-final-shen-start",
+      "label": "沈硯舟｜十二章後關係協商",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-final-shen-prompt"
+      ],
+      "event": "variable",
+      "target": "z3_affection_shen",
+      "conditions": [
+        {
+          "key": "z3_affection_shen",
+          "op": "gt",
+          "value": 9
+        },
+        {
+          "key": "z3_chapter_complete_shen",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-final-shen-prompt",
+      "label": "沈硯舟提出關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-final-shen-select"
+      ]
+    },
+    {
+      "id": "z3-final-shen-select",
+      "label": "玩家決定未來關係",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-final-shen-choice-exclusive",
+        "z3-final-shen-choice-open",
+        "z3-final-shen-choice-friend",
+        "z3-final-shen-choice-pause",
+        "z3-final-shen-choice-repair"
+      ]
+    },
+    {
+      "id": "z3-final-shen-choice-exclusive",
+      "label": "我希望我們認真談談一對一交往。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_shen",
+          "value": "exclusive_requested"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 10
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-final-shen-delay-exclusive"
+      ]
+    },
+    {
+      "id": "z3-final-shen-delay-exclusive",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-shen-reply-node-exclusive"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-shen-reply-node-exclusive",
+      "label": "沈硯舟回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-reply-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_shen",
+          "value": "exclusive_requested"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-shen-choice-open",
+      "label": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-player-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_shen",
+          "value": "nonexclusive_discussion"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -6
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-final-shen-delay-open"
+      ]
+    },
+    {
+      "id": "z3-final-shen-delay-open",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-shen-reply-node-open"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-shen-reply-node-open",
+      "label": "沈硯舟回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-reply-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_shen",
+          "value": "nonexclusive_discussion"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-shen-choice-friend",
+      "label": "我想維持朋友關係，不繼續曖昧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-player-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_shen",
+          "value": "friends"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_shen",
+          "value": "not_applicable"
+        }
+      ],
+      "next": [
+        "z3-final-shen-delay-friend"
+      ]
+    },
+    {
+      "id": "z3-final-shen-delay-friend",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-shen-reply-node-friend"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-shen-reply-node-friend",
+      "label": "沈硯舟回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-reply-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_shen",
+          "value": "friends"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-shen-choice-pause",
+      "label": "我現在不想確定關係，先各自生活。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-player-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_shen",
+          "value": "on_pause"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-final-shen-delay-pause"
+      ]
+    },
+    {
+      "id": "z3-final-shen-delay-pause",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-shen-reply-node-pause"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-shen-reply-node-pause",
+      "label": "沈硯舟回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_shen",
+          "value": "on_pause"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-shen-choice-repair",
+      "label": "如果還有機會，我希望先把以前的問題談清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-player-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_shen",
+          "value": "repairing"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_shen",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_shen",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_shen",
+          "value": -8
+        }
+      ],
+      "next": [
+        "z3-final-shen-delay-repair"
+      ]
+    },
+    {
+      "id": "z3-final-shen-delay-repair",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-shen-reply-node-repair"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-shen-reply-node-repair",
+      "label": "沈硯舟回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-shen-reply-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_shen",
+          "value": "repairing"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-pei-start",
+      "label": "裴知聿｜十二章後關係協商",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-final-pei-prompt"
+      ],
+      "event": "variable",
+      "target": "z3_affection_pei",
+      "conditions": [
+        {
+          "key": "z3_affection_pei",
+          "op": "gt",
+          "value": 9
+        },
+        {
+          "key": "z3_chapter_complete_pei",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-final-pei-prompt",
+      "label": "裴知聿提出關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-final-pei-select"
+      ]
+    },
+    {
+      "id": "z3-final-pei-select",
+      "label": "玩家決定未來關係",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-final-pei-choice-exclusive",
+        "z3-final-pei-choice-open",
+        "z3-final-pei-choice-friend",
+        "z3-final-pei-choice-pause",
+        "z3-final-pei-choice-repair"
+      ]
+    },
+    {
+      "id": "z3-final-pei-choice-exclusive",
+      "label": "我希望我們認真談談一對一交往。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_pei",
+          "value": "exclusive_requested"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 10
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-final-pei-delay-exclusive"
+      ]
+    },
+    {
+      "id": "z3-final-pei-delay-exclusive",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-pei-reply-node-exclusive"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-pei-reply-node-exclusive",
+      "label": "裴知聿回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-reply-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_pei",
+          "value": "exclusive_requested"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-pei-choice-open",
+      "label": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-player-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_pei",
+          "value": "nonexclusive_discussion"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -6
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-final-pei-delay-open"
+      ]
+    },
+    {
+      "id": "z3-final-pei-delay-open",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-pei-reply-node-open"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-pei-reply-node-open",
+      "label": "裴知聿回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-reply-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_pei",
+          "value": "nonexclusive_discussion"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-pei-choice-friend",
+      "label": "我想維持朋友關係，不繼續曖昧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-player-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_pei",
+          "value": "friends"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_pei",
+          "value": "not_applicable"
+        }
+      ],
+      "next": [
+        "z3-final-pei-delay-friend"
+      ]
+    },
+    {
+      "id": "z3-final-pei-delay-friend",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-pei-reply-node-friend"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-pei-reply-node-friend",
+      "label": "裴知聿回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-reply-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_pei",
+          "value": "friends"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-pei-choice-pause",
+      "label": "我現在不想確定關係，先各自生活。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-player-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_pei",
+          "value": "on_pause"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-final-pei-delay-pause"
+      ]
+    },
+    {
+      "id": "z3-final-pei-delay-pause",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-pei-reply-node-pause"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-pei-reply-node-pause",
+      "label": "裴知聿回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_pei",
+          "value": "on_pause"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-pei-choice-repair",
+      "label": "如果還有機會，我希望先把以前的問題談清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-player-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_pei",
+          "value": "repairing"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_pei",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_pei",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_pei",
+          "value": -8
+        }
+      ],
+      "next": [
+        "z3-final-pei-delay-repair"
+      ]
+    },
+    {
+      "id": "z3-final-pei-delay-repair",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-pei-reply-node-repair"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-pei-reply-node-repair",
+      "label": "裴知聿回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-pei-reply-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_pei",
+          "value": "repairing"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-qi-start",
+      "label": "祁野｜十二章後關係協商",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-final-qi-prompt"
+      ],
+      "event": "variable",
+      "target": "z3_affection_qi",
+      "conditions": [
+        {
+          "key": "z3_affection_qi",
+          "op": "gt",
+          "value": 9
+        },
+        {
+          "key": "z3_chapter_complete_qi",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-final-qi-prompt",
+      "label": "祁野提出關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-final-qi-select"
+      ]
+    },
+    {
+      "id": "z3-final-qi-select",
+      "label": "玩家決定未來關係",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-final-qi-choice-exclusive",
+        "z3-final-qi-choice-open",
+        "z3-final-qi-choice-friend",
+        "z3-final-qi-choice-pause",
+        "z3-final-qi-choice-repair"
+      ]
+    },
+    {
+      "id": "z3-final-qi-choice-exclusive",
+      "label": "我希望我們認真談談一對一交往。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_qi",
+          "value": "exclusive_requested"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 10
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-final-qi-delay-exclusive"
+      ]
+    },
+    {
+      "id": "z3-final-qi-delay-exclusive",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-qi-reply-node-exclusive"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-qi-reply-node-exclusive",
+      "label": "祁野回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-reply-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_qi",
+          "value": "exclusive_requested"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-qi-choice-open",
+      "label": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-player-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_qi",
+          "value": "nonexclusive_discussion"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -6
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-final-qi-delay-open"
+      ]
+    },
+    {
+      "id": "z3-final-qi-delay-open",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-qi-reply-node-open"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-qi-reply-node-open",
+      "label": "祁野回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-reply-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_qi",
+          "value": "nonexclusive_discussion"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-qi-choice-friend",
+      "label": "我想維持朋友關係，不繼續曖昧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-player-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_qi",
+          "value": "friends"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_qi",
+          "value": "not_applicable"
+        }
+      ],
+      "next": [
+        "z3-final-qi-delay-friend"
+      ]
+    },
+    {
+      "id": "z3-final-qi-delay-friend",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-qi-reply-node-friend"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-qi-reply-node-friend",
+      "label": "祁野回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-reply-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_qi",
+          "value": "friends"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-qi-choice-pause",
+      "label": "我現在不想確定關係，先各自生活。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-player-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_qi",
+          "value": "on_pause"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-final-qi-delay-pause"
+      ]
+    },
+    {
+      "id": "z3-final-qi-delay-pause",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-qi-reply-node-pause"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-qi-reply-node-pause",
+      "label": "祁野回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_qi",
+          "value": "on_pause"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-qi-choice-repair",
+      "label": "如果還有機會，我希望先把以前的問題談清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-player-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_qi",
+          "value": "repairing"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_qi",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_qi",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_qi",
+          "value": -8
+        }
+      ],
+      "next": [
+        "z3-final-qi-delay-repair"
+      ]
+    },
+    {
+      "id": "z3-final-qi-delay-repair",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-qi-reply-node-repair"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-qi-reply-node-repair",
+      "label": "祁野回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-qi-reply-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_qi",
+          "value": "repairing"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-gu-start",
+      "label": "顧時安｜十二章後關係協商",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-final-gu-prompt"
+      ],
+      "event": "variable",
+      "target": "z3_affection_gu",
+      "conditions": [
+        {
+          "key": "z3_affection_gu",
+          "op": "gt",
+          "value": 9
+        },
+        {
+          "key": "z3_chapter_complete_gu",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-final-gu-prompt",
+      "label": "顧時安提出關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-final-gu-select"
+      ]
+    },
+    {
+      "id": "z3-final-gu-select",
+      "label": "玩家決定未來關係",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-final-gu-choice-exclusive",
+        "z3-final-gu-choice-open",
+        "z3-final-gu-choice-friend",
+        "z3-final-gu-choice-pause",
+        "z3-final-gu-choice-repair"
+      ]
+    },
+    {
+      "id": "z3-final-gu-choice-exclusive",
+      "label": "我希望我們認真談談一對一交往。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_gu",
+          "value": "exclusive_requested"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 10
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_gu",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-final-gu-delay-exclusive"
+      ]
+    },
+    {
+      "id": "z3-final-gu-delay-exclusive",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-gu-reply-node-exclusive"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-gu-reply-node-exclusive",
+      "label": "顧時安回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-reply-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_gu",
+          "value": "exclusive_requested"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-gu-choice-open",
+      "label": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-player-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_gu",
+          "value": "nonexclusive_discussion"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -6
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_gu",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-final-gu-delay-open"
+      ]
+    },
+    {
+      "id": "z3-final-gu-delay-open",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-gu-reply-node-open"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-gu-reply-node-open",
+      "label": "顧時安回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-reply-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_gu",
+          "value": "nonexclusive_discussion"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-gu-choice-friend",
+      "label": "我想維持朋友關係，不繼續曖昧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-player-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_gu",
+          "value": "friends"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_gu",
+          "value": "not_applicable"
+        }
+      ],
+      "next": [
+        "z3-final-gu-delay-friend"
+      ]
+    },
+    {
+      "id": "z3-final-gu-delay-friend",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-gu-reply-node-friend"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-gu-reply-node-friend",
+      "label": "顧時安回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-reply-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_gu",
+          "value": "friends"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-gu-choice-pause",
+      "label": "我現在不想確定關係，先各自生活。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-player-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_gu",
+          "value": "on_pause"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-final-gu-delay-pause"
+      ]
+    },
+    {
+      "id": "z3-final-gu-delay-pause",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-gu-reply-node-pause"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-gu-reply-node-pause",
+      "label": "顧時安回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_gu",
+          "value": "on_pause"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-gu-choice-repair",
+      "label": "如果還有機會，我希望先把以前的問題談清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-player-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_gu",
+          "value": "repairing"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_gu",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_gu",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_gu",
+          "value": -8
+        }
+      ],
+      "next": [
+        "z3-final-gu-delay-repair"
+      ]
+    },
+    {
+      "id": "z3-final-gu-delay-repair",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-gu-reply-node-repair"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-gu-reply-node-repair",
+      "label": "顧時安回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-gu-reply-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_gu",
+          "value": "repairing"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-lu-start",
+      "label": "陸沉川｜十二章後關係協商",
+      "type": "action",
+      "actions": [],
+      "next": [
+        "z3-final-lu-prompt"
+      ],
+      "event": "variable",
+      "target": "z3_affection_lu",
+      "conditions": [
+        {
+          "key": "z3_affection_lu",
+          "op": "gt",
+          "value": 9
+        },
+        {
+          "key": "z3_chapter_complete_lu",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "z3-final-lu-prompt",
+      "label": "陸沉川提出關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-question",
+          "value": true
+        }
+      ],
+      "next": [
+        "z3-final-lu-select"
+      ]
+    },
+    {
+      "id": "z3-final-lu-select",
+      "label": "玩家決定未來關係",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "z3-final-lu-choice-exclusive",
+        "z3-final-lu-choice-open",
+        "z3-final-lu-choice-friend",
+        "z3-final-lu-choice-pause",
+        "z3-final-lu-choice-repair"
+      ]
+    },
+    {
+      "id": "z3-final-lu-choice-exclusive",
+      "label": "我希望我們認真談談一對一交往。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-player-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "exclusive_requested"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 10
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_lu",
+          "value": "discussing_exclusive"
+        }
+      ],
+      "next": [
+        "z3-final-lu-delay-exclusive"
+      ]
+    },
+    {
+      "id": "z3-final-lu-delay-exclusive",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-lu-reply-node-exclusive"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-lu-reply-node-exclusive",
+      "label": "陸沉川回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-reply-exclusive",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_lu",
+          "value": "exclusive_requested"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-lu-choice-open",
+      "label": "我希望討論知情同意的非排他關係，但不要求你一定接受。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-player-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "nonexclusive_discussion"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 9
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -6
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_lu",
+          "value": "discussing_nonexclusive"
+        }
+      ],
+      "next": [
+        "z3-final-lu-delay-open"
+      ]
+    },
+    {
+      "id": "z3-final-lu-delay-open",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-lu-reply-node-open"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-lu-reply-node-open",
+      "label": "陸沉川回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-reply-open",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_lu",
+          "value": "nonexclusive_discussion"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-lu-choice-friend",
+      "label": "我想維持朋友關係，不繼續曖昧。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-player-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "friends"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 5
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -10
+        },
+        {
+          "type": "variable",
+          "key": "z3_exclusivity_lu",
+          "value": "not_applicable"
+        }
+      ],
+      "next": [
+        "z3-final-lu-delay-friend"
+      ]
+    },
+    {
+      "id": "z3-final-lu-delay-friend",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-lu-reply-node-friend"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-lu-reply-node-friend",
+      "label": "陸沉川回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-reply-friend",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_lu",
+          "value": "friends"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-lu-choice-pause",
+      "label": "我現在不想確定關係，先各自生活。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-player-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "on_pause"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 0
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -5
+        }
+      ],
+      "next": [
+        "z3-final-lu-delay-pause"
+      ]
+    },
+    {
+      "id": "z3-final-lu-delay-pause",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-lu-reply-node-pause"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-lu-reply-node-pause",
+      "label": "陸沉川回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-reply-pause",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_lu",
+          "value": "on_pause"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "z3-final-lu-choice-repair",
+      "label": "如果還有機會，我希望先把以前的問題談清楚。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-player-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_relation_lu",
+          "value": "repairing"
+        },
+        {
+          "type": "adjust",
+          "key": "z3_affection_lu",
+          "value": 3
+        },
+        {
+          "type": "adjust",
+          "key": "z3_trust_lu",
+          "value": 8
+        },
+        {
+          "type": "adjust",
+          "key": "z3_jealousy_lu",
+          "value": -8
+        }
+      ],
+      "next": [
+        "z3-final-lu-delay-repair"
+      ]
+    },
+    {
+      "id": "z3-final-lu-delay-repair",
+      "label": "閱讀與回覆停頓",
+      "type": "delay",
+      "actions": [],
+      "next": [
+        "z3-final-lu-reply-node-repair"
+      ],
+      "delayMs": 110000
+    },
+    {
+      "id": "z3-final-lu-reply-node-repair",
+      "label": "陸沉川回覆關係協商",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "z3-final-lu-reply-repair",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "z3_route_resolution_lu",
+          "value": "repairing"
         }
       ],
       "next": []
