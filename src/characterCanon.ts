@@ -3,7 +3,7 @@
  */
 export const CHARACTER_CANON = {
   "沈硯舟": { age: 24, identity: "大學生", connection: "活動認識", initialAffection: 10, temperament: "溫暖細心、真誠、有原則" },
-  "裴知聿": { age: 25, identity: "心理學研究所碩士生", connection: "女主角主動提出分手的前男友", initialAffection: 0, temperament: "克制敏銳、狡黠、希望復合但尊重選擇" },
+  "裴知聿": { age: 25, identity: "心理學研究所碩士生", connection: "女主角主動提出分手的前男友", initialAffection: 0, temperament: "陰濕重力系：沉重依戀、嫉妒多疑、怕被拋下，想復合，失態後須承擔後果" },
   "祁野": { age: 23, identity: "祁家次子、富家子弟", connection: "因緣際會認識", initialAffection: 0, temperament: "張揚直球、好勝、尊重界線" },
   "顧時安": { age: 26, identity: "建築設計師", connection: "因工作專案認識", initialAffection: 0, temperament: "溫暖細膩、沉穩有主見、重視專業原則" },
   "林安": { identity: "女主角的朋友", connection: "朋友圈", temperament: "有自己的生活與工作" },
@@ -36,7 +36,7 @@ export function canonViolations(character: string, reply: string): string[] {
 
 export function enforceCanon(character: string, reply: string): string {
   if (!canonViolations(character, reply).length) return reply;
-  if (character === "裴知聿") return "我不想替妳決定什麼。妳願意聊，我就好好聽。";
+  if (character === "裴知聿") return "對不起。我剛才太急了。\n我知道妳不一定想聽，可是我真的還放不下。\n……我不會替妳做決定。";
   if (character === "祁野") return "我有我的想法，但妳要怎麼選，是妳的自由。";
   if (character === "沈硯舟") return "我想先聽妳怎麼想，不會替妳做決定。";
   return "妳可以照自己的想法來，我尊重妳。";
