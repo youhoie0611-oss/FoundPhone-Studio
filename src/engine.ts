@@ -1,5 +1,6 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
+import { tickPeiAutonomy, stopPeiAutonomyOnPlayerReply } from "./brick3PeiAutonomy";
 import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply } from "./brick3RepeatInvites";
 import { tickBrick3DateSocial, chooseBrick3JealousyInquiry, dismissBrick3JealousyOnCustomReply } from "./brick3DateSocial";
 export function testCondition(c: Condition, s: Runtime): boolean {
@@ -258,7 +259,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickBrick3DateSocial(w, tickBrick3Invitations(w, next));
+  return tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next)));
 }
 export function advance(
   w: Work,
@@ -341,7 +342,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickBrick3DateSocial(w, tickBrick3Invitations(w, s));
+  return tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s)));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -385,6 +386,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     }),
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   } as Runtime;
+  stopPeiAutonomyOnPlayerReply(next, thread);
   dismissBrick3InvitationOnCustomReply(next, thread);
   dismissBrick3JealousyOnCustomReply(next, thread);
   return next;
