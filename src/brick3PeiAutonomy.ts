@@ -27,7 +27,7 @@ const rejection = /不想見|不想復合|不想複合|不要復合|不要複合
 const busy = /今天沒空|今天不行|今晚沒空|今晚不行|改天|最近很忙|要加班|沒時間|明天再說|週末再說/;
 const reconcile = /我願意復合|我願意複合|我們復合|我們複合|重新開始|再給你一次機會|再給妳一次機會|我還愛你|我還愛妳/;
 const hardStop = /不要再傳|不要聯絡|別再聯絡|封鎖|別找我|停止傳訊|不要再找|不要再聯絡|別再傳訊|別再傳|別聯絡我|不想再聯絡|不想跟你聯絡|不想跟妳聯絡/;
-const delay = (s: Runtime, p: PeiAutonomy) => {
+const delay = (s: Runtime) => {
   const intensity = level(s) + affection(s) / 2;
   return intensity >= 65 ? 120000 : intensity >= 35 ? 240000 : 480000;
 };
@@ -76,7 +76,7 @@ function begin(s: Runtime, p: PeiAutonomy, phase: PeiAutonomy["phase"]) {
   p.startedAt = now(s);
   p.step = 0;
   p.cycle++;
-  p.nextAt = now(s) + (phase === "waiting" ? delay(s, p) : phase === "busy" ? 180000 : 30000);
+  p.nextAt = now(s) + (phase === "waiting" ? delay(s) : phase === "busy" ? 180000 : 30000);
 }
 
 export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
@@ -114,7 +114,7 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
       p.phase = "waiting";
       p.step = 0;
       p.startedAt = now(s);
-      p.nextAt = now(s) + delay(s, p);
+      p.nextAt = now(s) + delay(s);
     }
   }
   if (count > p.lastSocialCount && p.phase !== "stopped" && p.phase !== "reconcile") {
