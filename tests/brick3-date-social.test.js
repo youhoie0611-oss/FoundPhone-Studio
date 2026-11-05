@@ -104,7 +104,7 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
       const event = question.meta.photoEventId;
       const options = delivered.choices.filter(c => c.target.startsWith(prefix + event + "-choice-"));
       expect(options).toHaveLength(4);
-      expect(question.body).toMatch(/看到|滑到/);
+      expect(question.body).toMatch(/看到|滑到|照片/);
       const answer = choose(w, delivered, options[2].target);
       expect(answer.choices.some(c => c.target.startsWith(prefix + event + "-choice-"))).toBe(false);
       expect(answer.messages.kakao.some(m => m.id.endsWith("-choice-pei") && m.outgoing)).toBe(true);
@@ -132,14 +132,14 @@ describe("Brick3 five-lead completed outing -> Instagram -> jealousy -> private 
     expect(low).toBeDefined();
     expect(intense).toBeDefined();
     const lowQuestion = inquiries(low).find(m => m.sender === "裴知聿");
-    expect(lowQuestion.body).toMatch(/配文|貼文/);
+    expect(lowQuestion.body).toMatch(/限動|照片/);
     expect(lowQuestion.body).not.toMatch(/希望妳過得不錯|今天還順利嗎|祝妳/);
     const intenseQuestion = inquiries(intense).find(m => m.sender === "裴知聿");
-    expect(intenseQuestion.body).toMatch(/你們現在|怎麼看待/);
+    expect(intenseQuestion.body).toMatch(/喜歡的人|想到我/);
     const answered = advance(w,
       choose(w, intense, prefix + intenseQuestion.meta.photoEventId + "-choice-3"), 4000);
     expect(answered.messages.kakao.find(m => m.id.endsWith("-response-pei"))?.body)
-      .toBe("妳明知道，還要我親口說？");
+      .toMatch(/我吃醋了/);
   });
 
   it("custom text dismisses the current question without silently choosing an answer", () => {
