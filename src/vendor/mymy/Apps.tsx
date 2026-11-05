@@ -98,7 +98,7 @@ export function MymyKakao(p: SkinProps) {
   useEffect(() => {
     if (!p.thread || p.creator) return;
     const unread = messages.filter((m) =>
-      !m.outgoing && !m.read && !p.readIds?.includes(m.id) && !acknowledged.current.has(m.id)
+      !m.outgoing && !p.readIds?.includes(m.id) && !acknowledged.current.has(m.id)
     );
     for (const item of unread) {
       acknowledged.current.add(item.id);
@@ -322,7 +322,7 @@ export function MymyKakao(p: SkinProps) {
                 const avatar = g.items.find((item) => !item.outgoing && item.avatar)?.avatar
                   ?? g.items.find((item) => item.avatar)?.avatar;
                 const unread = g.items.filter((item) =>
-                  !item.outgoing && !item.read && !p.readIds?.includes(item.id)
+                  !item.outgoing && !p.readIds?.includes(item.id)
                 ).length;
                 return (
                   <button
