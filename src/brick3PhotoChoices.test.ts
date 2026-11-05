@@ -5,8 +5,11 @@ const four = (id: string) => Array.from({ length: 4 }, (_, i) => ({
   target: `brick3-photo-${id}-choice-${i + 1}`,
   label: `回答 ${i + 1}`,
 }));
-const message = (event?: string, outgoing = false) =>
-  ({ outgoing, meta: event ? { photoEventId: event } : {} });
+const message = (event?: string, outgoing = false) => {
+  const meta: Record<string, string> = {};
+  if (event) meta.photoEventId = event;
+  return { outgoing, meta };
+};
 
 describe("Brick3 photo reply selection for one KKT thread", () => {
   it("keeps four real options when the NPC sends another ordinary message", () => {
