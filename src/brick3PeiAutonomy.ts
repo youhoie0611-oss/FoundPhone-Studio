@@ -104,6 +104,9 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
     }
   }
   if (count > p.lastSocialCount && p.phase !== "stopped") {
+    const activeSocial = Object.values(s.brick3DateSocial ?? {}).some(event =>
+      event.inquiries.pei && !event.inquiries.pei.answered);
+    if (activeSocial) { p.lastSocialCount = count; return s; }
     const lastContact = Number((s.ui?.lastFreeReply ?? {})[NAME] ?? -Infinity);
     if (now(s) - lastContact > 60000) begin(s, p, "jealous");
   }
@@ -137,7 +140,8 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
 export function stopPeiAutonomyOnPlayerReply(s: Runtime, thread: string) {
   if (thread !== NAME || !s.peiAutonomy) return;
   const p = s.peiAutonomy;
-  p.phase = "idle";
+  const reply = last(player(s));
+  p.phase = reply && hardStop.test(reply.body) ? "stopped" : "idle";
   p.nextAt = Infinity;
-  p.lastPlayerId = last(player(s))?.id ?? p.lastPlayerId;
+  p.lastPlayerId = reply?.id ?? p.lastPlayerId;
 }
