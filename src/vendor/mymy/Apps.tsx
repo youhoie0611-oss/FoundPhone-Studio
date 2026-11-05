@@ -94,8 +94,11 @@ export function MymyKakao(p: SkinProps) {
     scroll = useRef<HTMLDivElement>(null);
   // Keep established friends accessible even before their first story message.
   const knownFriends = ["沈硯舟", "裴知聿", "祁野", "林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
-  const inbox = p.appId === "kakao" && !p.creator
-    ? [...list, ...knownFriends.filter((name) => !list.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
+  // The KKT skin can be mounted through different app IDs in legacy saves.
+  // Always display the canonical cast and exclude retired demo threads.
+  const canonicalThreads = list.filter((group) => !/^(測試會話|测试会话|測試联系人|测试联系人)$/.test(group.title));
+  const inbox = !p.creator
+    ? [...canonicalThreads, ...knownFriends.filter((name) => !canonicalThreads.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
     : list;
   const [revealed, setRevealed] = useState<Record<string, number>>({});
   const [awaitingReply, setAwaitingReply] = useState<{ thread: string; afterId: string } | null>(null);
