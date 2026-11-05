@@ -47,4 +47,4 @@
 
 ## 目前實作邊界
 
-`docs/brick3-photo-events-v1.json` 自述狀態為 `asset_manifest_and_story_spec_not_runtime_wired`。目前新增或修正的配置皆為**編劇與素材清單**，不是已運行的 KKT／相簿功能。正式接入時才調整引擎或主故事，並通過故事校驗、事件分支測試與建置。
+目前 `photo_night_view`、`photo_weekend_sport` 已透過 `scripts/brick3-photo-events.mjs` 在建置時編入 KKT 原生事件及四選項劇情。WebP 仍需玩家手動上傳並完成 GitHub Pages 重新建置，實際遊戲事件發生後才能顯示；照片檔存在本身不會強制觸發劇情。新增照片事件須在配置中新增角色行程對應的有效觸發錨點，不能只上傳圖片就假定玩家參與。
