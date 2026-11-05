@@ -15,6 +15,7 @@ export type Brick3InviteProgress = {
   followUpAtMs?: number;
   followUpSent?: boolean;
   followUpVariant?: number;
+  detailRequests?: number;
   completed?: boolean;
 };
 
@@ -116,7 +117,8 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
       continue;
     }
     if (p.phase === "reply_pending" && p.responseAtMs !== undefined && now(s) >= p.responseAtMs) {
-      message(s, a, "response-" + p.attempts + "-" + p.responseMode, p.responseText ?? "知道了。");
+      const detailSuffix = p.responseMode === "details" ? "-ask-" + (p.detailRequests ?? 0) : "";
+      message(s, a, "response-" + p.attempts + "-" + p.responseMode + detailSuffix, p.responseText ?? "知道了。");
       const mode = p.responseMode;
       p.responseAtMs = undefined;
       if (mode === "accept") {
@@ -124,7 +126,7 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         p.travelAtMs = now(s) + TRAVEL_MS;
       } else if (mode === "details") {
         p.phase = "invited";
-        message(s, a, "details-followup-" + p.attempts, "所以，妳想一起去嗎？", false, a.id);
+        message(s, a, "details-followup-" + p.attempts + "-" + (p.detailRequests ?? 0), "所以，妳想一起去嗎？", false, a.id);
         offerOptions(s, a, false);
       } else if (mode === "arrival_yes") {
         p.phase = "completed";
@@ -186,6 +188,7 @@ export function chooseBrick3Invitation(w: Work, previous: Runtime, target: strin
   p.responseMode = atDoor
     ? choice === 1 ? "arrival_yes" : "arrival_no"
     : choice === 1 ? "accept" : choice === 3 ? "details" : "decline";
+  if (p.responseMode === "details") p.detailRequests = (p.detailRequests ?? 0) + 1;
   return s;
 }
 
