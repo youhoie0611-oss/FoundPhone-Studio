@@ -21,7 +21,11 @@
     "assetMissing": "show_text_only_and_log_missing_asset",
     "characterConsistency": "use each character project reference; never swap appearance",
     "visibility": "private photos cannot be seen by other NPCs without authorized sharing",
-    "imageGeneration": "external generation in separate character chats, manually upload named assets"
+    "imageGeneration": "external generation in separate character chats, manually upload named assets",
+    "qiYePhotoWorkflow": "docs/brick3-qi-ye-photo-workflow-v1.md",
+    "qiYeMediaFolder": "public/story-photos/qi_ye/",
+    "qiYeManualAssetUpload": true,
+    "qiYeVisibilityAndContinuity": "照片需保留來源、拍攝者、事件與原圖；公開貼文與私訊可見範圍獨立；玩家選項不預設感情"
   },
   "events": [
     {
@@ -607,29 +611,35 @@
         "requiresNpcSchedule": true,
         "requiresPastContinuity": true,
         "requiresPlayerAttendance": false,
-        "requiresPlayerConsentForIntimacy": true
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresEstablishedAcquaintance": true,
+        "requiresNighttimeOpportunity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
       },
-      "message": "路過這裡。夜景還行。",
+      "message": "路過這裡。\n夜景還行。",
       "choices": [
         {
           "id": "night_view_choice_1",
           "text": "這裡是哪？",
-          "branches": "contextual_response"
+          "branches": "night_view_inquiry"
         },
         {
           "id": "night_view_choice_2",
           "text": "你拍照居然還不錯。",
-          "branches": "contextual_response"
+          "branches": "night_view_tease"
         },
         {
           "id": "night_view_choice_3",
-          "text": "你現在在外面？",
-          "branches": "contextual_response"
+          "text": "這麼晚還在外面？注意安全。",
+          "branches": "night_view_care"
         },
         {
           "id": "night_view_choice_4",
-          "text": "早點回家。",
-          "branches": "contextual_response"
+          "text": "嗯，還行。",
+          "branches": "night_view_cool"
         }
       ],
       "images": [
@@ -639,9 +649,113 @@
           "path": "public/story-photos/qi_ye/qi_ye_night_drive_chat_01.webp",
           "usage": "chat_attachment",
           "unlock": {
-            "requiresMessageDelivered": true
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
           },
-          "visualPrompt": "城市夜景與停車場邊緣，隨手手機照片，無車牌特寫"
+          "visualPrompt": "使用已確認的祁野視覺設定與日常拍攝習慣；祁野本人用手機在夜晚隨手拍下的城市燈光與遠方街景，微微歪斜、自然感光與少許噪點，街景是主要畫面；不需露臉、不展示名車名錶、避免可辨識車牌，不可使用攝影棚光線。",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "branchResponses": {
+        "night_view_inquiry": {
+          "intent": "normal_question",
+          "npcMessages": [
+            "剛路過的地方。",
+            "我沒看路名，等我查到再告訴妳。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "night_view_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "qi_ye_night_view_location_check"
+        },
+        "night_view_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "妳這句到底是在誇還是在損？",
+            "我拍照本來就不差。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "night_view_choice_2"
+          },
+          "relationshipEffect": "no_forced_affection",
+          "followUp": "optional_photography_topic"
+        },
+        "night_view_care": {
+          "intent": "care",
+          "npcMessages": [
+            "嗯，還沒回。",
+            "等一下就走，不會待太久。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "night_view_choice_3"
+          },
+          "relationshipEffect": "no_assumed_intimacy",
+          "followUp": "qi_ye_night_view_safe_arrival_if_really_home"
+        },
+        "night_view_cool": {
+          "intent": "cool",
+          "npcMessages": [
+            "行。",
+            "我先走了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "night_view_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [],
+        "source": "own_phone_pov",
+        "possibleScene": "夜間城市景物或停車場外側，無虛構同行 NPC，不顯示可辨識現實車牌",
+        "exactTime": "determined_by_npc_schedule_at_runtime",
+        "exactLocation": "determined_by_actual_story_event; not predeclared",
+        "mood": "neutral_or_casual_when_event_eligible",
+        "outfitContinuity": "only_if_person_or_reflection_is_visible",
+        "states": [
+          "not_captured",
+          "captured",
+          "share_selected",
+          "delivered",
+          "read"
+        ],
+        "neverRegenerateExistingShot": true
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "private_chat_attachment",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "qi_ye_night_view_location_check",
+          "requiresChoiceId": "night_view_choice_1",
+          "optional": true,
+          "description": "僅在祁野查到地點後才回覆；不能事先捏造地點"
+        },
+        {
+          "eventId": "qi_ye_night_view_safe_arrival_if_really_home",
+          "requiresChoiceId": "night_view_choice_3",
+          "optional": true,
+          "requiresNpcActuallyHome": true,
+          "description": "若當晚祁野實際回到家且有分享動機，可再補一句到家；不強制回報"
+        },
+        {
+          "eventId": "optional_photography_topic",
+          "requiresChoiceId": "night_view_choice_2",
+          "optional": true,
+          "description": "祁野願意且不忙時才延伸攝影話題；不自動進入曖昧"
         }
       ]
     },
