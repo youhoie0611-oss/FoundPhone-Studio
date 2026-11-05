@@ -92,6 +92,11 @@ export function MymyKakao(p: SkinProps) {
   const list = grouped(p.items),
     messages = grouped(p.items).find((g) => g.title === p.thread)?.items ?? [],
     scroll = useRef<HTMLDivElement>(null);
+  // Keep established friends accessible even before their first story message.
+  const knownFriends = ["林安", "周予晴", "陳以衡", "許棠", "顧時安", "下班後五人組"];
+  const inbox = p.appId === "kakao" && !p.creator
+    ? [...list, ...knownFriends.filter((name) => !list.some((g) => g.title === name)).map((title) => ({ title, items: [] as Item[] }))]
+    : list;
   const [revealed, setRevealed] = useState<Record<string, number>>({});
   // A thread is read when opened; never mark other conversations or outgoing messages.
   const acknowledged = useRef(new Set<string>());
@@ -312,12 +317,12 @@ export function MymyKakao(p: SkinProps) {
           </div>
           <div className="kzkb">
             <div className="kzksec">
-              {tab === "好友" ? "好友" : "全部聊天"} {list.length}
+              {tab === "好友" ? "好友" : "全部聊天"} {inbox.length}
             </div>
-            {list
+            {inbox
               .filter((g) => g.title.includes(query.trim()))
               .map((g) => {
-                const last = g.items.at(-1)!;
+                const last = g.items.at(-1);
                 // An outgoing reply must not replace the contact's portrait.
                 const avatar = g.items.find((item) => !item.outgoing && item.avatar)?.avatar
                   ?? g.items.find((item) => item.avatar)?.avatar;
@@ -333,10 +338,10 @@ export function MymyKakao(p: SkinProps) {
                     <Avatar name={g.title} src={chatAvatar(g.title, avatar)} />
                     <span className="kzkn">
                       <b>{g.title}</b>
-                      <small>{tab === "好友" ? last.sender : last.body}</small>
+                      <small>{last ? (tab === "好友" ? last.sender : last.body) : "尚無訊息"}</small>
                     </span>
                     <span className="kzkmt">
-                      {last.time.slice(-5)}
+                      {last?.time.slice(-5) ?? ""}
                       {unread > 0 && (
                         <i className="kzkbd" aria-label={`未讀 ${unread} 則訊息`}>{unread > 99 ? "99+" : unread}</i>
                       )}
@@ -344,7 +349,7 @@ export function MymyKakao(p: SkinProps) {
                   </button>
                 );
               })}
-            {!list.length && <Blank />}
+            {!inbox.length && <Blank />}
           </div>
           <nav className="kzknv">
             {[Users, MessageCircle, Compass, Grid, MoreHorizontal].map(
