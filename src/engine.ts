@@ -130,7 +130,7 @@ function runQueue(
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
     const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
     const immediatePhotoResponse = n.id.startsWith("brick3-photo-")
-      && (/-option-\\d+-response$/.test(n.id) || /-(arrival-notify|visit-arrive|hand-question)$/.test(n.id) || n.id.endsWith("-reply-arrive"));
+      && (/-option-\d+-response$/.test(n.id) || /-(arrival-notify|visit-arrive|hand-question)$/.test(n.id) || n.id.endsWith("-reply-arrive"));
     const blocked = !immediatePhotoResponse
       ? incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
