@@ -52,9 +52,9 @@ const lines: Record<"waiting" | "busy" | "rejected" | "reconcile" | "jealous", s
     ["我真的不想就這樣結束", "妳能不能再跟我說一句話", "我還在等"],
   ],
   jealous: [
-    ["我看到照片了", "妳跟他一起出去？", "妳是不是喜歡他了"],
-    ["他是誰", "妳為什麼跟他那麼親近", "妳是不是已經不要我了"],
-    ["我真的很嫉妒", "妳能不能理理我", "我不想就這樣被妳忘掉"],
+    ["我看到照片了", "妳跟他出去了？", "我只是好奇"],
+    ["玩得開心嗎", "他對妳很好？", "我又沒說妳不能跟他出去"],
+    ["所以他到底是誰", "妳怎麼能這麼快就把我換掉", "……妳是不是已經把我忘了"],
   ],
 };
 
@@ -119,7 +119,7 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
   }
   if (count > p.lastSocialCount && p.phase !== "stopped" && p.phase !== "reconcile") {
     const activeSocial = Object.values(s.brick3DateSocial ?? {}).some(event =>
-      event.inquiries.pei && !event.inquiries.pei.answered);
+      event.inquiries.pei?.sent);
     if (activeSocial) { p.lastSocialCount = count; return s; }
     const lastContact = Number((s.ui?.lastFreeReply ?? {})[NAME] ?? -Infinity);
     if (now(s) - lastContact > 60000) begin(s, p, "jealous");
