@@ -1,7 +1,7 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
 import { tickPeiAutonomy, stopPeiAutonomyOnPlayerReply } from "./brick3PeiAutonomy";
-import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply } from "./brick3RepeatInvites";
+import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply, respondToBrick3InvitationText } from "./brick3RepeatInvites";
 import { tickBrick3DateSocial, chooseBrick3JealousyInquiry, dismissBrick3JealousyOnCustomReply } from "./brick3DateSocial";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
@@ -396,7 +396,12 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   } satisfies Runtime;
   stopPeiAutonomyOnPlayerReply(next, thread);
-  dismissBrick3InvitationOnCustomReply(next, thread);
+  const handledInvitation = appId === "kakao" && respondToBrick3InvitationText(next, thread, raw);
+  if (handledInvitation) {
+    next.ui = { ...next.ui, scriptedInvitationReply: { ...((next.ui?.scriptedInvitationReply ?? {}) as Record<string, string>), [thread]: message.id } };
+  } else {
+    dismissBrick3InvitationOnCustomReply(next, thread);
+  }
   dismissBrick3JealousyOnCustomReply(next, thread);
   return next;
 }
