@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "title": "磚3 動態照片事件配置",
-  "status": "asset_manifest_and_story_spec_not_runtime_wired",
+  "status": "runtime_wired_for_active_story_pending_manual_photo_uploads",
   "branch": "feature/character-autonomy-v3",
   "imagesFormat": "webp",
   "assetRoot": "public/story-photos",
@@ -450,7 +450,7 @@
         },
         {
           "id": "dinner_at_home_choice_2",
-          "text": "你還記得我的口味？",
+          "text": "可以牽你的手嗎？",
           "branches": "contextual_response"
         },
         {
@@ -987,5 +987,15 @@
       "noAutomaticRomanceOrIntimacy": true,
       "noPermanentCharacterExitOnRejection": true
     }
+  },
+  "runtimeIntegration": {
+    "storyId": "between-the-lines-b-demo",
+    "compiler": "scripts/story.mjs",
+    "adapter": "scripts/brick3-photo-events.mjs",
+    "mediaValidation": "src/schema.ts",
+    "assetAvailability": "src/storyPhotoAssets.ts",
+    "kktChoiceUI": "src/vendor/mymy/Apps.tsx",
+    "albumUI": "src/skins/SystemSkins.tsx",
+    "note": "本配置於編譯時轉換為原生劇情節點；照片由玩家上傳，重新建置部署後按遊戲事件條件顯示。陸沉川在主劇情正式建立聯絡前不會出現私人聊天。"
   }
 }
