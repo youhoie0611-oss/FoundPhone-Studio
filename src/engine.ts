@@ -358,9 +358,18 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     outgoing: true,
     time: `${s.date ?? "2026-11-03"} ${s.time}`,
   });
+  const context = (s.messages[appId] ?? []).filter((item) => item.title === thread && !item.outgoing).slice(-5).map((item) => item.body).join(" ");
+  const isInvitation = /邀請|聚餐|聚會|約會|吃飯|見面|市集|展覽|週五|週末|活動/.test(context);
+  const refusal = /不去|不能去|沒空|不方便|不想|不要|拒絕|改天|下次|先不/.test(raw);
+  const acceptance = /^(好|好啊|好呀|可以|我去|我會去|算我一個|有空|願意)[！!。\\s]*$/.test(raw.trim());
+  const detailRequest = /幾點|時間|在哪|哪裡|地點|地址|什麼時候|哪天/.test(raw);
+  const decision = isInvitation && (refusal || acceptance || detailRequest)
+    ? { thread, event: "invitation", status: refusal ? "declined" : acceptance ? "interested" : "details_requested", text: raw, at: s.elapsedMs ?? 0 }
+    : null;
+  const priorDecisions = Array.isArray(s.ui?.player?.storyDecisions) ? s.ui.player.storyDecisions as typeof decision[] : [];
   const next = {
     ...s,
-    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw] }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
+    ui: { ...s.ui, player: { ...s.ui?.player, customReplies: [...history, raw], storyDecisions: decision ? [...priorDecisions, decision] : priorDecisions }, lastFreeReply: { ...((s.ui?.lastFreeReply ?? {}) as Record<string, string>), [thread]: String(s.elapsedMs ?? 0) } },
     messages: {
       ...s.messages,
       [appId]: [...(s.messages[appId] ?? []), message],
