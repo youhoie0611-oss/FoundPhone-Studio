@@ -1,6 +1,7 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
 import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply } from "./brick3RepeatInvites";
+import { tickBrick3DateSocial, chooseBrick3JealousyInquiry, dismissBrick3JealousyOnCustomReply } from "./brick3DateSocial";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
@@ -257,7 +258,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickBrick3Invitations(w, next);
+  return tickBrick3DateSocial(w, tickBrick3Invitations(w, next));
 }
 export function advance(
   w: Work,
@@ -340,7 +341,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickBrick3Invitations(w, s);
+  return tickBrick3DateSocial(w, tickBrick3Invitations(w, s));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -385,10 +386,13 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   } as Runtime;
   dismissBrick3InvitationOnCustomReply(next, thread);
+  dismissBrick3JealousyOnCustomReply(next, thread);
   return next;
 }
 
 export function choose(w: Work, s: Runtime, id: string) {
+  const social = chooseBrick3JealousyInquiry(w, s, id);
+  if (social !== null) return social;
   const special = chooseBrick3Invitation(w, s, id);
   if (special !== null) return special;
   const node = w.nodes.find((n) => n.id === id);
