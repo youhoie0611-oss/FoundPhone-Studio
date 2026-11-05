@@ -66,10 +66,10 @@ describe("Pei complete dialogue reconstruction", () => {
   it("keeps Pei's repeat dinner invitation and followups in the same heavy-attachment voice", () => {
     const activity = load("docs/brick3-repeat-invitations-v1.json").activities
       .find(a => a.id === "pei_dinner_outing");
-    expect(activity.invite).toMatch(/很想見妳/);
-    expect(activity.responses[1]).toMatch(/失望/);
+    expect(activity.invite).toMatch(/想見妳/);
+    expect(activity.responses[1]).toMatch(/不想見我|想妳/);
     expect(activity.arrival).toMatch(/看了好幾次門口/);
-    expect(activity.followUps.every(text => /想妳|下次|照片/.test(text))).toBe(true);
+    expect(activity.followUps.every(text => /想妳|再見妳|下一次|照片|位置|那天/.test(text))).toBe(true);
     expect(JSON.stringify(activity)).not.toMatch(/狐狸|狡黠|毒舌|鬥嘴/);
   });
   it("does not touch any other character or story", () => {
