@@ -156,6 +156,7 @@ export type Runtime = {
   choices: { label: string; target: string }[];
   messages: Record<string, Item[]>;
   brick3Invites?: Record<string, import("./brick3RepeatInvites").Brick3InviteProgress>;
+  brick3DateSocial?: Record<string, import("./brick3DateSocial").Brick3DateSocialProgress>;
   time: string;
   trace: string[];
 };
