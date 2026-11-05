@@ -1,7 +1,7 @@
 name: Validate and deploy Pages
 on:
   push:
-    branches: [main, feature/ambiguity-b-prototype, feature/character-autonomy-v3]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,30 +27,6 @@ jobs:
       - run: npm run story:validate
       - run: npm run story:test
       - run: npm run build
-      # Build the development branch into an isolated /preview/ directory.
-      # Production remains the main-branch build at the site root.
-      - name: Checkout development preview
-        uses: actions/checkout@v4
-        with:
-          ref: develop-zhuan2
-          path: preview-source
-      - name: Install preview dependencies
-        run: npm ci
-        working-directory: preview-source
-      - name: Validate preview
-        run: |
-          npm run typecheck
-          npm run lint
-          npm test
-          npm run story:validate
-          npm run story:test
-        working-directory: preview-source
-      - name: Build isolated development preview
-        run: |
-          npm run build
-          mkdir -p ../dist/preview
-          cp -a dist/. ../dist/preview/
-        working-directory: preview-source
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
