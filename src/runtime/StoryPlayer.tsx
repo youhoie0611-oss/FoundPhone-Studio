@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { Phone } from "../Phone";
 import { validateWork, type Work } from "../schema";
+import { extendBrick3PhotoWork } from "../brick3Photos";
 import "../styles.css";
 import "./player.css";
 function StoryPlayer() {
@@ -22,7 +23,7 @@ function StoryPlayer() {
         return r.json();
       })
       .then((x) => {
-        const w = validateWork(x);
+        const w = extendBrick3PhotoWork(validateWork(x));
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";
         setWork(w);
