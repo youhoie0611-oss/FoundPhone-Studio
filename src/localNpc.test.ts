@@ -36,4 +36,17 @@ describe("free NPC chat", () => {
   it("treats a question containing event keywords as a question", () => {
     expect(classifyMessage("活動是幾點開始？")).toBe("question");
   });
+  it.each([
+    ["周予晴", "週末一起逛市集嗎？", "這次我不去", /先不約/],
+    ["陳以衡", "我先確認餐廳訂位", "餐廳在哪裡？", /餐廳|地址/],
+    ["許棠", "等我排班確定再約", "哪天有空？", /班表|休假/],
+    ["下班後五人組", "週末要聚餐嗎？", "我不能去", /人數/],
+    ["顧時安", "提案被退回來了", "發生什麼事？", /提案|修改/],
+  ])("uses %s's established scene to answer a meaningful player choice", (thread, body, message, expected) => {
+    const reply = localNpcReply({
+      ...request(thread, message),
+      history: [{ outgoing: false, body }],
+    }).reply;
+    expect(reply).toMatch(expected);
+  });
 });
