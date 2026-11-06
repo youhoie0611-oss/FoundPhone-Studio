@@ -127,9 +127,14 @@ export function observeV8PeiThirdPartyReply(s: Runtime, raw: string) {
   const v = ensureV8(s);
   for (const lead of V8_LEADS) {
     if (lead === NAME || !["dating", "secret"].includes(v.bonds[lead].status)) continue;
-    const escaped = lead.replace(/[.*+?^${}()|[\]\\]/g, "\\  // Explicit consent to speak is not consent to date or kiss.");
-    const namedRelationship = new RegExp(`(?:我(?:和|跟)${escaped}(?:在交往|交往中|是情侶|在一起)|${escaped}是我(?:的)?(?:男朋友|男友|戀人))`);
-    if (namedRelationship.test(raw))
+    const normalized = raw.replace(/\\s+/g, "");
+    const explicitPartner = normalized.includes(`我和${lead}在交往`) ||
+      normalized.includes(`我跟${lead}交往中`) ||
+      normalized.includes(`我跟${lead}在一起`) ||
+      normalized.includes(`${lead}是我男朋友`) ||
+      normalized.includes(`${lead}是我的男友`) ||
+      normalized.includes(`${lead}是我的戀人`);
+    if (explicitPartner)
       v.bonds[NAME].knows[lead] = { status: v.bonds[lead].status, source: "player-message", at: now(s) };
   }
   // Explicit consent to speak is not consent to date or kiss.
