@@ -11,6 +11,17 @@ import { tickPeiAutonomy, stopPeiAutonomyOnPlayerReply } from "./brick3PeiAutono
 import { tickBrick3Invitations, chooseBrick3Invitation, dismissBrick3InvitationOnCustomReply, respondToBrick3InvitationText } from "./brick3RepeatInvites";
 import { tickBrick3DateSocial, chooseBrick3JealousyInquiry, dismissBrick3JealousyOnCustomReply } from "./brick3DateSocial";
 export function testCondition(c: Condition, s: Runtime): boolean {
+  // Scripted Pei photos also respect free-text no-contact instructions.
+  // These personal boundaries override any saved photo opt-in.
+  if (c.key === "pei_v4_contact_active") {
+    const stopped = s.peiAutonomy?.phase === "stopped" ||
+      (s.messages.kakao ?? []).some(m =>
+        m.title === "裴知聿" && m.outgoing &&
+        /不要再傳|別再傳|不要聯絡|別再聯絡|不要再找|別找我|停止傳訊|別聯絡我|不想再聯絡/.test(m.body));
+    if (c.op === "eq") return !stopped === c.value;
+    if (c.op === "neq") return !stopped !== c.value;
+    return false;
+  }
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
   const lists: Record<string, string[]> = {

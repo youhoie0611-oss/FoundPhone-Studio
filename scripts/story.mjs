@@ -4,6 +4,7 @@ import { injectBrick3V7Lu } from "./brick3-v7-lu.mjs";
 import { injectBrick3PhotoEvents } from "./brick3-photo-events.mjs";
 import { injectBrick3Affinity } from "./brick3-affinity.mjs";
 import { injectBrick3PeiDialogue } from "./brick3-pei-dialogue.mjs";
+import { injectBrick3PeiPhotoV4 } from "./brick3-pei-photo-v4.mjs";
 const [
   mode = "validate",
   file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
@@ -93,6 +94,8 @@ try {
     injectBrick3V7Lu(raw);
     injectBrick3PeiDialogue(raw);
     injectBrick3PhotoEvents(raw, manifest);
+    const peiPhotos = JSON.parse(await readFile("docs/brick3-pei-zhiyu-photo-events-v4.json", "utf8"));
+    injectBrick3PeiPhotoV4(raw, peiPhotos);
     injectBrick3Affinity(raw);
   }
   const { compileStory, storySchema } = await server.ssrLoadModule(
