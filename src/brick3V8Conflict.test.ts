@@ -17,6 +17,7 @@ function pair() {
     makeItem({ id: "p", title: "裴知聿", sender: "裴知聿", body: "寶貝，妳還在嗎" }),
     makeItem({ id: "s", title: "沈硯舟", sender: "沈硯舟", body: "寶貝，我剛剛看到妳的照片" }),
   ];
+  s.messages.instagram = [makeItem({ id: "public-shen", title: "沈硯舟", sender: "沈硯舟", body: "寶貝，今天拍得很好" })];
   return s;
 }
 describe("V8 shura requires source evidence", () => {
