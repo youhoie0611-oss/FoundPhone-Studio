@@ -57,12 +57,11 @@ describe("Brick3 photo event integration", () => {
       expect(event.gallery.entersPlayerAlbum).toBe(false);
       expect(event.images[0].uploadStatus).toBe("pending_player_manual_upload");
     }
+    // Lu is intentionally absent until the V7 introduction is injected.
+    // Photo integration must not create his chat or reveal his photos early.
     const story = makeStory();
-    for (const event of lu) {
-      const wait = story.events.find(n => n.id === `brick3-photo-${event.eventId}-wait`);
-      expect(wait?.conditions).toContainEqual({ key: "lu_private_contact", op: "eq", value: true });
-      expect(story.events.some(n => n.id === `brick3-photo-${event.eventId}-followup-wait`)).toBe(true);
-    }
+    expect(story.chats.some(c => c.title === "陸沉川")).toBe(false);
+    expect(story.events.some(n => n.id.startsWith("brick3-photo-photo_lu_"))).toBe(false);
   });
 
   it("does not mutate other stories and is safe to invoke twice", () => {
