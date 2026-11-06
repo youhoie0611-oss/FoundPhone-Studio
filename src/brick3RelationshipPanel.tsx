@@ -1,4 +1,4 @@
-import { V8_LEADS, discloseV8Relationship, undoV8Decision } from "./brick3Relationships";
+import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation } from "./brick3Relationships";
 import type { Runtime } from "./schema";
 import "./brick3RelationshipPanel.css";
 
@@ -45,6 +45,11 @@ export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
             {c?.status === "pending" && <small>有一則告白待回覆（14 個遊戲日內）</small>}
             {!!bond?.discoveries.length && <small>已發現線索：{bond.discoveries.length} 則</small>}
             {bond?.psychologicalObservation && <p>{bond.psychologicalObservation}</p>}
+            {bond && ["dating", "secret"].includes(bond.status) && (
+              <button type="button" onClick={() => action(next => requestV8Negotiation(next, lead))}>
+                討論關係界線
+              </button>
+            )}
             {canDisclose && (
               <button type="button" onClick={() => action(next => discloseV8Relationship(next, lead))}>
                 向{lead}坦白其他戀愛關係
