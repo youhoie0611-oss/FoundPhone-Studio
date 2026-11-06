@@ -38,6 +38,7 @@ describe("V8 relationship persistence", () => {
     expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
     const next = chooseV8(work, s, "brick3-v8:裴知聿:secret")!;
     expect(next.brick3V8?.bonds["裴知聿"].status).toBe("secret");
+    expect(next.messages.kakao?.some(m => m.title === "裴知聿" && m.outgoing && m.body.includes("秘密"))).toBe(true);
     expect(next.brick3V8?.bonds["沈硯舟"].status).toBe("dating");
     expect(next.brick3V8?.events).toContain("secret-started:裴知聿");
   });
@@ -54,6 +55,7 @@ describe("V8 relationship persistence", () => {
     offerV8Confession(work, s, "顧時安");
     const later = chooseV8(work, s, "brick3-v8:顧時安:later")!;
     expect(later.brick3V8?.confessions["顧時安"]?.status).toBe("pending");
+    expect(later.messages.kakao?.some(m => m.title === "顧時安" && m.outgoing && m.body.includes("時間"))).toBe(true);
     expect(later.choices.some(x => x.target === "brick3-v8:顧時安:reject")).toBe(true);
     later.elapsedMs = 15 * 86400000;
     tickV8(work, later);
