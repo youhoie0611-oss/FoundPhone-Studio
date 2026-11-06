@@ -1,0 +1,1014 @@
+{
+  "schemaVersion": "1.0.0",
+  "batch": "v5",
+  "title": "《磚3》裴知聿 第二批十張照片",
+  "branch": "feature/character-autonomy-v3",
+  "character": {
+    "id": "pei_zhiyu",
+    "name": "裴知聿",
+    "age": 25,
+    "occupation": "心理學研究所碩士生",
+    "relationship": "玩家前男友",
+    "hiddenInitialAffection": 70,
+    "photoReference": "latest 187cm 72kg black turtleneck reference"
+  },
+  "status": "photos_pending_player_upload",
+  "runtimeIntegration": "not_yet_wired",
+  "assetRoot": "public/story-photos/pei_zhiyu/",
+  "rules": {
+    "npcShotAllImages": true,
+    "photosUploadedByPlayer": true,
+    "photosSavedWithStableIds": true,
+    "doNotAutocopyToPlayerGallery": true,
+    "neverForceRomance": true,
+    "allowOfflineDelivery": true,
+    "requireExplicitConsentForL2L3": true,
+    "stopSuggestivePhotosOnBoundary": true
+  },
+  "photos": [
+    {
+      "photoId": "pei_zhiyu_v5_01",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_sofa_pause_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_sofa_pause_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_sofa_pause_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "pei-living-room",
+      "intimacyLevel": "L1",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_02",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_library_notes_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_library_notes_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_library_notes_01.webp",
+      "captureMethod": "fixed-phone-self-timer",
+      "photographerId": "pei_zhiyu",
+      "locationId": "campus-library",
+      "intimacyLevel": "L0",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_03",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_headphone_break_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_headphone_break_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_headphone_break_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "campus-cafe",
+      "intimacyLevel": "L1",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_04",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_late_draft_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_late_draft_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_late_draft_01.webp",
+      "captureMethod": "rear-camera-handheld",
+      "photographerId": "pei_zhiyu",
+      "locationId": "pei-study",
+      "intimacyLevel": "L0",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_05",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_cold_night_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_cold_night_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_cold_night_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "street-on-way-home",
+      "intimacyLevel": "L1",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_06",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_stray_cat_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_stray_cat_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_stray_cat_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "classmate-living-room",
+      "intimacyLevel": "L0",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_07",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_cooking_trial_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_cooking_trial_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_cooking_trial_01.webp",
+      "captureMethod": "fixed-phone-self-timer",
+      "photographerId": "pei_zhiyu",
+      "locationId": "pei-kitchen",
+      "intimacyLevel": "L1",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_08",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_city_window_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_city_window_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_city_window_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "pei-home-window",
+      "intimacyLevel": "L1",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_09",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_post_gym_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_post_gym_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_post_gym_01.webp",
+      "captureMethod": "mirror-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "gym-private-mirror",
+      "intimacyLevel": "L2",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    },
+    {
+      "photoId": "pei_zhiyu_v5_10",
+      "characterId": "pei_zhiyu",
+      "filename": "pei_zhiyu_towel_after_shower_01.webp",
+      "repositoryPath": "public/story-photos/pei_zhiyu/pei_zhiyu_towel_after_shower_01.webp",
+      "webPath": "./story-photos/pei_zhiyu/pei_zhiyu_towel_after_shower_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "photographerId": "pei_zhiyu",
+      "locationId": "pei-bathroom",
+      "intimacyLevel": "L3",
+      "status": "pending_player_manual_upload",
+      "verified": false
+    }
+  ],
+  "events": [
+    {
+      "eventId": "pei_zhiyu_photo_v5_01",
+      "title": "沙發休息｜終於坐下",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L1",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_sofa_pause_01.webp",
+      "photoId": "pei_zhiyu_v5_01",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "pei-living-room",
+      "timeWindow": "21:00-23:59",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 3,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "終於坐下了。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_01"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "今天走太多路，腿有點酸。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_01_choice_1",
+          "playerText": "你今天去哪裡了？",
+          "peiReply": "趕著交一份資料，跑了好幾趟。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_01_choice_2",
+          "playerText": "這張不像你平常會傳的。",
+          "peiReply": "偶爾換個角度。不喜歡的話我就不傳這種。",
+          "intent": "careful",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_01_choice_3",
+          "playerText": "看起來快睡著了。",
+          "peiReply": "現在是真的很睏。妳倒是看得出來。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_01_choice_4",
+          "playerText": "你先休息吧。",
+          "peiReply": "嗯，妳也早點休息。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_02",
+      "title": "圖書館｜借閱與筆記",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L0",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_library_notes_01.webp",
+      "photoId": "pei_zhiyu_v5_02",
+      "captureMethod": "fixed-phone-self-timer",
+      "locationId": "campus-library",
+      "timeWindow": "09:00-17:30",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "圖書館今天人挺多。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_02"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "找到我要的書，算沒白跑。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_02_choice_1",
+          "playerText": "你在讀什麼？",
+          "peiReply": "研究方法相關的資料，有幾本比較難找。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_02_choice_2",
+          "playerText": "這張誰幫你拍的？",
+          "peiReply": "手機靠著書立倒數拍的。沒有找人幫忙。",
+          "intent": "provenance",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_02_choice_3",
+          "playerText": "這麼專心？",
+          "peiReply": "那是拍下來的那一秒。後來又走神了。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_02_choice_4",
+          "playerText": "你先看書。",
+          "peiReply": "好。等我整理完再聊。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_03",
+      "title": "耳機與咖啡｜短暫放空",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L1",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_headphone_break_01.webp",
+      "photoId": "pei_zhiyu_v5_03",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "campus-cafe",
+      "timeWindow": "13:00-18:30",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "剛從學校出來。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_03"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "耳機戴上之後，世界總算清靜了。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_03_choice_1",
+          "playerText": "你在聽什麼？",
+          "peiReply": "隨機播的歌單。現在比較想聽安靜一點的。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_03_choice_2",
+          "playerText": "又被誰惹到了？",
+          "peiReply": "沒有誰。只是開會開得有點久。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_03_choice_3",
+          "playerText": "你心情不好？",
+          "peiReply": "有一點。休息十分鐘就好。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_03_choice_4",
+          "playerText": "我現在也在忙。",
+          "peiReply": "好，晚點聊。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_04",
+      "title": "深夜進度｜終於寫完",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L0",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_late_draft_01.webp",
+      "photoId": "pei_zhiyu_v5_04",
+      "captureMethod": "rear-camera-handheld",
+      "locationId": "pei-study",
+      "timeWindow": "20:00-23:59",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "摘要改到第四版。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_04"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "總算有一段看起來像人話了。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_04_choice_1",
+          "playerText": "你又在趕進度？",
+          "peiReply": "是。這次是我自己沒抓好時間。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_04_choice_2",
+          "playerText": "寫得怎麼樣？",
+          "peiReply": "比昨天好一點，但還不到能放心的程度。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_04_choice_3",
+          "playerText": "你的桌子堆好多東西。",
+          "peiReply": "別看桌面。看重點：至少快寫完了。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_04_choice_4",
+          "playerText": "不打擾你了。",
+          "peiReply": "嗯，妳也忙妳的。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_05",
+      "title": "夜風｜回家路上",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L1",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_cold_night_01.webp",
+      "photoId": "pei_zhiyu_v5_05",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "street-on-way-home",
+      "timeWindow": "19:00-23:30",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "外面風有點大。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_05"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "外套似乎穿薄了。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_05_choice_1",
+          "playerText": "你怎麼還在外面？",
+          "peiReply": "剛結束事情，在回去的路上。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_05_choice_2",
+          "playerText": "你不會感冒吧？",
+          "peiReply": "我有帶外套，沒那麼脆弱。……謝謝妳關心。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_05_choice_3",
+          "playerText": "臉都快被外套擋住了。",
+          "peiReply": "擋風，順便擋住被吹亂的頭髮。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_05_choice_4",
+          "playerText": "快回家吧。",
+          "peiReply": "知道了。到家再說。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_06",
+      "title": "借坐一會｜同學家的貓",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L0",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_stray_cat_01.webp",
+      "photoId": "pei_zhiyu_v5_06",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "classmate-living-room",
+      "timeWindow": "14:00-21:30",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "來同學這裡討論資料。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_06"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "牠倒是完全不打算讓我走。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_06_choice_1",
+          "playerText": "這隻是你養的？",
+          "peiReply": "不是。同學家的貓，自己跳到我身上。",
+          "intent": "fact",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_06_choice_2",
+          "playerText": "牠好喜歡你。",
+          "peiReply": "我本來以為牠會怕生。現在看起來不是。",
+          "intent": "warm",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_06_choice_3",
+          "playerText": "你還敢動嗎？",
+          "peiReply": "不敢。手臂都快麻了。",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_06_choice_4",
+          "playerText": "你先陪牠吧。",
+          "peiReply": "嗯。等牠睡醒再回去。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_07",
+      "title": "新菜試做｜還沒確定能吃",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L1",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_cooking_trial_01.webp",
+      "photoId": "pei_zhiyu_v5_07",
+      "captureMethod": "fixed-phone-self-timer",
+      "locationId": "pei-kitchen",
+      "timeWindow": "17:30-21:00",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "今晚試個新做法。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_07"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "我還沒決定要不要把這鍋算成功。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_07_choice_1",
+          "playerText": "你煮什麼？",
+          "peiReply": "先從煎肉開始。至少現在看起來還正常。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_07_choice_2",
+          "playerText": "看起來挺會煮的。",
+          "peiReply": "照片會騙人，味道還沒驗收。",
+          "intent": "compliment",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_07_choice_3",
+          "playerText": "這個角度是誰拍的？",
+          "peiReply": "手機放櫥櫃邊上定時拍的。我可沒請攝影師。",
+          "intent": "provenance",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_07_choice_4",
+          "playerText": "注意別燙到。",
+          "peiReply": "知道。妳倒比我還緊張。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_08",
+      "title": "夜景｜窗邊短暫發呆",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L1",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_city_window_01.webp",
+      "photoId": "pei_zhiyu_v5_08",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "pei-home-window",
+      "timeWindow": "20:30-23:59",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "剛站在窗邊吹風。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_08"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "本來想拍外面的燈，結果拍到自己比較多。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_08_choice_1",
+          "playerText": "那你怎麼不重拍？",
+          "peiReply": "我覺得這張也還行。妳不是看得懂嗎？",
+          "intent": "tease",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_08_choice_2",
+          "playerText": "今天發生什麼事？",
+          "peiReply": "沒什麼大事。只是腦袋有點停不下來。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_08_choice_3",
+          "playerText": "夜景還不錯。",
+          "peiReply": "嗯，至少這裡安靜。",
+          "intent": "casual",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_08_choice_4",
+          "playerText": "我先去忙。",
+          "peiReply": "好。",
+          "intent": "pause",
+          "stateUpdates": {
+            "pauseThisConversation": true
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_09",
+      "title": "運動之後｜更衣室鏡自拍",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L2",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_post_gym_01.webp",
+      "photoId": "pei_zhiyu_v5_09",
+      "captureMethod": "mirror-selfie",
+      "locationId": "gym-private-mirror",
+      "timeWindow": "16:00-22:30",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": true,
+        "requiresL3OptIn": false
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "剛練完。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_09"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "肩膀還有點酸，準備走了。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_09_choice_1",
+          "playerText": "今天練什麼？",
+          "peiReply": "主要練上半身。明天估計會有感覺。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_09_choice_2",
+          "playerText": "你知道這個角度很好看吧？",
+          "peiReply": "妳覺得好看？那我就當妳是在誇我。",
+          "intent": "flirt",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_09_choice_3",
+          "playerText": "還是早點回去休息。",
+          "peiReply": "嗯。我再收個東西就走。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_09_choice_4",
+          "playerText": "不要再傳這類照片。",
+          "peiReply": "好。之後不會再傳這種給妳。",
+          "intent": "boundary",
+          "stateUpdates": {
+            "noSuggestivePhotos": true,
+            "photoConsentLevel": 1
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    },
+    {
+      "eventId": "pei_zhiyu_photo_v5_10",
+      "title": "洗澡後｜沒有吹乾的頭髮",
+      "characterId": "pei_zhiyu",
+      "channel": "kakao",
+      "intimacyLevel": "L3",
+      "asset": "./story-photos/pei_zhiyu/pei_zhiyu_towel_after_shower_01.webp",
+      "photoId": "pei_zhiyu_v5_10",
+      "captureMethod": "front-camera-selfie",
+      "locationId": "pei-bathroom",
+      "timeWindow": "20:00-23:59",
+      "trigger": {
+        "contactRequired": true,
+        "oneTime": true,
+        "sendEvenWhenChatClosed": true,
+        "minGameDaysSincePriorScene": 2,
+        "noContactBoundary": true,
+        "requiresL2OptIn": false,
+        "requiresL3OptIn": true
+      },
+      "chatSequence": [
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "洗完了。"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "image",
+          "photoId": "pei_zhiyu_v5_10"
+        },
+        {
+          "sender": "pei_zhiyu",
+          "type": "text",
+          "body": "頭髮還沒吹乾。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "pei_zhiyu_v5_10_choice_1",
+          "playerText": "你是故意傳這張？",
+          "peiReply": "有想過妳會不會介意。現在看來妳確實注意到了。",
+          "intent": "flirt",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_10_choice_2",
+          "playerText": "先把頭髮吹乾吧。",
+          "peiReply": "……知道了。妳說得對。",
+          "intent": "care",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_10_choice_3",
+          "playerText": "今天不是說很累？",
+          "peiReply": "是累。但洗個澡至少能清醒一點。",
+          "intent": "curious",
+          "stateUpdates": {
+            "relationshipState": "unchanged"
+          }
+        },
+        {
+          "id": "pei_zhiyu_v5_10_choice_4",
+          "playerText": "我不想收到這種照片。",
+          "peiReply": "好。我記住了，不會再傳。",
+          "intent": "boundary",
+          "stateUpdates": {
+            "noSuggestivePhotos": true,
+            "photoConsentLevel": 1
+          }
+        }
+      ],
+      "gallery": {
+        "autoImport": false,
+        "requiresActualCapturedEvent": true
+      },
+      "continuity": {
+        "photoSentOnce": true,
+        "noForcedReunion": true,
+        "noPlayerEmotionsAssumed": true
+      }
+    }
+  ]
+}
