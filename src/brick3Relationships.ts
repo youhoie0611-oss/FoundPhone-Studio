@@ -263,6 +263,21 @@ export function tickV8(w: Work, s: Runtime): Runtime {
     if (p.index >= p.lines.length) v.pending = v.pending.filter(x => x.id !== p.id);
     else p.due = now + 4200;
   }
+  // Confessions require an actual history of interaction, not affection alone.
+  for (const lead of V8_LEADS) {
+    const b = v.bonds[lead];
+    if (live(b) || v.confessions[lead] || hasStop(s, lead) || !nameKnown(w, lead)) continue;
+    const outgoing = (s.messages.kakao ?? []).filter(m => m.outgoing && m.title === lead);
+    const evidence = (s.brick3Memory ?? []).some(m => m.thread === lead && m.topic !== "invitation");
+    const prefix: Record<V8Lead, string> = { "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi", "顧時安": "gu", "陸沉川": "lu" };
+    const attraction = Number(s.variables[prefix[lead] + "_attraction"] ?? 0);
+    const asked = outgoing.some(m => /我們交往|願意和我交往|願意跟我交往|我們復合|我們複合|正式在一起/.test(m.body));
+    const wellKnown = outgoing.length >= 3 && evidence && attraction >= 75;
+    if (asked || wellKnown) {
+      const secret = lead === "裴知聿" && partners(v, lead).length > 0 && attraction >= 50;
+      offerV8Confession(w, s, lead, secret ? "secret-offer" : "confession");
+    }
+  }
   if (s.date && s.date !== v.lastDay) {
     v.lastDay = s.date;
     for (const lead of V8_LEADS) {
