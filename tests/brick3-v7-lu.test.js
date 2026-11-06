@@ -91,6 +91,7 @@ describe("Brick3 V7 Lu Chenchuan entry respects boundaries", () => {
     expect(chosen.unlocked.includes("brick3-photo-v7_lu_private-choice-1-out")).toBe(true);
     const firstPrivate = w.nodes.find((n) => n.id === "v7-lu-private-contact-arrive");
     expect(firstPrivate?.next.some((x) => x === "brick3-photo-photo_off_duty-wait")).toBe(true);
-    expect(has(reached, "brick3-photo-photo_off_duty-image-1")).toBe(false);\n    expect(w.nodes.some(n => n.id === "brick3-photo-photo_lu_office_evening-arrive")).toBe(true);
+    expect(has(reached, "brick3-photo-photo_off_duty-image-1")).toBe(false);
+    expect(w.nodes.some(n => n.id === "brick3-photo-photo_lu_office_evening-arrive")).toBe(true);
   });
 });
