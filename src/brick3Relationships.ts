@@ -16,6 +16,8 @@ export type Relationship = {
   core: 0 | 1 | 2 | 3 | 4;
   discoveries: string[];
   specialization: Record<string, number>;
+  careerExperience: Record<string, number>;
+  revelation?: { due: number; delivered: boolean };
   psychologicalObservation?: string;
 };
 export type Confession = {
@@ -53,7 +55,7 @@ const hasStop = (s: Runtime, lead: string) => (s.messages.kakao ?? [])
   .filter(m => m.outgoing && m.title === lead).slice(-1).some(m => stopPattern.test(m.body));
 const neutral = (): Relationship => ({
   status: "single", exclusivity: "unspecified", since: 0, history: [],
-  knows: {}, core: 0, discoveries: [], specialization: {},
+  knows: {}, core: 0, discoveries: [], specialization: {}, careerExperience: {},
 });
 export function ensureV8(s: Runtime): V8RelationshipState {
   if (!s.brick3V8) {
