@@ -79,7 +79,9 @@ function observeKnownEvents(s: Runtime) {
       if (!text.includes(skill)) continue;
       const base = b.careerExperience[skill] ?? 0;
       b.careerExperience[skill] = clamp(base + 10);
-      if (base >= 100) b.specialization[skill] = Math.min(3, (b.specialization[skill] ?? 0) + 1);
+      const totalSpecializations = Object.values(b.specialization).reduce((sum, level) => sum + level, 0);
+      if (base >= 100 && totalSpecializations < 3)
+        b.specialization[skill] = (b.specialization[skill] ?? 0) + 1;
     }
     if (b.core >= 2 && !b.psychologicalObservation)
       b.psychologicalObservation = psychological[lead];
