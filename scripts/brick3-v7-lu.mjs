@@ -1,6 +1,6 @@
 /**
- * 《磚3》V7 SE-004「今晚有人陪妳」.
- * Fifth lead enters through an optional group invitation, not an unsolicited DM.
+ * 《磚3》陸沉川新版相識：隔壁商辦大樓。
+ * Fifth lead enters through an optional coffee invitation, not an unsolicited DM.
  * Scripted conversations stay independent of player chat-opening behavior.
  */
 const prefix = "brick3-photo-";
@@ -50,74 +50,58 @@ function addScene(story, chat, id, senderId, body, choiceKey, next = []) {
 }
 export function injectBrick3V7Lu(story) {
   if (story.id !== "between-the-lines-b-demo") return story;
-  if (story.events.some((event) => event.id === "v7-lu-group-invite-arrive")) return story;
-  const group = story.chats.find((chat) => chat.app === "kakao" && chat.title === "下班後五人組");
-  const anchor = story.events.find((event) => event.id === "friends-group-arrive-4");
+  if (story.events.some(event => event.id === "v7-lu-group-invite-arrive")) return story;
+  const group = story.chats.find(chat => chat.app === "kakao" && chat.title === "下班後五人組");
+  const anchor = story.events.find(event => event.id === "friends-group-arrive-4");
   if (!group || !anchor) return story;
 
   story.contacts.push({
     id: "luchenchuan", name: "陸沉川", hidden: true,
     phone: "", avatar: "",
-    bio: "26歲｜商業模特兒、視覺傳達設計背景；私人生活與工作有清楚界線。",
+    bio: "26歲｜隔壁商辦大樓的集團副總裁。沉穩寡言，擅長鋼琴與料理。",
   });
   story.variables.lu_attraction ??= 0;
   story.variables.lu_trust ??= 0;
   story.variables.lu_jealousy ??= 0;
-  story.variables.lu_met_in_service ??= false;
+  story.variables.lu_met_in_service ??= false; // legacy save key; never set true in new canon
+  story.variables.lu_met_near_office ??= false;
   story.variables.lu_private_contact ??= false;
-
-  const lu = {
-    id: "kkt-lu", app: "kakao", title: "陸沉川",
-    participants: ["owner", "luchenchuan"], messages: [],
-  };
+  const lu = { id: "kkt-lu", app: "kakao", title: "陸沉川",
+    participants: ["owner", "luchenchuan"], messages: [] };
   story.chats.push(lu);
-  // The player can discover this only after the actual meeting, not by reading KKT.
   story.content.notes ??= [];
   story.content.notes.push({
-    id: "v7-lu-first-encounter-note",
-    title: "今晚有人陪妳",
-    body: "下班後，我在林安提過的會館見到陸沉川。他是接待我的工作人員，言談得體，但我們沒有交換私人聯絡方式。工作上的親切不代表感情。",
-    sender: "妳", time: "21:18", hidden: true,
+    id: "v7-lu-first-encounter-note", title: "隔壁大樓的男人",
+    body: "下班後，在兩棟商辦大樓之間的咖啡店遇見陸沉川。只知道他在隔壁大樓擔任高階主管，尚不知道他的江南陸家背景。", sender: "妳", time: "18:15", hidden: true,
   });
-
-  // The invitation comes from a friend group on its own schedule.
   addScene(story, group, "v7-lu-group-invite", "linan",
-    "我剛知道一間高端男模會館。下班後要不要一起去看看？\n不用勉強，妳不想去我們就換別的活動。",
-    "v7_lu_invite");
+    "隔壁大樓新開了一間咖啡店。下班要不要一起去？\\n聽說那邊的甜點不錯。", "v7_lu_invite");
   story.events.push(node("v7-lu-group-invite-wait", "delay", {
     delayMs: 240000, next: ["v7-lu-group-invite-arrive"],
   }));
   anchor.next ??= [];
   anchor.next.push("v7-lu-group-invite-wait");
   addOptions(story, group, "v7_lu_invite", [
-    ["可以，陪妳去看看。", "好，那我們下班在入口碰面。妳到了再決定要不要進去。"],
-    ["先跟我說是什麼地方？", "有正式的接待與服務規則。我把公開資訊傳妳，不想去就別去。"],
-    ["這種場合我不太有興趣。", "知道了，那下次換個地方。我不會替妳做決定。"],
-    ["今天不去了，你們玩。", "好，妳下班就好好休息。"],
-  ], (i) => i === 0 ? ["v7-lu-travel-wait"] : [], "linan");
-
+    ["好啊，下班去看看。", "行，我們下班在咖啡店外面碰面。"],
+    ["在哪一棟？", "就在我們辦公室旁邊那棟商辦的一樓。妳有空再去。"],
+    ["我今天想直接回家。", "好，妳先休息。下次再約。"],
+    ["今天工作還沒忙完。", "沒事，別為了喝咖啡趕進度。"],
+  ], i => i === 0 ? ["v7-lu-travel-wait"] : [], "linan");
   story.events.push(node("v7-lu-travel-wait", "delay", {
     delayMs: 1200000, next: ["v7-lu-venue-arrival-arrive"],
   }));
   addScene(story, group, "v7-lu-venue-arrival", "linan",
-    "我到門口了。妳要進去嗎？如果臨時改變主意，我們可以直接回家。",
-    "v7_lu_arrival");
+    "我到咖啡店門口了。妳要進來嗎？不方便也沒關係。", "v7_lu_arrival");
   addOptions(story, group, "v7_lu_arrival", [
-    ["嗯，我們進去看看。", "好。先坐一會兒，不自在就直接跟我說。"],
-    ["先等等，我還在考慮。", "沒問題。妳決定好了再說，不急。"],
-    ["我不太自在，今天先回家。", "好，我陪妳走到外面。"],
-    ["算了，改天吧。", "知道了，我不會勉強妳。"],
-  ], (i) => i === 0 ? ["v7-lu-service-encounter"] : [], "linan");
-
-  // The actual first meeting happens only after an affirmative venue choice.
+    ["好，我進去。", "我在靠窗的位置。"],
+    ["我還在路上，等我一下。", "好，慢慢來。"],
+    ["臨時有事，先不去了。", "收到，下次再約。"],
+    ["今天真的太累了。", "那回家休息吧，別勉強。"],
+  ], i => i === 0 ? ["v7-lu-service-encounter"] : [], "linan");
   story.events.push(node("v7-lu-service-encounter", "action", {
-    actions: [
-      set("lu_met_in_service", true),
-      unlock("v7-lu-first-encounter-note"),
-    ],
+    actions: [set("lu_met_near_office", true), unlock("v7-lu-first-encounter-note")],
     next: ["v7-lu-second-encounter-wait-1"],
   }));
-  // A later, separate public creative event; no intimacy or private DM is assumed.
   story.events.push(node("v7-lu-second-encounter-wait-1", "delay", {
     delayMs: 64800000, next: ["v7-lu-second-encounter-wait-2"],
   }));
@@ -125,65 +109,54 @@ export function injectBrick3V7Lu(story) {
     delayMs: 64800000, next: ["v7-lu-public-event-arrive"],
   }));
   addScene(story, group, "v7-lu-public-event", "linan",
-    "我看到一場公開的商業攝影交流活動。上次會館那位陸沉川也會參與。\n這是公開活動，不用購買他的服務。有興趣再去。",
-    "v7_lu_public");
+    "那天咖啡店遇到的男人好像是隔壁大樓的副總。\\n我今天午休又看到他了，妳要一起去買咖啡嗎？", "v7_lu_public");
   addOptions(story, group, "v7_lu_public", [
-    ["好，我想去看看攝影活動。", "可以。先看活動時間，妳有空再過來。"],
-    ["他在現場做什麼？", "好像是模特兒兼分享視覺設計經驗。詳情我再查。"],
-    ["我對這次活動沒有興趣。", "了解，不用每場都跟。"],
-    ["我最近太忙，改天吧。", "妳先忙工作，別為了活動趕行程。"],
-  ], (i) => i === 0 ? ["v7-lu-public-meeting-wait"] : [], "linan");
+    ["好啊，午休一起去。", "走吧，順便透透氣。"],
+    ["副總？哪間公司的？", "我只知道他在隔壁那棟辦公，其他的也不清楚。"],
+    ["我對他沒興趣。", "知道啦，喝咖啡而已。"],
+    ["午休排滿了。", "好，那我自己去。"],
+  ], i => i === 0 ? ["v7-lu-public-meeting-wait"] : [], "linan");
   story.events.push(node("v7-lu-public-meeting-wait", "delay", {
     delayMs: 900000, next: ["v7-lu-contact-offer-arrive"],
   }));
   addScene(story, group, "v7-lu-contact-offer", "linan",
-    "活動結束了。剛才你們聊的是攝影構圖吧？\n如果妳想延續話題，可以自己決定要不要交換聯絡方式。",
-    "v7_lu_contact");
+    "剛才他問妳是不是也在附近上班。\\n如果妳想繼續聊，可以自己決定要不要交換聯絡方式。", "v7_lu_contact");
   addOptions(story, group, "v7_lu_contact", [
-    ["我想跟他交換聯絡方式。", "好，妳可以直接問他。我不替妳作主。"],
-    ["今天聊得不錯，但先不用。", "嗯，聊得來也不用急著交換。"],
-    ["我只想參加活動，沒有其他意思。", "當然。這樣就很好。"],
-    ["不了，我想先回家。", "好，路上注意。"],
-  ], (i) => i === 0 ? ["v7-lu-exchange-contact-wait"] : [], "linan");
-
+    ["可以，交換一下聯絡方式。", "好，妳自己問他就行。"],
+    ["今天聊得不錯，但先不用。", "嗯，不用急。"],
+    ["只是剛好碰到而已。", "也是，妳不用多想。"],
+    ["不了，我先回辦公室。", "好，下午加油。"],
+  ], i => i === 0 ? ["v7-lu-exchange-contact-wait"] : [], "linan");
   story.events.push(node("v7-lu-exchange-contact-wait", "delay", {
     delayMs: 60000, next: ["v7-lu-private-contact-arrive"],
   }));
   addMessage(lu, "v7-lu-private-1", "luchenchuan",
-    "是陸沉川。\n妳剛剛提到那個構圖角度，我後來又想了一下。\n如果妳還有興趣，改天可以聊。",
-    "v7_lu_private");
+    "陸沉川。\\n剛才在咖啡店聊到妳工作的那棟樓。\\n這是我的聯絡方式。", "v7_lu_private");
   addOptions(story, lu, "v7_lu_private", [
-    ["你後來想到什麼了？", "我覺得換個低一點的拍攝角度，也許更接近剛才想要的感覺。"],
-    ["有公開攝影活動可以再告訴我。", "有適合的公開場，我再分享資訊。妳不用特地排時間。"],
-    ["你不是剛下班嗎？", "嗯，剛收工。現在不算在工作。"],
-    ["我現在比較忙，改天聊。", "好，妳先忙。"],
+    ["原來你真的在隔壁上班。", "嗯，走路過去大概兩分鐘。"],
+    ["你平常都去那間咖啡店？", "偶爾。會議之間想找個安靜的地方。"],
+    ["副總平常也這麼忙嗎？", "看情況。今天算還好。"],
+    ["我先忙工作，晚點聊。", "好，妳先忙。"],
   ], () => [], "luchenchuan");
   story.events.push(node("v7-lu-private-contact-arrive", "action", {
-    actions: [
-      set("lu_private_contact", true),
-      unlock("luchenchuan-card"),
-      unlock("v7-lu-private-1"),
-      notice("陸沉川", "是陸沉川。關於剛剛聊的攝影構圖。"),
-    ],
+    actions: [set("lu_private_contact", true), unlock("luchenchuan-card"),
+      unlock("v7-lu-private-1"), notice("陸沉川", "陸沉川。剛才在咖啡店聊到妳工作的那棟樓。")],
     next: ["brick3-photo-v7_lu_private-options", "v7-lu-private-second-wait"],
   }));
   story.events.push(node("v7-lu-private-second-wait", "delay", {
     delayMs: 18000000, next: ["v7-lu-private-second-arrive"],
   }));
   addMessage(lu, "v7-lu-private-2", "luchenchuan",
-    "今天有個商業攝影要收尾。\n工作的照片整理完，如果可以分享，我再傳給妳。",
-    "v7_lu_shoot");
+    "剛開完會。\\n今天本來想早點回去煮飯。看來又得晚一點。", "v7_lu_shoot");
   addOptions(story, lu, "v7_lu_shoot", [
-    ["拍攝還順利嗎？", "大致順利。只是有幾張畫面需要重新調整。"],
-    ["公開以後可以給我看嗎？", "能公開的可以。客戶還沒發布的，我不能先傳。"],
-    ["你平常都工作到這麼晚？", "看檔期，不是每天都這麼晚。"],
-    ["那你先把工作忙完。", "好。妳也別太晚睡。"],
+    ["你會自己煮飯？", "會。比一直吃外食方便。"],
+    ["會議不順利嗎？", "不是，臨時多了幾件要處理的事。"],
+    ["你也別忙到忘記吃飯。", "嗯，知道了。妳也是。"],
+    ["那你先忙完。", "好，晚點再說。"],
   ], () => [], "luchenchuan");
   story.events.push(node("v7-lu-private-second-arrive", "action", {
-    actions: [unlock("v7-lu-private-2")],
-    next: ["brick3-photo-v7_lu_shoot-options"],
+    actions: [unlock("v7-lu-private-2")], next: ["brick3-photo-v7_lu_shoot-options"],
   }));
-  // Preserve prior saves only when the actual author revision changes.
-  story.revision = Math.max(story.revision, 43);
+  story.revision = Math.max(story.revision, 44);
   return story;
 }
