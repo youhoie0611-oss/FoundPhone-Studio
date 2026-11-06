@@ -122,6 +122,16 @@ export function observeV8PeiThirdPartyReply(s: Runtime, raw: string) {
     p.phase = "stopped"; p.nextAt = Infinity;
     return;
   }
+  // Only player-authored statements may establish known relationship facts.
+  // The player's own bond record is not automatically visible to Pei.
+  const v = ensureV8(s);
+  for (const lead of V8_LEADS) {
+    if (lead === NAME || !["dating", "secret"].includes(v.bonds[lead].status)) continue;
+    const escaped = lead.replace(/[.*+?^${}()|[\]\\]/g, "\\  // Explicit consent to speak is not consent to date or kiss.");
+    const namedRelationship = new RegExp(`(?:我(?:和|跟)${escaped}(?:在交往|交往中|是情侶|在一起)|${escaped}是我(?:的)?(?:男朋友|男友|戀人))`);
+    if (namedRelationship.test(raw))
+      v.bonds[NAME].knows[lead] = { status: v.bonds[lead].status, source: "player-message", at: now(s) };
+  }
   // Explicit consent to speak is not consent to date or kiss.
   if (consent.test(raw) && p.phase === "waiting") p.nextAt = Math.min(p.nextAt, now(s));
 }
