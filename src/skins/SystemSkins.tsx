@@ -1,3 +1,4 @@
+import { relationshipLeads, visibleRelationship } from "../brick3/relationships";
 export { WeatherSkin, HealthSkin } from "./CalibratedSystemApps";
 import { AudioPlayer, useTrack } from "../audio";
 import { useSkinState } from "../skinState";
@@ -143,21 +144,6 @@ export function PhoneSkin(p: Props) {
 export function ContactsSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "所有联系人");
   const [relationshipOpen, setRelationshipOpen] = useState(false);
-  const leads = ["沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川"];
-  const discoveredClues = p.relationship?.clues ?? [];
-  const relationshipStatus = (name: string) => {
-    const vars = p.relationship?.variables ?? {};
-    // Only explicit, player-visible relationship labels can appear here.
-    // Never expose affection, scores, secret flags or numeric variables.
-    const key = Object.keys(vars).find((k) =>
-      (k === name + "_關係" || k === name + "_关系" ||
-       k === name + "_relationship" || k === "relationship_" + name ||
-       k === "relation_" + name)
-    );
-    const value = key ? vars[key] : undefined;
-    const publicStatuses = new Set(["關係尚未確認", "朋友", "曖昧", "交往中", "戀人", "前任", "已分手", "復合", "已復合"]);
-    return typeof value === "string" && publicStatuses.has(value.trim()) ? value : "關係尚未確認";
-  };
   return (
     <div className="catalog-skin native-contacts">
       <Header p={p} />
@@ -176,16 +162,18 @@ export function ContactsSkin(p: Props) {
         {relationshipOpen && (
           <section aria-label="我的關係">
             <h4 className="native-section">我的關係</h4>
-            {leads.map((name) => {
-              const clues = discoveredClues.filter((clue) => clue.includes(name));
+            {relationshipLeads.map((name) => {
+              const relation = visibleRelationship(p.relationship, name);
               return (
                 <div className="contact-self" key={name}>
                   <Avatar name={name} />
                   <span>
                     <strong>{name}</strong>
-                    <small>{relationshipStatus(name)}</small>
-                    <small>已發現線索：{clues.length} 條</small>
-                    {clues.map((clue) => <small key={clue}>{clue}</small>)}
+                    <small>{relation.status}</small>
+                    {relation.exclusivity && <small>排他性約定：{relation.exclusivity}</small>}
+                    {relation.confession && <small>告白：{relation.confession}</small>}
+                    {relation.negotiation && <small>協商：{relation.negotiation}</small>}
+                    <small>已發現線索：{relation.clueCount} 條</small>
                   </span>
                 </div>
               );
