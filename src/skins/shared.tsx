@@ -1,3 +1,4 @@
+import { brick3AvatarFor } from "../brick3/avatars";
 import {
   ChevronLeft,
   ChevronRight,
@@ -93,10 +94,11 @@ export function Avatar({
   round?: boolean;
   src?: string;
 }) {
+  const resolved = brick3AvatarFor(name, src);
   return (
     <span className={`catalog-avatar ${round ? "round" : ""}`}>
       {(safeMedia(src)?.startsWith("data:image/") || /(?:^|\/)characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(src)) ? (
-        <img src={src} alt="" />
+        <img src={resolved} alt="" onError={(e) => { e.currentTarget.style.display = "none"; }} />
       ) : (
         name.slice(0, 1) || "人"
       )}
