@@ -159,6 +159,7 @@ export type Runtime = {
   brick3Invites?: Record<string, import("./brick3RepeatInvites").Brick3InviteProgress>;
   brick3DateSocial?: Record<string, import("./brick3DateSocial").Brick3DateSocialProgress>;
   brick3Memory?: import("./brick3Memory").Brick3Memory[];
+  brick3SceneEvents?: { thread: string; outcome: string; due: number; sent?: boolean }[];
   time: string;
   trace: string[];
 };
