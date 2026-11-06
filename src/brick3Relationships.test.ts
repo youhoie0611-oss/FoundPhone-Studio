@@ -65,6 +65,18 @@ describe("V8 relationship persistence", () => {
     expect(deferred.brick3V8?.confessions["裴知聿"]?.status).toBe("pending");
     expect(deferred.choices.some(c => c.target === "brick3-v8:裴知聿:only")).toBe(true);
   });
+  it("same-day correction preserves the original player message and logs the correction", () => {
+    const s = fresh();
+    offerV8Confession(work, s, "沈硯舟");
+    const accepted = chooseV8(work, s, "brick3-v8:沈硯舟:only")!;
+    expect(accepted.brick3V8?.bonds["沈硯舟"].status).toBe("dating");
+    const corrected = chooseV8(work, accepted, "brick3-v8:沈硯舟:undo")!;
+    const outbound = (corrected.messages.kakao ?? []).filter(m => m.title === "沈硯舟" && m.outgoing);
+    expect(outbound.some(m => m.body === "我願意和你正式交往。")).toBe(true);
+    expect(outbound.some(m => m.body.includes("答覆我想收回"))).toBe(true);
+    expect(corrected.brick3V8?.bonds["沈硯舟"].status).toBe("single");
+    expect(corrected.brick3V8?.undo?.used).toBe(true);
+  });
   it("allows Pei secret route only when player consents", () => {
     const s = fresh();
     ensureV8(s).bonds["沈硯舟"].status = "dating";
