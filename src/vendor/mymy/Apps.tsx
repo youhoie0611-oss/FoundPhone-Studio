@@ -250,7 +250,7 @@ export function MymyKakao(p: SkinProps) {
                                             ? ["你那天為什麼會出現在那裡？", "你先說清楚找我的原因。", "你有沒有認真想過自己的態度？", "我現在不想聊。"]
                                             : ["你剛剛提的事情，具體是什麼？", "我們先把時間和地點確認。", "這件事我還沒答應。", "我現在不方便，改天再說。"];
                 return options.map((reply, index) => (
-                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onCustomMessage?.(p.thread, reply)}>
+                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onPresetReply?.(p.thread, reply)}>
                     {reply}
                   </button>
                 ));
