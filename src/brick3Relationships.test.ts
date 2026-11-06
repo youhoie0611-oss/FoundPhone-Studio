@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { initialRuntime, makeItem, type Work } from "./schema";
 import { choose, advance } from "./engine";
-import { ensureV8, offerV8Confession, chooseV8, tickV8, observeV8Reply, discoverV8Core } from "./brick3Relationships";
+import { ensureV8, offerV8Confession, chooseV8, tickV8, observeV8Reply, discoverV8Core, endV8Relationship } from "./brick3Relationships";
 
 const work = {
   id: "between-the-lines-b-demo",
@@ -30,6 +30,18 @@ describe("V8 relationship persistence", () => {
     expect(chosen.brick3V8?.bonds["沈硯舟"].status).toBe("dating");
     expect(chosen.brick3V8?.bonds["裴知聿"].status).toBe("single");
     expect(chosen.brick3V8?.confessions["裴知聿"]?.status).toBe("discussing");
+  });
+  it("ends one romance explicitly without deleting another and resumes unresolved proposal", () => {
+    const s = fresh();
+    ensureV8(s).bonds["沈硯舟"].status = "dating";
+    offerV8Confession(work, s, "裴知聿");
+    const deferred = chooseV8(work, s, "brick3-v8:裴知聿:only")!;
+    expect(deferred.brick3V8?.confessions["裴知聿"]?.status).toBe("discussing");
+    expect(endV8Relationship(deferred, "沈硯舟")).toBe(true);
+    expect(deferred.brick3V8?.bonds["沈硯舟"].status).toBe("separated");
+    expect(deferred.brick3V8?.bonds["裴知聿"].status).toBe("single");
+    expect(deferred.brick3V8?.confessions["裴知聿"]?.status).toBe("pending");
+    expect(deferred.choices.some(c => c.target === "brick3-v8:裴知聿:only")).toBe(true);
   });
   it("allows Pei secret route only when player consents", () => {
     const s = fresh();
