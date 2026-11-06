@@ -22,6 +22,28 @@ describe("V8 relationship persistence", () => {
     expect(v.bonds["沈硯舟"].history).toEqual([]);
     expect(JSON.parse(JSON.stringify(s)).brick3V8.version).toBe(8);
   });
+  it("migrates incomplete V8 saves without discarding prior relationships", () => {
+    const s = fresh();
+    const v = ensureV8(s);
+    v.bonds["裴知聿"].status = "secret";
+    v.bonds["裴知聿"].history.push({
+      at: 123, status: "secret", reason: "prior-save",
+    });
+    const partial = v as unknown as {
+      bonds: Record<string, unknown>; events?: string[]; negotiations?: object;
+    };
+    delete partial.bonds["陸沉川"];
+    delete partial.events;
+    delete partial.negotiations;
+    const revived = ensureV8(JSON.parse(JSON.stringify(s)));
+    expect(revived.bonds["裴知聿"].status).toBe("secret");
+    expect(revived.bonds["裴知聿"].history).toEqual([
+      { at: 123, status: "secret", reason: "prior-save" },
+    ]);
+    expect(revived.bonds["陸沉川"].status).toBe("single");
+    expect(revived.events).toEqual([]);
+    expect(revived.negotiations).toEqual({});
+  });
   it("protects an existing partner from a second confession", () => {
     const s = fresh();
     ensureV8(s).bonds["沈硯舟"].status = "dating";
