@@ -26,3 +26,23 @@
 **一次上傳方式：**下載本批圖片 ZIP → 解壓縮 → 打開 [GitHub Upload files](https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/shen_yanzhou) → 同時選取／拖入全部 10 張 `.webp` → 按一次 **Commit changes**。**不要直接上傳 ZIP**，GitHub 不會自動解壓給遊戲引用。
 
 檔名由助手提供，遵守 `shen_yanzhou_事件名稱_01.webp` 等格式。尚未生成的批次不應被說成已經上傳或接入遊戲；圖片未上傳時，既有遊戲可按缺圖規則只顯示文字。
+
+## Batch01｜10 張圖片（2026-11-06）
+
+本批 **10 組聊天照片＋40 個玩家回覆分支** 的 JSON 已提交到 [照片事件主配置](../../../docs/brick3-photo-events-v1.json)；編譯入口已接上 `scripts/brick3-photo-events.mjs`。**作者只需要上傳以下 10 個 WebP，不需要上傳 JSON、README 或修改程式。**
+
+1. `shen_yanzhou_dorm_morning_selfie_01.webp` — 平日晨起的租屋處，睡醒後亂髮自拍
+2. `shen_yanzhou_classroom_bored_selfie_02.webp` — 教室課間靠窗坐著的慵懶自拍
+3. `shen_yanzhou_gym_mirror_selfie_03.webp` — 健身房練完腿後，在鏡前自然自拍
+4. `shen_yanzhou_cafe_editing_break_04.webp` — 校外咖啡館整理活動相片的短暫休息
+5. `shen_yanzhou_basketball_sunset_selfie_05.webp` — 下午和朋友打完球，夕陽下拿手機自拍
+6. `shen_yanzhou_elevator_outfit_selfie_06.webp` — 參加朋友聚會前，電梯裡順手拍穿搭
+7. `shen_yanzhou_convenience_store_night_selfie_07.webp` — 晚上短暫到便利商店買飲料，用玻璃反光自拍
+8. `shen_yanzhou_rainy_neon_selfie_08.webp` — 雨夜撐傘走在城市街邊的自拍
+9. `shen_yanzhou_izakaya_friends_selfie_09.webp` — 和實際同行的大學朋友在餐廳聚會，自己拿手機合照
+10. `shen_yanzhou_late_night_desk_selfie_10.webp` — 深夜在租屋處趕課堂報告與整理照片時的疲倦自拍
+
+一次上傳入口：[Upload files](https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/shen_yanzhou)。
+
+請在 ZIP **解壓後一次選取全部十張 WebP**，確認上傳的是個別 WebP 不是 ZIP。本批相片是沈硯舟的私人生活分享，不因玩家看到照片就自動解鎖共同回憶相簿。若玩家沒開 KKT，他仍可依劇情節點主動傳送；實際發訊觸發仍需編譯與遊戲回歸測試。**圖片實際上傳前，十張的 GitHub 影像檔案仍處於 pending 狀態。**
+
