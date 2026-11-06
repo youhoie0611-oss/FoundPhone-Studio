@@ -6,6 +6,8 @@ const anchors = {
   photo_design_review: "gu-life-01",
   photo_gu_batch01_dog_selfie: "gu-life-18",
   photo_gu_batch01_office_mirror: "gu-life-13",
+  photo_gu_batch02_dog_cuddle: "gu-life-07",
+  photo_gu_batch02_desk_sketch: "gu-life-05",
   photo_dinner_invite: "pei-day21-opening",
   photo_camera_walk: "shen-phase2-1-1-in",
   photo_practice_update: "shen-autonomy-v3-day1",
@@ -36,6 +38,8 @@ const delayed = {
   photo_design_review: 90000,
   photo_gu_batch01_dog_selfie: 120000,
   photo_gu_batch01_office_mirror: 120000,
+  photo_gu_batch02_dog_cuddle: 360000,
+  photo_gu_batch02_desk_sketch: 180000,
   photo_dinner_invite: 120000,
   photo_camera_walk: 90000,
   photo_practice_update: 120000,
@@ -117,6 +121,9 @@ export function injectBrick3PhotoEvents(story, manifest) {
   if (!(story.installedApps ?? []).some((a) => (typeof a === "string" ? a : a.id) === "photos")) return story;
 
   for (const entry of manifest.events) {
+    // Instagram photos belong to the social feed, never to KKT just because they are in the photo manifest.
+    // Their social publish/choice events require a separate verified Instagram adapter.
+    if (entry.characterId === "gu_shian" && (entry.platform === "instagram_story" || entry.platform === "instagram_post")) continue;
     // Dinner is now one affinity-gated, repeatable invitation with a single
     // gallery reward and an explicit attendance confirmation.
     // Never also deliver the old fixed-day invitation/4-photo visit.
