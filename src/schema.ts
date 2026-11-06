@@ -215,6 +215,7 @@ export function safeMedia(value: string) {
   // Only author-controlled story photo WebP files; no arbitrary URLs or traversal.
   if (/^\.\/story-photos\/(?:shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(value))
     return value;
+  if (value === "./characters/電影感東亞男子肖像.png") return value;
   if (/^\.\/characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(value))
     return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
