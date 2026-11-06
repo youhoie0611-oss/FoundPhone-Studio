@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { advanceBrick3Chat } from "./brick3ChatScenes";
 import { initialRuntime } from "./schema";
-import { demoWork } from "./demo";
+import { createWork } from "./demo";
 
 describe("brick3 scene progression", () => {
   it("honors Shen's photo boundary and persists the outcome", () => {
-    const state = initialRuntime(demoWork);
+    const state = initialRuntime(createWork());
     const result = advanceBrick3Chat(state, "沈硯舟", "我不太想讓照片被傳來傳去。", [
       { body: "我有照片拍到妳，介意我傳給妳確認嗎？", outgoing: false },
     ]);
@@ -13,7 +13,7 @@ describe("brick3 scene progression", () => {
     expect(state.variables["brick3:scene:沈硯舟"]).toBe("privacy_boundary");
   });
   it("does not interpret a refusal as consent", () => {
-    const state = initialRuntime(demoWork);
+    const state = initialRuntime(createWork());
     const result = advanceBrick3Chat(state, "沈硯舟", "不要傳給我", [
       { body: "我可以傳照片給妳嗎？", outgoing: false },
     ]);
@@ -21,7 +21,7 @@ describe("brick3 scene progression", () => {
     expect(state.variables["brick3:scene:沈硯舟"]).toBe("privacy_boundary");
   });
   it("keeps the ex-boyfriend's reunion intent separate from consent", () => {
-    const state = initialRuntime(demoWork);
+    const state = initialRuntime(createWork());
     const result = advanceBrick3Chat(state, "裴知聿", "你想復合嗎？", [
       { body: "我們分手以後一直沒有好好談。", outgoing: false },
     ]);
