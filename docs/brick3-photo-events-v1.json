@@ -895,304 +895,6 @@
       }
     },
     {
-      "eventId": "photo_off_duty",
-      "characterId": "lu_chenchuan",
-      "characterName": "陸沉川",
-      "type": "npc_message",
-      "trigger": {
-        "requiresNpcSchedule": true,
-        "requiresPastContinuity": true,
-        "requiresPlayerAttendance": false,
-        "requiresPlayerConsentForIntimacy": true,
-        "requiresEstablishedPrivateContact": true,
-        "requiresActualCapture": true,
-        "requiresNpcShareDecision": true,
-        "requiresNoActiveConflict": true,
-        "notTriggeredByPlayerOpeningChat": true,
-        "eventNotPreviouslyCompleted": true,
-        "cooldownMs": 86400000
-      },
-      "message": "剛到家。今天開會開得有點晚。晚餐只能簡單做了。",
-      "choices": [
-        {
-          "id": "photo_off_duty_choice_1",
-          "text": "這叫簡單做？你對簡單是不是有什麼誤解？",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_off_duty_choice_2",
-          "text": "看起來很好吃，你平常都自己煮嗎？",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_off_duty_choice_3",
-          "text": "忙到這麼晚還自己煮飯，不會很累？",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_off_duty_choice_4",
-          "text": "辛苦了，早點休息吧。",
-          "branches": "contextual_response"
-        }
-      ],
-      "images": [
-        {
-          "assetId": "lu_chenchuan_after_work_chat_01",
-          "filename": "lu_chenchuan_after_work_chat_01.webp",
-          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_after_work_chat_01.webp",
-          "usage": "chat_attachment",
-          "unlock": {
-            "requiresMessageDelivered": true
-          },
-          "visualPrompt": "陸沉川本人用手機拍下自己在家完成的晚餐，居家暖光、自然生活構圖，無玩家身影；如人物入鏡必須嚴格遵照 public/characters/陸沉川角色設定與造型參考表.png，非棚拍。",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false
-        }
-      ],
-      "eventTime": "21:36",
-      "sceneBackground": "雙方已同意交換私人 KKT；陸沉川結束集團會議，回家準備簡單晚餐，主動分享生活。",
-      "onChoiceResponses": {
-        "photo_off_duty_choice_1": {
-          "reply": [
-            "算不上什麼大菜。",
-            "只是想吃點熱的。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_off_duty_choice_1"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_home_cooking",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_off_duty_choice_2": {
-          "reply": [
-            "有時間就自己煮。",
-            "做飯比開會容易讓人放鬆。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_off_duty_choice_2"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_home_cooking",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_off_duty_choice_3": {
-          "reply": [
-            "是有點累。",
-            "但回家做點吃的，反而能把工作放下。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_off_duty_choice_3"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_home_cooking",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_off_duty_choice_4": {
-          "reply": [
-            "嗯，妳也早點休息。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_off_duty_choice_4"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_home_cooking",
-            "relationshipAssumptions": []
-          }
-        }
-      },
-      "chatSequence": [
-        {
-          "kind": "text",
-          "body": "剛到家。",
-          "senderId": "lu_chenchuan"
-        },
-        {
-          "kind": "text",
-          "body": "今天開會開得有點晚。",
-          "senderId": "lu_chenchuan",
-          "delayMs": 2500
-        },
-        {
-          "kind": "image",
-          "assetId": "lu_chenchuan_after_work_chat_01",
-          "senderId": "lu_chenchuan",
-          "condition": "actual_capture_and_asset_uploaded_and_npc_share_decided"
-        },
-        {
-          "kind": "text",
-          "body": "晚餐只能簡單做了。",
-          "senderId": "lu_chenchuan",
-          "delayMs": 2000
-        },
-        {
-          "kind": "wait_for_player_choice"
-        }
-      ],
-      "gallery": {
-        "entersPlayerAlbum": false,
-        "reason": "私人 KKT 照片附件，僅送達聊天紀錄，不自動成為共同回憶；須玩家自行保存。"
-      },
-      "assetMissingBehavior": "deliver_text_only_without_broken_image",
-      "branchRules": {
-        "selectedChoiceOnly": true,
-        "noAutoAdvanceBeforeReply": true,
-        "noAssumedPlayerAttendance": true
-      }
-    },
-    {
-      "eventId": "photo_lu_office_evening",
-      "characterId": "lu_chenchuan",
-      "characterName": "陸沉川",
-      "type": "npc_message",
-      "trigger": {
-        "requiresNpcSchedule": true,
-        "requiresPastContinuity": true,
-        "requiresPlayerAttendance": false,
-        "requiresPlayerConsentForIntimacy": true,
-        "requiresEstablishedPrivateContact": true,
-        "requiresActualCapture": true,
-        "requiresNpcShareDecision": true,
-        "requiresNoActiveConflict": true,
-        "notTriggeredByPlayerOpeningChat": true,
-        "eventNotPreviouslyCompleted": true,
-        "cooldownMs": 86400000
-      },
-      "message": "剛結束會議。從辦公室看出去，今晚的街景還不錯。",
-      "choices": [
-        {
-          "id": "photo_lu_office_evening_choice_1",
-          "text": "這麼晚還在公司？",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_lu_office_evening_choice_2",
-          "text": "你那邊的夜景真的不錯。",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_lu_office_evening_choice_3",
-          "text": "今天的會議還順利嗎？",
-          "branches": "contextual_response"
-        },
-        {
-          "id": "photo_lu_office_evening_choice_4",
-          "text": "那你先忙，別太晚回去。",
-          "branches": "contextual_response"
-        }
-      ],
-      "images": [
-        {
-          "assetId": "lu_chenchuan_office_evening_01",
-          "filename": "lu_chenchuan_office_evening_01.webp",
-          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_office_evening_01.webp",
-          "usage": "chat_attachment",
-          "unlock": {
-            "requiresMessageDelivered": true
-          },
-          "visualPrompt": "陸沉川從隔壁商辦大樓副總辦公室拍下城市夜景、窗邊桌角與普通文具，不出現機密文件或家族敏感資訊，手機自然光感；人物如入鏡遵照正式角色設定表。",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false
-        }
-      ],
-      "eventTime": "20:48",
-      "sceneBackground": "雙方已建立私人聯絡；陸沉川在隔壁商辦大樓處理完會議，拍下不涉及機密的辦公室窗景。",
-      "onChoiceResponses": {
-        "photo_lu_office_evening_choice_1": {
-          "reply": [
-            "還有幾份資料要確認。",
-            "不會待太晚。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_lu_office_evening_choice_1"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_office_evening",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_lu_office_evening_choice_2": {
-          "reply": [
-            "偶爾會站在窗邊看一會兒。",
-            "今晚剛好拍了張。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_lu_office_evening_choice_2"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_office_evening",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_lu_office_evening_choice_3": {
-          "reply": [
-            "算順利。",
-            "只是比預計久了一點。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_lu_office_evening_choice_3"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_office_evening",
-            "relationshipAssumptions": []
-          }
-        },
-        "photo_lu_office_evening_choice_4": {
-          "reply": [
-            "好，妳先忙。"
-          ],
-          "branchCondition": {
-            "requiresChoiceId": "photo_lu_office_evening_choice_4"
-          },
-          "stateEffects": {
-            "recordTopic": "lu_office_evening",
-            "relationshipAssumptions": []
-          }
-        }
-      },
-      "chatSequence": [
-        {
-          "kind": "text",
-          "body": "剛結束會議。",
-          "senderId": "lu_chenchuan"
-        },
-        {
-          "kind": "text",
-          "body": "從辦公室看出去，今晚的街景還不錯。",
-          "senderId": "lu_chenchuan",
-          "delayMs": 2500
-        },
-        {
-          "kind": "image",
-          "assetId": "lu_chenchuan_office_evening_01",
-          "senderId": "lu_chenchuan",
-          "condition": "actual_capture_and_asset_uploaded_and_npc_share_decided"
-        },
-        {
-          "kind": "text",
-          "body": "不小心待到這個時間。",
-          "senderId": "lu_chenchuan",
-          "delayMs": 2000
-        },
-        {
-          "kind": "wait_for_player_choice"
-        }
-      ],
-      "gallery": {
-        "entersPlayerAlbum": false,
-        "reason": "私人 KKT 照片附件，僅送達聊天紀錄，不自動成為共同回憶；須玩家自行保存。"
-      },
-      "assetMissingBehavior": "deliver_text_only_without_broken_image",
-      "branchRules": {
-        "selectedChoiceOnly": true,
-        "noAutoAdvanceBeforeReply": true,
-        "noAssumedPlayerAttendance": true
-      }
-    },
-    {
       "eventId": "photo_qi_batch01_parked_car_selfie",
       "characterId": "qi_ye",
       "characterName": "祁野",
@@ -8728,6 +8430,1396 @@
         "不以生成素材推定照片已拍攝、送達、發布或玩家已回覆",
         "已發生事件及原照不可重寫"
       ]
+    },
+    {
+      "eventId": "photo_off_duty",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "19:42",
+      "sceneBackground": "會議後在辦公室核對資料的自然側拍；由熟識同事拍攝，陸沉川確認照片沒有商業機密後才分享。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "還有幾份文件要看。今天大概會晚一點。",
+      "choices": [
+        {
+          "id": "photo_off_duty_choice_1",
+          "text": "還沒忙完啊？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_off_duty_choice_2",
+          "text": "你看起來很專注。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_off_duty_choice_3",
+          "text": "最近都是這麼晚嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_off_duty_choice_4",
+          "text": "那你先忙，我不打擾。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_office_late_01",
+          "filename": "lu_chenchuan_office_late_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_office_late_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "會議後在辦公室核對資料的自然側拍；由熟識同事拍攝，陸沉川確認照片沒有商業機密後才分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_off_duty_choice_1": {
+          "reply": [
+            "差不多了，剩最後一份。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_off_duty_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "office_late",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_off_duty_choice_2": {
+          "reply": [
+            "被拍的時候沒發現。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_off_duty_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "office_late",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_off_duty_choice_3": {
+          "reply": [
+            "這週比較密集，下週會好些。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_off_duty_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "office_late",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_off_duty_choice_4": {
+          "reply": [
+            "嗯，妳也別忙太晚。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_off_duty_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "office_late",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "還有幾份文件要看。今天大概會晚一點。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_office_late_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_office_evening",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "20:48",
+      "sceneBackground": "加班後站在隔壁商辦大樓落地窗前；背影由同事拍攝，已取得本人同意分享。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "剛結束會議。從這裡看出去，城市還沒睡。",
+      "choices": [
+        {
+          "id": "photo_lu_office_evening_choice_1",
+          "text": "今晚也加班？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_office_evening_choice_2",
+          "text": "這張背影拍得很好。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_office_evening_choice_3",
+          "text": "你會常常這樣看夜景嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_office_evening_choice_4",
+          "text": "快回家休息吧。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_city_window_01",
+          "filename": "lu_chenchuan_city_window_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_city_window_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "加班後站在隔壁商辦大樓落地窗前；背影由同事拍攝，已取得本人同意分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_office_evening_choice_1": {
+          "reply": [
+            "臨時多了點工作。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_office_evening_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "city_window",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_office_evening_choice_2": {
+          "reply": [
+            "同事順手拍的，我看了才知道。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_office_evening_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "city_window",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_office_evening_choice_3": {
+          "reply": [
+            "偶爾，讓自己安靜一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_office_evening_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "city_window",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_office_evening_choice_4": {
+          "reply": [
+            "嗯，正要走了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_office_evening_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "city_window",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛結束會議。從這裡看出去，城市還沒睡。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_city_window_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_home_dinner",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "21:36",
+      "sceneBackground": "陸沉川回家親自料理晚餐；手機自然拍攝，非商業棚拍。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "剛到家。今天開會開得有點晚。晚餐只能簡單做了。",
+      "choices": [
+        {
+          "id": "photo_lu_home_dinner_choice_1",
+          "text": "這叫簡單做？你對簡單是不是有什麼誤解？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_home_dinner_choice_2",
+          "text": "看起來很好吃，你平常都自己煮嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_home_dinner_choice_3",
+          "text": "忙到這麼晚還自己煮飯，不會很累？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_home_dinner_choice_4",
+          "text": "辛苦了，早點休息吧。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_home_dinner_01",
+          "filename": "lu_chenchuan_home_dinner_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_home_dinner_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "陸沉川回家親自料理晚餐；手機自然拍攝，非商業棚拍。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_home_dinner_choice_1": {
+          "reply": [
+            "只是把冰箱裡的東西處理一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_home_dinner_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "home_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_home_dinner_choice_2": {
+          "reply": [
+            "嗯，有空就自己做。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_home_dinner_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "home_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_home_dinner_choice_3": {
+          "reply": [
+            "累，但做飯能讓我換換腦子。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_home_dinner_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "home_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_home_dinner_choice_4": {
+          "reply": [
+            "妳也是，晚安。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_home_dinner_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "home_dinner",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛到家。今天開會開得有點晚。晚餐只能簡單做了。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_home_dinner_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_piano_evening",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "22:08",
+      "sceneBackground": "陸沉川晚間在住家彈鋼琴，手機定時拍攝；僅在建立一定熟悉度後分享。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "今天難得沒帶工作回家。彈了一會兒琴。",
+      "choices": [
+        {
+          "id": "photo_lu_piano_evening_choice_1",
+          "text": "原來你會彈鋼琴？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_piano_evening_choice_2",
+          "text": "你彈琴的時候很安靜。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_piano_evening_choice_3",
+          "text": "平常都彈什麼？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_piano_evening_choice_4",
+          "text": "那你繼續練，我不吵你。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_piano_evening_01",
+          "filename": "lu_chenchuan_piano_evening_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_piano_evening_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "陸沉川晚間在住家彈鋼琴，手機定時拍攝；僅在建立一定熟悉度後分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_piano_evening_choice_1": {
+          "reply": [
+            "學過一段時間，沒完全丟掉。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_piano_evening_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "piano_evening",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_piano_evening_choice_2": {
+          "reply": [
+            "這時候不太想說話。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_piano_evening_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "piano_evening",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_piano_evening_choice_3": {
+          "reply": [
+            "看心情，偶爾彈以前練過的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_piano_evening_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "piano_evening",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_piano_evening_choice_4": {
+          "reply": [
+            "好，晚點再聊。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_piano_evening_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "piano_evening",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天難得沒帶工作回家。彈了一會兒琴。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_piano_evening_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_gym_selfie",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "18:25",
+      "sceneBackground": "下班後在健身房的手機鏡面自拍，運動服自然汗感；私人生活照。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "今天提早離開公司。來動一動。",
+      "choices": [
+        {
+          "id": "photo_lu_gym_selfie_choice_1",
+          "text": "難得看到你運動自拍。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_gym_selfie_choice_2",
+          "text": "你平常都練什麼？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_gym_selfie_choice_3",
+          "text": "工作後還有體力運動？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_gym_selfie_choice_4",
+          "text": "好好練，別分心回我。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_gym_selfie_01",
+          "filename": "lu_chenchuan_gym_selfie_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_gym_selfie_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "下班後在健身房的手機鏡面自拍，運動服自然汗感；私人生活照。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_gym_selfie_choice_1": {
+          "reply": [
+            "偶爾才拍，剛好今天有空。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_gym_selfie_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "gym_selfie",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_gym_selfie_choice_2": {
+          "reply": [
+            "看當天狀態，不固定。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_gym_selfie_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "gym_selfie",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_gym_selfie_choice_3": {
+          "reply": [
+            "運動完比較能睡。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_gym_selfie_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "gym_selfie",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_gym_selfie_choice_4": {
+          "reply": [
+            "好，回去再說。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_gym_selfie_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "gym_selfie",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天提早離開公司。來動一動。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_gym_selfie_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_friend_dinner",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "20:15",
+      "sceneBackground": "與多年朋友吃飯，朋友同意合照；對方只是朋友，沒有預設玩家認識。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "被朋友拉出來吃飯。很久沒見了。",
+      "choices": [
+        {
+          "id": "photo_lu_friend_dinner_choice_1",
+          "text": "難得你會跟朋友合照。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friend_dinner_choice_2",
+          "text": "你朋友看起來很開心。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friend_dinner_choice_3",
+          "text": "你們認識很久了嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friend_dinner_choice_4",
+          "text": "那你們好好聚。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_friend_dinner_01",
+          "filename": "lu_chenchuan_friend_dinner_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_friend_dinner_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "與多年朋友吃飯，朋友同意合照；對方只是朋友，沒有預設玩家認識。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_friend_dinner_choice_1": {
+          "reply": [
+            "是他堅持要拍。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friend_dinner_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "friend_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friend_dinner_choice_2": {
+          "reply": [
+            "他一向比我熱鬧。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friend_dinner_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "friend_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friend_dinner_choice_3": {
+          "reply": [
+            "嗯，認識很多年了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friend_dinner_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "friend_dinner",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friend_dinner_choice_4": {
+          "reply": [
+            "好，晚點聊。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friend_dinner_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "friend_dinner",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "被朋友拉出來吃飯。很久沒見了。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_friend_dinner_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_sunset_walk",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "17:48",
+      "sceneBackground": "週末獨自散步時，請路過同行朋友拍下的城市夕照側影；不是共同約會。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "今天出來走走。天色剛好。",
+      "choices": [
+        {
+          "id": "photo_lu_sunset_walk_choice_1",
+          "text": "這個時間的光很好看。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_sunset_walk_choice_2",
+          "text": "你也會隨手拍風景？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_sunset_walk_choice_3",
+          "text": "這是哪裡？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_sunset_walk_choice_4",
+          "text": "好好散步，晚點聊。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_sunset_walk_01",
+          "filename": "lu_chenchuan_sunset_walk_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_sunset_walk_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "週末獨自散步時，請路過同行朋友拍下的城市夕照側影；不是共同約會。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_sunset_walk_choice_1": {
+          "reply": [
+            "嗯，難得天氣不錯。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_sunset_walk_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_walk",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_sunset_walk_choice_2": {
+          "reply": [
+            "偶爾，手機裡大半都是這些。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_sunset_walk_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_walk",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_sunset_walk_choice_3": {
+          "reply": [
+            "市區附近，沒有走很遠。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_sunset_walk_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_walk",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_sunset_walk_choice_4": {
+          "reply": [
+            "好，妳也放鬆一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_sunset_walk_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_walk",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天出來走走。天色剛好。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_sunset_walk_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_friends_cat",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "16:32",
+      "sceneBackground": "在朋友家與朋友的貓相處，手機生活照；不設定陸沉川養貓。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "去朋友家坐了一會兒。他家的貓倒是不怕生。",
+      "choices": [
+        {
+          "id": "photo_lu_friends_cat_choice_1",
+          "text": "牠好像很黏你。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friends_cat_choice_2",
+          "text": "你喜歡貓嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friends_cat_choice_3",
+          "text": "牠叫什麼名字？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_friends_cat_choice_4",
+          "text": "你陪牠玩吧。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_friends_cat_01",
+          "filename": "lu_chenchuan_friends_cat_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_friends_cat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "在朋友家與朋友的貓相處，手機生活照；不設定陸沉川養貓。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_friends_cat_choice_1": {
+          "reply": [
+            "是牠自己靠過來的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friends_cat_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "friends_cat",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friends_cat_choice_2": {
+          "reply": [
+            "不討厭，挺安靜的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friends_cat_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "friends_cat",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friends_cat_choice_3": {
+          "reply": [
+            "朋友平常叫牠小灰。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friends_cat_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "friends_cat",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_friends_cat_choice_4": {
+          "reply": [
+            "嗯，牠現在快睡著了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_friends_cat_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "friends_cat",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "去朋友家坐了一會兒。他家的貓倒是不怕生。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_friends_cat_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_coffee_break",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "14:20",
+      "sceneBackground": "工作日午後在咖啡店短暫休息，手機自然自拍；尚未與玩家見面。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "下午偷了二十分鐘空檔。咖啡還不錯。",
+      "choices": [
+        {
+          "id": "photo_lu_coffee_break_choice_1",
+          "text": "難得看到你偷閒。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_coffee_break_choice_2",
+          "text": "你喝的是什麼？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_coffee_break_choice_3",
+          "text": "今天的會議結束了？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_coffee_break_choice_4",
+          "text": "那你先好好休息。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_coffee_break_01",
+          "filename": "lu_chenchuan_coffee_break_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_coffee_break_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "工作日午後在咖啡店短暫休息，手機自然自拍；尚未與玩家見面。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_coffee_break_choice_1": {
+          "reply": [
+            "偶爾也得喘口氣。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_coffee_break_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "coffee_break",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_coffee_break_choice_2": {
+          "reply": [
+            "冰美式，沒加糖。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_coffee_break_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "coffee_break",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_coffee_break_choice_3": {
+          "reply": [
+            "還有一場，晚一點。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_coffee_break_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "coffee_break",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_coffee_break_choice_4": {
+          "reply": [
+            "好，妳也記得休息。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_coffee_break_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "coffee_break",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "下午偷了二十分鐘空檔。咖啡還不錯。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_coffee_break_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
+    },
+    {
+      "eventId": "photo_lu_quiet_night",
+      "characterId": "lu_chenchuan",
+      "characterName": "陸沉川",
+      "type": "npc_message",
+      "batchId": "lu_chenchuan_batch10_v2",
+      "eventTime": "23:18",
+      "sceneBackground": "夜晚在家沙發休息的近距離手機自拍；需已建立長期信任、明確同意分享私人照片。",
+      "platform": "kakao",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedPrivateContact": true,
+        "requiresNpcShareDecision": true,
+        "requiresNoActiveConflict": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "eventNotPreviouslyCompleted": true,
+        "cooldownMs": 86400000
+      },
+      "message": "今天不想再看螢幕了。準備睡了。",
+      "choices": [
+        {
+          "id": "photo_lu_quiet_night_choice_1",
+          "text": "你看起來真的累了。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_quiet_night_choice_2",
+          "text": "這張有點不像平常的你。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_quiet_night_choice_3",
+          "text": "明天還要早起嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "photo_lu_quiet_night_choice_4",
+          "text": "那晚安，別回了。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "lu_chenchuan_quiet_night_01",
+          "filename": "lu_chenchuan_quiet_night_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_quiet_night_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true
+          },
+          "visualPrompt": "夜晚在家沙發休息的近距離手機自拍；需已建立長期信任、明確同意分享私人照片。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "uploadStatus": "pending_player_manual_upload"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_lu_quiet_night_choice_1": {
+          "reply": [
+            "嗯，今天確實有點長。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_quiet_night_choice_1"
+          },
+          "stateEffects": {
+            "recordTopic": "quiet_night",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_quiet_night_choice_2": {
+          "reply": [
+            "大概是沒力氣端著了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_quiet_night_choice_2"
+          },
+          "stateEffects": {
+            "recordTopic": "quiet_night",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_quiet_night_choice_3": {
+          "reply": [
+            "有個早會，不會太晚起。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_quiet_night_choice_3"
+          },
+          "stateEffects": {
+            "recordTopic": "quiet_night",
+            "relationshipAssumptions": []
+          }
+        },
+        "photo_lu_quiet_night_choice_4": {
+          "reply": [
+            "晚安。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_lu_quiet_night_choice_4"
+          },
+          "stateEffects": {
+            "recordTopic": "quiet_night",
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天不想再看螢幕了。準備睡了。",
+          "senderId": "lu_chenchuan"
+        },
+        {
+          "kind": "image",
+          "assetId": "lu_chenchuan_quiet_night_01",
+          "senderId": "lu_chenchuan",
+          "condition": "file_exists_and_private_contact_and_npc_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "照片剛拍的。",
+          "senderId": "lu_chenchuan",
+          "delayMs": 2300
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人 KKT 附件不自動成為玩家共同回憶；僅玩家主動保存時可另行加入。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerAttendance": true
+      }
     }
   ],
   "lastAuthoringUpdate": "2026-11-06",
@@ -9092,5 +10184,15 @@
     },
     "albumPolicy": "none_auto_saved",
     "noImageUploadClaim": true
+  },
+  "luChenchuanBatch10V2": {
+    "count": 10,
+    "characterReference": "public/characters/陸沉川角色設定與造型參考表.png",
+    "avatar": "public/characters/電影感東亞男子肖像.png",
+    "source": "docs/brick3-lu-chenchuan-photo-prompt-v2.md",
+    "assetsUploadedByPlayer": true,
+    "delivery": "private_kakao_after_contact_only",
+    "progression": "serialized_after_player_response",
+    "noAutomaticAlbum": true
   }
 }
