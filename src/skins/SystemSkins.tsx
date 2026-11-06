@@ -143,7 +143,6 @@ export function PhoneSkin(p: Props) {
 export function ContactsSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "所有联系人");
   const [relationshipOpen, setRelationshipOpen] = useState(false);
-  const relationshipItem = p.items.find((i) => i.title === "我的關係" || i.title === "我的关系");
   const leads = ["沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川"];
   const discoveredClues = p.relationship?.clues ?? [];
   const relationshipStatus = (name: string) => {
@@ -156,7 +155,8 @@ export function ContactsSkin(p: Props) {
        k === "relation_" + name)
     );
     const value = key ? vars[key] : undefined;
-    return typeof value === "string" && value.trim() ? value : "關係尚未確認";
+    const publicStatuses = new Set(["關係尚未確認", "朋友", "曖昧", "交往中", "戀人", "前任", "已分手", "復合", "已復合"]);
+    return typeof value === "string" && publicStatuses.has(value.trim()) ? value : "關係尚未確認";
   };
   return (
     <div className="catalog-skin native-contacts">
@@ -167,14 +167,13 @@ export function ContactsSkin(p: Props) {
           className="contact-self"
           aria-label="我的關係"
           onClick={() => {
-            if (relationshipItem) p.onItem(relationshipItem);
-            else setRelationshipOpen((v) => !v);
+            setRelationshipOpen((v) => !v);
           }}
         >
           <span aria-hidden="true"><Heart size={22} /></span>
           <span><strong>我的關係</strong><small>查看已發現的關係與線索</small></span>
         </button>
-        {relationshipOpen && !relationshipItem && (
+        {relationshipOpen && (
           <section aria-label="我的關係">
             <h4 className="native-section">我的關係</h4>
             {leads.map((name) => {
