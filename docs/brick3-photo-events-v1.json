@@ -4147,6 +4147,1887 @@
         "doNotForceResponse": true
       },
       "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_shen_batch01_dorm_morning_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "dorm_morning_selfie",
+      "captureContext": "平日晨起的租屋處，睡醒後亂髮自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "平日晨起的租屋處，睡醒後亂髮自拍",
+        "anchorMessageId": "shen-r4-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "剛醒。",
+      "caption": "剛醒，頭髮直接投降。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_dorm_morning_selfie_choice_1",
+          "text": "也太亂了吧哈哈哈",
+          "branches": "photo_shen_batch01_dorm_morning_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_dorm_morning_selfie_choice_2",
+          "text": "你看起來還是很有精神",
+          "branches": "photo_shen_batch01_dorm_morning_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_dorm_morning_selfie_choice_3",
+          "text": "這麼早就起床？",
+          "branches": "photo_shen_batch01_dorm_morning_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_dorm_morning_selfie_choice_4",
+          "text": "你先去整理啦，晚點聊",
+          "branches": "photo_shen_batch01_dorm_morning_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_dorm_morning_selfie_choice_1": {
+          "reply": [
+            "欸真的很亂嗎，我剛剛還想說算了直接傳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_dorm_morning_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_dorm_morning_selfie_choice_2": {
+          "reply": [
+            "那是我硬撐的，等一下上課可能直接靈魂出走。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_dorm_morning_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_dorm_morning_selfie_choice_3": {
+          "reply": [
+            "今天第一堂比較早，不然我平常真的爬不起來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_dorm_morning_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_dorm_morning_selfie_choice_4": {
+          "reply": [
+            "好啦我去刷牙，晚點再跟妳說我有沒有成功活著到教室。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_dorm_morning_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_01",
+          "filename": "shen_yanzhou_dorm_morning_selfie_01.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_dorm_morning_selfie_01.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "平日晨起的租屋處，睡醒後亂髮自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛醒。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_01",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "我頭髮現在超誇張哈哈。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "平日晨起的租屋處，睡醒後亂髮自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 1,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_01"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_classroom_bored_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "classroom_bored_selfie",
+      "captureContext": "教室課間靠窗坐著的慵懶自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "教室課間靠窗坐著的慵懶自拍",
+        "anchorMessageId": "shen-r5-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "我現在在教室。",
+      "caption": "上課前五分鐘的無聊自拍。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_classroom_bored_selfie_choice_1",
+          "text": "你又在偷玩手機",
+          "branches": "photo_shen_batch01_classroom_bored_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_classroom_bored_selfie_choice_2",
+          "text": "窗邊光線很好欸",
+          "branches": "photo_shen_batch01_classroom_bored_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_classroom_bored_selfie_choice_3",
+          "text": "你是不是其實很愛自拍",
+          "branches": "photo_shen_batch01_classroom_bored_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_classroom_bored_selfie_choice_4",
+          "text": "快上課了吧，你先收手機",
+          "branches": "photo_shen_batch01_classroom_bored_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_classroom_bored_selfie_choice_1": {
+          "reply": [
+            "還沒上課！現在是合理摸魚時間。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_classroom_bored_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_classroom_bored_selfie_choice_2": {
+          "reply": [
+            "對吧，我才忍不住拍一下，今天陽光滿漂亮的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_classroom_bored_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_classroom_bored_selfie_choice_3": {
+          "reply": [
+            "被妳發現了，我真的很常亂拍自己哈哈。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_classroom_bored_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_classroom_bored_selfie_choice_4": {
+          "reply": [
+            "收到，我等一下就乖乖坐好。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_classroom_bored_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_02",
+          "filename": "shen_yanzhou_classroom_bored_selfie_02.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_classroom_bored_selfie_02.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_02",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "教室課間靠窗坐著的慵懶自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "我現在在教室。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_02",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "老師還沒來，我先無聊一下。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "教室課間靠窗坐著的慵懶自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 2,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_02"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_gym_mirror_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "gym_mirror_selfie",
+      "captureContext": "健身房練完腿後，在鏡前自然自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "健身房練完腿後，在鏡前自然自拍",
+        "anchorMessageId": "shen-r8-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "剛練完。",
+      "caption": "練完的更衣室鏡前自拍。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_gym_mirror_selfie_choice_1",
+          "text": "你流好多汗",
+          "branches": "photo_shen_batch01_gym_mirror_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_gym_mirror_selfie_choice_2",
+          "text": "今天練什麼？",
+          "branches": "photo_shen_batch01_gym_mirror_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_gym_mirror_selfie_choice_3",
+          "text": "鏡子自拍很熟練喔",
+          "branches": "photo_shen_batch01_gym_mirror_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_gym_mirror_selfie_choice_4",
+          "text": "記得休息，不要練過頭",
+          "branches": "photo_shen_batch01_gym_mirror_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_gym_mirror_selfie_choice_1": {
+          "reply": [
+            "真的，我剛剛差點想直接坐地上不動。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_gym_mirror_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_gym_mirror_selfie_choice_2": {
+          "reply": [
+            "腿加核心，現在我走樓梯應該會想哭。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_gym_mirror_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_gym_mirror_selfie_choice_3": {
+          "reply": [
+            "這個角度很方便啊，拍完就能直接傳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_gym_mirror_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_gym_mirror_selfie_choice_4": {
+          "reply": [
+            "有啦，我有收操，等等回去也會多喝水。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_gym_mirror_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_03",
+          "filename": "shen_yanzhou_gym_mirror_selfie_03.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_gym_mirror_selfie_03.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_03",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "健身房練完腿後，在鏡前自然自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛練完。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_03",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "今天腿直接被我練到發抖。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "健身房練完腿後，在鏡前自然自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 3,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_03"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_cafe_editing_break",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "cafe_editing_break",
+      "captureContext": "校外咖啡館整理活動相片的短暫休息",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "校外咖啡館整理活動相片的短暫休息",
+        "anchorMessageId": "shen-r13-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "今天拍的照片終於快整理完了。",
+      "caption": "修照片修到一半，先休息一下。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_cafe_editing_break_choice_1",
+          "text": "你很常一個人待咖啡店耶",
+          "branches": "photo_shen_batch01_cafe_editing_break_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_cafe_editing_break_choice_2",
+          "text": "這張氛圍很好",
+          "branches": "photo_shen_batch01_cafe_editing_break_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_cafe_editing_break_choice_3",
+          "text": "修照片累不累？",
+          "branches": "photo_shen_batch01_cafe_editing_break_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_cafe_editing_break_choice_4",
+          "text": "那你先忙，別分心了",
+          "branches": "photo_shen_batch01_cafe_editing_break_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_cafe_editing_break_choice_1": {
+          "reply": [
+            "嗯，安靜一點我比較容易整理東西。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_cafe_editing_break_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_cafe_editing_break_choice_2": {
+          "reply": [
+            "我也滿喜歡這個光，剛好照進來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_cafe_editing_break_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_cafe_editing_break_choice_3": {
+          "reply": [
+            "有時候滿花時間的，但挑到喜歡的還是會很開心。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_cafe_editing_break_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_cafe_editing_break_choice_4": {
+          "reply": [
+            "好，我再修一下，等等結束再回妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_cafe_editing_break_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_04",
+          "filename": "shen_yanzhou_cafe_editing_break_04.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_cafe_editing_break_04.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_04",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "校外咖啡館整理活動相片的短暫休息；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天拍的照片終於快整理完了。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_04",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "我現在躲在咖啡店修圖。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "校外咖啡館整理活動相片的短暫休息"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 4,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_04"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_basketball_sunset_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "basketball_sunset_selfie",
+      "captureContext": "下午和朋友打完球，夕陽下拿手機自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "下午和朋友打完球，夕陽下拿手機自拍",
+        "anchorMessageId": "shen-autonomy-v3-day1",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "欸妳看這個夕陽。",
+      "caption": "打完球後的夕陽自拍。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_basketball_sunset_selfie_choice_1",
+          "text": "你看起來超累",
+          "branches": "photo_shen_batch01_basketball_sunset_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_basketball_sunset_selfie_choice_2",
+          "text": "夕陽很好看耶",
+          "branches": "photo_shen_batch01_basketball_sunset_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_basketball_sunset_selfie_choice_3",
+          "text": "今天有贏嗎？",
+          "branches": "photo_shen_batch01_basketball_sunset_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_basketball_sunset_selfie_choice_4",
+          "text": "快去休息啦，等等又著涼",
+          "branches": "photo_shen_batch01_basketball_sunset_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_basketball_sunset_selfie_choice_1": {
+          "reply": [
+            "真的累，但打完球那種爽感還是很讚。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_basketball_sunset_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_basketball_sunset_selfie_choice_2": {
+          "reply": [
+            "對吧，我就是看到這個光才又停下來拍。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_basketball_sunset_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_basketball_sunset_selfie_choice_3": {
+          "reply": [
+            "輸兩分，被朋友嘴到現在。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_basketball_sunset_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_basketball_sunset_selfie_choice_4": {
+          "reply": [
+            "好啦，我等等就回去洗澡，不在外面吹太久。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_basketball_sunset_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_05",
+          "filename": "shen_yanzhou_basketball_sunset_selfie_05.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_basketball_sunset_selfie_05.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_05",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "下午和朋友打完球，夕陽下拿手機自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "欸妳看這個夕陽。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_05",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "我剛剛打完球，最後一球還投歪哈哈。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "下午和朋友打完球，夕陽下拿手機自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 5,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_05"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_elevator_outfit_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "elevator_outfit_selfie",
+      "captureContext": "參加朋友聚會前，電梯裡順手拍穿搭",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "參加朋友聚會前，電梯裡順手拍穿搭",
+        "anchorMessageId": "shen-r15-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "我要出門了。",
+      "caption": "出門前電梯裡順手拍一下。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_elevator_outfit_selfie_choice_1",
+          "text": "今天穿搭不錯喔",
+          "branches": "photo_shen_batch01_elevator_outfit_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_elevator_outfit_selfie_choice_2",
+          "text": "你真的很會找地方自拍",
+          "branches": "photo_shen_batch01_elevator_outfit_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_elevator_outfit_selfie_choice_3",
+          "text": "你要去哪？",
+          "branches": "photo_shen_batch01_elevator_outfit_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_elevator_outfit_selfie_choice_4",
+          "text": "路上小心，玩得開心",
+          "branches": "photo_shen_batch01_elevator_outfit_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_elevator_outfit_selfie_choice_1": {
+          "reply": [
+            "嘿嘿我也覺得今天還行，沒有白挑。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_elevator_outfit_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_elevator_outfit_selfie_choice_2": {
+          "reply": [
+            "有鏡子我就很難忍住欸。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_elevator_outfit_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_elevator_outfit_selfie_choice_3": {
+          "reply": [
+            "跟朋友吃飯，晚點可能還會再去晃一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_elevator_outfit_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_elevator_outfit_selfie_choice_4": {
+          "reply": [
+            "好，回來再跟妳說今天有沒有什麼好笑的事。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_elevator_outfit_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_06",
+          "filename": "shen_yanzhou_elevator_outfit_selfie_06.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_elevator_outfit_selfie_06.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_06",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "參加朋友聚會前，電梯裡順手拍穿搭；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "我要出門了。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_06",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "剛好電梯鏡子滿亮的，就順手拍一下。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "參加朋友聚會前，電梯裡順手拍穿搭"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 6,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_06"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_convenience_store_night_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "convenience_store_night_selfie",
+      "captureContext": "晚上短暫到便利商店買飲料，用玻璃反光自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "晚上短暫到便利商店買飲料，用玻璃反光自拍",
+        "anchorMessageId": "shen-r17-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "我剛剛下樓買飲料。",
+      "caption": "買飲料順手自拍。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_convenience_store_night_selfie_choice_1",
+          "text": "你晚上還喝飲料？",
+          "branches": "photo_shen_batch01_convenience_store_night_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_convenience_store_night_selfie_choice_2",
+          "text": "這張有點帥欸",
+          "branches": "photo_shen_batch01_convenience_store_night_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_convenience_store_night_selfie_choice_3",
+          "text": "你這時間還在外面晃",
+          "branches": "photo_shen_batch01_convenience_store_night_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_convenience_store_night_selfie_choice_4",
+          "text": "那快回去休息吧",
+          "branches": "photo_shen_batch01_convenience_store_night_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_convenience_store_night_selfie_choice_1": {
+          "reply": [
+            "就小小一瓶啦，我今天想放縱一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_convenience_store_night_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_convenience_store_night_selfie_choice_2": {
+          "reply": [
+            "真的假的，我只是順手拍的哈哈。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_convenience_store_night_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_convenience_store_night_selfie_choice_3": {
+          "reply": [
+            "一下下而已，買完我就回去。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_convenience_store_night_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_convenience_store_night_selfie_choice_4": {
+          "reply": [
+            "好，我等等就回房間，不會晃太久。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_convenience_store_night_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_07",
+          "filename": "shen_yanzhou_convenience_store_night_selfie_07.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_convenience_store_night_selfie_07.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_07",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "晚上短暫到便利商店買飲料，用玻璃反光自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "我剛剛下樓買飲料。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_07",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "便利店門口反光居然還不錯看。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "晚上短暫到便利商店買飲料，用玻璃反光自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 7,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_07"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_rainy_neon_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "rainy_neon_selfie",
+      "captureContext": "雨夜撐傘走在城市街邊的自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "雨夜撐傘走在城市街邊的自拍",
+        "anchorMessageId": "shen-r22-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "剛剛下雨。",
+      "caption": "雨天回家路上。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_rainy_neon_selfie_choice_1",
+          "text": "這種光線很適合你耶",
+          "branches": "photo_shen_batch01_rainy_neon_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_rainy_neon_selfie_choice_2",
+          "text": "有沒有淋濕？",
+          "branches": "photo_shen_batch01_rainy_neon_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_rainy_neon_selfie_choice_3",
+          "text": "你心情好像有點安靜",
+          "branches": "photo_shen_batch01_rainy_neon_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_rainy_neon_selfie_choice_4",
+          "text": "快回家，別感冒",
+          "branches": "photo_shen_batch01_rainy_neon_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_rainy_neon_selfie_choice_1": {
+          "reply": [
+            "我也喜歡，雨天的反光真的很有感覺。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_rainy_neon_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_rainy_neon_selfie_choice_2": {
+          "reply": [
+            "一點點而已，還好我有帶傘。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_rainy_neon_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_rainy_neon_selfie_choice_3": {
+          "reply": [
+            "可能因為下雨吧，就會自動慢下來一點。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_rainy_neon_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_rainy_neon_selfie_choice_4": {
+          "reply": [
+            "嗯，我快到了，等等洗個熱水澡就好。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_rainy_neon_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_08",
+          "filename": "shen_yanzhou_rainy_neon_selfie_08.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_rainy_neon_selfie_08.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_08",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "雨夜撐傘走在城市街邊的自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛剛下雨。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_08",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "我現在撐傘走回去，路邊的燈還滿好看的。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "natural",
+          "context": "雨夜撐傘走在城市街邊的自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 8,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_08"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_izakaya_friends_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "izakaya_friends_selfie",
+      "captureContext": "和實際同行的大學朋友在餐廳聚會，自己拿手機合照",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "和實際同行的大學朋友在餐廳聚會，自己拿手機合照",
+        "anchorMessageId": "shen-r12-a-in",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "我今天跟朋友吃飯。",
+      "caption": "跟朋友吃飯中。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_izakaya_friends_selfie_choice_1",
+          "text": "感覺很熱鬧",
+          "branches": "photo_shen_batch01_izakaya_friends_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_izakaya_friends_selfie_choice_2",
+          "text": "你今天看起來很開心",
+          "branches": "photo_shen_batch01_izakaya_friends_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_izakaya_friends_selfie_choice_3",
+          "text": "你有喝酒嗎？",
+          "branches": "photo_shen_batch01_izakaya_friends_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_izakaya_friends_selfie_choice_4",
+          "text": "那你先好好玩，晚點聊",
+          "branches": "photo_shen_batch01_izakaya_friends_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_izakaya_friends_selfie_choice_1": {
+          "reply": [
+            "超吵，但也滿好笑的，現在整桌都在亂講話。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_izakaya_friends_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_izakaya_friends_selfie_choice_2": {
+          "reply": [
+            "因為這群人平常就很好笑，見面都會被逗到。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_izakaya_friends_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_izakaya_friends_selfie_choice_3": {
+          "reply": [
+            "有一點點啦，我等等回去還是會小心。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_izakaya_friends_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_izakaya_friends_selfie_choice_4": {
+          "reply": [
+            "好，等我回去路上再跟妳說今天最好笑的是什麼。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_izakaya_friends_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_09",
+          "filename": "shen_yanzhou_izakaya_friends_selfie_09.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_izakaya_friends_selfie_09.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_09",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "和實際同行的大學朋友在餐廳聚會，自己拿手機合照；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "我今天跟朋友吃飯。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_09",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "他們剛剛一直鬧，我就順手拍一張。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou",
+            "known_college_friends"
+          ],
+          "mood": "natural",
+          "context": "和實際同行的大學朋友在餐廳聚會，自己拿手機合照"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 9,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_09"
+      }
+    },
+    {
+      "eventId": "photo_shen_batch01_late_night_desk_selfie",
+      "characterId": "shen_yanzhou",
+      "characterName": "沈硯舟",
+      "batchId": "shen_yanzhou_batch01",
+      "type": "npc_message",
+      "platform": "kkt_private_chat",
+      "sceneTitle": "late_night_desk_selfie",
+      "captureContext": "深夜在租屋處趕課堂報告與整理照片時的疲倦自拍",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresEstablishedChatContact": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "requiresPlayerConsentForIntimacy": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "深夜在租屋處趕課堂報告與整理照片時的疲倦自拍",
+        "anchorMessageId": "shen-autonomy-v3-day2",
+        "respectsBoundaryFlags": [
+          "shen_photo_pause",
+          "shen_personal_photos_opted_out"
+        ]
+      },
+      "message": "我還沒睡。",
+      "caption": "深夜桌前還在撐。",
+      "choices": [
+        {
+          "id": "photo_shen_batch01_late_night_desk_selfie_choice_1",
+          "text": "你又熬夜了",
+          "branches": "photo_shen_batch01_late_night_desk_selfie_response_1"
+        },
+        {
+          "id": "photo_shen_batch01_late_night_desk_selfie_choice_2",
+          "text": "這張很有深夜感",
+          "branches": "photo_shen_batch01_late_night_desk_selfie_response_2"
+        },
+        {
+          "id": "photo_shen_batch01_late_night_desk_selfie_choice_3",
+          "text": "要不要先休息一下？",
+          "branches": "photo_shen_batch01_late_night_desk_selfie_response_3"
+        },
+        {
+          "id": "photo_shen_batch01_late_night_desk_selfie_choice_4",
+          "text": "太晚了，做完就快去睡",
+          "branches": "photo_shen_batch01_late_night_desk_selfie_response_4"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_shen_batch01_late_night_desk_selfie_choice_1": {
+          "reply": [
+            "我知道，但今天真的得先弄完一點。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_late_night_desk_selfie_reaction_1",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_late_night_desk_selfie_choice_2": {
+          "reply": [
+            "因為我現在整個人就是深夜模式，眼神都快失焦了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_late_night_desk_selfie_reaction_2",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_late_night_desk_selfie_choice_3": {
+          "reply": [
+            "等我把這段收尾，我就去洗臉醒一下。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_late_night_desk_selfie_reaction_3",
+            "noAutomaticRomance": true,
+            "waitForPlayer": false
+          }
+        },
+        "photo_shen_batch01_late_night_desk_selfie_choice_4": {
+          "reply": [
+            "好，我答應妳，我不會撐到天亮。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_shen_batch01_late_night_desk_selfie_reaction_4",
+            "noAutomaticRomance": true,
+            "waitForPlayer": true
+          }
+        }
+      },
+      "images": [
+        {
+          "assetId": "shen_yanzhou_batch01_10",
+          "filename": "shen_yanzhou_late_night_desk_selfie_10.webp",
+          "path": "public/story-photos/shen_yanzhou/shen_yanzhou_late_night_desk_selfie_10.webp",
+          "usage": "chat_attachment",
+          "photographerId": "shen_yanzhou",
+          "originalPhotoId": "shen_yanzhou_batch01_10",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "visualPrompt": "深夜在租屋處趕課堂報告與整理照片時的疲倦自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresMessageDelivered": true,
+            "requiresNpcShareDecision": true
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "我還沒睡。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "image",
+          "assetId": "shen_yanzhou_batch01_10",
+          "senderId": "shen_yanzhou",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "現在在桌前做東西，腦袋快離家出走。",
+          "senderId": "shen_yanzhou"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "shen_yanzhou",
+          "subjects": [
+            "shen_yanzhou"
+          ],
+          "mood": "tired",
+          "context": "深夜在租屋處趕課堂報告與整理照片時的疲倦自拍"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "沈硯舟自行拍攝／傳送的照片，不是玩家確實參與的共同經歷；不能自動存入共同相簿"
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "doNotAssumePlayerAttendance": true
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "authoring": {
+        "sceneIndex": 10,
+        "npcAutonomy": true,
+        "ownerManualImageUploadOnly": true,
+        "photoId": "shen_yanzhou_batch01_10"
+      }
     }
   ],
   "lastAuthoringUpdate": "2026-11-06",
@@ -4377,5 +6258,28 @@
     "storePath": "public/story-photos/gu_shian/",
     "state": "authoring_complete_manual_binary_upload_pending",
     "runtimeNotes": "已有早餐與提案KKT接入器。新兩個Chat需對應真實故事錨點；Instagram Story/Post四選項是待接互動規格，需玩家主動選擇。"
+  },
+  "shenYanzhouBatch01": {
+    "batchId": "shen_yanzhou_batch01",
+    "characterId": "shen_yanzhou",
+    "imageCount": 10,
+    "eventIds": [
+      "photo_shen_batch01_dorm_morning_selfie",
+      "photo_shen_batch01_classroom_bored_selfie",
+      "photo_shen_batch01_gym_mirror_selfie",
+      "photo_shen_batch01_cafe_editing_break",
+      "photo_shen_batch01_basketball_sunset_selfie",
+      "photo_shen_batch01_elevator_outfit_selfie",
+      "photo_shen_batch01_convenience_store_night_selfie",
+      "photo_shen_batch01_rainy_neon_selfie",
+      "photo_shen_batch01_izakaya_friends_selfie",
+      "photo_shen_batch01_late_night_desk_selfie"
+    ],
+    "uploadRoot": "public/story-photos/shen_yanzhou/",
+    "imageUploadResponsibility": "player_only",
+    "eventConfigResponsibility": "assistant",
+    "integrationScript": "scripts/brick3-photo-events.mjs",
+    "status": "configuration_committed_pending_manual_photo_upload",
+    "important": "每個影像均保有 4 選項與對應NPC回覆；不進玩家共同相簿；未上傳圖片時只能文字降級，不可顯示破圖"
   }
 }
