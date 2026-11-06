@@ -1,3 +1,4 @@
+import { dateOptions, dateLeads } from "../../brick3/dateStory";
 import { overnightPanelFor } from "../../brick3/overnight";
 /* React/data adapters for dudwo5/Mymy UI templates: kt/ktn/KHD/bub,
  * igHome/igProfile/igDM/igSheet, xHome. See NOTICE.txt for permission.
@@ -129,6 +130,8 @@ export function MymyKakao(p: SkinProps) {
   }, [awaitingReply, latestIncomingId, p.thread]);
   // Story-authored Gu Shian photo replies take priority over hard-coded suggestions.
   // Never offer generic replies while one of his photo messages is still arriving.
+  const dateKey = dateLeads.find(k => ({shen:"沈硯舟",pei:"裴知聿",qi:"祁野",gu:"顧時安",lu:"陸沉川"} as Record<string,string>)[k] === p.thread);
+  const dateChoices = !p.creator && dateKey ? dateOptions({variables:p.relationship?.variables ?? {}} as import("../../schema").Runtime,dateKey) : [];
   const overnightPanel = !p.creator && p.thread ? overnightPanelFor(p.relationship?.variables ?? {}, p.thread) : null;
   const guScene = p.thread === "顧時安" ? lastMessage?.meta?.guScene : undefined;
   const guSceneChoices = guScene
@@ -222,7 +225,12 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread === "下班後五人組" ? "群組成員" : p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && overnightPanel && !isTyping && (
+          {!p.creator && dateKey && dateChoices.length > 0 && !isTyping && (
+            <div className="kkt-reply-tray" aria-label="約會互動選項">
+              {dateChoices.map(choice => <button key={choice.code} type="button" className="kkt-reply-choice" onClick={() => p.onDateAction?.(p.thread,choice.code)}>{choice.label}</button>)}
+            </div>
+          )}
+          {!p.creator && overnightPanel && dateChoices.length === 0 && !isTyping && (
             <div className="kkt-reply-tray" aria-label={overnightPanel.title || "過夜與關係邀約"}>
               {overnightPanel.pending && <small>{overnightPanel.title}</small>}
               {overnightPanel.items.map((entry) => (
@@ -231,7 +239,7 @@ export function MymyKakao(p: SkinProps) {
               ))}
             </div>
           )}
-          {!p.creator && !overnightPanel?.pending && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
+          {!p.creator && dateChoices.length === 0 && !overnightPanel?.pending && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
