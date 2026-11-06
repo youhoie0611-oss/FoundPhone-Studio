@@ -1,3 +1,4 @@
+import { advanceBrick3Chat } from "./brick3ChatScenes";
 import { StatusGlyph } from "./ios/StatusGlyph";
 import { SocialDetail, socialDetailApps } from "./skins/SocialDetails";
 import { NativeCalculator } from "./ios/Calculator";
@@ -485,8 +486,10 @@ function PhoneRuntime({
                     pendingNpcReplies.current.add(threadKey);
                     const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
+                    const sceneReply = sourceApp === "kakao" ? advanceBrick3Chat(next, thread, message, history) : null;
+                    if (sceneReply) update(next);
                     const priorReply = npcReplyQueue.current.get(threadKey) ?? Promise.resolve();
-                    const replyTask = priorReply.catch(() => undefined).then(() => requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
+                    const replyTask = priorReply.catch(() => undefined).then(() => sceneReply ?? requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
                       .then(async ({ reply, delayMs }) => {
                         if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
                         // Deliver each natural speech beat as a separate message, with a visible pause.
