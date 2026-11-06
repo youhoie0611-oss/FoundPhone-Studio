@@ -156,7 +156,10 @@ function reconcilePoly(s: Runtime, lead: V8Lead, approach: Negotiation["approach
   };
   queue(s, lead, words[response]);
   // Conditions are not consent: only explicit subsequent confirmation may update the bond.
-  if (response === "conditional") b.exclusivity = "unresolved";
+  if (response === "conditional") {
+    b.exclusivity = "unresolved";
+    choices(s, lead, [["agree-boundaries", "接受他的界線，繼續協商"], ["reject-boundaries", "不接受條件"]]);
+  }
   event(s, `negotiation:${lead}:${response}`);
 }
 export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | null {
@@ -168,6 +171,26 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   const lead = leadName as V8Lead;
   const conf = v.confessions[lead];
   s.choices = s.choices.filter(c => !c.target.startsWith(`brick3-v8:${lead}:`));
+  if (action === "agree-boundaries" || action === "reject-boundaries") {
+    const n = v.negotiations[lead];
+    if (!n || n.status !== "conditional") return s;
+    if (action === "reject-boundaries") {
+      n.status = "rejected";
+      queue(s, lead, ["我知道了。", "那我們暫時不要勉強彼此。"]);
+    } else {
+      n.status = "accepted";
+      // Existing partners must still separately consent before any agreement becomes global.
+      const others = partners(v, lead);
+      const allAgree = others.every(x => v.negotiations[x]?.status === "accepted" || v.bonds[x].exclusivity === "nonexclusive");
+      if (allAgree) {
+        saveUndo(s);
+        change(s, lead, "dating", "mutually-agreed-poly", "nonexclusive");
+        others.forEach(x => { v.bonds[x].exclusivity = "nonexclusive"; });
+        queue(s, lead, ["我願意試著和妳一起把界線說清楚。", "但如果有不舒服的地方，我們要能再談。"]);
+      } else queue(s, lead, ["我願意試試。", "不過其他當事人也需要自己決定，不能只靠我們說了算。"]);
+    }
+    return s;
+  }
   if (action === "full" || action === "status" || action === "test") {
     reconcilePoly(s, lead, action); return s;
   }
@@ -184,6 +207,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   if (action === "later") {
     // Remains pending until the 14-day deadline; do not erase a real choice.
     queue(s, lead, ["……好。", "我會給妳一點時間。"]);
+    choices(s, lead, [["only", "選擇他"], ["poly", "協商非排他關係"], ["reject", "拒絕"], ["secret", "秘密交往"], ["ambiguous", "先維持曖昧"]]);
     return s;
   }
   if (action === "poly") {
