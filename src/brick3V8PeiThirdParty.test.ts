@@ -77,6 +77,31 @@ describe("Pei slow-burn third-party arc", () => {
     expect(ensureV8(s).confessions["裴知聿"]?.kind).toBe("secret-offer");
     expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
   });
+  it("does not infer a boyfriend from an ordinary IG outing photo", () => {
+    const s = fresh();
+    s.messages.instagram = [makeItem({
+      id: "generic-outing", title: "沈硯舟", sender: "沈硯舟",
+      body: "今天跟一個人出門拍照，很開心。",
+    })];
+    tickV8PeiThirdParty(work, s);
+    expect(ensureV8(s).bonds["裴知聿"].knows["沈硯舟"]).toBeUndefined();
+  });
+  it("can learn an explicitly public boyfriend identity without opening KKT", () => {
+    const s = fresh();
+    s.messages.kakao = [makeItem({
+      id: "pei-unanswered", title: "裴知聿", sender: "裴知聿",
+      body: "有些話還是想跟妳說",
+    })];
+    s.variables.pei_attraction = 0;
+    s.messages.instagram = [makeItem({
+      id: "confirmed-partner", title: "沈硯舟", sender: "沈硯舟",
+      body: "妳是我的女朋友。今天想把這件事說清楚。",
+    })];
+    tickV8PeiThirdParty(work, s);
+    expect(ensureV8(s).bonds["裴知聿"].knows["沈硯舟"].source)
+      .toBe("public-instagram:confirmed-partner");
+    expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
+  });
   it("may still propose as an ex when the player never replies at all", () => {
     const s = fresh();
     s.messages.kakao = [makeItem({
