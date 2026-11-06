@@ -142,11 +142,30 @@ export function PhoneSkin(p: Props) {
 }
 export function ContactsSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "所有联系人");
+  const [relationshipOpen, setRelationshipOpen] = useState(false);
+  const relationshipItem = p.items.find((i) => i.title === "我的關係" || i.title === "我的关系");
   return (
     <div className="catalog-skin native-contacts">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>通讯录</h1>
+        <button
+          className="contact-self"
+          aria-label="我的關係"
+          onClick={() => {
+            if (relationshipItem) p.onItem(relationshipItem);
+            else setRelationshipOpen((v) => !v);
+          }}
+        >
+          <span aria-hidden="true"><Heart size={22} /></span>
+          <span><strong>我的關係</strong><small>查看已發現的關係與線索</small></span>
+        </button>
+        {relationshipOpen && !relationshipItem && (
+          <section aria-label="我的關係" className="native-section">
+            <h4>我的關係</h4>
+            <p>關係資料尚未載入。已解鎖線索與隱藏好感度不會在此預先公開。</p>
+          </section>
+        )}
         <SearchBox value={q} set={setQ} />
         <button
           className="contact-self"
