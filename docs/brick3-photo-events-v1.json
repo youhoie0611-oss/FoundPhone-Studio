@@ -4107,7 +4107,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_dorm_morning_selfie_choice_1": {
           "reply": [
-            "欸真的很亂嗎，我剛剛還想說算了直接傳。"
+            "我都先自首頭髮像鳥窩了，妳還補刀哈哈哈。\n等我洗個臉再想辦法救回來。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_1",
@@ -4121,7 +4121,7 @@
         },
         "photo_shen_batch01_dorm_morning_selfie_choice_2": {
           "reply": [
-            "那是我硬撐的，等一下上課可能直接靈魂出走。"
+            "妳確定？我眼睛明明還沒完全睜開欸。\n希望等一下第一堂課，我還能保持妳說的精神。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_2",
@@ -4135,7 +4135,7 @@
         },
         "photo_shen_batch01_dorm_morning_selfie_choice_3": {
           "reply": [
-            "今天第一堂比較早，不然我平常真的爬不起來。"
+            "今天第一堂很早，鬧鐘響了三次才爬起來。\n不然妳以為我為什麼一副還沒開機的樣子哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_3",
@@ -4149,7 +4149,7 @@
         },
         "photo_shen_batch01_dorm_morning_selfie_choice_4": {
           "reply": [
-            "好啦我去刷牙，晚點再跟妳說我有沒有成功活著到教室。"
+            "好啦我去刷牙整理頭髮。\n妳先忙，不用現在回我。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_dorm_morning_selfie_choice_4",
@@ -4297,7 +4297,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_classroom_bored_selfie_choice_1": {
           "reply": [
-            "還沒上課！現在是合理摸魚時間。"
+            "還沒上課啦！老師還沒到，現在是合法摸魚的最後五分鐘。\n真的上課就把手機收起來。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_1",
@@ -4311,7 +4311,7 @@
         },
         "photo_shen_batch01_classroom_bored_selfie_choice_2": {
           "reply": [
-            "對吧，我才忍不住拍一下，今天陽光滿漂亮的。"
+            "對吧！我剛剛先拍窗邊那塊光。\n結果轉過來，又順手拍了自己一張哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_2",
@@ -4325,7 +4325,7 @@
         },
         "photo_shen_batch01_classroom_bored_selfie_choice_3": {
           "reply": [
-            "被妳發現了，我真的很常亂拍自己哈哈。"
+            "超愛欸，我相簿裡一堆莫名其妙的自拍。\n今天這張算正常的了。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_3",
@@ -4339,7 +4339,7 @@
         },
         "photo_shen_batch01_classroom_bored_selfie_choice_4": {
           "reply": [
-            "收到，我等一下就乖乖坐好。"
+            "好好好，手機收起來了。\n我下課再回妳，不然等一下真的被老師抓到。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_classroom_bored_selfie_choice_4",
@@ -4487,7 +4487,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_gym_mirror_selfie_choice_1": {
           "reply": [
-            "真的，我剛剛差點想直接坐地上不動。"
+            "真的，剛剛那組做完我差點連毛巾都抓不穩。\n先擦一下汗，不然手機要被我弄濕了。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_1",
@@ -4501,7 +4501,7 @@
         },
         "photo_shen_batch01_gym_mirror_selfie_choice_2": {
           "reply": [
-            "腿加核心，現在我走樓梯應該會想哭。"
+            "腿跟核心，深蹲做到我開始懷疑人生。\n明天如果走樓梯像企鵝，不准笑太大聲。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_2",
@@ -4515,7 +4515,7 @@
         },
         "photo_shen_batch01_gym_mirror_selfie_choice_3": {
           "reply": [
-            "這個角度很方便啊，拍完就能直接傳。"
+            "哈哈鏡子就在旁邊，不拍好像浪費。\n但我剛拍了兩張把臉擋住的，只有這張能看。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_3",
@@ -4529,7 +4529,7 @@
         },
         "photo_shen_batch01_gym_mirror_selfie_choice_4": {
           "reply": [
-            "有啦，我有收操，等等回去也會多喝水。"
+            "有啦，我剛收操完，等一下就補水吃東西。\n今天不加練了，放心。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_gym_mirror_selfie_choice_4",
@@ -4677,7 +4677,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_cafe_editing_break_choice_1": {
           "reply": [
-            "嗯，安靜一點我比較容易整理東西。"
+            "對啊，我修圖很容易一坐就兩小時。\n這間桌子夠大還有插座，比在外面抱筆電方便多了。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_1",
@@ -4691,7 +4691,7 @@
         },
         "photo_shen_batch01_cafe_editing_break_choice_2": {
           "reply": [
-            "我也滿喜歡這個光，剛好照進來。"
+            "我就是被窗邊這道光吸引才拍的。\n修完照片再抬頭，覺得現場的光還是最好看。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_2",
@@ -4705,7 +4705,7 @@
         },
         "photo_shen_batch01_cafe_editing_break_choice_3": {
           "reply": [
-            "有時候滿花時間的，但挑到喜歡的還是會很開心。"
+            "盯螢幕久了眼睛會痠。\n可是挑到喜歡的照片，就會想說再修最後一張，結果又半小時哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_3",
@@ -4719,7 +4719,7 @@
         },
         "photo_shen_batch01_cafe_editing_break_choice_4": {
           "reply": [
-            "好，我再修一下，等等結束再回妳。"
+            "好，我把這批照片整理完就收電腦。\n妳也先忙，有空再聊。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_cafe_editing_break_choice_4",
@@ -4867,7 +4867,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_basketball_sunset_selfie_choice_1": {
           "reply": [
-            "真的累，但打完球那種爽感還是很讚。"
+            "剛打完第三場，腿真的快沒力了。\n但打球很爽，我先去喝水休息一下。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_1",
@@ -4881,7 +4881,7 @@
         },
         "photo_shen_batch01_basketball_sunset_selfie_choice_2": {
           "reply": [
-            "對吧，我就是看到這個光才又停下來拍。"
+            "超好看對吧！我們本來準備走了，我看到光又拿出手機。\n朋友一直催我，說我拍夕陽比打球還認真哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_2",
@@ -4895,7 +4895,7 @@
         },
         "photo_shen_batch01_basketball_sunset_selfie_choice_3": {
           "reply": [
-            "輸兩分，被朋友嘴到現在。"
+            "輸兩分！最後一球剛好是我投歪的。\n我從球場走出來到現在都還在被他們笑。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_3",
@@ -4909,7 +4909,7 @@
         },
         "photo_shen_batch01_basketball_sunset_selfie_choice_4": {
           "reply": [
-            "好啦，我等等就回去洗澡，不在外面吹太久。"
+            "好啦，我先擦汗再回去，沒有要在風口站半小時。\n妳也別忙到忘記休息。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_basketball_sunset_selfie_choice_4",
@@ -5057,7 +5057,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_elevator_outfit_selfie_choice_1": {
           "reply": [
-            "嘿嘿我也覺得今天還行，沒有白挑。"
+            "有嗎！我在房間換了兩件才決定穿這套。\n結果一進電梯又忍不住照鏡子哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_1",
@@ -5071,7 +5071,7 @@
         },
         "photo_shen_batch01_elevator_outfit_selfie_choice_2": {
           "reply": [
-            "有鏡子我就很難忍住欸。"
+            "被妳抓到了，看到鏡子就很想拍一張。\n但電梯快到一樓了，我真的只拍這張！"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_2",
@@ -5085,7 +5085,7 @@
         },
         "photo_shen_batch01_elevator_outfit_selfie_choice_3": {
           "reply": [
-            "跟朋友吃飯，晚點可能還會再去晃一下。"
+            "跟幾個同學吃飯。\n其中一個今天剛交完報告，大家約出來慶祝。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_3",
@@ -5099,7 +5099,7 @@
         },
         "photo_shen_batch01_elevator_outfit_selfie_choice_4": {
           "reply": [
-            "好，回來再跟妳說今天有沒有什麼好笑的事。"
+            "好！我先去跟他們會合。\n妳也忙妳的，不用特地等我回訊息。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_elevator_outfit_selfie_choice_4",
@@ -5247,7 +5247,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_convenience_store_night_selfie_choice_1": {
           "reply": [
-            "就小小一瓶啦，我今天想放縱一下。"
+            "今天突然想喝點冰的，結果在冰櫃前站超久。\n最後還是拿了平常最常喝的那瓶，毫無新意哈哈。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_1",
@@ -5261,7 +5261,7 @@
         },
         "photo_shen_batch01_convenience_store_night_selfie_choice_2": {
           "reply": [
-            "真的假的，我只是順手拍的哈哈。"
+            "欸這麼突然？哈哈。\n我只是在門口看到玻璃倒影不錯，才拿手機拍的。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_2",
@@ -5275,7 +5275,7 @@
         },
         "photo_shen_batch01_convenience_store_night_selfie_choice_3": {
           "reply": [
-            "一下下而已，買完我就回去。"
+            "就下樓買個東西，很快回去。\n我住的地方離這邊很近，不是在外面夜遊啦。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_3",
@@ -5289,7 +5289,7 @@
         },
         "photo_shen_batch01_convenience_store_night_selfie_choice_4": {
           "reply": [
-            "好，我等等就回房間，不會晃太久。"
+            "好啦，買完了。\n我走回去就休息，晚安先預支給妳。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_convenience_store_night_selfie_choice_4",
@@ -5437,7 +5437,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_rainy_neon_selfie_choice_1": {
           "reply": [
-            "我也喜歡，雨天的反光真的很有感覺。"
+            "我也很喜歡這種光！\n雨把路面的招牌顏色都映出來了，我走到一半忍不住停下來拍。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_1",
@@ -5451,7 +5451,7 @@
         },
         "photo_shen_batch01_rainy_neon_selfie_choice_2": {
           "reply": [
-            "一點點而已，還好我有帶傘。"
+            "鞋尖濕了一點點，其他還好。\n我有帶傘，沒有淋成落湯雞啦。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_2",
@@ -5465,7 +5465,7 @@
         },
         "photo_shen_batch01_rainy_neon_selfie_choice_3": {
           "reply": [
-            "可能因為下雨吧，就會自動慢下來一點。"
+            "嗯，今天真的比較安靜。\n走在雨裡突然不想一直講話，只想慢慢看看街景。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_3",
@@ -5479,7 +5479,7 @@
         },
         "photo_shen_batch01_rainy_neon_selfie_choice_4": {
           "reply": [
-            "嗯，我快到了，等等洗個熱水澡就好。"
+            "好，我已經走到有遮雨的地方了。\n等一下就回去洗個熱水澡，不會在外面待太久。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_rainy_neon_selfie_choice_4",
@@ -5627,7 +5627,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_izakaya_friends_selfie_choice_1": {
           "reply": [
-            "超吵，但也滿好笑的，現在整桌都在亂講話。"
+            "超吵，吵到我快聽不到自己講話哈哈。\n他們剛剛還在爭誰拍照的表情最醜。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_1",
@@ -5641,7 +5641,7 @@
         },
         "photo_shen_batch01_izakaya_friends_selfie_choice_2": {
           "reply": [
-            "因為這群人平常就很好笑，見面都會被逗到。"
+            "好久沒這樣整桌一起吃飯了。\n今天他們一直講以前的糗事，我笑到肚子痛。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_2",
@@ -5655,7 +5655,7 @@
         },
         "photo_shen_batch01_izakaya_friends_selfie_choice_3": {
           "reply": [
-            "有一點點啦，我等等回去還是會小心。"
+            "有喝一點點，不會自己騎車或開車回去。\n晚點我搭車，不會拿安全開玩笑。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_3",
@@ -5669,7 +5669,7 @@
         },
         "photo_shen_batch01_izakaya_friends_selfie_choice_4": {
           "reply": [
-            "好，等我回去路上再跟妳說今天最好笑的是什麼。"
+            "好，妳先忙。\n我跟他們把飯吃完，晚點有空再聊。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_izakaya_friends_selfie_choice_4",
@@ -5818,7 +5818,7 @@
       "onChoiceResponses": {
         "photo_shen_batch01_late_night_desk_selfie_choice_1": {
           "reply": [
-            "我知道，但今天真的得先弄完一點。"
+            "被妳發現了，今天報告卡在最後一段。\n我把它收尾就關電腦，不想再硬撐到天亮。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_1",
@@ -5832,7 +5832,7 @@
         },
         "photo_shen_batch01_late_night_desk_selfie_choice_2": {
           "reply": [
-            "因為我現在整個人就是深夜模式，眼神都快失焦了。"
+            "我眼神應該都快放空了哈哈。\n拍完才發現桌上那堆紙比我還搶鏡。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_2",
@@ -5846,7 +5846,7 @@
         },
         "photo_shen_batch01_late_night_desk_selfie_choice_3": {
           "reply": [
-            "等我把這段收尾，我就去洗臉醒一下。"
+            "好，我真的需要起來動一下。\n等檔案存好就去倒水，順便讓眼睛休息。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_3",
@@ -5860,7 +5860,7 @@
         },
         "photo_shen_batch01_late_night_desk_selfie_choice_4": {
           "reply": [
-            "好，我答應妳，我不會撐到天亮。"
+            "收到，今晚不跟電腦拚命了。\n我再存一次檔就去睡，晚安。"
           ],
           "branchCondition": {
             "requiresChoiceId": "photo_shen_batch01_late_night_desk_selfie_choice_4",
@@ -10075,7 +10075,9 @@
     "status": "images_uploaded_and_configuration_committed_pending_runtime_test",
     "important": "已驗證全部10張與當批生成原始WebP位元一致；設定已編入劇情編譯腳本，但仍需實際建置與手機介面測試",
     "imageCountVerified": 10,
-    "imageVerification": "exact SHA match for all ten generated WebP files"
+    "imageVerification": "exact SHA match for all ten generated WebP files",
+    "dialogueRevision": 2,
+    "dialogueFixNote": "修正40個NPC分支回答的上下文一致性；玩家話語優先、符合沈硯舟活潑但有界線的性格，避免突兀轉題。"
   },
   "luChenchuanCanon": {
     "status": "replaced_v7_male_host_canon",
