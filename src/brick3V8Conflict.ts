@@ -46,11 +46,12 @@ export function tickV8Conflict(w: Work, s: Runtime): Runtime {
       if (lead === other || !v.bonds[lead].knows[other]) continue;
       const id = `same-nickname:${lead}:${other}`;
       if (state.encounters.some(e => e.id === id)) continue;
+      // The second nickname must be visible in a PUBLIC post; private KKT text is not accessible to rivals.
       const nickname = nicknames.find(word => priorIncoming(s, lead).some(m => m.body.includes(word)) &&
-        priorIncoming(s, other).some(m => m.body.includes(word)));
+        (s.messages.instagram ?? []).some(m => !m.outgoing && m.sender === other && m.body.includes(word)));
       if (!nickname) continue;
       state.encounters.push({ id, lead, other, nickname, status: "awaiting", at: now(s) });
-      send(s, lead, `剛才我聽到${other}也叫妳「${nickname}」。為什麼他也這樣叫妳？`,
+      send(s, lead, `我在${other}的公開貼文裡看到他叫妳「${nickname}」。為什麼他也這樣叫妳？`,
         `brick3-v8-clash-${id}`);
       s.choices.push(...([
         ["honest", "說清楚目前的關係"],
