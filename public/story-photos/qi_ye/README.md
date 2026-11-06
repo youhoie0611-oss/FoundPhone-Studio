@@ -21,3 +21,28 @@
 - 活動後隨機回訪時，**祁野拍下的私人 KKT 附件**：`qi_ye_city_lights_followup_01.webp`（沒有圖片則只顯示文字）
 - 新活動詳細台詞與重邀門檻請見 [好感度重邀配置](../../../docs/brick3-repeat-invitations-v1.json)；舊活動照仍可在原劇情使用，別把不同用途的檔案混用。
 - 每張照片務必放在本資料夾，保留完整小寫檔名、真正 WebP 格式，並推送到 `feature/character-autonomy-v3`。完成建置後對應劇情會自行顯示。
+
+## 第一批 10 張照片（batch01，2026-11-06）
+
+**固定出圖規則：每次產生 10 張獨立 WebP，附 10 個四選項事件配套；玩家只需要批次上傳照片。**
+
+本批照片從同一次圖片生成的聯絡表畫面裁切、轉檔；**並非十張原生高解析單獨生成圖**。素材已交付作者，GitHub 圖檔仍需作者上傳。
+
+| 檔名 | 主題 | 事件 ID |
+| --- | --- | --- |
+| `qi_ye_parked_car_selfie_01.webp` | 車行取車後自拍 | `photo_qi_batch01_parked_car_selfie` |
+| `qi_ye_street_sport_chat_01.webp` | 街頭球場夕陽 | `photo_weekend_sport` |
+| `qi_ye_postgame_sweat_01.webp` | 打球後的流汗自拍 | `photo_qi_batch01_postgame_sweat` |
+| `qi_ye_design_desk_01.webp` | 設計桌草稿 | `photo_qi_batch01_design_desk` |
+| `qi_ye_outfit_mirror_01.webp` | 出門前鏡自拍 | `photo_qi_batch01_outfit_mirror` |
+| `qi_ye_night_burger_01.webp` | 宵夜漢堡 | `photo_qi_batch01_night_burger` |
+| `qi_ye_night_drive_chat_01.webp` | 城市夜景 | `photo_night_view` |
+| `qi_ye_late_sofa_01.webp` | 沙發疲憊自拍 | `photo_qi_batch01_late_sofa` |
+| `qi_ye_camera_detail_01.webp` | 相機特寫 | `photo_qi_batch01_camera_detail` |
+| `qi_ye_skate_break_01.webp` | 滑板場休息 | `photo_qi_batch01_skate_break` |
+
+下載 ZIP 後先解壓縮，**一次全選十個 WebP（不要直接上傳 ZIP）**，拖曳到 [祁野照片 GitHub 上傳頁面](https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/qi_ye)，按一次 Commit changes 即可。
+
+對話、四選項、分歧、觸發和相簿條件已提交 [照片事件配置](https://github.com/youhoie0611-oss/FoundPhone-Studio/blob/feature/character-autonomy-v3/docs/brick3-photo-events-v1.json)，由事件接入器在建置時編入 KKT；**實際照片檔未上傳前不能宣稱照片已顯示，完整遊戲測試也尚未完成。**
+
+十張均為 KKT 私人聊天附件，不因傳送就自動複製到玩家的私人相簿；留存於對話歷史。相簿的手動收藏流程尚未實作，不能臆稱已自動解鎖。
