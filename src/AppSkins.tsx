@@ -54,6 +54,8 @@ export type SkinProps = {
   onChoose?: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
   onOvernightAction?: (thread: string, action: string) => void;
+  onDateAction?: (thread: string, action: string) => void;
+  onDatePhotoPost?: (photo: Item) => void;
 };
 function Avatar({
   name,
