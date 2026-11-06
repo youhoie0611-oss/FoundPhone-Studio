@@ -159,6 +159,7 @@ export type Runtime = {
   brick3V8Life?: import("./brick3V8Life").V8LifeState;
   brick3V8Intimacy?: import("./brick3V8Intimacy").V8IntimacyState;
   brick3V8Conflict?: import("./brick3V8Conflict").V8ConflictState;
+  brick3V8PeiThirdParty?: import("./brick3V8PeiThirdParty").V8PeiThirdParty;
   peiAutonomy?: import("./brick3PeiAutonomy").PeiAutonomy;
   brick3Invites?: Record<string, import("./brick3RepeatInvites").Brick3InviteProgress>;
   brick3DateSocial?: Record<string, import("./brick3DateSocial").Brick3DateSocialProgress>;
