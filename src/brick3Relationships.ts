@@ -195,11 +195,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
     reconcilePoly(s, lead, action); return s;
   }
   if (action === "undo") {
-    if (v.undo && !v.undo.used && NOW(s) - v.undo.at < DAY) {
-      v.bonds = structuredClone(v.undo.snapshot);
-      v.undo.used = true;
-      event(s, "undo-local-relationship-decision");
-    }
+    undoV8Decision(s, lead);
     return s;
   }
   if (!conf || conf.status !== "pending") return s;
@@ -342,4 +338,56 @@ export function discoverV8Core(s: Runtime, lead: V8Lead, clue: string) {
   b.discoveries.push(clue);
   b.core = Math.min(4, b.discoveries.length) as Relationship["core"];
   return b.core;
+}
+
+/** Retract an unsent relationship update; never erase another person's memory. */
+export function undoV8Decision(s: Runtime, lead?: V8Lead): boolean {
+  const v = ensureV8(s), undo = v.undo;
+  if (!undo || undo.used || NOW(s) - undo.at >= DAY) return false;
+  const affected = V8_LEADS.filter(n => JSON.stringify(v.bonds[n]) !== JSON.stringify(undo.snapshot[n]));
+  if (!affected.length || (lead && !affected.includes(lead))) return false;
+  // As soon as a response arrived, rollback must use an explicit story checkpoint instead.
+  const hasDeliveredReaction = (s.messages.kakao ?? []).some(m =>
+    affected.includes(m.title as V8Lead) && m.meta.source === "brick3-v8" &&
+    m.time === `${s.date ?? "2026-11-06"} ${s.time}`);
+  if (hasDeliveredReaction) return false;
+  v.bonds = structuredClone(undo.snapshot);
+  v.pending = v.pending.filter(p => !affected.includes(p.lead));
+  affected.forEach(n => {
+    if (v.confessions[n]?.status === "accepted") {
+      v.confessions[n]!.status = "pending";
+      choices(s, n, [
+        ["only", "選擇他"], ["poly", "協商非排他關係"],
+        ["reject", "拒絕"], ["secret", "秘密交往"], ["ambiguous", "先維持曖昧"],
+      ]);
+    }
+  });
+  undo.used = true;
+  event(s, "undo-unpublished-relationship");
+  return true;
+}
+/** Player-initiated disclosure from the private relationship card. */
+export function discloseV8Relationship(s: Runtime, to: V8Lead): boolean {
+  const v = ensureV8(s), partner = v.bonds[to];
+  if (!live(partner)) return false;
+  const other = partners(v, to);
+  const undisclosed = other.filter(name => !partner.knows[name]);
+  if (!undisclosed.length) return false;
+  for (const name of undisclosed) {
+    partner.knows[name] = { status: v.bonds[name].status, source: "player-confession", at: NOW(s) };
+  }
+  const lines = to === "裴知聿"
+    ? ["……妳有別人了。", "我知道妳說出來不是容易的事。", "可是我真的會在意，我現在需要想一想。"]
+    : to === "祁野"
+    ? ["妳現在才告訴我？", "我得想清楚我們要怎麼辦。"]
+    : ["謝謝妳自己告訴我。", "我需要時間想想現在的關係和我們原本的約定。"];
+  queue(s, to, lines);
+  if (partner.exclusivity === "exclusive") {
+    partner.exclusivity = "unresolved";
+    event(s, `broken-exclusive-promise:${to}`);
+    if (!v.endings.includes("END_03")) v.endings.push("END_03");
+    if (!s.endings.includes("END_03")) s.endings.push("END_03");
+  }
+  event(s, `disclosed:${to}:${undisclosed.join("+")}`);
+  return true;
 }
