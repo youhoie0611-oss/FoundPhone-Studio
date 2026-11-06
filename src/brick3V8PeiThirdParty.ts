@@ -68,11 +68,18 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
   const fact = findKnowledge(s);
   if (!fact) return s;
   const messages = genuineContact(s);
-  // No automated pursuit before actual player-authored conversation.
-  if (messages.length < 3 || !(s.messages.kakao ?? []).some(m => m.title === NAME && !m.outgoing)) return s;
-  // Being ignored cannot increase affection or count as another affirmative reply.
+  // They are established EX-PARTNERS in Brick3 canon. Existing scripted
+  // conversation is sufficient prior relationship history, even if this
+  // playthrough's player has ignored every new KKT message.
+  const exHistory = (work.data.kakao ?? []).some(m =>
+    m.title === NAME && !m.outgoing);
+  const established = messages.length >= 3 ||
+    exHistory || (s.messages.kakao ?? []).some(m => m.title === NAME && !m.outgoing);
+  if (!established) return s;
+  // Low initial hidden affection does not erase the unresolved ex-history.
+  // Silence NEVER increases this score and never means acceptance.
   const attraction = Number(s.variables.pei_attraction ?? 0);
-  if (attraction < 35 || !Number.isFinite(attraction)) return s;
+  if (!Number.isFinite(attraction) || (attraction < 35 && !exHistory)) return s;
   if (p.currentPartner !== fact.lead) {
     p.currentPartner = fact.lead;
     p.knowledgeSource = fact.source;
@@ -106,7 +113,7 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
       (s.messages.kakao ?? []).findIndex(x => x.id === m.id) >
       (s.messages.kakao ?? []).findIndex(x => x.id === p.sentIds[p.sentIds.length - 1]));
     const longSilence = now(s) - p.noticedAt >= 4 * DAY;
-    if ((!repliedAfter && !longSilence) || attraction < 50) return s;
+    if ((!repliedAfter && !longSilence) || (attraction < 50 && !exHistory)) return s;
     p.lastPlayerMessageId = last(messages)?.id ?? p.lastPlayerMessageId;
     if (offerV8Confession(work, s, NAME, "secret-offer")) {
       p.phase = "offered"; p.nextAt = Infinity;
