@@ -57,7 +57,7 @@ export function injectBrick3V7Lu(story) {
 
   story.contacts.push({
     id: "luchenchuan", name: "陸沉川", hidden: true,
-    phone: "", avatar: "",
+    phone: "", avatar: "./characters/電影感東亞男子肖像.png",
     bio: "26歲｜隔壁商辦大樓的集團副總裁。沉穩寡言，擅長鋼琴與料理。",
   });
   story.variables.lu_attraction ??= 0;
