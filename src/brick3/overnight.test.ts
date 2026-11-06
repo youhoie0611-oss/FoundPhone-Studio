@@ -38,6 +38,15 @@ describe("磚3 五位男主過夜與床伴",()=>{
     expect(stopped.variables.z3_ov_pending_shen).toBe("");
     expect(s.variables.z3_ov_pending_shen).toBe("offer");
   });
+  it("first overnight uses affection before that night to classify FWB",()=>{
+    const s=fresh();s.variables.z3_affection_shen=50;
+    const slept=sleep(s,"沈硯舟");
+    expect(slept.variables.z3_ov_status_shen).toBe("fwb");
+    expect(slept.variables.z3_affection_shen).toBe(68);
+    expect(slept.variables.z3_ov_night_count_shen).toBe(1);
+    slept.date="2026-11-07";progressOvernight(slept);
+    expect(slept.variables.z3_ov_pending_shen).not.toBe("commit");
+  });
   it("NPC sends background invitation without opening KKT",()=>{
     const s=fresh();
     s.date="2026-11-07";progressOvernight(s);

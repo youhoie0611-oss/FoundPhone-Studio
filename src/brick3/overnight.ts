@@ -58,12 +58,13 @@ function beginNight(s:Runtime,k:NightKey){
   set(s,key(k,"night"),true);
   set(s,key(k,"morning"),true);
   set(s,key(k,"night_date"),String(s.date??""));
+  const affectionBeforeNight=num(s,"z3_affection_"+k);
+  set(s,key(k,"night_count"),num(s,key(k,"night_count"))+1);
   add(s,"z3_affection_"+k,18);
   add(s,"z3_intimacy_"+k,22);
   add(s,"z3_trust_"+k,5);
   if(!isNightPartner(s,k)){
-    const affection=num(s,"z3_affection_"+k);
-    if(status(s,k)!=="fwb"&&status(s,k)!=="romantic")set(s,key(k,"status"),affection<55?"fwb":"romantic");
+    if(status(s,k)!=="fwb"&&status(s,k)!=="romantic")set(s,key(k,"status"),affectionBeforeNight<55?"fwb":"romantic");
   }
   const secret=undisclosed(s,k);
   set(s,key(k,"secret"),secret.length>0);
@@ -95,7 +96,7 @@ export function progressOvernight(s:Runtime){
     if(has(s,key(k,"morning"))){
       set(s,key(k,"morning"),false);
       note(s,k,profile[k].morning);
-      if(status(s,k)==="fwb"&&num(s,"z3_affection_"+k)>=70&&!has(s,key(k,"commit_once"))){
+      if(status(s,k)==="fwb"&&num(s,"z3_affection_"+k)>=70&&num(s,key(k,"night_count"))>=2&&!has(s,key(k,"commit_once"))){
         set(s,key(k,"commit_once"),true);
         set(s,key(k,"pending"),"commit");
         note(s,k,profile[k].commit);
