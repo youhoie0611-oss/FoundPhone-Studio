@@ -154,7 +154,7 @@ export function injectBrick3V7Lu(story) {
     ["那你先忙完。", "好，晚點再說。"],
   ], () => [], "luchenchuan");
   story.events.push(node("v7-lu-private-second-arrive", "action", {
-    actions: [unlock("v7-lu-private-2")], next: ["brick3-photo-v7_lu_shoot-options"],
+    actions: [unlock("v7-lu-private-2")], next: ["brick3-photo-v7_lu_evening-options"],
   }));
   story.revision = Math.max(story.revision, 44);
   return story;
