@@ -25,14 +25,14 @@ describe("V8 shura requires source evidence", () => {
     const s = pair();
     tickV8Conflict(w, s);
     expect(s.brick3V8Conflict?.encounters).toEqual([]);
-    s.brick3DateSocial = { outing: { posted: true } } as typeof s.brick3DateSocial;
+    s.brick3DateSocial = { outing: { posted: true } } as unknown as typeof s.brick3DateSocial;
     tickV8Conflict(w, s);
     expect(s.brick3V8Conflict?.encounters).toHaveLength(1);
     expect(s.choices.filter(x => x.target.startsWith("brick3-clash:"))).toHaveLength(4);
   });
   it("allows an honest response without automatically ending an existing romance", () => {
     const s = pair();
-    s.brick3DateSocial = { outing: { posted: true } } as typeof s.brick3DateSocial;
+    s.brick3DateSocial = { outing: { posted: true } } as unknown as typeof s.brick3DateSocial;
     tickV8Conflict(w, s);
     const id = s.choices.find(x => x.target.endsWith(":honest"))!.target;
     const next = chooseV8Conflict(w, s, id)!;
