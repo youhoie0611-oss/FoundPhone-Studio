@@ -159,9 +159,9 @@ export function offerV8Confession(w: Work, s: Runtime, lead: V8Lead, kind: Confe
   const at = NOW(s);
   v.confessions[lead] = { from: lead, at, deadline: at + 14 * DAY, status: "pending", kind };
   const opening = kind === "secret-offer"
-    ? ["我知道妳已經有男朋友了。", "我沒有資格要求妳選我。", "可是……如果只能不公開地在一起，我也想問妳願不願意。"]
+    ? ["我知道妳已經有男朋友了。", "我真的很想裝作不在乎，但做不到。", "如果我不要求妳公開，也不要求妳現在選我……我還有機會嗎？"]
     : lead === "裴知聿"
-      ? ["我還想和妳重新開始。", "不是要妳現在就原諒我。", "妳願意再給我們一次機會嗎？"]
+      ? ["我想過很多次要不要再問妳。", "我知道妳可能不想聽……但我真的還喜歡妳。", "我們真的沒有重新開始的可能嗎？"]
       : [`我想把我們的關係說清楚。`, "我喜歡妳。", "妳願意和我交往嗎？"];
   queue(s, lead, opening, 0);
   choices(s, lead, [
