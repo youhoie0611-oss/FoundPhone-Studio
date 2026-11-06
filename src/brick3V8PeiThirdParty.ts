@@ -34,6 +34,21 @@ function send(s: Runtime, body: string, id: string) {
   }));
   s.notifications.push(`${NAME}：${body}`);
 }
+function observePubliclyConfirmedRelationship(s: Runtime) {
+  const v = ensureV8(s);
+  // Only unmistakable public self-disclosure counts as relationship knowledge.
+  // A shared photo, dinner or unidentified companion is NOT enough.
+  const publicConfirmation = /妳是我(?:的)?女朋友|妳是我的戀人|我和妳(?:已經)?在交往|我跟妳(?:已經)?在交往/;
+  for (const lead of V8_LEADS) {
+    if (lead === NAME || !["dating", "secret"].includes(v.bonds[lead].status)) continue;
+    if (v.bonds[NAME].knows[lead]) continue;
+    const source = (s.messages.instagram ?? []).find(m =>
+      !m.outgoing && m.sender === lead && publicConfirmation.test(m.body));
+    if (source) v.bonds[NAME].knows[lead] = {
+      status: v.bonds[lead].status, source: `public-instagram:${source.id}`, at: now(s),
+    };
+  }
+}
 function findKnowledge(s: Runtime) {
   const v = ensureV8(s);
   const pei = v.bonds[NAME];
@@ -65,6 +80,7 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
   if (relationship.status === "dating" || relationship.status === "secret" ||
       conf?.status === "accepted" || conf?.status === "declined" ||
       conf?.status === "withdrawn" || conf?.status === "discussing") return s;
+  observePubliclyConfirmedRelationship(s);
   const fact = findKnowledge(s);
   if (!fact) return s;
   const messages = genuineContact(s);
