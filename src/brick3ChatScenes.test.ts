@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { advanceBrick3Chat } from "./brick3ChatScenes";
 import { initialRuntime } from "./schema";
 import { createWork } from "./demo";
+import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 
 describe("brick3 scene progression", () => {
   it("honors Shen's photo boundary and persists the outcome", () => {
@@ -43,6 +44,21 @@ describe("brick3 scene progression", () => {
     const next = advanceBrick3Chat(state, "裴知聿", "我願意聽你說", history);
     expect(next?.reply).toContain("選擇逃避");
     expect(state.variables["brick3:scene:裴知聿"]).toBe("conversation_open");
+  });
+
+  it("sends a scheduled next-day follow-up only once", () => {
+    const work = { ...createWork(), id: "between-the-lines-b-demo" };
+    const state = initialRuntime(work);
+    advanceBrick3Chat(state, "裴知聿", "你想復合嗎？", [
+      { body: "我們分手以後一直沒談。", outgoing: false },
+    ]);
+    expect(state.brick3SceneEvents?.length).toBe(1);
+    state.elapsedMs = 86400000;
+    tickBrick3SceneEvents(work, state);
+    expect(state.messages.kakao?.some(m => m.body.includes("不是一句話"))).toBe(true);
+    const count = state.messages.kakao?.length;
+    tickBrick3SceneEvents(work, state);
+    expect(state.messages.kakao?.length).toBe(count);
   });
 
 });
