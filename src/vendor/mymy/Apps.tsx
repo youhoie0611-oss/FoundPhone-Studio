@@ -115,6 +115,11 @@ export function MymyKakao(p: SkinProps) {
 
   const lastMessage = messages[messages.length - 1];
   const photoOptions = pendingBrick3PhotoOptions(messages, p.choices ?? []);
+  // After a Shen Batch01 scripted reply, do not immediately offer unrelated
+  // generic photo questions. The player can still type a new message.
+  const shenPhotoReplyFinished = p.thread === "沈硯舟" &&
+    /^brick3-photo-photo_shen_batch01_[a-z0-9_]+-choice-[1-4]-response$/.test(lastMessage?.id ?? "") &&
+    photoOptions.length === 0;
   const v8Options = (p.choices ?? []).filter(choice =>
     choice.target.startsWith(`brick3-v8:${p.thread}:`) ||
     (choice.target.startsWith("brick3-intimacy:") && choice.label.startsWith(`${p.thread}｜`)) ||
@@ -208,7 +213,7 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && (!lastMessage?.outgoing || photoOptions.length === 4 || v8Options.length > 0) && (
+          {!p.creator && !isTyping && !shenPhotoReplyFinished && (!lastMessage?.outgoing || photoOptions.length === 4 || v8Options.length > 0) && (
             <div className="kkt-reply-tray" aria-label="回覆選項">
               {(() => {
                 if (v8Options.length) return v8Options.map((choice) => (
