@@ -63,7 +63,7 @@ function Avatar({
   src?: string;
 }) {
   return (
-    <span className={`skin-avatar ${round ? "round" : ""}`}>
+    <span className={`skin-avatar ${round || brick3AvatarFor(name) ? "round" : ""}`}>
       {safeMedia(brick3AvatarFor(name, src)) ? (
         <img src={safeMedia(brick3AvatarFor(name, src))} alt="" onError={(e) => { e.currentTarget.style.display = "none"; }} />
       ) : (
