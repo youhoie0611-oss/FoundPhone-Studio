@@ -188,6 +188,10 @@ function runQueue(
       } else {
         apply(a, s, w);
       }
+      if ((a.type === "variable" || a.type === "adjust") && a.key.startsWith("z3_affection_") && typeof previous === "number" && previous !== s.variables[a.key]) {
+        const lead = a.key.slice("z3_affection_".length);
+        if (["shen","pei","qi","gu","lu"].includes(lead)) Object.assign(s, dateAffectionChanged(s, lead as DateLead, previous));
+      }
       if ((a.type === "variable" || a.type === "adjust") && previous !== s.variables[a.key])
         queue.push(
           ...w.nodes
