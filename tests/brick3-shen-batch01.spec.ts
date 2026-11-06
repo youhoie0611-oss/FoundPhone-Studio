@@ -86,5 +86,7 @@ test("Shen Batch01: four actual scripted KKT replies are selectable and only cho
     .toBeVisible({ timeout: 10000 });
   await expect(page.getByText(batch[0].onChoiceResponses[batch[0].choices[1].id].reply[0], { exact: true }))
     .toHaveCount(0);
+  // A finished photo scene should not fall back to unrelated generic prompts.
+  await expect(page.locator(".kkt-reply-tray")).toHaveCount(0);
   await page.locator(".phone-screen").screenshot({ path: "outputs/brick3-shen-batch01/chat-selected-reply-mobile.png" });
 });
