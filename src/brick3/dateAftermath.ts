@@ -99,3 +99,31 @@ export function answerDateJealousy(previous: Runtime, viewer: DateLead, code: ty
     s.variables[`z3_date_high_jealousy_${viewer}`] = true;
   return s;
 }
+
+/** Player may publish an unlocked date photo. Each rival gets +10/+20 only on actual viewing. */
+export function publishPlayerDatePhoto(previous:Runtime,w:Work,eventId:string,photoId:string):Runtime {
+ const photo=asset(w,eventId,"player").find(x=>x.id===photoId);
+ if(!photo||!previous.unlocked.includes(photoId)||!previous.variables[`z3_date_done_${eventId}`]||!available(w,"instagram"))return previous;
+ const marker=`z3_date_player_post_${eventId}_${photoId}`;
+ if(previous.variables[marker])return previous;
+ const s=structuredClone(previous);
+ s.variables[marker]=true;
+ const media=photo.media;
+ deliver(s,"instagram","我","今天的回憶。",marker,"post",media);
+ return s;
+}
+export function noticePlayerDatePost(previous:Runtime,eventId:string,photoId:string,viewer:DateLead):Runtime {
+ if(!leads.includes(viewer)||!previous.variables[`z3_date_player_post_${eventId}_${photoId}`])return previous;
+ const lead=previous.variables[`z3_date_social_lead_${eventId}`];
+ if(viewer===lead)return previous;
+ const marker=`z3_date_player_seen_${eventId}_${photoId}_${viewer}`;
+ if(previous.variables[marker])return previous;
+ const s=structuredClone(previous);
+ s.variables[marker]=true;
+ add(s,`z3_jealousy_${viewer}`,number(s,`z3_affection_${viewer}`)>=50?20:10);
+ if(number(s,`z3_jealousy_${viewer}`)>=40&&!s.variables[`z3_date_question_${viewer}`]){
+   s.variables[`z3_date_question_${viewer}`]=eventId;
+   deliver(s,"kakao",cast[viewer].name,cast[viewer].ask,`z3-player-post-question-${eventId}-${photoId}-${viewer}`);
+ }
+ return s;
+}
