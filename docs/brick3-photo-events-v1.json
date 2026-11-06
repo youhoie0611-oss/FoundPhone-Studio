@@ -4264,15 +4264,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "平日晨起的租屋處，睡醒後亂髮自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "8fdb014755a4283a9a41bc4f8142af06238cc19d",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -4452,15 +4454,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_02",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "教室課間靠窗坐著的慵懶自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "5e3b19ab2fef5f7b98ef789ece33bbab240eba59",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -4640,15 +4644,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_03",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "健身房練完腿後，在鏡前自然自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "029d8925ed0136cee9826227be9167cfd8b1d85a",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -4828,15 +4834,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_04",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "校外咖啡館整理活動相片的短暫休息；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "606b999901644c2056a21b77bb1dfbd521a2a408",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5016,15 +5024,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_05",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "下午和朋友打完球，夕陽下拿手機自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "5351b1d9502a0d471fc60b11f070d59b66700719",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5204,15 +5214,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_06",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "參加朋友聚會前，電梯裡順手拍穿搭；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "e2c8e477aae9749a5bd6d3702d85f398e8047a39",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5392,15 +5404,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_07",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "晚上短暫到便利商店買飲料，用玻璃反光自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "6c8e3fc4c12eb5766013419e14f4444664a0f502",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5580,15 +5594,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_08",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "雨夜撐傘走在城市街邊的自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "65895c75b63813b1498535198879ba0f46fb59ff",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5768,15 +5784,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_09",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "和實際同行的大學朋友在餐廳聚會，自己拿手機合照；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "dd365490a929867685b566e03f729eb685758cb4",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -5957,15 +5975,17 @@
           "usage": "chat_attachment",
           "photographerId": "shen_yanzhou",
           "originalPhotoId": "shen_yanzhou_batch01_10",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "uploaded_verified",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false,
           "visualPrompt": "深夜在租屋處趕課堂報告與整理照片時的疲倦自拍；真實手機隨手自拍，依沈硯舟既有五視角固定外貌與服裝連續性。",
           "unlock": {
             "requiresActualCapture": true,
             "requiresMessageDelivered": true,
             "requiresNpcShareDecision": true
-          }
+          },
+          "githubBlobSha": "4f9999608e9e586bbacb7150181fbdbd8fa9cffb",
+          "sourceVerified": "exact generated WebP Git blob SHA matched"
         }
       ],
       "chatSequence": [
@@ -6279,8 +6299,10 @@
     "imageUploadResponsibility": "player_only",
     "eventConfigResponsibility": "assistant",
     "integrationScript": "scripts/brick3-photo-events.mjs",
-    "status": "configuration_committed_pending_manual_photo_upload",
-    "important": "每個影像均保有 4 選項與對應NPC回覆；不進玩家共同相簿；未上傳圖片時只能文字降級，不可顯示破圖"
+    "status": "images_uploaded_and_configuration_committed_pending_runtime_test",
+    "important": "已驗證全部10張與當批生成原始WebP位元一致；設定已編入劇情編譯腳本，但仍需實際建置與手機介面測試",
+    "imageCountVerified": 10,
+    "imageVerification": "exact SHA match for all ten generated WebP files"
   },
   "luChenchuanCanon": {
     "status": "replaced_v7_male_host_canon",
