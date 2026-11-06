@@ -77,8 +77,9 @@ function observeKnownEvents(s: Runtime) {
     }
     for (const skill of keys[lead]) {
       if (!text.includes(skill)) continue;
-      const old = b.specialization[skill] ?? 0;
-      b.specialization[skill] = clamp(old + 10);
+      const base = b.careerExperience[skill] ?? 0;
+      b.careerExperience[skill] = clamp(base + 10);
+      if (base >= 100) b.specialization[skill] = Math.min(3, (b.specialization[skill] ?? 0) + 1);
     }
     if (b.core >= 2 && !b.psychologicalObservation)
       b.psychologicalObservation = psychological[lead];
@@ -88,6 +89,34 @@ function observeKnownEvents(s: Runtime) {
     }
   }
   life.observedIds = life.observedIds.slice(-1500);
+}
+const deeperLines: Record<V8Lead, string[]> = {
+  "沈硯舟": ["我平常好像都裝得很有精神。", "其實有些事我也會在意，不是什麼都能笑一笑就過去。"],
+  "裴知聿": ["我一直以為只要妳肯再理我，我就能滿足。", "可是我知道自己還是會嫉妒……我不想裝作不在乎。"],
+  "祁野": ["我一直覺得有些事只要努力就能贏。", "可家裡的事不是這樣，妳的選擇也不是。"],
+  "顧時安": ["我通常會先把事情想清楚再說。", "但這次我想承認，我也有自己的私心和界線。"],
+  "陸沉川": ["工作跟私下真的不一樣。", "我現在說的不是工作上的話，只是我自己的想法。"],
+};
+function tickRevelations(w: Work, s: Runtime) {
+  const v = ensureV8(s);
+  for (const lead of V8_LEADS) {
+    const b = v.bonds[lead];
+    const prefix: Record<V8Lead, string> = { "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi", "顧時安": "gu", "陸沉川": "lu" };
+    const trust = Number(s.variables[prefix[lead] + "_trust"] ?? 0);
+    const mutualHistory = (s.messages.kakao ?? []).filter(m => m.title === lead && m.outgoing).length;
+    if (!b.revelation && b.core >= 2 && mutualHistory >= 3 && trust >= 60) {
+      b.revelation = { due: now(s) + 3 * 86400000, delivered: false };
+    }
+    if (b.revelation && !b.revelation.delivered && now(s) >= b.revelation.due &&
+      enoughContact(w, s, lead)) {
+      b.revelation.delivered = true;
+      add(s, lead, deeperLines[lead][0], `brick3-v8-revelation-${lead}-first`);
+      v.pending.push({
+        id: `brick3-v8-revelation-${lead}-followup`, lead,
+        lines: deeperLines[lead].slice(1), due: now(s) + 5500, index: 0,
+      });
+    }
+  }
 }
 function enoughContact(w: Work, s: Runtime, lead: V8Lead) {
   return (w.data.kakao ?? []).some(m => m.title === lead)
@@ -99,6 +128,7 @@ export function tickV8Life(w: Work, s: Runtime): Runtime {
   if (w.id !== "between-the-lines-b-demo" || w.mode === "explore") return s;
   const life = init(s);
   observeKnownEvents(s);
+  tickRevelations(w, s);
   // Night scenes are opt-in dialogue branches, not fabricated meetings.
   if (now(s) - life.lastOfferAt < 2 * 86400000) return s;
   for (const n of NIGHTS) {
@@ -129,8 +159,9 @@ export function chooseV8Life(w: Work, state: Runtime, id: string): Runtime | nul
   s.choices = s.choices.filter(c => !c.target.startsWith(`brick3-night:${eventId}:`));
   life.nightOffers[eventId] = option === "accept" ? "completed" : "declined";
   if (option === "accept") {
-    n.lines.slice(1).forEach((line, i) => add(s, n.lead, line, `brick3-v8-night-${eventId}-line-${i}`));
     const v = ensureV8(s);
+    v.pending.push({ id: `brick3-v8-night-${eventId}-reply`, lead: n.lead,
+      lines: n.lines.slice(1), due: now(s) + 3500, index: 0 });
     if (!v.nights.includes(eventId)) v.nights.push(eventId);
   }
   return s;
