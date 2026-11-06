@@ -28,4 +28,21 @@ describe("brick3 scene progression", () => {
     expect(result?.reply).toContain("希望還有重新開始的可能");
     expect(state.variables["brick3:scene:裴知聿"]).toBe("intent_revealed");
   });
+  it("moves from photo privacy boundary into a different conversation", () => {
+    const state = initialRuntime(createWork());
+    const history = [{ body: "我有一張活動照片拍到妳。", outgoing: false }];
+    advanceBrick3Chat(state, "沈硯舟", "我不想照片被傳來傳去", history);
+    const next = advanceBrick3Chat(state, "沈硯舟", "我們聊別的吧", history);
+    expect(next?.reply).toContain("相機背帶");
+    expect(state.variables["brick3:scene:沈硯舟"]).toBe("conversation_redirected");
+  });
+  it("advances the ex-boyfriend's confession only after the player agrees to listen", () => {
+    const state = initialRuntime(createWork());
+    const history = [{ body: "我們分手後很久沒聯絡。", outgoing: false }];
+    advanceBrick3Chat(state, "裴知聿", "你想復合嗎？", history);
+    const next = advanceBrick3Chat(state, "裴知聿", "我願意聽你說", history);
+    expect(next?.reply).toContain("選擇逃避");
+    expect(state.variables["brick3:scene:裴知聿"]).toBe("conversation_open");
+  });
+
 });
