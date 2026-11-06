@@ -64,6 +64,7 @@ import {
 } from "./schema";
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { overnightAction } from "./brick3/overnight";
+import { dateLeads } from "./brick3/dateStory";
 import { db } from "./persistence";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
@@ -951,6 +952,8 @@ function AppContent({
   onChoose,
   onCustomMessage,
   onOvernightAction,
+  onDateAction,
+  onDatePhotoPost,
   onEdit,
   onAdd,
   onBack,
@@ -968,6 +971,8 @@ function AppContent({
   onChoose: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
   onOvernightAction?: (thread: string, command: string) => void;
+  onDateAction?: (thread: string, command: string) => void;
+  onDatePhotoPost?: (photo: Item) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
