@@ -506,6 +506,18 @@ function PhoneRuntime({
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
                   onOvernightAction={(thread, command) => update(overnightAction(runtimeRef.current, thread, command))}
+                  onDateAction={(thread, command) => {
+                    const lead = dateLeads.find(k => ({shen:"沈硯舟",pei:"裴知聿",qi:"祁野",gu:"顧時安",lu:"陸沉川"} as Record<string,string>)[k] === thread);
+                    if (!lead) return;
+                    const next = dispatch(work,runtimeRef.current,"dateChoice",`${lead}:${command}`);
+                    if (next.variables[`z3_date_overnight_offer_${lead}`] === true) {
+                      next.variables[`z3_date_overnight_offer_${lead}`] = false;
+                      update(overnightAction(next,thread,"invite"));
+                    } else update(next);
+                  }}
+                  onDatePhotoPost={(photo) => {
+                    if (photo.meta.dateEventId) update(dispatch(work,runtimeRef.current,"datePlayerPost",`${photo.meta.dateEventId}:${photo.id}`));
+                  }}
                   onCustomMessage={(thread, message) => {
                     const sourceApp = app;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
