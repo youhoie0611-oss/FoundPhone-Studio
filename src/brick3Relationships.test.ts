@@ -62,6 +62,7 @@ describe("V8 relationship persistence", () => {
   it("stops pending emotional messages on a no-contact reply", () => {
     const s = fresh();
     offerV8Confession(work, s, "裴知聿");
+    s.messages.kakao ??= [];
     s.messages.kakao.push(makeItem({ title: "裴知聿", sender: "我", outgoing: true, body: "不要再聯絡我" }));
     observeV8Reply(s, "裴知聿", "不要再聯絡我");
     s.elapsedMs = 5000;
