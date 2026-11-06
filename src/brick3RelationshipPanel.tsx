@@ -1,4 +1,4 @@
-import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation } from "./brick3Relationships";
+import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation, reviewV8LegacyRelationship } from "./brick3Relationships";
 import type { Runtime } from "./schema";
 import "./brick3RelationshipPanel.css";
 
@@ -25,6 +25,19 @@ export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
         <button type="button" onClick={close} aria-label="關閉關係卡">關閉</button>
       </header>
       <p>以下只顯示妳已確認的關係及已發現的線索。人物心裡的數值與未揭露的秘密不會顯示。</p>
+      {v?.legacyReview && !v.legacyReview.completed && (
+        <aside className="brick3-relation-recovery" aria-label="關係恢復中心">
+          <strong>關係恢復中心</strong>
+          <p>舊存檔存在明確的戀人標記，請逐人確認。系統不會替妳假設交往歷史。</p>
+          {v.legacyReview.candidates.filter(n => !v.legacyReview!.reviewed.includes(n)).map(name => (
+            <div key={name}>
+              <strong>{name}</strong>
+              <button type="button" onClick={() => action(next => reviewV8LegacyRelationship(next, name, true))}>恢復為已交往</button>
+              <button type="button" onClick={() => action(next => reviewV8LegacyRelationship(next, name, false))}>不是戀人</button>
+            </div>
+          ))}
+        </aside>
+      )}
       {todayUndo && (
         <button type="button" className="brick3-relation-undo"
           onClick={() => action(next => undoV8Decision(next))}>
