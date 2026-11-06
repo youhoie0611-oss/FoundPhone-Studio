@@ -46,7 +46,7 @@ describe("Brick3 photo event integration", () => {
   it("keeps Lu photo events in the new VP canon with distinct replies and private-contact gates", () => {
     const manifest = readJson("docs/brick3-photo-events-v1.json");
     const lu = manifest.events.filter(e => e.characterId === "lu_chenchuan");
-    expect(lu).toHaveLength(2);
+    expect(lu).toHaveLength(10);
     for (const event of lu) {
       expect(event.trigger.requiresEstablishedPrivateContact).toBe(true);
       expect(event.choices).toHaveLength(4);
@@ -57,6 +57,7 @@ describe("Brick3 photo event integration", () => {
       expect(event.images[0].filename.endsWith(".webp")).toBe(true);
       expect(event.gallery.entersPlayerAlbum).toBe(false);
       expect(event.images[0].uploadStatus).toBe("pending_player_manual_upload");
+      expect(event.batchId).toBe("lu_chenchuan_batch10_v2");
     }
     // The production build injects Lu before photo events; test that actual order.
     const raw = readJson("stories/ambiguity-b/story.json");
@@ -66,6 +67,11 @@ describe("Brick3 photo event integration", () => {
       const wait = story.events.find(n => n.id === `brick3-photo-${event.eventId}-wait`);
       expect(wait?.conditions).toContainEqual({ key: "lu_private_contact", op: "eq", value: true });
       expect(story.events.some(n => n.id === `brick3-photo-${event.eventId}-followup-wait`)).toBe(true);
+    }
+    const third = story.events.find(n => n.id === "brick3-photo-photo_lu_home_dinner-wait");
+    expect(third).toBeDefined();
+    for (let i = 1; i <= 4; i++) {
+      expect(story.events.find(n => n.id === `brick3-photo-photo_lu_office_evening-choice-${i}-reply-arrive`)?.next).toContain(third.id);
     }
   });
 
