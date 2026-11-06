@@ -184,13 +184,13 @@
       ]
     },
     {
-      "id": "lu_photo_exhibit",
+      "id": "lu_piano_recital",
       "characterId": "lu_chenchuan",
       "characterName": "陸沉川",
       "affectionKey": "lu_attraction",
       "minAffection": 30,
       "requiresFlag": "lu_private_contact",
-      "invite": "最近有一場公開的攝影展，和工作無關。妳有興趣一起去看看嗎？不用特地配合我的時間。",
+      "invite": "週末有一場小型鋼琴獨奏會。妳如果有興趣，可以一起去聽。不方便也沒關係。",
       "choices": [
         "可以，一起去看。",
         "這次先不了。",
@@ -198,12 +198,12 @@
         "我近期很忙，等之後吧。"
       ],
       "responses": [
-        "好，我把展覽資料傳妳。",
-        "沒關係，不急。",
-        "主要是城市肖像與光影關係。妳有興趣再說。",
-        "好，妳先把事情忙完。"
+        "好，我把演出資訊傳妳。",
+        "沒關係，下次有機會再說。",
+        "是室內樂廳的獨奏會，曲目以古典作品為主。",
+        "好，妳先忙自己的事。"
       ],
-      "arrival": "我到了展場入口。妳到了嗎？如果累了，今天不一定要來。",
+      "arrival": "我到音樂廳入口了。妳到了嗎？如果行程有變，直接跟我說就好。",
       "arriveChoices": [
         "我到入口了，走吧。",
         "我今天趕不上。",
@@ -211,19 +211,19 @@
         "今天改變心意，不去了。"
       ],
       "arrivalResponses": [
-        "嗯，先從第一區看起。",
-        "知道了，別趕。",
-        "好，妳先處理自己的事。",
-        "沒關係。"
+        "嗯，我在入口右側等妳。",
+        "好，路上小心，不用趕。",
+        "知道了，妳先處理事情。",
+        "沒關係，下次再約。"
       ],
-      "eventPhoto": "lu_chenchuan_photo_exhibit_event_01.webp",
-      "followUpPhoto": "lu_chenchuan_photo_exhibit_followup_01.webp",
-      "albumTitle": "陸沉川・攝影展",
-      "albumFolder": "攝影展",
+      "eventPhoto": "lu_chenchuan_piano_recital_event_01.webp",
+      "followUpPhoto": "lu_chenchuan_piano_recital_followup_01.webp",
+      "albumTitle": "陸沉川・鋼琴獨奏會",
+      "albumFolder": "音樂會",
       "followUps": [
-        "那天展覽的光影我後來還想到。整理照片時想起妳說的話，下次有適合的展再一起去。",
-        "上次的攝影展有幾張作品，我回家後又查了作者。那天一起看展很自在。",
-        "前幾天一起看展的照片我整理好了。下次碰到有意思的公開展覽再跟妳說。"
+        "那天的安可曲我回家又彈了一遍。謝謝妳願意一起去聽。",
+        "那天妳提到的那個樂句，我後來又想了一下。下次有適合的演出再告訴妳。",
+        "演出資訊我收起來了。那天一起聽音樂很自在。"
       ]
     }
   ]
