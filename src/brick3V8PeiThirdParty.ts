@@ -127,7 +127,7 @@ export function observeV8PeiThirdPartyReply(s: Runtime, raw: string) {
   const v = ensureV8(s);
   for (const lead of V8_LEADS) {
     if (lead === NAME || !["dating", "secret"].includes(v.bonds[lead].status)) continue;
-    const normalized = raw.replace(/\\s+/g, "");
+    const normalized = raw.replace(/\s+/g, "");
     const explicitPartner = normalized.includes(`我和${lead}在交往`) ||
       normalized.includes(`我跟${lead}交往中`) ||
       normalized.includes(`我跟${lead}在一起`) ||
