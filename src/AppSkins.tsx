@@ -51,6 +51,7 @@ export type SkinProps = {
   choices?: { label: string; target: string }[];
   onChoose?: (target: string) => void;
   onPresetReply?: (thread: string, message: string) => void;
+  relationshipContext?: string[];
 };
 function Avatar({
   name,
