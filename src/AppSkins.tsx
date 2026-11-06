@@ -175,8 +175,16 @@ export function WeChatSkin(p: SkinProps) {
         .map((i) => i.title),
     ),
   ];
+  // 《磚3》角色即使尚未傳訊，也應在通訊錄中顯示頭像。
+  const brick3Contacts = [
+    "沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川",
+    "林安", "周予晴", "陳以衡", "許棠", "江敘白", "下班後五人組",
+  ];
   const contacts = [
-    ...new Set(p.items.map((i) => i.sender).filter((s) => s !== "我")),
+    ...new Set([
+      ...brick3Contacts,
+      ...p.items.map((i) => i.sender).filter((s) => s !== "我"),
+    ]),
   ];
   const posts = p.items.filter(
     (i) => i.folder === "朋友圈" || i.kind === "post",
@@ -381,11 +389,9 @@ export function WeChatSkin(p: SkinProps) {
                   key={c}
                   className="wx-contact"
                   onClick={() => {
-                    const item = p.items.find((i) => i.sender === c);
-                    if (item) {
-                      p.onThread(item.title);
-                      p.onRead(item.title);
-                    }
+                    const item = p.items.find((i) => i.sender === c || i.title === c);
+                    p.onThread(item?.title ?? c);
+                    if (item) p.onRead(item.title);
                   }}
                 >
                   <Avatar
