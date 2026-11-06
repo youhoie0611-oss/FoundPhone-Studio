@@ -1,7 +1,7 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
 import { progressOvernight } from "./brick3/overnight";
-import { completeDate, noticeDatePost, answerDateJealousy, type DateLead } from "./brick3/dateAftermath";
+import { completeDate, noticeDatePost, answerDateJealousy, publishPlayerDatePhoto, noticePlayerDatePost, type DateLead } from "./brick3/dateAftermath";
 import { dateAffectionChanged, dateChoose } from "./brick3/dateStory";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
@@ -232,6 +232,8 @@ export function dispatch(
 ): Runtime {
   const [dateLead, dateEvent, dateCode] = target.split(":");
   const validLead = ["shen", "pei", "qi", "gu", "lu"].includes(dateLead);
+  if (event === "datePlayerPost") return publishPlayerDatePhoto(previous, w, dateLead, dateEvent);
+  if (validLead && event === "datePlayerPostSeen") return noticePlayerDatePost(previous, dateEvent, dateCode, dateLead as DateLead);
   if (validLead && event === "dateChoice") return dateChoose(previous, w, dateLead as DateLead, dateEvent);
   if (validLead && event === "dateAffectionChanged") return dateAffectionChanged(previous, dateLead as DateLead, Number(dateEvent));
   if (validLead && event === "dateComplete") return completeDate(previous, w, dateLead as DateLead, dateEvent);
