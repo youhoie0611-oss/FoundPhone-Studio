@@ -122,7 +122,9 @@ export const workSchema = z.object({
     )
     .max(100),
   data: z.record(z.string(), z.array(itemSchema).max(20000)),
-  nodes: z.array(nodeSchema).max(2000),
+  // Brick3 V4/V5 photo events add hundreds of valid authored choices.
+  // Keep original events intact; the V6 runtime does not add StoryNodes.
+  nodes: z.array(nodeSchema).max(3200),
   variables: z.record(
     z.string(),
     z.union([z.string(), z.number(), z.boolean()]),
