@@ -1,4 +1,5 @@
 import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
+import {tickPeiPhotoV6,choosePeiPhotoV6,dismissPeiPhotoV6} from "./brick3PeiPhotoV6";
 import { tickV8Intimacy, chooseV8Intimacy } from "./brick3V8Intimacy";
 import { tickV8PeiThirdParty, observeV8PeiThirdPartyReply } from "./brick3V8PeiThirdParty";
 import { chooseV8, observeV8Reply, tickV8 } from "./brick3Relationships";
@@ -277,7 +278,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next))))))))));
+  return tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next)))))))))));
 }
 export function advance(
   w: Work,
@@ -360,7 +361,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s))))))))));
+  return tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s)))))))))));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -418,6 +419,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   if (thread === "裴知聿") observeV8PeiThirdPartyReply(next, raw);
   if (thread === "沈硯舟" || thread === "裴知聿" || thread === "祁野" || thread === "顧時安" || thread === "陸沉川") askV8Psychology(next, thread, raw);
   stopPeiAutonomyOnPlayerReply(next, thread);
+  dismissPeiPhotoV6(next, thread);
   const handledInvitation = appId === "kakao" && respondToBrick3InvitationText(next, thread, raw);
   if (handledInvitation) {
     next.ui = { ...next.ui, scriptedInvitationReply: { ...((next.ui?.scriptedInvitationReply ?? {}) as Record<string, string>), [thread]: message.id } };
@@ -429,6 +431,8 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
 }
 
 export function choose(w: Work, s: Runtime, id: string) {
+  const v6Photo = choosePeiPhotoV6(w, s, id);
+  if (v6Photo !== null) return v6Photo;
   const intimacy = chooseV8Intimacy(w, s, id);
   if (intimacy !== null) return intimacy;
   const clash = chooseV8Conflict(w, s, id);

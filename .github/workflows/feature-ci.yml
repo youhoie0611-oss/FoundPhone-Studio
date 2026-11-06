@@ -23,6 +23,8 @@ jobs:
         run: node --test scripts/brick3-pei-photo-v4.test.mjs
       - name: Pei second-photo integration tests
         run: node --test scripts/brick3-pei-photo-v5.test.mjs
+      - name: Pei 30-photo runtime tests
+        run: npx vitest run src/brick3PeiPhotoV6.test.ts
       - name: Story validation
         run: npm run story:validate
       - name: Production build

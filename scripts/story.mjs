@@ -103,6 +103,9 @@ try {
     if (peiV5.photos.every(photo => existsSync(photo.repositoryPath))) {
       injectBrick3PeiPhotoV5(raw, peiV5);
     }
+    // Enable V6 only when all 30 manually uploaded WebP assets are present.
+    const peiV6 = JSON.parse(await readFile("docs/brick3-pei-zhiyu-photo-events-v6.json", "utf8"));
+    raw.variables.pei_v6_assets_ready = peiV6.photos.length === 30 && peiV6.photos.every(photo => existsSync(photo.repositoryPath));
     injectBrick3Affinity(raw);
   }
   const { compileStory, storySchema } = await server.ssrLoadModule(
