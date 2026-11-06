@@ -1114,6 +1114,9 @@ function AppContent({
               choices={state.choices}
               onChoose={onChoose}
               onPresetReply={onPresetReply}
+              relationshipContext={app.id === "kakao" ? Object.entries(state.brick3V8?.bonds ?? {})
+                .filter(([, bond]) => bond.status === "dating" || bond.status === "secret")
+                .map(([name]) => name) : undefined}
               onThread={(nextThread) => {
                 setThread(nextThread);
                 // Reading a KKT conversation includes its latest visible incoming
