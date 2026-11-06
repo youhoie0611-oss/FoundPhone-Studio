@@ -96,7 +96,7 @@ export function Avatar({
 }) {
   const resolved = brick3AvatarFor(name, src);
   return (
-    <span className={`catalog-avatar ${round ? "round" : ""}`}>
+    <span className={`catalog-avatar ${round || brick3AvatarFor(name) ? "round" : ""}`}>
       {(safeMedia(resolved)?.startsWith("data:image/") || /(?:^|\/)characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(resolved)) ? (
         <img src={resolved} alt="" onError={(e) => { e.currentTarget.style.display = "none"; }} />
       ) : (
