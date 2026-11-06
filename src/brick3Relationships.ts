@@ -338,7 +338,7 @@ export function tickV8(w: Work, s: Runtime): Runtime {
     const attraction = Number(s.variables[prefix[lead] + "_attraction"] ?? 0);
     const asked = outgoing.some(m => /我們交往|願意和我交往|願意跟我交往|我們復合|我們複合|正式在一起/.test(m.body));
     const wellKnown = outgoing.length >= 3 && evidence && attraction >= 75;
-    if (asked || wellKnown) {
+    if (asked || (wellKnown && !(lead === "裴知聿" && partners(v, lead).length > 0))) {
       const secret = lead === "裴知聿" && partners(v, lead).length > 0 && attraction >= 50;
       offerV8Confession(w, s, lead, secret ? "secret-offer" : "confession");
     }
