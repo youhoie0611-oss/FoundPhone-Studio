@@ -175,7 +175,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
     const followUp = shenBatch01
       ? entry.chatSequence?.find((part, i) =>
           part.kind === "text" && i > 0)?.body
-      : luPhoto ? entry.chatSequence?.filter(part => part.kind === "text").at(-1)?.body : null;
+      : luPhoto ? (uploadedImages.length ? entry.chatSequence?.filter(part => part.kind === "text").at(-1)?.body : "妳忙的話晚點再回就好。") : null;
     if ((shenBatch01 || luPhoto) && followUp) {
       const followupId = prefix + "-followup-text";
       addChat(chat, followupId, senderId, followUp, {
