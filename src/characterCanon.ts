@@ -6,6 +6,7 @@ export const CHARACTER_CANON = {
   "裴知聿": { age: 25, identity: "心理學研究所碩士生", connection: "女主角主動提出分手的前男友", initialAffection: 70, temperament: "陰濕重力系：沉重依戀、嫉妒多疑、怕被拋下，想復合，失態後須承擔後果" },
   "祁野": { age: 23, identity: "祁家次子、富家子弟", connection: "因緣際會認識", initialAffection: 0, temperament: "張揚直球、好勝、尊重界線" },
   "顧時安": { age: 26, identity: "建築設計師", connection: "因工作專案認識", initialAffection: 0, temperament: "溫暖細膩、沉穩有主見、重視專業原則" },
+  "陸沉川": { age: 26, identity: "江南陸家繼承人、陸家集團副總裁", connection: "隔壁商辦大樓附近咖啡店自然相識", initialAffection: 0, temperament: "高冷沉穩、外冷內熱、擅長鋼琴與料理，尊重界線" },
   "林安": { identity: "女主角的朋友", connection: "朋友圈", temperament: "有自己的生活與工作" },
   "周予晴": { identity: "女主角的朋友", connection: "五人朋友圈", temperament: "有自己的生活與感情" },
   "陳以衡": { identity: "女主角的朋友", connection: "五人朋友圈", temperament: "有自己的生活與感情" },
