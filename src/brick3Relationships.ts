@@ -45,6 +45,7 @@ export type V8RelationshipState = {
   nights: string[];
   lastDay: string;
   sequence: number;
+  legacyReview?: { candidates: V8Lead[]; reviewed: V8Lead[]; completed: boolean };
   undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean; messageCount: number };
 };
 const HOUR = 3600000, DAY = 86400000;
@@ -65,6 +66,18 @@ export function ensureV8(s: Runtime): V8RelationshipState {
       bonds: Object.fromEntries(V8_LEADS.map(n => [n, neutral()])) as Record<V8Lead, Relationship>,
       confessions: {}, negotiations: {}, pending: [], events: [], endings: [],
       nights: [], lastDay: s.date ?? "", sequence: 0,
+    };
+    const prefixes: Record<V8Lead, string> = {
+      "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi", "顧時安": "gu", "陸沉川": "lu",
+    };
+    // Only explicit legacy relationship markers may enter restoration review.
+    // Ambiguous affection, jealousy or numeric progress never proves dating.
+    const candidates = V8_LEADS.filter(n => {
+      const value = String(s.variables[prefixes[n] + "_relationship_definition"] ?? "");
+      return /^(dating|partner|exclusive|lover|正式交往|戀人)$/i.test(value);
+    });
+    if (candidates.length) s.brick3V8.legacyReview = {
+      candidates, reviewed: [], completed: false,
     };
   }
   for (const lead of V8_LEADS) {
@@ -432,5 +445,17 @@ export function requestV8Negotiation(s: Runtime, lead: V8Lead): boolean {
   if (!live(v.bonds[lead])) return false;
   beginNegotiation(s, lead);
   event(s, `requested-negotiation:${lead}`);
+  return true;
+}
+
+/** One-time, evidence-based recovery for old relationship markers. */
+export function reviewV8LegacyRelationship(s: Runtime, lead: V8Lead, confirm: boolean): boolean {
+  const v = ensureV8(s), review = v.legacyReview;
+  if (!review || review.completed || !review.candidates.includes(lead) ||
+    review.reviewed.includes(lead)) return false;
+  review.reviewed.push(lead);
+  if (confirm) change(s, lead, "dating", "legacy-confirmed-by-player", "unresolved");
+  if (review.reviewed.length === review.candidates.length) review.completed = true;
+  event(s, `legacy-reviewed:${lead}:${confirm ? "yes" : "no"}`);
   return true;
 }
