@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { initialRuntime, makeItem, type Work } from "./schema";
-import { choose, advance } from "./engine";
+import { choose } from "./engine";
 import { ensureV8, offerV8Confession, chooseV8, tickV8, observeV8Reply, discoverV8Core, endV8Relationship } from "./brick3Relationships";
 
 const work = {
