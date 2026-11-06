@@ -5,6 +5,8 @@ import { injectBrick3PhotoEvents } from "./brick3-photo-events.mjs";
 import { injectBrick3Affinity } from "./brick3-affinity.mjs";
 import { injectBrick3PeiDialogue } from "./brick3-pei-dialogue.mjs";
 import { injectBrick3PeiPhotoV4 } from "./brick3-pei-photo-v4.mjs";
+import { injectBrick3PeiPhotoV5 } from "./brick3-pei-photo-v5.mjs";
+import { existsSync } from "node:fs";
 const [
   mode = "validate",
   file = process.env.STORY_FILE || "stories/ambiguity-b/story.json",
@@ -96,6 +98,11 @@ try {
     injectBrick3PhotoEvents(raw, manifest);
     const peiPhotos = JSON.parse(await readFile("docs/brick3-pei-zhiyu-photo-events-v4.json", "utf8"));
     injectBrick3PeiPhotoV4(raw, peiPhotos);
+    // Do not schedule the second photo set until all ten real files exist.
+    const peiV5 = JSON.parse(await readFile("docs/brick3-pei-zhiyu-photo-events-v5.json","utf8"));
+    if (peiV5.photos.every(photo => existsSync(photo.repositoryPath))) {
+      injectBrick3PeiPhotoV5(raw, peiV5);
+    }
     injectBrick3Affinity(raw);
   }
   const { compileStory, storySchema } = await server.ssrLoadModule(

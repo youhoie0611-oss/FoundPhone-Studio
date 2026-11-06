@@ -397,7 +397,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
       const target = choice.target;
       const photoScenes: Record<string, string[]> = {
         "顧時安": ["photo_morning_breakfast", "photo_design_review"],
-        "裴知聿": ["photo_dinner_invite", "photo_dinner_arrival", "photo_dinner_at_home", "photo_dinner_hand"],
+        "裴知聿": ["photo_dinner_invite", "photo_dinner_arrival", "photo_dinner_at_home", "photo_dinner_hand", ...Array.from({length:10},(_,i)=>"pei_zhiyu_v4_"+String(i+1).padStart(2,"0")), ...Array.from({length:10},(_,i)=>"pei_zhiyu_v5_"+String(i+1).padStart(2,"0"))],
         "沈硯舟": ["photo_camera_walk", "photo_practice_update"],
         "祁野": ["photo_night_view", "photo_weekend_sport"],
         "陸沉川": ["photo_off_duty", "photo_commercial_shoot"],
