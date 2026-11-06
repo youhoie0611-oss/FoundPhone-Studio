@@ -473,7 +473,8 @@ function PhoneRuntime({
                   state={s}
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
-                  onCustomMessage={(thread, message) => {
+                  // The player can only select authored reply buttons; no free-text composer is exposed.
+                  onPresetReply={(thread, message) => {
                     const sourceApp = app;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
                     update(next);
@@ -940,7 +941,7 @@ function AppContent({
   state,
   onRead,
   onChoose,
-  onCustomMessage,
+  onPresetReply,
   onEdit,
   onAdd,
   onBack,
@@ -956,7 +957,7 @@ function AppContent({
   state: Runtime;
   onRead: (id: string) => void;
   onChoose: (target: string) => void;
-  onCustomMessage?: (thread: string, message: string) => void;
+  onPresetReply?: (thread: string, message: string) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
@@ -1093,7 +1094,7 @@ function AppContent({
               thread={thread}
               choices={state.choices}
               onChoose={onChoose}
-              onCustomMessage={onCustomMessage}
+              onPresetReply={onPresetReply}
               onThread={(nextThread) => {
                 setThread(nextThread);
                 // Reading a KKT conversation includes its latest visible incoming
