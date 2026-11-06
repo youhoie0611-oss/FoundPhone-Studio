@@ -1,0 +1,2362 @@
+{
+  "schemaVersion": "gu_shian_batch01/1.0",
+  "characterId": "gu_shian",
+  "branch": "feature/character-autonomy-v3",
+  "batch": {
+    "batchId": "gu_shian_batch01",
+    "characterId": "gu_shian",
+    "createdAt": "2026-11-06",
+    "count": 10,
+    "manualImageUploadRequired": true,
+    "photosActuallyUploaded": false,
+    "sourceQualityNotice": "Generated as an AI ten-photo contact sheet (1536x1024) then cropped, resized and converted to ten independent WebP files; not ten natively high-resolution shots.",
+    "split": {
+      "chat": 4,
+      "instagramStory": 3,
+      "instagramPost": 3
+    },
+    "reusedEventIds": [
+      "photo_morning_breakfast",
+      "photo_design_review"
+    ],
+    "addedEventIds": [
+      "photo_gu_batch01_dog_selfie",
+      "photo_gu_batch01_office_mirror",
+      "photo_gu_batch01_workout_story",
+      "photo_gu_batch01_dog_walk_story",
+      "photo_gu_batch01_cooking_story",
+      "photo_gu_batch01_architecture_light_post",
+      "photo_gu_batch01_sunset_post",
+      "photo_gu_batch01_cafe_portrait_post"
+    ],
+    "assets": [
+      {
+        "n": 1,
+        "filename": "gu_shian_dog_selfie_01.webp",
+        "platform": "chat",
+        "eventId": "photo_gu_batch01_dog_selfie"
+      },
+      {
+        "n": 2,
+        "filename": "gu_shian_breakfast_chat_01.webp",
+        "platform": "chat",
+        "eventId": "photo_morning_breakfast"
+      },
+      {
+        "n": 3,
+        "filename": "gu_shian_studio_chat_01.webp",
+        "platform": "chat",
+        "eventId": "photo_design_review"
+      },
+      {
+        "n": 4,
+        "filename": "gu_shian_office_mirror_01.webp",
+        "platform": "chat",
+        "eventId": "photo_gu_batch01_office_mirror"
+      },
+      {
+        "n": 5,
+        "filename": "gu_shian_workout_story_01.webp",
+        "platform": "instagram_story",
+        "eventId": "photo_gu_batch01_workout_story"
+      },
+      {
+        "n": 6,
+        "filename": "gu_shian_dog_walk_story_01.webp",
+        "platform": "instagram_story",
+        "eventId": "photo_gu_batch01_dog_walk_story"
+      },
+      {
+        "n": 7,
+        "filename": "gu_shian_cooking_story_01.webp",
+        "platform": "instagram_story",
+        "eventId": "photo_gu_batch01_cooking_story"
+      },
+      {
+        "n": 8,
+        "filename": "gu_shian_architecture_light_post_01.webp",
+        "platform": "instagram_post",
+        "eventId": "photo_gu_batch01_architecture_light_post"
+      },
+      {
+        "n": 9,
+        "filename": "gu_shian_sunset_post_01.webp",
+        "platform": "instagram_post",
+        "eventId": "photo_gu_batch01_sunset_post"
+      },
+      {
+        "n": 10,
+        "filename": "gu_shian_cafe_portrait_post_01.webp",
+        "platform": "instagram_post",
+        "eventId": "photo_gu_batch01_cafe_portrait_post"
+      }
+    ],
+    "storePath": "public/story-photos/gu_shian/",
+    "state": "authoring_complete_manual_binary_upload_pending",
+    "runtimeNotes": "已有早餐與提案KKT接入器。新兩個Chat需對應真實故事錨點；Instagram Story/Post四選項是待接互動規格，需玩家主動選擇。"
+  },
+  "sourceOfTruth": "docs/brick3-photo-events-v1.json",
+  "events": [
+    {
+      "eventId": "photo_morning_breakfast",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "mustMatchActualMeal": "gu_shian_prepared_his_own_breakfast",
+        "requiresEstablishedChatContact": true,
+        "respectsBoundaryFlags": [
+          "gu_no_early_unsolicited_photos",
+          "gu_personal_photos_opted_out"
+        ],
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "noAssumptionOfCohabitation": true
+      },
+      "message": "早，今天早餐難得沒失手。",
+      "choices": [
+        {
+          "id": "morning_breakfast_choice_1",
+          "text": "你早餐都自己做？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_2",
+          "text": "看起來很好吃。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_3",
+          "text": "你是在炫耀廚藝嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "morning_breakfast_choice_4",
+          "text": "我早上通常沒什麼時間聊天。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "gu_shian_breakfast_chat_01",
+          "filename": "gu_shian_breakfast_chat_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_breakfast_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualPrompt": "顧時安親自拍的普通早餐手機照：吐司、煎蛋及飲品，符合當天是否在家與既有餐桌環境；溫暖自然晨光，無玩家身影、無兩人同居暗示。",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_breakfast_chat_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "早，今天早餐難得沒失手。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_breakfast_chat_01",
+          "senderId": "gu_shian",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "吐司差點烤過頭，不過最後還行。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "morning_breakfast_choice_1": {
+          "reply": [
+            "有時間就會自己弄。",
+            "今天那顆蛋差點翻壞，還好有救回來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_cooking_habits",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_2": {
+          "reply": [
+            "謝謝，我自己也滿滿意的。",
+            "難得早上沒有手忙腳亂。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_breakfast",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_3": {
+          "reply": [
+            "有一點，被妳發現了。",
+            "失敗的那幾次我就沒有拍下來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_light_banter",
+            "relationshipAssumptions": []
+          }
+        },
+        "morning_breakfast_choice_4": {
+          "reply": [
+            "知道了，妳先忙。",
+            "這種生活照以後不會一早就打擾妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "morning_breakfast_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_morning_boundary",
+            "setFlag": "gu_no_early_unsolicited_photos",
+            "flagValue": true,
+            "relationshipAssumptions": []
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerMeal": true,
+        "noAssumedPlayerVisited": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_breakfast_event",
+          "capturedAt": null,
+          "location": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "mood": null
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "私人訊息附件；未設計自動儲存玩家相簿。實際送達後仍可於聊天紀錄查看。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "batchIds": [
+        "gu_shian_batch01"
+      ]
+    },
+    {
+      "eventId": "photo_design_review",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "mustMatchActualWorkEvent": "architecture_design_proposal_review_completed",
+        "requiresProjectContinuity": true,
+        "requiresSharingPermissionFromProject": true,
+        "requiresNpcAtConfirmedWorkLocation": true,
+        "requiresEstablishedChatContact": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true
+      },
+      "message": "今天的提案總算告一段落。",
+      "choices": [
+        {
+          "id": "design_review_choice_1",
+          "text": "辛苦了，順利嗎？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_2",
+          "text": "模型做得很好看。",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_3",
+          "text": "終於可以休息了吧？",
+          "branches": "contextual_response"
+        },
+        {
+          "id": "design_review_choice_4",
+          "text": "我晚點再找你。",
+          "branches": "contextual_response"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "gu_shian_studio_chat_01",
+          "filename": "gu_shian_studio_chat_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_studio_chat_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true,
+            "requiresClientClearance": true
+          },
+          "visualPrompt": "顧時安自行拿手機拍攝同一建築專案的工作桌、模型和草圖一角，符合當天已完成的提案、模型與材質連續性；傍晚光線，不透露未授權客戶與機密。",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_studio_chat_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天的提案總算告一段落。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_studio_chat_01",
+          "senderId": "gu_shian",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "這個角度我還滿喜歡的。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "design_review_choice_1": {
+          "reply": [
+            "大方向算順利。",
+            "還有一些細節要整理，不過今天終於把重點說清楚了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_proposal_outcome"
+          }
+        },
+        "design_review_choice_2": {
+          "reply": [
+            "謝謝。",
+            "這個角度我調了很久，現在光線進來的感覺比較對了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_architecture_process"
+          }
+        },
+        "design_review_choice_3": {
+          "reply": [
+            "今天先不改模型了。",
+            "明天再把剩下的部分收一收。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_rest"
+          }
+        },
+        "design_review_choice_4": {
+          "reply": [
+            "好，妳先忙。",
+            "我也剛好還有資料要整理。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "design_review_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "gu_pause",
+            "waitForPlayer": true
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedSharedMeetingAttendance": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_actual_project_review",
+          "capturedAt": null,
+          "location": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "projectId": null,
+          "workStage": "review_completed"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true,
+          "requiresClientClearance": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "工作近況的聊天照片不自動匯入玩家相簿。"
+      },
+      "assetMissingBehavior": "deliver_text_only_without_broken_image",
+      "batchIds": [
+        "gu_shian_batch01"
+      ]
+    },
+    {
+      "eventId": "photo_gu_batch01_dog_selfie",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "batchId": "gu_shian_batch01",
+      "platform": "chat",
+      "sceneTitle": "dog_selfie",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": true,
+        "requiresSocialVisibility": false,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "當天早晨與自家狗在家相處、已建立 KKT 聯繫且未拒收私人照片"
+      },
+      "message": "牠今天一早就跑來盯著我。",
+      "caption": "我才剛坐下，牠就把臉湊過來了。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_dog_selfie_choice_1",
+          "text": "牠是在催你帶牠出去嗎？",
+          "branches": "photo_gu_batch01_dog_selfie_ask"
+        },
+        {
+          "id": "photo_gu_batch01_dog_selfie_choice_2",
+          "text": "你們兩個這張有點像耶。",
+          "branches": "photo_gu_batch01_dog_selfie_tease"
+        },
+        {
+          "id": "photo_gu_batch01_dog_selfie_choice_3",
+          "text": "原來你真的有養狗！",
+          "branches": "photo_gu_batch01_dog_selfie_dog"
+        },
+        {
+          "id": "photo_gu_batch01_dog_selfie_choice_4",
+          "text": "你先陪牠吧，我晚點再聊。",
+          "branches": "photo_gu_batch01_dog_selfie_boundary"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_dog_selfie_choice_1": {
+          "reply": [
+            "八成是。",
+            "我先喝口水，等一下就帶牠出去。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_selfie_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_selfie_choice_2": {
+          "reply": [
+            "真的假的？",
+            "那應該是我們兩個都很想睡。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_selfie_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_selfie_choice_3": {
+          "reply": [
+            "對，牠跟我住一段時間了。",
+            "下次拍張牠比較端正的樣子。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_selfie_dog",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_selfie_choice_4": {
+          "reply": [
+            "好，牠現在已經把牽繩叼過來了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_selfie_boundary",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_dog_selfie_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "八成是。",
+            "我先喝口水，等一下就帶牠出去。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_selfie_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "真的假的？",
+            "那應該是我們兩個都很想睡。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_selfie_dog": {
+          "intent": "dog",
+          "npcMessages": [
+            "對，牠跟我住一段時間了。",
+            "下次拍張牠比較端正的樣子。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_selfie_boundary": {
+          "intent": "boundary",
+          "npcMessages": [
+            "好，牠現在已經把牽繩叼過來了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_selfie_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_dog_selfie_01",
+          "filename": "gu_shian_dog_selfie_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_dog_selfie_01.webp",
+          "usage": "chat_attachment",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_dog_selfie_01",
+          "visualPrompt": "顧時安原始五視圖同臉，暖茶色圓角眼鏡，普通前鏡頭自拍，與同一隻奶茶色、白胸、半垂耳米克斯犬同框；自然晨光，非正式寫真",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": true,
+            "requiresPublishedSocialPost": false
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "牠今天一早就跑來盯著我。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_dog_selfie_01",
+          "condition": "asset_uploaded_and_actual_event"
+        },
+        {
+          "kind": "text",
+          "body": "我才剛坐下，牠就把臉湊過來了。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "socialSequence": [],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [
+            "gu_shian",
+            "gu_shian_dog_01"
+          ],
+          "mood": "剛睡醒、開心"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "chat"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT 私訊照片不自動匯入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_dog_selfie_01",
+        "subjects": [
+          "gu_shian",
+          "gu_shian_dog_01"
+        ],
+        "mood": "剛睡醒、開心",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_office_mirror",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "npc_message",
+      "batchId": "gu_shian_batch01",
+      "platform": "chat",
+      "sceneTitle": "office_mirror",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": true,
+        "requiresSocialVisibility": false,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "已完成當天設計資料收尾、本人確實在辦公室鏡前自拍；當日服裝連續"
+      },
+      "message": "今天總算把最後一版資料整理好了。",
+      "caption": "難得這個時間就可以收東西。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_office_mirror_choice_1",
+          "text": "今天工作還順利嗎？",
+          "branches": "photo_gu_batch01_office_mirror_work"
+        },
+        {
+          "id": "photo_gu_batch01_office_mirror_choice_2",
+          "text": "原來你會拍這種下班照。",
+          "branches": "photo_gu_batch01_office_mirror_tease"
+        },
+        {
+          "id": "photo_gu_batch01_office_mirror_choice_3",
+          "text": "這副眼鏡滿適合你的。",
+          "branches": "photo_gu_batch01_office_mirror_compliment"
+        },
+        {
+          "id": "photo_gu_batch01_office_mirror_choice_4",
+          "text": "你快下班吧，我先忙。",
+          "branches": "photo_gu_batch01_office_mirror_boundary"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_office_mirror_choice_1": {
+          "reply": [
+            "大方向順了。",
+            "細節明天再調，不然真的會越看越亂。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "office_mirror_work",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_office_mirror_choice_2": {
+          "reply": [
+            "會啊，偶爾也想記一下普通日子。",
+            "只是我拍完才發現後面桌子有點亂。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "office_mirror_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_office_mirror_choice_3": {
+          "reply": [
+            "謝謝。",
+            "平常畫圖戴比較方便，今天就一直沒拿下來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "office_mirror_compliment",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_office_mirror_choice_4": {
+          "reply": [
+            "好，那我先走了。",
+            "妳有空再聊。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "office_mirror_boundary",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_office_mirror_work": {
+          "intent": "work",
+          "npcMessages": [
+            "大方向順了。",
+            "細節明天再調，不然真的會越看越亂。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_office_mirror_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "會啊，偶爾也想記一下普通日子。",
+            "只是我拍完才發現後面桌子有點亂。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_office_mirror_compliment": {
+          "intent": "compliment",
+          "npcMessages": [
+            "謝謝。",
+            "平常畫圖戴比較方便，今天就一直沒拿下來。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_office_mirror_boundary": {
+          "intent": "boundary",
+          "npcMessages": [
+            "好，那我先走了。",
+            "妳有空再聊。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_office_mirror_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_office_mirror_01",
+          "filename": "gu_shian_office_mirror_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_office_mirror_01.webp",
+          "usage": "chat_attachment",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_office_mirror_01",
+          "visualPrompt": "建築設計師在辦公室鏡前以手機自拍；原始五視圖同臉、暖茶色圓角眼鏡、淺色條紋襯衫、簡約背包，室內工作場景，非商業形象照",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": true,
+            "requiresPublishedSocialPost": false
+          }
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今天總算把最後一版資料整理好了。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "image",
+          "assetId": "gu_shian_office_mirror_01",
+          "condition": "asset_uploaded_and_actual_event"
+        },
+        {
+          "kind": "text",
+          "body": "難得這個時間就可以收東西。",
+          "senderId": "gu_shian"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "socialSequence": [],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [
+            "gu_shian"
+          ],
+          "mood": "疲憊但放鬆"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "chat"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT 私訊照片不自動匯入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_office_mirror_01",
+        "subjects": [
+          "gu_shian"
+        ],
+        "mood": "疲憊但放鬆",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_workout_story",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_story",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_story",
+      "sceneTitle": "workout_story",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "當日確實完成運動並已休息；本人自主決定發布限動，非玩家上線觸發"
+      },
+      "message": "流完汗總算清醒了。",
+      "caption": "今天差點想偷懶。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_workout_story_choice_1",
+          "text": "你今天運動什麼？",
+          "branches": "photo_gu_batch01_workout_story_ask"
+        },
+        {
+          "id": "photo_gu_batch01_workout_story_choice_2",
+          "text": "看起來是真的累。",
+          "branches": "photo_gu_batch01_workout_story_care"
+        },
+        {
+          "id": "photo_gu_batch01_workout_story_choice_3",
+          "text": "原來你也有不想動的時候。",
+          "branches": "photo_gu_batch01_workout_story_tease"
+        },
+        {
+          "id": "photo_gu_batch01_workout_story_choice_4",
+          "text": "運動愉快，記得補水。",
+          "branches": "photo_gu_batch01_workout_story_kind"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_workout_story_choice_1": {
+          "reply": [
+            "簡單跑了一下，沒練太久。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "workout_story_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_workout_story_choice_2": {
+          "reply": [
+            "是有一點。",
+            "不過現在精神比剛出門好。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "workout_story_care",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_workout_story_choice_3": {
+          "reply": [
+            "當然有。",
+            "差點直接坐回沙發上。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "workout_story_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_workout_story_choice_4": {
+          "reply": [
+            "有，水已經喝完半瓶了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "workout_story_kind",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_workout_story_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "簡單跑了一下，沒練太久。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_workout_story_care": {
+          "intent": "care",
+          "npcMessages": [
+            "是有一點。",
+            "不過現在精神比剛出門好。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_workout_story_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "當然有。",
+            "差點直接坐回沙發上。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_workout_story_kind": {
+          "intent": "kind",
+          "npcMessages": [
+            "有，水已經喝完半瓶了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_workout_story_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_workout_story_01",
+          "filename": "gu_shian_workout_story_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_workout_story_01.webp",
+          "usage": "instagram_story",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_workout_story_01",
+          "visualPrompt": "運動完的顧時安普通手機自拍，原始同臉、頭髮略亂、素色上衣、頸間運動毛巾，稍疲倦的自然表情",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "流完汗總算清醒了。\n今天差點想偷懶。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "story_reply",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_workout_story_choice_1",
+            "photo_gu_batch01_workout_story_choice_2",
+            "photo_gu_batch01_workout_story_choice_3",
+            "photo_gu_batch01_workout_story_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [
+            "gu_shian"
+          ],
+          "mood": "舒暢微疲憊"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_story"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_workout_story_01",
+        "subjects": [
+          "gu_shian"
+        ],
+        "mood": "舒暢微疲憊",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_dog_walk_story",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_story",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_story",
+      "sceneTitle": "dog_walk_story",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "已確認當天帶自己養的狗出門、在安全散步路線上拍攝，顧時安自主發布"
+      },
+      "message": "一出門就跑得比我還快。",
+      "caption": "現在知道要等我了。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_dog_walk_story_choice_1",
+          "text": "牠看起來好開心！",
+          "branches": "photo_gu_batch01_dog_walk_story_praise"
+        },
+        {
+          "id": "photo_gu_batch01_dog_walk_story_choice_2",
+          "text": "平常你會帶牠走多久？",
+          "branches": "photo_gu_batch01_dog_walk_story_ask"
+        },
+        {
+          "id": "photo_gu_batch01_dog_walk_story_choice_3",
+          "text": "這張很像牠在催你快點。",
+          "branches": "photo_gu_batch01_dog_walk_story_tease"
+        },
+        {
+          "id": "photo_gu_batch01_dog_walk_story_choice_4",
+          "text": "散步注意安全。",
+          "branches": "photo_gu_batch01_dog_walk_story_care"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_dog_walk_story_choice_1": {
+          "reply": [
+            "牠只要出門就這個表情。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_walk_story_praise",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_walk_story_choice_2": {
+          "reply": [
+            "看天氣和牠的精神。",
+            "有時間我會多走一小段。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_walk_story_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_walk_story_choice_3": {
+          "reply": [
+            "有，我真的被催了整路。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_walk_story_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_dog_walk_story_choice_4": {
+          "reply": [
+            "會的，牽繩都有扣好。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "dog_walk_story_care",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_dog_walk_story_praise": {
+          "intent": "praise",
+          "npcMessages": [
+            "牠只要出門就這個表情。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_walk_story_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "看天氣和牠的精神。",
+            "有時間我會多走一小段。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_walk_story_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "有，我真的被催了整路。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_dog_walk_story_care": {
+          "intent": "care",
+          "npcMessages": [
+            "會的，牽繩都有扣好。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_dog_walk_story_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_dog_walk_story_01",
+          "filename": "gu_shian_dog_walk_story_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_dog_walk_story_01.webp",
+          "usage": "instagram_story",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_dog_walk_story_01",
+          "visualPrompt": "本人手持手機拍攝前方散步路徑，帶牽繩的奶茶色短毛白胸、半垂耳中型米克斯回頭看鏡頭，不引入玩家或其他陌生同行者",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "一出門就跑得比我還快。\n現在知道要等我了。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "story_reply",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_dog_walk_story_choice_1",
+            "photo_gu_batch01_dog_walk_story_choice_2",
+            "photo_gu_batch01_dog_walk_story_choice_3",
+            "photo_gu_batch01_dog_walk_story_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [
+            "gu_shian_dog_01"
+          ],
+          "mood": "開心"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_story"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_dog_walk_story_01",
+        "subjects": [
+          "gu_shian_dog_01"
+        ],
+        "mood": "開心",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_cooking_story",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_story",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_story",
+      "sceneTitle": "cooking_story",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "確實在家烹調晚餐且無衝突的外出行程，非玩家到場晚餐"
+      },
+      "message": "本來想簡單煮一下。",
+      "caption": "結果洗鍋好像會比較累。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_cooking_story_choice_1",
+          "text": "你煮的是鮭魚嗎？",
+          "branches": "photo_gu_batch01_cooking_story_ask"
+        },
+        {
+          "id": "photo_gu_batch01_cooking_story_choice_2",
+          "text": "看起來很成功！",
+          "branches": "photo_gu_batch01_cooking_story_praise"
+        },
+        {
+          "id": "photo_gu_batch01_cooking_story_choice_3",
+          "text": "所以洗鍋誰負責？",
+          "branches": "photo_gu_batch01_cooking_story_tease"
+        },
+        {
+          "id": "photo_gu_batch01_cooking_story_choice_4",
+          "text": "小心別燙到。",
+          "branches": "photo_gu_batch01_cooking_story_care"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_cooking_story_choice_1": {
+          "reply": [
+            "對，今天想吃點簡單的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cooking_story_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cooking_story_choice_2": {
+          "reply": [
+            "還好沒有煎過頭。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cooking_story_praise",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cooking_story_choice_3": {
+          "reply": [
+            "我自己啊。",
+            "這就是最麻煩的地方。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cooking_story_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cooking_story_choice_4": {
+          "reply": [
+            "放心，現在已經關火了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cooking_story_care",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_cooking_story_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "對，今天想吃點簡單的。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cooking_story_praise": {
+          "intent": "praise",
+          "npcMessages": [
+            "還好沒有煎過頭。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cooking_story_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "我自己啊。",
+            "這就是最麻煩的地方。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cooking_story_care": {
+          "intent": "care",
+          "npcMessages": [
+            "放心，現在已經關火了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cooking_story_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_cooking_story_01",
+          "filename": "gu_shian_cooking_story_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_cooking_story_01.webp",
+          "usage": "instagram_story",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_cooking_story_01",
+          "visualPrompt": "顧時安本人拍攝料理中的煎鮭魚與蘆筍，普通真實廚房光線，不暗示永久住家裝潢或第三人在場",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "本來想簡單煮一下。\n結果洗鍋好像會比較累。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "story_reply",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_cooking_story_choice_1",
+            "photo_gu_batch01_cooking_story_choice_2",
+            "photo_gu_batch01_cooking_story_choice_3",
+            "photo_gu_batch01_cooking_story_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "mood": "平靜"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_story"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_cooking_story_01",
+        "subjects": [],
+        "mood": "平靜",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_architecture_light_post",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_post",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_post",
+      "sceneTitle": "architecture_light_post",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "當天確實參訪可公開攝影的建築場域，無客戶機密及工作案版權問題"
+      },
+      "message": "午後的光，剛好落在這面牆上。",
+      "caption": "角度稍微變一下，整個空間就不一樣了。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_architecture_light_post_choice_1",
+          "text": "這個光影真的很漂亮。",
+          "branches": "photo_gu_batch01_architecture_light_post_praise"
+        },
+        {
+          "id": "photo_gu_batch01_architecture_light_post_choice_2",
+          "text": "這是你設計的建築嗎？",
+          "branches": "photo_gu_batch01_architecture_light_post_ask"
+        },
+        {
+          "id": "photo_gu_batch01_architecture_light_post_choice_3",
+          "text": "建築師是不是連散步都在上班？",
+          "branches": "photo_gu_batch01_architecture_light_post_tease"
+        },
+        {
+          "id": "photo_gu_batch01_architecture_light_post_choice_4",
+          "text": "你很喜歡這種清水模的質感？",
+          "branches": "photo_gu_batch01_architecture_light_post_professional"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_architecture_light_post_choice_1": {
+          "reply": [
+            "對，我在那裡站了一會才拍到這個角度。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "architecture_light_post_praise",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_architecture_light_post_choice_2": {
+          "reply": [
+            "不是，只是我路過看到的公開空間。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "architecture_light_post_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_architecture_light_post_choice_3": {
+          "reply": [
+            "哈哈，這次是純粹自己想拍。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "architecture_light_post_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_architecture_light_post_choice_4": {
+          "reply": [
+            "喜歡它和光線互動的方式。",
+            "不過也不是每個空間都適合用。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "architecture_light_post_professional",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_architecture_light_post_praise": {
+          "intent": "praise",
+          "npcMessages": [
+            "對，我在那裡站了一會才拍到這個角度。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_architecture_light_post_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "不是，只是我路過看到的公開空間。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_architecture_light_post_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "哈哈，這次是純粹自己想拍。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_architecture_light_post_professional": {
+          "intent": "professional",
+          "npcMessages": [
+            "喜歡它和光線互動的方式。",
+            "不過也不是每個空間都適合用。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_architecture_light_post_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_architecture_light_post_01",
+          "filename": "gu_shian_architecture_light_post_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_architecture_light_post_01.webp",
+          "usage": "instagram_post",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_architecture_light_post_01",
+          "visualPrompt": "樹影落在當代建築混凝土立面上的光影照片，顧時安自行拍攝，真實而略有構圖美感，不捏造特定地標或自己的設計案",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "午後的光，剛好落在這面牆上。\n角度稍微變一下，整個空間就不一樣了。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "post_comment",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_architecture_light_post_choice_1",
+            "photo_gu_batch01_architecture_light_post_choice_2",
+            "photo_gu_batch01_architecture_light_post_choice_3",
+            "photo_gu_batch01_architecture_light_post_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "mood": "專注"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_post"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_architecture_light_post_01",
+        "subjects": [],
+        "mood": "專注",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_sunset_post",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_post",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_post",
+      "sceneTitle": "sunset_post",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "當日傍晚確實有到合法安全觀景位置且天候適合拍攝，未確認地標不可虛構"
+      },
+      "message": "今天的天空很值得抬頭看一下。",
+      "caption": "同一條路走了很多次，還是會有不同的顏色。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_sunset_post_choice_1",
+          "text": "這個顏色太好看了。",
+          "branches": "photo_gu_batch01_sunset_post_praise"
+        },
+        {
+          "id": "photo_gu_batch01_sunset_post_choice_2",
+          "text": "你在哪個地方拍的？",
+          "branches": "photo_gu_batch01_sunset_post_ask"
+        },
+        {
+          "id": "photo_gu_batch01_sunset_post_choice_3",
+          "text": "你是不是很愛拍天空？",
+          "branches": "photo_gu_batch01_sunset_post_tease"
+        },
+        {
+          "id": "photo_gu_batch01_sunset_post_choice_4",
+          "text": "我今天也有看到漂亮的晚霞。",
+          "branches": "photo_gu_batch01_sunset_post_share"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_sunset_post_choice_1": {
+          "reply": [
+            "對，過沒多久就變暗了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_post_praise",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_sunset_post_choice_2": {
+          "reply": [
+            "是在我今天路過的高處。",
+            "等我確認位置再告訴妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_post_ask",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_sunset_post_choice_3": {
+          "reply": [
+            "被發現了。",
+            "有時候只想把那幾分鐘留起來。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_post_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_sunset_post_choice_4": {
+          "reply": [
+            "真的？",
+            "那應該是很適合抬頭的一天。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "sunset_post_share",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_sunset_post_praise": {
+          "intent": "praise",
+          "npcMessages": [
+            "對，過沒多久就變暗了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_sunset_post_ask": {
+          "intent": "ask",
+          "npcMessages": [
+            "是在我今天路過的高處。",
+            "等我確認位置再告訴妳。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_sunset_post_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "被發現了。",
+            "有時候只想把那幾分鐘留起來。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_sunset_post_share": {
+          "intent": "share",
+          "npcMessages": [
+            "真的？",
+            "那應該是很適合抬頭的一天。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_sunset_post_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_sunset_post_01",
+          "filename": "gu_shian_sunset_post_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_sunset_post_01.webp",
+          "usage": "instagram_post",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_sunset_post_01",
+          "visualPrompt": "城市遠景、樹梢、淡橘粉晚霞，顧時安本人拍攝，無文字、無人與虛構的地點標籤",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "今天的天空很值得抬頭看一下。\n同一條路走了很多次，還是會有不同的顏色。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "post_comment",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_sunset_post_choice_1",
+            "photo_gu_batch01_sunset_post_choice_2",
+            "photo_gu_batch01_sunset_post_choice_3",
+            "photo_gu_batch01_sunset_post_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [],
+          "mood": "放鬆"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_post"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_sunset_post_01",
+        "subjects": [],
+        "mood": "放鬆",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    },
+    {
+      "eventId": "photo_gu_batch01_cafe_portrait_post",
+      "characterId": "gu_shian",
+      "characterName": "顧時安",
+      "type": "instagram_post",
+      "batchId": "gu_shian_batch01",
+      "platform": "instagram_post",
+      "sceneTitle": "cafe_portrait_post",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresEstablishedChatContact": false,
+        "requiresSocialVisibility": true,
+        "requiresNpcCaptureAndShareDecision": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "sceneEligibility": "本人休假確實在咖啡館休息，自拍或手機定時拍照，不虛構攝影朋友與玩家同行"
+      },
+      "message": "難得讓自己坐下來，什麼事都沒排。",
+      "caption": "一杯咖啡，一個下午。",
+      "choices": [
+        {
+          "id": "photo_gu_batch01_cafe_portrait_post_choice_1",
+          "text": "這家看起來很舒服。",
+          "branches": "photo_gu_batch01_cafe_portrait_post_praise"
+        },
+        {
+          "id": "photo_gu_batch01_cafe_portrait_post_choice_2",
+          "text": "你真的有在休息嗎？",
+          "branches": "photo_gu_batch01_cafe_portrait_post_tease"
+        },
+        {
+          "id": "photo_gu_batch01_cafe_portrait_post_choice_3",
+          "text": "你的眼鏡滿好看的。",
+          "branches": "photo_gu_batch01_cafe_portrait_post_compliment"
+        },
+        {
+          "id": "photo_gu_batch01_cafe_portrait_post_choice_4",
+          "text": "週末愉快。",
+          "branches": "photo_gu_batch01_cafe_portrait_post_neutral"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_gu_batch01_cafe_portrait_post_choice_1": {
+          "reply": [
+            "嗯，今天人不算多，剛好能慢慢坐。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_1",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cafe_portrait_post_praise",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cafe_portrait_post_choice_2": {
+          "reply": [
+            "真的。",
+            "今天連工作訊息都先收起來了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_2",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cafe_portrait_post_tease",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cafe_portrait_post_choice_3": {
+          "reply": [
+            "謝謝，我戴這副很久了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_3",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cafe_portrait_post_compliment",
+            "noAutomaticRomance": true
+          }
+        },
+        "photo_gu_batch01_cafe_portrait_post_choice_4": {
+          "reply": [
+            "謝謝，妳也是。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_4",
+            "requiresMessageDeliveredOrSocialInteraction": true
+          },
+          "stateEffects": {
+            "recordTopic": "cafe_portrait_post_neutral",
+            "noAutomaticRomance": true
+          }
+        }
+      },
+      "branchResponses": {
+        "photo_gu_batch01_cafe_portrait_post_praise": {
+          "intent": "praise",
+          "npcMessages": [
+            "嗯，今天人不算多，剛好能慢慢坐。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_1"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cafe_portrait_post_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "真的。",
+            "今天連工作訊息都先收起來了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_2"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cafe_portrait_post_compliment": {
+          "intent": "compliment",
+          "npcMessages": [
+            "謝謝，我戴這副很久了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_3"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        },
+        "photo_gu_batch01_cafe_portrait_post_neutral": {
+          "intent": "neutral",
+          "npcMessages": [
+            "謝謝，妳也是。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_gu_batch01_cafe_portrait_post_choice_4"
+          },
+          "followUp": "only_if_player_initiates_and_npc_available"
+        }
+      },
+      "images": [
+        {
+          "assetId": "gu_shian_cafe_portrait_post_01",
+          "filename": "gu_shian_cafe_portrait_post_01.webp",
+          "path": "public/story-photos/gu_shian/gu_shian_cafe_portrait_post_01.webp",
+          "usage": "instagram_post",
+          "photographerId": "gu_shian",
+          "originalPhotoId": "gu_shian_cafe_portrait_post_01",
+          "visualPrompt": "顧時安以自己的手機放桌上拍攝的自然咖啡館自拍，同臉暖茶色圓角眼鏡、黑棕短髮、深色針織衫，咖啡杯入鏡，非他人擺拍",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false,
+          "unlock": {
+            "requiresActualCapture": true,
+            "requiresUploadedAsset": true,
+            "requiresNpcShareDecision": true,
+            "requiresMessageDelivered": false,
+            "requiresPublishedSocialPost": true
+          }
+        }
+      ],
+      "chatSequence": [],
+      "socialSequence": [
+        {
+          "kind": "publish",
+          "caption": "難得讓自己坐下來，什麼事都沒排。\n一杯咖啡，一個下午。",
+          "requiresActualNpcPublish": true
+        },
+        {
+          "kind": "optional_reaction",
+          "surface": "post_comment",
+          "requiresPlayerInput": true,
+          "fourChoices": [
+            "photo_gu_batch01_cafe_portrait_post_choice_1",
+            "photo_gu_batch01_cafe_portrait_post_choice_2",
+            "photo_gu_batch01_cafe_portrait_post_choice_3",
+            "photo_gu_batch01_cafe_portrait_post_choice_4"
+          ]
+        }
+      ],
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_in_game_event",
+          "capturedAt": null,
+          "photographerId": "gu_shian",
+          "subjects": [
+            "gu_shian"
+          ],
+          "mood": "放鬆"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "instagram_post"
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "IG社群內容不因被看見而自動存入玩家私人相簿"
+      },
+      "captureMetadata": {
+        "photoId": "gu_shian_cafe_portrait_post_01",
+        "subjects": [
+          "gu_shian"
+        ],
+        "mood": "放鬆",
+        "photographerId": "gu_shian",
+        "location": "from_actual_story_event",
+        "wardrobe": "must_match_same_day",
+        "neverRegenerateExistingShot": true
+      },
+      "dialogueRules": {
+        "fourDifferentChoices": true,
+        "naturalPauseMs": 1800,
+        "selectedChoiceOnly": true,
+        "doNotForceResponse": true
+      },
+      "assetMissingBehavior": "hide_missing_media_keep_text_and_log"
+    }
+  ],
+  "authoringRules": {
+    "characterId": "gu_shian",
+    "narrative": {
+      "age": 26,
+      "profession": "建築設計師",
+      "relationshipStart": "因工作專案認識",
+      "initialHiddenAffinity": 0,
+      "traits": [
+        "成熟",
+        "溫柔",
+        "沉穩",
+        "細膩",
+        "有主見",
+        "陽光",
+        "真誠",
+        "尊重界線"
+      ],
+      "relationshipMustFollowChoices": true
+    },
+    "characterContinuity": {
+      "referenceImage": "https://github.com/youhoie0611-oss/FoundPhone-Studio/blob/6a8fb3e8afa4dd90c907c84c8a12c46c41420261/assets/characters/gu_shian/reference/gu_shian_reference_sheet_v1.jpg",
+      "referenceStatus": "confirmed_earlier_and_available_in_repository_history; not_embedded_in_this_branch",
+      "face": "沿用作者確認五視圖：深棕色眼睛、深棕黑色蓬鬆短髮、183公分76公斤的勻稱身形。不能變臉。",
+      "eyeglasses": {
+        "confirmed": true,
+        "style": "半透明暖茶色圓角方框",
+        "notMandatoryInEveryPhoto": true
+      },
+      "petDog": {
+        "confirmed": true,
+        "breed": "中型奶茶色短毛米克斯",
+        "whiteChest": true,
+        "semiFloppyEars": true,
+        "darkBrownEyes": true,
+        "name": null,
+        "age": null,
+        "sex": null
+      },
+      "homeLocationAndInterior": "not_yet_confirmed; never_invent_a_fixed_apartment_or_renovate_between_photos",
+      "wardrobeAndArchitecture": "track per in-game day and active architecture project; same-day outfits and models remain consistent",
+      "socialCircle": "only depict named/established NPC companions; never invent player appearance or attendance"
+    },
+    "composition": {
+      "photoTakenByGuOrConfirmedCompanion": true,
+      "default": "ordinary smartphone photo: warm natural, sometimes unpolished",
+      "longTermWeights": {
+        "selfieStyle": 25,
+        "architectureStreets": 25,
+        "foodDailyAnimals": 20,
+        "workDesign": 15,
+        "friendsOutdoors": 15
+      },
+      "doNotEnforceDailyQuota": true,
+      "ifNoPlausiblePhotoMotive": "do_not_create_a_photo"
+    },
+    "upload": {
+      "root": "public/story-photos/gu_shian/",
+      "filenamePattern": "gu_shian_{event_slug}_{shot_number}.webp",
+      "imageBodyUploadResponsibility": "player_manual_upload_only",
+      "imageAssetUploadedThisChange": false,
+      "neverReportImageUploadedWithoutRemoteVerification": true,
+      "missingAsset": "keep_story_text_and_log_missing_asset; do_not_show_a_broken_image",
+      "reuseSamePhotoIdAcrossSurfaces": true,
+      "dontRegenerateExistingApprovedPhoto": true
+    },
+    "eventRuntimeContract": {
+      "captureSharingDeliveryDistinct": true,
+      "gatePlayerAttendanceByExplicitAcceptanceAndActualArrival": true,
+      "rejectOrUnavailableMeansNoPlayerInScene": true,
+      "noPlayerPhotoUploadOrPhotoExchange": true,
+      "neverAskPlayerForPhotos": true,
+      "playerUsesFourWrittenChoices": true,
+      "waitForPlayerAnswerBeforeContinuingThisConversation": true,
+      "individualMessagesWithNaturalPauses": true,
+      "mayDeliverWhenChatClosed": true,
+      "preserveUnreadAndPhotoOnceDelivered": true,
+      "neverOverwritePriorEventOnChatOpen": true,
+      "noAutomaticRomanceOrIntimacy": true,
+      "noPermanentCharacterExitOnRejection": true
+    }
+  }
+}
