@@ -75,18 +75,38 @@ test("Shen Batch01: all ten real WebP images load in mobile KKT chat", async ({ 
   expect(errors).toEqual([]);
 });
 
-test("Shen Batch01: four actual scripted KKT replies are selectable and only chosen response arrives", async ({ page }) => {
-  await openShenChat(page, preview("choices"));
-  const tray = page.locator(".kkt-reply-tray");
-  await expect(tray.locator(".kkt-reply-choice")).toHaveCount(4);
-  await page.locator(".phone-screen").screenshot({ path: "outputs/brick3-shen-batch01/chat-four-choices-mobile.png" });
-  await tray.locator(".kkt-reply-choice").nth(0).click();
-  await expect(page.getByText(batch[0].choices[0].text, { exact: true })).toBeVisible();
-  await expect(page.getByText(batch[0].onChoiceResponses[batch[0].choices[0].id].reply[0], { exact: true }))
-    .toBeVisible({ timeout: 10000 });
-  await expect(page.getByText(batch[0].onChoiceResponses[batch[0].choices[1].id].reply[0], { exact: true }))
-    .toHaveCount(0);
-  // A finished photo scene should not fall back to unrelated generic prompts.
-  await expect(page.locator(".kkt-reply-tray")).toHaveCount(0);
-  await page.locator(".phone-screen").screenshot({ path: "outputs/brick3-shen-batch01/chat-selected-reply-mobile.png" });
-});
+for (const choiceIndex of [0, 1, 2, 3]) {
+  test(`Shen Batch01: option ${choiceIndex + 1} receives its matching reply with no unrelated preset tray`, async ({ page }) => {
+    await openShenChat(page, preview("choices"));
+    const tray = page.locator(".kkt-reply-tray");
+    await expect(tray.locator(".kkt-reply-choice")).toHaveCount(4);
+    if (choiceIndex === 0) {
+      await page.locator(".phone-screen").screenshot({
+        path: "outputs/brick3-shen-batch01/chat-four-choices-mobile.png",
+      });
+    }
+    const selected = batch[0].choices[choiceIndex];
+    const answer = batch[0].onChoiceResponses[selected.id].reply[0];
+    const beats = answer.split("\n").filter(Boolean);
+    expect(beats.length).toBeGreaterThanOrEqual(2);
+    await tray.locator(".kkt-reply-choice").nth(choiceIndex).click();
+    await expect(page.getByText(selected.text, { exact: true })).toBeVisible();
+    for (const beat of beats) {
+      await expect(page.getByText(beat, { exact: true })).toBeVisible({ timeout: 15000 });
+    }
+    for (const other of batch[0].choices.filter((_: unknown, i: number) => i !== choiceIndex)) {
+      for (const beat of batch[0].onChoiceResponses[other.id].reply[0].split("\n").filter(Boolean)) {
+        await expect(page.getByText(beat, { exact: true })).toHaveCount(0);
+      }
+    }
+    // Once the response has finished typing, no generic unrelated photo
+    // questions may appear below this completed scripted interaction.
+    await expect(page.locator(".kkt-typing")).toHaveCount(0);
+    await expect(page.locator(".kkt-reply-tray")).toHaveCount(0);
+    if (choiceIndex === 0) {
+      await page.locator(".phone-screen").screenshot({
+        path: "outputs/brick3-shen-batch01/chat-selected-reply-mobile.png",
+      });
+    }
+  });
+}
