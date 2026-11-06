@@ -950,6 +950,7 @@ function AppContent({
   onRead,
   onChoose,
   onCustomMessage,
+  onOvernightAction,
   onEdit,
   onAdd,
   onBack,
@@ -966,6 +967,7 @@ function AppContent({
   onRead: (id: string) => void;
   onChoose: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
+  onOvernightAction?: (thread: string, command: string) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
@@ -1097,6 +1099,7 @@ function AppContent({
               choices={state.choices}
               onChoose={onChoose}
               onCustomMessage={onCustomMessage}
+              onOvernightAction={onOvernightAction}
               onThread={(nextThread) => {
                 setThread(nextThread);
                 // Reading a KKT conversation includes its latest visible incoming
