@@ -1,6 +1,7 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
 import { progressOvernight } from "./brick3/overnight";
+import { completeDate, noticeDatePost, answerDateJealousy, type DateLead } from "./brick3/dateAftermath";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
@@ -228,6 +229,12 @@ export function dispatch(
   event: string,
   target = "",
 ): Runtime {
+  const [dateLead, dateEvent, dateCode] = target.split(":");
+  const validLead = ["shen", "pei", "qi", "gu", "lu"].includes(dateLead);
+  if (validLead && event === "dateComplete") return completeDate(previous, w, dateLead as DateLead, dateEvent);
+  if (validLead && event === "datePostSeen") return noticeDatePost(previous, w, dateEvent, dateLead as DateLead);
+  if (validLead && event === "dateJealousyReply" && ["explain", "reassure", "privacy", "provoke"].includes(dateCode))
+    return answerDateJealousy(previous, dateLead as DateLead, dateCode as "explain" | "reassure" | "privacy" | "provoke");
   const s = structuredClone(previous);
   if (event === "choose") {
     const group = w.nodes.find((node) => node.type === "choice" && node.next.includes(target));
