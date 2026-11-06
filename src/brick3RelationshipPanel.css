@@ -1,0 +1,11 @@
+.brick3-relation-shortcut{position:absolute;top:72px;right:12px;z-index:25;border:1px solid rgba(255,255,255,.55);border-radius:14px;padding:9px 12px;background:rgba(22,22,30,.68);color:white;font-size:12px;backdrop-filter:blur(12px)}
+.brick3-relation-overlay{position:absolute;inset:48px 8px 28px;z-index:70;overflow:auto;border-radius:24px;background:#f7f5f3;color:#24242c;padding:18px;box-shadow:0 8px 36px #0006;font-size:13px}
+.brick3-relation-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:17px}
+.brick3-relation-heading button,.brick3-relation-card button,.brick3-relation-undo{border:0;background:#e8e2ec;color:#42304c;border-radius:10px;padding:9px 11px;font-size:12px}
+.brick3-relation-overlay>p{line-height:1.5;color:#666;margin-bottom:14px}
+.brick3-relation-card{display:flex;flex-direction:column;gap:6px;margin:9px 0;padding:12px 14px;border-radius:14px;background:white;box-shadow:0 1px 4px #0001}
+.brick3-relation-card strong{font-size:15px}
+.brick3-relation-card small{color:#666}
+.brick3-relation-card p{line-height:1.5;color:#45404c;margin:5px 0}
+.brick3-relation-card button{align-self:flex-start}
+.brick3-relation-undo{width:100%;margin-bottom:10px}
