@@ -116,6 +116,7 @@ export function MymyKakao(p: SkinProps) {
   const photoOptions = pendingBrick3PhotoOptions(messages, p.choices ?? []);
   const v8Options = (p.choices ?? []).filter(choice =>
     choice.target.startsWith(`brick3-v8:${p.thread}:`) ||
+    (choice.target.startsWith("brick3-clash:") && choice.label.startsWith(`${p.thread}｜`)) ||
     (choice.target.startsWith("brick3-night:") && choice.label.startsWith(`${p.thread}｜`)));
 
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
