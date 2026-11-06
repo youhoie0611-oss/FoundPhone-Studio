@@ -464,8 +464,14 @@ export function undoV8Decision(s: Runtime, lead?: V8Lead): boolean {
   if (hasDeliveredReaction) return false;
   v.bonds = structuredClone(undo.snapshot);
   if (undo.outgoingId) {
+    // The original statement remains in the chat. Correcting it is a NEW
+    // player message; otherwise the NPC would inexplicably lose a memory.
     const message = (s.messages.kakao ?? []).find(m => m.id === undo.outgoingId);
-    if (message) message.body = "已撤回這次關係決定";
+    if (message) {
+      const lead = message.title as V8Lead;
+      recordV8PlayerMessage(s, lead, "剛剛那個關係答覆我想收回，我需要重新想清楚。");
+      event(s, `corrected-delivered-choice:${lead}`);
+    }
   }
   v.pending = v.pending.filter(p => !affected.includes(p.lead));
   affected.forEach(n => {
