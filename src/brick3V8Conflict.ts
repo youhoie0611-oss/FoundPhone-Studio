@@ -73,7 +73,7 @@ export function chooseV8Conflict(w: Work, previous: Runtime, target: string): Ru
   const s = structuredClone(previous), v = ensureV8(s), state = store(s);
   const parts = target.split(":");
   const id = parts.slice(1, -1).join(":");
-  const action = parts.at(-1);
+  const action = (parts.at(-1) ?? "") as Encounter["status"];
   const encounter = state.encounters.find(e => e.id === id && e.status === "awaiting");
   if (!encounter || !["honest", "pause", "vague", "boundary"].includes(action ?? "")) return previous;
   encounter.status = action as Encounter["status"];
