@@ -296,6 +296,25 @@ export function injectBrick3PhotoEvents(story, manifest) {
         ],
         next: [arriveId],
       }));
+    } else if (luPhoto && luPhotoOrder.indexOf(entry.eventId) > 1) {
+      const previous = luPhotoOrder[luPhotoOrder.indexOf(entry.eventId) - 1];
+      const predecessors = [1, 2, 3, 4].map(i => story.events.find(e =>
+        e.id === "brick3-photo-" + previous + "-choice-" + i + "-reply-arrive")).filter(Boolean);
+      if (predecessors.length !== 4) {
+        story.events = story.events.filter(e => !e.id.startsWith(prefix + "-"));
+        chat.messages = chat.messages.filter(m => !m.id.startsWith(prefix + "-"));
+        continue;
+      }
+      const waitId = prefix + "-wait";
+      story.events.push(node(waitId, "delay", {
+        delayMs: 86400000 + luPhotoOrder.indexOf(entry.eventId) * 1800000,
+        conditions: [
+          { key: "lu_private_contact", op: "eq", value: true },
+          { key: "lu_photo_sharing_opt_out", op: "neq", value: true },
+        ],
+        next: [arriveId],
+      }));
+      predecessors.forEach(origin => { origin.next ??= []; origin.next.push(waitId); });
     } else {
       const origin = findAnchor(story, anchors[entry.eventId]);
       if (!origin) {
