@@ -905,7 +905,7 @@
         "requiresPlayerAttendance": false,
         "requiresPlayerConsentForIntimacy": true
       },
-      "message": "收工。終於能坐一下。",
+      "message": "剛下班。今天會議拖得有點晚。",
       "choices": [
         {
           "id": "off_duty_choice_1",
@@ -937,12 +937,12 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "深夜休息室桌面，外套、飲品與柔和燈光，私人手機快照"
+          "visualPrompt": "陸沉川副總裁下班後在辦公室或車內的普通手機快照，西裝外套、夜色與自然光影；非男模會館、非棚拍"
         }
       ]
     },
     {
-      "eventId": "photo_commercial_shoot",
+      "eventId": "photo_lu_office_evening",
       "characterId": "lu_chenchuan",
       "characterName": "陸沉川",
       "type": "npc_message",
@@ -952,39 +952,39 @@
         "requiresPlayerAttendance": false,
         "requiresPlayerConsentForIntimacy": true
       },
-      "message": "今天的拍攝現場。",
+      "message": "今天辦公室的窗外。",
       "choices": [
         {
           "id": "commercial_shoot_choice_1",
-          "text": "你工作時真的不一樣。",
+          "text": "你還在公司？",
           "branches": "contextual_response"
         },
         {
           "id": "commercial_shoot_choice_2",
-          "text": "拍什麼主題？",
+          "text": "你辦公室的視野很好。",
           "branches": "contextual_response"
         },
         {
           "id": "commercial_shoot_choice_3",
-          "text": "辛苦了。",
+          "text": "今天辛苦了。",
           "branches": "contextual_response"
         },
         {
           "id": "commercial_shoot_choice_4",
-          "text": "有空再聊。",
+          "text": "那你先忙。",
           "branches": "contextual_response"
         }
       ],
       "images": [
         {
-          "assetId": "lu_chenchuan_shoot_chat_01",
-          "filename": "lu_chenchuan_shoot_chat_01.webp",
-          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_shoot_chat_01.webp",
+          "assetId": "lu_chenchuan_office_evening_01",
+          "filename": "lu_chenchuan_office_evening_01.webp",
+          "path": "public/story-photos/lu_chenchuan/lu_chenchuan_office_evening_01.webp",
           "usage": "chat_attachment",
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "商業拍攝現場側拍，燈架、服裝與攝影棚，工作紀錄"
+          "visualPrompt": "陸沉川從隔壁商辦大樓副總辦公室拍攝的城市夜景與辦公桌一角，真實手機照片，不含機密文件，不是商業攝影棚"
         }
       ]
     },
@@ -6281,5 +6281,18 @@
     "integrationScript": "scripts/brick3-photo-events.mjs",
     "status": "configuration_committed_pending_manual_photo_upload",
     "important": "每個影像均保有 4 選項與對應NPC回覆；不進玩家共同相簿；未上傳圖片時只能文字降級，不可顯示破圖"
+  },
+  "luChenchuanCanon": {
+    "status": "replaced_v7_male_host_canon",
+    "identity": "江南陸家太子爺、集團副總裁",
+    "office": "玩家辦公室隔壁商辦大樓",
+    "personality": "高冷、外冷內熱、不自知帥氣",
+    "skills": [
+      "鋼琴",
+      "料理"
+    ],
+    "photoBatchSize": 10,
+    "manualUpload": true,
+    "notes": "照片需符合新身分與實際事件；舊版男公關與攝影棚情境不再使用。"
   }
 }
