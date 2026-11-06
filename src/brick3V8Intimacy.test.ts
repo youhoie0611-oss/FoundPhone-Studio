@@ -59,6 +59,29 @@ describe("V8 intimacy requires player consent", () => {
     expect((shared.messages.kakao ?? []).some(m => m.outgoing && m.body.includes("接吻"))).toBe(true);
     expect(discloseV8Kiss(shared, id, "沈硯舟")).toBeNull();
   });
+  it("requires an actual public post for delayed suspicion without leaking a kiss", () => {
+    const s = state();
+    ensureV8(s).bonds["沈硯舟"].status = "dating";
+    tickV8Intimacy(work, s);
+    const accepted = chooseV8Intimacy(work, s, "brick3-intimacy:pei_dinner_outing:accept")!;
+    accepted.elapsedMs = 5 * 86400000;
+    tickV8Intimacy(work, accepted);
+    expect(accepted.brick3V8Intimacy?.suspicions).toEqual([]);
+    accepted.brick3DateSocial = { pei_dinner_outing: {
+      posted: true, postAtMs: 0, format: "story", inquiries: {},
+    } };
+    accepted.messages.instagram = [makeItem({
+      id: "brick3-social-pei_dinner_outing-instagram",
+      sender: "裴知聿", title: "裴知聿", kind: "post",
+      body: "今天有個人陪我吃飯。",
+    })];
+    tickV8Intimacy(work, accepted);
+    expect(accepted.brick3V8Intimacy?.suspicions?.some(x =>
+      x.observer === "沈硯舟" && x.publicSource.includes("instagram"))).toBe(true);
+    expect(accepted.brick3V8?.bonds["沈硯舟"].knows["裴知聿"]).toBeUndefined();
+    expect((accepted.messages.kakao ?? []).find(m => m.id.includes("kiss-suspicion"))?.body)
+      .not.toContain("接吻");
+  });
   it("respects no-contact before proposing intimacy", () => {
     const s = state();
     s.messages.kakao = [makeItem({ title: "裴知聿", sender: "我", body: "不要再聯絡我", outgoing: true })];
