@@ -58,6 +58,28 @@ export function advanceBrick3Chat(state: Runtime, thread: string, message: strin
   const scene = maleLeads[thread];
   if (!scene) return null;
   const context = history.filter(item => !item.outgoing).slice(-5).map(item => item.body).join(" ");
+  const prior = String(state.variables[`brick3:scene:${thread}`] ?? "");
+  // A previous decision must change the next turn, not restart the opening scene.
+  if (scene === "photo") {
+    if (prior === "delete_requested" && /照片|傳|看看|刪/.test(message)) {
+      return { reply: "我已經照妳的要求處理。\n不會再用那張照片打擾妳。", delayMs: 1000 };
+    }
+    if (prior === "privacy_boundary" && /謝謝|聊別的|其他|那天|還拍/.test(message)) {
+      state.variables[`brick3:scene:${thread}`] = "conversation_redirected";
+      return { reply: "嗯，這件事就先到這裡。\n那天活動結束後，妳是不是還留下來幫忙收拾？\n我後來有回去找落下的相機背帶。", delayMs: 1300 };
+    }
+    if (prior === "view_agreed" && /照片|傳|看看|給我/.test(message)) {
+      return { reply: "我記得妳願意看。\n不過目前還沒有能在聊天室直接傳送的照片檔案，我不會假裝已經傳給妳。\n等照片功能接好再讓妳確認。", delayMs: 1100 };
+    }
+  }
+  if (scene === "reunion") {
+    if (prior === "distance" && /分手|復合|以前|想說|聯絡/.test(message) && !/我們談談|願意聽/.test(message))
+      return { reply: "我記得妳要我保持距離。\n不會再逼妳談復合。", delayMs: 1100 };
+    if (prior === "intent_revealed" && /願意聽|先說|你說|談談/.test(message)) {
+      state.variables[`brick3:scene:${thread}`] = "conversation_open";
+      return { reply: "那我先說。\n當初我們遇到問題，我選擇逃避，讓妳一個人承受。\n我不是要妳立刻原諒，只是想先把這件事說清楚。", delayMs: 1500 };
+    }
+  }
   const branch = stories[scene](message, context);
   if (!branch) return null;
   const key = `brick3:scene:${thread}`;
