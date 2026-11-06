@@ -1,5 +1,6 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
+import { progressOvernight } from "./brick3/overnight";
 export function testCondition(c: Condition, s: Runtime): boolean {
   const [scope, ...rest] = c.key.split(":");
   const key = rest.join(":");
@@ -287,6 +288,7 @@ export function advance(
           if (!Number.isNaN(currentDate.getTime())) {
             currentDate.setUTCDate(currentDate.getUTCDate() + 1);
             s.date = currentDate.toISOString().slice(0, 10);
+            progressOvernight(s);
           }
         }
         if (w.mode !== "explore")

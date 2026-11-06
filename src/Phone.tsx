@@ -63,6 +63,7 @@ import {
   type UiValue,
 } from "./schema";
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
+import { overnightAction } from "./brick3/overnight";
 import { db } from "./persistence";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
@@ -503,6 +504,7 @@ function PhoneRuntime({
                   state={s}
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
+                  onOvernightAction={(thread, command) => update(overnightAction(runtimeRef.current, thread, command))}
                   onCustomMessage={(thread, message) => {
                     const sourceApp = app;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);

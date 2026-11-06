@@ -53,6 +53,7 @@ export type SkinProps = {
   choices?: { label: string; target: string }[];
   onChoose?: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
+  onOvernightAction?: (thread: string, action: string) => void;
 };
 function Avatar({
   name,
