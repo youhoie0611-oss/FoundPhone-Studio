@@ -21,6 +21,7 @@ export type V8IntimacyState = {
   offers: V8IntimacyOffer[];
   events: V8IntimacyEvent[];
   disclosures: { eventId: string; recipient: V8Lead; at: number }[];
+  suspicions?: { eventId: string; observer: V8Lead; publicSource: string; at: number }[];
   nextId: number;
 };
 const now = (s: Runtime) => s.elapsedMs ?? 0;
@@ -58,6 +59,36 @@ const dialogue: Record<V8Lead, string> = {
 export function tickV8Intimacy(work: Work, s: Runtime): Runtime {
   if (work.id !== "between-the-lines-b-demo" || work.mode === "explore") return s;
   const state = ensureV8Intimacy(s), v = ensureV8(s);
+  // Evidence-gated suspicion: publicly posted outing can prompt a question,
+  // but NEVER reveal that a kiss occurred or change relationship knowledge.
+  // Chance grows with elapsed game days; no public evidence means no discovery.
+  state.suspicions ??= [];
+  for (const e of state.events) {
+    if (now(s) - e.at < 86400000) continue;
+    if (!s.brick3DateSocial?.[e.sourceOuting]?.posted) continue;
+    const publicPost = (s.messages.instagram ?? []).find(m =>
+      m.id === `brick3-social-${e.sourceOuting}-instagram` && !m.outgoing);
+    if (!publicPost) continue;
+    for (const recipient of V8_LEADS) {
+      if (recipient === e.actor || e.disclosedTo.includes(recipient) ||
+          !["dating", "secret"].includes(v.bonds[recipient].status) ||
+          hasStop(s, recipient) ||
+          state.suspicions.some(x => x.eventId === e.id && x.observer === recipient)) continue;
+      const days = Math.floor((now(s) - e.at) / 86400000);
+      const seed = [...(`${e.id}:${recipient}`)].reduce((n, c) =>
+        (Math.imul(n, 33) + c.charCodeAt(0)) >>> 0, 5381) % 100;
+      if (seed >= Math.min(85, 12 + days * 9)) continue;
+      state.suspicions.push({
+        eventId: e.id, observer: recipient, at: now(s), publicSource: publicPost.id,
+      });
+      send(s, recipient, recipient === "裴知聿"
+        ? `我看到${e.actor}那天的公開限動了。妳們是不是變得很親近？我有點在意。`
+        : `我看見${e.actor}那天公開的動態了。你們現在的關係是什麼？`,
+        `brick3-v8-kiss-suspicion-${e.id}-${recipient}`);
+      // This is a question, not a declaration of discovering a kiss.
+      break;
+    }
+  }
   for (const [outing, lead] of Object.entries(outings) as [string, V8Lead][]) {
     const visit = s.brick3Invites?.[outing];
     if (!visit?.completed || visit.completedAtMs === undefined) continue;
