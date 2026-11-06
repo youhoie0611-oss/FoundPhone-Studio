@@ -77,6 +77,8 @@ test("all ten scenes reach a real KKT image and follow-up, then only four select
       assert.ok(reply.actions.some((a) => a.type === "unlock" && a.key === nodeId + "-response"));
       assert.equal(messages.get(nodeId + "-out")?.body, e.choices[i - 1].text);
       assert.equal(messages.get(nodeId + "-response")?.body, e.onChoiceResponses[e.choices[i - 1].id].reply.join("\n"));
+      assert.equal(messages.get(nodeId + "-response")?.meta?.photoEventId, e.eventId,
+        "multiline KKT reply must preserve photoEventId to prevent silent truncation");
     }
   }
 });
