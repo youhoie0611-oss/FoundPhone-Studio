@@ -259,6 +259,11 @@ export function PhotosSkin(p: Props) {
                 </button>
               ))}
             </div>
+            {!p.creator && list.filter(i => i.meta.dateOwner === "player" && i.meta.dateEventId).map(i => (
+              <button key={`publish-${i.id}`} type="button" className="catalog-row" onClick={() => p.onDatePhotoPost?.(i)}>
+                發布「{i.title}」到 Instagram
+              </button>
+            ))}
             <p className="media-count">{list.length} 个项目</p>
           </>
         )}
