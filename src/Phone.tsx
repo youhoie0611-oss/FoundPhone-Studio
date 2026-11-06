@@ -1080,6 +1080,7 @@ function AppContent({
               appId={app.id}
               owner={work.phone.owner}
               virtualTime={state.time}
+              relationship={{ variables: state.variables, clues: state.clues }}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
               name={name}
