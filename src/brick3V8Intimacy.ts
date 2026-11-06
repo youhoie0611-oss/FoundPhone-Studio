@@ -82,8 +82,8 @@ export function tickV8Intimacy(work: Work, s: Runtime): Runtime {
         eventId: e.id, observer: recipient, at: now(s), publicSource: publicPost.id,
       });
       send(s, recipient, recipient === "裴知聿"
-        ? `我看到${e.actor}那天的公開限動了。妳們是不是變得很親近？我有點在意。`
-        : `我看見${e.actor}那天公開的動態了。你們現在的關係是什麼？`,
+        ? `我看到${e.actor}的公開限動了。他說有人陪他出門……那個人是妳嗎？`
+        : `我看見${e.actor}最近的公開動態了。有人陪他出門，妳也有一起去嗎？`,
         `brick3-v8-kiss-suspicion-${e.id}-${recipient}`);
       // This is a question, not a declaration of discovering a kiss.
       break;
