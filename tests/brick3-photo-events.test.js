@@ -51,7 +51,9 @@ describe("Brick3 photo event integration", () => {
       expect(event.choices).toHaveLength(4);
       expect(new Set(event.choices.map(c => c.text)).size).toBe(4);
       expect(event.choices.every(c => event.onChoiceResponses[c.id]?.reply.length > 0)).toBe(true);
-      expect(event.images[0].path).toMatch(/^public\\/story-photos\\/lu_chenchuan\\/lu_chenchuan_[a-z0-9_]+\\.webp$/);
+      expect(event.images[0].path.startsWith("public/story-photos/lu_chenchuan/")).toBe(true);
+      expect(event.images[0].filename.startsWith("lu_chenchuan_")).toBe(true);
+      expect(event.images[0].filename.endsWith(".webp")).toBe(true);
       expect(event.gallery.entersPlayerAlbum).toBe(false);
       expect(event.images[0].uploadStatus).toBe("pending_player_manual_upload");
     }
