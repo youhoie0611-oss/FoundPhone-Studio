@@ -39,6 +39,7 @@ export type SkinProps = {
   appId?: string;
   owner?: string;
   virtualTime?: string;
+  relationship?: { variables: Record<string, string | number | boolean>; clues: string[] };
   name: string;
   items: Item[];
   creator: boolean;
