@@ -158,10 +158,19 @@ function beginNegotiation(s: Runtime, lead: V8Lead) {
 }
 function reconcilePoly(s: Runtime, lead: V8Lead, approach: Negotiation["approach"]) {
   const v = ensureV8(s), b = v.bonds[lead];
-  // Individual NPC preferences, not an affection-threshold guarantee.
+  // Characters may change their minds after substantial trust and revealed
+  // history. Scores alone never guarantee assent; only a conditional TALK.
+  const prefix: Record<V8Lead, string> = {
+    "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi",
+    "顧時安": "gu", "陸沉川": "lu",
+  };
+  const trust = Number(s.variables[prefix[lead] + "_trust"] ?? 0);
+  const earnedFlexibility = b.core >= 3 && trust >= 75 &&
+    b.history.some(h => h.status === "ambiguous" || h.status === "dating");
   const response: Negotiation["status"] =
     approach === "test" ? "needs-time"
-    : lead === "祁野" || lead === "裴知聿" ? "rejected"
+    : lead === "祁野" || lead === "裴知聿" ?
+      earnedFlexibility && approach === "full" ? "conditional" : "rejected"
     : lead === "沈硯舟" ? "conditional"
     : approach === "full" ? "conditional" : "needs-time";
   v.negotiations[lead] = { lead, approach, status: response, at: NOW(s) };
@@ -214,7 +223,10 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
       n.status = "accepted";
       // Existing partners must still separately consent before any agreement becomes global.
       const others = partners(v, lead);
-      const allAgree = others.every(x => v.negotiations[x]?.status === "accepted" || v.bonds[x].exclusivity === "nonexclusive");
+      const allAgree = others.every(x =>
+        (v.negotiations[x]?.status === "accepted" || v.bonds[x].exclusivity === "nonexclusive") &&
+        V8_LEADS.filter(y => y !== x && (y === lead || others.includes(y)))
+          .every(y => !!v.bonds[x].knows[y]));
       if (allAgree) {
         saveUndo(s);
         change(s, lead, "dating", "mutually-agreed-poly", "nonexclusive");
@@ -225,7 +237,19 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
     return s;
   }
   if (action === "full" || action === "status" || action === "test") {
-    recordV8PlayerMessage(s, lead, action === "full" ? "我想把所有關係都和你說清楚。" : action === "status" ? "我目前也有其他戀愛關係，想和你談談。" : "你怎麼看非排他關係？");
+    const knownPartners = partners(v, lead);
+    const disclosure = knownPartners.length
+      ? `我想坦白，我和${knownPartners.join("、")}目前也有戀愛關係。`
+      : "我想坦白自己對戀愛關係的期待。";
+    recordV8PlayerMessage(s, lead, action === "full" ? disclosure : action === "status" ?
+      "我目前也有其他戀愛關係，想和你談談。" : "你怎麼看非排他關係？");
+    if (action === "full") {
+      // Explicitly revealing the names updates knowledge for THIS listener only.
+      for (const other of knownPartners)
+        v.bonds[lead].knows[other] = {
+          status: v.bonds[other].status, source: "player-confession", at: NOW(s),
+        };
+    }
     reconcilePoly(s, lead, action); return s;
   }
   if (action === "undo") {
