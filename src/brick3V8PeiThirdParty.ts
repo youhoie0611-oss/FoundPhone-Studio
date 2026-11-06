@@ -85,7 +85,7 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
   if (now(s) < p.nextAt) return s;
   if (p.phase === "aware") {
     const id = `brick3-v8-pei-third-party-aware-${fact.lead}`;
-    send(s, "我知道妳現在有交往的人。我其實一直在想，要怎麼跟妳說話才不會讓妳困擾。", id);
+    send(s, "我知道妳有男朋友了。說真的，我不想裝得很大方。我還是會一直想到妳。", id);
     p.sentIds.push(id);
     p.phase = "testing";
     p.nextAt = now(s) + 2 * DAY;
@@ -93,7 +93,7 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
   }
   if (p.phase === "testing") {
     const id = `brick3-v8-pei-third-party-testing-${fact.lead}`;
-    send(s, "我還是會在意妳。不過我也知道，不能只因為我放不下，就要妳給我答案。", id);
+    send(s, "我有時候會想，是不是我什麼都不要求，就還能待在妳身邊。……我知道這樣很難看。", id);
     p.sentIds.push(id);
     p.phase = "waiting";
     p.nextAt = now(s) + DAY;
