@@ -1,0 +1,13 @@
+import { readFileSync } from "node:fs";
+const story = JSON.parse(readFileSync("stories/template/story.json", "utf8"));
+const canon = readFileSync("src/characterCanon.ts", "utf8");
+const overnight = readFileSync("src/brick3/overnight.ts", "utf8");
+const lu = story.contacts.find(x => x.name === "陸沉川");
+if (!lu?.bio?.includes("集團副總裁") || !lu.bio.includes("隔壁大樓")) throw new Error("陸沉川職業或工作地點錯誤");
+if (!canon.includes("江南陸家繼承人、家族集團副總裁")) throw new Error("人物基準不正確");
+const oldProfession = /男公關|男模會館|形象模特兒|陪聊服務|會館工作|會館消費|夜場以外|工作話術|付費服務/;
+if (oldProfession.test(JSON.stringify(story) + "\n" + overnight)) throw new Error("遊戲內容仍有陸沉川失效職業劇情");
+for (let i = 1; i <= 12; i++) if (!story.events.some(e => e.id === "z3-long-lu-chapter-" + i)) throw new Error("缺少陸沉川章節 " + i);
+if (story.events.find(e => e.id === "z3-lu-invite-yes")?.actions?.some(a => a.key === "z3_lu_met")) throw new Error("赴約前不應視為相識");
+if (!story.events.find(e => e.id === "z3-lu-venue-deliver")?.actions?.some(a => a.key === "z3_lu_met")) throw new Error("缺少真正相識事件");
+console.log("陸沉川副總人設回歸檢查通過");
