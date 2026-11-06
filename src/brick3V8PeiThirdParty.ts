@@ -100,14 +100,14 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
     return s;
   }
   if (p.phase === "waiting") {
-    // No response since these messages: don't escalate to a secret offer.
+    // Pei may LOWER HIS REQUIREMENTS even when ignored, but silence never
+    // amounts to consent. One genuine proposal is allowed; no nagging loop.
     const repliedAfter = messages.some(m => m.id !== p.lastPlayerMessageId &&
       (s.messages.kakao ?? []).findIndex(x => x.id === m.id) >
       (s.messages.kakao ?? []).findIndex(x => x.id === p.sentIds[p.sentIds.length - 1]));
-    if (!repliedAfter) return s;
+    const longSilence = now(s) - p.noticedAt >= 4 * DAY;
+    if ((!repliedAfter && !longSilence) || attraction < 50) return s;
     p.lastPlayerMessageId = last(messages)?.id ?? p.lastPlayerMessageId;
-    if (attraction < 50) return s;
-    // Pei can willingly lower his requirements, but only asks; never sets a bond.
     if (offerV8Confession(work, s, NAME, "secret-offer")) {
       p.phase = "offered"; p.nextAt = Infinity;
     }
