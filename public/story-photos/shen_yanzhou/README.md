@@ -44,5 +44,5 @@
 
 一次上傳入口：[Upload files](https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/shen_yanzhou)。
 
-請在 ZIP **解壓後一次選取全部十張 WebP**，確認上傳的是個別 WebP 不是 ZIP。本批相片是沈硯舟的私人生活分享，不因玩家看到照片就自動解鎖共同回憶相簿。若玩家沒開 KKT，他仍可依劇情節點主動傳送；實際發訊觸發仍需編譯與遊戲回歸測試。**圖片實際上傳前，十張的 GitHub 影像檔案仍處於 pending 狀態。**
+請在 ZIP **解壓後一次選取全部十張 WebP**，確認上傳的是個別 WebP 不是 ZIP。本批相片是沈硯舟的私人生活分享，不因玩家看到照片就自動解鎖共同回憶相簿。若玩家沒開 KKT，他仍可依劇情節點主動傳送；實際發訊觸發仍需編譯與遊戲回歸測試。**2026-11-06 已核對 10/10 張 WebP 均存在此開發分支，且 Git blob SHA 與本批原始輸出完全一致。** 不需再次上傳照片；尚須以正式建置與遊戲畫面驗證實際劇情觸發。
 
