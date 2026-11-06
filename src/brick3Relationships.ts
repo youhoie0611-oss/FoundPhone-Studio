@@ -49,7 +49,7 @@ export type V8RelationshipState = {
   legacyReview?: { candidates: V8Lead[]; reviewed: V8Lead[]; completed: boolean };
   undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean; messageCount: number; outgoingId?: string };
 };
-const HOUR = 3600000, DAY = 86400000;
+const DAY = 86400000;
 const NOW = (s: Runtime) => s.elapsedMs ?? 0;
 const stopPattern = /不要再傳|不要再聯絡|不要聯絡|別聯絡|不要再找|別再找|封鎖|停止傳訊|不要追我/;
 const nameKnown = (w: Work, lead: string) => (w.data.kakao ?? []).some(m => m.title === lead);
