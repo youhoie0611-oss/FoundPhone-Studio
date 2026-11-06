@@ -4,6 +4,8 @@
  */
 const anchors = {
   photo_design_review: "gu-life-01",
+  photo_gu_batch01_dog_selfie: "gu-life-18",
+  photo_gu_batch01_office_mirror: "gu-life-13",
   photo_dinner_invite: "pei-day21-opening",
   photo_camera_walk: "shen-phase2-1-1-in",
   photo_practice_update: "shen-autonomy-v3-day1",
@@ -22,6 +24,8 @@ const anchors = {
 };
 const delayed = {
   photo_design_review: 90000,
+  photo_gu_batch01_dog_selfie: 120000,
+  photo_gu_batch01_office_mirror: 120000,
   photo_dinner_invite: 120000,
   photo_camera_walk: 90000,
   photo_practice_update: 120000,
