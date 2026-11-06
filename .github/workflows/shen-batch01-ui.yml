@@ -7,6 +7,7 @@ on:
       - '.github/workflows/shen-batch01-ui.yml'
       - 'tests/brick3-shen-batch01.spec.ts'
       - 'scripts/brick3-shen-batch01.test.mjs'
+      - 'scripts/brick3-shen-ui-fixture.mjs'
       - 'scripts/brick3-photo-events.mjs'
       - 'docs/brick3-photo-events-v1.json'
       - 'public/story-photos/shen_yanzhou/**'
@@ -25,13 +26,12 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - name: Validate story graph and photo manifests
+      - name: Verify Shen photo script and all forty branch links
+        run: node --test scripts/brick3-shen-batch01.test.mjs
+      - name: Compile isolated Shen KKT fixture for browser rendering
         run: |
-          npm run story:validate
-          npm run story:test
-          node --test scripts/brick3-shen-batch01.test.mjs
-      - name: Production build
-        run: npm run build
+          node scripts/brick3-shen-ui-fixture.mjs
+          npx vite build --config vite.runtime.config.ts
       - name: Install Chromium for actual KKT browser test
         run: npx playwright install --with-deps chromium
       - name: Render KKT mobile chat and exercise scripted choice
