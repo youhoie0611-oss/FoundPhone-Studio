@@ -156,6 +156,7 @@ export type Runtime = {
   choices: { label: string; target: string }[];
   messages: Record<string, Item[]>;
   brick3V8?: import("./brick3Relationships").V8RelationshipState;
+  brick3V8Life?: import("./brick3V8Life").V8LifeState;
   peiAutonomy?: import("./brick3PeiAutonomy").PeiAutonomy;
   brick3Invites?: Record<string, import("./brick3RepeatInvites").Brick3InviteProgress>;
   brick3DateSocial?: Record<string, import("./brick3DateSocial").Brick3DateSocialProgress>;
