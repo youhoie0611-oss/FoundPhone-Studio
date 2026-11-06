@@ -44,7 +44,7 @@ export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
       {todayUndo && (
         <button type="button" className="brick3-relation-undo"
           onClick={() => action(next => undoV8Decision(next))}>
-          撤銷今日尚未送達的關係決定
+          修正今日尚未得到回覆的關係決定
         </button>
       )}
       {!!state.brick3V8Intimacy?.events.length && (
