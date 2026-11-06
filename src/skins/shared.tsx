@@ -96,7 +96,7 @@ export function Avatar({
 }) {
   return (
     <span className={`catalog-avatar ${round ? "round" : ""}`}>
-      {(safeMedia(src)?.startsWith("data:image/") || /(?:^|\/)characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(src)) ? (
+      {(safeMedia(src)?.startsWith("data:image/") || /(?:^|\/)characters\/(?:[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)|電影感東亞男子肖像\.png)$/.test(src)) ? (
         <img src={src} alt="" />
       ) : (
         name.slice(0, 1) || "人"
