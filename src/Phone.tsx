@@ -67,6 +67,7 @@ import {
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { storyPhotoUrl, useStoryPhotoAvailability } from "./storyPhotoAssets";
 import { db } from "./persistence";
+import { restoreBrick3Save } from "./brick3SaveMigration";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
 export function AppIcon({
@@ -212,9 +213,13 @@ function PhoneRuntime({
       .get(work.id)
       .then((saved) => {
         if (!active) return;
+        const restored = saved && restoreBrick3Save(work, saved.state);
         if (saved && saved.state.revision === work.updatedAt)
           setOwn(saved.state);
-        else {
+        else if (restored) {
+          setOwn(restored);
+          setLoadError("舊版進度已轉換至新版劇情；請確認陸沉川的事件進度。");
+        } else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
         }
