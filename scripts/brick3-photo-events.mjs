@@ -72,8 +72,8 @@ const alternatives = {
   photo_camera_walk: ["那時候剛好夕陽出來，我也很喜歡。", "在活動附近的街口，我拍完就回學校了。", "可以，妳有空再約，不用勉強。", "沒關係，我也只是想分享今天看到的。"],
   photo_practice_update: ["有贏，最後一球差點沒投進。", "哈哈，現在累到只想坐著。", "有，不過剛打完球的樣子很狼狽。", "嗯，我去洗澡，晚點再說。"],
   photo_weekend_sport: ["誰說我不練？只是沒必要一直講。", "嗯，今天打得還行。", "有機會再說，得先看妳有沒有空。", "行，那妳先忙。"],
-  photo_off_duty: ["嗯，今天工作排得很滿。", "是有點。現在終於能休息。", "我等一下再看，謝了。", "好，晚點聊。"],
-  photo_lu_office_evening: ["還有一份資料要確認。", "從這裡能看到兩棟樓之間的街道。", "嗯，謝謝。妳也早點休息。", "好，妳先忙。"],
+  photo_off_duty: ["算不上什麼大菜。只是想吃點熱的。", "有時間就自己煮。做飯比開會容易讓人放鬆。", "是有點累。但回家做點吃的，反而能把工作放下。", "嗯，妳也早點休息。"],
+  photo_lu_office_evening: ["還有幾份資料要確認。不會待太晚。", "偶爾會站在窗邊看一會兒。今晚剛好拍了張。", "算順利。只是比預計久了一點。", "好，妳先忙。"],
 };
 const isPhotoPath = (path) => /^public\/story-photos\/(shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(path);
 const node = (id, type, extra = {}) => ({ id, label: id, type, once: true, ...extra });
@@ -169,17 +169,18 @@ export function injectBrick3PhotoEvents(story, manifest) {
     // Author-approved Shen Batch01: a small follow-up after the photo, then
     // four reply choices. Other character events retain their original pacing.
     const shenBatch01 = entry.batchId === "shen_yanzhou_batch01";
+    const luPhoto = entry.characterId === "lu_chenchuan";
     const followUp = shenBatch01
       ? entry.chatSequence?.find((part, i) =>
           part.kind === "text" && i > 0)?.body
-      : null;
-    if (shenBatch01 && followUp) {
+      : luPhoto ? entry.chatSequence?.filter(part => part.kind === "text").at(-1)?.body : null;
+    if ((shenBatch01 || luPhoto) && followUp) {
       const followupId = prefix + "-followup-text";
       addChat(chat, followupId, senderId, followUp, {
         meta: { photoEventId: entry.eventId, source: "brick3-shen-photo-batch01" },
       });
       story.events.push(node(prefix + "-followup-wait", "delay", {
-        delayMs: 3500, next: [prefix + "-followup-arrive"],
+        delayMs: luPhoto ? 2500 : 3500, next: [prefix + "-followup-arrive"],
       }));
       story.events.push(node(prefix + "-followup-arrive", "action", {
         actions: [unlock(followupId)],
@@ -188,7 +189,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
     }
     story.events.push(node(arriveId, "action", {
       actions: arrivalActions,
-      next: [prefix + (shenBatch01 && followUp ? "-followup-wait" : "-options")],
+      next: [prefix + ((shenBatch01 || luPhoto) && followUp ? "-followup-wait" : "-options")],
     }));
     const optionIds = entry.choices.map((_, i) => prefix + "-choice-" + (i + 1));
     story.events.push(node(prefix + "-options", "choice", { next: optionIds }));
@@ -305,6 +306,10 @@ export function injectBrick3PhotoEvents(story, manifest) {
       story.events.push(node(waitId, "delay", {
         delayMs: delayed[entry.eventId] ?? 120000,
         next: [arriveId],
+        ...(luPhoto ? { conditions: [
+          { key: "lu_private_contact", op: "eq", value: true },
+          { key: "lu_photo_sharing_opt_out", op: "neq", value: true },
+        ] } : {}),
       }));
       origin.next ??= [];
       origin.next.push(waitId);
