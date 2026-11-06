@@ -1,4 +1,5 @@
-import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation, reviewV8LegacyRelationship } from "./brick3Relationships";
+import { useState } from "react";
+import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation, reviewV8LegacyRelationship, endV8Relationship } from "./brick3Relationships";
 import type { Runtime } from "./schema";
 import "./brick3RelationshipPanel.css";
 
@@ -13,6 +14,7 @@ const agreements: Record<string, string> = {
 type Props = { state: Runtime; close(): void; onUpdate(next: Runtime): void };
 export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
   const v = state.brick3V8;
+  const [pendingBreakup, setPendingBreakup] = useState<string | null>(null);
   const action = (operation: (next: Runtime) => boolean) => {
     const next = structuredClone(state);
     if (operation(next)) onUpdate(next);
@@ -63,6 +65,15 @@ export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
                 討論關係界線
               </button>
             )}
+            {bond && ["dating", "secret"].includes(bond.status) && (pendingBreakup === lead ? (
+              <div className="brick3-relation-breakup-confirm">
+                <p>確定要結束與{lead}的交往？此訊息會正式送達，不能當作尚未發生。</p>
+                <button type="button" onClick={() => { action(next => endV8Relationship(next, lead)); setPendingBreakup(null); }}>確認分手</button>
+                <button type="button" onClick={() => setPendingBreakup(null)}>取消</button>
+              </div>
+            ) : (
+              <button type="button" onClick={() => setPendingBreakup(lead)}>結束交往</button>
+            ))}
             {canDisclose && (
               <button type="button" onClick={() => action(next => discloseV8Relationship(next, lead))}>
                 向{lead}坦白其他戀愛關係
