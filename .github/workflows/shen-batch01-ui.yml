@@ -32,8 +32,8 @@ jobs:
         run: |
           node scripts/brick3-shen-ui-fixture.mjs
           npx vite build --config vite.runtime.config.ts
-      - name: Install Chromium for actual KKT browser test
-        run: npx playwright install --with-deps chromium
+      - name: Verify system Chrome available on GitHub runner
+        run: google-chrome --version || google-chrome-stable --version
       - name: Render KKT mobile chat and exercise scripted choice
         run: npx playwright test tests/brick3-shen-batch01.spec.ts
       - name: Archive KKT screenshots and browser test report
