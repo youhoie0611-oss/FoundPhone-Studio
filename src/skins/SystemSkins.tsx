@@ -144,6 +144,20 @@ export function ContactsSkin(p: Props) {
   const { q, setQ, items } = useContent(p, "所有联系人");
   const [relationshipOpen, setRelationshipOpen] = useState(false);
   const relationshipItem = p.items.find((i) => i.title === "我的關係" || i.title === "我的关系");
+  const leads = ["沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川"];
+  const discoveredClues = p.relationship?.clues ?? [];
+  const relationshipStatus = (name: string) => {
+    const vars = p.relationship?.variables ?? {};
+    // Only explicit, player-visible relationship labels can appear here.
+    // Never expose affection, scores, secret flags or numeric variables.
+    const key = Object.keys(vars).find((k) =>
+      (k === name + "_關係" || k === name + "_关系" ||
+       k === name + "_relationship" || k === "relationship_" + name ||
+       k === "relation_" + name)
+    );
+    const value = key ? vars[key] : undefined;
+    return typeof value === "string" && value.trim() ? value : "關係尚未確認";
+  };
   return (
     <div className="catalog-skin native-contacts">
       <Header p={p} />
@@ -161,9 +175,23 @@ export function ContactsSkin(p: Props) {
           <span><strong>我的關係</strong><small>查看已發現的關係與線索</small></span>
         </button>
         {relationshipOpen && !relationshipItem && (
-          <section aria-label="我的關係" className="native-section">
-            <h4>我的關係</h4>
-            <p>關係資料尚未載入。已解鎖線索與隱藏好感度不會在此預先公開。</p>
+          <section aria-label="我的關係">
+            <h4 className="native-section">我的關係</h4>
+            {leads.map((name) => {
+              const clues = discoveredClues.filter((clue) => clue.includes(name));
+              return (
+                <div className="contact-self" key={name}>
+                  <Avatar name={name} />
+                  <span>
+                    <strong>{name}</strong>
+                    <small>{relationshipStatus(name)}</small>
+                    <small>已發現線索：{clues.length} 條</small>
+                    {clues.map((clue) => <small key={clue}>{clue}</small>)}
+                  </span>
+                </div>
+              );
+            })}
+            <p>僅顯示已解鎖線索與公開關係狀態；隱藏好感度不顯示。</p>
           </section>
         )}
         <SearchBox value={q} set={setQ} />
