@@ -1,0 +1,75 @@
+name: Deploy isolated 磚3 game (preserve FoundPhone host)
+on:
+  push:
+    branches:
+      - feature/zhuan3-v6-v7-jealousy
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout last successfully published host (do not modify other games)
+        uses: actions/checkout@v4
+        with:
+          ref: fcd771d16a4cae527d8cd32b7d1fe5060f07ab41
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install host dependencies
+        run: npm ci
+      - name: Validate preserved host
+        run: |
+          npm run visual-memory:check
+          npm run typecheck
+          npm run lint
+          npm test
+          npm run story:validate
+          npm run story:test
+      - name: Build preserved FoundPhone host
+        run: npm run build
+
+      - name: Checkout current 磚3 (never overwrite host source)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: brick3-source
+      - name: Install and validate 磚3
+        working-directory: brick3-source
+        run: |
+          npm ci
+          npm run typecheck
+          npm run lint
+          npm test
+          npm run story:validate
+          npm run story:test
+      - name: Build isolated 磚3 under /rebuild/
+        working-directory: brick3-source
+        run: |
+          npm run build
+          mkdir -p ../dist/rebuild
+          cp -a dist/. ../dist/rebuild/
+          test -s ../dist/rebuild/index.html
+          test -s ../dist/rebuild/work.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy preserved host + isolated 磚3
+        id: deployment
+        uses: actions/deploy-pages@v4
