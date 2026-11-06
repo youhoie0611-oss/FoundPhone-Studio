@@ -43,7 +43,7 @@ export type V8RelationshipState = {
   nights: string[];
   lastDay: string;
   sequence: number;
-  undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean };
+  undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean; messageCount: number };
 };
 const HOUR = 3600000, DAY = 86400000;
 const NOW = (s: Runtime) => s.elapsedMs ?? 0;
@@ -91,7 +91,7 @@ function choices(s: Runtime, lead: V8Lead, entries: [string, string][]) {
 }
 function saveUndo(s: Runtime) {
   const v = ensureV8(s);
-  v.undo = { at: NOW(s), snapshot: structuredClone(v.bonds), used: false };
+  v.undo = { at: NOW(s), snapshot: structuredClone(v.bonds), used: false, messageCount: (s.messages.kakao ?? []).length };
 }
 function change(s: Runtime, lead: V8Lead, status: Bond, reason: string, exclusivity?: Exclusivity) {
   const v = ensureV8(s), b = v.bonds[lead];
@@ -199,6 +199,8 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
     return s;
   }
   if (!conf || conf.status !== "pending") return s;
+  // A decision interrupts the question sequence; NPC must wait for the player.
+  v.pending = v.pending.filter(p => p.lead !== lead);
   if (NOW(s) > conf.deadline) { conf.status = "withdrawn"; return s; }
   if (action === "later") {
     // Remains pending until the 14-day deadline; do not erase a real choice.
@@ -347,9 +349,7 @@ export function undoV8Decision(s: Runtime, lead?: V8Lead): boolean {
   const affected = V8_LEADS.filter(n => JSON.stringify(v.bonds[n]) !== JSON.stringify(undo.snapshot[n]));
   if (!affected.length || (lead && !affected.includes(lead))) return false;
   // As soon as a response arrived, rollback must use an explicit story checkpoint instead.
-  const hasDeliveredReaction = (s.messages.kakao ?? []).some(m =>
-    affected.includes(m.title as V8Lead) && m.meta.source === "brick3-v8" &&
-    m.time === `${s.date ?? "2026-11-06"} ${s.time}`);
+  const hasDeliveredReaction = (s.messages.kakao ?? []).length !== undo.messageCount;
   if (hasDeliveredReaction) return false;
   v.bonds = structuredClone(undo.snapshot);
   v.pending = v.pending.filter(p => !affected.includes(p.lead));
@@ -373,6 +373,14 @@ export function discloseV8Relationship(s: Runtime, to: V8Lead): boolean {
   const other = partners(v, to);
   const undisclosed = other.filter(name => !partner.knows[name]);
   if (!undisclosed.length) return false;
+  // A disclosure is a real player-authored KKT statement, not NPC telepathy.
+  const body = `我想跟你說清楚，我和${undisclosed.join("、")}也有感情關係。`;
+  s.messages.kakao ??= [];
+  s.messages.kakao.push(makeItem({
+    id: `brick3-v8-disclosure-${to}-${NOW(s)}`, title: to, sender: "我", body,
+    outgoing: true, time: `${s.date ?? "2026-11-06"} ${s.time}`,
+    meta: { source: "brick3-v8-player-disclosure" },
+  }));
   for (const name of undisclosed) {
     partner.knows[name] = { status: v.bonds[name].status, source: "player-confession", at: NOW(s) };
   }
@@ -389,5 +397,14 @@ export function discloseV8Relationship(s: Runtime, to: V8Lead): boolean {
     if (!s.endings.includes("END_03")) s.endings.push("END_03");
   }
   event(s, `disclosed:${to}:${undisclosed.join("+")}`);
+  return true;
+}
+
+/** Existing lovers can initiate their own negotiation without a fresh confession. */
+export function requestV8Negotiation(s: Runtime, lead: V8Lead): boolean {
+  const v = ensureV8(s);
+  if (!live(v.bonds[lead])) return false;
+  beginNegotiation(s, lead);
+  event(s, `requested-negotiation:${lead}`);
   return true;
 }
