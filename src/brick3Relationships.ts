@@ -81,11 +81,33 @@ export function ensureV8(s: Runtime): V8RelationshipState {
       candidates, reviewed: [], completed: false,
     };
   }
+  // Incremental migration: V8 saves from earlier development snapshots may
+  // contain fewer than five leads or omit newly added collections. Preserve
+  // every existing relationship and conversation as-is.
+  const v = s.brick3V8;
+  v.bonds ??= {} as Record<V8Lead, Relationship>;
+  v.confessions ??= {};
+  v.negotiations ??= {};
+  v.pending ??= [];
+  v.events ??= [];
+  v.endings ??= [];
+  v.nights ??= [];
+  v.sequence ??= 0;
+  v.createdAt ??= NOW(s);
+  v.lastDay ??= s.date ?? "";
   for (const lead of V8_LEADS) {
-    const bond = s.brick3V8.bonds[lead];
-    if (bond) bond.careerExperience ??= {};
+    v.bonds[lead] ??= neutral();
+    const b = v.bonds[lead];
+    b.history ??= [];
+    b.knows ??= {};
+    b.core ??= 0;
+    b.discoveries ??= [];
+    b.specialization ??= {};
+    b.careerExperience ??= {};
+    b.exclusivity ??= "unspecified";
+    b.since ??= NOW(s);
   }
-  return s.brick3V8;
+  return v;
 }
 function unique(s: Runtime, name: V8Lead, body: string, id: string) {
   s.messages.kakao ??= [];
