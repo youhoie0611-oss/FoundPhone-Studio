@@ -69,7 +69,7 @@ function observeKnownEvents(s: Runtime) {
     const b = v.bonds[lead], text = entry.body;
     for (let i = 0; i < topics[lead].length; i++) {
       // A single incoming item cannot skip core stages or reveal all four truths.
-      if (i === b.core && topics[lead][i].test(text)) {
+      if (i === b.core && topics[lead][i]?.test(text)) {
         discoverV8Core(s, lead, `CORE_${i + 1}:${entry.id}`);
         break;
       }
