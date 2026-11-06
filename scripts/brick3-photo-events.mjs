@@ -9,6 +9,16 @@ const anchors = {
   photo_dinner_invite: "pei-day21-opening",
   photo_camera_walk: "shen-phase2-1-1-in",
   photo_practice_update: "shen-autonomy-v3-day1",
+  photo_shen_batch01_dorm_morning_selfie: "shen-r4-a-in",
+  photo_shen_batch01_classroom_bored_selfie: "shen-r5-a-in",
+  photo_shen_batch01_gym_mirror_selfie: "shen-r8-a-in",
+  photo_shen_batch01_cafe_editing_break: "shen-r13-a-in",
+  photo_shen_batch01_basketball_sunset_selfie: "shen-autonomy-v3-day1",
+  photo_shen_batch01_elevator_outfit_selfie: "shen-r15-a-in",
+  photo_shen_batch01_convenience_store_night_selfie: "shen-r17-a-in",
+  photo_shen_batch01_rainy_neon_selfie: "shen-r22-a-in",
+  photo_shen_batch01_izakaya_friends_selfie: "shen-r12-a-in",
+  photo_shen_batch01_late_night_desk_selfie: "shen-autonomy-v3-day2",
   photo_night_view: "qi-autonomy-v3-day2",
   photo_weekend_sport: "qi-autonomy-v3-day3",
   photo_qi_batch01_parked_car_selfie: "qi-day11-opening",
@@ -29,6 +39,16 @@ const delayed = {
   photo_dinner_invite: 120000,
   photo_camera_walk: 90000,
   photo_practice_update: 120000,
+  photo_shen_batch01_dorm_morning_selfie: 3600000,
+  photo_shen_batch01_classroom_bored_selfie: 3600000,
+  photo_shen_batch01_gym_mirror_selfie: 7200000,
+  photo_shen_batch01_cafe_editing_break: 5400000,
+  photo_shen_batch01_basketball_sunset_selfie: 10800000,
+  photo_shen_batch01_elevator_outfit_selfie: 14400000,
+  photo_shen_batch01_convenience_store_night_selfie: 25200000,
+  photo_shen_batch01_rainy_neon_selfie: 28800000,
+  photo_shen_batch01_izakaya_friends_selfie: 21600000,
+  photo_shen_batch01_late_night_desk_selfie: 32400000,
   photo_night_view: 120000,
   photo_weekend_sport: 86400000,
   photo_qi_batch01_parked_car_selfie: 5400000,
@@ -139,9 +159,29 @@ export function injectBrick3PhotoEvents(story, manifest) {
       type: "notification", key: "",
       value: entry.characterName + "：" + (visit ? "晚餐已經準備好了。" : entry.message.replace(/\n/g, " ")),
     });
+    // Author-approved Shen Batch01: a small follow-up after the photo, then
+    // four reply choices. Other character events retain their original pacing.
+    const shenBatch01 = entry.batchId === "shen_yanzhou_batch01";
+    const followUp = shenBatch01
+      ? entry.chatSequence?.find((part, i) =>
+          part.kind === "text" && i > 0)?.body
+      : null;
+    if (shenBatch01 && followUp) {
+      const followupId = prefix + "-followup-text";
+      addChat(chat, followupId, senderId, followUp, {
+        meta: { photoEventId: entry.eventId, source: "brick3-shen-photo-batch01" },
+      });
+      story.events.push(node(prefix + "-followup-wait", "delay", {
+        delayMs: 3500, next: [prefix + "-followup-arrive"],
+      }));
+      story.events.push(node(prefix + "-followup-arrive", "action", {
+        actions: [unlock(followupId)],
+        next: [prefix + "-options"],
+      }));
+    }
     story.events.push(node(arriveId, "action", {
       actions: arrivalActions,
-      next: [prefix + "-options"],
+      next: [prefix + (shenBatch01 && followUp ? "-followup-wait" : "-options")],
     }));
     const optionIds = entry.choices.map((_, i) => prefix + "-choice-" + (i + 1));
     story.events.push(node(prefix + "-options", "choice", { next: optionIds }));
