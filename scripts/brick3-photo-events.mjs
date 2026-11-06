@@ -32,7 +32,7 @@ const anchors = {
   photo_qi_batch01_camera_detail: "qi-r17-b-in",
   photo_qi_batch01_skate_break: "qi-autonomy-v3-day1",
   photo_off_duty: "v7-lu-private-1",
-  photo_commercial_shoot: "v7-lu-private-2",
+  photo_lu_office_evening: "v7-lu-private-2",
 };
 const delayed = {
   photo_design_review: 90000,
@@ -64,7 +64,7 @@ const delayed = {
   photo_qi_batch01_camera_detail: 9000000,
   photo_qi_batch01_skate_break: 7200000,
   photo_off_duty: 180000,
-  photo_commercial_shoot: 240000,
+  photo_lu_office_evening: 240000,
 };
 const alternatives = {
   photo_dinner_invite: ["可以，妳到了再傳訊息給我。", "嗯，還是要先問妳願不願意。", "好，我自己吃也沒關係。", "只有吃飯。其他的事，妳沒答應我就不會擅自決定。"],
@@ -73,7 +73,7 @@ const alternatives = {
   photo_practice_update: ["有贏，最後一球差點沒投進。", "哈哈，現在累到只想坐著。", "有，不過剛打完球的樣子很狼狽。", "嗯，我去洗澡，晚點再說。"],
   photo_weekend_sport: ["誰說我不練？只是沒必要一直講。", "嗯，今天打得還行。", "有機會再說，得先看妳有沒有空。", "行，那妳先忙。"],
   photo_off_duty: ["嗯，今天工作排得很滿。", "是有點。現在終於能休息。", "我等一下再看，謝了。", "好，晚點聊。"],
-  photo_commercial_shoot: ["工作上就是這樣。私底下沒那麼講究。", "服裝形象拍攝，還在整理成品。", "嗯，謝謝。", "好，妳先忙。"],
+  photo_lu_office_evening: ["還有一份資料要確認。", "從這裡能看到兩棟樓之間的街道。", "嗯，謝謝。妳也早點休息。", "好，妳先忙。"],
 };
 const isPhotoPath = (path) => /^public\/story-photos\/(shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(path);
 const node = (id, type, extra = {}) => ({ id, label: id, type, once: true, ...extra });
