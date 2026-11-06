@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 /**
  * Compile-time bridge: authored Brick3 photo manifest -> native Work v1 story nodes.
  * Photos are uploaded separately; missing media never creates a false player memory.
@@ -75,6 +76,7 @@ const alternatives = {
   photo_off_duty: ["算不上什麼大菜。只是想吃點熱的。", "有時間就自己煮。做飯比開會容易讓人放鬆。", "是有點累。但回家做點吃的，反而能把工作放下。", "嗯，妳也早點休息。"],
   photo_lu_office_evening: ["還有幾份資料要確認。不會待太晚。", "偶爾會站在窗邊看一會兒。今晚剛好拍了張。", "算順利。只是比預計久了一點。", "好，妳先忙。"],
 };
+const luPhotoOrder = ["photo_off_duty", "photo_lu_office_evening", "photo_lu_home_dinner", "photo_lu_piano_evening", "photo_lu_gym_selfie", "photo_lu_friend_dinner", "photo_lu_sunset_walk", "photo_lu_friends_cat", "photo_lu_coffee_break", "photo_lu_quiet_night"];
 const isPhotoPath = (path) => /^public\/story-photos\/(shen_yanzhou|pei_zhiyu|qi_ye|gu_shian|lu_chenchuan)\/[a-z0-9_]+\.webp$/.test(path);
 const node = (id, type, extra = {}) => ({ id, label: id, type, once: true, ...extra });
 const unlock = (key) => ({ type: "unlock", key, value: true });
@@ -144,7 +146,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
       { meta: { photoEventId: entry.eventId, source: "brick3-photo-event" } });
     arrivalActions.push(unlock(captionId));
 
-    const uploadedImages = entry.images.filter((photo) => isPhotoPath(photo.path));
+    const uploadedImages = entry.images.filter((photo) => isPhotoPath(photo.path) && (entry.characterId !== "lu_chenchuan" || existsSync(photo.path)));
     if (visit) {
       uploadedImages.forEach((photo, index) => {
         const albumId = addAlbum(story, prefix + "-album-" + (index + 1), photo, entry.characterName, "裴知聿家・晚餐");
