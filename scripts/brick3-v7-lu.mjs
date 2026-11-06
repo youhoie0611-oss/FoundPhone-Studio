@@ -63,7 +63,6 @@ export function injectBrick3V7Lu(story) {
   story.variables.lu_attraction ??= 0;
   story.variables.lu_trust ??= 0;
   story.variables.lu_jealousy ??= 0;
-  story.variables.lu_met_in_service ??= false; // legacy save key; never set true in new canon
   story.variables.lu_met_near_office ??= false;
   story.variables.lu_private_contact ??= false;
   const lu = { id: "kkt-lu", app: "kakao", title: "陸沉川",
@@ -97,8 +96,8 @@ export function injectBrick3V7Lu(story) {
     ["我還在路上，等我一下。", "好，慢慢來。"],
     ["臨時有事，先不去了。", "收到，下次再約。"],
     ["今天真的太累了。", "那回家休息吧，別勉強。"],
-  ], i => i === 0 ? ["v7-lu-service-encounter"] : [], "linan");
-  story.events.push(node("v7-lu-service-encounter", "action", {
+  ], i => i === 0 ? ["v7-lu-office-encounter"] : [], "linan");
+  story.events.push(node("v7-lu-office-encounter", "action", {
     actions: [set("lu_met_near_office", true), unlock("v7-lu-first-encounter-note")],
     next: ["v7-lu-second-encounter-wait-1"],
   }));
@@ -147,8 +146,8 @@ export function injectBrick3V7Lu(story) {
     delayMs: 18000000, next: ["v7-lu-private-second-arrive"],
   }));
   addMessage(lu, "v7-lu-private-2", "luchenchuan",
-    "剛開完會。\\n今天本來想早點回去煮飯。看來又得晚一點。", "v7_lu_shoot");
-  addOptions(story, lu, "v7_lu_shoot", [
+    "剛開完會。\\n今天本來想早點回去煮飯。看來又得晚一點。", "v7_lu_evening");
+  addOptions(story, lu, "v7_lu_evening", [
     ["你會自己煮飯？", "會。比一直吃外食方便。"],
     ["會議不順利嗎？", "不是，臨時多了幾件要處理的事。"],
     ["你也別忙到忘記吃飯。", "嗯，知道了。妳也是。"],
