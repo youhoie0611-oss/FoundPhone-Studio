@@ -112,10 +112,10 @@ describe("Brick3 affection-gated repeatable invitations", () => {
     const s = initialRuntime(w);
     s.variables.lu_attraction = 90;
     tickBrick3Invitations(w, s);
-    expect(choices(s, "lu_photo_exhibit")).toHaveLength(0);
+    expect(choices(s, "lu_piano_recital")).toHaveLength(0);
     s.variables.lu_private_contact = true;
     tickBrick3Invitations(w, s);
-    expect(choices(s, "lu_photo_exhibit")).toHaveLength(4);
+    expect(choices(s, "lu_piano_recital")).toHaveLength(4);
   });
 
   it("uses hidden Pei affection for dinner, with a single reward and no old fixed-day invitation", () => {
