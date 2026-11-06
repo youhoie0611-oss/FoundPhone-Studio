@@ -46,7 +46,7 @@ export type V8RelationshipState = {
   lastDay: string;
   sequence: number;
   legacyReview?: { candidates: V8Lead[]; reviewed: V8Lead[]; completed: boolean };
-  undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean; messageCount: number };
+  undo?: { at: number; snapshot: Record<V8Lead, Relationship>; used: boolean; messageCount: number; outgoingId?: string };
 };
 const HOUR = 3600000, DAY = 86400000;
 const NOW = (s: Runtime) => s.elapsedMs ?? 0;
@@ -110,7 +110,7 @@ function choices(s: Runtime, lead: V8Lead, entries: [string, string][]) {
 }
 function saveUndo(s: Runtime) {
   const v = ensureV8(s);
-  v.undo = { at: NOW(s), snapshot: structuredClone(v.bonds), used: false, messageCount: (s.messages.kakao ?? []).length };
+  v.undo = { at: NOW(s), snapshot: structuredClone(v.bonds), used: false, messageCount: (s.messages.kakao ?? []).filter(m => m.meta.source === "brick3-v8" && !m.outgoing).length };
 }
 function change(s: Runtime, lead: V8Lead, status: Bond, reason: string, exclusivity?: Exclusivity) {
   const v = ensureV8(s), b = v.bonds[lead];
@@ -181,6 +181,18 @@ function reconcilePoly(s: Runtime, lead: V8Lead, approach: Negotiation["approach
   }
   event(s, `negotiation:${lead}:${response}`);
 }
+function recordV8PlayerMessage(s: Runtime, lead: V8Lead, body: string): string {
+  const v = ensureV8(s);
+  const id = `brick3-v8-player-${++v.sequence}`;
+  s.messages.kakao ??= [];
+  s.messages.kakao.push(makeItem({
+    id, title: lead, sender: "我", body, outgoing: true,
+    time: `${s.date ?? "2026-11-06"} ${s.time}`,
+    meta: { source: "brick3-v8-player" },
+  }));
+  if (v.undo && !v.undo.used && v.undo.at === NOW(s)) v.undo.outgoingId = id;
+  return id;
+}
 export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | null {
   if (!target.startsWith("brick3-v8:")) return null;
   const s = structuredClone(previous), v = ensureV8(s);
@@ -191,6 +203,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   const conf = v.confessions[lead];
   s.choices = s.choices.filter(c => !c.target.startsWith(`brick3-v8:${lead}:`));
   if (action === "agree-boundaries" || action === "reject-boundaries") {
+    recordV8PlayerMessage(s, lead, action === "agree-boundaries" ? "我願意和你一起把界線談清楚。" : "這些條件我無法接受。");
     const n = v.negotiations[lead];
     if (!n || n.status !== "conditional") return s;
     if (action === "reject-boundaries") {
@@ -211,6 +224,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
     return s;
   }
   if (action === "full" || action === "status" || action === "test") {
+    recordV8PlayerMessage(s, lead, action === "full" ? "我想把所有關係都和你說清楚。" : action === "status" ? "我目前也有其他戀愛關係，想和你談談。" : "你怎麼看非排他關係？");
     reconcilePoly(s, lead, action); return s;
   }
   if (action === "undo") {
@@ -222,17 +236,20 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   v.pending = v.pending.filter(p => p.lead !== lead);
   if (NOW(s) > conf.deadline) { conf.status = "withdrawn"; return s; }
   if (action === "later") {
+    recordV8PlayerMessage(s, lead, "我需要一點時間考慮，現在還無法答覆。");
     // Remains pending until the 14-day deadline; do not erase a real choice.
     queue(s, lead, ["……好。", "我會給妳一點時間。"]);
     choices(s, lead, [["only", "選擇他"], ["poly", "協商非排他關係"], ["reject", "拒絕"], ["secret", "秘密交往"], ["ambiguous", "先維持曖昧"]]);
     return s;
   }
   if (action === "poly") {
+    recordV8PlayerMessage(s, lead, "我想和你討論能不能建立非排他的戀愛關係。");
     conf.status = "discussing";
     beginNegotiation(s, lead);
     return s;
   }
   if (action === "reject") {
+    recordV8PlayerMessage(s, lead, "謝謝你告訴我，但我不能接受這份告白。");
     conf.status = "declined";
     queue(s, lead, lead === "裴知聿" ? ["……我知道了。", "我現在有點難受。", "我不會當成妳還答應了什麼。"] : ["我明白了。", "謝謝妳願意直接告訴我。"]);
     event(s, `rejected:${lead}`);
@@ -241,6 +258,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   if (action === "ambiguous") {
     conf.status = "discussing";
     saveUndo(s);
+    recordV8PlayerMessage(s, lead, "我對你有好感，但現在不想確認交往。");
     change(s, lead, "ambiguous", "player-ambiguous");
     queue(s, lead, ["好，那就先這樣。", "我們不用現在把話說死。"]);
     return s;
@@ -248,12 +266,14 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   if (action === "only") {
     // Refuse silent replacement. Do not commit new exclusive relationship while another is active.
     if (partners(v, lead).length) {
+      recordV8PlayerMessage(s, lead, "我想選擇你，但得先處理原本的關係。");
       conf.status = "discussing";
       queue(s, lead, ["我聽見妳的意思了。", "不過妳現在的關係還在。", "我們把事情說清楚，再決定要不要正式交往。"]);
       event(s, `relationship-must-resolve:${lead}`);
       return s;
     }
     saveUndo(s);
+    recordV8PlayerMessage(s, lead, "我願意和你正式交往。");
     conf.status = "accepted";
     change(s, lead, "dating", "player-accepted", "exclusive");
     queue(s, lead, ["妳是認真的嗎？", "……我很高興。", "那我們好好開始。"]);
@@ -263,10 +283,12 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
   if (action === "secret") {
     // Candidate can refuse on their own terms.
     if (lead === "顧時安" || lead === "沈硯舟") {
+      recordV8PlayerMessage(s, lead, "我想先秘密交往，你願意嗎？");
       conf.status = "declined";
       queue(s, lead, ["我不想讓其他人一直被蒙在鼓裡。", "我願意談清楚，但不能直接答應秘密交往。"]);
     } else {
       saveUndo(s);
+      recordV8PlayerMessage(s, lead, "我想先秘密地和你交往，你願意嗎？");
       conf.status = "accepted";
       change(s, lead, "secret", "explicit-mutual-secret-choice", "unresolved");
       queue(s, lead, lead === "裴知聿"
@@ -388,9 +410,13 @@ export function undoV8Decision(s: Runtime, lead?: V8Lead): boolean {
   const affected = V8_LEADS.filter(n => JSON.stringify(v.bonds[n]) !== JSON.stringify(undo.snapshot[n]));
   if (!affected.length || (lead && !affected.includes(lead))) return false;
   // As soon as a response arrived, rollback must use an explicit story checkpoint instead.
-  const hasDeliveredReaction = (s.messages.kakao ?? []).length !== undo.messageCount;
+  const hasDeliveredReaction = (s.messages.kakao ?? []).filter(m => m.meta.source === "brick3-v8" && !m.outgoing).length !== undo.messageCount;
   if (hasDeliveredReaction) return false;
   v.bonds = structuredClone(undo.snapshot);
+  if (undo.outgoingId) {
+    const message = (s.messages.kakao ?? []).find(m => m.id === undo.outgoingId);
+    if (message) message.body = "已撤回這次關係決定";
+  }
   v.pending = v.pending.filter(p => !affected.includes(p.lead));
   affected.forEach(n => {
     if (v.confessions[n]?.status === "accepted") {
