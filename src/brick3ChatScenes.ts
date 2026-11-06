@@ -47,9 +47,11 @@ const stories: Record<Scene, (text: string, context: string) => Branch | null> =
     return null;
   },
   off_duty(text, context) {
-    if (!/工作|下班|拍攝|見面|聯絡/.test(text + context)) return null;
+    if (!/工作|下班|會議|副總|集團|鋼琴|煮飯|料理|陸家|見面|聯絡/.test(text + context)) return null;
     if (refuses.test(text)) return { outcome: "distance", reply: "明白。|妳不想談，我就不追問。" };
-    if (/工作|拍攝|為什麼|找我/.test(text)) return { outcome: "work_explained", reply: "我剛結束工作。|有些事情不方便在現場說。|不過妳想知道哪一部分，我可以先說清楚。" };
+    if (/鋼琴|彈琴/.test(text)) return { outcome: "piano_shared", reply: "從小就有練。|現在有空還是會彈一會兒。|妳平常會聽鋼琴曲嗎？" };
+    if (/煮飯|料理|下廚/.test(text)) return { outcome: "cooking_shared", reply: "會自己做。|工作忙的時候，煮飯反而能讓我安靜下來。|妳平常喜歡吃什麼？" };
+    if (/副總|集團|工作|會議|為什麼|找我/.test(text)) return { outcome: "work_explained", reply: "我在隔壁大樓工作，主要負責集團的營運決策。|剛開完會。|如果妳想知道哪部分，可以直接問。" };
     return null;
   },
 };
