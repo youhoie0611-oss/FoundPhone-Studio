@@ -1,5 +1,6 @@
 import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 import { tickV8Intimacy, chooseV8Intimacy } from "./brick3V8Intimacy";
+import { tickV8PeiThirdParty, observeV8PeiThirdPartyReply } from "./brick3V8PeiThirdParty";
 import { chooseV8, observeV8Reply, tickV8 } from "./brick3Relationships";
 import { chooseV8Life, tickV8Life, askV8Psychology } from "./brick3V8Life";
 import { chooseV8Conflict, tickV8Conflict } from "./brick3V8Conflict";
@@ -265,7 +266,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next)))))))));
+  return tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next))))))))));
 }
 export function advance(
   w: Work,
@@ -348,7 +349,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s)))))))));
+  return tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s))))))))));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -403,6 +404,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   } as Runtime;
   rememberBrick3Reply(next, thread, raw, context);
   observeV8Reply(next, thread, raw);
+  if (thread === "裴知聿") observeV8PeiThirdPartyReply(next, raw);
   if (thread === "沈硯舟" || thread === "裴知聿" || thread === "祁野" || thread === "顧時安" || thread === "陸沉川") askV8Psychology(next, thread, raw);
   stopPeiAutonomyOnPlayerReply(next, thread);
   const handledInvitation = appId === "kakao" && respondToBrick3InvitationText(next, thread, raw);
