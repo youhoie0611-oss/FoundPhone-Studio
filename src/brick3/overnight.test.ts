@@ -31,6 +31,13 @@ describe("磚3 五位男主過夜與床伴",()=>{
       expect(stayed.variables["z3_ov_status_"+k]).toBe("fwb");
     }
   });
+  it("Lu Chenchuan's overnight dialogue follows the vice-president canon",()=>{
+    const s=fresh();
+    const invited=overnightAction(s,"陸沉川","invite");
+    const dialog=invited.messages.kakao?.filter(x=>x.sender==="陸沉川").map(x=>x.body).join(" ")??"";
+    expect(dialog).toContain("職位");
+    expect(dialog).not.toMatch(/會館|男公關|模特兒|費用|拍攝|陪酒/);
+  });
   it("a refused NPC invitation never assigns an overnight nor relationship",()=>{
     const s=fresh();s.variables.z3_ov_pending_shen="offer";
     const stopped=overnightAction(s,"沈硯舟","decline");
