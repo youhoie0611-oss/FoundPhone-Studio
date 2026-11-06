@@ -1,0 +1,1057 @@
+{
+  "schema": "brick3.qi_ye.photo-retake.draft-v1",
+  "batchId": "qi_ye_batch03_retake",
+  "characterId": "qi_ye",
+  "branch": "feature/character-autonomy-v3",
+  "sourceSpec": "docs/brick3-photo-events-v1.json",
+  "status": "authoring_only__all_10_photos_not_generated",
+  "note": "上批人物換臉、十張同穿賽車外套；新嘗試生成器仍回傳聯絡表拼貼，故禁止交付正式圖檔或假稱已上傳。",
+  "reference": {
+    "source": "用戶最初五視角圖片",
+    "features": [
+      "原始五官輪廓",
+      "黑色凌亂層次髮",
+      "銀色唇環",
+      "銀色耳環／耳骨飾品",
+      "手部刺青",
+      "高挑運動體態"
+    ],
+    "notJustName": true
+  },
+  "cameraPolicy": {
+    "frontSelfie": "正常約70–100cm距離，露上半身並保留環境，只有搞怪照允許靠近鏡頭",
+    "mirrorSelfie": "保留鏡面、手機反射、實際站距",
+    "pov": "實際手持手機角度，可見自身手部或鞋子",
+    "environment": "可完全不入鏡，隨手拍當時景色",
+    "textures": [
+      "室內外混合光源",
+      "手機顆粒",
+      "自然陰影",
+      "些微失焦或手震",
+      "不對稱不完美構圖"
+    ],
+    "prohibitions": [
+      "十張使用同一套衣服",
+      "不同場景隨機更換五官",
+      "強制每張自拍",
+      "所有照片像攝影棚肖像",
+      "拼貼裁切升頻冒充原生高清"
+    ]
+  },
+  "separateDayOrEventWardrobe": true,
+  "sameEventWardrobeMustBeConsistent": true,
+  "uploadRoot": "public/story-photos/qi_ye/",
+  "userUploadsOnly": true,
+  "events": [
+    {
+      "eventId": "photo_qi_batch03_retake_01_kart_pit",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "剛跑完兩輪。第二個彎真的煩。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_01_choice_1",
+          "text": "你轉彎怎麼了？",
+          "branch": "qi_b03_retake_01_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_01_choice_2",
+          "text": "你不是說自己很會開？",
+          "branch": "qi_b03_retake_01_tease"
+        },
+        {
+          "id": "qi_b03_retake_01_choice_3",
+          "text": "別太勉強，先喝水。",
+          "branch": "qi_b03_retake_01_care"
+        },
+        {
+          "id": "qi_b03_retake_01_choice_4",
+          "text": "那你繼續玩。",
+          "branch": "qi_b03_retake_01_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_01_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_01_choice_1",
+          "messages": [
+            "入彎時車身一直滑，我還在抓節奏。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_01_tease": {
+          "requiresChoiceId": "qi_b03_retake_01_choice_2",
+          "messages": [
+            "開得好跟每台車手感一樣是兩回事。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_01_care": {
+          "requiresChoiceId": "qi_b03_retake_01_choice_3",
+          "messages": [
+            "有喝。等下一輪再試。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_01_cool": {
+          "requiresChoiceId": "qi_b03_retake_01_choice_4",
+          "messages": [
+            "嗯，晚點再說。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_kart_pit_01",
+          "filename": "qi_ye_batch03_retake_kart_pit_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_kart_pit_01.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "selfie_front",
+          "wardrobe": "黑灰短袖賽車風T恤、黑色工裝褲，摘下的頭盔放在一旁",
+          "description": "室內賽道休息區，有賽車和護欄，自然偏冷的混合燈",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_02_cave_walk",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "這洞比照片裡還誇張。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_02_choice_1",
+          "text": "有多深？",
+          "branch": "qi_b03_retake_02_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_02_choice_2",
+          "text": "你跑到地底下幹嘛？",
+          "branch": "qi_b03_retake_02_tease"
+        },
+        {
+          "id": "qi_b03_retake_02_choice_3",
+          "text": "裡面路滑，慢慢走。",
+          "branch": "qi_b03_retake_02_care"
+        },
+        {
+          "id": "qi_b03_retake_02_choice_4",
+          "text": "好，你繼續看。",
+          "branch": "qi_b03_retake_02_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_02_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_02_choice_1",
+          "messages": [
+            "步道還有一段，我走一半了。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_02_tease": {
+          "requiresChoiceId": "qi_b03_retake_02_choice_2",
+          "messages": [
+            "好奇啊。不然都來了只在入口拍照？"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_02_care": {
+          "requiresChoiceId": "qi_b03_retake_02_choice_3",
+          "messages": [
+            "有扶手，我有看路。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_02_cool": {
+          "requiresChoiceId": "qi_b03_retake_02_choice_4",
+          "messages": [
+            "嗯。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_cave_walk_02",
+          "filename": "qi_ye_batch03_retake_cave_walk_02.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_cave_walk_02.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "pov",
+          "wardrobe": "墨綠防風外套、黑色長褲、輕便背包（僅袖子或手部可見）",
+          "description": "安全木棧道、鐘乳石、暖色洞穴照明；主觀視角不自拍",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_03_glass_walk",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "腳底下全是山谷。挺刺激的。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_03_choice_1",
+          "text": "這是玻璃步道？",
+          "branch": "qi_b03_retake_03_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_03_choice_2",
+          "text": "你不是不怕高？",
+          "branch": "qi_b03_retake_03_tease"
+        },
+        {
+          "id": "qi_b03_retake_03_choice_3",
+          "text": "小心別滑倒。",
+          "branch": "qi_b03_retake_03_care"
+        },
+        {
+          "id": "qi_b03_retake_03_choice_4",
+          "text": "嗯，看到了。",
+          "branch": "qi_b03_retake_03_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_03_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_03_choice_1",
+          "messages": [
+            "對，踩上去比看照片有感。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_03_tease": {
+          "requiresChoiceId": "qi_b03_retake_03_choice_2",
+          "messages": [
+            "我說刺激，沒說我怕。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_03_care": {
+          "requiresChoiceId": "qi_b03_retake_03_choice_3",
+          "messages": [
+            "知道，這邊有防滑規定。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_03_cool": {
+          "requiresChoiceId": "qi_b03_retake_03_choice_4",
+          "messages": [
+            "行。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_glass_walk_03",
+          "filename": "qi_ye_batch03_retake_glass_walk_03.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_glass_walk_03.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "pov",
+          "wardrobe": "灰色連帽外套、黑色多口袋工裝褲、黑白運動鞋",
+          "description": "往下拍透明地板和山谷；有扶手，腳步停下來拍攝",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_04_indoor_snow",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "第三次才滑順。剛才差點翻。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_04_choice_1",
+          "text": "你會滑雪？",
+          "branch": "qi_b03_retake_04_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_04_choice_2",
+          "text": "你也有學不會的東西喔。",
+          "branch": "qi_b03_retake_04_tease"
+        },
+        {
+          "id": "qi_b03_retake_04_choice_3",
+          "text": "摔到哪裡了嗎？",
+          "branch": "qi_b03_retake_04_care"
+        },
+        {
+          "id": "qi_b03_retake_04_choice_4",
+          "text": "那你玩得開心。",
+          "branch": "qi_b03_retake_04_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_04_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_04_choice_1",
+          "messages": [
+            "會一點，這個坡的感覺跟外面不太一樣。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_04_tease": {
+          "requiresChoiceId": "qi_b03_retake_04_choice_2",
+          "messages": [
+            "我有說不會嗎？只說剛才差點摔。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_04_care": {
+          "requiresChoiceId": "qi_b03_retake_04_choice_3",
+          "messages": [
+            "沒摔，先停下來了。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_04_cool": {
+          "requiresChoiceId": "qi_b03_retake_04_choice_4",
+          "messages": [
+            "嗯，等一下再滑。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_indoor_snow_04",
+          "filename": "qi_ye_batch03_retake_indoor_snow_04.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_indoor_snow_04.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "selfie_front",
+          "wardrobe": "米白色滑雪外套、黑色保暖圍脖、深色滑雪護目鏡在額前",
+          "description": "離滑道後在休息區手持前鏡頭，拍到半身及雪道",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_05_mirror_maze",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "我真的被這個迷宮繞暈。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_05_choice_1",
+          "text": "你還在裡面？",
+          "branch": "qi_b03_retake_05_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_05_choice_2",
+          "text": "笑死，祁少迷路了？",
+          "branch": "qi_b03_retake_05_tease"
+        },
+        {
+          "id": "qi_b03_retake_05_choice_3",
+          "text": "別走太快，撞到玻璃。",
+          "branch": "qi_b03_retake_05_care"
+        },
+        {
+          "id": "qi_b03_retake_05_choice_4",
+          "text": "找到出口再說。",
+          "branch": "qi_b03_retake_05_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_05_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_05_choice_1",
+          "messages": [
+            "還在，轉了幾個彎又回原地。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_05_tease": {
+          "requiresChoiceId": "qi_b03_retake_05_choice_2",
+          "messages": [
+            "不准笑。這鏡子太會騙人。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_05_care": {
+          "requiresChoiceId": "qi_b03_retake_05_choice_3",
+          "messages": [
+            "我現在比誰都走得慢。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_05_cool": {
+          "requiresChoiceId": "qi_b03_retake_05_choice_4",
+          "messages": [
+            "行，我先找路。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_mirror_maze_05",
+          "filename": "qi_ye_batch03_retake_mirror_maze_05.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_mirror_maze_05.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "selfie_mirror",
+          "wardrobe": "刷舊黑色丹寧外套、深灰T恤、銀色項鍊、黑色工裝褲",
+          "description": "本人手機鏡自拍，至少腰部以上，真實多重鏡面反射，髮色與五官一致",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_06_night_aquarium",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "這個時間來看魚還真安靜。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_06_choice_1",
+          "text": "上面那隻是魟魚嗎？",
+          "branch": "qi_b03_retake_06_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_06_choice_2",
+          "text": "你這行程也太隨機。",
+          "branch": "qi_b03_retake_06_tease"
+        },
+        {
+          "id": "qi_b03_retake_06_choice_3",
+          "text": "不要開閃光燈喔。",
+          "branch": "qi_b03_retake_06_care"
+        },
+        {
+          "id": "qi_b03_retake_06_choice_4",
+          "text": "拍得不錯。",
+          "branch": "qi_b03_retake_06_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_06_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_06_choice_1",
+          "messages": [
+            "對，剛剛從頭頂游過去。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_06_tease": {
+          "requiresChoiceId": "qi_b03_retake_06_choice_2",
+          "messages": [
+            "想來就來了，有什麼問題。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_06_care": {
+          "requiresChoiceId": "qi_b03_retake_06_choice_3",
+          "messages": [
+            "沒開，館裡本來就禁止。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_06_cool": {
+          "requiresChoiceId": "qi_b03_retake_06_choice_4",
+          "messages": [
+            "嗯，燈光滿好看的。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_night_aquarium_06",
+          "filename": "qi_ye_batch03_retake_night_aquarium_06.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_night_aquarium_06.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "environment",
+          "wardrobe": "深藍薄外套、黑T恤（照片不需要露臉）",
+          "description": "本人手機拍魚群、透明水族館拱頂、藍色暗光與顆粒，沒有棚拍人物",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_07_wind_tunnel",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "剛從風洞出來。髮型直接報銷。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_07_choice_1",
+          "text": "真的會飄起來？",
+          "branch": "qi_b03_retake_07_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_07_choice_2",
+          "text": "這頭髮跟平常有差嗎？",
+          "branch": "qi_b03_retake_07_tease"
+        },
+        {
+          "id": "qi_b03_retake_07_choice_3",
+          "text": "有沒有暈？",
+          "branch": "qi_b03_retake_07_care"
+        },
+        {
+          "id": "qi_b03_retake_07_choice_4",
+          "text": "去整理頭髮吧。",
+          "branch": "qi_b03_retake_07_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_07_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_07_choice_1",
+          "messages": [
+            "會，教練在旁邊帶著。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_07_tease": {
+          "requiresChoiceId": "qi_b03_retake_07_choice_2",
+          "messages": [
+            "喂。差很多好嗎。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_07_care": {
+          "requiresChoiceId": "qi_b03_retake_07_choice_3",
+          "messages": [
+            "還行，坐著休息了。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_07_cool": {
+          "requiresChoiceId": "qi_b03_retake_07_choice_4",
+          "messages": [
+            "我先喘一下。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_wind_tunnel_07",
+          "filename": "qi_ye_batch03_retake_wind_tunnel_07.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_wind_tunnel_07.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "selfie_front",
+          "wardrobe": "深灰與藍色相間的風洞飛行連身服，頭盔已取下、頭髮凌亂",
+          "description": "合法室內風洞休息區，後方看得到風洞，手機在伸手距離自拍",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_08_zipline",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "快輪到了。從這裡看真高。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_08_choice_1",
+          "text": "你要滑到對面？",
+          "branch": "qi_b03_retake_08_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_08_choice_2",
+          "text": "你真的很愛找刺激。",
+          "branch": "qi_b03_retake_08_tease"
+        },
+        {
+          "id": "qi_b03_retake_08_choice_3",
+          "text": "先把手機收好。",
+          "branch": "qi_b03_retake_08_care"
+        },
+        {
+          "id": "qi_b03_retake_08_choice_4",
+          "text": "那你去吧。",
+          "branch": "qi_b03_retake_08_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_08_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_08_choice_1",
+          "messages": [
+            "對，路線滿長的。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_08_tease": {
+          "requiresChoiceId": "qi_b03_retake_08_choice_2",
+          "messages": [
+            "都來了當然要玩。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_08_care": {
+          "requiresChoiceId": "qi_b03_retake_08_choice_3",
+          "messages": [
+            "知道，上去之前會收。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_08_cool": {
+          "requiresChoiceId": "qi_b03_retake_08_choice_4",
+          "messages": [
+            "好。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_zipline_08",
+          "filename": "qi_ye_batch03_retake_zipline_08.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_zipline_08.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "selfie_front",
+          "wardrobe": "白色長袖運動上衣、黑色輕量防風背心、合格安全吊帶及頭盔",
+          "description": "山谷與滑索平台佔畫面大部分，手機在安全起點自拍，沒有飛行中拿手機",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_09_observatory",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "這台望遠鏡比我以為的大很多。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_09_choice_1",
+          "text": "今天看得到星星？",
+          "branch": "qi_b03_retake_09_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_09_choice_2",
+          "text": "你居然也會來天文台。",
+          "branch": "qi_b03_retake_09_tease"
+        },
+        {
+          "id": "qi_b03_retake_09_choice_3",
+          "text": "別開閃光燈。",
+          "branch": "qi_b03_retake_09_care"
+        },
+        {
+          "id": "qi_b03_retake_09_choice_4",
+          "text": "嗯，滿特別。",
+          "branch": "qi_b03_retake_09_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_09_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_09_choice_1",
+          "messages": [
+            "觀測有開放，剛看完月亮。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_09_tease": {
+          "requiresChoiceId": "qi_b03_retake_09_choice_2",
+          "messages": [
+            "我又不是只會打球。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_09_care": {
+          "requiresChoiceId": "qi_b03_retake_09_choice_3",
+          "messages": [
+            "沒開，這裡光線有規定。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_09_cool": {
+          "requiresChoiceId": "qi_b03_retake_09_choice_4",
+          "messages": [
+            "我也是這麼覺得。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_observatory_09",
+          "filename": "qi_ye_batch03_retake_observatory_09.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_observatory_09.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "environment",
+          "wardrobe": "黑色印花短袖、鬆身深色長褲（可不露臉）",
+          "description": "本人第一人稱手機拍穹頂與大型望遠鏡，弱光保留自然顆粒",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    },
+    {
+      "eventId": "photo_qi_batch03_retake_10_greenhouse",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "status": "draft_missing_images",
+      "type": "npc_message",
+      "trigger": {
+        "requiresAcquaintance": true,
+        "requiresRealScheduleForVenue": true,
+        "requiresValidStoryTimeline": true,
+        "mayDecideNotToTakePhoto": true,
+        "requiresSeparateSharingDecision": true,
+        "chatOpenIsNotATrigger": true,
+        "requiresPhotoAssetUploaded": true
+      },
+      "message": "晚上逛溫室有夠奇妙。",
+      "choices": [
+        {
+          "id": "qi_b03_retake_10_choice_1",
+          "text": "這是什麼地方？",
+          "branch": "qi_b03_retake_10_inquiry"
+        },
+        {
+          "id": "qi_b03_retake_10_choice_2",
+          "text": "你突然變得很文青。",
+          "branch": "qi_b03_retake_10_tease"
+        },
+        {
+          "id": "qi_b03_retake_10_choice_3",
+          "text": "裡面會不會很悶？",
+          "branch": "qi_b03_retake_10_care"
+        },
+        {
+          "id": "qi_b03_retake_10_choice_4",
+          "text": "看起來挺漂亮。",
+          "branch": "qi_b03_retake_10_cool"
+        }
+      ],
+      "branchResponses": {
+        "qi_b03_retake_10_inquiry": {
+          "requiresChoiceId": "qi_b03_retake_10_choice_1",
+          "messages": [
+            "夜間開放的植物展。"
+          ],
+          "intent": "inquiry",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_10_tease": {
+          "requiresChoiceId": "qi_b03_retake_10_choice_2",
+          "messages": [
+            "我本來就會看設計啊。"
+          ],
+          "intent": "tease",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_10_care": {
+          "requiresChoiceId": "qi_b03_retake_10_choice_3",
+          "messages": [
+            "還好，有通風。"
+          ],
+          "intent": "care",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        },
+        "qi_b03_retake_10_cool": {
+          "requiresChoiceId": "qi_b03_retake_10_choice_4",
+          "messages": [
+            "嗯，現場比照片亮一點。"
+          ],
+          "intent": "cool",
+          "followUp": "only_if_NPC_schedule_and_story_state_allow",
+          "neverForceRomance": true
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_batch03_retake_greenhouse_10",
+          "filename": "qi_ye_batch03_retake_greenhouse_10.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_batch03_retake_greenhouse_10.webp",
+          "usage": "chat_attachment",
+          "uploadStatus": "not_generated",
+          "photographerId": "qi_ye",
+          "capturingMode": "environment",
+          "wardrobe": "酒紅色休閒襯衫、黑色薄長褲（照片只看得見少量袖口）",
+          "description": "手機隨手拍植物、燈具與玻璃穹頂；溫室燈光雜、自然陰影與不置中構圖",
+          "requiresExactVisualReference": true,
+          "forbidCollage": true,
+          "forbidUpscaledTiles": true
+        }
+      ],
+      "albumRules": {
+        "requiresActualDelivery": true,
+        "requiresUploadedAsset": true,
+        "preserveUnread": true,
+        "neverUnlockByOpeningChat": true,
+        "doNotAutomaticallySaveToPlayersPersonalAlbum": true
+      },
+      "followUpEvents": []
+    }
+  ]
+}
