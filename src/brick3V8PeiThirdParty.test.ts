@@ -77,6 +77,28 @@ describe("Pei slow-burn third-party arc", () => {
     expect(ensureV8(s).confessions["裴知聿"]?.kind).toBe("secret-offer");
     expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
   });
+  it("may still propose as an ex when the player never replies at all", () => {
+    const s = fresh();
+    s.messages.kakao = [makeItem({
+      id: "unanswered-pei", title: "裴知聿", sender: "裴知聿",
+      body: "我一直想找妳說話",
+    })];
+    s.variables.pei_attraction = 0; // Initial canon baseline stays hidden and untouched.
+    ensureV8(s).bonds["裴知聿"].knows["沈硯舟"] = {
+      status: "dating", source: "public-post:confirmed-relationship", at: 0,
+    };
+    tickV8PeiThirdParty(work, s);
+    s.elapsedMs = DAY;
+    tickV8PeiThirdParty(work, s);
+    s.elapsedMs = 3 * DAY;
+    tickV8PeiThirdParty(work, s);
+    s.elapsedMs = 4 * DAY;
+    tickV8PeiThirdParty(work, s);
+    expect(ensureV8(s).confessions["裴知聿"]?.kind).toBe("secret-offer");
+    expect(ensureV8(s).confessions["裴知聿"]?.status).toBe("pending");
+    expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
+    expect(s.variables.pei_attraction).toBe(0);
+  });
   it("explicit no-contact permanently ends this autonomous pursuit", () => {
     const s = fresh();
     tickV8PeiThirdParty(work, s);
