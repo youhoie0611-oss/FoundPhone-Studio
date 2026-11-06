@@ -25,7 +25,24 @@
     "qiYePhotoWorkflow": "docs/brick3-qi-ye-photo-workflow-v1.md",
     "qiYeMediaFolder": "public/story-photos/qi_ye/",
     "qiYeManualAssetUpload": true,
-    "qiYeVisibilityAndContinuity": "照片需保留來源、拍攝者、事件與原圖；公開貼文與私訊可見範圍獨立；玩家選項不預設感情"
+    "qiYeVisibilityAndContinuity": "照片需保留來源、拍攝者、事件與原圖；公開貼文與私訊可見範圍獨立；玩家選項不預設感情",
+    "shenYanzhouBatchWorkflow": {
+      "document": "docs/brick3-shen-photo-batch-workflow-v1.md",
+      "characterId": "shen_yanzhou",
+      "defaultImagesPerRequest": 10,
+      "everyImageRequiresIndependentAsset": true,
+      "everyImageRequiresContextAndBranching": true,
+      "fourPlayerChoiceVariantsPerInteractivePhoto": 4,
+      "characterTakesPhotosAndActsWhenChatUnopened": true,
+      "characterNeverAsksPlayerForPrivatePhotos": true,
+      "manualWorkByPlayer": "upload ten prepared webp image files together in one GitHub Upload files commit",
+      "assistantWork": "generate 10 distinct images, filenames, preview/zip, full event/choice/trigger/album JSON, commit config on feature/character-autonomy-v3",
+      "imagePath": "public/story-photos/shen_yanzhou/",
+      "imageNaming": "shen_yanzhou_{event_name}_{shot_number}.webp",
+      "uploadUrl": "https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/shen_yanzhou",
+      "fallbackIfAssetMissing": "show_text_only_and_log_missing_asset",
+      "notes": "This declares the default authoring workflow, not that the next batch has already been generated or integrated."
+    }
   },
   "events": [
     {
