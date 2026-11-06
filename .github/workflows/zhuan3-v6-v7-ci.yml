@@ -19,5 +19,6 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run story:validate
+      - run: node scripts/check-lu-canon.mjs
       - run: npm run story:test
       - run: npm run build
