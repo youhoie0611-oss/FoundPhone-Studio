@@ -9,3 +9,8 @@
 .brick3-relation-card p{line-height:1.5;color:#45404c;margin:5px 0}
 .brick3-relation-card button{align-self:flex-start}
 .brick3-relation-undo{width:100%;margin-bottom:10px}
+
+.brick3-relation-recovery{margin:12px 0;padding:14px;background:#fff3df;border-radius:14px}
+.brick3-relation-recovery p{font-size:12px;line-height:1.5}
+.brick3-relation-recovery>div{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.brick3-relation-recovery button{border:0;border-radius:8px;padding:8px;background:#e7d7c5;font-size:11px}
