@@ -5,6 +5,7 @@ describe("character canon", () => {
   it("preserves immutable character histories", () => {
     expect(CHARACTER_CANON["沈硯舟"].age).toBe(24);
     expect(CHARACTER_CANON["裴知聿"].connection).toContain("前男友");
+    expect(CHARACTER_CANON["裴知聿"].initialAffection).toBe(70);
     expect(CHARACTER_CANON["裴知聿"].temperament).toContain("陰濕重力系");
     expect(CHARACTER_CANON["裴知聿"].temperament).not.toMatch(/狐狸|狡黠|調侃/);
     expect(CHARACTER_CANON["祁野"].initialAffection).toBe(0);

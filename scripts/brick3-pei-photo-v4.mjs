@@ -99,7 +99,9 @@ export function injectBrick3PeiPhotoV4(story, manifest) {
         actions: [show(id + "-in")], next: [gateNode(nextScene)],
       }));
     });
-    return pre + "-ask";
+    const delayId = pre + "-wait-before-asking";
+    push(node(delayId, "delay", { delayMs: level === 2 ? 7200000 : 3600000, next: [pre + "-ask"] }));
+    return delayId;
   }
   const optInL2 = consentPrompt(2);
   const optInL3 = consentPrompt(3);

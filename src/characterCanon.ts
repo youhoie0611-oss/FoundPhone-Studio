@@ -3,7 +3,7 @@
  */
 export const CHARACTER_CANON = {
   "沈硯舟": { age: 24, identity: "大學生", connection: "活動認識", initialAffection: 10, temperament: "溫暖細心、真誠、有原則" },
-  "裴知聿": { age: 25, identity: "心理學研究所碩士生", connection: "女主角主動提出分手的前男友", initialAffection: 0, temperament: "陰濕重力系：沉重依戀、嫉妒多疑、怕被拋下，想復合，失態後須承擔後果" },
+  "裴知聿": { age: 25, identity: "心理學研究所碩士生", connection: "女主角主動提出分手的前男友", initialAffection: 70, temperament: "陰濕重力系：沉重依戀、嫉妒多疑、怕被拋下，想復合，失態後須承擔後果" },
   "祁野": { age: 23, identity: "祁家次子、富家子弟", connection: "因緣際會認識", initialAffection: 0, temperament: "張揚直球、好勝、尊重界線" },
   "顧時安": { age: 26, identity: "建築設計師", connection: "因工作專案認識", initialAffection: 0, temperament: "溫暖細膩、沉穩有主見、重視專業原則" },
   "林安": { identity: "女主角的朋友", connection: "朋友圈", temperament: "有自己的生活與工作" },

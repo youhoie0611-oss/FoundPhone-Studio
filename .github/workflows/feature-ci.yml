@@ -19,6 +19,8 @@ jobs:
         run: npm run typecheck
       - name: Unit tests
         run: npm test
+      - name: Pei photo integration tests
+        run: node --test scripts/brick3-pei-photo-v4.test.mjs
       - name: Story validation
         run: npm run story:validate
       - name: Production build

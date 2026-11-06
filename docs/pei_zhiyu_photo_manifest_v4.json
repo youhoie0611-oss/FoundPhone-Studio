@@ -4,8 +4,8 @@
   "branch": "feature/character-autonomy-v3",
   "assetDirectory": "public/story-photos/pei_zhiyu/",
   "imageFormat": "webp",
-  "status": "awaiting_player_manual_photo_upload",
-  "runtimeIntegration": "not_yet_connected",
+  "status": "all_ten_webp_uploaded_runtime_compilation_connected",
+  "runtimeIntegration": "native_work_events_via_scripts_story_mjs",
   "photoCount": 10,
   "photos": [
     {
@@ -17,8 +17,8 @@
       "intimacyLevel": "L1",
       "photographerId": "pei_zhiyu",
       "captureMethod": "mirror-selfie",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -30,8 +30,8 @@
       "intimacyLevel": "L1",
       "photographerId": "pei_zhiyu",
       "captureMethod": "front-camera-handheld",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -43,8 +43,8 @@
       "intimacyLevel": "L0",
       "photographerId": "pei_zhiyu",
       "captureMethod": "front-camera-handheld",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -56,8 +56,8 @@
       "intimacyLevel": "L1",
       "photographerId": "pei_zhiyu",
       "captureMethod": "mirror-selfie",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -69,8 +69,8 @@
       "intimacyLevel": "L0",
       "photographerId": "pei_zhiyu",
       "captureMethod": "front-camera-handheld",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -82,8 +82,8 @@
       "intimacyLevel": "L2",
       "photographerId": "pei_zhiyu",
       "captureMethod": "mirror-selfie",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -95,8 +95,8 @@
       "intimacyLevel": "L3",
       "photographerId": "pei_zhiyu",
       "captureMethod": "mirror-selfie",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -108,8 +108,8 @@
       "intimacyLevel": "L3",
       "photographerId": "pei_zhiyu",
       "captureMethod": "mirror-selfie",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -121,8 +121,8 @@
       "intimacyLevel": "L1",
       "photographerId": "pei_zhiyu",
       "captureMethod": "fixed-phone-timer-on-counter",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     },
     {
@@ -134,14 +134,14 @@
       "intimacyLevel": "L0",
       "photographerId": "pei_zhiyu",
       "captureMethod": "front-camera-handheld",
-      "uploadStatus": "pending_player_manual_upload",
-      "uploadedAndVerified": false,
+      "uploadStatus": "verified_in_git_branch",
+      "uploadedAndVerified": true,
       "albumImport": false
     }
   ],
   "notes": [
-    "All narrative configuration is submitted separately; player uploads only the 10 WebP files at once.",
-    "Do not mark assets as uploaded or integrate image events before confirming their existence.",
-    "KKT attachments are not automatically imported into the player gallery; gallery unlock rules remain conditional."
+    "10/10 WebP are confirmed in the feature branch.",
+    "Compilation includes 10 photo scenes, 40 player reply branches, and 2 explicit permission dialogues.",
+    "Chat attachments remain in KKT; gallery does not populate without distinct real player actions."
   ]
 }

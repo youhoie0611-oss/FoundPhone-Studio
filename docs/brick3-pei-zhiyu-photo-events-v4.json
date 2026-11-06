@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "title": "《磚3》裴知聿 10 張生活照／KKT互動事件 V4",
-  "status": "asset_manifest_and_story_spec_not_runtime_wired",
+  "status": "runtime_wired_on_active_story",
   "branch": "feature/character-autonomy-v3",
   "imagesFormat": "webp",
   "assetRoot": "public/story-photos",
@@ -101,8 +101,8 @@
           "locationId": "pei-bedroom",
           "outfitId": "dark-loose-knit",
           "originalPhotoId": "pei_zhiyu_bedroom_mirror_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -293,8 +293,8 @@
           "locationId": "pei-bedroom",
           "outfitId": "black-tshirt",
           "originalPhotoId": "pei_zhiyu_morning_selfie_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -485,8 +485,8 @@
           "locationId": "pei-study",
           "outfitId": "black-turtleneck-glasses",
           "originalPhotoId": "pei_zhiyu_study_desk_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -677,8 +677,8 @@
           "locationId": "building-elevator",
           "outfitId": "black-turtleneck-wide-trousers-glasses",
           "originalPhotoId": "pei_zhiyu_elevator_mirror_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -869,8 +869,8 @@
           "locationId": "local-cafe",
           "outfitId": "black-knit-glasses",
           "originalPhotoId": "pei_zhiyu_cafe_reading_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1061,8 +1061,8 @@
           "locationId": "gym-locker-room",
           "outfitId": "dark-sport-tank",
           "originalPhotoId": "pei_zhiyu_post_workout_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1253,8 +1253,8 @@
           "locationId": "pei-bathroom",
           "outfitId": "towel-upper-body-only",
           "originalPhotoId": "pei_zhiyu_after_shower_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1445,8 +1445,8 @@
           "locationId": "pei-bedroom",
           "outfitId": "shirt-partly-off-dark-pants",
           "originalPhotoId": "pei_zhiyu_back_mirror_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1637,8 +1637,8 @@
           "locationId": "pei-kitchen",
           "outfitId": "black-top-dark-apron",
           "originalPhotoId": "pei_zhiyu_home_cooking_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1829,8 +1829,8 @@
           "locationId": "ramen-shop",
           "outfitId": "dark-knit-silver-ring",
           "originalPhotoId": "pei_zhiyu_ramen_dinner_01",
-          "uploadStatus": "pending_player_manual_upload",
-          "fileCurrentlyInThisBranch": false,
+          "uploadStatus": "verified_in_git_branch",
+          "fileCurrentlyInThisBranch": true,
           "albumImport": false
         }
       ],
@@ -1967,8 +1967,8 @@
     "sameAssetAcrossPlatforms": true
   },
   "integrationStatus": {
-    "runtimeConnected": false,
-    "assetsUploadedToGitHub": false,
-    "notes": "需先由玩家手動上傳照片，然後由遊戲程式實際載入此設定，並對應劇情事件引擎，才會在遊戲中觸發。"
+    "runtimeConnected": true,
+    "assetsUploadedToGitHub": true,
+    "notes": "編譯時載入本配置。照片均已在 feature/character-autonomy-v3 驗證存在；登入相簿仍須有真實事件及玩家同意，KKT 附件不會自動存入相簿。"
   }
 }
