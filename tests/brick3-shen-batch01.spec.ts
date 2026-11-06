@@ -7,7 +7,7 @@ const batch = manifest.events.filter((entry: { batchId?: string }) =>
   entry.batchId === "shen_yanzhou_batch01"
 );
 
-test.use({ viewport: { width: 393, height: 852 }, hasTouch: true, channel: "chromium" });
+test.use({ viewport: { width: 393, height: 852 }, hasTouch: true, channel: "chrome" });
 
 function preview(mode: "all" | "choices") {
   const work = structuredClone(built);
