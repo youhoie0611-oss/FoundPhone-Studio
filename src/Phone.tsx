@@ -1117,6 +1117,8 @@ function AppContent({
               onChoose={onChoose}
               onCustomMessage={onCustomMessage}
               onOvernightAction={onOvernightAction}
+              onDateAction={onDateAction}
+              onDatePhotoPost={onDatePhotoPost}
               onThread={(nextThread) => {
                 setThread(nextThread);
                 // Reading a KKT conversation includes its latest visible incoming
