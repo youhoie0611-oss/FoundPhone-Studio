@@ -36,7 +36,7 @@ describe("Pei slow-burn third-party arc", () => {
     expect(incoming(s)).toHaveLength(0);
     expect(ensureV8(s).confessions["裴知聿"]).toBeUndefined();
   });
-  it("stages two messages and does not treat silence as permission for a proposal", () => {
+  it("may propose once after prolonged silence, but never treats silence as acceptance", () => {
     const s = fresh();
     tickV8PeiThirdParty(work, s);
     observeV8PeiThirdPartyReply(s, "沈硯舟是我的男友");
@@ -48,10 +48,17 @@ describe("Pei slow-burn third-party arc", () => {
     s.elapsedMs = 3 * DAY;
     tickV8PeiThirdParty(work, s);
     expect(incoming(s)).toHaveLength(2);
-    s.elapsedMs = 10 * DAY;
+    s.elapsedMs = 4 * DAY;
     tickV8PeiThirdParty(work, s);
     expect(incoming(s)).toHaveLength(2);
-    expect(ensureV8(s).confessions["裴知聿"]).toBeUndefined();
+    expect(ensureV8(s).confessions["裴知聿"]?.status).toBe("pending");
+    expect(ensureV8(s).confessions["裴知聿"]?.kind).toBe("secret-offer");
+    expect(ensureV8(s).bonds["裴知聿"].status).toBe("single");
+    const firstOffer = ensureV8(s).confessions["裴知聿"]?.at;
+    s.elapsedMs = 10 * DAY;
+    tickV8PeiThirdParty(work, s);
+    expect(ensureV8(s).confessions["裴知聿"]?.at).toBe(firstOffer);
+    expect(s.brick3V8PeiThirdParty?.phase).toBe("offered");
   });
   it("may ask for a secret relationship only after the player reengages", () => {
     const s = fresh();
