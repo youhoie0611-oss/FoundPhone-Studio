@@ -58,7 +58,7 @@ export function tickV8PeiThirdParty(work: Work, s: Runtime): Runtime {
   };
   // Respect a permanent no-contact boundary even across reloads.
   const stopped = genuineContact(s).some(m => hardStop.test(m.body));
-  if (stopped || (v.events ?? []).includes("boundary:裴知聿")) {
+  if (p.phase === "stopped" || stopped || (v.events ?? []).includes("boundary:裴知聿")) {
     p.phase = "stopped"; p.nextAt = Infinity;
     return s;
   }
