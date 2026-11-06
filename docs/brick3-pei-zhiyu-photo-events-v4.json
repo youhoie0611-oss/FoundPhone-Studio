@@ -1,0 +1,1974 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "《磚3》裴知聿 10 張生活照／KKT互動事件 V4",
+  "status": "asset_manifest_and_story_spec_not_runtime_wired",
+  "branch": "feature/character-autonomy-v3",
+  "imagesFormat": "webp",
+  "assetRoot": "public/story-photos",
+  "naming": "{characterId}_{scene}_{shot}.webp",
+  "characterIds": [
+    "pei_zhiyu"
+  ],
+  "characterCanon": {
+    "characterId": "pei_zhiyu",
+    "name": "裴知聿",
+    "age": 25,
+    "occupation": "心理學研究所碩士生",
+    "playerRelation": "前男友",
+    "breakupInitiatedBy": "玩家",
+    "breakupReason": "尚未確定",
+    "hiddenInitialAffection": 70,
+    "affectionMax": 100,
+    "personality": "狐狸80%＋黑貓20%／前任執念型腹黑狐狸",
+    "reference": "最新黑高領角色設定圖，187cm／72kg"
+  },
+  "rules": {
+    "doNotUnlockOnInvitationAlone": true,
+    "chatDeliveryIndependentOfOpenChat": true,
+    "saveToGalleryOnlyAfterRealEvent": true,
+    "noUnapprovedPlayerActions": true,
+    "assetMissing": "show_text_only_and_log_missing_asset",
+    "characterConsistency": "use_pei_zhiyu_canon_character_reference_never_swap_appearance",
+    "visibility": "private_photos_not_visible_to_other_npcs_without_authorized_sharing",
+    "imageGeneration": "already_generated_in_character_chat_manually_upload_named_assets",
+    "peiMediaFolder": "public/story-photos/pei_zhiyu/",
+    "peiManualAssetUpload": true,
+    "peiVisualIdentity": "187cm_72kg_black_layered_hair_lip_mole_earrings_black_glasses_optional",
+    "noForcedReunion": true,
+    "noNpcSelfPhotoDemandToPlayer": true,
+    "l2l3MustRespectBoundaryAndContext": true
+  },
+  "events": [
+    {
+      "eventId": "pzy-photo-event-v4-01",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "深夜回家｜鏡前隨拍",
+      "intimacyLevel": "L1",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "研究或外出結束，回到住處；距上次主動自拍至少兩天",
+        "localTimeWindow": "21:30–00:30",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "剛回來。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_bedroom_mirror_choice_1",
+          "text": "你看起來很累。",
+          "branches": "pei_zhiyu_bedroom_mirror_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_bedroom_mirror_choice_2",
+          "text": "特地挑這個角度？",
+          "branches": "pei_zhiyu_bedroom_mirror_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_bedroom_mirror_choice_3",
+          "text": "房間還是這麼亂。",
+          "branches": "pei_zhiyu_bedroom_mirror_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_bedroom_mirror_choice_4",
+          "text": "先去休息吧。",
+          "branches": "pei_zhiyu_bedroom_mirror_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_bedroom_mirror_01",
+          "filename": "pei_zhiyu_bedroom_mirror_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_bedroom_mirror_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "mirror-selfie",
+          "locationId": "pei-bedroom",
+          "outfitId": "dark-loose-knit",
+          "originalPhotoId": "pei_zhiyu_bedroom_mirror_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛回來。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_bedroom_mirror_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "今天的進度比我預想的慢。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_bedroom_mirror_choice_1": {
+          "reply": [
+            "眼睛有點酸。剛才坐太久了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_bedroom_mirror_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        },
+        "pei_zhiyu_bedroom_mirror_choice_2": {
+          "reply": [
+            "妳眼睛挺尖。拍得順眼才傳，不行？"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_bedroom_mirror_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_bedroom_mirror_choice_3": {
+          "reply": [
+            "至少我知道東西放在哪。大概。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_bedroom_mirror_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_bedroom_mirror_choice_4": {
+          "reply": [
+            "好。妳也別太晚睡。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_bedroom_mirror_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": true,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "pause"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-bedroom",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "tired-playful"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "若玩家追問研究，談具體但不杜撰尚未確定的論文題目；若玩家離線則不補發自拍。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-02",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "剛睡醒｜半張臉自拍",
+      "intimacyLevel": "L1",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "當天行程允許晚起；沒有正在上課或通勤",
+        "localTimeWindow": "08:00–11:30",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "醒了。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_morning_selfie_choice_1",
+          "text": "你昨晚幾點睡的？",
+          "branches": "pei_zhiyu_morning_selfie_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_morning_selfie_choice_2",
+          "text": "頭髮像炸開一樣。",
+          "branches": "pei_zhiyu_morning_selfie_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_morning_selfie_choice_3",
+          "text": "這張還挺好看的。",
+          "branches": "pei_zhiyu_morning_selfie_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_morning_selfie_choice_4",
+          "text": "快起床啦。",
+          "branches": "pei_zhiyu_morning_selfie_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_morning_selfie_01",
+          "filename": "pei_zhiyu_morning_selfie_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_morning_selfie_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "front-camera-handheld",
+          "locationId": "pei-bedroom",
+          "outfitId": "black-tshirt",
+          "originalPhotoId": "pei_zhiyu_morning_selfie_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "醒了。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_morning_selfie_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "鬧鐘響了三次。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_morning_selfie_choice_1": {
+          "reply": [
+            "不太記得。看文獻看到一半就沒注意時間。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_morning_selfie_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "ask"
+          }
+        },
+        "pei_zhiyu_morning_selfie_choice_2": {
+          "reply": [
+            "妳也不用一早就這麼誠實。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_morning_selfie_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_morning_selfie_choice_3": {
+          "reply": [
+            "嗯？我還以為妳會先嫌我沒睡醒。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_morning_selfie_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_morning_selfie_choice_4": {
+          "reply": [
+            "知道，知道。再五分鐘。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_morning_selfie_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "neutral"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-bedroom",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "sleepy-unfiltered"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "若玩家要求他別再傳睡醒自拍，記錄不再傳此類照片。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-03",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "研究進度｜夜間書桌",
+      "intimacyLevel": "L0",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "研究閱讀事件進行中，尚未離開書桌",
+        "localTimeWindow": "19:00–23:45",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "這幾頁看了半天。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_study_desk_choice_1",
+          "text": "你現在在讀什麼？",
+          "branches": "pei_zhiyu_study_desk_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_study_desk_choice_2",
+          "text": "眼鏡好適合你。",
+          "branches": "pei_zhiyu_study_desk_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_study_desk_choice_3",
+          "text": "休息一下吧。",
+          "branches": "pei_zhiyu_study_desk_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_study_desk_choice_4",
+          "text": "我看不懂哈哈。",
+          "branches": "pei_zhiyu_study_desk_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_study_desk_01",
+          "filename": "pei_zhiyu_study_desk_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_study_desk_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "front-camera-handheld",
+          "locationId": "pei-study",
+          "outfitId": "black-turtleneck-glasses",
+          "originalPhotoId": "pei_zhiyu_study_desk_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "這幾頁看了半天。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_study_desk_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "結果還是得回頭重看第一段。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_study_desk_choice_1": {
+          "reply": [
+            "研究方法和文獻。主要是整理資料怎麼互相對照。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_study_desk_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "curious"
+          }
+        },
+        "pei_zhiyu_study_desk_choice_2": {
+          "reply": [
+            "這樣算是在誇我還是誇眼鏡？"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_study_desk_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_study_desk_choice_3": {
+          "reply": [
+            "再把這段註記完。妳今天忙完了？"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_study_desk_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        },
+        "pei_zhiyu_study_desk_choice_4": {
+          "reply": [
+            "正常，我也不是每一頁都想看第二次。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_study_desk_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "humor"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-study",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "focused-exhausted"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "可接續學姊或同學的研究討論，僅在前情支持時提及對方；玩家問題優先於照片事件。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-04",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "準備出門｜電梯鏡自拍",
+      "intimacyLevel": "L1",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "已排定出門事由；電梯內無影響隱私的其他乘客",
+        "localTimeWindow": "09:00–17:30",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "要出門了。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_elevator_mirror_choice_1",
+          "text": "穿這麼正式？",
+          "branches": "pei_zhiyu_elevator_mirror_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_elevator_mirror_choice_2",
+          "text": "你穿黑色真的很犯規。",
+          "branches": "pei_zhiyu_elevator_mirror_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_elevator_mirror_choice_3",
+          "text": "又要去研究室？",
+          "branches": "pei_zhiyu_elevator_mirror_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_elevator_mirror_choice_4",
+          "text": "路上小心。",
+          "branches": "pei_zhiyu_elevator_mirror_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_elevator_mirror_01",
+          "filename": "pei_zhiyu_elevator_mirror_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_elevator_mirror_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "mirror-selfie",
+          "locationId": "building-elevator",
+          "outfitId": "black-turtleneck-wide-trousers-glasses",
+          "originalPhotoId": "pei_zhiyu_elevator_mirror_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "要出門了。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_elevator_mirror_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "今天得跟人討論一份報告。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_elevator_mirror_choice_1": {
+          "reply": [
+            "至少看起來像有準備。內容還得等我真的開口。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_elevator_mirror_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "ask"
+          }
+        },
+        "pei_zhiyu_elevator_mirror_choice_2": {
+          "reply": [
+            "以前就這麼穿，也沒見妳每次都誇。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_elevator_mirror_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_elevator_mirror_choice_3": {
+          "reply": [
+            "先去討論報告，結束再看要不要回研究室。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_elevator_mirror_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "neutral"
+          }
+        },
+        "pei_zhiyu_elevator_mirror_choice_4": {
+          "reply": [
+            "嗯。妳上班也順利。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_elevator_mirror_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "building-elevator",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "collected"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "不得無緣由改成約會裝扮；到場後才可觸發後續討論。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-05",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "咖啡店｜讀到一半",
+      "intimacyLevel": "L0",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "真正在咖啡店閱讀；不與同時段研究室事件衝突",
+        "localTimeWindow": "13:00–17:30",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "出來換個地方看東西。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_cafe_reading_choice_1",
+          "text": "你怎麼跑去咖啡店了？",
+          "branches": "pei_zhiyu_cafe_reading_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_cafe_reading_choice_2",
+          "text": "照片裡的你很像在放空。",
+          "branches": "pei_zhiyu_cafe_reading_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_cafe_reading_choice_3",
+          "text": "你點了什麼？",
+          "branches": "pei_zhiyu_cafe_reading_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_cafe_reading_choice_4",
+          "text": "我今天也很忙。",
+          "branches": "pei_zhiyu_cafe_reading_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_cafe_reading_01",
+          "filename": "pei_zhiyu_cafe_reading_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_cafe_reading_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "front-camera-handheld",
+          "locationId": "local-cafe",
+          "outfitId": "black-knit-glasses",
+          "originalPhotoId": "pei_zhiyu_cafe_reading_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "出來換個地方看東西。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_cafe_reading_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "這裡至少不會有人一直問影印機怎麼修。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_cafe_reading_choice_1": {
+          "reply": [
+            "研究室太吵，剛好這裡有空位。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_cafe_reading_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "curious"
+          }
+        },
+        "pei_zhiyu_cafe_reading_choice_2": {
+          "reply": [
+            "被妳看出來了。第十頁開始我就有點走神。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_cafe_reading_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_cafe_reading_choice_3": {
+          "reply": [
+            "拿鐵。等一下應該還會再點一杯水。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_cafe_reading_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "casual"
+          }
+        },
+        "pei_zhiyu_cafe_reading_choice_4": {
+          "reply": [
+            "那妳先處理，不用急著回我。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_cafe_reading_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": true,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "pause"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "local-cafe",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "quiet-inquisitive"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "只在玩家主動延伸時可談到一起喝咖啡，不替玩家答應邀約。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-06",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "運動後｜更衣室鏡自拍",
+      "intimacyLevel": "L2",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "確實有安排運動且已結束；玩家未拒絕較私人的自拍；無第三人隱私入鏡",
+        "localTimeWindow": "16:00–22:00",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": true
+      },
+      "message": "剛練完。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_post_workout_choice_1",
+          "text": "練這麼認真？",
+          "branches": "pei_zhiyu_post_workout_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_post_workout_choice_2",
+          "text": "你就是故意拍這張。",
+          "branches": "pei_zhiyu_post_workout_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_post_workout_choice_3",
+          "text": "肌肉沒你想的那麼誇張吧。",
+          "branches": "pei_zhiyu_post_workout_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_post_workout_choice_4",
+          "text": "不太想收到這種照片。",
+          "branches": "pei_zhiyu_post_workout_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_post_workout_01",
+          "filename": "pei_zhiyu_post_workout_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_post_workout_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "mirror-selfie",
+          "locationId": "gym-locker-room",
+          "outfitId": "dark-sport-tank",
+          "originalPhotoId": "pei_zhiyu_post_workout_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛練完。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_post_workout_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "現在連拿水杯都覺得肩膀酸。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_post_workout_choice_1": {
+          "reply": [
+            "今天比平常多做了幾組，現在開始後悔。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_post_workout_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "curious"
+          }
+        },
+        "pei_zhiyu_post_workout_choice_2": {
+          "reply": [
+            "我有說不是嗎？"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_post_workout_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_post_workout_choice_3": {
+          "reply": [
+            "那是妳標準太高。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_post_workout_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_post_workout_choice_4": {
+          "reply": [
+            "好。以後不傳這類的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_post_workout_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": true,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "boundary"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "gym-locker-room",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "fatigued-self-aware"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "L2只在對方不排斥的情況下可傳；若拒絕立即停用 L2/L3 主動傳送。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-07",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "洗澡後｜毛巾鏡自拍",
+      "intimacyLevel": "L3",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "已回到住處並洗完澡；玩家此前曾明確表示接受這類曖昧；近期未拒絕；不得因初始好感70直接觸發",
+        "localTimeWindow": "20:00–01:00",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": true
+      },
+      "message": "剛洗完。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_after_shower_choice_1",
+          "text": "你確定要傳這張給我？",
+          "branches": "pei_zhiyu_after_shower_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_after_shower_choice_2",
+          "text": "你是不是在故意撩我？",
+          "branches": "pei_zhiyu_after_shower_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_after_shower_choice_3",
+          "text": "頭髮怎麼這麼亂。",
+          "branches": "pei_zhiyu_after_shower_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_after_shower_choice_4",
+          "text": "我不喜歡這種照片。",
+          "branches": "pei_zhiyu_after_shower_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_after_shower_01",
+          "filename": "pei_zhiyu_after_shower_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_after_shower_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "mirror-selfie",
+          "locationId": "pei-bathroom",
+          "outfitId": "towel-upper-body-only",
+          "originalPhotoId": "pei_zhiyu_after_shower_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "剛洗完。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_after_shower_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "浴室的水溫差點把我燙醒。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_after_shower_choice_1": {
+          "reply": [
+            "確定。只是如果妳不想看，我就不再傳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_after_shower_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": true,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "boundary-check"
+          }
+        },
+        "pei_zhiyu_after_shower_choice_2": {
+          "reply": [
+            "妳覺得呢？"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_after_shower_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_after_shower_choice_3": {
+          "reply": [
+            "吹乾之前都這樣。妳以前就很愛念。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_after_shower_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "memory-if-established"
+          }
+        },
+        "pei_zhiyu_after_shower_choice_4": {
+          "reply": [
+            "知道了。抱歉，我之後不會再傳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_after_shower_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": true,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "boundary"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-bathroom",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "deliberately-casual"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "不可臆造「只傳給妳」的專屬宣言；只能根據真實發送紀錄描述。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-08",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "換衣服前｜背部鏡自拍",
+      "intimacyLevel": "L3",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": true,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "換衣服前後、鏡子角度合理、玩家對私人自拍持續表示接受；與其他L3照片至少隔數日",
+        "localTimeWindow": "21:00–01:00",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": true
+      },
+      "message": "衣服被我換下來了。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_back_mirror_choice_1",
+          "text": "裴知聿，你故意的吧？",
+          "branches": "pei_zhiyu_back_mirror_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_back_mirror_choice_2",
+          "text": "你背還好嗎？",
+          "branches": "pei_zhiyu_back_mirror_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_back_mirror_choice_3",
+          "text": "這張角度挺好看的。",
+          "branches": "pei_zhiyu_back_mirror_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_back_mirror_choice_4",
+          "text": "別再傳這樣的照片。",
+          "branches": "pei_zhiyu_back_mirror_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_back_mirror_01",
+          "filename": "pei_zhiyu_back_mirror_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_back_mirror_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "mirror-selfie",
+          "locationId": "pei-bedroom",
+          "outfitId": "shirt-partly-off-dark-pants",
+          "originalPhotoId": "pei_zhiyu_back_mirror_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "衣服被我換下來了。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_back_mirror_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "今天拉背，現在有點痛。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_back_mirror_choice_1": {
+          "reply": [
+            "嗯。難得妳這次不用我解釋。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_back_mirror_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "flirt"
+          }
+        },
+        "pei_zhiyu_back_mirror_choice_2": {
+          "reply": [
+            "沒拉傷，只是有點酸。明天應該就好了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_back_mirror_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        },
+        "pei_zhiyu_back_mirror_choice_3": {
+          "reply": [
+            "我還以為妳只會嘴我。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_back_mirror_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "compliment"
+          }
+        },
+        "pei_zhiyu_back_mirror_choice_4": {
+          "reply": [
+            "好，我記住了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_back_mirror_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": true,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "boundary"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-bedroom",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "provocative-but-guarded"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "不可把同天健身與洗澡順序弄錯；如果前次L3被拒絕則整個事件失效。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-09",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "晚餐｜自己下廚",
+      "intimacyLevel": "L1",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "當天真的在家煮飯；手機放在檯面使用倒數計時，不存在憑空出現的拍攝者",
+        "localTimeWindow": "18:00–21:30",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "今晚自己煮。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_home_cooking_choice_1",
+          "text": "你竟然真的會煮飯？",
+          "branches": "pei_zhiyu_home_cooking_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_home_cooking_choice_2",
+          "text": "看起來好像很好吃。",
+          "branches": "pei_zhiyu_home_cooking_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_home_cooking_choice_3",
+          "text": "這張誰幫你拍的？",
+          "branches": "pei_zhiyu_home_cooking_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_home_cooking_choice_4",
+          "text": "有吃飽比較重要。",
+          "branches": "pei_zhiyu_home_cooking_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_home_cooking_01",
+          "filename": "pei_zhiyu_home_cooking_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_home_cooking_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "fixed-phone-timer-on-counter",
+          "locationId": "pei-kitchen",
+          "outfitId": "black-top-dark-apron",
+          "originalPhotoId": "pei_zhiyu_home_cooking_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "今晚自己煮。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_home_cooking_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "結果還是把醬汁弄到圍裙上了。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_home_cooking_choice_1": {
+          "reply": [
+            "妳這個「竟然」聽起來有點不尊重廚師。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_home_cooking_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_home_cooking_choice_2": {
+          "reply": [
+            "先別誇太早，我還沒試鹹淡。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_home_cooking_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "casual"
+          }
+        },
+        "pei_zhiyu_home_cooking_choice_3": {
+          "reply": [
+            "手機靠在調味罐旁邊，設了計時。沒有攝影師。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_home_cooking_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "capture-provenance"
+          }
+        },
+        "pei_zhiyu_home_cooking_choice_4": {
+          "reply": [
+            "知道。妳也記得吃。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_home_cooking_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "pei-kitchen",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "absorbed-and-amused"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "料理過程不強制玩家到場；不能安排玩家已答應一起吃飯。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    },
+    {
+      "eventId": "pzy-photo-event-v4-10",
+      "characterId": "pei_zhiyu",
+      "characterName": "裴知聿",
+      "type": "npc_message",
+      "title": "深夜拉麵｜吃飯時隨手拍",
+      "intimacyLevel": "L0",
+      "trigger": {
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresPlayerAttendance": false,
+        "requiresPlayerConsentForIntimacy": false,
+        "requiresEstablishedChatContact": true,
+        "requiresNpcAtConfirmedLocation": true,
+        "eventNotPreviouslyCompleted": true,
+        "notTriggeredByPlayerOpeningChat": true,
+        "requiresNoPhotoBoundaryViolation": true,
+        "onlyIfStoryContextMatches": "人確實在拉麵店；與研究室／家中料理事件無時間衝突",
+        "localTimeWindow": "19:00–23:59",
+        "noAssumptionOfRelationshipRestoration": true,
+        "needsPriorAcceptanceOfSuggestivePhotos": false
+      },
+      "message": "餓到現在才有空吃東西。",
+      "choices": [
+        {
+          "id": "pei_zhiyu_ramen_dinner_choice_1",
+          "text": "你不是說要早點吃飯？",
+          "branches": "pei_zhiyu_ramen_dinner_choice_1"
+        },
+        {
+          "id": "pei_zhiyu_ramen_dinner_choice_2",
+          "text": "這間哪裡？",
+          "branches": "pei_zhiyu_ramen_dinner_choice_2"
+        },
+        {
+          "id": "pei_zhiyu_ramen_dinner_choice_3",
+          "text": "拍食物就好，幹嘛拍自己？",
+          "branches": "pei_zhiyu_ramen_dinner_choice_3"
+        },
+        {
+          "id": "pei_zhiyu_ramen_dinner_choice_4",
+          "text": "慢慢吃吧。",
+          "branches": "pei_zhiyu_ramen_dinner_choice_4"
+        }
+      ],
+      "images": [
+        {
+          "assetId": "pei_zhiyu_ramen_dinner_01",
+          "filename": "pei_zhiyu_ramen_dinner_01.webp",
+          "path": "public/story-photos/pei_zhiyu/pei_zhiyu_ramen_dinner_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresActualCapture": true,
+            "requiresNpcShareDecision": true
+          },
+          "visualReferenceId": "pzy_visual_reference_2026-11-05_black_turtleneck_187cm_72kg",
+          "photographerId": "pei_zhiyu",
+          "captureMethod": "front-camera-handheld",
+          "locationId": "ramen-shop",
+          "outfitId": "dark-knit-silver-ring",
+          "originalPhotoId": "pei_zhiyu_ramen_dinner_01",
+          "uploadStatus": "pending_player_manual_upload",
+          "fileCurrentlyInThisBranch": false,
+          "albumImport": false
+        }
+      ],
+      "chatSequence": [
+        {
+          "kind": "text",
+          "body": "餓到現在才有空吃東西。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "image",
+          "assetId": "pei_zhiyu_ramen_dinner_01",
+          "senderId": "pei_zhiyu",
+          "condition": "image_asset_uploaded_and_share_decided"
+        },
+        {
+          "kind": "text",
+          "body": "這碗看著就不像會踩雷。",
+          "senderId": "pei_zhiyu"
+        },
+        {
+          "kind": "wait_for_player_choice"
+        }
+      ],
+      "onChoiceResponses": {
+        "pei_zhiyu_ramen_dinner_choice_1": {
+          "reply": [
+            "計畫是這樣沒錯。執行就另當別論了。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_ramen_dinner_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "care"
+          }
+        },
+        "pei_zhiyu_ramen_dinner_choice_2": {
+          "reply": [
+            "學校附近的一家小店。下次有機會再跟妳說店名。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_ramen_dinner_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "ask"
+          }
+        },
+        "pei_zhiyu_ramen_dinner_choice_3": {
+          "reply": [
+            "我有入鏡？那妳看得還挺仔細。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_ramen_dinner_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": false,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "tease"
+          }
+        },
+        "pei_zhiyu_ramen_dinner_choice_4": {
+          "reply": [
+            "嗯。等會兒再回。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "pei_zhiyu_ramen_dinner_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "respectBoundary": false,
+            "pause": true,
+            "hiddenAffectionChange": "contextual-not-fixed",
+            "relationshipAssumptions": [],
+            "choiceIntent": "pause"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "noAssumedPlayerFeelings": true,
+        "noAssumedPlayerVisited": true,
+        "noAssumedPlayerKissOrOvernightStay": true,
+        "noAutoReunion": true
+      },
+      "photoLifecycle": {
+        "capture": {
+          "status": "awaiting_valid_in_game_life_event",
+          "capturedAt": null,
+          "location": "ramen-shop",
+          "photographerId": "pei_zhiyu",
+          "subjects": [
+            "pei_zhiyu"
+          ],
+          "mood": "hungry-lighthearted"
+        },
+        "shareDecision": {
+          "status": "undecided",
+          "destination": "kkt_private_chat",
+          "requiresActualCapture": true
+        },
+        "delivery": {
+          "status": "not_scheduled",
+          "sentAt": null,
+          "persistWhenChatClosed": true,
+          "unreadPersisted": true
+        }
+      },
+      "gallery": {
+        "entersPlayerAlbum": false,
+        "reason": "KKT私人照片預設只在聊天附件；只有玩家明確儲存，或後續事件允許才進入相簿。"
+      },
+      "followupRule": "能延續餐廳話題，不擅自將「下次」視為已成立約會。",
+      "assetMissingBehavior": "deliver_text_only_without_broken_image"
+    }
+  ],
+  "photoAlbumUnlockOrder": {
+    "mode": "actual_event_progress_not_instant_bulk_unlock",
+    "kktAttachments": "delivery_only_after_capture_and_NPC_share_decision",
+    "playerGallery": "no_auto_import_from_private_messages",
+    "sameAssetAcrossPlatforms": true
+  },
+  "integrationStatus": {
+    "runtimeConnected": false,
+    "assetsUploadedToGitHub": false,
+    "notes": "需先由玩家手動上傳照片，然後由遊戲程式實際載入此設定，並對應劇情事件引擎，才會在遊戲中觸發。"
+  }
+}
