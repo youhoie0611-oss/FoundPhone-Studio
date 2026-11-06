@@ -1,3 +1,4 @@
+import { brick3AvatarFor } from "./brick3/avatars";
 import { NativeComposer } from "./DeviceSystem";
 import { useSkinState } from "./skinState";
 import { useState } from "react";
@@ -63,8 +64,8 @@ function Avatar({
 }) {
   return (
     <span className={`skin-avatar ${round ? "round" : ""}`}>
-      {safeMedia(src)?.startsWith("data:image/") ? (
-        <img src={safeMedia(src)} alt="" />
+      {safeMedia(brick3AvatarFor(name, src)) ? (
+        <img src={safeMedia(brick3AvatarFor(name, src))} alt="" onError={(e) => { e.currentTarget.style.display = "none"; }} />
       ) : (
         name.slice(0, 1)
       )}
