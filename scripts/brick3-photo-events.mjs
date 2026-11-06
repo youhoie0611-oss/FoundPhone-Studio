@@ -204,7 +204,12 @@ export function injectBrick3PhotoEvents(story, manifest) {
         outgoing: true, meta: { source: "brick3-photo-event" },
       });
       addChat(chat, responseId, senderId, replyFor(entry, option, index), {
-        meta: { source: "brick3-photo-event" },
+        // Photo-event replies must keep their full authored multi-line body.
+        // Otherwise the phone adapter will truncate non-tagged KKT messages
+        // to the first line, silently dropping the rest of Shen\u0027s reply.
+        meta: shenBatch01
+          ? { photoEventId: entry.eventId, source: "brick3-shen-photo-batch01" }
+          : { source: "brick3-photo-event" },
       });
       const actions = [
         unlock(outgoingId),
