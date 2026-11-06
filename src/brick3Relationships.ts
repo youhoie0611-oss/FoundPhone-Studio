@@ -393,7 +393,9 @@ export function tickV8(w: Work, s: Runtime): Runtime {
       m.topic === "conflict" && m.resolution === "reconciled") &&
       (s.brick3DateSocial && Object.keys(s.brick3DateSocial).length > 0))
       markEnding(s, "END_08");
-    if (V8_LEADS.every(n => (s.messages.kakao ?? []).some(m => m.title === n && !m.outgoing)))
+    // END_10 is reserved for a completed five-lead crossover event, not
+    // simply having received one message from each male lead.
+    if (v.events.includes("large-event:five-leads:completed"))
       markEnding(s, "END_10");
   }
   return s;
