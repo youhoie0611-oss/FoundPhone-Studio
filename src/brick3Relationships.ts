@@ -49,7 +49,7 @@ export type V8RelationshipState = {
 };
 const HOUR = 3600000, DAY = 86400000;
 const NOW = (s: Runtime) => s.elapsedMs ?? 0;
-const stopPattern = /不要再傳|不要聯絡|別聯絡|不要再找|別再找|封鎖|停止傳訊|不要追我/;
+const stopPattern = /不要再傳|不要再聯絡|不要聯絡|別聯絡|不要再找|別再找|封鎖|停止傳訊|不要追我/;
 const nameKnown = (w: Work, lead: string) => (w.data.kakao ?? []).some(m => m.title === lead);
 const hasStop = (s: Runtime, lead: string) => (s.messages.kakao ?? [])
   .filter(m => m.outgoing && m.title === lead).slice(-1).some(m => stopPattern.test(m.body));
@@ -66,6 +66,10 @@ export function ensureV8(s: Runtime): V8RelationshipState {
       confessions: {}, negotiations: {}, pending: [], events: [], endings: [],
       nights: [], lastDay: s.date ?? "", sequence: 0,
     };
+  }
+  for (const lead of V8_LEADS) {
+    const bond = s.brick3V8.bonds[lead];
+    if (bond) bond.careerExperience ??= {};
   }
   return s.brick3V8;
 }
