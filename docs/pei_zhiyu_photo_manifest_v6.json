@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "batch": "v6",
+  "photoCount": 30,
+  "assetRoot": "public/story-photos/pei_zhiyu/",
+  "uploadBy": "player",
+  "uploadedAndVerified": false,
+  "photos": [
+    {
+      "photoId": "pei_zhiyu_v6_01",
+      "filename": "pei_zhiyu_v6_01_chair_pause_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_01_chair_pause_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_02",
+      "filename": "pei_zhiyu_v6_02_morning_pillow_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_02_morning_pillow_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_03",
+      "filename": "pei_zhiyu_v6_03_study_headache_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_03_study_headache_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_04",
+      "filename": "pei_zhiyu_v6_04_elevator_depart_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_04_elevator_depart_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_05",
+      "filename": "pei_zhiyu_v6_05_cafe_mug_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_05_cafe_mug_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_06",
+      "filename": "pei_zhiyu_v6_06_gym_black_tank_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_06_gym_black_tank_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_07",
+      "filename": "pei_zhiyu_v6_07_towel_head_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_07_towel_head_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L3",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_08",
+      "filename": "pei_zhiyu_v6_08_back_mirror_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_08_back_mirror_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L3",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_09",
+      "filename": "pei_zhiyu_v6_09_cook_back_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_09_cook_back_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_10",
+      "filename": "pei_zhiyu_v6_10_night_street_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_10_night_street_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_11",
+      "filename": "pei_zhiyu_v6_11_halfawake_selfie_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_11_halfawake_selfie_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_12",
+      "filename": "pei_zhiyu_v6_12_library_study_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_12_library_study_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_13",
+      "filename": "pei_zhiyu_v6_13_gym_side_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_13_gym_side_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_14",
+      "filename": "pei_zhiyu_v6_14_apron_dinner_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_14_apron_dinner_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_15",
+      "filename": "pei_zhiyu_v6_15_night_window_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_15_night_window_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_16",
+      "filename": "pei_zhiyu_v6_16_bathroom_towel_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_16_bathroom_towel_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L3",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_17",
+      "filename": "pei_zhiyu_v6_17_under_blanket_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_17_under_blanket_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_18",
+      "filename": "pei_zhiyu_v6_18_classmates_cat_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_18_classmates_cat_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_19",
+      "filename": "pei_zhiyu_v6_19_laptop_deadline_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_19_laptop_deadline_01.webp",
+      "captureMethod": "rear-camera-handheld",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_20",
+      "filename": "pei_zhiyu_v6_20_elevator_blackcoat_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_20_elevator_blackcoat_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_21",
+      "filename": "pei_zhiyu_v6_21_cheek_on_hand_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_21_cheek_on_hand_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_22",
+      "filename": "pei_zhiyu_v6_22_library_book_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_22_library_book_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_23",
+      "filename": "pei_zhiyu_v6_23_gym_afterworkout_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_23_gym_afterworkout_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_24",
+      "filename": "pei_zhiyu_v6_24_kitchen_back_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_24_kitchen_back_01.webp",
+      "captureMethod": "fixed-phone-timer",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_25",
+      "filename": "pei_zhiyu_v6_25_pillow_rest_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_25_pillow_rest_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_26",
+      "filename": "pei_zhiyu_v6_26_gym_mirror_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_26_gym_mirror_01.webp",
+      "captureMethod": "mirror-selfie",
+      "level": "L2",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_27",
+      "filename": "pei_zhiyu_v6_27_headphones_cafe_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_27_headphones_cafe_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_28",
+      "filename": "pei_zhiyu_v6_28_towel_shoulder_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_28_towel_shoulder_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L3",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_29",
+      "filename": "pei_zhiyu_v6_29_study_night_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_29_study_night_01.webp",
+      "captureMethod": "rear-camera-handheld",
+      "level": "L0",
+      "uploaded": false
+    },
+    {
+      "photoId": "pei_zhiyu_v6_30",
+      "filename": "pei_zhiyu_v6_30_windy_street_01.webp",
+      "path": "public/story-photos/pei_zhiyu/pei_zhiyu_v6_30_windy_street_01.webp",
+      "captureMethod": "front-camera-selfie",
+      "level": "L1",
+      "uploaded": false
+    }
+  ],
+  "note": "Player uploads 30 WebP files at once. Do not mark uploaded until verified on the feature branch."
+}
