@@ -41,7 +41,7 @@ jobs:
       - name: Checkout current 磚3 (never overwrite host source)
         uses: actions/checkout@v4
         with:
-          ref: feature/zhuan3-v6-v7-jealousy
+          ref: e021f3909145d0d7746b279c29ec881e5a930d4a
           path: brick3-source
       - name: Install and validate 磚3
         working-directory: brick3-source
@@ -52,6 +52,7 @@ jobs:
           npm test
           npm run story:validate
           npm run story:test
+          node scripts/check-lu-canon.mjs
       - name: Build isolated 磚3 under /rebuild/
         working-directory: brick3-source
         run: |
