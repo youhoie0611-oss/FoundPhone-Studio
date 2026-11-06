@@ -84,6 +84,7 @@ export function advanceBrick3Chat(state: Runtime, thread: string, message: strin
   if (!branch) return null;
   const key = `brick3:scene:${thread}`;
   state.variables[key] = branch.outcome;
+  state.brick3SceneEvents = [...(state.brick3SceneEvents ?? []).filter(e => e.thread !== thread || e.sent), { thread, outcome: branch.outcome, due: (state.elapsedMs ?? 0) + 86400000 }].slice(-50);
   state.trace.push(`brick3-scene:${thread}:${branch.outcome}`);
   return { reply: branch.reply.replaceAll("|", "。\n"), delayMs: 1200 };
 }
