@@ -26,6 +26,7 @@ export type Confession = {
   deadline: number;
   status: "pending" | "accepted" | "declined" | "withdrawn" | "discussing";
   kind: "confession" | "secret-offer";
+  resolutionIntent?: "only";
 };
 export type Negotiation = {
   lead: V8Lead;
@@ -268,6 +269,7 @@ export function chooseV8(w: Work, previous: Runtime, target: string): Runtime | 
     if (partners(v, lead).length) {
       recordV8PlayerMessage(s, lead, "我想選擇你，但得先處理原本的關係。");
       conf.status = "discussing";
+      conf.resolutionIntent = "only";
       queue(s, lead, ["我聽見妳的意思了。", "不過妳現在的關係還在。", "我們把事情說清楚，再決定要不要正式交往。"]);
       event(s, `relationship-must-resolve:${lead}`);
       return s;
@@ -483,5 +485,34 @@ export function reviewV8LegacyRelationship(s: Runtime, lead: V8Lead, confirm: bo
   if (confirm) change(s, lead, "dating", "legacy-confirmed-by-player", "unresolved");
   if (review.reviewed.length === review.candidates.length) review.completed = true;
   event(s, `legacy-reviewed:${lead}:${confirm ? "yes" : "no"}`);
+  return true;
+}
+
+/** A consensual player-initiated breakup, scoped to one partner only. */
+export function endV8Relationship(s: Runtime, lead: V8Lead): boolean {
+  const v = ensureV8(s), b = v.bonds[lead];
+  if (!(b.status === "dating" || b.status === "secret")) return false;
+  const previousExclusivity = b.exclusivity;
+  // Relationship termination is a delivered message, not reversible by the day's local undo.
+  recordV8PlayerMessage(s, lead, "我想清楚了，我希望我們結束交往。");
+  v.undo = undefined;
+  change(s, lead, "separated", "player-explicit-breakup", "unspecified");
+  v.pending = v.pending.filter(p => p.lead !== lead);
+  queue(s, lead, lead === "裴知聿"
+    ? ["……妳真的決定了？", "我很難接受。", "可是我聽到了，不能當作妳沒有說。"]
+    : previousExclusivity === "exclusive"
+      ? ["我知道了。", "我需要時間消化，但會尊重妳的決定。"]
+      : ["我們需要重新整理這段關係。", "我知道了。"]);
+  for (const conf of Object.values(v.confessions)) {
+    if (conf?.status === "discussing" && conf.resolutionIntent === "only" &&
+      !partners(v, conf.from).length && !hasStop(s, conf.from)) {
+      conf.status = "pending";
+      conf.deadline = NOW(s) + 14 * DAY;
+      choices(s, conf.from, [
+        ["only", "確認選擇他"], ["later", "再考慮一下"], ["reject", "拒絕告白"],
+      ]);
+    }
+  }
+  event(s, `breakup:${lead}:${NOW(s)}`);
   return true;
 }
