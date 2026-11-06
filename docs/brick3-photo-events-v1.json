@@ -8438,7 +8438,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "19:42",
-      "sceneBackground": "會議後在辦公室核對資料的自然側拍；由熟識同事拍攝，陸沉川確認照片沒有商業機密後才分享。",
+      "sceneBackground": "深夜回家後躺在沙發或床邊的前鏡頭近距離自拍；室內暖光，臉部部分被裁切，並非辦公室同事側拍。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -8483,7 +8483,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "會議後在辦公室核對資料的自然側拍；由熟識同事拍攝，陸沉川確認照片沒有商業機密後才分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "深夜回家後躺在沙發或床邊的前鏡頭近距離自拍；室內暖光，臉部部分被裁切，並非辦公室同事側拍。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -8568,6 +8568,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "front_camera_selfie",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "深夜回家後躺在沙發或床邊的前鏡頭近距離自拍；室內暖光，臉部部分被裁切，並非辦公室同事側拍。",
+        "caption": "工作結束後的疲倦自拍",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -8577,7 +8587,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "20:48",
-      "sceneBackground": "加班後站在隔壁商辦大樓落地窗前；背影由同事拍攝，已取得本人同意分享。",
+      "sceneBackground": "辦公桌前自己拿手機拍攝夜景、筆電與咖啡；城市窗景背景，無第三人拍攝。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -8622,7 +8632,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "加班後站在隔壁商辦大樓落地窗前；背影由同事拍攝，已取得本人同意分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "辦公桌前自己拿手機拍攝夜景、筆電與咖啡；城市窗景背景，無第三人拍攝。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -8707,6 +8717,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "first_person_desk",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "辦公桌前自己拿手機拍攝夜景、筆電與咖啡；城市窗景背景，無第三人拍攝。",
+        "caption": "夜間辦公桌與窗外城市",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -8716,7 +8736,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "21:36",
-      "sceneBackground": "陸沉川回家親自料理晚餐；手機自然拍攝，非商業棚拍。",
+      "sceneBackground": "在家料理時將手機靠在廚房邊短暫定時拍攝，非攝影棚，保留抽油煙機光線與自然構圖。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -8761,7 +8781,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "陸沉川回家親自料理晚餐；手機自然拍攝，非商業棚拍。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "在家料理時將手機靠在廚房邊短暫定時拍攝，非攝影棚，保留抽油煙機光線與自然構圖。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -8846,6 +8866,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "handheld_candid",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "在家料理時將手機靠在廚房邊短暫定時拍攝，非攝影棚，保留抽油煙機光線與自然構圖。",
+        "caption": "居家下廚",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -8855,7 +8885,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "22:08",
-      "sceneBackground": "陸沉川晚間在住家彈鋼琴，手機定時拍攝；僅在建立一定熟悉度後分享。",
+      "sceneBackground": "自己用手機拍鋼琴琴鍵、樂譜與居家角落，不必露臉。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -8900,7 +8930,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "陸沉川晚間在住家彈鋼琴，手機定時拍攝；僅在建立一定熟悉度後分享。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "自己用手機拍鋼琴琴鍵、樂譜與居家角落，不必露臉。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -8985,6 +9015,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "first_person_object",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "自己用手機拍鋼琴琴鍵、樂譜與居家角落，不必露臉。",
+        "caption": "鋼琴與樂譜",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -8994,7 +9034,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "18:25",
-      "sceneBackground": "下班後在健身房的手機鏡面自拍，運動服自然汗感；私人生活照。",
+      "sceneBackground": "運動後自己用手機對著健身房鏡子自拍，手機遮擋部分臉部。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9039,7 +9079,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "下班後在健身房的手機鏡面自拍，運動服自然汗感；私人生活照。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "運動後自己用手機對著健身房鏡子自拍，手機遮擋部分臉部。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9124,6 +9164,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "mirror_selfie",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "運動後自己用手機對著健身房鏡子自拍，手機遮擋部分臉部。",
+        "caption": "健身房鏡子自拍",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -9133,7 +9183,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "20:15",
-      "sceneBackground": "與多年朋友吃飯，朋友同意合照；對方只是朋友，沒有預設玩家認識。",
+      "sceneBackground": "與朋友聚餐時自己用手機前鏡頭隨手自拍；畫面不強制拍到朋友，也不假定玩家在場。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9178,7 +9228,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "與多年朋友吃飯，朋友同意合照；對方只是朋友，沒有預設玩家認識。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "與朋友聚餐時自己用手機前鏡頭隨手自拍；畫面不強制拍到朋友，也不假定玩家在場。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9263,6 +9313,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "front_camera_selfie",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "與朋友聚餐時自己用手機前鏡頭隨手自拍；畫面不強制拍到朋友，也不假定玩家在場。",
+        "caption": "聚餐現場自拍",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -9272,7 +9332,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "17:48",
-      "sceneBackground": "週末獨自散步時，請路過同行朋友拍下的城市夕照側影；不是共同約會。",
+      "sceneBackground": "週末散步時自己用手機拍天空與城市夕陽，畫面沒有陸沉川本人。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9317,7 +9377,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "週末獨自散步時，請路過同行朋友拍下的城市夕照側影；不是共同約會。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "週末散步時自己用手機拍天空與城市夕陽，畫面沒有陸沉川本人。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9402,6 +9462,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "first_person_landscape",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "週末散步時自己用手機拍天空與城市夕陽，畫面沒有陸沉川本人。",
+        "caption": "城市夕陽",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -9411,7 +9481,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "16:32",
-      "sceneBackground": "在朋友家與朋友的貓相處，手機生活照；不設定陸沉川養貓。",
+      "sceneBackground": "在朋友家用手機前鏡頭自拍，朋友的灰貓自然闖入前景。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9456,7 +9526,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "在朋友家與朋友的貓相處，手機生活照；不設定陸沉川養貓。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "在朋友家用手機前鏡頭自拍，朋友的灰貓自然闖入前景。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9541,6 +9611,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "front_camera_selfie",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "在朋友家用手機前鏡頭自拍，朋友的灰貓自然闖入前景。",
+        "caption": "與朋友的貓自拍",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -9550,7 +9630,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "14:20",
-      "sceneBackground": "工作日午後在咖啡店短暫休息，手機自然自拍；尚未與玩家見面。",
+      "sceneBackground": "自己拿手機隨手拍咖啡店桌上的冰咖啡與窗景，無人物入鏡。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9595,7 +9675,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "工作日午後在咖啡店短暫休息，手機自然自拍；尚未與玩家見面。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "自己拿手機隨手拍咖啡店桌上的冰咖啡與窗景，無人物入鏡。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9680,6 +9760,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "first_person_object",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "自己拿手機隨手拍咖啡店桌上的冰咖啡與窗景，無人物入鏡。",
+        "caption": "咖啡店桌面",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     },
     {
@@ -9689,7 +9779,7 @@
       "type": "npc_message",
       "batchId": "lu_chenchuan_batch10_v2",
       "eventTime": "23:18",
-      "sceneBackground": "夜晚在家沙發休息的近距離手機自拍；需已建立長期信任、明確同意分享私人照片。",
+      "sceneBackground": "睡前躺在床上拿手機自拍，枕頭遮住部分臉部，極暗室內光線與自然雜訊。",
       "platform": "kakao",
       "trigger": {
         "requiresNpcSchedule": true,
@@ -9734,7 +9824,7 @@
           "unlock": {
             "requiresMessageDelivered": true
           },
-          "visualPrompt": "夜晚在家沙發休息的近距離手機自拍；需已建立長期信任、明確同意分享私人照片。 外貌嚴格遵照正式陸沉川角色設定與造型參考表。",
+          "visualPrompt": "睡前躺在床上拿手機自拍，枕頭遮住部分臉部，極暗室內光線與自然雜訊。 人物外貌遵照正式陸沉川參考表。",
           "uploadStatus": "pending_player_manual_upload"
         }
       ],
@@ -9819,6 +9909,16 @@
         "selectedChoiceOnly": true,
         "noAutoAdvanceBeforeReply": true,
         "noAssumedPlayerAttendance": true
+      },
+      "photoCapture": {
+        "camera": "front_camera_selfie",
+        "photographer": "陸沉川本人",
+        "style": "unretouched casual smartphone photo",
+        "description": "睡前躺在床上拿手機自拍，枕頭遮住部分臉部，極暗室內光線與自然雜訊。",
+        "caption": "睡前自拍",
+        "lighting": "available light; natural grain; imperfect framing",
+        "reference": "陸沉川角色設定與造型參考表.png",
+        "noStudioPhotography": true
       }
     }
   ],
@@ -10195,6 +10295,8 @@
     "assetsUploadedByPlayer": true,
     "delivery": "private_kakao_after_contact_only",
     "progression": "serialized_after_player_response",
-    "noAutomaticAlbum": true
+    "noAutomaticAlbum": true,
+    "photoRevision": "2026-11-06 handheld-smartphone-replacement",
+    "photoFiles": "ten separate webp assets; uploaded separately by player"
   }
 }
