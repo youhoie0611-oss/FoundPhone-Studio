@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { discloseV8Kiss } from "./brick3V8Intimacy";
 import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation, reviewV8LegacyRelationship, endV8Relationship } from "./brick3Relationships";
 import type { Runtime } from "./schema";
 import "./brick3RelationshipPanel.css";
@@ -45,6 +46,29 @@ export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
           onClick={() => action(next => undoV8Decision(next))}>
           撤銷今日尚未送達的關係決定
         </button>
+      )}
+      {!!state.brick3V8Intimacy?.events.length && (
+        <aside className="brick3-relation-intimacy">
+          <strong>親密事件與告知</strong>
+          <p>以下是妳親自答應過的事件。其他戀人只有在有合理來源時才會知情。</p>
+          {state.brick3V8Intimacy.events.map(e => {
+            const recipients = V8_LEADS.filter(name => name !== e.actor &&
+              ["dating", "secret"].includes(v?.bonds[name]?.status ?? "") &&
+              !e.disclosedTo.includes(name));
+            return (
+              <div key={e.id}>
+                <strong>{e.gameDate}｜與{e.actor}親吻</strong>
+                {recipients.map(name => (
+                  <button type="button" key={name} onClick={() => {
+                    const updated = discloseV8Kiss(state, e.id, name);
+                    if (updated) onUpdate(updated);
+                  }}>主動告訴{name}</button>
+                ))}
+                {!recipients.length && <small>目前沒有待告知的其他戀人</small>}
+              </div>
+            );
+          })}
+        </aside>
       )}
       {V8_LEADS.map(lead => {
         const bond = v?.bonds[lead], c = v?.confessions[lead];
