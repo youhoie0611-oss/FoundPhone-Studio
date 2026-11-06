@@ -63,3 +63,34 @@
 **玩家相簿：** 10 張均不自動匯入私人相簿。Chat 附件保留在 KKT 聊天中；社群照片在 Instagram 發布事件發生後才能看見，且不因玩家開啟 App 而假造已發布。
 
 外貌、眼鏡、狗狗與生活場景必須延續原參考圖，狗名、性別及年齡未確認。不能替玩家決定接受邀約或出席。
+
+
+## 第二批 10 張照片（batch02，2026-11-06）
+
+維持 4 Chat／3 Instagram Story／3 Instagram Post、10 個新事件及 40 個玩家回覆選項，所有選項都有不同 NPC 後續回覆。
+
+| # | 用途 | WebP 檔名 | 事件 ID | 主題 |
+| --- | --- | --- | --- | --- |
+| 01 | Chat | gu_shian_parked_car_selfie_01.webp | photo_gu_batch02_parked_car_selfie | 停妥車內自拍 |
+| 02 | Chat | gu_shian_site_check_01.webp | photo_gu_batch02_site_check | 實際工地勘查 |
+| 03 | Chat | gu_shian_dog_cuddle_01.webp | photo_gu_batch02_dog_cuddle | 和自家狗狗靠在一起 |
+| 04 | Chat | gu_shian_desk_sketch_01.webp | photo_gu_batch02_desk_sketch | 提案退回後修正圖面 |
+| 05 | Story | gu_shian_climbing_story_01.webp | photo_gu_batch02_climbing_story | 攀岩後自拍 |
+| 06 | Story | gu_shian_clam_pasta_story_01.webp | photo_gu_batch02_clam_pasta_story | 在家做蛤蜊義大利麵 |
+| 07 | Story | gu_shian_riverside_sunset_story_01.webp | photo_gu_batch02_riverside_sunset_story | 下班路上河岸晚霞 |
+| 08 | Post | gu_shian_wood_exhibit_post_01.webp | photo_gu_batch02_wood_exhibit_post | 木構造展覽 |
+| 09 | Post | gu_shian_mountain_hike_post_01.webp | photo_gu_batch02_mountain_hike_post | 週末登山自拍 |
+| 10 | Post | gu_shian_coffee_camera_post_01.webp | photo_gu_batch02_coffee_camera_post | 底片相機與甜點 |
+
+**[一次拖曳上傳 10 張 WebP 的 GitHub 頁面](https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/gu_shian)**
+
+操作：解壓 ZIP → **全選十張 .webp** → 拖曳到上述頁面 → 按一次 Commit changes。不要上傳 ZIP 本身。
+
+- [第 2 批十張完整 JSON（含四選項分支／照片生命週期／相簿規則）](../../../docs/brick3-gu-shian-batch02.json)
+- [全角色照片事件配置](../../../docs/brick3-photo-events-v1.json)
+- 角色的所有照片都保持原始參考臉型、暖茶色眼鏡、已確認的自家奶茶色白胸米克斯犬，不擅自命名犬隻或改動既有住家、專案外觀。
+- **本批 WebP 尚待玩家手動上傳**；只有 JSON、檔名、用途與事件配置已進 GitHub。
+- Chat：`dog_cuddle` 與 `desk_sketch` 已有既存生活事件錨點（生活與劇情連續性仍需執行階段驗證）；`parked_car_selfie` 和 `site_check` 必須等真實的車程或工地事件確定，暫不硬接故事。
+- Story/Post 六筆**已有完整配套**，但 Instagram 發布與四選項互動需另行實作社群適配器，不得誤作 KKT 訊息或假裝已發布。
+- **玩家私人相簿：十張皆不自動匯入。** Chat 相片保留在 KKT，社群照片只有實際發布後才會在 IG 顯示。
+- 本批影像是從 AI 生成的 1536×1024 聯絡表裁切的十張獨立 WebP，並非 10 張原生高解析照片；Story 與 Post 有模糊延展背景以適應直式版型。
