@@ -1,6 +1,7 @@
 import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 import { chooseV8, observeV8Reply, tickV8 } from "./brick3Relationships";
 import { chooseV8Life, tickV8Life, askV8Psychology } from "./brick3V8Life";
+import { chooseV8Conflict, tickV8Conflict } from "./brick3V8Conflict";
 import { rememberBrick3Reply, tickBrick3Memory } from "./brick3Memory";
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
@@ -263,7 +264,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next)))))));
+  return tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next))))))));
 }
 export function advance(
   w: Work,
@@ -346,7 +347,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s)))))));
+  return tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s))))))));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -414,6 +415,8 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
 }
 
 export function choose(w: Work, s: Runtime, id: string) {
+  const clash = chooseV8Conflict(w, s, id);
+  if (clash !== null) return clash;
   const v8life = chooseV8Life(w, s, id);
   if (v8life !== null) return v8life;
   const v8 = chooseV8(w, s, id);
