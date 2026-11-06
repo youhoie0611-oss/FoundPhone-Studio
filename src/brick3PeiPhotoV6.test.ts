@@ -39,7 +39,7 @@ describe("Pei V6 photo runtime",()=>{
   expect(chosen.brick3PeiV6?.phase).toBe("reply");
   expect(chosen.choices.some(c=>c.target===target)).toBe(false);
   expect(choosePeiPhotoV6(w,chosen,target)).toBe(chosen);
-  chosen.elapsedMs+=2500;tickPeiPhotoV6(w,chosen);
+  chosen.elapsedMs=(chosen.elapsedMs??0)+2500;tickPeiPhotoV6(w,chosen);
   expect(chosen.brick3PeiV6?.index).toBe(1);
   expect(chosen.messages.kakao?.filter(m=>m.kind==="image")).toHaveLength(1);
  });

@@ -73,7 +73,7 @@ export function tickPeiPhotoV6(w:Work,s:Runtime):Runtime{
  if(now<st.nextAt)return s;
  if(st.phase==="waiting"){
   skipBlocked(s,st);
-  if(st.phase==="finished")return s;
+  if(st.index>=scenes.length)return s;
   const last=Number((s.ui?.scriptedThreadDelivery??{})[NAME]??-Infinity);
   const reply=Number((s.ui?.lastFreeReply??{})[NAME]??-Infinity);
   if(now-last<120000||now-reply<90000){st.nextAt=now+30000;return s;}
