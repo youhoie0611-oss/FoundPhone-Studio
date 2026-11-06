@@ -302,12 +302,32 @@ export function tickV8(w: Work, s: Runtime): Runtime {
   }
   if (s.date && s.date !== v.lastDay) {
     v.lastDay = s.date;
+    const active = partners(v);
+    if (active.length === 1 && v.bonds[active[0]].status === "dating") markEnding(s, "END_01");
+    if (active.length >= 2 && active.every(n => v.bonds[n].status === "dating" &&
+      v.bonds[n].exclusivity === "nonexclusive")) markEnding(s, "END_02");
     for (const lead of V8_LEADS) {
-      const b = v.bonds[lead];
-      // Relationship milestones are independent, not terminal game endings.
-      if (b.status === "dating" && !partners(v, lead).length) markEnding(s, "END_01");
-      if (b.status === "secret" && partners(v, lead).length) markEnding(s, "END_11", lead);
+      const b = v.bonds[lead], confession = v.confessions[lead];
+      if (b.status === "secret" && active.length >= 2) markEnding(s, "END_11", lead);
+      if (confession?.status === "withdrawn" && v.events.some(e => e.startsWith(`expired:${lead}`)))
+        markEnding(s, "END_05");
+      if (confession?.status === "declined" && b.status === "single" &&
+        now - confession.at >= 7 * DAY &&
+        (s.messages.kakao ?? []).filter(m => m.title === lead && m.outgoing).length >= 3)
+        markEnding(s, "END_06");
     }
+    if (v.bonds["裴知聿"].status === "dating" &&
+      (v.bonds["裴知聿"].history.some(h => h.status === "separated") ||
+        s.variables["brick3:scene:裴知聿"] === "conversation_open"))
+      markEnding(s, "END_04");
+    if (active.length === 0 && now - v.createdAt >= 30 * DAY &&
+      (s.messages.kakao ?? []).some(m => m.outgoing)) markEnding(s, "END_07");
+    if ((s.brick3Memory ?? []).some(m =>
+      m.topic === "conflict" && m.resolution === "reconciled") &&
+      (s.brick3DateSocial && Object.keys(s.brick3DateSocial).length > 0))
+      markEnding(s, "END_08");
+    if (V8_LEADS.every(n => (s.messages.kakao ?? []).some(m => m.title === n && !m.outgoing)))
+      markEnding(s, "END_10");
   }
   return s;
 }
