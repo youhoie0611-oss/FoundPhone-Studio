@@ -55,7 +55,7 @@ describe("Brick3 V7 Lu Chenchuan entry respects boundaries", () => {
     expect(four(state, "v7_lu_invite")).toHaveLength(4);
     const declined = choose(w, state, "brick3-photo-v7_lu_invite-choice-4");
     const later = advance(w, declined, 20 * 60 * 1000);
-    expect(later.variables.lu_met_in_service).toBe(false);
+    expect(later.variables.lu_met_near_office).toBe(false);
     expect(later.variables.lu_private_contact).toBe(false);
     expect(has(later, "v7-lu-first-encounter-note")).toBe(false);
   });
@@ -65,10 +65,10 @@ describe("Brick3 V7 Lu Chenchuan entry respects boundaries", () => {
     const { w, state } = invoke(work, "v7-lu-venue-arrival-arrive");
     expect(four(state, "v7_lu_arrival")).toHaveLength(4);
     const left = choose(w, state, "brick3-photo-v7_lu_arrival-choice-3");
-    expect(left.variables.lu_met_in_service).toBe(false);
+    expect(left.variables.lu_met_near_office).toBe(false);
     const entered = choose(w, state, "brick3-photo-v7_lu_arrival-choice-1");
     const after = advance(w, entered, 4_000);
-    expect(after.variables.lu_met_in_service).toBe(true);
+    expect(after.variables.lu_met_near_office).toBe(true);
     expect(has(after, "v7-lu-first-encounter-note")).toBe(true);
     expect(after.variables.lu_private_contact).toBe(false);
   });
@@ -91,6 +91,6 @@ describe("Brick3 V7 Lu Chenchuan entry respects boundaries", () => {
     expect(chosen.unlocked.includes("brick3-photo-v7_lu_private-choice-1-out")).toBe(true);
     const firstPrivate = w.nodes.find((n) => n.id === "v7-lu-private-contact-arrive");
     expect(firstPrivate?.next.some((x) => x === "brick3-photo-photo_off_duty-wait")).toBe(true);
-    expect(has(reached, "brick3-photo-photo_off_duty-image-1")).toBe(false);
+    expect(has(reached, "brick3-photo-photo_off_duty-image-1")).toBe(false);\n    expect(w.nodes.some(n => n.id === "brick3-photo-photo_lu_office_evening-arrive")).toBe(true);
   });
 });
