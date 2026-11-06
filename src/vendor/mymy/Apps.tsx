@@ -114,6 +114,10 @@ export function MymyKakao(p: SkinProps) {
 
   const lastMessage = messages[messages.length - 1];
   const photoOptions = pendingBrick3PhotoOptions(messages, p.choices ?? []);
+  const v8Options = (p.choices ?? []).filter(choice =>
+    choice.target.startsWith(`brick3-v8:${p.thread}:`) ||
+    (choice.target.startsWith("brick3-night:") && choice.label.startsWith(`${p.thread}｜`)));
+
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
   const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
@@ -201,9 +205,13 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && (!lastMessage?.outgoing || photoOptions.length === 4) && (
-            <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
+          {!p.creator && !isTyping && (!lastMessage?.outgoing || photoOptions.length === 4 || v8Options.length > 0) && (
+            <div className="kkt-reply-tray" aria-label="回覆選項">
               {(() => {
+                if (v8Options.length) return v8Options.map((choice) => (
+                  <button type="button" key={choice.target} className="kkt-reply-choice"
+                    onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
+                ));
                 if (photoOptions.length === 4) return photoOptions.map((choice) => (
                   <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
