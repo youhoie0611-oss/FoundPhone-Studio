@@ -90,3 +90,35 @@ test("NPC photos stay private and no authored photo event assumes player attenda
     assert.equal(scene.gallery.entersPlayerAlbum, false);
   }
 });
+
+test("all 40 replies directly address the selected topic, not generic photo prompts", () => {
+  const anchors = {
+    dorm_morning_selfie: ["補刀", "精神", "鬧鐘", "刷牙"],
+    classroom_bored_selfie: ["老師", "窗邊", "自拍", "手機"],
+    gym_mirror_selfie: ["汗", "深蹲", "鏡子", "收操"],
+    cafe_editing_break: ["修圖", "窗邊", "螢幕", "整理"],
+    basketball_sunset_selfie: ["腿", "夕陽", "輸兩分", "擦汗"],
+    elevator_outfit_selfie: ["換了兩件", "鏡子", "同學", "會合"],
+    convenience_store_night_selfie: ["冰櫃", "玻璃倒影", "下樓", "買完"],
+    rainy_neon_selfie: ["雨", "鞋尖", "安靜", "遮雨"],
+    izakaya_friends_selfie: ["吵", "糗事", "搭車", "飯"],
+    late_night_desk_selfie: ["報告", "紙", "檔案", "睡"],
+  };
+  const seen = new Set();
+  let count = 0;
+  for (const scene of batch) {
+    const slug = scene.eventId.replace("photo_shen_batch01_", "");
+    const words = anchors[slug];
+    assert.ok(words, "unexpected scene " + slug);
+    for (const [index, choice] of scene.choices.entries()) {
+      const body = scene.onChoiceResponses[choice.id].reply.join("\n");
+      assert.ok(body.includes(words[index]), slug + " reply " + (index + 1) + " must address " + words[index]);
+      assert.ok(body.includes("\n"), slug + " reply " + (index + 1) + " needs natural conversational beats");
+      assert.ok(!seen.has(body), "recycled response: " + body);
+      assert.doesNotMatch(body, /妳說的那張照片可以給我看看嗎|你在什麼活動認出我的|妳今天長怎樣|傳照片給我/);
+      seen.add(body);
+      count++;
+    }
+  }
+  assert.equal(count, 40);
+});
