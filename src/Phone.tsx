@@ -69,6 +69,7 @@ import { dispatch, choose, submitCustomReply, visible, advance } from "./engine"
 import { storyPhotoUrl, useStoryPhotoAvailability } from "./storyPhotoAssets";
 import { db } from "./persistence";
 import { restoreBrick3Save } from "./brick3SaveMigration";
+import { clearBrick3ResetParam, isBrick3ResetRequested } from "./ios/refreshStory";
 import { requestNpcReply } from "./aiChat";
 import { activePlayerId } from "./playerProfiles";
 export function AppIcon({
@@ -209,6 +210,24 @@ function PhoneRuntime({
   useEffect(() => {
     let active = true;
     if (creator || external) return;
+    // A refresh explicitly requests a clean Brick3 start. Delete the saved
+    // history BEFORE considering migration/restoration; keep other games' saves.
+    if (isBrick3ResetRequested(work.id, window.location.search)) {
+      void db.saves.delete(work.id)
+        .then(() => {
+          if (!active) return;
+          setOwn(dispatch(work, initialRuntime(work), "start"));
+          window.history.replaceState(window.history.state, "", clearBrick3ResetParam(window.location.href));
+          setReady(true);
+        })
+        .catch(() => {
+          if (!active) return;
+          setOwn(dispatch(work, initialRuntime(work), "start"));
+          setLoadError("無法確認舊紀錄已清除。請檢查瀏覽器的儲存權限後再刷新。");
+          setReady(true);
+        });
+      return () => { active = false; };
+    }
     void db.saves
       .get(work.id)
       .then((saved) => {
