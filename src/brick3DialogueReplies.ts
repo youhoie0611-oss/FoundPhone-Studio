@@ -5,7 +5,10 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
   const player = request.message.trim();
   const history = request.history.at(-1)?.outgoing && request.history.at(-1)?.body === player
     ? request.history.slice(0, -1) : request.history;
-  const playerIndex = history.findLastIndex(line => line.outgoing);
+  let playerIndex = -1;
+  for (let i = history.length - 1; i >= 0; i--) {
+    if (history[i].outgoing) { playerIndex = i; break; }
+  }
   const turn = history.slice(playerIndex + 1).filter(line => !line.outgoing).slice(-8)
     .map(line => line.body).join(" ");
   const recent = history.filter(line => !line.outgoing).at(-1)?.body ?? "";
