@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 12,
+  "revision": 13,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -1080,6 +1080,214 @@
           "meta": {
             "brick3Scene": "qiye-opening-follow-distance"
           }
+        },
+        {
+          "id": "qiye-opening-follow-ask-scene-lead",
+          "senderId": "qiye",
+          "body": "週五 19:52｜我到球場了。妳從南門進來，別走停車場那邊。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-scene-player-a",
+          "senderId": "owner",
+          "body": "我到了，你穿哪件衣服？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-scene-reply-a",
+          "senderId": "qiye",
+          "body": "黑色球衣。看到我揮手就過來。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-scene-player-b",
+          "senderId": "owner",
+          "body": "我有點緊張，先在旁邊看。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-scene-reply-b",
+          "senderId": "qiye",
+          "body": "行，我打完這局過去找妳。別站在車道上。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-scene-lead",
+          "senderId": "qiye",
+          "body": "週五 20:06｜妳不是說要看我有多厲害？今天對面是上週那隊。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-scene-player-a",
+          "senderId": "owner",
+          "body": "我到了，你別讓我白跑。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-scene-reply-a",
+          "senderId": "qiye",
+          "body": "放心。打完妳請我喝水，我帶妳認識他們。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-scene-player-b",
+          "senderId": "owner",
+          "body": "我還在路上，可能會晚到。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-scene-reply-b",
+          "senderId": "qiye",
+          "body": "沒事，球還沒打完。到了告訴我。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-scene-lead",
+          "senderId": "qiye",
+          "body": "週六 21:10｜上次說的宵夜店今天開著。我剛從球場出來。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-scene-player-a",
+          "senderId": "owner",
+          "body": "我有空，一起吃吧。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-scene-reply-a",
+          "senderId": "qiye",
+          "body": "那我先去排隊。妳到門口傳訊息。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-scene-player-b",
+          "senderId": "owner",
+          "body": "今天不行，下次再約。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-scene-reply-b",
+          "senderId": "qiye",
+          "body": "好，我先吃。下次再說。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-scene-lead",
+          "senderId": "qiye",
+          "body": "週末 14:20｜我在看一個街頭攝影展。這張海報設計還行。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-scene-player-a",
+          "senderId": "owner",
+          "body": "我也想看，你還在現場嗎？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-scene-reply-a",
+          "senderId": "qiye",
+          "body": "還在二樓。妳想來就慢慢來，我先看完這區。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-scene-player-b",
+          "senderId": "owner",
+          "body": "你看完再告訴我心得。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-scene-reply-b",
+          "senderId": "qiye",
+          "body": "行。晚點挑兩張我喜歡的作品跟妳說。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance-scene"
+          }
         }
       ]
     },
@@ -1412,6 +1620,162 @@
           "meta": {
             "brick3Scene": "pei-intro-follow-boundary"
           }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-scene-lead",
+          "senderId": "pei-zhiyu",
+          "body": "隔天 19:30｜我今天經過那家書店，才發現它換了招牌。突然想起以前我們常坐的角落。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-scene-player-a",
+          "senderId": "owner",
+          "body": "你還記得我們以前聊過什麼嗎？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-scene-reply-a",
+          "senderId": "pei-zhiyu",
+          "body": "記得。妳那時說不喜歡有人替妳決定未來，我卻沒認真聽。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-scene-player-b",
+          "senderId": "owner",
+          "body": "我不想再回頭聊那些。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-scene-reply-b",
+          "senderId": "pei-zhiyu",
+          "body": "明白。我不再用回憶當開場。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-scene-lead",
+          "senderId": "pei-zhiyu",
+          "body": "隔天 20:05｜昨天說到那件事。我想認真道歉：分手前我一直用沉默迴避問題。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-scene-player-a",
+          "senderId": "owner",
+          "body": "你當時到底在逃避什麼？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-scene-reply-a",
+          "senderId": "pei-zhiyu",
+          "body": "我怕承認我們想要的生活不一樣，就會真的失去妳。結果我不說，反而讓妳更累。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-scene-player-b",
+          "senderId": "owner",
+          "body": "我聽到了，但還需要時間。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-scene-reply-b",
+          "senderId": "pei-zhiyu",
+          "body": "好。我不會催妳原諒。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-scene-lead",
+          "senderId": "pei-zhiyu",
+          "body": "週末 16:00｜我想約妳找個公開的地方談一次，聊清楚我們現在各自想要什麼。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-scene-player-a",
+          "senderId": "owner",
+          "body": "可以，約在咖啡店談。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-scene-reply-a",
+          "senderId": "pei-zhiyu",
+          "body": "好。我會先把想說的整理好，不會要求妳當場做決定。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-scene-player-b",
+          "senderId": "owner",
+          "body": "我不想見面，訊息說就好。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct-scene"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-scene-reply-b",
+          "senderId": "pei-zhiyu",
+          "body": "可以。我會在訊息裡說清楚，不讓妳有壓力。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct-scene"
+          }
         }
       ]
     },
@@ -1742,6 +2106,214 @@
           "hidden": true,
           "meta": {
             "brick3Scene": "shen-opening-follow-distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-scene-lead",
+          "senderId": "shen-yanzhou",
+          "body": "隔天 17:40｜我把照片縮成兩張了。一張有人群，一張是空舞台。妳覺得哪張比較適合封面？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-scene-player-a",
+          "senderId": "owner",
+          "body": "選有人群的，比較有活動感。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-scene-reply-a",
+          "senderId": "shen-yanzhou",
+          "body": "我也是這樣想。那我用這張，明天拿去給老師看。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-scene-player-b",
+          "senderId": "owner",
+          "body": "選空舞台，畫面比較乾淨。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-scene-reply-b",
+          "senderId": "shen-yanzhou",
+          "body": "好，我試著用那張排封面，再比較一次。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-scene-lead",
+          "senderId": "shen-yanzhou",
+          "body": "週三 13:48｜我在成果展入口了。妳如果到了，從左邊樓梯上來。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-scene-player-a",
+          "senderId": "owner",
+          "body": "我到了，你帶我逛吧。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-scene-reply-a",
+          "senderId": "shen-yanzhou",
+          "body": "好，我出來接妳。等下還想讓妳看看我的作品。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-scene-player-b",
+          "senderId": "owner",
+          "body": "我可能趕不上發表，你先去準備。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-scene-reply-b",
+          "senderId": "shen-yanzhou",
+          "body": "沒事，我先上台。晚點跟妳說結果。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-scene-lead",
+          "senderId": "shen-yanzhou",
+          "body": "隔天 20:15｜我把簡報整理好了。現在有十分鐘，妳方便聽我練習嗎？",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-scene-player-a",
+          "senderId": "owner",
+          "body": "可以，先從開場講給我聽。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-scene-reply-a",
+          "senderId": "shen-yanzhou",
+          "body": "好。第一段我想說這次活動的主題是……",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-scene-player-b",
+          "senderId": "owner",
+          "body": "今天不方便，你自己先練習。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-scene-reply-b",
+          "senderId": "shen-yanzhou",
+          "body": "好，我先錄音聽一遍。謝謝妳昨天的提議。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-scene-lead",
+          "senderId": "shen-yanzhou",
+          "body": "三天後 18:20｜上次活動的相簿整理好了。我挑了幾張沒有拍到別人正臉的。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-scene-player-a",
+          "senderId": "owner",
+          "body": "傳我看看，我想回顧一下。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-scene-reply-a",
+          "senderId": "shen-yanzhou",
+          "body": "好，我傳連結。裡面還有妳上次提到的展區。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-scene-player-b",
+          "senderId": "owner",
+          "body": "你留著就好，不用傳。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance-scene"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-scene-reply-b",
+          "senderId": "shen-yanzhou",
+          "body": "了解，我會放進自己的作品集，不打擾妳。",
+          "time": "2026-11-05 19:30",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance-scene"
           }
         }
       ]
@@ -2236,7 +2808,18 @@
     "pei-intro-follow-ordinary-outcome": "pending",
     "pei-intro-follow-ask-outcome": "pending",
     "pei-intro-follow-direct-outcome": "pending",
-    "pei-intro-follow-boundary-outcome": "pending"
+    "pei-intro-follow-boundary-outcome": "pending",
+    "qiye-opening-follow-ask-scene-outcome": "pending",
+    "qiye-opening-follow-tease-scene-outcome": "pending",
+    "qiye-opening-follow-care-scene-outcome": "pending",
+    "qiye-opening-follow-distance-scene-outcome": "pending",
+    "shen-opening-follow-ask-scene-outcome": "pending",
+    "shen-opening-follow-tease-scene-outcome": "pending",
+    "shen-opening-follow-care-scene-outcome": "pending",
+    "shen-opening-follow-distance-scene-outcome": "pending",
+    "pei-intro-follow-ordinary-scene-outcome": "pending",
+    "pei-intro-follow-ask-scene-outcome": "pending",
+    "pei-intro-follow-direct-scene-outcome": "pending"
   },
   "events": [
     {
@@ -4683,7 +5266,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-ask-scene-day-delay"
+      ]
     },
     {
       "id": "qiye-opening-follow-ask-no",
@@ -4804,7 +5389,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-tease-scene-day-delay"
+      ]
     },
     {
       "id": "qiye-opening-follow-tease-no",
@@ -4925,7 +5512,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-care-scene-day-delay"
+      ]
     },
     {
       "id": "qiye-opening-follow-care-no",
@@ -5046,7 +5635,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-distance-scene-day-delay"
+      ]
     },
     {
       "id": "qiye-opening-follow-distance-no",
@@ -5167,7 +5758,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-ask-scene-day-delay"
+      ]
     },
     {
       "id": "shen-opening-follow-ask-no",
@@ -5288,7 +5881,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-tease-scene-day-delay"
+      ]
     },
     {
       "id": "shen-opening-follow-tease-no",
@@ -5409,7 +6004,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-care-scene-day-delay"
+      ]
     },
     {
       "id": "shen-opening-follow-care-no",
@@ -5530,7 +6127,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-distance-scene-day-delay"
+      ]
     },
     {
       "id": "shen-opening-follow-distance-no",
@@ -5651,7 +6250,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-ordinary-scene-day-delay"
+      ]
     },
     {
       "id": "pei-intro-follow-ordinary-no",
@@ -5772,7 +6373,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-ask-scene-day-delay"
+      ]
     },
     {
       "id": "pei-intro-follow-ask-no",
@@ -5893,7 +6496,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-direct-scene-day-delay"
+      ]
     },
     {
       "id": "pei-intro-follow-direct-no",
@@ -6054,6 +6659,1392 @@
         {
           "type": "unlock",
           "key": "pei-intro-follow-boundary-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "qiye-opening-follow-ask-scene-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "qiye：週五 19:52｜我到球場了。妳從南門進來，別走停車場那邊。"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-scene-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-ask-scene-choice-a",
+        "qiye-opening-follow-ask-scene-choice-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-choice-a",
+      "type": "action",
+      "label": "我到了，你穿哪件衣服？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-ask-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-scene-pause-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-ask-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-choice-b",
+      "type": "action",
+      "label": "我有點緊張，先在旁邊看。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-ask-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-scene-pause-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-ask-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "qiye-opening-follow-tease-scene-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "qiye：週五 20:06｜妳不是說要看我有多厲害？今天對面是上週那隊。"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-scene-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-tease-scene-choice-a",
+        "qiye-opening-follow-tease-scene-choice-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-choice-a",
+      "type": "action",
+      "label": "我到了，你別讓我白跑。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-tease-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-scene-pause-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-tease-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-choice-b",
+      "type": "action",
+      "label": "我還在路上，可能會晚到。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-tease-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-scene-pause-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-tease-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "qiye-opening-follow-care-scene-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "qiye：週六 21:10｜上次說的宵夜店今天開著。我剛從球場出來。"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-scene-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-care-scene-choice-a",
+        "qiye-opening-follow-care-scene-choice-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-choice-a",
+      "type": "action",
+      "label": "我有空，一起吃吧。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-care-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-scene-pause-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-care-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-choice-b",
+      "type": "action",
+      "label": "今天不行，下次再約。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-care-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-scene-pause-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-care-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "qiye-opening-follow-distance-scene-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "qiye：週末 14:20｜我在看一個街頭攝影展。這張海報設計還行。"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-scene-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-distance-scene-choice-a",
+        "qiye-opening-follow-distance-scene-choice-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-choice-a",
+      "type": "action",
+      "label": "我也想看，你還在現場嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-distance-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-scene-pause-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-distance-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-choice-b",
+      "type": "action",
+      "label": "你看完再告訴我心得。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-distance-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-scene-pause-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "qiye-opening-follow-distance-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "shen-opening-follow-ask-scene-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "shen-yanzhou：隔天 17:40｜我把照片縮成兩張了。一張有人群，一張是空舞台。妳覺得哪張比較適合封面？"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-scene-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-ask-scene-choice-a",
+        "shen-opening-follow-ask-scene-choice-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-choice-a",
+      "type": "action",
+      "label": "選有人群的，比較有活動感。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-ask-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-scene-pause-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-ask-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-choice-b",
+      "type": "action",
+      "label": "選空舞台，畫面比較乾淨。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-ask-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-scene-pause-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-ask-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "shen-opening-follow-tease-scene-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "shen-yanzhou：週三 13:48｜我在成果展入口了。妳如果到了，從左邊樓梯上來。"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-scene-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-tease-scene-choice-a",
+        "shen-opening-follow-tease-scene-choice-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-choice-a",
+      "type": "action",
+      "label": "我到了，你帶我逛吧。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-tease-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-scene-pause-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-tease-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-choice-b",
+      "type": "action",
+      "label": "我可能趕不上發表，你先去準備。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-tease-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-scene-pause-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-tease-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-care-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "shen-opening-follow-care-scene-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "shen-yanzhou：隔天 20:15｜我把簡報整理好了。現在有十分鐘，妳方便聽我練習嗎？"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-scene-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-care-scene-choice-a",
+        "shen-opening-follow-care-scene-choice-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-choice-a",
+      "type": "action",
+      "label": "可以，先從開場講給我聽。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-care-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-scene-pause-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-care-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-care-scene-choice-b",
+      "type": "action",
+      "label": "今天不方便，你自己先練習。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-care-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-scene-pause-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-care-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "shen-opening-follow-distance-scene-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "shen-yanzhou：三天後 18:20｜上次活動的相簿整理好了。我挑了幾張沒有拍到別人正臉的。"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-scene-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-distance-scene-choice-a",
+        "shen-opening-follow-distance-scene-choice-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-choice-a",
+      "type": "action",
+      "label": "傳我看看，我想回顧一下。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-distance-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-scene-pause-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-distance-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-choice-b",
+      "type": "action",
+      "label": "你留著就好，不用傳。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-distance-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-scene-pause-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "shen-opening-follow-distance-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "pei-intro-follow-ordinary-scene-deliver"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "pei-zhiyu：隔天 19:30｜我今天經過那家書店，才發現它換了招牌。突然想起以前我們常坐的角落。"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-scene-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-ordinary-scene-choice-a",
+        "pei-intro-follow-ordinary-scene-choice-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-choice-a",
+      "type": "action",
+      "label": "你還記得我們以前聊過什麼嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ordinary-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-scene-pause-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-ordinary-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-choice-b",
+      "type": "action",
+      "label": "我不想再回頭聊那些。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ordinary-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-scene-pause-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-ordinary-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "pei-intro-follow-ask-scene-deliver"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "pei-zhiyu：隔天 20:05｜昨天說到那件事。我想認真道歉：分手前我一直用沉默迴避問題。"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-scene-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-ask-scene-choice-a",
+        "pei-intro-follow-ask-scene-choice-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-choice-a",
+      "type": "action",
+      "label": "你當時到底在逃避什麼？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ask-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-scene-pause-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-ask-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-choice-b",
+      "type": "action",
+      "label": "我聽到了，但還需要時間。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ask-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-scene-pause-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-ask-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-day-delay",
+      "type": "delay",
+      "label": "後續日程推進",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "pei-intro-follow-direct-scene-deliver"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-deliver",
+      "type": "action",
+      "label": "實際發生的跨日事件",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-scene-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "pei-zhiyu：週末 16:00｜我想約妳找個公開的地方談一次，聊清楚我們現在各自想要什麼。"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-scene-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-select",
+      "type": "choice",
+      "label": "事件現場的玩家決定",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-direct-scene-choice-a",
+        "pei-intro-follow-direct-scene-choice-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-choice-a",
+      "type": "action",
+      "label": "可以，約在咖啡店談。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-scene-player-a",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-direct-scene-outcome",
+          "value": "participated"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-scene-pause-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-pause-a",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-direct-scene-reply-node-a"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-reply-node-a",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-scene-reply-a",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-choice-b",
+      "type": "action",
+      "label": "我不想見面，訊息說就好。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-scene-player-b",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-direct-scene-outcome",
+          "value": "alternative"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-scene-pause-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-pause-b",
+      "type": "delay",
+      "label": "角色自然回覆",
+      "actions": [],
+      "delayMs": 75000,
+      "next": [
+        "pei-intro-follow-direct-scene-reply-node-b"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-scene-reply-node-b",
+      "type": "action",
+      "label": "後續事件結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-scene-reply-b",
           "value": true
         }
       ],
