@@ -200,12 +200,18 @@ function runQueue(
     )
       s.endings.push(n.label);
     if (n.type === "choice") {
-      for (const id of n.next)
+      // A choice node owns exactly one active four-option set. Record the
+      // presenting node instead of guessing from a shared target later.
+      const owners = { ...((s.ui?.choiceOwners ?? {}) as Record<string, string>) };
+      for (const id of n.next) {
+        owners[id] = n.id;
         if (!s.choices.some((c) => c.target === id))
           s.choices.push({
-            label: w.nodes.find((n) => n.id === id)?.label ?? id,
+            label: w.nodes.find((node) => node.id === id)?.label ?? id,
             target: id,
           });
+      }
+      s.ui = { ...s.ui, choiceOwners: owners };
     } else queue.push(...n.next);
   }
   s.trace = s.trace.slice(-100);
@@ -219,9 +225,15 @@ export function dispatch(
 ): Runtime {
   const s = structuredClone(previous);
   if (event === "choose") {
-    const group = w.nodes.find((node) => node.type === "choice" && node.next.includes(target));
+    const owners = { ...((s.ui?.choiceOwners ?? {}) as Record<string, string>) };
+    const ownerId = owners[target];
+    const group = ownerId
+      ? w.nodes.find((node) => node.id === ownerId && node.type === "choice")
+      : w.nodes.find((node) => node.type === "choice" && node.next.includes(target));
     const siblings = new Set(group?.next ?? [target]);
     s.choices = s.choices.filter((choice) => !siblings.has(choice.target));
+    for (const id of siblings) delete owners[id];
+    s.ui = { ...s.ui, choiceOwners: owners };
   }
   if (event === "openApp" && !s.visited.includes(target))
     s.visited.push(target);
