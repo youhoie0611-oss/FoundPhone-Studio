@@ -18867,11 +18867,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "qiye-opening-follow-ask-prompt"
+        "qiye-opening-follow-ask-prompt-event-node"
       ]
     },
     {
-      "id": "qiye-opening-follow-ask-prompt",
+      "id": "qiye-opening-follow-ask-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -18990,11 +18990,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "qiye-opening-follow-tease-prompt"
+        "qiye-opening-follow-tease-prompt-event-node"
       ]
     },
     {
-      "id": "qiye-opening-follow-tease-prompt",
+      "id": "qiye-opening-follow-tease-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19113,11 +19113,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "qiye-opening-follow-care-prompt"
+        "qiye-opening-follow-care-prompt-event-node"
       ]
     },
     {
-      "id": "qiye-opening-follow-care-prompt",
+      "id": "qiye-opening-follow-care-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19236,11 +19236,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "qiye-opening-follow-distance-prompt"
+        "qiye-opening-follow-distance-prompt-event-node"
       ]
     },
     {
-      "id": "qiye-opening-follow-distance-prompt",
+      "id": "qiye-opening-follow-distance-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19359,11 +19359,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "shen-opening-follow-ask-prompt"
+        "shen-opening-follow-ask-prompt-event-node"
       ]
     },
     {
-      "id": "shen-opening-follow-ask-prompt",
+      "id": "shen-opening-follow-ask-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19482,11 +19482,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "shen-opening-follow-tease-prompt"
+        "shen-opening-follow-tease-prompt-event-node"
       ]
     },
     {
-      "id": "shen-opening-follow-tease-prompt",
+      "id": "shen-opening-follow-tease-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19605,11 +19605,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "shen-opening-follow-care-prompt"
+        "shen-opening-follow-care-prompt-event-node"
       ]
     },
     {
-      "id": "shen-opening-follow-care-prompt",
+      "id": "shen-opening-follow-care-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19728,11 +19728,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "shen-opening-follow-distance-prompt"
+        "shen-opening-follow-distance-prompt-event-node"
       ]
     },
     {
-      "id": "shen-opening-follow-distance-prompt",
+      "id": "shen-opening-follow-distance-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19851,11 +19851,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "pei-intro-follow-ordinary-prompt"
+        "pei-intro-follow-ordinary-prompt-event-node"
       ]
     },
     {
-      "id": "pei-intro-follow-ordinary-prompt",
+      "id": "pei-intro-follow-ordinary-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -19974,11 +19974,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "pei-intro-follow-ask-prompt"
+        "pei-intro-follow-ask-prompt-event-node"
       ]
     },
     {
-      "id": "pei-intro-follow-ask-prompt",
+      "id": "pei-intro-follow-ask-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -20097,11 +20097,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "pei-intro-follow-direct-prompt"
+        "pei-intro-follow-direct-prompt-event-node"
       ]
     },
     {
-      "id": "pei-intro-follow-direct-prompt",
+      "id": "pei-intro-follow-direct-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -20220,11 +20220,11 @@
       "actions": [],
       "delayMs": 80000,
       "next": [
-        "pei-intro-follow-boundary-prompt"
+        "pei-intro-follow-boundary-prompt-event-node"
       ]
     },
     {
-      "id": "pei-intro-follow-boundary-prompt",
+      "id": "pei-intro-follow-boundary-prompt-event-node",
       "type": "action",
       "label": "角色主動提出下一步",
       "actions": [
@@ -21731,11 +21731,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-site-detail-lead"
+        "gu-core-site-detail-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-site-detail-lead",
+      "id": "gu-core-site-detail-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -21857,11 +21857,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-site-safety-lead"
+        "gu-core-site-safety-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-site-safety-lead",
+      "id": "gu-core-site-safety-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -21983,11 +21983,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-site-question-lead"
+        "gu-core-site-question-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-site-question-lead",
+      "id": "gu-core-site-question-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22109,11 +22109,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-site-busy-lead"
+        "gu-core-site-busy-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-site-busy-lead",
+      "id": "gu-core-site-busy-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22235,11 +22235,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-studio-accept-lead"
+        "gu-core-studio-accept-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-studio-accept-lead",
+      "id": "gu-core-studio-accept-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22361,11 +22361,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-studio-ask-lead"
+        "gu-core-studio-ask-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-studio-ask-lead",
+      "id": "gu-core-studio-ask-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22487,11 +22487,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-studio-tease-lead"
+        "gu-core-studio-tease-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-studio-tease-lead",
+      "id": "gu-core-studio-tease-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22613,11 +22613,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-studio-boundary-lead"
+        "gu-core-studio-boundary-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-studio-boundary-lead",
+      "id": "gu-core-studio-boundary-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22739,11 +22739,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-late-rest-lead"
+        "gu-core-late-rest-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-late-rest-lead",
+      "id": "gu-core-late-rest-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22865,11 +22865,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-late-work-lead"
+        "gu-core-late-work-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-late-work-lead",
+      "id": "gu-core-late-work-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -22991,11 +22991,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-late-joke-lead"
+        "gu-core-late-joke-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-late-joke-lead",
+      "id": "gu-core-late-joke-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23117,11 +23117,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-late-no_late-lead"
+        "gu-core-late-no_late-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-late-no_late-lead",
+      "id": "gu-core-late-no_late-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23243,11 +23243,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-book-ask_place-lead"
+        "gu-core-book-ask_place-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-book-ask_place-lead",
+      "id": "gu-core-book-ask_place-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23369,11 +23369,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-book-sketch-lead"
+        "gu-core-book-sketch-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-book-sketch-lead",
+      "id": "gu-core-book-sketch-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23495,11 +23495,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-book-tease-lead"
+        "gu-core-book-tease-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-book-tease-lead",
+      "id": "gu-core-book-tease-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23621,11 +23621,11 @@
       "actions": [],
       "delayMs": 86400000,
       "next": [
-        "gu-core-book-neutral-lead"
+        "gu-core-book-neutral-lead-event-node"
       ]
     },
     {
-      "id": "gu-core-book-neutral-lead",
+      "id": "gu-core-book-neutral-lead-event-node",
       "type": "action",
       "label": "照片情節接回角色主線",
       "actions": [
@@ -23751,7 +23751,7 @@
       ]
     },
     {
-      "id": "pei-v6-01-intro",
+      "id": "pei-v6-01-intro-event-node",
       "label": "夜間沙發｜卸下防備｜前置訊息",
       "type": "action",
       "actions": [
@@ -23789,11 +23789,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-01-image"
+        "pei-v6-01-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-01-image",
+      "id": "pei-v6-01-image-event-node",
       "label": "夜間沙發｜卸下防備｜原始照片",
       "type": "action",
       "actions": [
@@ -23814,11 +23814,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-01-caption"
+        "pei-v6-01-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-01-caption",
+      "id": "pei-v6-01-caption-event-node",
       "label": "夜間沙發｜卸下防備｜原始照片說明",
       "type": "action",
       "actions": [
@@ -24035,7 +24035,7 @@
       ]
     },
     {
-      "id": "pei-v6-02-intro",
+      "id": "pei-v6-02-intro-event-node",
       "label": "週末早晨｜睡過頭｜前置訊息",
       "type": "action",
       "actions": [
@@ -24073,11 +24073,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-02-image"
+        "pei-v6-02-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-02-image",
+      "id": "pei-v6-02-image-event-node",
       "label": "週末早晨｜睡過頭｜原始照片",
       "type": "action",
       "actions": [
@@ -24098,11 +24098,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-02-caption"
+        "pei-v6-02-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-02-caption",
+      "id": "pei-v6-02-caption-event-node",
       "label": "週末早晨｜睡過頭｜原始照片說明",
       "type": "action",
       "actions": [
@@ -24319,7 +24319,7 @@
       ]
     },
     {
-      "id": "pei-v6-03-intro",
+      "id": "pei-v6-03-intro-event-node",
       "label": "研究室｜閱讀卡關｜前置訊息",
       "type": "action",
       "actions": [
@@ -24357,11 +24357,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-03-image"
+        "pei-v6-03-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-03-image",
+      "id": "pei-v6-03-image-event-node",
       "label": "研究室｜閱讀卡關｜原始照片",
       "type": "action",
       "actions": [
@@ -24382,11 +24382,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-03-caption"
+        "pei-v6-03-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-03-caption",
+      "id": "pei-v6-03-caption-event-node",
       "label": "研究室｜閱讀卡關｜原始照片說明",
       "type": "action",
       "actions": [
@@ -24603,7 +24603,7 @@
       ]
     },
     {
-      "id": "pei-v6-04-intro",
+      "id": "pei-v6-04-intro-event-node",
       "label": "電梯｜去討論報告｜前置訊息",
       "type": "action",
       "actions": [
@@ -24641,11 +24641,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-04-image"
+        "pei-v6-04-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-04-image",
+      "id": "pei-v6-04-image-event-node",
       "label": "電梯｜去討論報告｜原始照片",
       "type": "action",
       "actions": [
@@ -24666,11 +24666,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-04-caption"
+        "pei-v6-04-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-04-caption",
+      "id": "pei-v6-04-caption-event-node",
       "label": "電梯｜去討論報告｜原始照片說明",
       "type": "action",
       "actions": [
@@ -24892,7 +24892,7 @@
       ]
     },
     {
-      "id": "pei-v6-05-intro",
+      "id": "pei-v6-05-intro-event-node",
       "label": "咖啡店｜短暫放空｜前置訊息",
       "type": "action",
       "actions": [
@@ -24930,11 +24930,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-05-image"
+        "pei-v6-05-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-05-image",
+      "id": "pei-v6-05-image-event-node",
       "label": "咖啡店｜短暫放空｜原始照片",
       "type": "action",
       "actions": [
@@ -24955,11 +24955,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-05-caption"
+        "pei-v6-05-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-05-caption",
+      "id": "pei-v6-05-caption-event-node",
       "label": "咖啡店｜短暫放空｜原始照片說明",
       "type": "action",
       "actions": [
@@ -25176,7 +25176,7 @@
       ]
     },
     {
-      "id": "pei-v6-06-intro",
+      "id": "pei-v6-06-intro-event-node",
       "label": "運動後｜換個腦袋｜前置訊息",
       "type": "action",
       "actions": [
@@ -25219,11 +25219,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-06-image"
+        "pei-v6-06-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-06-image",
+      "id": "pei-v6-06-image-event-node",
       "label": "運動後｜換個腦袋｜原始照片",
       "type": "action",
       "actions": [
@@ -25244,11 +25244,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-06-caption"
+        "pei-v6-06-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-06-caption",
+      "id": "pei-v6-06-caption-event-node",
       "label": "運動後｜換個腦袋｜原始照片說明",
       "type": "action",
       "actions": [
@@ -25483,7 +25483,7 @@
       ]
     },
     {
-      "id": "pei-v6-07-intro",
+      "id": "pei-v6-07-intro-event-node",
       "label": "浴室｜洗完澡｜前置訊息",
       "type": "action",
       "actions": [
@@ -25526,11 +25526,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-07-image"
+        "pei-v6-07-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-07-image",
+      "id": "pei-v6-07-image-event-node",
       "label": "浴室｜洗完澡｜原始照片",
       "type": "action",
       "actions": [
@@ -25551,11 +25551,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-07-caption"
+        "pei-v6-07-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-07-caption",
+      "id": "pei-v6-07-caption-event-node",
       "label": "浴室｜洗完澡｜原始照片說明",
       "type": "action",
       "actions": [
@@ -25788,7 +25788,7 @@
       ]
     },
     {
-      "id": "pei-v6-08-intro",
+      "id": "pei-v6-08-intro-event-node",
       "label": "換衣服前｜肩背鏡照｜前置訊息",
       "type": "action",
       "actions": [
@@ -25831,11 +25831,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-08-image"
+        "pei-v6-08-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-08-image",
+      "id": "pei-v6-08-image-event-node",
       "label": "換衣服前｜肩背鏡照｜原始照片",
       "type": "action",
       "actions": [
@@ -25856,11 +25856,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-08-caption"
+        "pei-v6-08-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-08-caption",
+      "id": "pei-v6-08-caption-event-node",
       "label": "換衣服前｜肩背鏡照｜原始照片說明",
       "type": "action",
       "actions": [
@@ -26095,7 +26095,7 @@
       ]
     },
     {
-      "id": "pei-v6-09-intro",
+      "id": "pei-v6-09-intro-event-node",
       "label": "廚房｜自己做晚餐｜前置訊息",
       "type": "action",
       "actions": [
@@ -26138,11 +26138,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-09-image"
+        "pei-v6-09-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-09-image",
+      "id": "pei-v6-09-image-event-node",
       "label": "廚房｜自己做晚餐｜原始照片",
       "type": "action",
       "actions": [
@@ -26163,11 +26163,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-09-caption"
+        "pei-v6-09-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-09-caption",
+      "id": "pei-v6-09-caption-event-node",
       "label": "廚房｜自己做晚餐｜原始照片說明",
       "type": "action",
       "actions": [
@@ -26402,7 +26402,7 @@
       ]
     },
     {
-      "id": "pei-v6-10-intro",
+      "id": "pei-v6-10-intro-event-node",
       "label": "夜裡街角｜回家的路｜前置訊息",
       "type": "action",
       "actions": [
@@ -26440,11 +26440,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-10-image"
+        "pei-v6-10-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-10-image",
+      "id": "pei-v6-10-image-event-node",
       "label": "夜裡街角｜回家的路｜原始照片",
       "type": "action",
       "actions": [
@@ -26465,11 +26465,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-10-caption"
+        "pei-v6-10-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-10-caption",
+      "id": "pei-v6-10-caption-event-node",
       "label": "夜裡街角｜回家的路｜原始照片說明",
       "type": "action",
       "actions": [
@@ -26686,7 +26686,7 @@
       ]
     },
     {
-      "id": "pei-v6-11-intro",
+      "id": "pei-v6-11-intro-event-node",
       "label": "賴床｜不想睜眼｜前置訊息",
       "type": "action",
       "actions": [
@@ -26724,11 +26724,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-11-image"
+        "pei-v6-11-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-11-image",
+      "id": "pei-v6-11-image-event-node",
       "label": "賴床｜不想睜眼｜原始照片",
       "type": "action",
       "actions": [
@@ -26749,11 +26749,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-11-caption"
+        "pei-v6-11-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-11-caption",
+      "id": "pei-v6-11-caption-event-node",
       "label": "賴床｜不想睜眼｜原始照片說明",
       "type": "action",
       "actions": [
@@ -26975,7 +26975,7 @@
       ]
     },
     {
-      "id": "pei-v6-12-intro",
+      "id": "pei-v6-12-intro-event-node",
       "label": "圖書館｜換個位置閱讀｜前置訊息",
       "type": "action",
       "actions": [
@@ -27013,11 +27013,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-12-image"
+        "pei-v6-12-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-12-image",
+      "id": "pei-v6-12-image-event-node",
       "label": "圖書館｜換個位置閱讀｜原始照片",
       "type": "action",
       "actions": [
@@ -27038,11 +27038,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-12-caption"
+        "pei-v6-12-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-12-caption",
+      "id": "pei-v6-12-caption-event-node",
       "label": "圖書館｜換個位置閱讀｜原始照片說明",
       "type": "action",
       "actions": [
@@ -27259,7 +27259,7 @@
       ]
     },
     {
-      "id": "pei-v6-13-intro",
+      "id": "pei-v6-13-intro-event-node",
       "label": "健身房｜練完側身照｜前置訊息",
       "type": "action",
       "actions": [
@@ -27302,11 +27302,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-13-image"
+        "pei-v6-13-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-13-image",
+      "id": "pei-v6-13-image-event-node",
       "label": "健身房｜練完側身照｜原始照片",
       "type": "action",
       "actions": [
@@ -27327,11 +27327,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-13-caption"
+        "pei-v6-13-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-13-caption",
+      "id": "pei-v6-13-caption-event-node",
       "label": "健身房｜練完側身照｜原始照片說明",
       "type": "action",
       "actions": [
@@ -27566,7 +27566,7 @@
       ]
     },
     {
-      "id": "pei-v6-14-intro",
+      "id": "pei-v6-14-intro-event-node",
       "label": "圍裙晚餐｜新的做法｜前置訊息",
       "type": "action",
       "actions": [
@@ -27604,11 +27604,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-14-image"
+        "pei-v6-14-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-14-image",
+      "id": "pei-v6-14-image-event-node",
       "label": "圍裙晚餐｜新的做法｜原始照片",
       "type": "action",
       "actions": [
@@ -27629,11 +27629,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-14-caption"
+        "pei-v6-14-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-14-caption",
+      "id": "pei-v6-14-caption-event-node",
       "label": "圍裙晚餐｜新的做法｜原始照片說明",
       "type": "action",
       "actions": [
@@ -27850,7 +27850,7 @@
       ]
     },
     {
-      "id": "pei-v6-15-intro",
+      "id": "pei-v6-15-intro-event-node",
       "label": "窗邊｜有話沒說出口｜前置訊息",
       "type": "action",
       "actions": [
@@ -27888,11 +27888,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-15-image"
+        "pei-v6-15-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-15-image",
+      "id": "pei-v6-15-image-event-node",
       "label": "窗邊｜有話沒說出口｜原始照片",
       "type": "action",
       "actions": [
@@ -27913,11 +27913,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-15-caption"
+        "pei-v6-15-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-15-caption",
+      "id": "pei-v6-15-caption-event-node",
       "label": "窗邊｜有話沒說出口｜原始照片說明",
       "type": "action",
       "actions": [
@@ -28142,7 +28142,7 @@
       ]
     },
     {
-      "id": "pei-v6-16-intro",
+      "id": "pei-v6-16-intro-event-node",
       "label": "浴室｜頭髮還沒乾｜前置訊息",
       "type": "action",
       "actions": [
@@ -28185,11 +28185,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-16-image"
+        "pei-v6-16-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-16-image",
+      "id": "pei-v6-16-image-event-node",
       "label": "浴室｜頭髮還沒乾｜原始照片",
       "type": "action",
       "actions": [
@@ -28210,11 +28210,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-16-caption"
+        "pei-v6-16-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-16-caption",
+      "id": "pei-v6-16-caption-event-node",
       "label": "浴室｜頭髮還沒乾｜原始照片說明",
       "type": "action",
       "actions": [
@@ -28447,7 +28447,7 @@
       ]
     },
     {
-      "id": "pei-v6-17-intro",
+      "id": "pei-v6-17-intro-event-node",
       "label": "棉被裡｜今晚想早睡｜前置訊息",
       "type": "action",
       "actions": [
@@ -28485,11 +28485,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-17-image"
+        "pei-v6-17-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-17-image",
+      "id": "pei-v6-17-image-event-node",
       "label": "棉被裡｜今晚想早睡｜原始照片",
       "type": "action",
       "actions": [
@@ -28510,11 +28510,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-17-caption"
+        "pei-v6-17-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-17-caption",
+      "id": "pei-v6-17-caption-event-node",
       "label": "棉被裡｜今晚想早睡｜原始照片說明",
       "type": "action",
       "actions": [
@@ -28731,7 +28731,7 @@
       ]
     },
     {
-      "id": "pei-v6-18-intro",
+      "id": "pei-v6-18-intro-event-node",
       "label": "同學家｜被貓留下｜前置訊息",
       "type": "action",
       "actions": [
@@ -28769,11 +28769,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-18-image"
+        "pei-v6-18-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-18-image",
+      "id": "pei-v6-18-image-event-node",
       "label": "同學家｜被貓留下｜原始照片",
       "type": "action",
       "actions": [
@@ -28794,11 +28794,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-18-caption"
+        "pei-v6-18-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-18-caption",
+      "id": "pei-v6-18-caption-event-node",
       "label": "同學家｜被貓留下｜原始照片說明",
       "type": "action",
       "actions": [
@@ -29015,7 +29015,7 @@
       ]
     },
     {
-      "id": "pei-v6-19-intro",
+      "id": "pei-v6-19-intro-event-node",
       "label": "研究進度｜咖啡當燃料｜前置訊息",
       "type": "action",
       "actions": [
@@ -29053,11 +29053,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-19-image"
+        "pei-v6-19-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-19-image",
+      "id": "pei-v6-19-image-event-node",
       "label": "研究進度｜咖啡當燃料｜原始照片",
       "type": "action",
       "actions": [
@@ -29078,11 +29078,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-19-caption"
+        "pei-v6-19-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-19-caption",
+      "id": "pei-v6-19-caption-event-node",
       "label": "研究進度｜咖啡當燃料｜原始照片說明",
       "type": "action",
       "actions": [
@@ -29299,7 +29299,7 @@
       ]
     },
     {
-      "id": "pei-v6-20-intro",
+      "id": "pei-v6-20-intro-event-node",
       "label": "出門｜鏡子裡的黑色｜前置訊息",
       "type": "action",
       "actions": [
@@ -29337,11 +29337,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-20-image"
+        "pei-v6-20-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-20-image",
+      "id": "pei-v6-20-image-event-node",
       "label": "出門｜鏡子裡的黑色｜原始照片",
       "type": "action",
       "actions": [
@@ -29362,11 +29362,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-20-caption"
+        "pei-v6-20-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-20-caption",
+      "id": "pei-v6-20-caption-event-node",
       "label": "出門｜鏡子裡的黑色｜原始照片說明",
       "type": "action",
       "actions": [
@@ -29583,7 +29583,7 @@
       ]
     },
     {
-      "id": "pei-v6-21-intro",
+      "id": "pei-v6-21-intro-event-node",
       "label": "深夜｜手撐著臉｜前置訊息",
       "type": "action",
       "actions": [
@@ -29621,11 +29621,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-21-image"
+        "pei-v6-21-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-21-image",
+      "id": "pei-v6-21-image-event-node",
       "label": "深夜｜手撐著臉｜原始照片",
       "type": "action",
       "actions": [
@@ -29646,11 +29646,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-21-caption"
+        "pei-v6-21-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-21-caption",
+      "id": "pei-v6-21-caption-event-node",
       "label": "深夜｜手撐著臉｜原始照片說明",
       "type": "action",
       "actions": [
@@ -29875,7 +29875,7 @@
       ]
     },
     {
-      "id": "pei-v6-22-intro",
+      "id": "pei-v6-22-intro-event-node",
       "label": "圖書館｜重看舊書｜前置訊息",
       "type": "action",
       "actions": [
@@ -29913,11 +29913,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-22-image"
+        "pei-v6-22-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-22-image",
+      "id": "pei-v6-22-image-event-node",
       "label": "圖書館｜重看舊書｜原始照片",
       "type": "action",
       "actions": [
@@ -29938,11 +29938,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-22-caption"
+        "pei-v6-22-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-22-caption",
+      "id": "pei-v6-22-caption-event-node",
       "label": "圖書館｜重看舊書｜原始照片說明",
       "type": "action",
       "actions": [
@@ -30159,7 +30159,7 @@
       ]
     },
     {
-      "id": "pei-v6-23-intro",
+      "id": "pei-v6-23-intro-event-node",
       "label": "運動後｜肩膀的痠痛｜前置訊息",
       "type": "action",
       "actions": [
@@ -30202,11 +30202,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-23-image"
+        "pei-v6-23-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-23-image",
+      "id": "pei-v6-23-image-event-node",
       "label": "運動後｜肩膀的痠痛｜原始照片",
       "type": "action",
       "actions": [
@@ -30227,11 +30227,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-23-caption"
+        "pei-v6-23-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-23-caption",
+      "id": "pei-v6-23-caption-event-node",
       "label": "運動後｜肩膀的痠痛｜原始照片說明",
       "type": "action",
       "actions": [
@@ -30466,7 +30466,7 @@
       ]
     },
     {
-      "id": "pei-v6-24-intro",
+      "id": "pei-v6-24-intro-event-node",
       "label": "廚房｜把晚餐做完｜前置訊息",
       "type": "action",
       "actions": [
@@ -30509,11 +30509,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-24-image"
+        "pei-v6-24-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-24-image",
+      "id": "pei-v6-24-image-event-node",
       "label": "廚房｜把晚餐做完｜原始照片",
       "type": "action",
       "actions": [
@@ -30534,11 +30534,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-24-caption"
+        "pei-v6-24-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-24-caption",
+      "id": "pei-v6-24-caption-event-node",
       "label": "廚房｜把晚餐做完｜原始照片說明",
       "type": "action",
       "actions": [
@@ -30773,7 +30773,7 @@
       ]
     },
     {
-      "id": "pei-v6-25-intro",
+      "id": "pei-v6-25-intro-event-node",
       "label": "臥室｜休息十分鐘｜前置訊息",
       "type": "action",
       "actions": [
@@ -30811,11 +30811,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-25-image"
+        "pei-v6-25-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-25-image",
+      "id": "pei-v6-25-image-event-node",
       "label": "臥室｜休息十分鐘｜原始照片",
       "type": "action",
       "actions": [
@@ -30836,11 +30836,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-25-caption"
+        "pei-v6-25-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-25-caption",
+      "id": "pei-v6-25-caption-event-node",
       "label": "臥室｜休息十分鐘｜原始照片說明",
       "type": "action",
       "actions": [
@@ -31057,7 +31057,7 @@
       ]
     },
     {
-      "id": "pei-v6-26-intro",
+      "id": "pei-v6-26-intro-event-node",
       "label": "運動後｜沒說出口的誇獎｜前置訊息",
       "type": "action",
       "actions": [
@@ -31100,11 +31100,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-26-image"
+        "pei-v6-26-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-26-image",
+      "id": "pei-v6-26-image-event-node",
       "label": "運動後｜沒說出口的誇獎｜原始照片",
       "type": "action",
       "actions": [
@@ -31125,11 +31125,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-26-caption"
+        "pei-v6-26-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-26-caption",
+      "id": "pei-v6-26-caption-event-node",
       "label": "運動後｜沒說出口的誇獎｜原始照片說明",
       "type": "action",
       "actions": [
@@ -31364,7 +31364,7 @@
       ]
     },
     {
-      "id": "pei-v6-27-intro",
+      "id": "pei-v6-27-intro-event-node",
       "label": "咖啡店｜耳機裡的歌｜前置訊息",
       "type": "action",
       "actions": [
@@ -31402,11 +31402,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-27-image"
+        "pei-v6-27-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-27-image",
+      "id": "pei-v6-27-image-event-node",
       "label": "咖啡店｜耳機裡的歌｜原始照片",
       "type": "action",
       "actions": [
@@ -31427,11 +31427,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-27-caption"
+        "pei-v6-27-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-27-caption",
+      "id": "pei-v6-27-caption-event-node",
       "label": "咖啡店｜耳機裡的歌｜原始照片說明",
       "type": "action",
       "actions": [
@@ -31648,7 +31648,7 @@
       ]
     },
     {
-      "id": "pei-v6-28-intro",
+      "id": "pei-v6-28-intro-event-node",
       "label": "洗澡後｜想裝作若無其事｜前置訊息",
       "type": "action",
       "actions": [
@@ -31691,11 +31691,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-28-image"
+        "pei-v6-28-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-28-image",
+      "id": "pei-v6-28-image-event-node",
       "label": "洗澡後｜想裝作若無其事｜原始照片",
       "type": "action",
       "actions": [
@@ -31716,11 +31716,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-28-caption"
+        "pei-v6-28-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-28-caption",
+      "id": "pei-v6-28-caption-event-node",
       "label": "洗澡後｜想裝作若無其事｜原始照片說明",
       "type": "action",
       "actions": [
@@ -31955,7 +31955,7 @@
       ]
     },
     {
-      "id": "pei-v6-29-intro",
+      "id": "pei-v6-29-intro-event-node",
       "label": "研究室｜終於整理完｜前置訊息",
       "type": "action",
       "actions": [
@@ -31993,11 +31993,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-29-image"
+        "pei-v6-29-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-29-image",
+      "id": "pei-v6-29-image-event-node",
       "label": "研究室｜終於整理完｜原始照片",
       "type": "action",
       "actions": [
@@ -32018,11 +32018,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-29-caption"
+        "pei-v6-29-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-29-caption",
+      "id": "pei-v6-29-caption-event-node",
       "label": "研究室｜終於整理完｜原始照片說明",
       "type": "action",
       "actions": [
@@ -32239,7 +32239,7 @@
       ]
     },
     {
-      "id": "pei-v6-30-intro",
+      "id": "pei-v6-30-intro-event-node",
       "label": "街角｜關係仍然懸而未決｜前置訊息",
       "type": "action",
       "actions": [
@@ -32277,11 +32277,11 @@
       "actions": [],
       "delayMs": 55000,
       "next": [
-        "pei-v6-30-image"
+        "pei-v6-30-image-event-node"
       ]
     },
     {
-      "id": "pei-v6-30-image",
+      "id": "pei-v6-30-image-event-node",
       "label": "街角｜關係仍然懸而未決｜原始照片",
       "type": "action",
       "actions": [
@@ -32302,11 +32302,11 @@
       "actions": [],
       "delayMs": 45000,
       "next": [
-        "pei-v6-30-caption"
+        "pei-v6-30-caption-event-node"
       ]
     },
     {
-      "id": "pei-v6-30-caption",
+      "id": "pei-v6-30-caption-event-node",
       "label": "街角｜關係仍然懸而未決｜原始照片說明",
       "type": "action",
       "actions": [
@@ -32520,7 +32520,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-01-intro"
+        "pei-v6-01-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32530,7 +32530,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-02-intro"
+        "pei-v6-02-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32540,7 +32540,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-03-intro"
+        "pei-v6-03-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32550,7 +32550,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-04-intro"
+        "pei-v6-04-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32560,7 +32560,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-05-intro"
+        "pei-v6-05-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32570,7 +32570,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-06-intro"
+        "pei-v6-06-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32580,7 +32580,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-07-intro"
+        "pei-v6-07-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32590,7 +32590,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-08-intro"
+        "pei-v6-08-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32600,7 +32600,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-09-intro"
+        "pei-v6-09-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32610,7 +32610,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-10-intro"
+        "pei-v6-10-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32620,7 +32620,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-11-intro"
+        "pei-v6-11-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32630,7 +32630,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-12-intro"
+        "pei-v6-12-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32640,7 +32640,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-13-intro"
+        "pei-v6-13-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32650,7 +32650,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-14-intro"
+        "pei-v6-14-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32660,7 +32660,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-15-intro"
+        "pei-v6-15-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32670,7 +32670,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-16-intro"
+        "pei-v6-16-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32680,7 +32680,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-17-intro"
+        "pei-v6-17-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32690,7 +32690,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-18-intro"
+        "pei-v6-18-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32700,7 +32700,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-19-intro"
+        "pei-v6-19-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32710,7 +32710,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-20-intro"
+        "pei-v6-20-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32720,7 +32720,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-21-intro"
+        "pei-v6-21-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32730,7 +32730,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-22-intro"
+        "pei-v6-22-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32740,7 +32740,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-23-intro"
+        "pei-v6-23-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32750,7 +32750,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-24-intro"
+        "pei-v6-24-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32760,7 +32760,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-25-intro"
+        "pei-v6-25-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32770,7 +32770,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-26-intro"
+        "pei-v6-26-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32780,7 +32780,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-27-intro"
+        "pei-v6-27-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32790,7 +32790,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-28-intro"
+        "pei-v6-28-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32800,7 +32800,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-29-intro"
+        "pei-v6-29-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32810,7 +32810,7 @@
       "label": "照片事件跨日等待與生活進度｜第二日",
       "actions": [],
       "next": [
-        "pei-v6-30-intro"
+        "pei-v6-30-intro-event-node"
       ],
       "delayMs": 86400000
     },
@@ -32820,12 +32820,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-01-lead"
+        "b3-photo-qi_ye-01-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-01-lead",
+      "id": "b3-photo-qi_ye-01-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_night_view",
       "actions": [
@@ -32857,12 +32857,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-01-image"
+        "b3-photo-qi_ye-01-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-01-image",
+      "id": "b3-photo-qi_ye-01-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -33103,12 +33103,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-02-lead"
+        "b3-photo-qi_ye-02-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-02-lead",
+      "id": "b3-photo-qi_ye-02-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_weekend_sport",
       "actions": [
@@ -33140,12 +33140,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-02-image"
+        "b3-photo-qi_ye-02-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-02-image",
+      "id": "b3-photo-qi_ye-02-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -33377,12 +33377,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-03-lead"
+        "b3-photo-qi_ye-03-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-03-lead",
+      "id": "b3-photo-qi_ye-03-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_parked_car_selfie",
       "actions": [
@@ -33414,12 +33414,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-03-image"
+        "b3-photo-qi_ye-03-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-03-image",
+      "id": "b3-photo-qi_ye-03-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -33651,12 +33651,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-04-lead"
+        "b3-photo-qi_ye-04-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-04-lead",
+      "id": "b3-photo-qi_ye-04-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_postgame_sweat",
       "actions": [
@@ -33688,12 +33688,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-04-image"
+        "b3-photo-qi_ye-04-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-04-image",
+      "id": "b3-photo-qi_ye-04-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -33928,12 +33928,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-05-lead"
+        "b3-photo-qi_ye-05-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-05-lead",
+      "id": "b3-photo-qi_ye-05-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_design_desk",
       "actions": [
@@ -33965,12 +33965,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-05-image"
+        "b3-photo-qi_ye-05-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-05-image",
+      "id": "b3-photo-qi_ye-05-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -34205,12 +34205,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-06-lead"
+        "b3-photo-qi_ye-06-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-06-lead",
+      "id": "b3-photo-qi_ye-06-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_outfit_mirror",
       "actions": [
@@ -34242,12 +34242,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-06-image"
+        "b3-photo-qi_ye-06-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-06-image",
+      "id": "b3-photo-qi_ye-06-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -34479,12 +34479,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-07-lead"
+        "b3-photo-qi_ye-07-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-07-lead",
+      "id": "b3-photo-qi_ye-07-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_night_burger",
       "actions": [
@@ -34516,12 +34516,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-07-image"
+        "b3-photo-qi_ye-07-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-07-image",
+      "id": "b3-photo-qi_ye-07-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -34753,12 +34753,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-08-lead"
+        "b3-photo-qi_ye-08-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-08-lead",
+      "id": "b3-photo-qi_ye-08-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_late_sofa",
       "actions": [
@@ -34790,12 +34790,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-08-image"
+        "b3-photo-qi_ye-08-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-08-image",
+      "id": "b3-photo-qi_ye-08-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -35030,12 +35030,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-09-lead"
+        "b3-photo-qi_ye-09-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-09-lead",
+      "id": "b3-photo-qi_ye-09-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_camera_detail",
       "actions": [
@@ -35067,12 +35067,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-09-image"
+        "b3-photo-qi_ye-09-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-09-image",
+      "id": "b3-photo-qi_ye-09-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -35304,12 +35304,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-10-lead"
+        "b3-photo-qi_ye-10-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-10-lead",
+      "id": "b3-photo-qi_ye-10-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_batch01_skate_break",
       "actions": [
@@ -35341,12 +35341,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-10-image"
+        "b3-photo-qi_ye-10-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-10-image",
+      "id": "b3-photo-qi_ye-10-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -35578,12 +35578,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-11-lead"
+        "b3-photo-qi_ye-11-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-11-lead",
+      "id": "b3-photo-qi_ye-11-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_parked_car",
       "actions": [
@@ -35615,12 +35615,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-11-image"
+        "b3-photo-qi_ye-11-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-11-image",
+      "id": "b3-photo-qi_ye-11-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -35855,12 +35855,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-12-lead"
+        "b3-photo-qi_ye-12-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-12-lead",
+      "id": "b3-photo-qi_ye-12-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_basketball_rest",
       "actions": [
@@ -35892,12 +35892,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-12-image"
+        "b3-photo-qi_ye-12-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-12-image",
+      "id": "b3-photo-qi_ye-12-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -36129,12 +36129,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-13-lead"
+        "b3-photo-qi_ye-13-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-13-lead",
+      "id": "b3-photo-qi_ye-13-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_basketball_after",
       "actions": [
@@ -36166,12 +36166,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-13-image"
+        "b3-photo-qi_ye-13-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-13-image",
+      "id": "b3-photo-qi_ye-13-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -36403,12 +36403,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-14-lead"
+        "b3-photo-qi_ye-14-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-14-lead",
+      "id": "b3-photo-qi_ye-14-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_headphones_car",
       "actions": [
@@ -36440,12 +36440,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-14-image"
+        "b3-photo-qi_ye-14-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-14-image",
+      "id": "b3-photo-qi_ye-14-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -36677,12 +36677,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-15-lead"
+        "b3-photo-qi_ye-15-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-15-lead",
+      "id": "b3-photo-qi_ye-15-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_parking_wait",
       "actions": [
@@ -36714,12 +36714,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-15-image"
+        "b3-photo-qi_ye-15-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-15-image",
+      "id": "b3-photo-qi_ye-15-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -36951,12 +36951,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-16-lead"
+        "b3-photo-qi_ye-16-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-16-lead",
+      "id": "b3-photo-qi_ye-16-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_night_car",
       "actions": [
@@ -36988,12 +36988,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-16-image"
+        "b3-photo-qi_ye-16-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-16-image",
+      "id": "b3-photo-qi_ye-16-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -37228,12 +37228,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-17-lead"
+        "b3-photo-qi_ye-17-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-17-lead",
+      "id": "b3-photo-qi_ye-17-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_sofa_rest",
       "actions": [
@@ -37265,12 +37265,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-17-image"
+        "b3-photo-qi_ye-17-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-17-image",
+      "id": "b3-photo-qi_ye-17-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -37505,12 +37505,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-18-lead"
+        "b3-photo-qi_ye-18-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-18-lead",
+      "id": "b3-photo-qi_ye-18-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_hoodie_street",
       "actions": [
@@ -37542,12 +37542,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-18-image"
+        "b3-photo-qi_ye-18-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-18-image",
+      "id": "b3-photo-qi_ye-18-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -37782,12 +37782,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-19-lead"
+        "b3-photo-qi_ye-19-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-19-lead",
+      "id": "b3-photo-qi_ye-19-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_daytime_car",
       "actions": [
@@ -37819,12 +37819,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-19-image"
+        "b3-photo-qi_ye-19-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-19-image",
+      "id": "b3-photo-qi_ye-19-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -38056,12 +38056,12 @@
       "label": "祁野｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-20-lead"
+        "b3-photo-qi_ye-20-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-qi_ye-20-lead",
+      "id": "b3-photo-qi_ye-20-lead-event-node",
       "type": "action",
       "label": "祁野｜photo_qi_v6_late_night_car",
       "actions": [
@@ -38093,12 +38093,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-qi_ye-20-image"
+        "b3-photo-qi_ye-20-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-qi_ye-20-image",
+      "id": "b3-photo-qi_ye-20-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -38322,12 +38322,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-03-lead"
+        "b3-photo-shen_yanzhou-03-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-03-lead",
+      "id": "b3-photo-shen_yanzhou-03-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_dorm_morning_selfie",
       "actions": [
@@ -38359,12 +38359,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-03-image"
+        "b3-photo-shen_yanzhou-03-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-03-image",
+      "id": "b3-photo-shen_yanzhou-03-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -38384,12 +38384,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-03-caption"
+        "b3-photo-shen_yanzhou-03-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-03-caption",
+      "id": "b3-photo-shen_yanzhou-03-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -38633,12 +38633,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-04-lead"
+        "b3-photo-shen_yanzhou-04-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-04-lead",
+      "id": "b3-photo-shen_yanzhou-04-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_classroom_bored_selfie",
       "actions": [
@@ -38670,12 +38670,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-04-image"
+        "b3-photo-shen_yanzhou-04-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-04-image",
+      "id": "b3-photo-shen_yanzhou-04-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -38695,12 +38695,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-04-caption"
+        "b3-photo-shen_yanzhou-04-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-04-caption",
+      "id": "b3-photo-shen_yanzhou-04-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -38935,12 +38935,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-05-lead"
+        "b3-photo-shen_yanzhou-05-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-05-lead",
+      "id": "b3-photo-shen_yanzhou-05-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_gym_mirror_selfie",
       "actions": [
@@ -38972,12 +38972,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-05-image"
+        "b3-photo-shen_yanzhou-05-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-05-image",
+      "id": "b3-photo-shen_yanzhou-05-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -38997,12 +38997,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-05-caption"
+        "b3-photo-shen_yanzhou-05-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-05-caption",
+      "id": "b3-photo-shen_yanzhou-05-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -39237,12 +39237,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-06-lead"
+        "b3-photo-shen_yanzhou-06-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-06-lead",
+      "id": "b3-photo-shen_yanzhou-06-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_cafe_editing_break",
       "actions": [
@@ -39274,12 +39274,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-06-image"
+        "b3-photo-shen_yanzhou-06-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-06-image",
+      "id": "b3-photo-shen_yanzhou-06-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -39299,12 +39299,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-06-caption"
+        "b3-photo-shen_yanzhou-06-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-06-caption",
+      "id": "b3-photo-shen_yanzhou-06-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -39539,12 +39539,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-07-lead"
+        "b3-photo-shen_yanzhou-07-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-07-lead",
+      "id": "b3-photo-shen_yanzhou-07-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_basketball_sunset_selfie",
       "actions": [
@@ -39576,12 +39576,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-07-image"
+        "b3-photo-shen_yanzhou-07-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-07-image",
+      "id": "b3-photo-shen_yanzhou-07-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -39601,12 +39601,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-07-caption"
+        "b3-photo-shen_yanzhou-07-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-07-caption",
+      "id": "b3-photo-shen_yanzhou-07-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -39841,12 +39841,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-08-lead"
+        "b3-photo-shen_yanzhou-08-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-08-lead",
+      "id": "b3-photo-shen_yanzhou-08-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_elevator_outfit_selfie",
       "actions": [
@@ -39878,12 +39878,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-08-image"
+        "b3-photo-shen_yanzhou-08-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-08-image",
+      "id": "b3-photo-shen_yanzhou-08-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -39903,12 +39903,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-08-caption"
+        "b3-photo-shen_yanzhou-08-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-08-caption",
+      "id": "b3-photo-shen_yanzhou-08-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -40143,12 +40143,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-09-lead"
+        "b3-photo-shen_yanzhou-09-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-09-lead",
+      "id": "b3-photo-shen_yanzhou-09-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_convenience_store_night_selfie",
       "actions": [
@@ -40180,12 +40180,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-09-image"
+        "b3-photo-shen_yanzhou-09-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-09-image",
+      "id": "b3-photo-shen_yanzhou-09-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -40205,12 +40205,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-09-caption"
+        "b3-photo-shen_yanzhou-09-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-09-caption",
+      "id": "b3-photo-shen_yanzhou-09-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -40445,12 +40445,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-10-lead"
+        "b3-photo-shen_yanzhou-10-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-10-lead",
+      "id": "b3-photo-shen_yanzhou-10-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_rainy_neon_selfie",
       "actions": [
@@ -40482,12 +40482,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-10-image"
+        "b3-photo-shen_yanzhou-10-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-10-image",
+      "id": "b3-photo-shen_yanzhou-10-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -40507,12 +40507,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-10-caption"
+        "b3-photo-shen_yanzhou-10-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-10-caption",
+      "id": "b3-photo-shen_yanzhou-10-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -40747,12 +40747,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-11-lead"
+        "b3-photo-shen_yanzhou-11-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-11-lead",
+      "id": "b3-photo-shen_yanzhou-11-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_izakaya_friends_selfie",
       "actions": [
@@ -40784,12 +40784,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-11-image"
+        "b3-photo-shen_yanzhou-11-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-11-image",
+      "id": "b3-photo-shen_yanzhou-11-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -40809,12 +40809,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-11-caption"
+        "b3-photo-shen_yanzhou-11-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-11-caption",
+      "id": "b3-photo-shen_yanzhou-11-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -41049,12 +41049,12 @@
       "label": "沈硯舟｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-12-lead"
+        "b3-photo-shen_yanzhou-12-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-shen_yanzhou-12-lead",
+      "id": "b3-photo-shen_yanzhou-12-lead-event-node",
       "type": "action",
       "label": "沈硯舟｜photo_shen_batch01_late_night_desk_selfie",
       "actions": [
@@ -41086,12 +41086,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-12-image"
+        "b3-photo-shen_yanzhou-12-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-shen_yanzhou-12-image",
+      "id": "b3-photo-shen_yanzhou-12-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -41111,12 +41111,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-shen_yanzhou-12-caption"
+        "b3-photo-shen_yanzhou-12-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-shen_yanzhou-12-caption",
+      "id": "b3-photo-shen_yanzhou-12-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -41346,12 +41346,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-01-lead"
+        "b3-photo-gu_shian-01-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-01-lead",
+      "id": "b3-photo-gu_shian-01-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_morning_breakfast",
       "actions": [
@@ -41388,12 +41388,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-01-image"
+        "b3-photo-gu_shian-01-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-01-image",
+      "id": "b3-photo-gu_shian-01-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -41413,12 +41413,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-01-caption"
+        "b3-photo-gu_shian-01-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-01-caption",
+      "id": "b3-photo-gu_shian-01-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -41662,12 +41662,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-02-lead"
+        "b3-photo-gu_shian-02-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-02-lead",
+      "id": "b3-photo-gu_shian-02-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_design_review",
       "actions": [
@@ -41704,12 +41704,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-02-image"
+        "b3-photo-gu_shian-02-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-02-image",
+      "id": "b3-photo-gu_shian-02-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -41729,12 +41729,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-02-caption"
+        "b3-photo-gu_shian-02-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-02-caption",
+      "id": "b3-photo-gu_shian-02-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -41969,12 +41969,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-03-lead"
+        "b3-photo-gu_shian-03-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-03-lead",
+      "id": "b3-photo-gu_shian-03-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_dog_selfie",
       "actions": [
@@ -42011,12 +42011,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-03-image"
+        "b3-photo-gu_shian-03-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-03-image",
+      "id": "b3-photo-gu_shian-03-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -42036,12 +42036,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-03-caption"
+        "b3-photo-gu_shian-03-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-03-caption",
+      "id": "b3-photo-gu_shian-03-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -42273,12 +42273,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-04-lead"
+        "b3-photo-gu_shian-04-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-04-lead",
+      "id": "b3-photo-gu_shian-04-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_office_mirror",
       "actions": [
@@ -42315,12 +42315,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-04-image"
+        "b3-photo-gu_shian-04-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-04-image",
+      "id": "b3-photo-gu_shian-04-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -42340,12 +42340,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-04-caption"
+        "b3-photo-gu_shian-04-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-04-caption",
+      "id": "b3-photo-gu_shian-04-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -42580,12 +42580,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-05-lead"
+        "b3-photo-gu_shian-05-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-05-lead",
+      "id": "b3-photo-gu_shian-05-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_workout_story",
       "actions": [
@@ -42622,12 +42622,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-05-image"
+        "b3-photo-gu_shian-05-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-05-image",
+      "id": "b3-photo-gu_shian-05-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -42862,12 +42862,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-06-lead"
+        "b3-photo-gu_shian-06-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-06-lead",
+      "id": "b3-photo-gu_shian-06-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_dog_walk_story",
       "actions": [
@@ -42904,12 +42904,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-06-image"
+        "b3-photo-gu_shian-06-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-06-image",
+      "id": "b3-photo-gu_shian-06-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -43141,12 +43141,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-07-lead"
+        "b3-photo-gu_shian-07-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-07-lead",
+      "id": "b3-photo-gu_shian-07-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_cooking_story",
       "actions": [
@@ -43183,12 +43183,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-07-image"
+        "b3-photo-gu_shian-07-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-07-image",
+      "id": "b3-photo-gu_shian-07-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -43420,12 +43420,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-08-lead"
+        "b3-photo-gu_shian-08-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-08-lead",
+      "id": "b3-photo-gu_shian-08-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_architecture_light_post",
       "actions": [
@@ -43462,12 +43462,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-08-image"
+        "b3-photo-gu_shian-08-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-08-image",
+      "id": "b3-photo-gu_shian-08-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -43699,12 +43699,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-09-lead"
+        "b3-photo-gu_shian-09-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-09-lead",
+      "id": "b3-photo-gu_shian-09-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_sunset_post",
       "actions": [
@@ -43741,12 +43741,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-09-image"
+        "b3-photo-gu_shian-09-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-09-image",
+      "id": "b3-photo-gu_shian-09-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -43978,12 +43978,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-10-lead"
+        "b3-photo-gu_shian-10-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-10-lead",
+      "id": "b3-photo-gu_shian-10-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch01_cafe_portrait_post",
       "actions": [
@@ -44020,12 +44020,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-10-image"
+        "b3-photo-gu_shian-10-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-10-image",
+      "id": "b3-photo-gu_shian-10-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -44257,12 +44257,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-11-lead"
+        "b3-photo-gu_shian-11-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-11-lead",
+      "id": "b3-photo-gu_shian-11-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_parked_car_selfie",
       "actions": [
@@ -44299,12 +44299,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-11-image"
+        "b3-photo-gu_shian-11-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-11-image",
+      "id": "b3-photo-gu_shian-11-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -44324,12 +44324,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-11-caption"
+        "b3-photo-gu_shian-11-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-11-caption",
+      "id": "b3-photo-gu_shian-11-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -44564,12 +44564,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-12-lead"
+        "b3-photo-gu_shian-12-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-12-lead",
+      "id": "b3-photo-gu_shian-12-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_site_check",
       "actions": [
@@ -44606,12 +44606,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-12-image"
+        "b3-photo-gu_shian-12-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-12-image",
+      "id": "b3-photo-gu_shian-12-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -44631,12 +44631,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-12-caption"
+        "b3-photo-gu_shian-12-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-12-caption",
+      "id": "b3-photo-gu_shian-12-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -44868,12 +44868,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-13-lead"
+        "b3-photo-gu_shian-13-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-13-lead",
+      "id": "b3-photo-gu_shian-13-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_dog_cuddle",
       "actions": [
@@ -44910,12 +44910,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-13-image"
+        "b3-photo-gu_shian-13-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-13-image",
+      "id": "b3-photo-gu_shian-13-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -44935,12 +44935,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-13-caption"
+        "b3-photo-gu_shian-13-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-13-caption",
+      "id": "b3-photo-gu_shian-13-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -45172,12 +45172,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-14-lead"
+        "b3-photo-gu_shian-14-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-14-lead",
+      "id": "b3-photo-gu_shian-14-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_desk_sketch",
       "actions": [
@@ -45214,12 +45214,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-14-image"
+        "b3-photo-gu_shian-14-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-14-image",
+      "id": "b3-photo-gu_shian-14-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -45239,12 +45239,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-14-caption"
+        "b3-photo-gu_shian-14-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-gu_shian-14-caption",
+      "id": "b3-photo-gu_shian-14-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -45479,12 +45479,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-15-lead"
+        "b3-photo-gu_shian-15-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-15-lead",
+      "id": "b3-photo-gu_shian-15-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_climbing_story",
       "actions": [
@@ -45521,12 +45521,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-15-image"
+        "b3-photo-gu_shian-15-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-15-image",
+      "id": "b3-photo-gu_shian-15-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -45758,12 +45758,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-16-lead"
+        "b3-photo-gu_shian-16-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-16-lead",
+      "id": "b3-photo-gu_shian-16-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_clam_pasta_story",
       "actions": [
@@ -45800,12 +45800,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-16-image"
+        "b3-photo-gu_shian-16-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-16-image",
+      "id": "b3-photo-gu_shian-16-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -46037,12 +46037,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-17-lead"
+        "b3-photo-gu_shian-17-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-17-lead",
+      "id": "b3-photo-gu_shian-17-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_riverside_sunset_story",
       "actions": [
@@ -46079,12 +46079,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-17-image"
+        "b3-photo-gu_shian-17-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-17-image",
+      "id": "b3-photo-gu_shian-17-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -46316,12 +46316,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-18-lead"
+        "b3-photo-gu_shian-18-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-18-lead",
+      "id": "b3-photo-gu_shian-18-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_wood_exhibit_post",
       "actions": [
@@ -46358,12 +46358,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-18-image"
+        "b3-photo-gu_shian-18-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-18-image",
+      "id": "b3-photo-gu_shian-18-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -46595,12 +46595,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-19-lead"
+        "b3-photo-gu_shian-19-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-19-lead",
+      "id": "b3-photo-gu_shian-19-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_mountain_hike_post",
       "actions": [
@@ -46637,12 +46637,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-19-image"
+        "b3-photo-gu_shian-19-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-19-image",
+      "id": "b3-photo-gu_shian-19-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -46874,12 +46874,12 @@
       "label": "顧時安｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-20-lead"
+        "b3-photo-gu_shian-20-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-gu_shian-20-lead",
+      "id": "b3-photo-gu_shian-20-lead-event-node",
       "type": "action",
       "label": "顧時安｜photo_gu_batch02_coffee_camera_post",
       "actions": [
@@ -46916,12 +46916,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-gu_shian-20-image"
+        "b3-photo-gu_shian-20-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-gu_shian-20-image",
+      "id": "b3-photo-gu_shian-20-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -47145,12 +47145,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-01-lead"
+        "b3-photo-lu_chenchuan-01-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-01-lead",
+      "id": "b3-photo-lu_chenchuan-01-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_off_duty",
       "actions": [
@@ -47187,12 +47187,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-01-image"
+        "b3-photo-lu_chenchuan-01-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-01-image",
+      "id": "b3-photo-lu_chenchuan-01-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -47212,12 +47212,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-01-caption"
+        "b3-photo-lu_chenchuan-01-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-01-caption",
+      "id": "b3-photo-lu_chenchuan-01-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -47461,12 +47461,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-02-lead"
+        "b3-photo-lu_chenchuan-02-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-02-lead",
+      "id": "b3-photo-lu_chenchuan-02-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_office_evening",
       "actions": [
@@ -47503,12 +47503,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-02-image"
+        "b3-photo-lu_chenchuan-02-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-02-image",
+      "id": "b3-photo-lu_chenchuan-02-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -47528,12 +47528,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-02-caption"
+        "b3-photo-lu_chenchuan-02-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-02-caption",
+      "id": "b3-photo-lu_chenchuan-02-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -47765,12 +47765,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-03-lead"
+        "b3-photo-lu_chenchuan-03-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-03-lead",
+      "id": "b3-photo-lu_chenchuan-03-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_home_dinner",
       "actions": [
@@ -47807,12 +47807,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-03-image"
+        "b3-photo-lu_chenchuan-03-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-03-image",
+      "id": "b3-photo-lu_chenchuan-03-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -47832,12 +47832,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-03-caption"
+        "b3-photo-lu_chenchuan-03-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-03-caption",
+      "id": "b3-photo-lu_chenchuan-03-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -48069,12 +48069,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-04-lead"
+        "b3-photo-lu_chenchuan-04-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-04-lead",
+      "id": "b3-photo-lu_chenchuan-04-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_piano_evening",
       "actions": [
@@ -48111,12 +48111,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-04-image"
+        "b3-photo-lu_chenchuan-04-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-04-image",
+      "id": "b3-photo-lu_chenchuan-04-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -48136,12 +48136,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-04-caption"
+        "b3-photo-lu_chenchuan-04-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-04-caption",
+      "id": "b3-photo-lu_chenchuan-04-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -48373,12 +48373,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-05-lead"
+        "b3-photo-lu_chenchuan-05-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-05-lead",
+      "id": "b3-photo-lu_chenchuan-05-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_gym_selfie",
       "actions": [
@@ -48415,12 +48415,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-05-image"
+        "b3-photo-lu_chenchuan-05-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-05-image",
+      "id": "b3-photo-lu_chenchuan-05-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -48440,12 +48440,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-05-caption"
+        "b3-photo-lu_chenchuan-05-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-05-caption",
+      "id": "b3-photo-lu_chenchuan-05-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -48677,12 +48677,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-06-lead"
+        "b3-photo-lu_chenchuan-06-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-06-lead",
+      "id": "b3-photo-lu_chenchuan-06-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_friend_dinner",
       "actions": [
@@ -48719,12 +48719,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-06-image"
+        "b3-photo-lu_chenchuan-06-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-06-image",
+      "id": "b3-photo-lu_chenchuan-06-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -48744,12 +48744,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-06-caption"
+        "b3-photo-lu_chenchuan-06-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-06-caption",
+      "id": "b3-photo-lu_chenchuan-06-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -48981,12 +48981,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-07-lead"
+        "b3-photo-lu_chenchuan-07-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-07-lead",
+      "id": "b3-photo-lu_chenchuan-07-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_sunset_walk",
       "actions": [
@@ -49023,12 +49023,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-07-image"
+        "b3-photo-lu_chenchuan-07-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-07-image",
+      "id": "b3-photo-lu_chenchuan-07-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -49048,12 +49048,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-07-caption"
+        "b3-photo-lu_chenchuan-07-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-07-caption",
+      "id": "b3-photo-lu_chenchuan-07-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -49285,12 +49285,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-08-lead"
+        "b3-photo-lu_chenchuan-08-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-08-lead",
+      "id": "b3-photo-lu_chenchuan-08-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_friends_cat",
       "actions": [
@@ -49327,12 +49327,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-08-image"
+        "b3-photo-lu_chenchuan-08-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-08-image",
+      "id": "b3-photo-lu_chenchuan-08-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -49352,12 +49352,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-08-caption"
+        "b3-photo-lu_chenchuan-08-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-08-caption",
+      "id": "b3-photo-lu_chenchuan-08-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -49589,12 +49589,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-09-lead"
+        "b3-photo-lu_chenchuan-09-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-09-lead",
+      "id": "b3-photo-lu_chenchuan-09-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_coffee_break",
       "actions": [
@@ -49631,12 +49631,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-09-image"
+        "b3-photo-lu_chenchuan-09-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-09-image",
+      "id": "b3-photo-lu_chenchuan-09-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -49656,12 +49656,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-09-caption"
+        "b3-photo-lu_chenchuan-09-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-09-caption",
+      "id": "b3-photo-lu_chenchuan-09-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
@@ -49893,12 +49893,12 @@
       "label": "陸沉川｜生活事件間隔",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-10-lead"
+        "b3-photo-lu_chenchuan-10-lead-event-node"
       ],
       "delayMs": 86400000
     },
     {
-      "id": "b3-photo-lu_chenchuan-10-lead",
+      "id": "b3-photo-lu_chenchuan-10-lead-event-node",
       "type": "action",
       "label": "陸沉川｜photo_lu_quiet_night",
       "actions": [
@@ -49935,12 +49935,12 @@
       "label": "傳送照片前停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-10-image"
+        "b3-photo-lu_chenchuan-10-image-event-node"
       ],
       "delayMs": 50000
     },
     {
-      "id": "b3-photo-lu_chenchuan-10-image",
+      "id": "b3-photo-lu_chenchuan-10-image-event-node",
       "type": "action",
       "label": "原始照片",
       "actions": [
@@ -49960,12 +49960,12 @@
       "label": "照片說明停頓",
       "actions": [],
       "next": [
-        "b3-photo-lu_chenchuan-10-caption"
+        "b3-photo-lu_chenchuan-10-caption-event-node"
       ],
       "delayMs": 30000
     },
     {
-      "id": "b3-photo-lu_chenchuan-10-caption",
+      "id": "b3-photo-lu_chenchuan-10-caption-event-node",
       "type": "action",
       "label": "照片說明",
       "actions": [
