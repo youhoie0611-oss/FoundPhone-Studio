@@ -130,7 +130,12 @@ function runQueue(
       .map((item) => item!.title);
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
     const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
-    const blocked = incomingThreads.some((thread) => {
+    // 《磚3》：玩家點選劇情分支後的直接回覆遵循劇情自身的 delayMs。
+    // 自主開場及未經玩家選擇的訊息仍受防洗版節流限制。
+    const directBrick3ChoiceReply =
+      w.title.trim() === "磚3" &&
+      /(?:-choice-[a-z0-9_]+-reply|-reply-node-[a-z0-9_]+)$/.test(n.id);
+    const blocked = !directBrick3ChoiceReply && incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
       const playerTime = recentPlayerReplies[thread];
       const playerElapsed = playerTime === undefined ? undefined : Number(playerTime);
