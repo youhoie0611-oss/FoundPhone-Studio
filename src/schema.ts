@@ -121,7 +121,8 @@ export const workSchema = z.object({
     )
     .max(100),
   data: z.record(z.string(), z.array(itemSchema).max(20000)),
-  nodes: z.array(nodeSchema).max(2000),
+  // 《磚3》的分歧對話與照片事件數已超過 2,000；僅提高資料容量，不更動引擎行為。
+  nodes: z.array(nodeSchema).max(5000),
   variables: z.record(
     z.string(),
     z.union([z.string(), z.number(), z.boolean()]),
