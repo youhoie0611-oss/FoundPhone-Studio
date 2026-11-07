@@ -16,7 +16,7 @@ export type Brick3InviteProgress = {
   followUpSent?: boolean;
   followUpVariant?: number;
   detailRequests?: number;
-  /** Pei may send a separate anxious follow-up after a soft refusal. */
+  /** Legacy timers from older saves; no new pressure messages are scheduled on refusal. */
   anxiousFollowUpAtMs?: number;
   anxiousFollowUpStep?: number;
   /** Queued Pei KKT bubbles; delivered by game time, even with the chat closed. */
@@ -153,23 +153,29 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
   for (const a of keys) {
     if (!allowed(w, s, a)) continue;
     const p = progressFor(s, a);
-    if (a.id === "pei_dinner_outing") tickPeiQueue(s, a, p);
+    if (a.id === "pei_dinner_outing") {
+      const boundary = (s.messages.kakao ?? []).some(m => m.title === a.characterName &&
+        m.outgoing && /不要再聯絡|別再聯絡|不想再聯絡|不要再找我|別找我|不要再傳|封鎖/.test(m.body));
+      if (boundary) {
+        // A pending choice or an old-save timer cannot override no contact.
+        p.peiQueue = undefined;
+        p.anxiousFollowUpAtMs = undefined;
+        p.anxiousFollowUpStep = undefined;
+        s.choices = s.choices.filter(choice => !choice.target.startsWith(choicePrefix(a.id)) &&
+          !choice.target.startsWith(choicePrefix(a.id + "_arrival")));
+        if (!p.completed) { p.phase = "idle"; p.retryAtMs = Infinity; }
+        continue;
+      }
+      tickPeiQueue(s, a, p);
+    }
     if (!p.completed && s.unlocked.includes(oncePhotoId(a))) {
       p.completed = true; // Existing save: do not invite again for a collected photo.
       p.phase = "completed";
     }
-    if (a.id === "pei_dinner_outing" && p.anxiousFollowUpAtMs !== undefined &&
-        now(s) >= p.anxiousFollowUpAtMs) {
-      const step = p.anxiousFollowUpStep ?? 0;
-      const lines = [
-        "妳還在嗎\\n我剛剛又看了一次妳的訊息\\n妳是不是不想再見我了",
-        "我真的很想妳\\n妳可以再跟我說一句話嗎\\n不要就這樣不理我",
-      ];
-      speak(s, a, "anxious-followup-" + p.attempts + "-" + step,
-        lines[step].replace(/\\n/g, "\n"));
-      p.anxiousFollowUpStep = step + 1;
-      p.anxiousFollowUpAtMs = step === 0 ? now(s) + 45000 : undefined;
-      continue;
+    if (a.id === "pei_dinner_outing" && p.anxiousFollowUpAtMs !== undefined) {
+      // Migration: discard older rejected-invitation nagging timers.
+      p.anxiousFollowUpAtMs = undefined;
+      p.anxiousFollowUpStep = undefined;
     }
     if (p.completed) {
       if (!p.followUpSent && p.followUpAtMs !== undefined && now(s) >= p.followUpAtMs) {
@@ -206,9 +212,10 @@ export function tickBrick3Invitations(w: Work, s: Runtime): Runtime {
         p.followUpAtMs = now(s) + hours * 3600000;
       } else if (mode === "arrival_no" || mode === "decline") {
         deferNext(s, a, p);
-        if (a.id === "pei_dinner_outing" && mode === "decline") {
-          p.anxiousFollowUpStep = 0;
-          p.anxiousFollowUpAtMs = now(s) + 15000;
+        // The player's "not now" means no repeated pressure after 15 seconds.
+        if (a.id === "pei_dinner_outing") {
+          p.anxiousFollowUpStep = undefined;
+          p.anxiousFollowUpAtMs = undefined;
         }
       }
       p.responseMode = undefined;
