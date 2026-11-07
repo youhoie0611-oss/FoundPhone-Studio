@@ -1,23 +1,14 @@
-.brick3-relation-shortcut{position:absolute;top:72px;right:12px;z-index:25;border:1px solid rgba(255,255,255,.55);border-radius:14px;padding:9px 12px;background:rgba(22,22,30,.68);color:white;font-size:12px;backdrop-filter:blur(12px)}
-.brick3-relation-overlay{position:absolute;inset:48px 8px 28px;z-index:70;overflow:auto;border-radius:24px;background:#f7f5f3;color:#24242c;padding:18px;box-shadow:0 8px 36px #0006;font-size:13px}
-.brick3-relation-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:17px}
-.brick3-relation-heading button,.brick3-relation-card button,.brick3-relation-undo{border:0;background:#e8e2ec;color:#42304c;border-radius:10px;padding:9px 11px;font-size:12px}
-.brick3-relation-overlay>p{line-height:1.5;color:#666;margin-bottom:14px}
-.brick3-relation-card{display:flex;flex-direction:column;gap:6px;margin:9px 0;padding:12px 14px;border-radius:14px;background:white;box-shadow:0 1px 4px #0001}
-.brick3-relation-card strong{font-size:15px}
-.brick3-relation-card small{color:#666}
-.brick3-relation-card p{line-height:1.5;color:#45404c;margin:5px 0}
-.brick3-relation-card button{align-self:flex-start}
-.brick3-relation-undo{width:100%;margin-bottom:10px}
-
-.brick3-relation-recovery{margin:12px 0;padding:14px;background:#fff3df;border-radius:14px}
-.brick3-relation-recovery p{font-size:12px;line-height:1.5}
-.brick3-relation-recovery>div{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:8px 0}
-.brick3-relation-recovery button{border:0;border-radius:8px;padding:8px;background:#e7d7c5;font-size:11px}
-
-.brick3-relation-intimacy{background:#fff;border-radius:14px;padding:14px;margin:14px 0;display:flex;flex-direction:column;gap:8px}
-.brick3-relation-intimacy>p{font-size:12px;color:#666;line-height:1.5;margin:0}
-.brick3-relation-intimacy>div{padding:8px 0;border-top:1px solid #eee;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
-.brick3-relation-intimacy>div strong{font-size:13px}
-.brick3-relation-intimacy button{border:0;border-radius:8px;background:#eee5ed;color:#49384d;padding:8px 12px;font-size:12px}
-.brick3-relation-intimacy small{color:#777}
+.brick3-contacts{height:100%;min-height:0;overflow:auto;background:#f6f6f8;color:#202127;font-size:14px}
+.brick3-contacts-header{display:flex;align-items:center;gap:16px;padding:20px 18px 12px;background:#fff;border-bottom:1px solid #ececf0}
+.brick3-contacts-header strong{font-size:20px;font-weight:700}
+.brick3-contacts-header button{border:0;background:none;color:#2678cf;font-size:15px;padding:6px 0;cursor:pointer}
+.brick3-contacts-list{display:flex;flex-direction:column;gap:12px;padding:16px 14px 32px}
+.brick3-contact{background:#fff;border-radius:16px;padding:15px;box-shadow:0 2px 10px #00000008}
+.brick3-contact-name{display:flex;align-items:center;gap:11px;margin-bottom:14px;font-size:17px}
+.brick3-contact-avatar{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:#e7eaf1;color:#515b70;font-size:17px}
+.brick3-contact-scores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.brick3-contact-score{display:flex;flex-direction:column;gap:7px;min-width:0}
+.brick3-contact-score>span{font-size:12px;color:#777e8a}
+.brick3-contact-score>strong{font-size:19px;font-variant-numeric:tabular-nums}
+.brick3-contact-track{height:5px;border-radius:10px;background:#e9ebef;overflow:hidden}
+.brick3-contact-track>span{display:block;height:100%;border-radius:10px;background:#788cae;transition:width .2s}
