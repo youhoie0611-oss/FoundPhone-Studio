@@ -33,6 +33,22 @@ describe("story progression", () => {
     expect(dispatch(w, s, "openApp", "photos").choices).toHaveLength(2);
     expect(choose(w, s, "start")).toEqual(s);
   });
+  it("consumes the actual four-choice group when targets are shared across dialogue scenes", () => {
+    const w = createWork();
+    w.nodes = [
+      { id: "first-group", label: "First", type: "choice", event: "read", target: "first", next: ["shared", "first-only"], once: true, conditions: [], logic: "and", actions: [] },
+      { id: "second-group", label: "Second", type: "choice", event: "read", target: "second", next: ["shared", "second-only"], once: true, conditions: [], logic: "and", actions: [] },
+      ...["shared", "first-only", "second-only"].map((id) => ({
+        id, label: id, type: "action" as const, event: "", target: "", next: [], once: true,
+        conditions: [], logic: "and" as const, actions: [],
+      })),
+    ];
+    const first = dispatch(w, initialRuntime(w), "read", "first");
+    const second = dispatch(w, first, "read", "second");
+    const selected = choose(w, second, "shared");
+    expect(selected.choices.map((choice) => choice.target)).toEqual(["first-only"]);
+    expect(selected.ui?.choiceOwners?.["shared"]).toBeUndefined();
+  });
   it("prevents repeated effects and bounds cycles", () => {
     const w = createWork();
     w.nodes[0].next = ["start"];
