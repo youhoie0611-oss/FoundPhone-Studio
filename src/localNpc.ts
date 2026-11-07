@@ -280,7 +280,9 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
       return { reply: "是，我記得我們說好先不要聯絡。這次是我越界了，對不起。妳不想繼續，我就停在這裡。", delayMs: 1700 };
   }
   // Established scene facts take precedence; otherwise answer the most recent turn.
-  const contextual = brick3ContextAnswer(request);
+  // The shared FoundPhone fallback stays unchanged for other story projects.
+  const contextual = request.storyId && request.storyId !== "between-the-lines-b-demo"
+    ? null : brick3ContextAnswer(request);
   if (contextual) return { ...contextual, reply: enforceCanon(request.thread, contextual.reply) };
   if (/[？?]|怎麼|為什麼|哪裡|哪裏|哪天|什麼時候|是不是/.test(input)) {
     if (/哪裡|哪裏|在哪|什麼地方/.test(input))
