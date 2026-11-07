@@ -30,6 +30,7 @@ import { useSkinState } from "../../skinState";
 import type { Item } from "../../schema";
 import { pendingBrick3PhotoOptions } from "../../brick3PhotoChoices";
 import { brick3ContextReplies } from "../../brick3ReplyOptions";
+import { legacyMymyReplies } from "./legacyReplyOptions";
 import "./ui.css";
 import "./adapter.css";
 const characterAvatar: Record<string, string> = {
@@ -218,7 +219,8 @@ export function MymyKakao(p: SkinProps) {
             {(isTyping || p.brick3PendingDialogue) && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !p.brick3PendingDialogue && !shenPhotoReplyFinished && !lastMessage?.outgoing && (
+          {!p.creator && !isTyping && !p.brick3PendingDialogue && !shenPhotoReplyFinished &&
+            (!lastMessage?.outgoing || (!p.brick3Mode && (photoOptions.length === 4 || v8Options.length > 0))) && (
             <div className="kkt-reply-tray" aria-label="回覆選項">
               {(() => {
                 if (v8Options.length) return v8Options.map((choice) => (
@@ -232,7 +234,9 @@ export function MymyKakao(p: SkinProps) {
                   <button type="button" key={choice.target} className="kkt-reply-choice"
                     onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
-                const options = brick3ContextReplies(p.thread, messages);
+                const options = p.brick3Mode
+                  ? brick3ContextReplies(p.thread, messages)
+                  : legacyMymyReplies(p.thread, lastMessage?.body ?? "", p.relationshipContext);
                 return options.map((reply, index) => (
                   <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onPresetReply?.(p.thread, reply)}>
                     {reply}
