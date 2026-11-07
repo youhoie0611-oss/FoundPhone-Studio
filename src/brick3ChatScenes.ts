@@ -30,15 +30,18 @@ const stories: Record<Scene, (text: string, context: string) => Branch | null> =
     return null;
   },
   reunion(text, context) {
-    // A meal or a general "okay" must never be interpreted as reconciliation.
+    // A meal, vague "okay", or willingness to listen is never consent to date.
+    // The player initiated the breakup; its actual causes remain undetermined.
     const explicit = /分手|復合|複合|重新開始|以前的問題|我們的關係|前男友/.test(text);
-    const listens = /願意聽|先說|你說吧|我們談談|可以談/.test(text) &&
-      /分手|復合|複合|重新開始|以前的問題/.test(context);
+    const listens = /願意聽|可以聽|先聽|先說|你說吧|我們談談|可以談/.test(text) &&
+      /分手|復合|複合|重新開始|以前的問題|當初/.test(context + " " + text);
     if (!explicit && !listens) return null;
-    if (refuses.test(text)) return { outcome: "distance", reply: "我知道我們已經分手。|妳不想談，我不會逼妳。|以前的問題是我該面對的，不該要妳替我收拾。" };
+    if (refuses.test(text)) return { outcome: "distance", reply: "……我知道妳不想談。|我會尊重，不再追問這件事。|只是有些話，我一直沒能好好說出口。" };
+    if (listens) return { outcome: "conversation_open", reply: "……好。|我先說我記得的部分，也想聽妳記得的是什麼。|我不會把妳願意聽當成答應復合。" };
+    if (/當初.*為什麼|分手.*原因|分手.*問題|分手.*怎麼看/.test(text))
+      return { outcome: "breakup_question", reply: "我想過很多次。|是妳提出分手，我記得。|但真正讓我們走到那一步的原因，我不想單方面替妳下結論。" };
     if (/復合|複合|重新開始|我們的關係/.test(text))
-      return { outcome: "intent_revealed", reply: "我想過我們分手的事。|我確實希望還有重新開始的可能。|但我知道，光說想復合沒有用。妳願意先聽我說說我當時做錯了什麼嗎？" };
-    if (listens) return { outcome: "conversation_open", reply: "謝謝妳願意聽。|我不會把這當成妳答應復合。|我們先從當初沒說清楚的事情談起。" };
+      return { outcome: "intent_revealed", reply: "……是，我還想跟妳重新開始。|但我知道妳沒有答應。|妳願意先跟我談談我們以前沒說清楚的事嗎？" };
     return null;
   },
   first_meeting(text, context) {
@@ -87,7 +90,7 @@ export function advanceBrick3Chat(state: Runtime, thread: string, message: strin
       return { reply: "我記得妳要我保持距離。\n不會再逼妳談復合。", delayMs: 1100 };
     if (prior === "intent_revealed" && /願意聽|先說|你說|談談/.test(message)) {
       state.variables[`brick3:scene:${thread}`] = "conversation_open";
-      return { reply: "那我先說。\n當初我們遇到問題，我選擇逃避，讓妳一個人承受。\n我不是要妳立刻原諒，只是想先把這件事說清楚。", delayMs: 1500 };
+      return { reply: "……好，我先說。\n當初是妳提出分手，我記得。\n可是那時候我們到底哪一步走錯了，我一直想跟妳重新談一次。妳不用急著回答。", delayMs: 1500 };
     }
   }
   const branch = stories[scene](message, context);
