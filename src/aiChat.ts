@@ -1,5 +1,6 @@
 import { localNpcReply } from "./localNpc";
 export interface AiChatRequest {
+  storyId?: string;
   playerId: string;
   thread: string;
   message: string;
