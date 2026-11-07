@@ -66,7 +66,9 @@ function speak(state: Runtime, a: Activity, suffix: string, body: string, photoE
     message(state, a, suffix, body, false, photoEvent);
     return;
   }
-  const parts = body.split("\n").map(v => v.trim()).filter(Boolean);
+  const authored = body.split("\n").map(v => v.trim()).filter(Boolean);
+  // Allow a reply after a short exchange, not six consecutive unanswerable texts.
+  const parts = authored.length > 3 ? [authored[0], authored[1], authored.at(-1)!] : authored;
   if (parts.length <= 1) {
     message(state, a, suffix, body, false, photoEvent);
     return;
@@ -255,6 +257,8 @@ export function chooseBrick3Invitation(w: Work, previous: Runtime, target: strin
   p.phase = "reply_pending";
   p.responseAtMs = now(s) + 2200;
   p.responseText = (atDoor ? a.arrivalResponses : a.responses)[choice - 1];
+  if (a.id === "pei_dinner_outing" && !atDoor && choice === 1)
+    p.responseText = "真的嗎？妳願意來，我很高興。\n那時間和晚餐內容我們一起確認，不用急著出門。";
   p.responseMode = atDoor
     ? choice === 1 ? "arrival_yes" : "arrival_no"
     : choice === 1 ? "accept" : choice === 3 ? "details" : "decline";
@@ -296,6 +300,8 @@ export function respondToBrick3InvitationText(s: Runtime, thread: string, raw: s
   if (a.id === "pei_dinner_outing" && !atDoor) {
     if (accepted && details)
       p.responseText = "妳願意來，我真的很高興。\n具體時間我們再確認，妳下班後方便再過來就好。";
+    else if (accepted)
+      p.responseText = "妳願意來，我真的很高興。\n我們先確認時間和想吃什麼，不用急著出門。";
     else if (mealQuestion)
       p.responseText = "我還在想要煮什麼。\n妳現在有特別想吃的嗎？我不想擅自替妳決定。";
     else if (details && /不用特別|不用特地|簡單吃/.test(raw))
