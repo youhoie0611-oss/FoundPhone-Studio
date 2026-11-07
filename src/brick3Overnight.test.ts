@@ -16,20 +16,20 @@ describe("Brick3 overnight continuation", () => {
     const s = setup();
     const a = chooseOvernight(work, s, "brick3-overnight:lu_photo_exhibit:accept")!;
     expect(a.brick3Overnight?.records[0].phase).toBe("accepted");
-    a.elapsedMs += 24 * 3600000; a.date = "2026-11-07";
+    a.elapsedMs = (a.elapsedMs ?? 0) + 24 * 3600000; a.date = "2026-11-07";
     tickOvernight(work, a);
     expect(a.brick3Overnight?.records[0].phase).toBe("accepted");
   });
   it("refusal never creates a morning", () => {
     const s = chooseOvernight(work, setup(), "brick3-overnight:lu_photo_exhibit:decline")!;
-    s.elapsedMs += 30 * 3600000; s.date = "2026-11-08";
+    s.elapsedMs = (s.elapsedMs ?? 0) + 30 * 3600000; s.date = "2026-11-08";
     tickOvernight(work, s);
     expect(s.brick3Overnight?.records[0].phase).toBe("declined");
   });
   it("next day morning has matching four choices and departure prevents stay-at-home follow-up", () => {
     let s = chooseOvernight(work, setup(), "brick3-overnight:lu_photo_exhibit:accept")!;
     s = chooseOvernight(work, s, "brick3-overnight:lu_photo_exhibit:arrive")!;
-    s.elapsedMs += 8 * 3600000; s.date = "2026-11-07"; s.time = "08:00";
+    s.elapsedMs = (s.elapsedMs ?? 0) + 8 * 3600000; s.date = "2026-11-07"; s.time = "08:00";
     tickOvernight(work, s);
     expect(s.brick3Overnight?.records[0].phase).toBe("morning");
     expect(s.choices.filter(x => x.target.startsWith("brick3-overnight:lu_photo_exhibit:"))).toHaveLength(4);
