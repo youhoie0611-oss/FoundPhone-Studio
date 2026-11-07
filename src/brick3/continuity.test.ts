@@ -210,6 +210,26 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     s.date=addDays("2026-11-04",9);s.time="12:00";progressContinuity(w,s);
     expect(s.continuity!.events["lu-board"].playerJoined).toBe(false);
   });
+  it("remembers existing authored choices and changes the next event's introduction",()=>{
+    const {w,s}=start();
+    s.variables.z3_script_choice_shen="z3-v6-shen-choice-honest";
+    s.variables.z3_script_date_shen=s.date!;
+    s.date=addDays(s.date!,1);s.time="10:00";
+    progressContinuity(w,s);
+    expect(s.continuity!.events["shen-portfolio"].status).toBe("active");
+    expect(s.messages.kakao.filter(m=>m.title==="沈硯舟").at(-1)?.body).toContain("感情上的期待");
+  });
+  it("respects an ex-partner's explicit no-contact choice instead of sending new private invitations",()=>{
+    const {w,s}=start();
+    s.variables.z3_script_choice_pei="pei-intro-choice-boundary";
+    s.variables.z3_script_date_pei=s.date!;
+    for(let i=1;i<=7;i++){
+      s.date=addDays("2026-11-04",i);s.time="10:00";
+      progressContinuity(w,s);
+    }
+    expect(s.continuity!.events["pei-research"].status).toBe("not_started");
+    expect(s.messages.kakao.filter(m=>m.title==="裴知聿")).toEqual([]);
+  });
   it("does not alter other game versions or overwrite old save data",()=>{
     const w=createWork();const s=initialRuntime(w);progressContinuity(w,s);
     expect(s.continuity).toBeUndefined();

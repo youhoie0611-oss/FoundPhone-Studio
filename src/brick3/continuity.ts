@@ -80,6 +80,13 @@ function ready(s:Runtime,rec:EventRecord,arc:Arc){
  rec.venue=arc.venue;rec.promiseOpen=false;rec.knownTo=[arc.actor,"玩家"];
  modify(s,rec,"active","offer","邀約 "+arc.venue+"，候選時間 "+rec.dueDate+" "+rec.dueTime);
  const previous=rec.dependsOn.map(id=>s.continuity?.events[id]).find(Boolean);
+ const actorKey=({祁野:"qi",沈硯舟:"shen",裴知聿:"pei",顧時安:"gu",陸沉川:"lu"} as Record<string,string>)[arc.actor];
+ const script=actorKey?String(s.variables["z3_script_choice_"+actorKey]??""):"";
+ const remembered=/-choice-(?:honest|clarify)$/.test(script)?"我記得妳先前願意說清楚感情上的期待。"
+  :/-choice-(?:boundary|privacy|busy|pause|no_late)$/.test(script)?"我記得妳上次提到的界線，不會勉強妳參與。"
+  :/-choice-(?:ask|question|detail|work)$/.test(script)?"上次妳問的問題我有記得。"
+  :/-choice-(?:challenge|direct|tease)$/.test(script)?"上次有些觀點不一樣，我也有想過。"
+  :/-choice-(?:warm|support|reassure)$/.test(script)?"上次謝謝妳願意聽我說。":"";
  const opening=previous?.outcome==="investigate"?"上次妳問的事情後來有進展。"
   :previous?.outcome==="support"?"上次妳提出的協助我有記得。"
   :previous?.outcome==="boundary"?"我記得妳希望保持私人界線。這次只是公開活動，可以自由決定。"
@@ -87,7 +94,7 @@ function ready(s:Runtime,rec:EventRecord,arc:Arc){
   :previous?.status==="declined"?"上次妳沒空，我有照自己的行程去。這次還是由妳決定。"
   :previous?.status==="missed"?"之前約定沒見到妳。新活動我會再確認，並不預設妳會到。"
   :previous?.outcome==="remote"?"上次雖然沒見面，謝謝妳願意聽我說。"
-  :"";
+  :remembered;
  send(s,arc.actor,opening+arc.invitation+"\n預計："+rec.dueDate+" "+arc.hour+"｜"+arc.venue,rec);
 }
 export function isBrick3(w:Work){return w.title.trim()==="磚3";}
@@ -104,6 +111,16 @@ function bootstrap(s:Runtime){
  s.continuity={version:1,startDate:day,lastTick:"",events,ledger:[],sequence:0};
 }
 function ongoing(r:EventRecord){return ["active","scheduled","postponed"].includes(r.status);}
+function mayInvite(s:Runtime,arc:Arc):boolean{
+ const actor=({祁野:"qi",沈硯舟:"shen",裴知聿:"pei",顧時安:"gu",陸沉川:"lu"} as Record<string,string>)[arc.actor];
+ if(!actor)return true;
+ const last=String(s.variables["z3_script_choice_"+actor]??"");
+ if(actor==="pei"&&last==="pei-intro-choice-boundary")return false;
+ const when=String(s.variables["z3_script_date_"+actor]??"");
+ if(/-choice-(?:boundary|busy|pause|privacy|no_late)$/.test(last)
+   && validDate(when)&&diffDays(s.date??"",when)<7)return false;
+ return true;
+}
 function canOpen(rec:EventRecord,m:ContinuitySave){
  return rec.dependsOn.every(id=>{
    const parent=m.events[id];
@@ -156,6 +173,7 @@ export function progressContinuity(w:Work,s:Runtime):void{
  const already=Object.values(m.events).some(r=>r.log.some(x=>x.action==="offer"&&x.at.slice(0,10)===s.date));
  if(already)return;
  const candidate=ARCS.find(a=>a.offset<=days&&m.events[a.id].status==="not_started"&&canOpen(m.events[a.id],m)
+   && mayInvite(s,a)
    && (a.actor!=="陸沉川"||s.variables.z3_lu_private_contact===true)
    && (a.actor!=="裴知聿"||s.variables.pei_no_contact!==true));
  if(candidate)ready(s,m.events[candidate.id],candidate);

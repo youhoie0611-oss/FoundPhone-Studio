@@ -264,6 +264,27 @@ export function dispatch(
     .map((n) => n.id);
   const next = runQueue(w, s, event, target, queue);
   if (event === "start") progressContinuity(w, next);
+  // Preserve authored four-choice decisions as cross-event memory in 磚3 only.
+  if (event === "choose" && w.title.trim() === "磚3") {
+    const matched = /^z3-(?:long-|v6-)(shen|pei|qi|gu|lu)-/.exec(target)
+      ?? /^z3-pair-(shen|pei|qi|gu|lu)-/.exec(target);
+    const actor = matched?.[1] ?? (/^pei-intro-choice-/.test(target) ? "pei"
+      : /^gu-photo-/.test(target) ? "gu"
+      : /^z3-lu-/.test(target) ? "lu" : "");
+    if (actor) {
+      next.variables["z3_script_choice_"+actor] = target;
+      next.variables["z3_script_date_"+actor] = next.date ?? "2026-11-04";
+      if (next.continuity) {
+        next.continuity.ledger.push({
+          at: (next.date ?? "") + " " + next.time,
+          action: "script-choice",
+          status: "completed",
+          detail: target,
+        });
+        next.continuity.ledger = next.continuity.ledger.slice(-250);
+      }
+    }
+  }
   return next;
 }
 export function advance(

@@ -1,6 +1,7 @@
 import { dateOptions, dateLeads } from "../../brick3/dateStory";
 import { overnightPanelFor } from "../../brick3/overnight";
 import { continuityChoices } from "../../brick3/continuity";
+import { authoredReplies } from "../../brick3/scriptReplyChoices";
 /* React/data adapters for dudwo5/Mymy UI templates: kt/ktn/KHD/bub,
  * igHome/igProfile/igDM/igSheet, xHome. See NOTICE.txt for permission.
  * Author content, DOM globals, timers and media dependencies are excluded. */
@@ -135,6 +136,7 @@ export function MymyKakao(p: SkinProps) {
   const dateChoices = !p.creator && dateKey ? dateOptions({variables:p.relationship?.variables ?? {}} as import("../../schema").Runtime,dateKey) : [];
   const overnightPanel = !p.creator && p.thread ? overnightPanelFor(p.relationship?.variables ?? {}, p.thread) : null;
   const continuity = !p.creator && p.thread ? continuityChoices(p.continuity, p.thread) : [];
+  const authored = p.continuity && !p.creator && p.thread ? authoredReplies(p.thread, lastMessage, p.choices ?? []) : [];
   const guScene = p.thread === "顧時安" ? lastMessage?.meta?.guScene : undefined;
   const guSceneChoices = guScene
     ? (p.choices ?? []).filter((choice) => choice.target.startsWith(`${guScene}-choice-`))
@@ -238,7 +240,7 @@ export function MymyKakao(p: SkinProps) {
               {dateChoices.map(choice => <button key={choice.code} type="button" className="kkt-reply-choice" onClick={() => p.onDateAction?.(p.thread,choice.code)}>{choice.label}</button>)}
             </div>
           )}
-          {!p.creator && continuity.length === 0 && overnightPanel && dateChoices.length === 0 && !isTyping && (
+          {!p.creator && continuity.length === 0 && overnightPanel && dateChoices.length === 0 && (authored.length === 0 || overnightPanel.pending) && !isTyping && (
             <div className="kkt-reply-tray" aria-label={overnightPanel.title || "過夜與關係邀約"}>
               {overnightPanel.pending && <small>{overnightPanel.title}</small>}
               {overnightPanel.items.map((entry) => (
@@ -247,7 +249,13 @@ export function MymyKakao(p: SkinProps) {
               ))}
             </div>
           )}
-          {!p.creator && continuity.length === 0 && dateChoices.length === 0 && !overnightPanel?.pending && !lastMessage?.meta?.continuity && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
+          {!p.creator && continuity.length === 0 && dateChoices.length === 0 && !overnightPanel?.pending && authored.length === 4 && !isTyping && (
+            <div className="kkt-reply-tray" aria-label="依據目前劇情的四個不同走向">
+              {authored.map(choice => <button key={choice.target} type="button" className="kkt-reply-choice"
+                onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>)}
+            </div>
+          )}
+          {!p.creator && !p.continuity && dateChoices.length === 0 && !overnightPanel?.pending && !lastMessage?.meta?.continuity && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
