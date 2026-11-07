@@ -4,6 +4,8 @@
 
 ## 來源優先順序
 
+**角色演繹與戲劇張力最新規則：** [《角色靈魂激活・核心敘事協議》](./CHARACTER-SOUL-PROTOCOL.md)（2026-11-08 作者新增）。它規範 NPC 情緒、個性鋒利度、道德灰度與 OOC 審查；不推翻既定角色身分、已發生歷史、玩家選擇權，亦不授權擅自新增過往創傷或劇情。
+
 1. 作者最新明確確認的設定（包含本文件）。
 2. GitHub 最新個別角色檔 `stories/ambiguity-b/characters/*.md`、`src/characterCanon.ts` 及已確認的新事件設定。
 3. `docs/brick3/V8-relationship-and-autonomy-spec.md` 與《完善磚3功能提示詞》V8：功能**開發規格**，不得當成已完成。
