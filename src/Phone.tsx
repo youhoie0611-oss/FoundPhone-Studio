@@ -486,9 +486,19 @@ function PhoneRuntime({
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
                   // The player can only select authored reply buttons; no free-text composer is exposed.
-                  onPresetReply={(thread, message) => {
+                  onPresetReply={(thread, message, replyToId) => {
                     const sourceApp = app;
                     const threadKey = sourceApp + ":" + thread;
+                    // Ignore an old option when another text arrived before the tap.
+                    if (work.id === "between-the-lines-b-demo" && replyToId) {
+                      const before = (s.messages[sourceApp] ?? []).filter(item => item.title === thread).at(-1);
+                      const current = runtimeRef.current;
+                      const after = (current.messages[sourceApp] ?? []).filter(item => item.title === thread).at(-1);
+                      const newerScript = (work.data[sourceApp] ?? []).some(item =>
+                        item.title === thread && item.hidden &&
+                        !s.unlocked.includes(item.id) && current.unlocked.includes(item.id));
+                      if (before?.id !== after?.id || newerScript) return;
+                    }
                     // Rapid repeat taps must not create another reply to an unanswered message.
                     if (pendingNpcReplies.current.has(threadKey)) return;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
@@ -505,7 +515,8 @@ function PhoneRuntime({
                     pendingNpcReplies.current.add(threadKey);
                     const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
-                    const sceneReply = sourceApp === "kakao" ? advanceBrick3Chat(next, thread, message, history) : null;
+                    const sceneReply = sourceApp === "kakao" && work.id === "between-the-lines-b-demo"
+                      ? advanceBrick3Chat(next, thread, message, history) : null;
                     if (sceneReply) update(next);
                     const priorReply = npcReplyQueue.current.get(threadKey) ?? Promise.resolve();
                     const replyTask = priorReply.catch(() => undefined).then(() => sceneReply ?? requestNpcReply({ storyId: work.id, playerId: activePlayerId(), thread, message, history }))
@@ -524,9 +535,10 @@ function PhoneRuntime({
                           const newestPlayer = [...(current.messages[sourceApp] ?? [])].reverse()
                             .find(item => item.title === thread && item.outgoing);
                           if (newestPlayer?.id !== lastCustomId) break;
-                          if (!sceneReply && part === 0 && (
+                          if ((
                             (current.messages[sourceApp] ?? []).some(item =>
-                              item.title === thread && !item.outgoing && !knownIncoming.has(item.id)) ||
+                              item.title === thread && !item.outgoing &&
+                              !knownIncoming.has(item.id) && !item.id.startsWith(`ai-npc-${id}-`)) ||
                             current.unlocked.some(itemId => !knownUnlocks.has(itemId) &&
                               (work.data[sourceApp] ?? []).some(item => item.id === itemId && item.title === thread && !item.outgoing))
                           )) break;
