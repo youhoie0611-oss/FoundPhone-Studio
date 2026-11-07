@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 56,
+  "revision": 57,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -11646,6 +11646,51 @@
           "body": "今天在研究室待到很晚，突然又想傳訊息給妳。妳不用回，我只是想知道妳還好不好。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-cautious-opening",
+          "title": "",
+          "body": "……今天去了一趟書店。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-cautious-opening-bubble-2",
+          "title": "",
+          "body": "走到以前一起逛過的那排書架，還是想起妳。妳不用回，我沒有要妳陪我聊以前的事。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-cautious-opening",
+          "title": "",
+          "body": "早。今天組會結束了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-cautious-opening-bubble-2",
+          "title": "",
+          "body": "本來想說研究進度，後來覺得妳可能不想再聽這些。只是想跟妳說聲早安。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-cautious-opening-bubble-3",
+          "title": "",
+          "body": "……不用特別回我。我知道妳有自己的生活。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
         }
@@ -29976,7 +30021,8 @@
       "type": "delay",
       "delayMs": 90000,
       "next": [
-        "pei-day11-arrival"
+        "pei-day11-arrival",
+        "pei-day11-cautious-arrival"
       ],
       "once": true
     },
@@ -29998,7 +30044,20 @@
       ],
       "next": [
         "pei-bubble-wait-pei-day11-arrival-2"
-      ]
+      ],
+      "conditions": [
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "or"
     },
     {
       "id": "pei-day11-choice",
@@ -30113,7 +30172,8 @@
       "type": "delay",
       "delayMs": 90000,
       "next": [
-        "pei-day21-arrival"
+        "pei-day21-arrival",
+        "pei-day21-cautious-arrival"
       ],
       "once": true
     },
@@ -30135,7 +30195,20 @@
       ],
       "next": [
         "pei-bubble-wait-pei-day21-arrival-2"
-      ]
+      ],
+      "conditions": [
+        {
+          "key": "unlocked:pei-day11-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-day11-choice-extra-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "or"
     },
     {
       "id": "pei-day21-choice",
@@ -64635,6 +64708,166 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "pei-day11-cautious-arrival",
+      "label": "裴知聿長期冷淡後謹慎聯絡",
+      "type": "action",
+      "conditions": [
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "not",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-cautious-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：……今天去了一趟書店。"
+        }
+      ],
+      "next": [
+        "pei-day11-cautious-wait-2"
+      ]
+    },
+    {
+      "id": "pei-day11-cautious-wait-2",
+      "label": "裴知聿猶豫後續傳",
+      "type": "delay",
+      "delayMs": 4400,
+      "next": [
+        "pei-day11-cautious-send-2"
+      ]
+    },
+    {
+      "id": "pei-day11-cautious-send-2",
+      "label": "裴知聿謹慎訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-cautious-opening-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day11-cautious-choice",
+      "label": "裴知聿｜回覆謹慎訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-day11-cautious-opening-bubble-2",
+      "next": [
+        "pei-day11-reply-1",
+        "pei-day11-reply-2",
+        "pei-day11-choice-extra-3",
+        "pei-day11-choice-extra-4"
+      ]
+    },
+    {
+      "id": "pei-day21-cautious-arrival",
+      "label": "裴知聿長期冷淡後謹慎聯絡",
+      "type": "action",
+      "conditions": [
+        {
+          "key": "unlocked:pei-day11-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-day11-choice-extra-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "not",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-cautious-opening",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：早。今天組會結束了。"
+        }
+      ],
+      "next": [
+        "pei-day21-cautious-wait-2"
+      ]
+    },
+    {
+      "id": "pei-day21-cautious-wait-2",
+      "label": "裴知聿猶豫後續傳",
+      "type": "delay",
+      "delayMs": 4400,
+      "next": [
+        "pei-day21-cautious-send-2"
+      ]
+    },
+    {
+      "id": "pei-day21-cautious-send-2",
+      "label": "裴知聿謹慎訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-cautious-opening-bubble-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-day21-cautious-wait-3"
+      ]
+    },
+    {
+      "id": "pei-day21-cautious-wait-3",
+      "label": "裴知聿猶豫後續傳",
+      "type": "delay",
+      "delayMs": 3200,
+      "next": [
+        "pei-day21-cautious-send-3"
+      ]
+    },
+    {
+      "id": "pei-day21-cautious-send-3",
+      "label": "裴知聿謹慎訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-cautious-opening-bubble-3",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-day21-cautious-choice",
+      "label": "裴知聿｜回覆謹慎訊息",
+      "type": "choice",
+      "event": "read",
+      "target": "pei-day21-cautious-opening-bubble-3",
+      "next": [
+        "pei-day21-reply-1",
+        "pei-day21-reply-2",
+        "pei-day21-choice-extra-3",
+        "pei-day21-choice-extra-4"
+      ]
     }
   ],
   "tests": [
