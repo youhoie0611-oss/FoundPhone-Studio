@@ -272,11 +272,19 @@ export function respondToBrick3InvitationText(s: Runtime, thread: string, raw: s
   const p = s.brick3Invites?.[a.id];
   if (!p) return false;
   const atDoor = p.phase === "arrival";
-  const refused = /不去|不能去|沒空|不方便|不想|不要|拒絕|改天|下次|先不|不會去/.test(raw);
-  const details = /幾點|時間|在哪|哪裡|地點|地址|什麼時候|哪天|怎麼去/.test(raw);
-  const accepted = /^(好|好啊|好呀|可以|我去|我會去|算我一個|有空|願意)[！!。\\s]*$/.test(raw.trim());
+  const refused = /不去|不能去|沒空|不方便|不想|不要|拒絕|改天|下次|先不|不會去|沒辦法去/.test(raw);
+  const mealQuestion = /煮什麼|做什麼|吃什麼|哪道菜|什麼菜|準備什麼/.test(raw);
+  const details = /幾點|時間|在哪|哪裡|地點|地址|什麼時候|哪天|怎麼去/.test(raw) ||
+    (a.id === "pei_dinner_outing" && (mealQuestion || /不用特別|不用特地|簡單吃/.test(raw)));
+  // Treat a natural reply ("好，我想過去吃晚餐") as acceptance, not an unrelated text.
+  // Explicit refusal always wins, even if the sentence contains "好".
+  const accepted = !refused && (
+    /^(好|好啊|好呀|可以|行|我去|我會去|算我一個|有空|願意)[！!。，、\s]*$/.test(raw.trim()) ||
+    /我(?:會|想|可以)(?:過去|來|去|參加|一起)|想去|我會到|一起去|我可以去|我願意去/.test(raw) ||
+    (atDoor && /我到了|到門口了|現在進去|我已經到了/.test(raw))
+  );
   if (!refused && !details && !accepted) return false;
-  const choice = atDoor ? (accepted ? 1 : 2) : refused ? 2 : details ? 3 : 1;
+  const choice = atDoor ? (accepted ? 1 : 2) : refused ? 2 : accepted ? 1 : 3;
   const prefix = choicePrefix(eventId(a, atDoor));
   s.choices = s.choices.filter(option => !option.target.startsWith(prefix));
   p.peiQueue = undefined;
@@ -285,8 +293,16 @@ export function respondToBrick3InvitationText(s: Runtime, thread: string, raw: s
   p.phase = "reply_pending";
   p.responseAtMs = now(s) + 2200;
   p.responseText = (atDoor ? a.arrivalResponses : a.responses)[choice - 1];
+  if (a.id === "pei_dinner_outing" && !atDoor) {
+    if (accepted && details)
+      p.responseText = "妳願意來，我真的很高興。\n具體時間我們再確認，妳下班後方便再過來就好。";
+    else if (mealQuestion)
+      p.responseText = "我還在想要煮什麼。\n妳現在有特別想吃的嗎？我不想擅自替妳決定。";
+    else if (details && /不用特別|不用特地|簡單吃/.test(raw))
+      p.responseText = "好，簡單吃就好。\n不過妳還沒確定要不要來，我先不替妳安排。";
+  }
   p.responseMode = atDoor ? (accepted ? "arrival_yes" : "arrival_no")
-    : refused ? "decline" : details ? "details" : "accept";
+    : refused ? "decline" : accepted ? "accept" : "details";
   if (p.responseMode === "details") p.detailRequests = (p.detailRequests ?? 0) + 1;
   return true;
 }
