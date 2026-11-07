@@ -56,6 +56,18 @@ describe("Brick3 screenshot conversation regressions", () => {
     expect(brick3ContextReplies("祁野", [npc("欸。"), player("你最近還好嗎？")])).toEqual([]);
   });
 
+
+  it("does not change the shared fallback for unrelated FoundPhone stories", () => {
+    const request = {
+      thread: "祁野", playerId: "test", message: "你有沒有認真想過自己的態度？",
+      history: [{ ...npc("問啊，拐什麼彎。"), sender: "祁野" }],
+    };
+    const brick3 = localNpcReply({ ...request, storyId: "between-the-lines-b-demo" }).reply;
+    const unrelated = localNpcReply({ ...request, storyId: "unrelated-story" }).reply;
+    expect(brick3).toMatch(/說話|太衝|剛才/);
+    expect(unrelated).not.toBe(brick3);
+  });
+
   it("all main characters and friends can receive four distinct contextual choices", () => {
     for (const name of ["沈硯舟", "裴知聿", "祁野", "顧時安", "陸沉川",
       "林安", "周予晴", "陳以衡", "許棠", "下班後五人組"]) {
