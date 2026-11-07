@@ -28,7 +28,8 @@ describe("Pei autonomous emotional pacing", () => {
     expect(autonomous(s).map(m => m.body)).toEqual(["妳在忙嗎"]);
     s.elapsedMs += 5500;
     tickPeiAutonomy(work, s);
-    expect(autonomous(s)).toHaveLength(2);
+    // One unanswered prompt must not spawn multiple pressure messages.
+    expect(autonomous(s)).toHaveLength(1);
   });
   it("escalates rejection over time, but stops on a reply", () => {
     const s = setup();
@@ -36,7 +37,7 @@ describe("Pei autonomous emotional pacing", () => {
     tickPeiAutonomy(work, s);
     s.elapsedMs = 30000;
     tickPeiAutonomy(work, s);
-    expect(autonomous(s)[0].body).toBe("為什麼");
+    expect(autonomous(s)[0].body).toMatch(/聽懂|難過/);
     s.messages.kakao.push(makeItem({ id: "player-response", title: "裴知聿", sender: "我", body: "我先去忙了", outgoing: true }));
     stopPeiAutonomyOnPlayerReply(s, "裴知聿");
     s.elapsedMs = 86400000;
@@ -53,7 +54,7 @@ describe("Pei autonomous emotional pacing", () => {
     expect(autonomous(s)).toHaveLength(0);
     s.elapsedMs = 180000;
     tickPeiAutonomy(work, s);
-    expect(autonomous(s)[0].body).toBe("今天不行嗎");
+    expect(autonomous(s)[0].body).toMatch(/先不約/);
     s.messages.kakao.push(makeItem({ id: "reply-busy", title: "裴知聿", sender: "我", body: "明天可以", outgoing: true }));
     stopPeiAutonomyOnPlayerReply(s, "裴知聿");
     s.elapsedMs += 86400000;
@@ -83,14 +84,29 @@ describe("Pei autonomous emotional pacing", () => {
     expect(autonomous(s)).toHaveLength(0);
     expect(s.peiAutonomy?.phase).toBe("stopped");
   });
-  it("reacts to another lead's IG event with delayed jealousy and no affection leak", () => {
+  it("does not invent a date from an ordinary public photo", () => {
     const s = setup();
     s.variables.pei_jealousy = 70;
-    s.messages.instagram = [makeItem({ id: "brick3-social-shen-instagram", title: "沈硯舟", sender: "沈硯舟" })];
+    s.messages.instagram = [makeItem({
+      id: "brick3-social-shen-instagram", title: "沈硯舟", sender: "沈硯舟",
+      body: "今天出去拍了城市夜景。",
+    })];
+    tickPeiAutonomy(work, s);
+    s.elapsedMs = 86400000;
+    tickPeiAutonomy(work, s);
+    expect(autonomous(s)).toHaveLength(0);
+  });
+  it("reacts only to explicit public couple confirmation", () => {
+    const s = setup();
+    s.variables.pei_jealousy = 70;
+    s.messages.instagram = [makeItem({
+      id: "brick3-social-shen-confirmed", title: "沈硯舟", sender: "沈硯舟",
+      body: "妳是我的女朋友，我想公開跟大家說。",
+    })];
     tickPeiAutonomy(work, s);
     s.elapsedMs = 30000;
     tickPeiAutonomy(work, s);
-    expect(autonomous(s)[0].body).toBe("我看到照片了");
+    expect(autonomous(s)[0].body).toMatch(/公開的消息/);
     expect(autonomous(s)[0].body).not.toMatch(/70|好感度|嫉妒值/);
   });
 });
