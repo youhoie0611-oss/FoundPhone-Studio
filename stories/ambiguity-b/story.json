@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 55,
+  "revision": 56,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -11608,7 +11608,7 @@
           "id": "pei-autonomy-v3-day2-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "……好。我暫時不主動聯絡。妳不用擔心我又用別的藉口找妳。",
+          "body": "……好。我知道妳現在不想被我打擾。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11617,7 +11617,7 @@
           "id": "pei-autonomy-v3-day2-choice-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我會停。",
+          "body": "我會盡量忍住。只是我不敢跟妳保證，往後每一天都能做到。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11626,8 +11626,26 @@
           "id": "pei-autonomy-v3-day2-choice-extra-4-in-bubble-3",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "雖然我現在很想問妳是不是已經不需要我了，但我不會再傳第二句。",
+          "body": "如果哪天又忍不住傳了，妳不必為了讓我安心而回覆。",
           "time": "21:47",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day3-cautious",
+          "title": "",
+          "body": "……抱歉，又是我。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day3-cautious-bubble-2",
+          "title": "",
+          "body": "今天在研究室待到很晚，突然又想傳訊息給妳。妳不用回，我只是想知道妳還好不好。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
         }
@@ -31535,7 +31553,8 @@
       "once": true,
       "delayMs": 86400000,
       "next": [
-        "pei-autonomy-v3-day3-arrive"
+        "pei-autonomy-v3-day3-arrive",
+        "pei-autonomy-v3-day3-cautious-arrive"
       ]
     },
     {
@@ -31557,7 +31576,20 @@
       ],
       "next": [
         "pei-bubble-wait-pei-autonomy-v3-day3-arrive-2"
-      ]
+      ],
+      "conditions": [
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "or"
     },
     {
       "id": "pei-autonomy-v3-reply-1",
@@ -56409,7 +56441,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：……好。我暫時不主動聯絡。妳不用擔心我又用別的藉口找妳。"
+          "value": "裴知聿：……好。我知道妳現在不想被我打擾。"
         }
       ],
       "next": [
@@ -64543,6 +64575,62 @@
         {
           "type": "unlock",
           "key": "pei-01-bubble-6",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-autonomy-v3-day3-cautious-arrive",
+      "label": "裴知聿第三日謹慎主動聯絡",
+      "type": "action",
+      "once": true,
+      "conditions": [
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-1-out",
+          "op": "eq",
+          "value": true
+        },
+        {
+          "key": "unlocked:pei-autonomy-v3-reply-3-out",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "not",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day3-cautious",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：……抱歉，又是我。"
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day3-cautious-wait-2"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day3-cautious-wait-2",
+      "label": "裴知聿猶豫後補充",
+      "type": "delay",
+      "delayMs": 4600,
+      "next": [
+        "pei-autonomy-v3-day3-cautious-send-2"
+      ]
+    },
+    {
+      "id": "pei-autonomy-v3-day3-cautious-send-2",
+      "label": "裴知聿小心補充",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day3-cautious-bubble-2",
           "value": true
         }
       ],
