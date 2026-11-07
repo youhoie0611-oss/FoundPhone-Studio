@@ -38,7 +38,7 @@ function knownChoice(target: string) {
 }
 /** Persist actual player-selected choices, including dynamically offered character options. */
 export function recordBrick3AuthoredChoice(w: Work, previous: Runtime, next: Runtime, target: string): Runtime {
-  if (w.id !== "between-the-lines-b-demo" || !previous.choices.some(c => c.target === target)) return next;
+  if (w.id !== "between-the-lines-b-demo" || next === previous || !previous.choices.some(c => c.target === target)) return next;
   const match = knownChoice(target);
   if (!match) return next;
   const label = previous.choices.find(c => c.target === target)?.label ?? "";
@@ -53,6 +53,12 @@ export function recordBrick3AuthoredChoice(w: Work, previous: Runtime, next: Run
   event.choiceId = target;
   event.choiceLabel = label;
   if (match.topic) event.topic = match.topic;
+  const targetNode = w.nodes.find(node => node.id === target);
+  if (targetNode) event.nextNodeIds = [...new Set([...(event.nextNodeIds ?? []),...targetNode.next])];
+  const released = next.unlocked.filter(id => !previous.unlocked.includes(id));
+  const published = Object.entries(next.messages).flatMap(([app,items]) =>
+    items.filter(item => !(previous.messages[app] ?? []).some(old => old.id === item.id)).map(item => item.id));
+  event.resultMessageIds = [...new Set([...(event.resultMessageIds ?? []),...released,...published])];
   event.history.push({ at: timestamp, status: event.status });
   next.brick3Ledger!.delivered = [...new Set([...next.brick3Ledger!.delivered, `choice:${target}`])];
   return next;
