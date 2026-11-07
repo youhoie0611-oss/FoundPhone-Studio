@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 21,
+  "revision": 22,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -757,7 +757,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "detail"
           }
@@ -770,7 +770,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "detail"
           }
@@ -782,7 +782,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "detail"
           }
@@ -795,7 +795,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "detail"
           }
@@ -807,7 +807,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "detail"
           }
@@ -819,7 +819,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "safety"
           }
@@ -832,7 +832,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "safety"
           }
@@ -844,7 +844,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "safety"
           }
@@ -857,7 +857,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "safety"
           }
@@ -869,7 +869,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "safety"
           }
@@ -881,7 +881,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "question"
           }
@@ -894,7 +894,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "question"
           }
@@ -906,7 +906,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "question"
           }
@@ -919,7 +919,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "question"
           }
@@ -931,7 +931,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "question"
           }
@@ -943,7 +943,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "busy"
           }
@@ -956,7 +956,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "busy"
           }
@@ -968,7 +968,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "busy"
           }
@@ -981,7 +981,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "busy"
           }
@@ -993,7 +993,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "site",
             "sourceChoice": "busy"
           }
@@ -1005,7 +1005,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "accept"
           }
@@ -1018,7 +1018,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "accept"
           }
@@ -1030,7 +1030,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "accept"
           }
@@ -1043,7 +1043,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "accept"
           }
@@ -1055,7 +1055,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "accept"
           }
@@ -1067,7 +1067,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "ask"
           }
@@ -1080,7 +1080,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "ask"
           }
@@ -1092,7 +1092,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "ask"
           }
@@ -1105,7 +1105,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "ask"
           }
@@ -1117,7 +1117,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "ask"
           }
@@ -1129,7 +1129,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "tease"
           }
@@ -1142,7 +1142,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "tease"
           }
@@ -1154,7 +1154,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "tease"
           }
@@ -1167,7 +1167,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "tease"
           }
@@ -1179,7 +1179,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "tease"
           }
@@ -1191,7 +1191,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "boundary"
           }
@@ -1204,7 +1204,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "boundary"
           }
@@ -1216,7 +1216,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "boundary"
           }
@@ -1229,7 +1229,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "boundary"
           }
@@ -1241,7 +1241,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "studio",
             "sourceChoice": "boundary"
           }
@@ -1253,7 +1253,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "rest"
           }
@@ -1266,7 +1266,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "rest"
           }
@@ -1278,7 +1278,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "rest"
           }
@@ -1291,7 +1291,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "rest"
           }
@@ -1303,7 +1303,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "rest"
           }
@@ -1315,7 +1315,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "work"
           }
@@ -1328,7 +1328,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "work"
           }
@@ -1340,7 +1340,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "work"
           }
@@ -1353,7 +1353,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "work"
           }
@@ -1365,7 +1365,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "work"
           }
@@ -1377,7 +1377,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "joke"
           }
@@ -1390,7 +1390,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "joke"
           }
@@ -1402,7 +1402,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "joke"
           }
@@ -1415,7 +1415,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "joke"
           }
@@ -1427,7 +1427,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "joke"
           }
@@ -1439,7 +1439,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "no_late"
           }
@@ -1452,7 +1452,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "no_late"
           }
@@ -1464,7 +1464,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "no_late"
           }
@@ -1477,7 +1477,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "no_late"
           }
@@ -1489,7 +1489,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "late",
             "sourceChoice": "no_late"
           }
@@ -1501,7 +1501,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "ask_place"
           }
@@ -1514,7 +1514,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "ask_place"
           }
@@ -1526,7 +1526,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "ask_place"
           }
@@ -1539,7 +1539,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "ask_place"
           }
@@ -1551,7 +1551,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "ask_place"
           }
@@ -1563,7 +1563,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "sketch"
           }
@@ -1576,7 +1576,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "sketch"
           }
@@ -1588,7 +1588,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "sketch"
           }
@@ -1601,7 +1601,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "sketch"
           }
@@ -1613,7 +1613,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "sketch"
           }
@@ -1625,7 +1625,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "tease"
           }
@@ -1638,7 +1638,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "tease"
           }
@@ -1650,7 +1650,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "tease"
           }
@@ -1663,7 +1663,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "tease"
           }
@@ -1675,7 +1675,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "tease"
           }
@@ -1687,7 +1687,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "neutral"
           }
@@ -1700,7 +1700,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "neutral"
           }
@@ -1712,7 +1712,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "neutral"
           }
@@ -1725,7 +1725,7 @@
           "hidden": true,
           "outgoing": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "neutral"
           }
@@ -1737,7 +1737,7 @@
           "time": "2026-11-06 13:00",
           "hidden": true,
           "meta": {
-            "guCoreContinuation": true,
+            "guCoreContinuation": "true",
             "sourcePhotoScene": "book",
             "sourceChoice": "neutral"
           }
@@ -2779,7 +2779,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2795,7 +2795,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2809,7 +2809,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2823,7 +2823,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2837,7 +2837,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2851,7 +2851,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2865,7 +2865,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2879,7 +2879,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2893,7 +2893,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2907,7 +2907,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2921,7 +2921,7 @@
             "originalEventId": "pei_zhiyu_v6_01",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_01",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2935,7 +2935,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2951,7 +2951,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2965,7 +2965,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2979,7 +2979,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -2993,7 +2993,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3007,7 +3007,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3021,7 +3021,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3035,7 +3035,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3049,7 +3049,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3063,7 +3063,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3077,7 +3077,7 @@
             "originalEventId": "pei_zhiyu_v6_02",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_02",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3091,7 +3091,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3107,7 +3107,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3121,7 +3121,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3135,7 +3135,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3149,7 +3149,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3163,7 +3163,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3177,7 +3177,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3191,7 +3191,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3205,7 +3205,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3219,7 +3219,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3233,7 +3233,7 @@
             "originalEventId": "pei_zhiyu_v6_03",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_03",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3247,7 +3247,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3263,7 +3263,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3277,7 +3277,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3291,7 +3291,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3305,7 +3305,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3319,7 +3319,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3333,7 +3333,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3347,7 +3347,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3361,7 +3361,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3375,7 +3375,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3389,7 +3389,7 @@
             "originalEventId": "pei_zhiyu_v6_04",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_04",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -3403,7 +3403,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3419,7 +3419,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3433,7 +3433,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3447,7 +3447,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3461,7 +3461,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3475,7 +3475,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3489,7 +3489,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3503,7 +3503,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3517,7 +3517,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3531,7 +3531,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3545,7 +3545,7 @@
             "originalEventId": "pei_zhiyu_v6_05",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_05",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L0"
           }
         },
@@ -3559,7 +3559,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3575,7 +3575,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3589,7 +3589,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3603,7 +3603,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3617,7 +3617,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3631,7 +3631,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3645,7 +3645,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3659,7 +3659,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3673,7 +3673,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3687,7 +3687,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3701,7 +3701,7 @@
             "originalEventId": "pei_zhiyu_v6_06",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_06",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -3715,7 +3715,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3731,7 +3731,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3745,7 +3745,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3759,7 +3759,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3773,7 +3773,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3787,7 +3787,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3801,7 +3801,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3815,7 +3815,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3829,7 +3829,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3843,7 +3843,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3857,7 +3857,7 @@
             "originalEventId": "pei_zhiyu_v6_07",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_07",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3871,7 +3871,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3887,7 +3887,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3901,7 +3901,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3915,7 +3915,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3929,7 +3929,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3943,7 +3943,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3957,7 +3957,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3971,7 +3971,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3985,7 +3985,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -3999,7 +3999,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -4013,7 +4013,7 @@
             "originalEventId": "pei_zhiyu_v6_08",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_08",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L3"
           }
         },
@@ -4027,7 +4027,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4043,7 +4043,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4057,7 +4057,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4071,7 +4071,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4085,7 +4085,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4099,7 +4099,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4113,7 +4113,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4127,7 +4127,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4141,7 +4141,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4155,7 +4155,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4169,7 +4169,7 @@
             "originalEventId": "pei_zhiyu_v6_09",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_09",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L2"
           }
         },
@@ -4183,7 +4183,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4199,7 +4199,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4213,7 +4213,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4227,7 +4227,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4241,7 +4241,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4255,7 +4255,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4269,7 +4269,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4283,7 +4283,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4297,7 +4297,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4311,7 +4311,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4325,7 +4325,7 @@
             "originalEventId": "pei_zhiyu_v6_10",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_10",
-            "chapter": 1,
+            "chapter": "1",
             "level": "L1"
           }
         },
@@ -4339,7 +4339,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4355,7 +4355,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4369,7 +4369,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4383,7 +4383,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4397,7 +4397,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4411,7 +4411,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4425,7 +4425,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4439,7 +4439,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4453,7 +4453,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4467,7 +4467,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4481,7 +4481,7 @@
             "originalEventId": "pei_zhiyu_v6_11",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_11",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4495,7 +4495,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4511,7 +4511,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4525,7 +4525,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4539,7 +4539,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4553,7 +4553,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4567,7 +4567,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4581,7 +4581,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4595,7 +4595,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4609,7 +4609,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4623,7 +4623,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4637,7 +4637,7 @@
             "originalEventId": "pei_zhiyu_v6_12",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_12",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -4651,7 +4651,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4667,7 +4667,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4681,7 +4681,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4695,7 +4695,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4709,7 +4709,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4723,7 +4723,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4737,7 +4737,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4751,7 +4751,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4765,7 +4765,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4779,7 +4779,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4793,7 +4793,7 @@
             "originalEventId": "pei_zhiyu_v6_13",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_13",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L2"
           }
         },
@@ -4807,7 +4807,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4823,7 +4823,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4837,7 +4837,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4851,7 +4851,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4865,7 +4865,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4879,7 +4879,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4893,7 +4893,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4907,7 +4907,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4921,7 +4921,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4935,7 +4935,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4949,7 +4949,7 @@
             "originalEventId": "pei_zhiyu_v6_14",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_14",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4963,7 +4963,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4979,7 +4979,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -4993,7 +4993,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5007,7 +5007,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5021,7 +5021,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5035,7 +5035,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5049,7 +5049,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5063,7 +5063,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5077,7 +5077,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5091,7 +5091,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5105,7 +5105,7 @@
             "originalEventId": "pei_zhiyu_v6_15",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_15",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5119,7 +5119,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5135,7 +5135,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5149,7 +5149,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5163,7 +5163,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5177,7 +5177,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5191,7 +5191,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5205,7 +5205,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5219,7 +5219,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5233,7 +5233,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5247,7 +5247,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5261,7 +5261,7 @@
             "originalEventId": "pei_zhiyu_v6_16",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_16",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L3"
           }
         },
@@ -5275,7 +5275,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5291,7 +5291,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5305,7 +5305,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5319,7 +5319,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5333,7 +5333,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5347,7 +5347,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5361,7 +5361,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5375,7 +5375,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5389,7 +5389,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5403,7 +5403,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5417,7 +5417,7 @@
             "originalEventId": "pei_zhiyu_v6_17",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_17",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5431,7 +5431,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5447,7 +5447,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5461,7 +5461,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5475,7 +5475,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5489,7 +5489,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5503,7 +5503,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5517,7 +5517,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5531,7 +5531,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5545,7 +5545,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5559,7 +5559,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5573,7 +5573,7 @@
             "originalEventId": "pei_zhiyu_v6_18",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_18",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5587,7 +5587,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5603,7 +5603,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5617,7 +5617,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5631,7 +5631,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5645,7 +5645,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5659,7 +5659,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5673,7 +5673,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5687,7 +5687,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5701,7 +5701,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5715,7 +5715,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5729,7 +5729,7 @@
             "originalEventId": "pei_zhiyu_v6_19",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_19",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L0"
           }
         },
@@ -5743,7 +5743,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5759,7 +5759,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5773,7 +5773,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5787,7 +5787,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5801,7 +5801,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5815,7 +5815,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5829,7 +5829,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5843,7 +5843,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5857,7 +5857,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5871,7 +5871,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5885,7 +5885,7 @@
             "originalEventId": "pei_zhiyu_v6_20",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_20",
-            "chapter": 2,
+            "chapter": "2",
             "level": "L1"
           }
         },
@@ -5899,7 +5899,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5915,7 +5915,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5929,7 +5929,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5943,7 +5943,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5957,7 +5957,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5971,7 +5971,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5985,7 +5985,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -5999,7 +5999,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6013,7 +6013,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6027,7 +6027,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6041,7 +6041,7 @@
             "originalEventId": "pei_zhiyu_v6_21",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_21",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6055,7 +6055,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6071,7 +6071,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6085,7 +6085,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6099,7 +6099,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6113,7 +6113,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6127,7 +6127,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6141,7 +6141,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6155,7 +6155,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6169,7 +6169,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6183,7 +6183,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6197,7 +6197,7 @@
             "originalEventId": "pei_zhiyu_v6_22",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_22",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -6211,7 +6211,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6227,7 +6227,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6241,7 +6241,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6255,7 +6255,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6269,7 +6269,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6283,7 +6283,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6297,7 +6297,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6311,7 +6311,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6325,7 +6325,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6339,7 +6339,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6353,7 +6353,7 @@
             "originalEventId": "pei_zhiyu_v6_23",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_23",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6367,7 +6367,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6383,7 +6383,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6397,7 +6397,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6411,7 +6411,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6425,7 +6425,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6439,7 +6439,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6453,7 +6453,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6467,7 +6467,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6481,7 +6481,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6495,7 +6495,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6509,7 +6509,7 @@
             "originalEventId": "pei_zhiyu_v6_24",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_24",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6523,7 +6523,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6539,7 +6539,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6553,7 +6553,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6567,7 +6567,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6581,7 +6581,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6595,7 +6595,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6609,7 +6609,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6623,7 +6623,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6637,7 +6637,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6651,7 +6651,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6665,7 +6665,7 @@
             "originalEventId": "pei_zhiyu_v6_25",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_25",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6679,7 +6679,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6695,7 +6695,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6709,7 +6709,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6723,7 +6723,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6737,7 +6737,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6751,7 +6751,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6765,7 +6765,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6779,7 +6779,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6793,7 +6793,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6807,7 +6807,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6821,7 +6821,7 @@
             "originalEventId": "pei_zhiyu_v6_26",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_26",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L2"
           }
         },
@@ -6835,7 +6835,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6851,7 +6851,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6865,7 +6865,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6879,7 +6879,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6893,7 +6893,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6907,7 +6907,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6921,7 +6921,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6935,7 +6935,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6949,7 +6949,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6963,7 +6963,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6977,7 +6977,7 @@
             "originalEventId": "pei_zhiyu_v6_27",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_27",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -6991,7 +6991,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7007,7 +7007,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7021,7 +7021,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7035,7 +7035,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7049,7 +7049,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7063,7 +7063,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7077,7 +7077,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7091,7 +7091,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7105,7 +7105,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7119,7 +7119,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7133,7 +7133,7 @@
             "originalEventId": "pei_zhiyu_v6_28",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_28",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L3"
           }
         },
@@ -7147,7 +7147,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7163,7 +7163,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7177,7 +7177,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7191,7 +7191,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7205,7 +7205,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7219,7 +7219,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7233,7 +7233,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7247,7 +7247,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7261,7 +7261,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7275,7 +7275,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7289,7 +7289,7 @@
             "originalEventId": "pei_zhiyu_v6_29",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_29",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L0"
           }
         },
@@ -7303,7 +7303,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7319,7 +7319,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7333,7 +7333,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7347,7 +7347,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7361,7 +7361,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7375,7 +7375,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7389,7 +7389,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7403,7 +7403,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7417,7 +7417,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7431,7 +7431,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         },
@@ -7445,7 +7445,7 @@
             "originalEventId": "pei_zhiyu_v6_30",
             "source": "docs/brick3-pei-zhiyu-photo-events-v6.json",
             "photoId": "pei_zhiyu_v6_30",
-            "chapter": 3,
+            "chapter": "3",
             "level": "L1"
           }
         }
@@ -15827,9 +15827,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-01-intro"
+        "pei-v6-01-wait-second-day"
       ]
     },
     {
@@ -16111,9 +16111,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-02-intro"
+        "pei-v6-02-wait-second-day"
       ]
     },
     {
@@ -16395,9 +16395,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-03-intro"
+        "pei-v6-03-wait-second-day"
       ]
     },
     {
@@ -16679,9 +16679,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-04-intro"
+        "pei-v6-04-wait-second-day"
       ]
     },
     {
@@ -16968,9 +16968,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-05-intro"
+        "pei-v6-05-wait-second-day"
       ]
     },
     {
@@ -17252,9 +17252,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-06-intro"
+        "pei-v6-06-wait-second-day"
       ]
     },
     {
@@ -17559,9 +17559,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-07-intro"
+        "pei-v6-07-wait-second-day"
       ]
     },
     {
@@ -17864,9 +17864,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-08-intro"
+        "pei-v6-08-wait-second-day"
       ]
     },
     {
@@ -18171,9 +18171,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-09-intro"
+        "pei-v6-09-wait-second-day"
       ]
     },
     {
@@ -18478,9 +18478,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-10-intro"
+        "pei-v6-10-wait-second-day"
       ]
     },
     {
@@ -18762,9 +18762,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-11-intro"
+        "pei-v6-11-wait-second-day"
       ]
     },
     {
@@ -19051,9 +19051,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-12-intro"
+        "pei-v6-12-wait-second-day"
       ]
     },
     {
@@ -19335,9 +19335,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-13-intro"
+        "pei-v6-13-wait-second-day"
       ]
     },
     {
@@ -19642,9 +19642,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-14-intro"
+        "pei-v6-14-wait-second-day"
       ]
     },
     {
@@ -19926,9 +19926,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-15-intro"
+        "pei-v6-15-wait-second-day"
       ]
     },
     {
@@ -20218,9 +20218,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-16-intro"
+        "pei-v6-16-wait-second-day"
       ]
     },
     {
@@ -20523,9 +20523,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-17-intro"
+        "pei-v6-17-wait-second-day"
       ]
     },
     {
@@ -20807,9 +20807,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-18-intro"
+        "pei-v6-18-wait-second-day"
       ]
     },
     {
@@ -21091,9 +21091,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-19-intro"
+        "pei-v6-19-wait-second-day"
       ]
     },
     {
@@ -21375,9 +21375,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-20-intro"
+        "pei-v6-20-wait-second-day"
       ]
     },
     {
@@ -21659,9 +21659,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-21-intro"
+        "pei-v6-21-wait-second-day"
       ]
     },
     {
@@ -21951,9 +21951,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-22-intro"
+        "pei-v6-22-wait-second-day"
       ]
     },
     {
@@ -22235,9 +22235,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-23-intro"
+        "pei-v6-23-wait-second-day"
       ]
     },
     {
@@ -22542,9 +22542,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-24-intro"
+        "pei-v6-24-wait-second-day"
       ]
     },
     {
@@ -22849,9 +22849,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-25-intro"
+        "pei-v6-25-wait-second-day"
       ]
     },
     {
@@ -23133,9 +23133,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-26-intro"
+        "pei-v6-26-wait-second-day"
       ]
     },
     {
@@ -23440,9 +23440,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-27-intro"
+        "pei-v6-27-wait-second-day"
       ]
     },
     {
@@ -23724,9 +23724,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-28-intro"
+        "pei-v6-28-wait-second-day"
       ]
     },
     {
@@ -24031,9 +24031,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-29-intro"
+        "pei-v6-29-wait-second-day"
       ]
     },
     {
@@ -24315,9 +24315,9 @@
       "label": "照片事件跨日等待與生活進度",
       "type": "delay",
       "actions": [],
-      "delayMs": 172800000,
+      "delayMs": 86400000,
       "next": [
-        "pei-v6-30-intro"
+        "pei-v6-30-wait-second-day"
       ]
     },
     {
@@ -24595,6 +24595,306 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "pei-v6-01-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-01-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-02-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-02-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-03-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-03-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-04-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-04-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-05-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-05-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-06-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-06-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-07-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-07-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-08-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-08-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-09-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-09-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-10-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-10-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-11-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-11-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-12-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-12-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-13-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-13-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-14-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-14-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-15-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-15-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-16-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-16-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-17-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-17-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-18-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-18-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-19-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-19-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-20-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-20-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-21-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-21-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-22-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-22-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-23-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-23-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-24-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-24-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-25-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-25-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-26-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-26-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-27-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-27-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-28-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-28-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-29-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-29-intro"
+      ],
+      "delayMs": 86400000
+    },
+    {
+      "id": "pei-v6-30-wait-second-day",
+      "type": "delay",
+      "label": "照片事件跨日等待與生活進度｜第二日",
+      "actions": [],
+      "next": [
+        "pei-v6-30-intro"
+      ],
+      "delayMs": 86400000
     }
   ],
   "tests": [
