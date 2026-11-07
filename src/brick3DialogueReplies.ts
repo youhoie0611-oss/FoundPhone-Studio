@@ -30,6 +30,8 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
 
   if (name === "裴知聿" &&
       /晚餐|煮飯|買菜|做菜|願意來|真的會來|過去吃|來我家/.test(context + " " + player)) {
+    if (/還沒.*決定|再想想|給我.*時間|先確認/.test(player))
+      return say("好，妳還沒決定，我先不把今晚的安排定下來。等妳想清楚再告訴我，不用急。");
     if (stop.test(player)) return say("……好。我知道妳改變主意了。今晚就不勉強妳，我不會擅自把妳算進安排。");
     if (/煮什麼|做什麼|準備什麼|吃什麼/.test(player))
       return say("我想做妳以前喜歡的菜，但還沒決定。妳現在想吃什麼？我照妳的口味準備。");
