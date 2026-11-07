@@ -6,6 +6,7 @@ export interface StoryEvent {
   startsAt: string; endsAt: string; prerequisites: string[];
   playerChoice?: PlayerDecision; attended?: boolean;
   outcome?: string; choiceId?: string; choiceLabel?: string; topic?: string; sourceMessageIds?: string[];
+  nextNodeIds?: string[]; resultMessageIds?: string[];
   followUps: string[]; photoIds: string[];
   history: { at: string; status: EventStatus; choice?: PlayerDecision }[];
 }
