@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 39,
+  "revision": 40,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -6154,7 +6154,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6162,7 +6162,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6171,7 +6171,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6179,7 +6179,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6188,7 +6188,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6196,7 +6196,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6205,7 +6205,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6213,7 +6213,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6222,7 +6222,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6230,7 +6230,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6239,7 +6239,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6247,7 +6247,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6256,7 +6256,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6264,7 +6264,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6273,7 +6273,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6281,7 +6281,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6290,7 +6290,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6298,7 +6298,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6307,7 +6307,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6315,7 +6315,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6324,7 +6324,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6332,7 +6332,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6341,7 +6341,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6349,7 +6349,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6358,7 +6358,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6366,7 +6366,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6375,7 +6375,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6383,7 +6383,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6392,7 +6392,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6400,7 +6400,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6409,7 +6409,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6417,7 +6417,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6426,7 +6426,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6434,7 +6434,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6443,7 +6443,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6451,7 +6451,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6460,7 +6460,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6468,7 +6468,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6477,7 +6477,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6485,7 +6485,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6494,7 +6494,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6502,7 +6502,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6511,7 +6511,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6519,7 +6519,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6528,7 +6528,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6536,7 +6536,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想到那次妳在雨裡等我。我只顧著解釋工作，沒發現妳其實已經很難過。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6545,7 +6545,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你不用因為一張照片就覺得我們能回到以前。",
           "time": "21:46",
           "hidden": true
         },
@@ -6553,7 +6553,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。照片只讓我想起自己做錯的事，不代表妳需要回頭。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6562,7 +6562,7 @@
           "id": "choice-pei-r5-after-pei-r4-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你最近真的有在調整生活嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -6570,7 +6570,7 @@
           "id": "choice-pei-r5-after-pei-r4-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "有。我開始把工作和私人時間分開，也學著提前告知行程。但我知道這不等於能修復我們。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6579,7 +6579,7 @@
           "id": "choice-pei-r5-after-pei-r4-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你現在過得怎麼樣，不需要向我報備。",
           "time": "21:46",
           "hidden": true
         },
@@ -6587,7 +6587,7 @@
           "id": "choice-pei-r5-after-pei-r4-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "明白。我不會再把自己的改變當成要求妳回應的理由。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6596,7 +6596,7 @@
           "id": "choice-pei-r5-after-pei-r4-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你最近真的有在調整生活嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -6604,7 +6604,7 @@
           "id": "choice-pei-r5-after-pei-r4-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "有。我開始把工作和私人時間分開，也學著提前告知行程。但我知道這不等於能修復我們。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6613,7 +6613,7 @@
           "id": "choice-pei-r5-after-pei-r4-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你現在過得怎麼樣，不需要向我報備。",
           "time": "21:46",
           "hidden": true
         },
@@ -6621,7 +6621,7 @@
           "id": "choice-pei-r5-after-pei-r4-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "明白。我不會再把自己的改變當成要求妳回應的理由。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6630,7 +6630,7 @@
           "id": "choice-pei-r6-after-pei-r5-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你還記得那間店裡我們最後一次談話嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -6638,7 +6638,7 @@
           "id": "choice-pei-r6-after-pei-r5-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "記得。妳問我到底想不想繼續，我卻只說最近很累。那句話讓妳一個人承擔了決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6647,7 +6647,7 @@
           "id": "choice-pei-r6-after-pei-r5-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "那間店的事我暫時不想再提。",
           "time": "21:46",
           "hidden": true
         },
@@ -6655,7 +6655,7 @@
           "id": "choice-pei-r6-after-pei-r5-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會用共同回憶逼妳重新走一遍。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6664,7 +6664,7 @@
           "id": "choice-pei-r6-after-pei-r5-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你還記得那間店裡我們最後一次談話嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -6672,7 +6672,7 @@
           "id": "choice-pei-r6-after-pei-r5-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "記得。妳問我到底想不想繼續，我卻只說最近很累。那句話讓妳一個人承擔了決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6681,7 +6681,7 @@
           "id": "choice-pei-r6-after-pei-r5-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "那間店的事我暫時不想再提。",
           "time": "21:46",
           "hidden": true
         },
@@ -6689,7 +6689,7 @@
           "id": "choice-pei-r6-after-pei-r5-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會用共同回憶逼妳重新走一遍。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6698,7 +6698,7 @@
           "id": "choice-pei-r7-after-pei-r6-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說以前讓我一直猜，具體是指什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6706,7 +6706,7 @@
           "id": "choice-pei-r7-after-pei-r6-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "妳問我是不是在生氣，我明明有壓力卻說沒事，接著整晚不回訊息。那是我在逃避溝通。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6715,7 +6715,7 @@
           "id": "choice-pei-r7-after-pei-r6-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再替你的沉默找理由。",
           "time": "21:46",
           "hidden": true
         },
@@ -6723,7 +6723,7 @@
           "id": "choice-pei-r7-after-pei-r6-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不用找。當時該說清楚的人是我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6732,7 +6732,7 @@
           "id": "choice-pei-r7-after-pei-r6-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說以前讓我一直猜，具體是指什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6740,7 +6740,7 @@
           "id": "choice-pei-r7-after-pei-r6-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "妳問我是不是在生氣，我明明有壓力卻說沒事，接著整晚不回訊息。那是我在逃避溝通。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6749,7 +6749,7 @@
           "id": "choice-pei-r7-after-pei-r6-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再替你的沉默找理由。",
           "time": "21:46",
           "hidden": true
         },
@@ -6757,7 +6757,7 @@
           "id": "choice-pei-r7-after-pei-r6-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不用找。當時該說清楚的人是我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6766,7 +6766,7 @@
           "id": "choice-pei-r8-after-pei-r7-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你道歉的是哪一件事？",
           "time": "21:46",
           "hidden": true
         },
@@ -6774,7 +6774,7 @@
           "id": "choice-pei-r8-after-pei-r7-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "是妳想好好談時，我卻讓妳覺得自己的情緒很麻煩。這件事我一直記得。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6783,7 +6783,7 @@
           "id": "choice-pei-r8-after-pei-r7-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "道歉不代表我必須接受。",
           "time": "21:46",
           "hidden": true
         },
@@ -6791,7 +6791,7 @@
           "id": "choice-pei-r8-after-pei-r7-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。我說出來是承認錯誤，不是要妳原諒。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6800,7 +6800,7 @@
           "id": "choice-pei-r8-after-pei-r7-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你道歉的是哪一件事？",
           "time": "21:46",
           "hidden": true
         },
@@ -6808,7 +6808,7 @@
           "id": "choice-pei-r8-after-pei-r7-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "是妳想好好談時，我卻讓妳覺得自己的情緒很麻煩。這件事我一直記得。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6817,7 +6817,7 @@
           "id": "choice-pei-r8-after-pei-r7-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "道歉不代表我必須接受。",
           "time": "21:46",
           "hidden": true
         },
@@ -6825,7 +6825,7 @@
           "id": "choice-pei-r8-after-pei-r7-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。我說出來是承認錯誤，不是要妳原諒。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6834,7 +6834,7 @@
           "id": "choice-pei-r9-after-pei-r8-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "那時候你為什麼總是不願意談？",
           "time": "21:46",
           "hidden": true
         },
@@ -6842,7 +6842,7 @@
           "id": "choice-pei-r9-after-pei-r8-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我怕一開口就得承認自己做不到承諾，所以乾脆不談。結果妳連我的想法都無從知道。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6851,7 +6851,7 @@
           "id": "choice-pei-r9-after-pei-r8-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你現在說得清楚，不代表當時的傷害消失了。",
           "time": "21:46",
           "hidden": true
         },
@@ -6859,7 +6859,7 @@
           "id": "choice-pei-r9-after-pei-r8-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "是。現在能說清楚，只是我應該早點學會的事。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6868,7 +6868,7 @@
           "id": "choice-pei-r9-after-pei-r8-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。那時候你為什麼總是不願意談？",
           "time": "21:46",
           "hidden": true
         },
@@ -6876,7 +6876,7 @@
           "id": "choice-pei-r9-after-pei-r8-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我怕一開口就得承認自己做不到承諾，所以乾脆不談。結果妳連我的想法都無從知道。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6885,7 +6885,7 @@
           "id": "choice-pei-r9-after-pei-r8-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你現在說得清楚，不代表當時的傷害消失了。",
           "time": "21:46",
           "hidden": true
         },
@@ -6893,7 +6893,7 @@
           "id": "choice-pei-r9-after-pei-r8-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "是。現在能說清楚，只是我應該早點學會的事。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6902,7 +6902,7 @@
           "id": "choice-pei-r10-after-pei-r9-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說你在學，具體做了什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6910,7 +6910,7 @@
           "id": "choice-pei-r10-after-pei-r9-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "工作有衝突時我會先把問題講出來，不再直接失聯。朋友也提醒我，傾聽不能只等對方說完。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6919,7 +6919,7 @@
           "id": "choice-pei-r10-after-pei-r9-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想成為你改變的驗收者。",
           "time": "21:46",
           "hidden": true
         },
@@ -6927,7 +6927,7 @@
           "id": "choice-pei-r10-after-pei-r9-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不需要。改變是我的責任。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6936,7 +6936,7 @@
           "id": "choice-pei-r10-after-pei-r9-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說你在學，具體做了什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -6944,7 +6944,7 @@
           "id": "choice-pei-r10-after-pei-r9-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "工作有衝突時我會先把問題講出來，不再直接失聯。朋友也提醒我，傾聽不能只等對方說完。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6953,7 +6953,7 @@
           "id": "choice-pei-r10-after-pei-r9-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想成為你改變的驗收者。",
           "time": "21:46",
           "hidden": true
         },
@@ -6961,7 +6961,7 @@
           "id": "choice-pei-r10-after-pei-r9-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不需要。改變是我的責任。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6970,7 +6970,7 @@
           "id": "choice-pei-r11-after-pei-r10-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你知道我當時最難受的是什麼嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -6978,7 +6978,7 @@
           "id": "choice-pei-r11-after-pei-r10-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "不是我忙，是我讓妳覺得妳的感受永遠排在最後。我現在才真正理解。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -6987,7 +6987,7 @@
           "id": "choice-pei-r11-after-pei-r10-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再細數以前受過的委屈。",
           "time": "21:46",
           "hidden": true
         },
@@ -6995,7 +6995,7 @@
           "id": "choice-pei-r11-after-pei-r10-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會要求妳再把傷口攤開給我看。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7004,7 +7004,7 @@
           "id": "choice-pei-r11-after-pei-r10-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你知道我當時最難受的是什麼嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7012,7 +7012,7 @@
           "id": "choice-pei-r11-after-pei-r10-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "不是我忙，是我讓妳覺得妳的感受永遠排在最後。我現在才真正理解。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7021,7 +7021,7 @@
           "id": "choice-pei-r11-after-pei-r10-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再細數以前受過的委屈。",
           "time": "21:46",
           "hidden": true
         },
@@ -7029,7 +7029,7 @@
           "id": "choice-pei-r11-after-pei-r10-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會要求妳再把傷口攤開給我看。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7038,7 +7038,7 @@
           "id": "choice-pei-r12-after-pei-r11-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "如果重來，你會先改變哪件事？",
           "time": "21:46",
           "hidden": true
         },
@@ -7046,7 +7046,7 @@
           "id": "choice-pei-r12-after-pei-r11-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "妳問我有沒有空談，我會給一個明確時間，而不是說改天再說然後消失。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7055,7 +7055,7 @@
           "id": "choice-pei-r12-after-pei-r11-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我們沒有必要一直假設重來。",
           "time": "21:46",
           "hidden": true
         },
@@ -7063,7 +7063,7 @@
           "id": "choice-pei-r12-after-pei-r11-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳說得對。過去不能靠假設改掉。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7072,7 +7072,7 @@
           "id": "choice-pei-r12-after-pei-r11-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。如果重來，你會先改變哪件事？",
           "time": "21:46",
           "hidden": true
         },
@@ -7080,7 +7080,7 @@
           "id": "choice-pei-r12-after-pei-r11-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "妳問我有沒有空談，我會給一個明確時間，而不是說改天再說然後消失。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7089,7 +7089,7 @@
           "id": "choice-pei-r12-after-pei-r11-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我們沒有必要一直假設重來。",
           "time": "21:46",
           "hidden": true
         },
@@ -7097,7 +7097,7 @@
           "id": "choice-pei-r12-after-pei-r11-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳說得對。過去不能靠假設改掉。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7106,7 +7106,7 @@
           "id": "choice-pei-r13-after-pei-r12-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你跟朋友提過我們分手的原因嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7114,7 +7114,7 @@
           "id": "choice-pei-r13-after-pei-r12-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我只說自己處理關係的方式有問題，沒有拿妳的私事當談資。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7123,7 +7123,7 @@
           "id": "choice-pei-r13-after-pei-r12-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我們之間的事不要再告訴別人。",
           "time": "21:46",
           "hidden": true
         },
@@ -7131,7 +7131,7 @@
           "id": "choice-pei-r13-after-pei-r12-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我會守住這條界線。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7140,7 +7140,7 @@
           "id": "choice-pei-r13-after-pei-r12-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你跟朋友提過我們分手的原因嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7148,7 +7148,7 @@
           "id": "choice-pei-r13-after-pei-r12-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我只說自己處理關係的方式有問題，沒有拿妳的私事當談資。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7157,7 +7157,7 @@
           "id": "choice-pei-r13-after-pei-r12-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我們之間的事不要再告訴別人。",
           "time": "21:46",
           "hidden": true
         },
@@ -7165,7 +7165,7 @@
           "id": "choice-pei-r13-after-pei-r12-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我會守住這條界線。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7174,7 +7174,7 @@
           "id": "choice-pei-r14-after-pei-r13-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你現在遇到壓力會怎麼告訴對方？",
           "time": "21:46",
           "hidden": true
         },
@@ -7182,7 +7182,7 @@
           "id": "choice-pei-r14-after-pei-r13-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我會直接說自己需要半天整理情緒，並說好什麼時候再談，不會讓對方空等。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7191,7 +7191,7 @@
           "id": "choice-pei-r14-after-pei-r13-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不需要你向我證明現在做得多好。",
           "time": "21:46",
           "hidden": true
         },
@@ -7199,7 +7199,7 @@
           "id": "choice-pei-r14-after-pei-r13-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我明白。我不會把這些當作交換復合的條件。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7208,7 +7208,7 @@
           "id": "choice-pei-r14-after-pei-r13-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你現在遇到壓力會怎麼告訴對方？",
           "time": "21:46",
           "hidden": true
         },
@@ -7216,7 +7216,7 @@
           "id": "choice-pei-r14-after-pei-r13-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我會直接說自己需要半天整理情緒，並說好什麼時候再談，不會讓對方空等。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7225,7 +7225,7 @@
           "id": "choice-pei-r14-after-pei-r13-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不需要你向我證明現在做得多好。",
           "time": "21:46",
           "hidden": true
         },
@@ -7233,7 +7233,7 @@
           "id": "choice-pei-r14-after-pei-r13-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我明白。我不會把這些當作交換復合的條件。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7242,7 +7242,7 @@
           "id": "choice-pei-r15-after-pei-r14-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你還記得當初答應我的事嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7250,7 +7250,7 @@
           "id": "choice-pei-r15-after-pei-r14-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "記得。我說過不會再讓妳一個人等答案，卻在最重要的時候又逃避了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7259,7 +7259,7 @@
           "id": "choice-pei-r15-after-pei-r14-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我現在不想聽新的承諾。",
           "time": "21:46",
           "hidden": true
         },
@@ -7267,7 +7267,7 @@
           "id": "choice-pei-r15-after-pei-r14-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。那我不再用承諾包裝道歉。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7276,7 +7276,7 @@
           "id": "choice-pei-r15-after-pei-r14-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你還記得當初答應我的事嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7284,7 +7284,7 @@
           "id": "choice-pei-r15-after-pei-r14-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "記得。我說過不會再讓妳一個人等答案，卻在最重要的時候又逃避了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7293,7 +7293,7 @@
           "id": "choice-pei-r15-after-pei-r14-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我現在不想聽新的承諾。",
           "time": "21:46",
           "hidden": true
         },
@@ -7301,7 +7301,7 @@
           "id": "choice-pei-r15-after-pei-r14-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。那我不再用承諾包裝道歉。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7310,7 +7310,7 @@
           "id": "choice-pei-r16-after-pei-r15-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你那句『妳想太多』到底是什麼意思？",
           "time": "21:46",
           "hidden": true
         },
@@ -7318,7 +7318,7 @@
           "id": "choice-pei-r16-after-pei-r15-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "那是我不願面對妳提出的問題，才把責任推回妳身上。那句話很傷人。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7327,7 +7327,7 @@
           "id": "choice-pei-r16-after-pei-r15-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不接受你再否定我的感受。",
           "time": "21:46",
           "hidden": true
         },
@@ -7335,7 +7335,7 @@
           "id": "choice-pei-r16-after-pei-r15-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我不會。妳當時的感受有原因，不該被我否定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7344,7 +7344,7 @@
           "id": "choice-pei-r16-after-pei-r15-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你那句『妳想太多』到底是什麼意思？",
           "time": "21:46",
           "hidden": true
         },
@@ -7352,7 +7352,7 @@
           "id": "choice-pei-r16-after-pei-r15-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "那是我不願面對妳提出的問題，才把責任推回妳身上。那句話很傷人。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7361,7 +7361,7 @@
           "id": "choice-pei-r16-after-pei-r15-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不接受你再否定我的感受。",
           "time": "21:46",
           "hidden": true
         },
@@ -7369,7 +7369,7 @@
           "id": "choice-pei-r16-after-pei-r15-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我不會。妳當時的感受有原因，不該被我否定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7378,7 +7378,7 @@
           "id": "choice-pei-r17-after-pei-r16-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說有學著傾聽，那你現在聽懂了什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -7386,7 +7386,7 @@
           "id": "choice-pei-r17-after-pei-r16-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我聽懂妳不是要我每次都給完美答案，而是希望我願意留下來把事情談完。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7395,7 +7395,7 @@
           "id": "choice-pei-r17-after-pei-r16-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再教你怎麼談感情。",
           "time": "21:46",
           "hidden": true
         },
@@ -7403,7 +7403,7 @@
           "id": "choice-pei-r17-after-pei-r16-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不用。這些本來就該由我自己學。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7412,7 +7412,7 @@
           "id": "choice-pei-r17-after-pei-r16-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說有學著傾聽，那你現在聽懂了什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -7420,7 +7420,7 @@
           "id": "choice-pei-r17-after-pei-r16-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我聽懂妳不是要我每次都給完美答案，而是希望我願意留下來把事情談完。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7429,7 +7429,7 @@
           "id": "choice-pei-r17-after-pei-r16-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再教你怎麼談感情。",
           "time": "21:46",
           "hidden": true
         },
@@ -7437,7 +7437,7 @@
           "id": "choice-pei-r17-after-pei-r16-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不用。這些本來就該由我自己學。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7446,7 +7446,7 @@
           "id": "choice-pei-r18-after-pei-r17-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你最近還會去我們以前常去的地方嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7454,7 +7454,7 @@
           "id": "choice-pei-r18-after-pei-r17-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "偶爾經過，但我沒有去找妳，也不會在那裡等妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7463,7 +7463,7 @@
           "id": "choice-pei-r18-after-pei-r17-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "請你不要用巧遇當成見面的理由。",
           "time": "21:46",
           "hidden": true
         },
@@ -7471,7 +7471,7 @@
           "id": "choice-pei-r18-after-pei-r17-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我答應妳，不會安排那種巧遇。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7480,7 +7480,7 @@
           "id": "choice-pei-r18-after-pei-r17-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你最近還會去我們以前常去的地方嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7488,7 +7488,7 @@
           "id": "choice-pei-r18-after-pei-r17-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "偶爾經過，但我沒有去找妳，也不會在那裡等妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7497,7 +7497,7 @@
           "id": "choice-pei-r18-after-pei-r17-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "請你不要用巧遇當成見面的理由。",
           "time": "21:46",
           "hidden": true
         },
@@ -7505,7 +7505,7 @@
           "id": "choice-pei-r18-after-pei-r17-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我答應妳，不會安排那種巧遇。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7514,7 +7514,7 @@
           "id": "choice-pei-r19-after-pei-r18-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "如果我們意見不同，你現在會怎麼處理？",
           "time": "21:46",
           "hidden": true
         },
@@ -7522,7 +7522,7 @@
           "id": "choice-pei-r19-after-pei-r18-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "先聽完妳在意的事，再說我的想法。若需要冷靜，我會約定再談的時間。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7531,7 +7531,7 @@
           "id": "choice-pei-r19-after-pei-r18-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我現在不想和你練習溝通。",
           "time": "21:46",
           "hidden": true
         },
@@ -7539,7 +7539,7 @@
           "id": "choice-pei-r19-after-pei-r18-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我尊重妳現在不想談的決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7548,7 +7548,7 @@
           "id": "choice-pei-r19-after-pei-r18-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。如果我們意見不同，你現在會怎麼處理？",
           "time": "21:46",
           "hidden": true
         },
@@ -7556,7 +7556,7 @@
           "id": "choice-pei-r19-after-pei-r18-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "先聽完妳在意的事，再說我的想法。若需要冷靜，我會約定再談的時間。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7565,7 +7565,7 @@
           "id": "choice-pei-r19-after-pei-r18-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我現在不想和你練習溝通。",
           "time": "21:46",
           "hidden": true
         },
@@ -7573,7 +7573,7 @@
           "id": "choice-pei-r19-after-pei-r18-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我尊重妳現在不想談的決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7582,7 +7582,7 @@
           "id": "choice-pei-r20-after-pei-r19-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你後悔的究竟是分手，還是失去有人陪？",
           "time": "21:46",
           "hidden": true
         },
@@ -7590,7 +7590,7 @@
           "id": "choice-pei-r20-after-pei-r19-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我後悔讓妳在關係裡孤單，也確實想念妳。但我不會把兩件事混為一談。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7599,7 +7599,7 @@
           "id": "choice-pei-r20-after-pei-r19-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你的後悔不要變成我的負擔。",
           "time": "21:46",
           "hidden": true
         },
@@ -7607,7 +7607,7 @@
           "id": "choice-pei-r20-after-pei-r19-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不會。我會自己處理這份後悔。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7616,7 +7616,7 @@
           "id": "choice-pei-r20-after-pei-r19-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你後悔的究竟是分手，還是失去有人陪？",
           "time": "21:46",
           "hidden": true
         },
@@ -7624,7 +7624,7 @@
           "id": "choice-pei-r20-after-pei-r19-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我後悔讓妳在關係裡孤單，也確實想念妳。但我不會把兩件事混為一談。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7633,7 +7633,7 @@
           "id": "choice-pei-r20-after-pei-r19-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "你的後悔不要變成我的負擔。",
           "time": "21:46",
           "hidden": true
         },
@@ -7641,7 +7641,7 @@
           "id": "choice-pei-r20-after-pei-r19-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不會。我會自己處理這份後悔。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7650,7 +7650,7 @@
           "id": "choice-pei-r21-after-pei-r20-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你說想念我，想念的是哪個部分？",
           "time": "21:46",
           "hidden": true
         },
@@ -7658,7 +7658,7 @@
           "id": "choice-pei-r21-after-pei-r20-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "是妳會把生活裡很小的事講得很有趣，也會在我沉默時試著靠近。我不該把那當成理所當然。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7667,7 +7667,7 @@
           "id": "choice-pei-r21-after-pei-r20-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想因為你說想念就心軟。",
           "time": "21:46",
           "hidden": true
         },
@@ -7675,7 +7675,7 @@
           "id": "choice-pei-r21-after-pei-r20-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不用。想念是我的感受，不是妳的義務。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7684,7 +7684,7 @@
           "id": "choice-pei-r21-after-pei-r20-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你說想念我，想念的是哪個部分？",
           "time": "21:46",
           "hidden": true
         },
@@ -7692,7 +7692,7 @@
           "id": "choice-pei-r21-after-pei-r20-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "是妳會把生活裡很小的事講得很有趣，也會在我沉默時試著靠近。我不該把那當成理所當然。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7701,7 +7701,7 @@
           "id": "choice-pei-r21-after-pei-r20-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想因為你說想念就心軟。",
           "time": "21:46",
           "hidden": true
         },
@@ -7709,7 +7709,7 @@
           "id": "choice-pei-r21-after-pei-r20-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "妳不用。想念是我的感受，不是妳的義務。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7718,7 +7718,7 @@
           "id": "choice-pei-r22-after-pei-r21-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你現在聯絡我，是想要重新開始嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7726,7 +7726,7 @@
           "id": "choice-pei-r22-after-pei-r21-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我有這個念頭，但我不想跳過當初的問題。妳沒有答應之前，我不會把我們當成復合。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7735,7 +7735,7 @@
           "id": "choice-pei-r22-after-pei-r21-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還沒有想過要重新開始。",
           "time": "21:46",
           "hidden": true
         },
@@ -7743,7 +7743,7 @@
           "id": "choice-pei-r22-after-pei-r21-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。我不會替妳做決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7752,7 +7752,7 @@
           "id": "choice-pei-r22-after-pei-r21-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你現在聯絡我，是想要重新開始嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7760,7 +7760,7 @@
           "id": "choice-pei-r22-after-pei-r21-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我有這個念頭，但我不想跳過當初的問題。妳沒有答應之前，我不會把我們當成復合。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7769,7 +7769,7 @@
           "id": "choice-pei-r22-after-pei-r21-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還沒有想過要重新開始。",
           "time": "21:46",
           "hidden": true
         },
@@ -7777,7 +7777,7 @@
           "id": "choice-pei-r22-after-pei-r21-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道。我不會替妳做決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7786,7 +7786,7 @@
           "id": "choice-pei-r23-after-pei-r22-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你想約我見面，是為了談什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -7794,7 +7794,7 @@
           "id": "choice-pei-r23-after-pei-r22-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想當面道歉，讓妳有機會問我任何事。如果妳不想見，我們就不見。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7803,7 +7803,7 @@
           "id": "choice-pei-r23-after-pei-r22-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "請不要突然出現在我工作的地方。",
           "time": "21:46",
           "hidden": true
         },
@@ -7811,7 +7811,7 @@
           "id": "choice-pei-r23-after-pei-r22-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不會。我會先徵求妳同意。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7820,7 +7820,7 @@
           "id": "choice-pei-r23-after-pei-r22-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你想約我見面，是為了談什麼？",
           "time": "21:46",
           "hidden": true
         },
@@ -7828,7 +7828,7 @@
           "id": "choice-pei-r23-after-pei-r22-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想當面道歉，讓妳有機會問我任何事。如果妳不想見，我們就不見。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7837,7 +7837,7 @@
           "id": "choice-pei-r23-after-pei-r22-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "請不要突然出現在我工作的地方。",
           "time": "21:46",
           "hidden": true
         },
@@ -7845,7 +7845,7 @@
           "id": "choice-pei-r23-after-pei-r22-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "不會。我會先徵求妳同意。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7854,7 +7854,7 @@
           "id": "choice-pei-r24-after-pei-r23-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "如果見面，你能接受我隨時離開嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7862,7 +7862,7 @@
           "id": "choice-pei-r24-after-pei-r23-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "能。妳不舒服就離開，我不會攔妳，也不會追問理由。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7871,7 +7871,7 @@
           "id": "choice-pei-r24-after-pei-r23-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還是不想見面。",
           "time": "21:46",
           "hidden": true
         },
@@ -7879,7 +7879,7 @@
           "id": "choice-pei-r24-after-pei-r23-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。那就不約，這件事到此為止。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7888,7 +7888,7 @@
           "id": "choice-pei-r24-after-pei-r23-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。如果見面，你能接受我隨時離開嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7896,7 +7896,7 @@
           "id": "choice-pei-r24-after-pei-r23-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "能。妳不舒服就離開，我不會攔妳，也不會追問理由。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7905,7 +7905,7 @@
           "id": "choice-pei-r24-after-pei-r23-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還是不想見面。",
           "time": "21:46",
           "hidden": true
         },
@@ -7913,7 +7913,7 @@
           "id": "choice-pei-r24-after-pei-r23-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。那就不約，這件事到此為止。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7922,7 +7922,7 @@
           "id": "choice-pei-r25-after-pei-r24-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你想說的話，能先在這裡說完嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7930,7 +7930,7 @@
           "id": "choice-pei-r25-after-pei-r24-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "可以。我想為那段時間的逃避道歉，也想讓妳知道，我沒有忘記妳當時說的話。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7939,7 +7939,7 @@
           "id": "choice-pei-r25-after-pei-r24-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我今天不想再談過去。",
           "time": "21:46",
           "hidden": true
         },
@@ -7947,7 +7947,7 @@
           "id": "choice-pei-r25-after-pei-r24-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。今天就停在這裡，妳不用回我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7956,7 +7956,7 @@
           "id": "choice-pei-r25-after-pei-r24-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你想說的話，能先在這裡說完嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -7964,7 +7964,7 @@
           "id": "choice-pei-r25-after-pei-r24-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "可以。我想為那段時間的逃避道歉，也想讓妳知道，我沒有忘記妳當時說的話。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7973,7 +7973,7 @@
           "id": "choice-pei-r25-after-pei-r24-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我今天不想再談過去。",
           "time": "21:46",
           "hidden": true
         },
@@ -7981,7 +7981,7 @@
           "id": "choice-pei-r25-after-pei-r24-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。今天就停在這裡，妳不用回我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7990,7 +7990,7 @@
           "id": "choice-pei-r26-after-pei-r25-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你現在希望我們維持什麼關係？",
           "time": "21:46",
           "hidden": true
         },
@@ -7998,7 +7998,7 @@
           "id": "choice-pei-r26-after-pei-r25-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "如果妳願意，先從能平靜說話開始。至於之後，我不會擅自替我們定義。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8007,7 +8007,7 @@
           "id": "choice-pei-r26-after-pei-r25-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我只想維持必要的距離。",
           "time": "21:46",
           "hidden": true
         },
@@ -8015,7 +8015,7 @@
           "id": "choice-pei-r26-after-pei-r25-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我會照做，不再試探妳的界線。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8024,7 +8024,7 @@
           "id": "choice-pei-r26-after-pei-r25-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你現在希望我們維持什麼關係？",
           "time": "21:46",
           "hidden": true
         },
@@ -8032,7 +8032,7 @@
           "id": "choice-pei-r26-after-pei-r25-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "如果妳願意，先從能平靜說話開始。至於之後，我不會擅自替我們定義。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8041,7 +8041,7 @@
           "id": "choice-pei-r26-after-pei-r25-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我只想維持必要的距離。",
           "time": "21:46",
           "hidden": true
         },
@@ -8049,7 +8049,7 @@
           "id": "choice-pei-r26-after-pei-r25-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我會照做，不再試探妳的界線。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8058,7 +8058,7 @@
           "id": "choice-pei-r27-after-pei-r26-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你能接受我們可能永遠不復合嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -8066,7 +8066,7 @@
           "id": "choice-pei-r27-after-pei-r26-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "能接受，雖然會難過。妳有權選擇對自己最好的生活。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8075,7 +8075,7 @@
           "id": "choice-pei-r27-after-pei-r26-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不希望你一直等我的答案。",
           "time": "21:46",
           "hidden": true
         },
@@ -8083,7 +8083,7 @@
           "id": "choice-pei-r27-after-pei-r26-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我不會把等待當成給妳的壓力。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8092,7 +8092,7 @@
           "id": "choice-pei-r27-after-pei-r26-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你能接受我們可能永遠不復合嗎？",
           "time": "21:46",
           "hidden": true
         },
@@ -8100,7 +8100,7 @@
           "id": "choice-pei-r27-after-pei-r26-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "能接受，雖然會難過。妳有權選擇對自己最好的生活。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8109,7 +8109,7 @@
           "id": "choice-pei-r27-after-pei-r26-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不希望你一直等我的答案。",
           "time": "21:46",
           "hidden": true
         },
@@ -8117,7 +8117,7 @@
           "id": "choice-pei-r27-after-pei-r26-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我不會把等待當成給妳的壓力。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8126,7 +8126,7 @@
           "id": "choice-pei-r28-after-pei-r27-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "如果我不再回覆，你會怎麼做？",
           "time": "21:46",
           "hidden": true
         },
@@ -8134,7 +8134,7 @@
           "id": "choice-pei-r28-after-pei-r27-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我會停下來。除非有真正需要告知的事情，不會用別的理由打擾妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8143,7 +8143,7 @@
           "id": "choice-pei-r28-after-pei-r27-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我需要你停止主動聯絡。",
           "time": "21:46",
           "hidden": true
         },
@@ -8151,7 +8151,7 @@
           "id": "choice-pei-r28-after-pei-r27-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道了。之後我不會再主動傳私人訊息。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8160,7 +8160,7 @@
           "id": "choice-pei-r28-after-pei-r27-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。如果我不再回覆，你會怎麼做？",
           "time": "21:46",
           "hidden": true
         },
@@ -8168,7 +8168,7 @@
           "id": "choice-pei-r28-after-pei-r27-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我會停下來。除非有真正需要告知的事情，不會用別的理由打擾妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8177,7 +8177,7 @@
           "id": "choice-pei-r28-after-pei-r27-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我需要你停止主動聯絡。",
           "time": "21:46",
           "hidden": true
         },
@@ -8185,7 +8185,7 @@
           "id": "choice-pei-r28-after-pei-r27-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "我知道了。之後我不會再主動傳私人訊息。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8194,7 +8194,7 @@
           "id": "choice-pei-r29-after-pei-r28-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你現在還有什麼沒說清楚的？",
           "time": "21:46",
           "hidden": true
         },
@@ -8202,7 +8202,7 @@
           "id": "choice-pei-r29-after-pei-r28-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想說，我當時不是不在乎，而是不懂得好好表達。但這不是藉口。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8211,7 +8211,7 @@
           "id": "choice-pei-r29-after-pei-r28-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再反覆確認同一件事。",
           "time": "21:46",
           "hidden": true
         },
@@ -8219,7 +8219,7 @@
           "id": "choice-pei-r29-after-pei-r28-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會讓妳一直重複回答。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8228,7 +8228,7 @@
           "id": "choice-pei-r29-after-pei-r28-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你現在還有什麼沒說清楚的？",
           "time": "21:46",
           "hidden": true
         },
@@ -8236,7 +8236,7 @@
           "id": "choice-pei-r29-after-pei-r28-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我想說，我當時不是不在乎，而是不懂得好好表達。但這不是藉口。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8245,7 +8245,7 @@
           "id": "choice-pei-r29-after-pei-r28-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我不想再反覆確認同一件事。",
           "time": "21:46",
           "hidden": true
         },
@@ -8253,7 +8253,7 @@
           "id": "choice-pei-r29-after-pei-r28-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "好。我不會讓妳一直重複回答。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8262,7 +8262,7 @@
           "id": "choice-pei-r30-after-pei-r29-a-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "你希望我現在做什麼決定？",
           "time": "21:46",
           "hidden": true
         },
@@ -8270,7 +8270,7 @@
           "id": "choice-pei-r30-after-pei-r29-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我不希望妳為了安撫我做決定。妳想保持距離也好，繼續了解也好，都由妳決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8279,7 +8279,7 @@
           "id": "choice-pei-r30-after-pei-r29-a-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還沒有答案，也不打算現在給。",
           "time": "21:46",
           "hidden": true
         },
@@ -8287,7 +8287,7 @@
           "id": "choice-pei-r30-after-pei-r29-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "沒關係。妳不欠我一個期限。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8296,7 +8296,7 @@
           "id": "choice-pei-r30-after-pei-r29-b-in-extra-3-out",
           "title": "",
           "senderId": "owner",
-          "body": "你說這些，是希望我怎麼回應？",
+          "body": "我想再確認一件事。你希望我現在做什麼決定？",
           "time": "21:46",
           "hidden": true
         },
@@ -8304,7 +8304,7 @@
           "id": "choice-pei-r30-after-pei-r29-b-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不是要妳立刻做決定。只是想讓妳知道，我現在是真的在認真想我們的事。",
+          "body": "我不希望妳為了安撫我做決定。妳想保持距離也好，繼續了解也好，都由妳決定。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8313,7 +8313,7 @@
           "id": "choice-pei-r30-after-pei-r29-b-in-extra-4-out",
           "title": "",
           "senderId": "owner",
-          "body": "我現在不想繼續談我們的關係。",
+          "body": "我還沒有答案，也不打算現在給。",
           "time": "21:46",
           "hidden": true
         },
@@ -8321,7 +8321,7 @@
           "id": "choice-pei-r30-after-pei-r29-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。妳說停就停，我不會再逼妳回答。",
+          "body": "沒關係。妳不欠我一個期限。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -39140,7 +39140,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39188,7 +39188,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39236,7 +39236,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39284,7 +39284,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39332,7 +39332,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39380,7 +39380,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39428,7 +39428,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39476,7 +39476,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39524,7 +39524,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39572,7 +39572,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39620,7 +39620,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39668,7 +39668,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39716,7 +39716,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39764,7 +39764,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39812,7 +39812,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39860,7 +39860,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -39908,7 +39908,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -39956,7 +39956,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40004,7 +40004,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40052,7 +40052,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40100,7 +40100,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40148,7 +40148,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40196,7 +40196,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說看到舊照片，那你當時想到的是什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40244,7 +40244,7 @@
     },
     {
       "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你不用因為一張照片就覺得我們能回到以前。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40292,7 +40292,7 @@
     },
     {
       "id": "choice-pei-r5-after-pei-r4-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你最近真的有在調整生活嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40340,7 +40340,7 @@
     },
     {
       "id": "choice-pei-r5-after-pei-r4-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你現在過得怎麼樣，不需要向我報備。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40388,7 +40388,7 @@
     },
     {
       "id": "choice-pei-r5-after-pei-r4-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你最近真的有在調整生活嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40436,7 +40436,7 @@
     },
     {
       "id": "choice-pei-r5-after-pei-r4-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你現在過得怎麼樣，不需要向我報備。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40484,7 +40484,7 @@
     },
     {
       "id": "choice-pei-r6-after-pei-r5-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你還記得那間店裡我們最後一次談話嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40532,7 +40532,7 @@
     },
     {
       "id": "choice-pei-r6-after-pei-r5-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "那間店的事我暫時不想再提。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40580,7 +40580,7 @@
     },
     {
       "id": "choice-pei-r6-after-pei-r5-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你還記得那間店裡我們最後一次談話嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40628,7 +40628,7 @@
     },
     {
       "id": "choice-pei-r6-after-pei-r5-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "那間店的事我暫時不想再提。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40676,7 +40676,7 @@
     },
     {
       "id": "choice-pei-r7-after-pei-r6-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說以前讓我一直猜，具體是指什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40724,7 +40724,7 @@
     },
     {
       "id": "choice-pei-r7-after-pei-r6-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再替你的沉默找理由。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40772,7 +40772,7 @@
     },
     {
       "id": "choice-pei-r7-after-pei-r6-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說以前讓我一直猜，具體是指什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40820,7 +40820,7 @@
     },
     {
       "id": "choice-pei-r7-after-pei-r6-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再替你的沉默找理由。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40868,7 +40868,7 @@
     },
     {
       "id": "choice-pei-r8-after-pei-r7-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你道歉的是哪一件事？",
       "type": "action",
       "once": true,
       "actions": [
@@ -40916,7 +40916,7 @@
     },
     {
       "id": "choice-pei-r8-after-pei-r7-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "道歉不代表我必須接受。",
       "type": "action",
       "once": true,
       "actions": [
@@ -40964,7 +40964,7 @@
     },
     {
       "id": "choice-pei-r8-after-pei-r7-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你道歉的是哪一件事？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41012,7 +41012,7 @@
     },
     {
       "id": "choice-pei-r8-after-pei-r7-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "道歉不代表我必須接受。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41060,7 +41060,7 @@
     },
     {
       "id": "choice-pei-r9-after-pei-r8-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "那時候你為什麼總是不願意談？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41108,7 +41108,7 @@
     },
     {
       "id": "choice-pei-r9-after-pei-r8-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你現在說得清楚，不代表當時的傷害消失了。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41156,7 +41156,7 @@
     },
     {
       "id": "choice-pei-r9-after-pei-r8-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。那時候你為什麼總是不願意談？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41204,7 +41204,7 @@
     },
     {
       "id": "choice-pei-r9-after-pei-r8-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你現在說得清楚，不代表當時的傷害消失了。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41252,7 +41252,7 @@
     },
     {
       "id": "choice-pei-r10-after-pei-r9-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說你在學，具體做了什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41300,7 +41300,7 @@
     },
     {
       "id": "choice-pei-r10-after-pei-r9-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想成為你改變的驗收者。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41348,7 +41348,7 @@
     },
     {
       "id": "choice-pei-r10-after-pei-r9-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說你在學，具體做了什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41396,7 +41396,7 @@
     },
     {
       "id": "choice-pei-r10-after-pei-r9-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想成為你改變的驗收者。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41444,7 +41444,7 @@
     },
     {
       "id": "choice-pei-r11-after-pei-r10-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你知道我當時最難受的是什麼嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41492,7 +41492,7 @@
     },
     {
       "id": "choice-pei-r11-after-pei-r10-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再細數以前受過的委屈。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41540,7 +41540,7 @@
     },
     {
       "id": "choice-pei-r11-after-pei-r10-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你知道我當時最難受的是什麼嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41588,7 +41588,7 @@
     },
     {
       "id": "choice-pei-r11-after-pei-r10-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再細數以前受過的委屈。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41636,7 +41636,7 @@
     },
     {
       "id": "choice-pei-r12-after-pei-r11-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "如果重來，你會先改變哪件事？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41684,7 +41684,7 @@
     },
     {
       "id": "choice-pei-r12-after-pei-r11-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我們沒有必要一直假設重來。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41732,7 +41732,7 @@
     },
     {
       "id": "choice-pei-r12-after-pei-r11-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。如果重來，你會先改變哪件事？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41780,7 +41780,7 @@
     },
     {
       "id": "choice-pei-r12-after-pei-r11-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我們沒有必要一直假設重來。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41828,7 +41828,7 @@
     },
     {
       "id": "choice-pei-r13-after-pei-r12-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你跟朋友提過我們分手的原因嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41876,7 +41876,7 @@
     },
     {
       "id": "choice-pei-r13-after-pei-r12-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我們之間的事不要再告訴別人。",
       "type": "action",
       "once": true,
       "actions": [
@@ -41924,7 +41924,7 @@
     },
     {
       "id": "choice-pei-r13-after-pei-r12-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你跟朋友提過我們分手的原因嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -41972,7 +41972,7 @@
     },
     {
       "id": "choice-pei-r13-after-pei-r12-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我們之間的事不要再告訴別人。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42020,7 +42020,7 @@
     },
     {
       "id": "choice-pei-r14-after-pei-r13-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你現在遇到壓力會怎麼告訴對方？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42068,7 +42068,7 @@
     },
     {
       "id": "choice-pei-r14-after-pei-r13-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不需要你向我證明現在做得多好。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42116,7 +42116,7 @@
     },
     {
       "id": "choice-pei-r14-after-pei-r13-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你現在遇到壓力會怎麼告訴對方？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42164,7 +42164,7 @@
     },
     {
       "id": "choice-pei-r14-after-pei-r13-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不需要你向我證明現在做得多好。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42212,7 +42212,7 @@
     },
     {
       "id": "choice-pei-r15-after-pei-r14-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你還記得當初答應我的事嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42260,7 +42260,7 @@
     },
     {
       "id": "choice-pei-r15-after-pei-r14-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我現在不想聽新的承諾。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42308,7 +42308,7 @@
     },
     {
       "id": "choice-pei-r15-after-pei-r14-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你還記得當初答應我的事嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42356,7 +42356,7 @@
     },
     {
       "id": "choice-pei-r15-after-pei-r14-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我現在不想聽新的承諾。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42404,7 +42404,7 @@
     },
     {
       "id": "choice-pei-r16-after-pei-r15-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你那句『妳想太多』到底是什麼意思？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42452,7 +42452,7 @@
     },
     {
       "id": "choice-pei-r16-after-pei-r15-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不接受你再否定我的感受。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42500,7 +42500,7 @@
     },
     {
       "id": "choice-pei-r16-after-pei-r15-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你那句『妳想太多』到底是什麼意思？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42548,7 +42548,7 @@
     },
     {
       "id": "choice-pei-r16-after-pei-r15-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不接受你再否定我的感受。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42596,7 +42596,7 @@
     },
     {
       "id": "choice-pei-r17-after-pei-r16-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說有學著傾聽，那你現在聽懂了什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42644,7 +42644,7 @@
     },
     {
       "id": "choice-pei-r17-after-pei-r16-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再教你怎麼談感情。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42692,7 +42692,7 @@
     },
     {
       "id": "choice-pei-r17-after-pei-r16-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說有學著傾聽，那你現在聽懂了什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42740,7 +42740,7 @@
     },
     {
       "id": "choice-pei-r17-after-pei-r16-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再教你怎麼談感情。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42788,7 +42788,7 @@
     },
     {
       "id": "choice-pei-r18-after-pei-r17-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你最近還會去我們以前常去的地方嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42836,7 +42836,7 @@
     },
     {
       "id": "choice-pei-r18-after-pei-r17-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "請你不要用巧遇當成見面的理由。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42884,7 +42884,7 @@
     },
     {
       "id": "choice-pei-r18-after-pei-r17-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你最近還會去我們以前常去的地方嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -42932,7 +42932,7 @@
     },
     {
       "id": "choice-pei-r18-after-pei-r17-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "請你不要用巧遇當成見面的理由。",
       "type": "action",
       "once": true,
       "actions": [
@@ -42980,7 +42980,7 @@
     },
     {
       "id": "choice-pei-r19-after-pei-r18-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "如果我們意見不同，你現在會怎麼處理？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43028,7 +43028,7 @@
     },
     {
       "id": "choice-pei-r19-after-pei-r18-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我現在不想和你練習溝通。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43076,7 +43076,7 @@
     },
     {
       "id": "choice-pei-r19-after-pei-r18-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。如果我們意見不同，你現在會怎麼處理？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43124,7 +43124,7 @@
     },
     {
       "id": "choice-pei-r19-after-pei-r18-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我現在不想和你練習溝通。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43172,7 +43172,7 @@
     },
     {
       "id": "choice-pei-r20-after-pei-r19-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你後悔的究竟是分手，還是失去有人陪？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43220,7 +43220,7 @@
     },
     {
       "id": "choice-pei-r20-after-pei-r19-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你的後悔不要變成我的負擔。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43268,7 +43268,7 @@
     },
     {
       "id": "choice-pei-r20-after-pei-r19-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你後悔的究竟是分手，還是失去有人陪？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43316,7 +43316,7 @@
     },
     {
       "id": "choice-pei-r20-after-pei-r19-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "你的後悔不要變成我的負擔。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43364,7 +43364,7 @@
     },
     {
       "id": "choice-pei-r21-after-pei-r20-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你說想念我，想念的是哪個部分？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43412,7 +43412,7 @@
     },
     {
       "id": "choice-pei-r21-after-pei-r20-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想因為你說想念就心軟。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43460,7 +43460,7 @@
     },
     {
       "id": "choice-pei-r21-after-pei-r20-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你說想念我，想念的是哪個部分？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43508,7 +43508,7 @@
     },
     {
       "id": "choice-pei-r21-after-pei-r20-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想因為你說想念就心軟。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43556,7 +43556,7 @@
     },
     {
       "id": "choice-pei-r22-after-pei-r21-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你現在聯絡我，是想要重新開始嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43604,7 +43604,7 @@
     },
     {
       "id": "choice-pei-r22-after-pei-r21-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還沒有想過要重新開始。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43652,7 +43652,7 @@
     },
     {
       "id": "choice-pei-r22-after-pei-r21-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你現在聯絡我，是想要重新開始嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43700,7 +43700,7 @@
     },
     {
       "id": "choice-pei-r22-after-pei-r21-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還沒有想過要重新開始。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43748,7 +43748,7 @@
     },
     {
       "id": "choice-pei-r23-after-pei-r22-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你想約我見面，是為了談什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43796,7 +43796,7 @@
     },
     {
       "id": "choice-pei-r23-after-pei-r22-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "請不要突然出現在我工作的地方。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43844,7 +43844,7 @@
     },
     {
       "id": "choice-pei-r23-after-pei-r22-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你想約我見面，是為了談什麼？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43892,7 +43892,7 @@
     },
     {
       "id": "choice-pei-r23-after-pei-r22-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "請不要突然出現在我工作的地方。",
       "type": "action",
       "once": true,
       "actions": [
@@ -43940,7 +43940,7 @@
     },
     {
       "id": "choice-pei-r24-after-pei-r23-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "如果見面，你能接受我隨時離開嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -43988,7 +43988,7 @@
     },
     {
       "id": "choice-pei-r24-after-pei-r23-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還是不想見面。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44036,7 +44036,7 @@
     },
     {
       "id": "choice-pei-r24-after-pei-r23-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。如果見面，你能接受我隨時離開嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44084,7 +44084,7 @@
     },
     {
       "id": "choice-pei-r24-after-pei-r23-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還是不想見面。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44132,7 +44132,7 @@
     },
     {
       "id": "choice-pei-r25-after-pei-r24-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你想說的話，能先在這裡說完嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44180,7 +44180,7 @@
     },
     {
       "id": "choice-pei-r25-after-pei-r24-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我今天不想再談過去。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44228,7 +44228,7 @@
     },
     {
       "id": "choice-pei-r25-after-pei-r24-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你想說的話，能先在這裡說完嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44276,7 +44276,7 @@
     },
     {
       "id": "choice-pei-r25-after-pei-r24-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我今天不想再談過去。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44324,7 +44324,7 @@
     },
     {
       "id": "choice-pei-r26-after-pei-r25-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你現在希望我們維持什麼關係？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44372,7 +44372,7 @@
     },
     {
       "id": "choice-pei-r26-after-pei-r25-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我只想維持必要的距離。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44420,7 +44420,7 @@
     },
     {
       "id": "choice-pei-r26-after-pei-r25-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你現在希望我們維持什麼關係？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44468,7 +44468,7 @@
     },
     {
       "id": "choice-pei-r26-after-pei-r25-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我只想維持必要的距離。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44516,7 +44516,7 @@
     },
     {
       "id": "choice-pei-r27-after-pei-r26-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你能接受我們可能永遠不復合嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44564,7 +44564,7 @@
     },
     {
       "id": "choice-pei-r27-after-pei-r26-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不希望你一直等我的答案。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44612,7 +44612,7 @@
     },
     {
       "id": "choice-pei-r27-after-pei-r26-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你能接受我們可能永遠不復合嗎？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44660,7 +44660,7 @@
     },
     {
       "id": "choice-pei-r27-after-pei-r26-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不希望你一直等我的答案。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44708,7 +44708,7 @@
     },
     {
       "id": "choice-pei-r28-after-pei-r27-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "如果我不再回覆，你會怎麼做？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44756,7 +44756,7 @@
     },
     {
       "id": "choice-pei-r28-after-pei-r27-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我需要你停止主動聯絡。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44804,7 +44804,7 @@
     },
     {
       "id": "choice-pei-r28-after-pei-r27-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。如果我不再回覆，你會怎麼做？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44852,7 +44852,7 @@
     },
     {
       "id": "choice-pei-r28-after-pei-r27-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我需要你停止主動聯絡。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44900,7 +44900,7 @@
     },
     {
       "id": "choice-pei-r29-after-pei-r28-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你現在還有什麼沒說清楚的？",
       "type": "action",
       "once": true,
       "actions": [
@@ -44948,7 +44948,7 @@
     },
     {
       "id": "choice-pei-r29-after-pei-r28-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再反覆確認同一件事。",
       "type": "action",
       "once": true,
       "actions": [
@@ -44996,7 +44996,7 @@
     },
     {
       "id": "choice-pei-r29-after-pei-r28-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你現在還有什麼沒說清楚的？",
       "type": "action",
       "once": true,
       "actions": [
@@ -45044,7 +45044,7 @@
     },
     {
       "id": "choice-pei-r29-after-pei-r28-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我不想再反覆確認同一件事。",
       "type": "action",
       "once": true,
       "actions": [
@@ -45092,7 +45092,7 @@
     },
     {
       "id": "choice-pei-r30-after-pei-r29-a-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "你希望我現在做什麼決定？",
       "type": "action",
       "once": true,
       "actions": [
@@ -45140,7 +45140,7 @@
     },
     {
       "id": "choice-pei-r30-after-pei-r29-a-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還沒有答案，也不打算現在給。",
       "type": "action",
       "once": true,
       "actions": [
@@ -45188,7 +45188,7 @@
     },
     {
       "id": "choice-pei-r30-after-pei-r29-b-in-extra-3",
-      "label": "你說這些，是希望我怎麼回應？",
+      "label": "我想再確認一件事。你希望我現在做什麼決定？",
       "type": "action",
       "once": true,
       "actions": [
@@ -45236,7 +45236,7 @@
     },
     {
       "id": "choice-pei-r30-after-pei-r29-b-in-extra-4",
-      "label": "我現在不想繼續談我們的關係。",
+      "label": "我還沒有答案，也不打算現在給。",
       "type": "action",
       "once": true,
       "actions": [
