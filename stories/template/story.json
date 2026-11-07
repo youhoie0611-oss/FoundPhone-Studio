@@ -1,9 +1,9 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "磚2",
-  "description": "《磚2》互動戀愛聊天故事：沈硯舟、裴知聿、祁野，以及朋友們各自展開的日常與分歧。",
-  "revision": 10,
+  "title": "磚3",
+  "description": "《磚3》互動戀愛聊天故事：玩家以在職上班族身分，與顧時安、沈硯舟、前男友裴知聿、祁野及各自朋友圈展開獨立日常與分歧。",
+  "revision": 11,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -130,7 +130,7 @@
         {
           "id": "gu-shian-intro",
           "senderId": "gu-shian",
-          "body": "今天會去現場看一些細節，晚點再跟妳說。",
+          "body": "今天會去專案現場確認清水模牆面的收邊和採光。上次圖面跟現場有點落差，我想親自核對，晚點再跟妳說結果。",
           "time": "2026-11-04 10:00",
           "meta": {
             "guContext": "work_project"
@@ -760,7 +760,120 @@
         "owner",
         "qiye"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "qiye-opening-lead",
+          "senderId": "qiye",
+          "body": "剛從球場出來。今天最後一球差點被那群人搞砸。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening"
+          }
+        },
+        {
+          "id": "qiye-opening-context",
+          "senderId": "qiye",
+          "body": "算了，反正贏了。妳平常會打球？",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening"
+          }
+        },
+        {
+          "id": "qiye-opening-player-ask",
+          "senderId": "owner",
+          "body": "你們打到這麼晚？",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "qiye-opening-reply-ask",
+          "senderId": "qiye",
+          "body": "本來九點就散，硬是又打了一場。明天還有事，不會天天這樣。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "qiye-opening-player-tease",
+          "senderId": "owner",
+          "body": "所以你差點輸了？",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "qiye-opening-reply-tease",
+          "senderId": "qiye",
+          "body": "差點而已。最後那球還是我進的，別急著笑。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "qiye-opening-player-care",
+          "senderId": "owner",
+          "body": "打完記得補水。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "care"
+          }
+        },
+        {
+          "id": "qiye-opening-reply-care",
+          "senderId": "qiye",
+          "body": "買了。妳也太會提醒人了吧。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "care"
+          }
+        },
+        {
+          "id": "qiye-opening-player-distance",
+          "senderId": "owner",
+          "body": "我不太懂籃球。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "distance"
+          }
+        },
+        {
+          "id": "qiye-opening-reply-distance",
+          "senderId": "qiye",
+          "body": "沒差，我只是剛打完順手說一下。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening",
+            "choice": "distance"
+          }
+        }
+      ]
     },
     {
       "id": "pei-zhiyu-kkt",
@@ -894,7 +1007,120 @@
         "owner",
         "shen-yanzhou"
       ],
-      "messages": []
+      "messages": [
+        {
+          "id": "shen-opening-lead",
+          "senderId": "shen-yanzhou",
+          "body": "上次活動拍的照片我整理好了，剛好翻到我們聊過的那個展區。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening"
+          }
+        },
+        {
+          "id": "shen-opening-context",
+          "senderId": "shen-yanzhou",
+          "body": "我這週還要交一份課堂報告。妳最近工作忙嗎？",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening"
+          }
+        },
+        {
+          "id": "shen-opening-player-ask",
+          "senderId": "owner",
+          "body": "你在做什麼報告？",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "shen-opening-reply-ask",
+          "senderId": "shen-yanzhou",
+          "body": "視覺傳達的課堂作業，正在整理活動的影像和觀察。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "ask"
+          }
+        },
+        {
+          "id": "shen-opening-player-tease",
+          "senderId": "owner",
+          "body": "大學生的作業果然很多。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "shen-opening-reply-tease",
+          "senderId": "shen-yanzhou",
+          "body": "真的，老師還說這份很輕鬆。我現在不太相信。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "tease"
+          }
+        },
+        {
+          "id": "shen-opening-player-care",
+          "senderId": "owner",
+          "body": "辛苦了，記得休息。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "care"
+          }
+        },
+        {
+          "id": "shen-opening-reply-care",
+          "senderId": "shen-yanzhou",
+          "body": "謝謝妳。我整理完這段就休息，妳也別忙太晚。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "care"
+          }
+        },
+        {
+          "id": "shen-opening-player-distance",
+          "senderId": "owner",
+          "body": "最近有點忙，晚點聊。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "distance"
+          }
+        },
+        {
+          "id": "shen-opening-reply-distance",
+          "senderId": "shen-yanzhou",
+          "body": "好，妳先忙。報告我也得繼續趕。",
+          "time": "2026-11-04 10:05",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening",
+            "choice": "distance"
+          }
+        }
+      ]
     }
   ],
   "content": {
@@ -1372,7 +1598,9 @@
     "pei_reconciliation_intent": true,
     "pei_flirty_photo_blocked": false,
     "shen_hidden_affection": 10,
-    "shen_relationship": "acquaintance"
+    "shen_relationship": "acquaintance",
+    "qiye-opening-last-choice": "",
+    "shen-opening-last-choice": ""
   },
   "events": [
     {
@@ -3222,6 +3450,502 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "qiye-opening-start",
+      "label": "祁野｜主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "qiye-opening-delay"
+      ]
+    },
+    {
+      "id": "qiye-opening-delay",
+      "label": "開場延遲",
+      "type": "delay",
+      "delayMs": 240000,
+      "actions": [],
+      "next": [
+        "qiye-opening-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-deliver",
+      "label": "傳送開場訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "祁野：剛從球場出來。今天最後一球差點被那群人搞砸。"
+        }
+      ],
+      "next": [
+        "qiye-opening-pause"
+      ]
+    },
+    {
+      "id": "qiye-opening-pause",
+      "label": "訊息停頓",
+      "type": "delay",
+      "delayMs": 60000,
+      "actions": [],
+      "next": [
+        "qiye-opening-context-deliver"
+      ]
+    },
+    {
+      "id": "qiye-opening-context-deliver",
+      "label": "補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-context",
+          "value": true
+        }
+      ],
+      "next": [
+        "qiye-opening-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-ask",
+      "label": "你們打到這麼晚？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-player-ask",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-last-choice",
+          "value": "ask"
+        }
+      ],
+      "next": [
+        "qiye-opening-choice-ask-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-ask-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "qiye-opening-choice-ask-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-ask-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-reply-ask",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-choice-tease",
+      "label": "所以你差點輸了？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-player-tease",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-last-choice",
+          "value": "tease"
+        }
+      ],
+      "next": [
+        "qiye-opening-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-tease-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "qiye-opening-choice-tease-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-tease-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-choice-care",
+      "label": "打完記得補水。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-player-care",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-last-choice",
+          "value": "care"
+        }
+      ],
+      "next": [
+        "qiye-opening-choice-care-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-care-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "qiye-opening-choice-care-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-care-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-reply-care",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-choice-distance",
+      "label": "我不太懂籃球。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-player-distance",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-last-choice",
+          "value": "distance"
+        }
+      ],
+      "next": [
+        "qiye-opening-choice-distance-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-distance-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "qiye-opening-choice-distance-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-choice-distance-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-reply-distance",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-select",
+      "label": "祁野｜四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "qiye-opening-choice-ask",
+        "qiye-opening-choice-tease",
+        "qiye-opening-choice-care",
+        "qiye-opening-choice-distance"
+      ]
+    },
+    {
+      "id": "shen-opening-start",
+      "label": "沈硯舟｜主動聯絡",
+      "type": "start",
+      "actions": [],
+      "next": [
+        "shen-opening-delay"
+      ]
+    },
+    {
+      "id": "shen-opening-delay",
+      "label": "開場延遲",
+      "type": "delay",
+      "delayMs": 310000,
+      "actions": [],
+      "next": [
+        "shen-opening-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-deliver",
+      "label": "傳送開場訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "沈硯舟：上次活動拍的照片我整理好了，剛好翻到我們聊過的那個展區。"
+        }
+      ],
+      "next": [
+        "shen-opening-pause"
+      ]
+    },
+    {
+      "id": "shen-opening-pause",
+      "label": "訊息停頓",
+      "type": "delay",
+      "delayMs": 60000,
+      "actions": [],
+      "next": [
+        "shen-opening-context-deliver"
+      ]
+    },
+    {
+      "id": "shen-opening-context-deliver",
+      "label": "補充訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-context",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-opening-select"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-ask",
+      "label": "你在做什麼報告？",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-player-ask",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-last-choice",
+          "value": "ask"
+        }
+      ],
+      "next": [
+        "shen-opening-choice-ask-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-ask-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "shen-opening-choice-ask-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-ask-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-reply-ask",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-choice-tease",
+      "label": "大學生的作業果然很多。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-player-tease",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-last-choice",
+          "value": "tease"
+        }
+      ],
+      "next": [
+        "shen-opening-choice-tease-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-tease-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "shen-opening-choice-tease-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-tease-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-reply-tease",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-choice-care",
+      "label": "辛苦了，記得休息。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-player-care",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-last-choice",
+          "value": "care"
+        }
+      ],
+      "next": [
+        "shen-opening-choice-care-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-care-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "shen-opening-choice-care-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-care-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-reply-care",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-choice-distance",
+      "label": "最近有點忙，晚點聊。",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-player-distance",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-last-choice",
+          "value": "distance"
+        }
+      ],
+      "next": [
+        "shen-opening-choice-distance-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-distance-wait",
+      "label": "閱讀後回覆",
+      "type": "delay",
+      "delayMs": 70000,
+      "actions": [],
+      "next": [
+        "shen-opening-choice-distance-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-choice-distance-reply",
+      "label": "分歧回覆",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-reply-distance",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-select",
+      "label": "沈硯舟｜四選項",
+      "type": "choice",
+      "actions": [],
+      "next": [
+        "shen-opening-choice-ask",
+        "shen-opening-choice-tease",
+        "shen-opening-choice-care",
+        "shen-opening-choice-distance"
+      ]
     }
   ],
   "tests": [
@@ -3343,6 +4067,54 @@
         "pei-intro-context",
         "pei-intro-player-boundary",
         "pei-intro-reply-boundary"
+      ]
+    },
+    {
+      "name": "祁野開場｜詢問分歧",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 450000
+        },
+        {
+          "target": "",
+          "choose": "qiye-opening-choice-ask"
+        },
+        {
+          "target": "",
+          "advanceMs": 90000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "qiye-opening-lead",
+        "qiye-opening-context",
+        "qiye-opening-player-ask",
+        "qiye-opening-reply-ask"
+      ]
+    },
+    {
+      "name": "沈硯舟開場｜詢問分歧",
+      "steps": [
+        {
+          "target": "",
+          "advanceMs": 450000
+        },
+        {
+          "target": "",
+          "choose": "shen-opening-choice-ask"
+        },
+        {
+          "target": "",
+          "advanceMs": 90000
+        }
+      ],
+      "ending": "",
+      "expectUnlocked": [
+        "shen-opening-lead",
+        "shen-opening-context",
+        "shen-opening-player-ask",
+        "shen-opening-reply-ask"
       ]
     }
   ]
