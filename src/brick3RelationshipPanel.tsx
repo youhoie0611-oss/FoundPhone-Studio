@@ -9,9 +9,8 @@ const ids: Record<V8Lead, string> = {
   "顧時安": "gu", "陸沉川": "lu",
 };
 const labels = [
-  { key: "affection", label: "好感度", aliases: ["affection", "favor", "好感度"] },
+  { key: "affection", label: "好感度", aliases: ["attraction", "affection", "favor", "好感度"] },
   { key: "jealousy", label: "嫉妒值", aliases: ["jealousy", "jealous", "嫉妒值"] },
-  { key: "trust", label: "信任度", aliases: ["trust", "信任度"] },
 ] as const;
 
 function score(state: Runtime, lead: V8Lead, key: string, aliases: readonly string[]): number | null {
