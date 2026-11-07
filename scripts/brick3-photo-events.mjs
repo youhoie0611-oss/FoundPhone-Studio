@@ -32,6 +32,16 @@ const anchors = {
   photo_qi_batch01_late_sofa: "qi-autonomy-v3-reply-2-next-day",
   photo_qi_batch01_camera_detail: "qi-r17-b-in",
   photo_qi_batch01_skate_break: "qi-autonomy-v3-day1",
+  photo_qi_v6_parked_car: "qi-day11-opening",
+  photo_qi_v6_basketball_rest: "qi-autonomy-v3-day3",
+  photo_qi_v6_basketball_after: "qi-autonomy-v3-day3",
+  photo_qi_v6_headphones_car: "qi-r17-a-in",
+  photo_qi_v6_parking_wait: "qi-r18-b-in",
+  photo_qi_v6_night_car: "qi-autonomy-v3-day2",
+  photo_qi_v6_sofa_rest: "qi-autonomy-v3-reply-2-next-day",
+  photo_qi_v6_hoodie_street: "qi-autonomy-v3-day1",
+  photo_qi_v6_daytime_car: "qi-r15-a-in",
+  photo_qi_v6_late_night_car: "qi-r19-a-in",
   photo_off_duty: "v7-lu-private-1",
   photo_lu_office_evening: "v7-lu-private-2",
 };
@@ -64,6 +74,16 @@ const delayed = {
   photo_qi_batch01_late_sofa: 7200000,
   photo_qi_batch01_camera_detail: 9000000,
   photo_qi_batch01_skate_break: 7200000,
+  photo_qi_v6_parked_car: 172800000,
+  photo_qi_v6_basketball_rest: 216000000,
+  photo_qi_v6_basketball_after: 302400000,
+  photo_qi_v6_headphones_car: 259200000,
+  photo_qi_v6_parking_wait: 288000000,
+  photo_qi_v6_night_car: 187200000,
+  photo_qi_v6_sofa_rest: 345600000,
+  photo_qi_v6_hoodie_street: 158400000,
+  photo_qi_v6_daytime_car: 129600000,
+  photo_qi_v6_late_night_car: 388800000,
   photo_off_duty: 180000,
   photo_lu_office_evening: 240000,
 };
@@ -146,7 +166,7 @@ export function injectBrick3PhotoEvents(story, manifest) {
       { meta: { photoEventId: entry.eventId, source: "brick3-photo-event" } });
     arrivalActions.push(unlock(captionId));
 
-    const uploadedImages = entry.images.filter((photo) => isPhotoPath(photo.path) && (entry.characterId !== "lu_chenchuan" || existsSync(photo.path)));
+    const uploadedImages = entry.images.filter((photo) => isPhotoPath(photo.path) && (!["lu_chenchuan", "qi_ye"].includes(entry.characterId) || existsSync(photo.path)));
     if (visit) {
       uploadedImages.forEach((photo, index) => {
         const albumId = addAlbum(story, prefix + "-album-" + (index + 1), photo, entry.characterName, "裴知聿家・晚餐");
