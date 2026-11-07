@@ -11,6 +11,7 @@ export type RefreshEnvironment = {
   caches?: RefreshCacheStore;
   navigate: (url: string) => void;
   now?: () => number;
+  timeoutMs?: number;
 };
 
 export async function withRefreshDeadline(pending: Promise<unknown>, maxMs = 1200): Promise<void> {
@@ -36,7 +37,7 @@ export async function refreshBrick3Site(env: RefreshEnvironment): Promise<void> 
         const active = registrations.filter(registration =>
           current.href.startsWith(registration.scope));
         await Promise.allSettled(active.map(registration => registration.unregister()));
-      })());
+      })(), env.timeoutMs);
     } catch {
       // An unavailable service worker must not prevent the reload.
     }
