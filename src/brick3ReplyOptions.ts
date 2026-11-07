@@ -28,7 +28,7 @@ export function brick3ContextReplies(thread: string, messages: readonly ChatLine
   let alternatives: string[] = [];
 
   if (/不要再聯絡|別再聯絡|別找我|封鎖|不要再傳/.test(recentPlayer) &&
-      /不再打擾|不會再聯絡|不再傳/.test(latest)) return [];
+      /不再打擾|不會再聯絡|不再聯絡|不再找|不再傳/.test(latest)) return [];
 
   // A current meal invitation always wins over older breakup/romance history.
   if (said(/晚餐|吃飯|買菜|煮飯|做菜|早餐|一起吃|來我家|妳會來|妳真的會|願意來|會過來|要來嗎|過來吃|來吃|會來對吧/)) {
