@@ -525,7 +525,7 @@ function PhoneRuntime({
                         // Deliver each natural speech beat as a separate message, with a visible pause.
                         // Queue is per contact, so a later answer cannot overtake an earlier one.
                         const chunks = /^(沈硯舟|裴知聿|祁野|顧時安|陸沉川)$/.test(thread)
-                          ? (reply.split(/\\n+/).flatMap(line => line.match(/[^。！？!?]+[。！？!?]?/g) ?? [line])).map(part => part.trim()).filter(Boolean)
+                          ? (reply.split(/\n+/).flatMap(line => line.match(/[^。！？!?]+[。！？!?]?/g) ?? [line])).map(part => part.trim()).filter(Boolean)
                           : [reply];
                         const parts = chunks.length > 5 ? [...chunks.slice(0, 4), chunks.slice(4).join("")] : chunks;
                         for (let part = 0; part < parts.length; part++) {
