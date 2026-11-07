@@ -28,6 +28,54 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
       /你怎麼想|有在聽|講清楚|什麼意思|繼續說/.test(player))
     return say("我剛才故意用玩笑帶過了。妳問得很直接，我就正面答：我確實有時候太自以為是。");
 
+  // Resolve Pei's exact subject before falling back to generic empathy.
+  // His psychology training is not permission to diagnose the player or invent
+  // an explanation for the breakup, which remains unresolved in canon.
+  if (name === "裴知聿") {
+    if (/不要再聯絡|別再聯絡|別找我|不要再找我|封鎖|停止聯絡|不要再傳訊息/.test(player))
+      return say("……我知道了。妳已經說得很清楚，我會停止聯絡。");
+    if (/我不想跟你復合|我不想復合|不會跟你復合|不會復合|別再提復合/.test(player))
+      return say("我知道妳的答案了。……不是我想聽的，但我會尊重。不會再拿以前的事逼妳改變心意。");
+    if (/我現在還不能給你答案|需要時間想清楚|還需要時間|先別急著談以後/.test(player) &&
+        /復合|重新開始|秘密交往|地下情人|不能公開|還想修復/.test(context + " " + player))
+      return say("好，我不會把妳願意談當成答應。……我會等妳自己想好，不會替妳決定。");
+    if (/地下情人|第三者|秘密交往|不能公開|名分|偷偷交往|不甘心.*要求/.test(player)) {
+      if (/不會答應|不想|不要|拒絕/.test(player))
+        return say("我聽懂了。是我把自己的想法丟給妳了。妳拒絕，我就不再提這個要求。");
+      if (/不甘心|要求降到/.test(player))
+        return say("有。我不甘心。想到妳身邊已經有別人，我還是難受。……但降低要求是我自己的事，不是要妳負責。");
+      return say("我想過。比起徹底失去妳，我甚至想過只能偷偷見面。可我也知道，答應那種關係不代表我真的不會嫉妒。妳沒有義務接受。");
+    }
+    if (/是在吃醋|你吃醋|妳吃醋/.test(player))
+      return say("……是。我不喜歡看妳跟別人走得那麼近。但我們已經分手了，我沒有資格因為不舒服就質問妳。");
+    if (/只是我的朋友|只是朋友|別亂猜/.test(player))
+      return say("好，我知道了。我剛才只看見一點就自己想了很多。……我會收住，不用妳反覆解釋。");
+    if (/我跟誰見面|我和誰見面|沒資格質問|沒有立場質問/.test(player))
+      return say("妳說得對。妳跟誰見面是妳的自由，我只是……還沒辦法完全不在意。但那是我自己要處理的。");
+    if (/我現在不想討論這件事|這件事我暫時不想談|我今天不想談這些|先只談過去/.test(player))
+      return say("好。……我有很多話想說，但不代表妳現在就得聽。我們先停在這裡。");
+    if (/江若寧|學姊|學姐|傳聞|只是合作|憑照片猜測/.test(player) &&
+        /研究|學姊|學姐|江若寧|傳聞|合作/.test(context + " " + player)) {
+      if (/不想|不介入|不想.*猜/.test(player))
+        return say("嗯，不用從一張照片推斷什麼。我自己的研究室人際關係，我會處理。");
+      if (/傳聞/.test(player))
+        return say("有些人看見我們在研究室討論，就開始猜。這是研究合作，我不希望妳只能從別人口中聽到。妳想問我可以直接說。");
+      return say("我們有研究上的合作，最近為了資料和報告碰過面。妳想知道的是合作內容，還是妳看到的那張照片？");
+    }
+    if (/研究進度|論文|文獻|研究室|指導老師|學校的事|學校.*處理|什麼事情讓你.*煩|報告/.test(player) &&
+        /研究所|研究室|論文|文獻|報告|老師|資料|研究進度/.test(context + " " + player)) {
+      if (/先把|先去|不用急|晚點/.test(player))
+        return say("嗯，我先把手上的資料整理完。……謝謝妳還願意關心我。");
+      if (/煩|困擾|卡/.test(player))
+        return say("最近研究資料有幾個地方一直對不上，跟老師討論前還得再查。我不是故意不回妳，只是腦袋有點亂。");
+      return say("還在整理文獻和研究資料，有些地方要再跟老師確認。比我預期的慢一點。妳今天工作還順利嗎？");
+    }
+    if (/你想復合的原因|你有想過當初|你怎麼看當初|我們分手的事.*怎麼看|為什麼想復合/.test(player))
+      return say("因為我還放不下妳。……但當初是妳提出分手，我一直想問妳那時候真正的感受。我不敢說自己已經把原因想明白了。");
+    if (/我可以先聽你說|我可以聽你說|我願意聽你說|我想先知道你怎麼看/.test(player))
+      return say("好。……我會先說我記得的事，也想聽妳記得的是什麼。我不會把妳肯聽當成願意復合。");
+  }
+
   if (name === "裴知聿" &&
       /晚餐|煮飯|買菜|做菜|願意來|真的會來|過去吃|來我家/.test(context + " " + player)) {
     if (/還沒.*決定|再想想|給我.*時間/.test(player))
@@ -44,10 +92,10 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
   if (name === "裴知聿" && /復合|分手|以前|重新開始|當初的問題/.test(player)) {
     if (stop.test(player)) return say("好。妳不想談以前的事，我就不提。我知道那不是妳必須回應的問題。");
     if (/問題|想清楚|為什麼/.test(player))
-      return say("我想過。但我不能把當初的事說成只是妳或我的錯。以前我太怕失去妳，常把自己的不安丟給妳承擔。妳願不願意聽我說是另一回事。");
+      return say("我一直在想。當初是妳提出分手，我知道。可真正讓我們走到那一步的原因，我不想只憑自己的記憶下結論。……妳如果願意，我想聽妳怎麼看。");
     if (/復合|重新開始/.test(player))
-      return say("是，我還想重新開始。但我知道妳沒有答應。分手後的事不能靠我一句想復合就算翻篇。");
-    if (/願意聽|先說/.test(player)) return say("謝謝妳願意聽。我會把事情說清楚，不會把這當成妳已經原諒我。");
+      return say("是，我還想復合。……我沒辦法假裝已經放下妳，但我也知道，這不是我說想就能重新開始的事。");
+    if (/願意聽|先說/.test(player)) return say("……好，我說。我先講自己記得的部分。妳不用因為願意聽就給我答案。");
   }
 
   if (name === "顧時安" && /我是顧時安|建築設計|聯絡|認識/.test(context + player)) {
