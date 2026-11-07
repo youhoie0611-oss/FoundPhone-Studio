@@ -4,8 +4,11 @@ import type { Item } from "./schema";
 export function brick3ContextReplies(thread: string, messages: readonly Pick<Item, "body" | "outgoing">[]): string[] {
   const latest = messages.at(-1);
   if (!latest || latest.outgoing) return [];
-  const lastOutgoing = messages.findLast(message => message.outgoing)?.body ?? "";
-  const lastPlayerIndex = messages.findLastIndex(message => message.outgoing);
+  const lastOutgoing = [...messages].reverse().find(message => message.outgoing)?.body ?? "";
+  let lastPlayerIndex = -1;
+  for (let i = messages.length - 1; i >= 0; i--) {
+    if (messages[i].outgoing) { lastPlayerIndex = i; break; }
+  }
   const turn = messages.slice(lastPlayerIndex + 1).filter(message => !message.outgoing)
     .slice(-7).map(message => message.body).join(" ");
   const dialogue = turn + " " + latest.body;
