@@ -997,7 +997,7 @@ function AppContent({
   state: Runtime;
   onRead: (id: string) => void;
   onChoose: (target: string) => void;
-  onPresetReply?: (thread: string, message: string) => void;
+  onPresetReply?: (thread: string, message: string, replyToId?: string) => void;
   onEdit: (item: Item) => void;
   onAdd: () => void;
   onBack: () => void;
