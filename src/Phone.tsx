@@ -1121,6 +1121,7 @@ function AppContent({
               onBack={onBack}
               thread={thread}
               choices={state.choices}
+              brick3Mode={work.id === "between-the-lines-b-demo"}
               brick3PendingDialogue={app.id === "kakao" && work.id === "between-the-lines-b-demo" &&
                 ((thread === "裴知聿" && !!state.brick3Invites?.pei_dinner_outing?.peiQueue) ||
                   !!state.brick3V8?.pending?.some(entry => entry.lead === thread))}
