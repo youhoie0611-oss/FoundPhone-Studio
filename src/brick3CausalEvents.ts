@@ -5,7 +5,8 @@ export interface StoryEvent {
   id: string; characterId: string; status: EventStatus;
   startsAt: string; endsAt: string; prerequisites: string[];
   playerChoice?: PlayerDecision; attended?: boolean;
-  outcome?: string; followUps: string[]; photoIds: string[];
+  outcome?: string; choiceId?: string; choiceLabel?: string; topic?: string; sourceMessageIds?: string[];
+  followUps: string[]; photoIds: string[];
   history: { at: string; status: EventStatus; choice?: PlayerDecision }[];
 }
 export interface StoryLedger { events: Record<string, StoryEvent>; delivered: string[]; }
