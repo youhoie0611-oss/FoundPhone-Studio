@@ -30,15 +30,15 @@ const stories: Record<Scene, (text: string, context: string) => Branch | null> =
     return null;
   },
   reunion(text, context) {
-    // Do not interpret any unrelated "可以" as agreement to reconcile.
-    const relationshipReply = /分手|復合|複合|以前的事|當初的事|重新開始|我們的關係|聯絡|找我|見面|願意聽你|先說|我們談談/.test(text);
-    const explicitYes = /^(好|好啊|好呀|可以|可以啊|願意)[！!。，\s]*$/.test(text) &&
-      /復合|重新開始|以前的事|談談|願意聽/.test(context);
-    if (!relationshipReply && !explicitYes) return null;
+    // A meal or a general "okay" must never be interpreted as reconciliation.
+    const explicit = /分手|復合|複合|重新開始|以前的問題|我們的關係|前男友/.test(text);
+    const listens = /願意聽|先說|你說吧|我們談談|可以談/.test(text) &&
+      /分手|復合|複合|重新開始|以前的問題/.test(context);
+    if (!explicit && !listens) return null;
     if (refuses.test(text)) return { outcome: "distance", reply: "我知道我們已經分手。|妳不想談，我不會逼妳。|以前的問題是我該面對的，不該要妳替我收拾。" };
-    if (/復合|為什麼找|想說什麼|聯絡/.test(text))
+    if (/復合|複合|重新開始|我們的關係/.test(text))
       return { outcome: "intent_revealed", reply: "我想過我們分手的事。|我確實希望還有重新開始的可能。|但我知道，光說想復合沒有用。妳願意先聽我說說我當時做錯了什麼嗎？" };
-    if (/願意聽你|先說|你說吧|我們談談/.test(text) || explicitYes) return { outcome: "conversation_open", reply: "謝謝妳願意聽。|我不會把這當成妳答應復合。|我們先從當初沒說清楚的事情談起。" };
+    if (listens) return { outcome: "conversation_open", reply: "謝謝妳願意聽。|我不會把這當成妳答應復合。|我們先從當初沒說清楚的事情談起。" };
     return null;
   },
   first_meeting(text, context) {
@@ -97,5 +97,5 @@ export function advanceBrick3Chat(state: Runtime, thread: string, message: strin
   recordBrick3KktScene(state, thread, branch.outcome);
   state.brick3SceneEvents = [...(state.brick3SceneEvents ?? []).filter(e => e.thread !== thread || e.sent), { thread, outcome: branch.outcome, due: (state.elapsedMs ?? 0) + 86400000 }].slice(-50);
   state.trace.push(`brick3-scene:${thread}:${branch.outcome}`);
-  return { reply: branch.reply.replaceAll("|", "。\n"), delayMs: 1200 };
+  return { reply: branch.reply.replaceAll("|", "\n"), delayMs: 1200 };
 }
