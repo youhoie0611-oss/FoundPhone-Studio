@@ -4,11 +4,11 @@ import { ensureV8, type V8Lead } from "./brick3Relationships";
 export type OvernightPhase = "invited" | "accepted" | "arrived" | "morning" | "departed" | "declined";
 export type OvernightRecord = {
   id: string; lead: V8Lead; phase: OvernightPhase; createdAt: number;
-  arrivedAt?: number; morningAt?: number; departedAt?: number;
+  arrivedAt?: number; arrivedDate?: string; morningAt?: number; departedAt?: number;
   morningChoice?: "a" | "b" | "c" | "d"; followUpSent?: boolean;
 };
 export type OvernightState = { version: 1; records: OvernightRecord[] };
-const DAY = 86400000;
+const MIN_SLEEP = 6 * 3600000;
 const leads: Record<string, V8Lead> = {
   shen_night_view_outing: "沈硯舟", pei_dinner_outing: "裴知聿",
   qi_city_lights_outing: "祁野", gu_architecture_walk: "顧時安",
@@ -65,7 +65,7 @@ export function tickOvernight(w: Work, s: Runtime): Runtime {
     options(s, record, [["accept", "考慮留下過夜"], ["decline", "今晚先回去"]]);
   }
   for (const record of state.records) {
-    if (record.phase === "arrived" && record.arrivedAt !== undefined && now >= record.arrivedAt + DAY) {
+    if (record.phase === "arrived" && record.arrivedAt !== undefined && now >= record.arrivedAt + MIN_SLEEP && record.arrivedDate !== (s.date ?? w.phone.date)) {
       record.phase = "morning"; record.morningAt = now;
       scenes[record.lead].opening.forEach((line, i) => send(s, record.lead, line, `brick3-overnight-${record.id}-morning-${i}`));
       options(s, record, scenes[record.lead].options.map(([label, , key]) => [key, label]));
@@ -95,9 +95,13 @@ export function chooseOvernight(w: Work, previous: Runtime, target: string): Run
   } else if (record.phase === "accepted") {
     if (action !== "arrive" && action !== "cancel") return previous;
     record.phase = action === "arrive" ? "arrived" : "declined";
-    if (action === "arrive") record.arrivedAt = now;
+    if (action === "arrive") { record.arrivedAt = now; record.arrivedDate = s.date ?? w.phone.date; }
     send(s, record.lead, action === "arrive" ? "我今晚會留下。" : "我改變主意，今晚還是回去。", `brick3-overnight-${id}-player-arrival`, true);
     send(s, record.lead, action === "arrive" ? "好。要不要先喝點水？" : "好，我尊重妳的決定。", `brick3-overnight-${id}-arrival-answer`);
+   } else if (record.phase === "morning" && record.morningChoice) {
+    if (action !== "leave" && action !== "stay") return previous;
+    if (action === "leave") { record.phase = "departed"; record.departedAt = now; }
+    else send(s, record.lead, "好，妳慢慢來。", `brick3-overnight-${id}-stay`);
   } else if (record.phase === "morning") {
     const choice = scenes[record.lead].options.find(x => x[2] === action);
     if (!choice) return previous;
@@ -108,13 +112,6 @@ export function chooseOvernight(w: Work, previous: Runtime, target: string): Run
       (record.lead === "沈硯舟" && action === "c") || (record.lead === "祁野" && action === "c");
     if (leaving) { record.phase = "departed"; record.departedAt = now; }
     else options(s, record, [["leave", "確認離開"], ["stay", "再待一會"]]);
-  } else if (record.phase === "morning" || record.morningChoice && record.phase === "arrived") {
-    return previous;
-  }
-  // Handle the second morning choice only after a first answer.
-  if (record.phase === "morning" && record.morningChoice && (action === "leave" || action === "stay")) {
-    if (action === "leave") { record.phase = "departed"; record.departedAt = now; }
-    else send(s, record.lead, "好，妳慢慢來。", `brick3-overnight-${id}-stay`);
   }
   return s;
 }
