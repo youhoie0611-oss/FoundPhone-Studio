@@ -1101,6 +1101,11 @@ function AppContent({
               onBack={onBack}
               thread={thread}
               choices={state.choices}
+              brick3AuthoredChoices={app.id === "kakao" && work.id === "between-the-lines-b-demo"
+                ? Object.fromEntries(work.nodes.filter(node => node.type === "choice" && node.event === "read" && node.target)
+                  .map(node => [node.target, (node.next ?? []).flatMap(target => state.choices.filter(choice => choice.target === target))])
+                  .filter(([, options]) => options.length > 0)) as Record<string, { label: string; target: string }[]>
+                : undefined}
               onChoose={onChoose}
               onPresetReply={onPresetReply}
               relationshipContext={app.id === "kakao" ? Object.entries(state.brick3V8?.bonds ?? {})
