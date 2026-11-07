@@ -122,8 +122,13 @@ export function MymyKakao(p: SkinProps) {
   const shenPhotoReplyFinished = p.thread === "沈硯舟" &&
     /^brick3-photo-photo_shen_batch01_[a-z0-9_]+-choice-[1-4]-response$/.test(lastMessage?.id ?? "") &&
     photoOptions.length === 0;
-  const relevantRelationship = lastMessage?.meta.source?.startsWith("brick3-v8") ||
-    /交往|復合|複合|告白|秘密交往|非排他|我們的關係/.test(messages.slice(-3).map(message => message.body).join(" "));
+  const relevantRelationship = p.brick3Mode
+    ? !!lastMessage && !lastMessage.outgoing &&
+      (lastMessage.meta.source?.startsWith("brick3-v8") ||
+        (/交往|復合|複合|告白|非排他|我們的關係/.test(lastMessage.body) &&
+          !/晚餐|煮飯|買菜|吃飯|邀約|早餐|展覽/.test(lastMessage.body)))
+    : lastMessage?.meta.source?.startsWith("brick3-v8") ||
+      /交往|復合|複合|告白|秘密交往|非排他|我們的關係/.test(messages.slice(-3).map(message => message.body).join(" "));
   const v8Options = (relevantRelationship ? p.choices ?? [] : []).filter(choice =>
     choice.target.startsWith(`brick3-v8:${p.thread}:`) ||
     (choice.target.startsWith("brick3-intimacy:") && choice.label.startsWith(`${p.thread}｜`)) ||
@@ -238,7 +243,7 @@ export function MymyKakao(p: SkinProps) {
                   ? brick3ContextReplies(p.thread, messages)
                   : legacyMymyReplies(p.thread, lastMessage?.body ?? "", p.relationshipContext);
                 return options.map((reply, index) => (
-                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onPresetReply?.(p.thread, reply)}>
+                  <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onPresetReply?.(p.thread, reply, lastMessage?.id)}>
                     {reply}
                   </button>
                 ));
