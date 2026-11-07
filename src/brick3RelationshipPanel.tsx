@@ -1,111 +1,69 @@
-import { useState } from "react";
-import { discloseV8Kiss } from "./brick3V8Intimacy";
-import { V8_LEADS, discloseV8Relationship, undoV8Decision, requestV8Negotiation, reviewV8LegacyRelationship, endV8Relationship } from "./brick3Relationships";
+import { V8_LEADS, type V8Lead } from "./brick3Relationships";
+import { CHARACTER_CANON } from "./characterCanon";
 import type { Runtime } from "./schema";
 import "./brick3RelationshipPanel.css";
 
-const statuses: Record<string, string> = {
-  single: "未確認戀愛關係", ambiguous: "曖昧中", dating: "交往中",
-  secret: "秘密交往", separated: "已分開",
+type Props = { state: Runtime; close(): void };
+const ids: Record<V8Lead, string> = {
+  "沈硯舟": "shen", "裴知聿": "pei", "祁野": "qi",
+  "顧時安": "gu", "陸沉川": "lu",
 };
-const agreements: Record<string, string> = {
-  unspecified: "尚未討論排他性", exclusive: "已約定專一",
-  nonexclusive: "已協商非排他", unresolved: "關係約定待釐清",
-};
-type Props = { state: Runtime; close(): void; onUpdate(next: Runtime): void };
-export function Brick3RelationshipPanel({ state, close, onUpdate }: Props) {
-  const v = state.brick3V8;
-  const [pendingBreakup, setPendingBreakup] = useState<string | null>(null);
-  const action = (operation: (next: Runtime) => boolean) => {
-    const next = structuredClone(state);
-    if (operation(next)) onUpdate(next);
-  };
-  const todayUndo = v?.undo && !v.undo.used && (state.elapsedMs ?? 0) - v.undo.at < 86400000;
+const labels = [
+  { key: "affection", label: "好感度", aliases: ["affection", "favor", "好感度"] },
+  { key: "jealousy", label: "嫉妒值", aliases: ["jealousy", "jealous", "嫉妒值"] },
+  { key: "trust", label: "信任度", aliases: ["trust", "信任度"] },
+] as const;
+
+function score(state: Runtime, lead: V8Lead, key: string, aliases: readonly string[]): number | null {
+  const prefix = ids[lead];
+  const variables = state.variables ?? {};
+  const candidates = aliases.flatMap(alias => [
+    `${prefix}_${alias}`, `${prefix}:${alias}`,
+    `brick3:${prefix}:${alias}`, `${lead}_${alias}`,
+    `${lead}:${alias}`,
+  ]);
+  for (const name of candidates) {
+    const raw = variables[name];
+    if (typeof raw === "number" || (typeof raw === "string" && raw.trim() !== "")) {
+      const value = Number(raw);
+      if (Number.isFinite(value)) return Math.max(0, Math.min(100, Math.round(value)));
+    }
+  }
+  // Initial affection is canon; other values remain unavailable until tracked.
+  return key === "affection" ? CHARACTER_CANON[lead].initialAffection : null;
+}
+
+export function Brick3RelationshipPanel({ state, close }: Props) {
   return (
-    <section className="brick3-relation-overlay" aria-label="磚3戀愛關係">
-      <header className="brick3-relation-heading">
-        <strong>我的關係</strong>
-        <button type="button" onClick={close} aria-label="關閉關係卡">關閉</button>
+    <section className="brick3-contacts" aria-label="男主角關係">
+      <header className="brick3-contacts-header">
+        <button type="button" onClick={close} aria-label="返回桌面">‹ 返回</button>
+        <strong>通訊錄</strong>
       </header>
-      <p>以下只顯示妳已確認的關係及已發現的線索。人物心裡的數值與未揭露的秘密不會顯示。</p>
-      {v?.legacyReview && !v.legacyReview.completed && (
-        <aside className="brick3-relation-recovery" aria-label="關係恢復中心">
-          <strong>關係恢復中心</strong>
-          <p>舊存檔存在明確的戀人標記，請逐人確認。系統不會替妳假設交往歷史。</p>
-          {v.legacyReview.candidates.filter(n => !v.legacyReview!.reviewed.includes(n)).map(name => (
-            <div key={name}>
-              <strong>{name}</strong>
-              <button type="button" onClick={() => action(next => reviewV8LegacyRelationship(next, name, true))}>恢復為已交往</button>
-              <button type="button" onClick={() => action(next => reviewV8LegacyRelationship(next, name, false))}>不是戀人</button>
+      <div className="brick3-contacts-list">
+        {V8_LEADS.map(lead => (
+          <article className="brick3-contact" key={lead}>
+            <div className="brick3-contact-name">
+              <span className="brick3-contact-avatar" aria-hidden="true">{lead.slice(0, 1)}</span>
+              <strong>{lead}</strong>
             </div>
-          ))}
-        </aside>
-      )}
-      {todayUndo && (
-        <button type="button" className="brick3-relation-undo"
-          onClick={() => action(next => undoV8Decision(next))}>
-          修正今日尚未得到回覆的關係決定
-        </button>
-      )}
-      {!!state.brick3V8Intimacy?.events.length && (
-        <aside className="brick3-relation-intimacy">
-          <strong>親密事件與告知</strong>
-          <p>以下是妳親自答應過的事件。其他戀人只有在有合理來源時才會知情。</p>
-          {state.brick3V8Intimacy.events.map(e => {
-            const recipients = V8_LEADS.filter(name => name !== e.actor &&
-              ["dating", "secret"].includes(v?.bonds[name]?.status ?? "") &&
-              !e.disclosedTo.includes(name));
-            return (
-              <div key={e.id}>
-                <strong>{e.gameDate}｜與{e.actor}親吻</strong>
-                {recipients.map(name => (
-                  <button type="button" key={name} onClick={() => {
-                    const updated = discloseV8Kiss(state, e.id, name);
-                    if (updated) onUpdate(updated);
-                  }}>主動告訴{name}</button>
-                ))}
-                {!recipients.length && <small>目前沒有待告知的其他戀人</small>}
-              </div>
-            );
-          })}
-        </aside>
-      )}
-      {V8_LEADS.map(lead => {
-        const bond = v?.bonds[lead], c = v?.confessions[lead];
-        const partners = V8_LEADS.filter(n => n !== lead &&
-          ["dating", "secret"].includes(v?.bonds[n]?.status ?? ""));
-        const canDisclose = !!bond && ["dating", "secret"].includes(bond.status) &&
-          partners.some(n => !bond.knows[n]);
-        return (
-          <article className="brick3-relation-card" key={lead}>
-            <strong>{lead}</strong>
-            <div>{statuses[bond?.status ?? "single"]}</div>
-            {bond && bond.status !== "single" && <small>{agreements[bond.exclusivity]}</small>}
-            {c?.status === "pending" && <small>有一則告白待回覆（14 個遊戲日內）</small>}
-            {!!bond?.discoveries.length && <small>已發現線索：{bond.discoveries.length} 則</small>}
-            {bond?.psychologicalObservation && <p>{bond.psychologicalObservation}</p>}
-            {bond && ["dating", "secret"].includes(bond.status) && (
-              <button type="button" onClick={() => action(next => requestV8Negotiation(next, lead))}>
-                討論關係界線
-              </button>
-            )}
-            {bond && ["dating", "secret"].includes(bond.status) && (pendingBreakup === lead ? (
-              <div className="brick3-relation-breakup-confirm">
-                <p>確定要結束與{lead}的交往？此訊息會正式送達，不能當作尚未發生。</p>
-                <button type="button" onClick={() => { action(next => endV8Relationship(next, lead)); setPendingBreakup(null); }}>確認分手</button>
-                <button type="button" onClick={() => setPendingBreakup(null)}>取消</button>
-              </div>
-            ) : (
-              <button type="button" onClick={() => setPendingBreakup(lead)}>結束交往</button>
-            ))}
-            {canDisclose && (
-              <button type="button" onClick={() => action(next => discloseV8Relationship(next, lead))}>
-                向{lead}坦白其他戀愛關係
-              </button>
-            )}
+            <div className="brick3-contact-scores">
+              {labels.map(metric => {
+                const value = score(state, lead, metric.key, metric.aliases);
+                return (
+                  <div className="brick3-contact-score" key={metric.key}>
+                    <span>{metric.label}</span>
+                    <strong>{value === null ? "—" : value}</strong>
+                    <div className="brick3-contact-track" aria-hidden="true">
+                      <span style={{ width: `${value ?? 0}%` }} />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </article>
-        );
-      })}
+        ))}
+      </div>
     </section>
   );
 }
