@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 54,
+  "revision": 55,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -6658,7 +6658,7 @@
         {
           "id": "pei-day11-opening",
           "title": "",
-          "body": "今天路過書店，看到一本妳以前想買的書。",
+          "body": "今天陪同學去書店找研究用的參考書。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6667,7 +6667,7 @@
         {
           "id": "pei-day11-opening-bubble-2",
           "title": "",
-          "body": "我拿起來翻了兩頁，又放回去。差點想拍給妳看。",
+          "body": "走到小說區，才發現是我們以前常去的那間。我站了一下，什麼都沒買。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6719,7 +6719,7 @@
         {
           "id": "pei-day11-reply-2-in",
           "title": "",
-          "body": "好，不提。",
+          "body": "……好。我不再拿以前的事找話題。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6728,7 +6728,7 @@
         {
           "id": "pei-day11-reply-2-in-bubble-2",
           "title": "",
-          "body": "可是我真的很想妳。",
+          "body": "我知道妳不是來幫我消化那些回憶的。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6737,7 +6737,7 @@
         {
           "id": "pei-day11-reply-2-in-bubble-3",
           "title": "",
-          "body": "連路過書店，都會下意識找妳的背影。",
+          "body": "今天就到這裡。妳不用再安慰我。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6746,7 +6746,7 @@
         {
           "id": "pei-day21-opening",
           "title": "",
-          "body": "早。我剛結束一整晚的研究資料整理。",
+          "body": "早。昨晚為了整理研究資料熬到天亮。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6755,7 +6755,7 @@
         {
           "id": "pei-day21-opening-bubble-2",
           "title": "",
-          "body": "等一下還有組會。可我現在腦子裡想的居然是妳會不會回這則訊息。",
+          "body": "等一下要跟指導教授開組會。說真的，我現在有點緊張。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6764,7 +6764,7 @@
         {
           "id": "pei-day21-opening-bubble-3",
           "title": "",
-          "body": "昨天把資料核對完，發現我漏掉一個地方。",
+          "body": "昨天核對資料時發現樣本時間範圍填錯了，我連夜重跑一次。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6773,7 +6773,7 @@
         {
           "id": "pei-day21-opening-bubble-4",
           "title": "",
-          "body": "我本來只想說這個。……結果還是想問妳有沒有好好睡覺。",
+          "body": "以前這種事我會第一個跟妳抱怨。現在傳到這裡才發現，我又把妳當成那個會陪我熬夜的人了。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6826,7 +6826,7 @@
         {
           "id": "pei-day21-reply-2-out",
           "title": "",
-          "body": "你先準備主管會議，晚點再說。",
+          "body": "你先準備跟教授的組會，晚點再說。",
           "senderId": "owner",
           "time": "2026-11-05 09:15",
           "hidden": true
@@ -6834,7 +6834,7 @@
         {
           "id": "pei-day21-reply-2-in",
           "title": "",
-          "body": "好，妳先忙。",
+          "body": "嗯，我先去開會。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6843,7 +6843,7 @@
         {
           "id": "pei-day21-reply-2-in-bubble-2",
           "title": "",
-          "body": "我其實還想多說兩句……算了。",
+          "body": "妳竟然還記得我每次組會前都會緊張。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6852,7 +6852,7 @@
         {
           "id": "pei-day21-reply-2-in-bubble-3",
           "title": "",
-          "body": "妳不用為了我耽誤工作。",
+          "body": "……我不該因為妳關心一句，就擅自想太多。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6931,7 +6931,7 @@
         {
           "id": "pei-major-event-reply-2-in",
           "title": "",
-          "body": "……妳真的連試一次都不願意嗎？",
+          "body": "……我聽到了。妳不想復合。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -6940,7 +6940,7 @@
         {
           "id": "pei-major-event-reply-2-in-bubble-2",
           "title": "",
-          "body": "對不起。",
+          "body": "我剛剛還是很想問妳，真的一點機會都沒有嗎。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -6949,7 +6949,7 @@
         {
           "id": "pei-major-event-reply-2-in-bubble-3",
           "title": "",
-          "body": "我知道妳已經回答了。",
+          "body": "但妳已經說得很清楚。我不能假裝沒聽見。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -6958,7 +6958,7 @@
         {
           "id": "pei-major-event-reply-2-in-bubble-4",
           "title": "",
-          "body": "可是我還是不甘心。",
+          "body": "我不甘心。可這次我會自己承受，不再逼妳回答。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -6967,7 +6967,7 @@
         {
           "id": "pei-autonomy-v3-day1",
           "title": "",
-          "body": "剛從研究室出來，看到有人拿著妳以前喜歡的那款飲料。",
+          "body": "剛結束研究室的訪談逐字稿整理，眼睛快看花了。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 20:30",
           "hidden": true,
@@ -6976,7 +6976,7 @@
         {
           "id": "pei-autonomy-v3-day1-bubble-2",
           "title": "",
-          "body": "我差點問妳最近還喝不喝。打了又刪掉，怕妳覺得我又在找藉口。",
+          "body": "走出校門看到有人拿著妳以前常喝的那款飲料。我居然還記得妳不喜歡加太多冰。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 20:30",
           "hidden": true,
@@ -6985,7 +6985,7 @@
         {
           "id": "pei-autonomy-v3-day2",
           "title": "",
-          "body": "今天開會有人問我是不是沒睡好。",
+          "body": "今天組會報告被老師追問了好幾個地方。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:30",
           "hidden": true,
@@ -6994,7 +6994,7 @@
         {
           "id": "pei-autonomy-v3-day2-bubble-2",
           "title": "",
-          "body": "我說只是沒睡好。其實昨天看了妳的對話框很久，連自己都覺得可笑。",
+          "body": "我其實準備得不差。只是昨晚沒睡好，講到一半突然忘詞。妳以前會笑我一緊張就一直轉筆。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:30",
           "hidden": true,
@@ -7003,7 +7003,7 @@
         {
           "id": "pei-autonomy-v3-day3",
           "title": "",
-          "body": "我今天忍了很久沒有傳訊息。",
+          "body": "今天訪談的受試者臨時取消，我在研究室白等了一個下午。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 20:30",
           "hidden": true,
@@ -7012,7 +7012,7 @@
         {
           "id": "pei-autonomy-v3-day3-bubble-2",
           "title": "",
-          "body": "可我還是沒忍住。……妳今天過得好嗎？",
+          "body": "以前這種倒楣事我會直接打給妳抱怨。現在打完一長串才發現，妳可能根本不想聽。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 20:30",
           "hidden": true,
@@ -7029,7 +7029,7 @@
         {
           "id": "pei-autonomy-v3-reply-1-in",
           "title": "",
-          "body": "我以前總想知道妳在哪、跟誰一起。",
+          "body": "以前我會一直問妳在哪、跟誰一起。妳問我想改什麼，我不能只說我會改。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7038,7 +7038,7 @@
         {
           "id": "pei-autonomy-v3-reply-1-in-bubble-2",
           "title": "",
-          "body": "現在還是會想問。",
+          "body": "現在還是會想問。剛才看到妳在線上，我甚至又想打一句『妳跟誰在一起』。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7047,7 +7047,7 @@
         {
           "id": "pei-autonomy-v3-reply-1-in-bubble-3",
           "title": "",
-          "body": "只是我知道，妳已經不是我的女朋友了。",
+          "body": "但我刪掉了。我想先學會，妳不回答也不代表做錯什麼。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7064,7 +7064,7 @@
         {
           "id": "pei-autonomy-v3-reply-2-in",
           "title": "",
-          "body": "妳說不想回頭，我聽見了。",
+          "body": "……好。妳現在不想談以前，我不會再逼妳回想。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7073,7 +7073,7 @@
         {
           "id": "pei-autonomy-v3-reply-2-in-bubble-2",
           "title": "",
-          "body": "可是我做不到立刻不愛妳。",
+          "body": "我還是會難過，也還是想妳。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7082,7 +7082,7 @@
         {
           "id": "pei-autonomy-v3-reply-2-in-bubble-3",
           "title": "",
-          "body": "妳別連這點都要我改，好不好？",
+          "body": "但那是我要自己處理的事，不是妳欠我的。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7099,7 +7099,7 @@
         {
           "id": "pei-autonomy-v3-reply-3-in",
           "title": "",
-          "body": "研究所還是很忙。",
+          "body": "研究所這週忙得亂七八糟。組會、訪談、資料清理全擠在一起。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7108,7 +7108,7 @@
         {
           "id": "pei-autonomy-v3-reply-3-in-bubble-2",
           "title": "",
-          "body": "昨天看到一篇文章，第一個想法竟然是傳給妳。",
+          "body": "昨天一份訪談紀錄出了問題，我跟學姊對到很晚。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7117,7 +7117,7 @@
         {
           "id": "pei-autonomy-v3-reply-3-in-bubble-3",
           "title": "",
-          "body": "打開對話框才想起來，我們早就分開了。",
+          "body": "本來想跟妳抱怨，想了想，還是先把事情做完了。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:39",
           "hidden": true,
@@ -7162,7 +7162,7 @@
         {
           "id": "pei-autonomy-v3-reply-3-next-day",
           "title": "",
-          "body": "昨天聊完我去處理工作了。",
+          "body": "昨天聊完，我回研究室把那份訪談資料重新整理了一遍。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 21:10",
           "hidden": true,
@@ -11433,7 +11433,7 @@
           "id": "pei-day11-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "……好。那家書店我不再提。可是我剛剛真的差點把那張照片傳給妳。",
+          "body": "……好。這間書店我不再提。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11442,7 +11442,7 @@
           "id": "pei-day11-choice-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不提了。",
+          "body": "我剛剛差點拍書架傳給妳，還好沒傳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11451,7 +11451,7 @@
           "id": "pei-day11-choice-extra-4-in-bubble-3",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "其實我剛剛還想傳那張書架的照片，現在刪掉了。",
+          "body": "妳說不想碰，我記住了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11494,7 +11494,7 @@
           "id": "pei-day21-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。只是以前有什麼進展，我第一個想告訴的人就是妳。",
+          "body": "我知道。這些研究上的事，不需要再一件件跟妳報告。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11503,7 +11503,7 @@
           "id": "pei-day21-choice-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我只是習慣第一個想到妳。",
+          "body": "只是每次有進展，我還是會下意識想告訴妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11512,7 +11512,7 @@
           "id": "pei-day21-choice-extra-4-in-bubble-3",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "這個習慣我會慢慢改。",
+          "body": "下次我會先想清楚，妳是不是也想聽。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11582,7 +11582,7 @@
           "id": "pei-major-event-choice-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "可是妳能不能不要那麼快把我推開？",
+          "body": "我剛剛差點又問妳要不要再試一次。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11591,7 +11591,7 @@
           "id": "pei-major-event-choice-extra-4-in-bubble-3",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "……對不起，我又在求妳了。",
+          "body": "……算了。妳已經說過不會因為我求就答應。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -29975,7 +29975,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天路過書店，看到一本妳以前想買的書。"
+          "value": "裴知聿：今天陪同學去書店找研究用的參考書。"
         }
       ],
       "next": [
@@ -30112,7 +30112,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：早。我剛結束一整晚的研究資料整理。"
+          "value": "裴知聿：早。昨晚為了整理研究資料熬到天亮。"
         }
       ],
       "next": [
@@ -31490,7 +31490,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：剛從研究室出來，看到有人拿著妳以前喜歡的那款飲料。"
+          "value": "裴知聿：剛結束研究室的訪談逐字稿整理，眼睛快看花了。"
         }
       ],
       "next": [
@@ -31521,7 +31521,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天開會有人問我是不是沒睡好。"
+          "value": "裴知聿：今天組會報告被老師追問了好幾個地方。"
         }
       ],
       "next": [
@@ -31552,7 +31552,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我今天忍了很久沒有傳訊息。"
+          "value": "裴知聿：今天訪談的受試者臨時取消，我在研究室白等了一個下午。"
         }
       ],
       "next": [
@@ -31599,7 +31599,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我以前總想知道妳在哪、跟誰一起。"
+          "value": "裴知聿：以前我會一直問妳在哪、跟誰一起。妳問我想改什麼，我不能只說我會改。"
         }
       ],
       "next": [
@@ -31646,7 +31646,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：妳說不想回頭，我聽見了。"
+          "value": "裴知聿：……好。妳現在不想談以前，我不會再逼妳回想。"
         }
       ],
       "next": [
@@ -31693,7 +31693,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：研究所還是很忙。"
+          "value": "裴知聿：研究所這週忙得亂七八糟。組會、訪談、資料清理全擠在一起。"
         }
       ],
       "next": [
@@ -32132,7 +32132,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：昨天聊完我去處理工作了。"
+          "value": "裴知聿：昨天聊完，我回研究室把那份訪談資料重新整理了一遍。"
         }
       ],
       "next": [
@@ -55439,7 +55439,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：……好。那家書店我不再提。可是我剛剛真的差點把那張照片傳給妳。"
+          "value": "裴知聿：……好。這間書店我不再提。"
         }
       ],
       "next": [
@@ -55539,7 +55539,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。只是以前有什麼進展，我第一個想告訴的人就是妳。"
+          "value": "裴知聿：我知道。這些研究上的事，不需要再一件件跟妳報告。"
         }
       ],
       "next": [
