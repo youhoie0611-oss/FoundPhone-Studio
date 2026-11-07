@@ -109,8 +109,6 @@ function stableHash(value: string): number {
 export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const person = people[request.thread];
   if (!person) throw new Error("此角色尚未支援免費對話");
-  const contextual = brick3ContextAnswer(request);
-  if (contextual) return { ...contextual, reply: enforceCanon(request.thread, contextual.reply) };
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
@@ -281,6 +279,9 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
     if (/不是說好|說好.*不.*聯絡|不要聯絡|為什麼.*聯絡/.test(input))
       return { reply: "是，我記得我們說好先不要聯絡。這次是我越界了，對不起。妳不想繼續，我就停在這裡。", delayMs: 1700 };
   }
+  // Established scene facts take precedence; otherwise answer the most recent turn.
+  const contextual = brick3ContextAnswer(request);
+  if (contextual) return { ...contextual, reply: enforceCanon(request.thread, contextual.reply) };
   if (/[？?]|怎麼|為什麼|哪裡|哪裏|哪天|什麼時候|是不是/.test(input)) {
     if (/哪裡|哪裏|在哪|什麼地方/.test(input))
       return { reply: request.thread === "祁野" ? "妳問的是哪次？我不想隨便說個地點敷衍妳。" : "妳說的是哪一次？我先確認，免得答錯。", delayMs: 1400 };
