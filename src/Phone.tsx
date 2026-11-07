@@ -508,7 +508,7 @@ function PhoneRuntime({
                     const sceneReply = sourceApp === "kakao" ? advanceBrick3Chat(next, thread, message, history) : null;
                     if (sceneReply) update(next);
                     const priorReply = npcReplyQueue.current.get(threadKey) ?? Promise.resolve();
-                    const replyTask = priorReply.catch(() => undefined).then(() => sceneReply ?? requestNpcReply({ playerId: activePlayerId(), thread, message, history }))
+                    const replyTask = priorReply.catch(() => undefined).then(() => sceneReply ?? requestNpcReply({ storyId: work.id, playerId: activePlayerId(), thread, message, history }))
                       .then(async ({ reply, delayMs }) => {
                         if (delayMs) await new Promise<void>((resolve) => setTimeout(resolve, delayMs));
                         // Deliver each natural speech beat as a separate message, with a visible pause.
