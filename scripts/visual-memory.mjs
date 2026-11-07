@@ -18,7 +18,7 @@ async function exists(path) {
   try { const s = await stat(safePath(path)); return s.isFile(); } catch { return false; }
 }
 const registry = await loadJson(registryPath);
-if (registry.version !== 1 || !registry.characters || typeof registry.characters !== "object") fail("Invalid visual-memory registry");
+if (![1, 2].includes(registry.version) || !registry.characters || typeof registry.characters !== "object") fail("Invalid visual-memory registry");
 async function inspect(id, opts = {}) {
   const entry = registry.characters[id];
   if (!entry) fail("Unregistered character: " + id);
