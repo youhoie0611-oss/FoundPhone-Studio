@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { initialRuntime, type Work } from "./schema";
-import { chooseFlirt, observeFlirtReply, tickFlirt } from "./brick3Flirt";
+import { chooseFlirt, tickFlirt } from "./brick3Flirt";
 const work = { id: "between-the-lines-b-demo", mode: "story", phone: { date: "2026-11-06", time: "20:00" }, data: { kakao: [] } } as unknown as Work;
 const setup = (score: number) => {
   const s = initialRuntime(work); s.variables.shen_attraction = score; s.elapsedMs = 2 * 86400000;
@@ -41,7 +41,7 @@ describe("Brick3 affection-gated flirting", () => {
   });
   it("player can ask to stay at 60 without pretending arrival", () => {
     const s = setup(60);
-    observeFlirtReply(s, "沈硯舟", "今晚可以過夜嗎？");
-    expect(s.brick3Overnight?.records[0].phase).toBe("invited");
+    const next = chooseFlirt(work, s, "brick3-flirt:沈硯舟:overnight_ask")!;
+    expect(next.brick3Overnight?.records[0].phase).toBe("invited");
   });
 });
