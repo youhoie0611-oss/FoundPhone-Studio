@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 import type { Work, Item } from "../schema";
 import { IOSToggle } from "../vendor/konsta/Toggle";
-import { db } from "../persistence";
+import { BRICK3_WORK_ID, refreshBrick3Site } from "./refreshStory";
 import { NavigationPage, useNavigation } from "./Navigation";
 type Row = [ComponentType<{ size?: number }>, string, string];
 const groups: Row[][] = [
@@ -67,25 +67,23 @@ export function NativeSettings({
     [lowPower, setLowPower] = useState(false),
     [refreshing, setRefreshing] = useState(false);
   const refreshStoryData = async () => {
-    if (refreshing || !window.confirm("重新刷新資料會清除目前《磚3》的遊戲進度，並重新載入最新部署的劇情。確定繼續嗎？")) return;
+    if (refreshing || work.id !== BRICK3_WORK_ID ||
+      !window.confirm("將載入《磚3》最新部署的劇情，並清除這一局的全部遊戲進度、聊天紀錄與選擇，重新從頭開始。確定刷新嗎？")) return;
     setRefreshing(true);
     try {
-      if ("serviceWorker" in navigator) {
-        const registrations = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(registrations.map((registration) => registration.unregister()));
-      }
-      if ("caches" in window) {
-        const keys = await caches.keys();
-        await Promise.all(keys.map((key) => caches.delete(key)));
-      }
-      await db.saves.delete(work.id);
-      const url = new URL(window.location.href);
-      url.searchParams.set("refresh", String(Date.now()));
-      window.location.replace(url.toString());
+      await refreshBrick3Site({
+        url: window.location.href,
+        registrations: "serviceWorker" in navigator
+          ? () => navigator.serviceWorker.getRegistrations() : undefined,
+        caches: "caches" in window ? window.caches : undefined,
+        navigate: url => window.location.replace(url),
+      });
     } catch (error) {
-      setRefreshing(false);
-      window.alert("刷新失敗，請稍後再試。遊戲資料未必已清除。");
-      console.error("Failed to refresh story data", error);
+      window.alert("無法重新載入。請再試一次，或用 Safari 重新開啟遊戲網址。");
+      console.error("Failed to refresh Brick3", error);
+    } finally {
+      // Safari may block a navigation. Never leave the button disabled forever.
+      window.setTimeout(() => setRefreshing(false), 2500);
     }
   };
   const row = (label: string, value?: string, click?: () => void) => (
@@ -240,7 +238,7 @@ export function NativeSettings({
                 <ChevronRight size={17} />
               </button>
             )}
-            {(!query || "重新刷新資料".includes(query)) && (
+            {work.id === BRICK3_WORK_ID && (!query || "重新刷新資料".includes(query)) && (
               <div className="settings-group">
                 <button className="settings-native-row" type="button" disabled={refreshing} onClick={() => void refreshStoryData()}>
                   <span>重新刷新資料</span>
