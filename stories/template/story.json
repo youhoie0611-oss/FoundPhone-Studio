@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
   "title": "磚3",
-  "description": "《磚3》互動戀愛聊天故事：玩家以在職上班族身分，與顧時安、沈硯舟、前男友裴知聿、祁野及各自朋友圈展開獨立日常與分歧。",
-  "revision": 11,
+  "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
+  "revision": 12,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -872,6 +872,214 @@
             "brick3Scene": "qiye-opening",
             "choice": "distance"
           }
+        },
+        {
+          "id": "qiye-opening-follow-ask-prompt",
+          "senderId": "qiye",
+          "body": "週五晚上還有一場，妳要來看嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-player-yes",
+          "senderId": "owner",
+          "body": "好啊，你把球場位置傳給我。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-reply-yes",
+          "senderId": "qiye",
+          "body": "行。週五八點，到了傳訊息。我去門口找妳。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-player-no",
+          "senderId": "owner",
+          "body": "我週五沒空，下次吧。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-ask-reply-no",
+          "senderId": "qiye",
+          "body": "好，下次再說。這週我照樣會去打。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-ask"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-prompt",
+          "senderId": "qiye",
+          "body": "妳不信我投進最後一球？週五自己來看。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-player-yes",
+          "senderId": "owner",
+          "body": "行，我倒要看看你有多厲害。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-reply-yes",
+          "senderId": "qiye",
+          "body": "那就說定了。輸了也不准笑太大聲。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-player-no",
+          "senderId": "owner",
+          "body": "我只是開玩笑，沒要去。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-tease-reply-no",
+          "senderId": "qiye",
+          "body": "我知道。下次有影片再傳給妳看。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-tease"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-prompt",
+          "senderId": "qiye",
+          "body": "我剛好要去買吃的。妳吃過球場旁那家宵夜店嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-player-yes",
+          "senderId": "owner",
+          "body": "還沒，下次可以一起去。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-reply-yes",
+          "senderId": "qiye",
+          "body": "可以。下次打完球我問妳有沒有空。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-player-no",
+          "senderId": "owner",
+          "body": "沒吃過，你自己先去吧。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-care-reply-no",
+          "senderId": "qiye",
+          "body": "行，我先去吃。妳也別餓著。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-care"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-prompt",
+          "senderId": "qiye",
+          "body": "不懂也沒差。妳平常下班會做什麼？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-player-yes",
+          "senderId": "owner",
+          "body": "有時候去看展，你有興趣嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-reply-yes",
+          "senderId": "qiye",
+          "body": "有。我自己也拍照，改天可以交換展覽清單。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-player-no",
+          "senderId": "owner",
+          "body": "通常回家休息，不太出門。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance"
+          }
+        },
+        {
+          "id": "qiye-opening-follow-distance-reply-no",
+          "senderId": "qiye",
+          "body": "那挺好。累了就休息，別硬排活動。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "qiye-opening-follow-distance"
+          }
         }
       ]
     },
@@ -996,6 +1204,214 @@
             "peiScene": "pei-intro",
             "choice": "boundary"
           }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-prompt",
+          "senderId": "pei-zhiyu",
+          "body": "最近在整理以前的東西，翻到我們去過的那家書店的票根。妳還記得嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-player-yes",
+          "senderId": "owner",
+          "body": "記得。你怎麼突然整理那些？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-reply-yes",
+          "senderId": "pei-zhiyu",
+          "body": "搬東西時翻到的。我沒丟，但也不是要妳做什麼。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-player-no",
+          "senderId": "owner",
+          "body": "我不想再聊以前的事。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ordinary-reply-no",
+          "senderId": "pei-zhiyu",
+          "body": "好，我不提了。妳現在的生活比較重要。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ordinary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-prompt",
+          "senderId": "pei-zhiyu",
+          "body": "我想找個機會把當時沒說清楚的事談完。不是要逼妳複合。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-player-yes",
+          "senderId": "owner",
+          "body": "那你先說，當時想解釋什麼？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-reply-yes",
+          "senderId": "pei-zhiyu",
+          "body": "我當時一直迴避妳問我的問題，讓妳一個人猜。這件事我欠妳一個道歉。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-player-no",
+          "senderId": "owner",
+          "body": "我現在不想談這個。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask"
+          }
+        },
+        {
+          "id": "pei-intro-follow-ask-reply-no",
+          "senderId": "pei-zhiyu",
+          "body": "我明白。這件事不需要妳現在回應。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-ask"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-prompt",
+          "senderId": "pei-zhiyu",
+          "body": "那我直接說。我還想試著重新認識妳，但決定權在妳。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-player-yes",
+          "senderId": "owner",
+          "body": "你說的重新認識，是想複合嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-reply-yes",
+          "senderId": "pei-zhiyu",
+          "body": "是，我有這個想法。但妳不需要為了我改變決定。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-player-no",
+          "senderId": "owner",
+          "body": "我沒有重新開始的打算。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct"
+          }
+        },
+        {
+          "id": "pei-intro-follow-direct-reply-no",
+          "senderId": "pei-zhiyu",
+          "body": "知道了。我會尊重這個答案，不再用曖昧的方式試探。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-direct"
+          }
+        },
+        {
+          "id": "pei-intro-follow-boundary-prompt",
+          "senderId": "pei-zhiyu",
+          "body": "我知道妳不想再聯絡。這是最後一則，我不會再打擾。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-boundary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-boundary-player-yes",
+          "senderId": "owner",
+          "body": "謝謝你尊重我的決定。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-boundary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-boundary-reply-yes",
+          "senderId": "pei-zhiyu",
+          "body": "嗯。祝妳一切都好。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-boundary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-boundary-player-no",
+          "senderId": "owner",
+          "body": "不要再傳訊息了。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-boundary"
+          }
+        },
+        {
+          "id": "pei-intro-follow-boundary-reply-no",
+          "senderId": "pei-zhiyu",
+          "body": "明白。我不會再聯絡。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "pei-intro-follow-boundary"
+          }
         }
       ]
     },
@@ -1118,6 +1534,214 @@
           "meta": {
             "brick3Scene": "shen-opening",
             "choice": "distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-prompt",
+          "senderId": "shen-yanzhou",
+          "body": "報告裡要選三張活動照片。我有兩張一直拿不定主意。妳願意幫我看看嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-player-yes",
+          "senderId": "owner",
+          "body": "傳來吧，我可以幫你選。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-reply-yes",
+          "senderId": "shen-yanzhou",
+          "body": "好，我整理好再傳。妳的意見我會寫進選圖理由。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-player-no",
+          "senderId": "owner",
+          "body": "我不太會選照片，怕幫倒忙。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask"
+          }
+        },
+        {
+          "id": "shen-opening-follow-ask-reply-no",
+          "senderId": "shen-yanzhou",
+          "body": "沒事，我自己再問同學。謝謝妳。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-ask"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-prompt",
+          "senderId": "shen-yanzhou",
+          "body": "下週有成果發表，老師說歡迎校外的人來。妳要來驗收嗎？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-player-yes",
+          "senderId": "owner",
+          "body": "可以啊，告訴我時間。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-reply-yes",
+          "senderId": "shen-yanzhou",
+          "body": "下週三下午兩點，我把展場資訊傳妳。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-player-no",
+          "senderId": "owner",
+          "body": "不了，我只是開玩笑。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease"
+          }
+        },
+        {
+          "id": "shen-opening-follow-tease-reply-no",
+          "senderId": "shen-yanzhou",
+          "body": "哈哈我知道。等結束再跟妳說成果。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-tease"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-prompt",
+          "senderId": "shen-yanzhou",
+          "body": "其實我有點擔心發表那天講不好。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-player-yes",
+          "senderId": "owner",
+          "body": "要不要先跟我練習一次？",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-reply-yes",
+          "senderId": "shen-yanzhou",
+          "body": "真的可以嗎？我今晚先整理一版講稿，再問妳時間。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-player-no",
+          "senderId": "owner",
+          "body": "你準備得很認真，一定沒問題。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care"
+          }
+        },
+        {
+          "id": "shen-opening-follow-care-reply-no",
+          "senderId": "shen-yanzhou",
+          "body": "謝謝。那我今晚把講稿再順一遍。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-care"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-prompt",
+          "senderId": "shen-yanzhou",
+          "body": "好，等妳有空再聊。對了，上次活動的照片我會整理成相簿。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-player-yes",
+          "senderId": "owner",
+          "body": "整理好可以傳我連結。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-reply-yes",
+          "senderId": "shen-yanzhou",
+          "body": "好，整理完就傳，不急著看。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-player-no",
+          "senderId": "owner",
+          "body": "不用特地傳給我。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance"
+          }
+        },
+        {
+          "id": "shen-opening-follow-distance-reply-no",
+          "senderId": "shen-yanzhou",
+          "body": "了解，那我就先放自己的作品集。",
+          "time": "2026-11-04 10:10",
+          "hidden": true,
+          "meta": {
+            "brick3Scene": "shen-opening-follow-distance"
           }
         }
       ]
@@ -1600,7 +2224,19 @@
     "shen_hidden_affection": 10,
     "shen_relationship": "acquaintance",
     "qiye-opening-last-choice": "",
-    "shen-opening-last-choice": ""
+    "shen-opening-last-choice": "",
+    "qiye-opening-follow-ask-outcome": "pending",
+    "qiye-opening-follow-tease-outcome": "pending",
+    "qiye-opening-follow-care-outcome": "pending",
+    "qiye-opening-follow-distance-outcome": "pending",
+    "shen-opening-follow-ask-outcome": "pending",
+    "shen-opening-follow-tease-outcome": "pending",
+    "shen-opening-follow-care-outcome": "pending",
+    "shen-opening-follow-distance-outcome": "pending",
+    "pei-intro-follow-ordinary-outcome": "pending",
+    "pei-intro-follow-ask-outcome": "pending",
+    "pei-intro-follow-direct-outcome": "pending",
+    "pei-intro-follow-boundary-outcome": "pending"
   },
   "events": [
     {
@@ -3280,7 +3916,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-ordinary-wait"
+      ]
     },
     {
       "id": "pei-intro-choice-ask",
@@ -3333,7 +3971,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-ask-wait"
+      ]
     },
     {
       "id": "pei-intro-choice-direct",
@@ -3386,7 +4026,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-direct-wait"
+      ]
     },
     {
       "id": "pei-intro-choice-boundary",
@@ -3449,7 +4091,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-intro-follow-boundary-wait"
+      ]
     },
     {
       "id": "qiye-opening-start",
@@ -3556,7 +4200,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-ask-wait"
+      ]
     },
     {
       "id": "qiye-opening-choice-tease",
@@ -3599,7 +4245,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-tease-wait"
+      ]
     },
     {
       "id": "qiye-opening-choice-care",
@@ -3642,7 +4290,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-care-wait"
+      ]
     },
     {
       "id": "qiye-opening-choice-distance",
@@ -3685,7 +4335,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "qiye-opening-follow-distance-wait"
+      ]
     },
     {
       "id": "qiye-opening-select",
@@ -3804,7 +4456,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-ask-wait"
+      ]
     },
     {
       "id": "shen-opening-choice-tease",
@@ -3847,7 +4501,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-tease-wait"
+      ]
     },
     {
       "id": "shen-opening-choice-care",
@@ -3890,7 +4546,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-care-wait"
+      ]
     },
     {
       "id": "shen-opening-choice-distance",
@@ -3933,7 +4591,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "shen-opening-follow-distance-wait"
+      ]
     },
     {
       "id": "shen-opening-select",
@@ -3946,6 +4606,1458 @@
         "shen-opening-choice-care",
         "shen-opening-choice-distance"
       ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "qiye-opening-follow-ask-prompt"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-ask-yes",
+        "qiye-opening-follow-ask-no"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-yes",
+      "type": "action",
+      "label": "好啊，你把球場位置傳給我。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-ask-outcome",
+          "value": "court_visit"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-yes-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-ask-yes-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-ask-no",
+      "type": "action",
+      "label": "我週五沒空，下次吧。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-ask-outcome",
+          "value": "court_declined"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-ask-no-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-ask-no-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-ask-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-ask-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-tease-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "qiye-opening-follow-tease-prompt"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-tease-yes",
+        "qiye-opening-follow-tease-no"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-yes",
+      "type": "action",
+      "label": "行，我倒要看看你有多厲害。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-tease-outcome",
+          "value": "court_challenge"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-yes-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-tease-yes-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-tease-no",
+      "type": "action",
+      "label": "我只是開玩笑，沒要去。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-tease-outcome",
+          "value": "tease_only"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-tease-no-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-tease-no-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-tease-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-tease-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-care-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "qiye-opening-follow-care-prompt"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-care-yes",
+        "qiye-opening-follow-care-no"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-yes",
+      "type": "action",
+      "label": "還沒，下次可以一起去。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-care-outcome",
+          "value": "food_invitation"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-yes-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-care-yes-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-care-no",
+      "type": "action",
+      "label": "沒吃過，你自己先去吧。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-care-outcome",
+          "value": "food_independent"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-care-no-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-care-no-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-care-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-care-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-distance-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "qiye-opening-follow-distance-prompt"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-select"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "qiye-opening-follow-distance-yes",
+        "qiye-opening-follow-distance-no"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-yes",
+      "type": "action",
+      "label": "有時候去看展，你有興趣嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-distance-outcome",
+          "value": "design_interest"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-yes-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-distance-yes-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qiye-opening-follow-distance-no",
+      "type": "action",
+      "label": "通常回家休息，不太出門。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "qiye-opening-follow-distance-outcome",
+          "value": "respect_distance"
+        }
+      ],
+      "next": [
+        "qiye-opening-follow-distance-no-wait"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "qiye-opening-follow-distance-no-reply"
+      ]
+    },
+    {
+      "id": "qiye-opening-follow-distance-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "qiye-opening-follow-distance-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-ask-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "shen-opening-follow-ask-prompt"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-ask-yes",
+        "shen-opening-follow-ask-no"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-yes",
+      "type": "action",
+      "label": "傳來吧，我可以幫你選。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-ask-outcome",
+          "value": "photo_collaboration"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-yes-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-ask-yes-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-ask-no",
+      "type": "action",
+      "label": "我不太會選照片，怕幫倒忙。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-ask-outcome",
+          "value": "study_independent"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-ask-no-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-ask-no-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-ask-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-ask-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-tease-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "shen-opening-follow-tease-prompt"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-tease-yes",
+        "shen-opening-follow-tease-no"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-yes",
+      "type": "action",
+      "label": "可以啊，告訴我時間。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-tease-outcome",
+          "value": "campus_visit"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-yes-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-tease-yes-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-tease-no",
+      "type": "action",
+      "label": "不了，我只是開玩笑。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-tease-outcome",
+          "value": "campus_declined"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-tease-no-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-tease-no-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-tease-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-tease-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-care-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "shen-opening-follow-care-prompt"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-care-yes",
+        "shen-opening-follow-care-no"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-yes",
+      "type": "action",
+      "label": "要不要先跟我練習一次？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-care-outcome",
+          "value": "presentation_rehearsal"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-yes-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-care-yes-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-care-no",
+      "type": "action",
+      "label": "你準備得很認真，一定沒問題。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-care-outcome",
+          "value": "self_preparation"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-care-no-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-care-no-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-care-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-care-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-distance-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "shen-opening-follow-distance-prompt"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-select"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "shen-opening-follow-distance-yes",
+        "shen-opening-follow-distance-no"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-yes",
+      "type": "action",
+      "label": "整理好可以傳我連結。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-distance-outcome",
+          "value": "album_shared"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-yes-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-distance-yes-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shen-opening-follow-distance-no",
+      "type": "action",
+      "label": "不用特地傳給我。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "shen-opening-follow-distance-outcome",
+          "value": "album_private"
+        }
+      ],
+      "next": [
+        "shen-opening-follow-distance-no-wait"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "shen-opening-follow-distance-no-reply"
+      ]
+    },
+    {
+      "id": "shen-opening-follow-distance-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "shen-opening-follow-distance-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ordinary-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "pei-intro-follow-ordinary-prompt"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-ordinary-yes",
+        "pei-intro-follow-ordinary-no"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-yes",
+      "type": "action",
+      "label": "記得。你怎麼突然整理那些？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ordinary-outcome",
+          "value": "shared_memory"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-yes-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-ordinary-yes-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ordinary-no",
+      "type": "action",
+      "label": "我不想再聊以前的事。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ordinary-outcome",
+          "value": "past_boundary"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ordinary-no-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-ordinary-no-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ordinary-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ordinary-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ask-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "pei-intro-follow-ask-prompt"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-ask-yes",
+        "pei-intro-follow-ask-no"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-yes",
+      "type": "action",
+      "label": "那你先說，當時想解釋什麼？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ask-outcome",
+          "value": "past_explanation"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-yes-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-ask-yes-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-ask-no",
+      "type": "action",
+      "label": "我現在不想談這個。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-ask-outcome",
+          "value": "talk_postponed"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-ask-no-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-ask-no-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-ask-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-ask-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-direct-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "pei-intro-follow-direct-prompt"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-direct-yes",
+        "pei-intro-follow-direct-no"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-yes",
+      "type": "action",
+      "label": "你說的重新認識，是想複合嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-direct-outcome",
+          "value": "reconcile_discussion"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-yes-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-direct-yes-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-direct-no",
+      "type": "action",
+      "label": "我沒有重新開始的打算。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-direct-outcome",
+          "value": "reconcile_rejected"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-direct-no-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-direct-no-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-direct-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-direct-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-boundary-wait",
+      "type": "delay",
+      "label": "後續話題自然停頓",
+      "actions": [],
+      "delayMs": 80000,
+      "next": [
+        "pei-intro-follow-boundary-prompt"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-prompt",
+      "type": "action",
+      "label": "角色主動提出下一步",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-boundary-prompt",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-intro-follow-boundary-select"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-select",
+      "type": "choice",
+      "label": "玩家決定事件是否推進",
+      "actions": [],
+      "next": [
+        "pei-intro-follow-boundary-yes",
+        "pei-intro-follow-boundary-no"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-yes",
+      "type": "action",
+      "label": "謝謝你尊重我的決定。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-boundary-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-boundary-outcome",
+          "value": "no_contact_ack"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-boundary-yes-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-yes-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-boundary-yes-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-yes-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-boundary-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-intro-follow-boundary-no",
+      "type": "action",
+      "label": "不要再傳訊息了。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-boundary-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "pei-intro-follow-boundary-outcome",
+          "value": "no_contact_final"
+        }
+      ],
+      "next": [
+        "pei-intro-follow-boundary-no-wait"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-no-wait",
+      "type": "delay",
+      "label": "角色讀取後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "pei-intro-follow-boundary-no-reply"
+      ]
+    },
+    {
+      "id": "pei-intro-follow-boundary-no-reply",
+      "type": "action",
+      "label": "依玩家決定推進或收束",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-intro-follow-boundary-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
