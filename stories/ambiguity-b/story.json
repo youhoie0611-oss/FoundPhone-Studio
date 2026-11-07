@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 57,
+  "revision": 58,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -11691,6 +11691,141 @@
           "body": "……不用特別回我。我知道妳有自己的生活。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-jealous-msg-1",
+          "title": "",
+          "body": "……我問妳一件事。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-jealous-msg-2",
+          "title": "",
+          "body": "妳最近是不是跟誰走得很近？",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-jealous-msg-3",
+          "title": "",
+          "body": "對不起。我知道我沒資格問。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-jealous-msg-4",
+          "title": "",
+          "body": "可是我一想到有人現在可以理所當然地陪在妳身邊，就嫉妒得快瘋了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-jealous-msg-5",
+          "title": "",
+          "body": "妳不用回答。我只是又沒忍住。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-pleading-msg-1",
+          "title": "",
+          "body": "妳可以不要把我刪掉嗎。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-pleading-msg-2",
+          "title": "",
+          "body": "我知道我們分手了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-pleading-msg-3",
+          "title": "",
+          "body": "我不是要妳立刻回來。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-pleading-msg-4",
+          "title": "",
+          "body": "就讓我偶爾看到妳的名字還在，好不好。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-pleading-msg-5",
+          "title": "",
+          "body": "……對不起。我連這種事都在求妳。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-spiral-msg-1",
+          "title": "",
+          "body": "妳是不是覺得我很煩。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-spiral-msg-2",
+          "title": "",
+          "body": "我剛剛打了一大段，又全刪掉了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-spiral-msg-3",
+          "title": "",
+          "body": "明明是我說不會再一直問妳。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-spiral-msg-4",
+          "title": "",
+          "body": "可是妳一不回，我就忍不住想，是不是已經有人比我更懂妳了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-rare-spiral-msg-5",
+          "title": "",
+          "body": "算了。這句也當我沒說。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
         }
@@ -30022,7 +30157,8 @@
       "delayMs": 90000,
       "next": [
         "pei-day11-arrival",
-        "pei-day11-cautious-arrival"
+        "pei-day11-cautious-arrival",
+        "pei-rare-pleading-wait"
       ],
       "once": true
     },
@@ -30173,7 +30309,8 @@
       "delayMs": 90000,
       "next": [
         "pei-day21-arrival",
-        "pei-day21-cautious-arrival"
+        "pei-day21-cautious-arrival",
+        "pei-rare-spiral-wait"
       ],
       "once": true
     },
@@ -31627,7 +31764,8 @@
       "delayMs": 86400000,
       "next": [
         "pei-autonomy-v3-day3-arrive",
-        "pei-autonomy-v3-day3-cautious-arrive"
+        "pei-autonomy-v3-day3-cautious-arrive",
+        "pei-rare-jealous-wait"
       ]
     },
     {
@@ -64868,6 +65006,456 @@
         "pei-day21-choice-extra-3",
         "pei-day21-choice-extra-4"
       ]
+    },
+    {
+      "id": "pei-rare-jealous-wait",
+      "label": "裴知聿低機率自主訊息判定",
+      "type": "delay",
+      "once": true,
+      "delayMs": 180000,
+      "next": [
+        "pei-rare-jealous-gate"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-gate",
+      "label": "裴知聿情緒失控（5%）",
+      "type": "action",
+      "once": true,
+      "conditions": [
+        {
+          "key": "random:pei-rare-jealous",
+          "op": "lt",
+          "value": 0.05
+        }
+      ],
+      "actions": [],
+      "next": [
+        "pei-rare-jealous-arrive"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-arrive",
+      "label": "裴知聿忍不住傳訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-jealous-msg-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：……我問妳一件事。"
+        }
+      ],
+      "next": [
+        "pei-rare-jealous-typing-2"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-typing-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 3000,
+      "next": [
+        "pei-rare-jealous-send-2"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-send-2",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-jealous-msg-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-jealous-typing-3"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-typing-3",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-jealous-send-3"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-send-3",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-jealous-msg-3",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-jealous-typing-4"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-typing-4",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-jealous-send-4"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-send-4",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-jealous-msg-4",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-jealous-typing-5"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-typing-5",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-jealous-send-5"
+      ]
+    },
+    {
+      "id": "pei-rare-jealous-send-5",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-jealous-msg-5",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-rare-pleading-wait",
+      "label": "裴知聿低機率自主訊息判定",
+      "type": "delay",
+      "once": true,
+      "delayMs": 240000,
+      "next": [
+        "pei-rare-pleading-gate"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-gate",
+      "label": "裴知聿情緒失控（5%）",
+      "type": "action",
+      "once": true,
+      "conditions": [
+        {
+          "key": "random:pei-rare-pleading",
+          "op": "lt",
+          "value": 0.05
+        }
+      ],
+      "actions": [],
+      "next": [
+        "pei-rare-pleading-arrive"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-arrive",
+      "label": "裴知聿忍不住傳訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-pleading-msg-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：妳可以不要把我刪掉嗎。"
+        }
+      ],
+      "next": [
+        "pei-rare-pleading-typing-2"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-typing-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 3000,
+      "next": [
+        "pei-rare-pleading-send-2"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-send-2",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-pleading-msg-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-pleading-typing-3"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-typing-3",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-pleading-send-3"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-send-3",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-pleading-msg-3",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-pleading-typing-4"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-typing-4",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-pleading-send-4"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-send-4",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-pleading-msg-4",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-pleading-typing-5"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-typing-5",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-pleading-send-5"
+      ]
+    },
+    {
+      "id": "pei-rare-pleading-send-5",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-pleading-msg-5",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-rare-spiral-wait",
+      "label": "裴知聿低機率自主訊息判定",
+      "type": "delay",
+      "once": true,
+      "delayMs": 240000,
+      "next": [
+        "pei-rare-spiral-gate"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-gate",
+      "label": "裴知聿情緒失控（5%）",
+      "type": "action",
+      "once": true,
+      "conditions": [
+        {
+          "key": "random:pei-rare-spiral",
+          "op": "lt",
+          "value": 0.05
+        }
+      ],
+      "actions": [],
+      "next": [
+        "pei-rare-spiral-arrive"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-arrive",
+      "label": "裴知聿忍不住傳訊",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-spiral-msg-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "裴知聿：妳是不是覺得我很煩。"
+        }
+      ],
+      "next": [
+        "pei-rare-spiral-typing-2"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-typing-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 3000,
+      "next": [
+        "pei-rare-spiral-send-2"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-send-2",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-spiral-msg-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-spiral-typing-3"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-typing-3",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-spiral-send-3"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-send-3",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-spiral-msg-3",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-spiral-typing-4"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-typing-4",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-spiral-send-4"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-send-4",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-spiral-msg-4",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-rare-spiral-typing-5"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-typing-5",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "once": true,
+      "delayMs": 2200,
+      "next": [
+        "pei-rare-spiral-send-5"
+      ]
+    },
+    {
+      "id": "pei-rare-spiral-send-5",
+      "label": "裴知聿情緒訊息",
+      "type": "action",
+      "once": true,
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-rare-spiral-msg-5",
+          "value": true
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
