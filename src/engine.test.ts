@@ -36,11 +36,11 @@ describe("story progression", () => {
   it("consumes the actual four-choice group when targets are shared across dialogue scenes", () => {
     const w = createWork();
     w.nodes = [
-      { id: "first-group", label: "First", type: "choice", event: "read", target: "first", next: ["shared", "first-only"], once: true, conditions: [], logic: "and", actions: [] },
-      { id: "second-group", label: "Second", type: "choice", event: "read", target: "second", next: ["shared", "second-only"], once: true, conditions: [], logic: "and", actions: [] },
+      { id: "first-group", label: "First", type: "choice", event: "read", target: "first", next: ["shared", "first-only"], once: true, conditions: [], logic: "and", actions: [], x: 0, y: 0 },
+      { id: "second-group", label: "Second", type: "choice", event: "read", target: "second", next: ["shared", "second-only"], once: true, conditions: [], logic: "and", actions: [], x: 0, y: 0 },
       ...["shared", "first-only", "second-only"].map((id) => ({
         id, label: id, type: "action" as const, event: "", target: "", next: [], once: true,
-        conditions: [], logic: "and" as const, actions: [],
+        conditions: [], logic: "and" as const, actions: [], x: 0, y: 0,
       })),
     ];
     const first = dispatch(w, initialRuntime(w), "read", "first");
