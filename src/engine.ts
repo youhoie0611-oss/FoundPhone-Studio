@@ -10,6 +10,12 @@ export function testCondition(c: Condition, s: Runtime): boolean {
     unlocked: s.unlocked,
     completed: s.completed,
   };
+  // A named random roll is drawn once and persisted in the save state.
+  // Story nodes can test random:<unique-event-id> with lt 0.05 for a 5% event.
+  // Persisting the roll prevents rerolls when a scheduled node is resumed.
+  if (scope === "random" && !(c.key in s.variables)) {
+    s.variables[c.key] = Math.random();
+  }
   const actual =
     scope === "ui"
       ? s.ui?.[rest[0]]?.[rest.slice(1).join(":")]
