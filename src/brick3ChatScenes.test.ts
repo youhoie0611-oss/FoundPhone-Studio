@@ -46,6 +46,35 @@ describe("brick3 scene progression", () => {
     expect(state.variables["brick3:scene:裴知聿"]).toBe("conversation_open");
   });
 
+
+  it("does not treat accepting a dinner invitation as agreeing to reconcile", () => {
+    const state = initialRuntime(createWork());
+    const reply = advanceBrick3Chat(state, "裴知聿", "可以，明天一起吃晚餐。", [
+      { body: "我們分手後一直沒好好聊。", outgoing: false },
+      { body: "妳想吃晚餐嗎？", outgoing: false },
+    ]);
+    expect(reply).toBeNull();
+    expect(state.variables["brick3:scene:裴知聿"]).toBeUndefined();
+  });
+
+  it("does not interpret declining a Gu exhibition as banning all future contact", () => {
+    const state = initialRuntime(createWork());
+    const reply = advanceBrick3Chat(state, "顧時安", "這次展覽我不想去。", [
+      { body: "我是顧時安，在做建築設計，想找妳聊聊展覽。", outgoing: false },
+    ]);
+    expect(reply).toBeNull();
+    expect(state.variables["brick3:scene:顧時安"]).toBeUndefined();
+  });
+
+  it("does not treat accepting a meal as consent for a photo", () => {
+    const state = initialRuntime(createWork());
+    const reply = advanceBrick3Chat(state, "沈硯舟", "可以一起去吃飯。", [
+      { body: "我有張照片拍到妳，介意嗎？", outgoing: false },
+    ]);
+    expect(reply).toBeNull();
+    expect(state.variables["brick3:scene:沈硯舟"]).toBeUndefined();
+  });
+
   it("sends a scheduled next-day follow-up only once", () => {
     const work = { ...createWork(), id: "between-the-lines-b-demo" };
     const state = initialRuntime(work);
