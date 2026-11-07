@@ -1,4 +1,5 @@
 import { enforceCanon } from "./characterCanon";
+import { brick3ContextAnswer } from "./brick3DialogueReplies";
 import type { AiChatRequest, AiChatResponse } from "./aiChat";
 
 type Intent = "stop" | "refuse" | "gift" | "question" | "greeting" | "meeting" | "work" | "thanks" | "affection" | "other";
@@ -108,6 +109,8 @@ function stableHash(value: string): number {
 export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const person = people[request.thread];
   if (!person) throw new Error("此角色尚未支援免費對話");
+  const contextual = brick3ContextAnswer(request);
+  if (contextual) return { ...contextual, reply: enforceCanon(request.thread, contextual.reply) };
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
