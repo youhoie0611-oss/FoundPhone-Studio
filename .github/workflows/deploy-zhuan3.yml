@@ -9,7 +9,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: brick3-isolated-pages
+  group: github-pages-deployment
   cancel-in-progress: false
 jobs:
   build:
@@ -58,6 +58,13 @@ jobs:
           cp -a dist/. ../dist/rebuild/
           test -s ../dist/rebuild/index.html
           test -s ../dist/rebuild/work.json
+      - name: Verify isolated publishing layout
+        run: |
+          test -s dist/index.html
+          test -s dist/rebuild/index.html
+          test -s dist/rebuild/work.json
+          echo "Total files:" && find dist -type f | wc -l
+          echo "Largest files:" && du -ah dist | sort -h | tail -n 15
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
