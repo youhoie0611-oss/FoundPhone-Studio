@@ -215,10 +215,10 @@ export function MymyKakao(p: SkinProps) {
                 </div>
               );
             })}
-            {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
+            {(isTyping || p.brick3PendingDialogue) && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !shenPhotoReplyFinished && !lastMessage?.outgoing && (
+          {!p.creator && !isTyping && !p.brick3PendingDialogue && !shenPhotoReplyFinished && !lastMessage?.outgoing && (
             <div className="kkt-reply-tray" aria-label="回覆選項">
               {(() => {
                 if (v8Options.length) return v8Options.map((choice) => (
