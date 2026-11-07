@@ -130,7 +130,8 @@ function runQueue(
       .map((item) => item!.title);
     const recentDeliveries = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
     const recentPlayerReplies = (s.ui?.lastFreeReply ?? {}) as Record<string, string>;
-    const blocked = incomingThreads.some((thread) => {
+    const isSequentialBubble = n.id.startsWith("pei-bubble-delivery-");
+    const blocked = !isSequentialBubble && incomingThreads.some((thread) => {
       const last = recentDeliveries[thread];
       const playerTime = recentPlayerReplies[thread];
       const playerElapsed = playerTime === undefined ? undefined : Number(playerTime);
