@@ -112,6 +112,9 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   // Answer a direct follow-up from the current conversational context before using generic templates.
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
+  // A concrete reply to the current scene outranks generic intent templates.
+  const direct = brick3ContextAnswer(request);
+  if (direct) return { ...direct, reply: enforceCanon(request.thread, direct.reply) };
   const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
   // Privacy objections are boundaries, not consent to receive or redistribute photos.
   if (request.thread === "沈硯舟" && /照片|相片|拍到|拍照/.test(context) && /不太想|不想|不要|介意|擔心|不希望|不方便|別傳|別給|刪掉|刪除|公開|傳來傳去/.test(input)) {
