@@ -18,8 +18,11 @@ const now = (s: Runtime) => s.elapsedMs ?? 0;
 const all = (s: Runtime) => s.messages.kakao ?? [];
 const player = (s: Runtime) => all(s).filter(m => m.title === NAME && m.outgoing);
 const incoming = (s: Runtime) => all(s).filter(m => m.title === NAME && !m.outgoing);
+// A generic photo of another lead is not proof that the player went on a date.
+// Pei can only react to information that actually identifies her publicly.
 const socialCount = (s: Runtime) => (s.messages.instagram ?? []).filter(m =>
-  m.id.startsWith("brick3-social-") && !m.id.includes("pei_dinner")).length;
+  m.id.startsWith("brick3-social-") && m.sender !== NAME &&
+  /妳是我(?:的)?女朋友|妳是我的戀人|我(?:和|跟)妳(?:已經)?在交往|我(?:和|跟)妳(?:已經)?在一起/.test(m.body)).length;
 const level = (s: Runtime) => Math.max(0, Number(s.variables.pei_jealousy ?? 0));
 const affection = (s: Runtime) => Math.max(0, Number(s.variables.pei_attraction ?? 0));
 const last = <T>(xs: T[]) => xs[xs.length - 1];
@@ -33,13 +36,11 @@ const delay = (s: Runtime) => {
 };
 const lines: Record<"waiting" | "busy" | "rejected" | "reconcile" | "jealous", string[][]> = {
   waiting: [
-    ["妳在忙嗎", "我剛剛一直在看手機", "……看到的話回我一句好不好"],
-    ["是不是我說錯什麼了", "妳以前不會這麼久不理我", "我知道我們分手了", "可我真的還不習慣"],
-    ["妳是不是不想跟我說話了", "我真的很想妳", "妳理理我好不好"],
+    ["妳在忙嗎", "……沒事。看到再回就好"],
+    ["我剛剛又想起以前的事", "不過我知道妳現在有自己的安排"],
   ],
   busy: [
-    ["今天不行嗎", "那明天呢", "我真的很想見妳"],
-    ["妳是不是只是不想見我", "我知道我很煩", "可是我一直在等妳說有空"],
+    ["好，今天就先不約了", "……我確實想見妳，但妳不用急著給我另一個日期"],
   ],
   reconcile: [
     ["妳剛剛說什麼", "妳說願意再給我一次機會？", "我是不是看錯了"],
@@ -47,14 +48,11 @@ const lines: Record<"waiting" | "busy" | "rejected" | "reconcile" | "jealous", s
     ["我真的很想妳", "我一直以為妳不會再回頭了", "我可以見妳嗎"],
   ],
   rejected: [
-    ["為什麼", "是我哪裡又做錯了嗎", "妳真的一點都不想我了嗎"],
-    ["我知道妳不想見我", "可是我還想見妳", "就一次也不行嗎"],
-    ["我真的不想就這樣結束", "妳能不能再跟我說一句話", "我還在等"],
+    ["……我聽懂了。", "我還是會難過，但不會繼續逼妳改變答案。"],
   ],
   jealous: [
-    ["我看到照片了", "妳跟他出去了？", "我只是好奇"],
-    ["玩得開心嗎", "他對妳很好？", "我又沒說妳不能跟他出去"],
-    ["所以他到底是誰", "妳怎麼能這麼快就把我換掉", "……妳是不是已經把我忘了"],
+    ["我看到公開的消息了", "……所以妳真的跟他在一起了。"],
+    ["我知道我們已經分手", "但說我完全不在意，那是騙妳的。"],
   ],
 };
 
@@ -147,11 +145,11 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
   }
   // Send one bubble per tick. Do not overwhelm a chat with a single monologue.
   const flat = pool.flat();
-  const threshold = p.phase === "waiting" ? 3 + (level(s) >= 40 ? 5 : 0)
-    : p.phase === "jealous" ? 3 + (level(s) >= 40 ? 5 : 0)
-    : p.phase === "busy" ? 3 + (affection(s) >= 40 ? 3 : 0)
-    : p.phase === "reconcile" ? 3 + (affection(s) >= 40 ? 6 : 0)
-    : 4 + (affection(s) >= 40 ? 4 : 0);
+  const threshold = p.phase === "waiting" ? (level(s) >= 40 ? 2 : 1)
+    : p.phase === "jealous" ? 2
+    : p.phase === "busy" ? 1
+    : p.phase === "reconcile" ? 3 + (affection(s) >= 40 ? 3 : 0)
+    : 1;
   if (p.step >= threshold) { p.phase = "idle"; return s; }
   // Avoid colliding with another character's current scripted Pei dialogue.
   const recent = (s.ui?.scriptedThreadDelivery ?? {}) as Record<string, number>;
@@ -161,7 +159,9 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
   }
   emit(s, p, flat[p.step]);
   p.step++;
-  p.nextAt = now(s) + (p.step % 3 === 0 ? 45000 : 3500 + (p.step % 2) * 2000);
+  // Subsequent emotional messages are spaced out; one unanswered KKT bubble
+  // must not cascade into a rapid series of pleading messages.
+  p.nextAt = now(s) + (p.phase === "reconcile" ? 5500 : 30 * 60000);
   if (p.step >= threshold) p.nextAt = Infinity;
   return s;
 }
