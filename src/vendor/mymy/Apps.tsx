@@ -121,12 +121,16 @@ export function MymyKakao(p: SkinProps) {
   const shenPhotoReplyFinished = p.thread === "沈硯舟" &&
     /^brick3-photo-photo_shen_batch01_[a-z0-9_]+-choice-[1-4]-response$/.test(lastMessage?.id ?? "") &&
     photoOptions.length === 0;
-  const v8Options = (p.choices ?? []).filter(choice =>
+  const relevantRelationship = lastMessage?.meta.source?.startsWith("brick3-v8") ||
+    /交往|復合|複合|告白|秘密交往|非排他|我們的關係/.test(messages.slice(-3).map(message => message.body).join(" "));
+  const v8Options = (relevantRelationship ? p.choices ?? [] : []).filter(choice =>
     choice.target.startsWith(`brick3-v8:${p.thread}:`) ||
     (choice.target.startsWith("brick3-intimacy:") && choice.label.startsWith(`${p.thread}｜`)) ||
     (choice.target.startsWith("brick3-clash:") && choice.label.startsWith(`${p.thread}｜`)) ||
     (choice.target.startsWith("brick3-night:") && choice.label.startsWith(`${p.thread}｜`)));
 
+  const authoredOptions = p.brick3AuthoredChoices?.[lastMessage?.id ?? ""] ?? [];
+  const currentPhotoOptions = lastMessage?.meta.photoEventId ? photoOptions : [];
   const lastLines = lastMessage && !lastMessage.media && !lastMessage.outgoing
     ? lastMessage.body.split("\n").filter(Boolean) : [];
   const lastKey = lastMessage ? p.thread + ":" + lastMessage.id : "";
@@ -221,8 +225,12 @@ export function MymyKakao(p: SkinProps) {
                   <button type="button" key={choice.target} className="kkt-reply-choice"
                     onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
-                if (photoOptions.length === 4) return photoOptions.map((choice) => (
+                if (currentPhotoOptions.length === 4) return currentPhotoOptions.map((choice) => (
                   <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
+                ));
+                if (authoredOptions.length) return authoredOptions.map((choice) => (
+                  <button type="button" key={choice.target} className="kkt-reply-choice"
+                    onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
                 const options = brick3ContextReplies(p.thread, messages);
                 return options.map((reply, index) => (
