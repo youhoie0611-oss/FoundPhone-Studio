@@ -53,7 +53,7 @@ export type SkinProps = {
   brick3PendingDialogue?: boolean;
   brick3Mode?: boolean;
   onChoose?: (target: string) => void;
-  onPresetReply?: (thread: string, message: string) => void;
+  onPresetReply?: (thread: string, message: string, replyToId?: string) => void;
   relationshipContext?: string[];
 };
 function Avatar({
