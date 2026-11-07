@@ -452,7 +452,66 @@
         "visitEvent": "photo_dinner_at_home",
         "rejectMustNotUnlockVisit": true
       },
-      "runtimePolicy": "affinity_gated_repeatable_invitation"
+      "runtimePolicy": "affinity_gated_repeatable_invitation",
+      "onChoiceResponses": {
+        "dinner_invite_choice_1": {
+          "reply": [
+            "好。",
+            "我把地址傳給妳，出門前再跟我說一聲。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_invite_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_invite_1"
+          }
+        },
+        "dinner_invite_choice_2": {
+          "reply": [
+            "怎麼，不能邀請妳？",
+            "只是想跟妳吃頓飯。妳不方便也沒關係。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_invite_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_invite_2"
+          }
+        },
+        "dinner_invite_choice_3": {
+          "reply": [
+            "嗯，知道了。",
+            "那我自己吃。下次有空再說。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_invite_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_invite_3"
+          }
+        },
+        "dinner_invite_choice_4": {
+          "reply": [
+            "妳想問什麼？",
+            "今天就是吃飯，不會擅自替妳安排別的。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_invite_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_invite_4"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "hideResolvedChoices": true
+      }
     },
     {
       "eventId": "photo_dinner_at_home",
@@ -506,6 +565,65 @@
         "unlockRule": "player_explicitly_confirms_arrival_only_one_photo",
         "sourceEvent": "pei_dinner_outing",
         "albumPhotoCount": 1
+      },
+      "onChoiceResponses": {
+        "dinner_at_home_choice_1": {
+          "reply": [
+            "妳這樣說，我就放心了。",
+            "下次想吃什麼，可以告訴我。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_at_home_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_at_home_1"
+          }
+        },
+        "dinner_at_home_choice_2": {
+          "reply": [
+            "……可以。",
+            "他等妳伸手，沒有擅自靠近。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_at_home_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_at_home_2"
+          }
+        },
+        "dinner_at_home_choice_3": {
+          "reply": [
+            "好，今天不談。",
+            "我們先把這頓飯吃完。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_at_home_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_at_home_3"
+          }
+        },
+        "dinner_at_home_choice_4": {
+          "reply": [
+            "我送妳到門口。",
+            "到家再跟我說一聲就好。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "dinner_at_home_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_dinner_at_home_4"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "hideResolvedChoices": true
       }
     },
     {
@@ -553,7 +671,66 @@
           },
           "visualPrompt": "城市街景抓拍，傍晚逆光，攝影愛好者手機傳圖"
         }
-      ]
+      ],
+      "onChoiceResponses": {
+        "camera_walk_choice_1": {
+          "reply": [
+            "我也喜歡那個光。",
+            "剛好等到雲散開才拍到。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "camera_walk_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_camera_walk_1"
+          }
+        },
+        "camera_walk_choice_2": {
+          "reply": [
+            "在今天散步經過的路上。",
+            "我下次把位置傳給妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "camera_walk_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_camera_walk_2"
+          }
+        },
+        "camera_walk_choice_3": {
+          "reply": [
+            "可以啊。",
+            "等我們都有空，再約時間。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "camera_walk_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_camera_walk_3"
+          }
+        },
+        "camera_walk_choice_4": {
+          "reply": [
+            "沒關係啊。",
+            "妳覺得好看就夠了，不用懂那些術語。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "camera_walk_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_camera_walk_4"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "hideResolvedChoices": true
+      }
     },
     {
       "eventId": "photo_practice_update",
@@ -600,7 +777,66 @@
           },
           "visualPrompt": "傍晚室外籃球場，球鞋、籃球與運動水瓶"
         }
-      ]
+      ],
+      "onChoiceResponses": {
+        "practice_update_choice_1": {
+          "reply": [
+            "今天只是練球，沒正式比賽。",
+            "不過投籃手感真的不錯。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "practice_update_choice_1",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_practice_update_1"
+          }
+        },
+        "practice_update_choice_2": {
+          "reply": [
+            "哈哈，打完其實快沒電了。",
+            "等等就回去休息。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "practice_update_choice_2",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_practice_update_2"
+          }
+        },
+        "practice_update_choice_3": {
+          "reply": [
+            "有拍幾張球場的。",
+            "我整理一下再傳給妳。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "practice_update_choice_3",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_practice_update_3"
+          }
+        },
+        "practice_update_choice_4": {
+          "reply": [
+            "好，聽妳的。",
+            "我先去喝水，晚點再聊。"
+          ],
+          "branchCondition": {
+            "requiresChoiceId": "practice_update_choice_4",
+            "requiresMessageDelivered": true
+          },
+          "stateEffects": {
+            "recordTopic": "photo_practice_update_4"
+          }
+        }
+      },
+      "branchRules": {
+        "selectedChoiceOnly": true,
+        "noAutoAdvanceBeforeReply": true,
+        "hideResolvedChoices": true
+      }
     },
     {
       "eventId": "photo_night_view",
