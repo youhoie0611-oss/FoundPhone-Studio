@@ -50,6 +50,7 @@ export type SkinProps = {
   onThread: (s: string) => void;
   choices?: { label: string; target: string }[];
   brick3AuthoredChoices?: Record<string, { label: string; target: string }[]>;
+  brick3PendingDialogue?: boolean;
   onChoose?: (target: string) => void;
   onPresetReply?: (thread: string, message: string) => void;
   relationshipContext?: string[];
