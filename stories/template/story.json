@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 13,
+  "revision": 14,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -1084,7 +1084,7 @@
         {
           "id": "qiye-opening-follow-ask-scene-lead",
           "senderId": "qiye",
-          "body": "週五 19:52｜我到球場了。妳從南門進來，別走停車場那邊。",
+          "body": "到了沒？我在南門。剛被抓去補一場，妳先找地方坐。",
           "time": "2026-11-05 19:30",
           "hidden": true,
           "meta": {
@@ -1094,7 +1094,7 @@
         {
           "id": "qiye-opening-follow-ask-scene-player-a",
           "senderId": "owner",
-          "body": "我到了，你穿哪件衣服？",
+          "body": "我到了，看到你了。你先打。",
           "time": "2026-11-05 19:30",
           "hidden": true,
           "outgoing": true,
@@ -1105,7 +1105,7 @@
         {
           "id": "qiye-opening-follow-ask-scene-reply-a",
           "senderId": "qiye",
-          "body": "黑色球衣。看到我揮手就過來。",
+          "body": "行。等這場結束我過去找妳。",
           "time": "2026-11-05 19:30",
           "hidden": true,
           "meta": {
@@ -1115,7 +1115,7 @@
         {
           "id": "qiye-opening-follow-ask-scene-player-b",
           "senderId": "owner",
-          "body": "我有點緊張，先在旁邊看。",
+          "body": "你不是說快結束了？",
           "time": "2026-11-05 19:30",
           "hidden": true,
           "outgoing": true,
@@ -1126,7 +1126,7 @@
         {
           "id": "qiye-opening-follow-ask-scene-reply-b",
           "senderId": "qiye",
-          "body": "行，我打完這局過去找妳。別站在車道上。",
+          "body": "本來是啊，臨時少一個人。再給我十分鐘，打完請妳喝東西。",
           "time": "2026-11-05 19:30",
           "hidden": true,
           "meta": {
@@ -6707,7 +6707,7 @@
     {
       "id": "qiye-opening-follow-ask-scene-choice-a",
       "type": "action",
-      "label": "我到了，你穿哪件衣服？",
+      "label": "我到了，看到你了。你先打。",
       "actions": [
         {
           "type": "unlock",
@@ -6750,7 +6750,7 @@
     {
       "id": "qiye-opening-follow-ask-scene-choice-b",
       "type": "action",
-      "label": "我有點緊張，先在旁邊看。",
+      "label": "你不是說快結束了？",
       "actions": [
         {
           "type": "unlock",
