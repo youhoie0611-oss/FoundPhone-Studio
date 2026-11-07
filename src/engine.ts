@@ -1,3 +1,4 @@
+import { syncBrick3KktEvents } from "./brick3KktEventBridge";
 import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 import {tickPeiPhotoV6,choosePeiPhotoV6,dismissPeiPhotoV6} from "./brick3PeiPhotoV6";
 import { tickV8Intimacy, chooseV8Intimacy } from "./brick3V8Intimacy";
@@ -278,7 +279,7 @@ export function dispatch(
     const triggers = initial.flatMap((item) => w.nodes.filter((node) => node.event === "read" && node.target === item.id).map((node) => node.id));
     runQueue(w, next, "arrival", "", triggers);
   }
-  return tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next)))))))))));
+  return syncBrick3KktEvents(w, tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, next))))))))))));
 }
 export function advance(
   w: Work,
@@ -361,7 +362,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
-  return tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s)))))))))));
+  return syncBrick3KktEvents(w, tickPeiPhotoV6(w, tickV8PeiThirdParty(w, tickV8Intimacy(w, tickV8Conflict(w, tickV8Life(w, tickV8(w, tickBrick3SceneEvents(w, tickBrick3Memory(w, tickPeiAutonomy(w, tickBrick3DateSocial(w, tickBrick3Invitations(w, s))))))))))));
 }
 /** Preserve custom player text without silently choosing a scripted response. */
 export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thread = ""): Runtime {
@@ -427,7 +428,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     dismissBrick3InvitationOnCustomReply(next, thread);
   }
   dismissBrick3JealousyOnCustomReply(next, thread);
-  return next;
+  return syncBrick3KktEvents({ id: next.workId, phone: { date: next.date ?? "2026-11-03" } } as Work, next);
 }
 
 export function choose(w: Work, s: Runtime, id: string) {
@@ -444,7 +445,7 @@ export function choose(w: Work, s: Runtime, id: string) {
   const social = chooseBrick3JealousyInquiry(w, s, id);
   if (social !== null) return social;
   const special = chooseBrick3Invitation(w, s, id);
-  if (special !== null) return special;
+  if (special !== null) return syncBrick3KktEvents(w, special);
   const node = w.nodes.find((n) => n.id === id);
   if (!node || !s.choices.some((c) => c.target === id)) return s;
   return dispatch(
