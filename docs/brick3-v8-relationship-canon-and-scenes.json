@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "磚3 V8 關係與角色設定增量配置",
+  "status": "authoring_spec_not_runtime_wired",
+  "sourceVersion": "V8（裴知聿陰濕重力系修正版）＋陸沉川專屬 V2",
+  "targetBranch": "feature/character-autonomy-v3",
+  "nonNegotiable": [
+    "保留 FoundPhone 現有手機核心功能",
+    "不修改其他版本",
+    "玩家的行動、感情、赴約與親密接觸不得被系統擅自決定",
+    "NPC 必須回答玩家上一句話，再延伸話題",
+    "每個回覆選項只能進入對應分歧；舊選項不能殘留",
+    "玩家未打開聊天室時，已到時間的訊息仍須照常送達",
+    "戀愛協議依角色獨立保存，不覆蓋其他關係",
+    "未實際發生的見面或親密事件不得寫入歷史"
+  ],
+  "characters": {
+    "pei_zhiyu": {
+      "name": "裴知聿",
+      "age": 25,
+      "occupation": "心理學研究所碩士生",
+      "playerHistory": "前男友；玩家主動提出分手；真正原因仍未確認",
+      "personality": "陰濕重力系",
+      "traits": [
+        "依戀沉重",
+        "敏感多疑",
+        "害怕被拋下",
+        "強烈佔有慾",
+        "情緒會受玩家影響"
+      ],
+      "excluded": [
+        "狐狸80%＋黑貓20%",
+        "理性毒舌操控型前任",
+        "利用心理學診斷玩家"
+      ],
+      "relationshipPreference": "希望復合，可能在明知玩家有正式戀人時降低要求、提出地下戀情，但這不等同真正接受公開多戀",
+      "hardBoundaries": [
+        "明確拒絕後停止追求",
+        "不得以自傷或脅迫要求回應",
+        "不得預設玩家願意第三者戀情"
+      ]
+    },
+    "lu_chenchuan": {
+      "name": "陸沉川",
+      "age": 26,
+      "heightCm": 187,
+      "occupation": "江南陸家繼承人、家族集團副總裁",
+      "workLocation": "玩家公司隔壁商辦大樓",
+      "initialRelationship": "陌生人",
+      "initialHiddenAffection": 0,
+      "personality": "黑貓65%＋狐狸35%",
+      "skills": [
+        "鋼琴",
+        "料理"
+      ],
+      "reveal": "初識不主動揭露陸家繼承人身分；後續根據合理事件與信任推進",
+      "excluded": [
+        "牛郎",
+        "男公關",
+        "會館工作者",
+        "商業模特兒"
+      ],
+      "contactRule": "雙方自願交換私人聯絡方式後，才解鎖私人KKT"
+    }
+  },
+  "relationshipModel": {
+    "perCharacterFields": [
+      "relationshipStatus",
+      "exclusivityAgreement",
+      "relationshipHistory",
+      "confessionStatus",
+      "confessionDeadline",
+      "relationshipKnowledge",
+      "trust",
+      "affection",
+      "intimacy",
+      "jealousy",
+      "jealousyByRival",
+      "attachmentLevel",
+      "possessiveness",
+      "abandonmentAnxiety",
+      "secretRelationshipStatus",
+      "thirdPartyWillingness",
+      "psychologicalState",
+      "coreStage",
+      "coreClues",
+      "personalityRevelation",
+      "careerExperience",
+      "careerSpecializations",
+      "eventHistory",
+      "pendingEvents",
+      "playerChoices"
+    ],
+    "hiddenFromPlayer": [
+      "trust",
+      "affection",
+      "intimacy",
+      "jealousy",
+      "jealousyByRival",
+      "attachmentLevel",
+      "possessiveness",
+      "abandonmentAnxiety",
+      "thirdPartyWillingness"
+    ],
+    "relationshipAgreementsArePerCharacter": true,
+    "consentRequiredForPhysicalIntimacy": true,
+    "knowledgeRequiresSource": true,
+    "secretRelationshipRequiresPlayerAcceptance": true,
+    "refusalTerminatesPursuit": true
+  },
+  "events": [
+    {
+      "id": "pei_v8_unfinished_past",
+      "characterId": "pei_zhiyu",
+      "title": "沒有說完的話",
+      "requires": [
+        "past_relationship_confirmed",
+        "no_active_no_contact_boundary"
+      ],
+      "delivery": {
+        "independentOfChatOpen": true,
+        "channel": "KKT",
+        "pace": "sequential",
+        "waitForPlayer": true
+      },
+      "messages": [
+        "我今天整理資料，翻到我們以前一起買的那本書。",
+        "本來沒打算跟妳說。",
+        "妳還留著那本嗎？"
+      ],
+      "choices": [
+        {
+          "id": "pei_past_a",
+          "text": "還在。你突然提這個做什麼？",
+          "reply": [
+            "因為我看到了。",
+            "也因為我還記得，那天是妳挑的。",
+            "我不是要妳現在給我答案。"
+          ]
+        },
+        {
+          "id": "pei_past_b",
+          "text": "你是不是想跟我談以前的事？",
+          "reply": [
+            "是。",
+            "只是我不知道妳現在願不願意聽。",
+            "如果不願意，我就不提。"
+          ]
+        },
+        {
+          "id": "pei_past_c",
+          "text": "不記得了，你想說什麼？",
+          "reply": [
+            "沒什麼特別重要的。",
+            "只是今天想起來，有點放不下。"
+          ]
+        },
+        {
+          "id": "pei_past_d",
+          "text": "過去的事情我暫時不想談。",
+          "reply": [
+            "好。",
+            "我不會再拿這件事追問妳。"
+          ],
+          "effects": {
+            "respectBoundary": "past_discussion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pei_v8_secret_offer",
+      "characterId": "pei_zhiyu",
+      "title": "只要還能留在妳身邊",
+      "requires": [
+        "player_has_confirmed_other_partner",
+        "pei_knows_partner_from_traceable_source",
+        "unresolved_shared_history",
+        "pei_wants_reconciliation",
+        "no_active_no_contact_boundary",
+        "no_prior_explicit_refusal_of_secret_relationship"
+      ],
+      "delivery": {
+        "independentOfChatOpen": true,
+        "channel": "KKT",
+        "pace": "sequential",
+        "waitForPlayer": true
+      },
+      "messages": [
+        "我知道妳現在跟別人在一起。",
+        "這件事我不是今天才知道。",
+        "我想了很久，還是想問妳一件事。",
+        "如果不能像以前那樣，我們還有沒有別的可能？"
+      ],
+      "choices": [
+        {
+          "id": "pei_secret_a",
+          "text": "你是在說，即使不能公開也要在一起？",
+          "reply": [
+            "……對。",
+            "我知道這聽起來很難看。",
+            "但我不是在替妳做決定。妳不願意，就當我沒提過。"
+          ],
+          "effects": {
+            "openNegotiation": true,
+            "confirmRelationship": false
+          }
+        },
+        {
+          "id": "pei_secret_b",
+          "text": "你明知道我已經有男朋友了。",
+          "reply": [
+            "我知道。",
+            "所以我才一直不敢說。",
+            "我沒資格要妳為我改變什麼。"
+          ],
+          "effects": {
+            "confirmRelationship": false
+          }
+        },
+        {
+          "id": "pei_secret_c",
+          "text": "我不想讓我們變成這樣。",
+          "reply": [
+            "……好。",
+            "我聽懂了。",
+            "我不會再拿這個要求妳。"
+          ],
+          "effects": {
+            "refuseSecretOffer": true,
+            "confirmRelationship": false
+          }
+        },
+        {
+          "id": "pei_secret_d",
+          "text": "我需要時間想想。",
+          "reply": [
+            "好。",
+            "我不催妳。",
+            "但如果妳不想回答，也可以直接跟我說。"
+          ],
+          "effects": {
+            "setPendingDecision": true,
+            "confirmRelationship": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "lu_v8_after_meeting",
+      "characterId": "lu_chenchuan",
+      "title": "會議後的第一次交談",
+      "requires": [
+        "lu_work_meeting_occurred",
+        "player_and_lu_both_attended",
+        "no_private_contact_assumed"
+      ],
+      "delivery": {
+        "independentOfChatOpen": false,
+        "channel": "in_person_or_work_contact",
+        "pace": "turn_taking",
+        "waitForPlayer": true
+      },
+      "messages": [
+        "剛才妳提到的風險，我會請團隊再核一次。",
+        "如果妳手上有補充資料，可以透過專案窗口提供。"
+      ],
+      "choices": [
+        {
+          "id": "lu_meeting_a",
+          "text": "我會把相關資料整理好寄給窗口。",
+          "reply": [
+            "好。",
+            "有明確數據會比較容易判斷。"
+          ],
+          "effects": {
+            "recordTopic": "project_followup"
+          }
+        },
+        {
+          "id": "lu_meeting_b",
+          "text": "你覺得我們提出的方案有機會嗎？",
+          "reply": [
+            "有機會。",
+            "但成本與時程還需要重新估算，現在不適合給妳保證。"
+          ],
+          "effects": {
+            "recordTopic": "project_assessment"
+          }
+        },
+        {
+          "id": "lu_meeting_c",
+          "text": "你剛剛似乎不太贊成那個時程。",
+          "reply": [
+            "不是不贊成。",
+            "是現有資訊還不足以支持承諾。"
+          ],
+          "effects": {
+            "recordTopic": "schedule_risk"
+          }
+        },
+        {
+          "id": "lu_meeting_d",
+          "text": "了解，謝謝你，我先回去工作了。",
+          "reply": [
+            "辛苦了。",
+            "後續請直接跟專案窗口聯繫。"
+          ],
+          "effects": {
+            "closeConversation": true
+          }
+        }
+      ]
+    }
+  ],
+  "acceptanceCriteria": [
+    "每個 event 的 choiceId 唯一且各自有實質對應回覆",
+    "不顯示不屬於目前節點的回答選項",
+    "每次玩家回應都先回應當前問題",
+    "裴知聿提出地下戀情不自動建立交往",
+    "陸沉川不出現舊職業設定",
+    "沒有共同出席就不能產生會議後對話",
+    "資料僅為待接線規格；只有實際接入引擎與測試後才可標記 runtime_wired"
+  ]
+}
