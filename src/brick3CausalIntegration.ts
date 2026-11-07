@@ -53,7 +53,7 @@ export function recordBrick3AuthoredChoice(w: Work, previous: Runtime, next: Run
   event.choiceId = target;
   event.choiceLabel = label;
   if (match.topic) event.topic = match.topic;
-  const targetNode = w.nodes.find(node => node.id === target);
+  const targetNode = w.nodes?.find(node => node.id === target);
   if (targetNode) event.nextNodeIds = [...new Set([...(event.nextNodeIds ?? []),...targetNode.next])];
   const released = next.unlocked.filter(id => !previous.unlocked.includes(id));
   const published = Object.entries(next.messages).flatMap(([app,items]) =>
