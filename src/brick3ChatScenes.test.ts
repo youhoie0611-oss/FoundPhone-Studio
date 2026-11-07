@@ -42,7 +42,8 @@ describe("brick3 scene progression", () => {
     const history = [{ body: "我們分手後很久沒聯絡。", outgoing: false }];
     advanceBrick3Chat(state, "裴知聿", "你想復合嗎？", history);
     const next = advanceBrick3Chat(state, "裴知聿", "我願意聽你說", history);
-    expect(next?.reply).toContain("選擇逃避");
+    expect(next?.reply).toContain("是妳提出分手");
+    expect(next?.reply).not.toContain("選擇逃避");
     expect(state.variables["brick3:scene:裴知聿"]).toBe("conversation_open");
   });
 
