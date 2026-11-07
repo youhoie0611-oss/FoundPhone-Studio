@@ -4,7 +4,7 @@ import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 import {tickPeiPhotoV6,choosePeiPhotoV6,dismissPeiPhotoV6} from "./brick3PeiPhotoV6";
 import { tickV8Intimacy, chooseV8Intimacy } from "./brick3V8Intimacy";
 import { tickOvernight, chooseOvernight } from "./brick3Overnight";
-import { tickFlirt, chooseFlirt, observeFlirtReply } from "./brick3Flirt";
+import { tickFlirt, chooseFlirt } from "./brick3Flirt";
 import { tickV8PeiThirdParty, observeV8PeiThirdPartyReply } from "./brick3V8PeiThirdParty";
 import { chooseV8, observeV8Reply, tickV8 } from "./brick3Relationships";
 import { chooseV8Life, tickV8Life, askV8Psychology } from "./brick3V8Life";
@@ -421,7 +421,6 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   rememberBrick3Reply(next, thread, raw, context);
   if (appId === "kakao") recordBrick3PhotoTextReply(next, thread, raw, s.choices);
   observeV8Reply(next, thread, raw);
-  if (appId === "kakao") observeFlirtReply(next, thread, raw);
   if (thread === "裴知聿") observeV8PeiThirdPartyReply(next, raw);
   if (thread === "沈硯舟" || thread === "裴知聿" || thread === "祁野" || thread === "顧時安" || thread === "陸沉川") askV8Psychology(next, thread, raw);
   stopPeiAutonomyOnPlayerReply(next, thread);
