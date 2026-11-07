@@ -119,8 +119,19 @@ export function observeFlirtReply(s: Runtime, thread: string, raw: string) {
   if (!V8_LEADS.includes(thread as V8Lead)) return;
   const lead = thread as V8Lead, p = progress(s, lead);
   if (stop.test(raw) || noPhoto.test(raw)) { p.muted = true; p.lastPhotoId = undefined; p.compliments = 0; }
+  if (/過夜|留宿|今晚住你那|今晚留下/.test(raw) && !negative.test(raw) && affection(s, lead) >= 60 && !p.muted) {
+    const overnight = ensureOvernight(s);
+    const recordId = `player_${prefix[lead]}_${++p.seq}`;
+    if (!overnight.records.some(r => r.lead === lead && ["invited", "accepted", "arrived", "morning"].includes(r.phase))) {
+      overnight.records.push({ id: recordId, lead, phase: "invited", createdAt: s.elapsedMs ?? 0 });
+      send(s, lead, "可以談談今晚的安排，但要等我們都確定。", `brick3-flirt-${recordId}-answer`);
+      s.choices.push({ target: `brick3-overnight:${recordId}:accept`, label: `${lead}｜確認過夜安排` },
+        { target: `brick3-overnight:${recordId}:decline`, label: `${lead}｜今晚先回去` });
+    }
+  }
   if (p.lastPhotoId) {
-    if (praise.test(raw) && !negative.test(raw)) p.compliments++;
+    if (praise.test(raw) && !negative.test(raw)) { p.compliments++; send(s, lead, content[lead].praise, `brick3-flirt-${lead}-free-praise-${p.seq}`); }
+    else send(s, lead, content[lead].neutral, `brick3-flirt-${lead}-free-neutral-${p.seq}`);
     p.lastPhotoId = undefined;
     s.choices = s.choices.filter(c => !c.target.startsWith(`brick3-flirt:${lead}:`));
     if (affection(s, lead) >= 60 && p.compliments >= 2 && !p.muted) offerDate(s, lead);
