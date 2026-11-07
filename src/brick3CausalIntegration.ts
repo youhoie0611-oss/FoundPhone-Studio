@@ -1,4 +1,4 @@
-import { brick3AuthoredEvents, brick3ChoiceMap, brick3PhotoMap } from "./brick3CausalRegistry";
+import { brick3ChoiceMap, brick3PhotoMap } from "./brick3CausalRegistry";
 import { emptyStoryLedger, type StoryEvent, type EventStatus } from "./brick3CausalEvents";
 import type { Item, Runtime, Work } from "./schema";
 
@@ -75,6 +75,12 @@ export function reconcileBrick3KktMedia(w: Work, s: Runtime): Runtime {
   if (w.id !== "between-the-lines-b-demo") return s;
   const timestamp = at(s,w);
   for (const item of s.messages.kakao ?? []) attachMedia(s,timestamp,item);
+  // Skipped V6 scenes cannot be treated as player-viewed photographs.
+  for (const id of s.brick3PeiV6?.skippedPhotoIds ?? []) {
+    if (s.brick3Ledger?.events[eventKey(id)]) continue;
+    const skipped = ensure(s,eventKey(id),"pei_zhiyu","expired",timestamp);
+    skipped.outcome = "skipped_without_player_response";
+  }
   for (const item of w.data.kakao ?? []) {
     if (item.hidden && !s.unlocked.includes(item.id)) continue;
     if (s.hidden.includes(item.id)) continue;
@@ -85,9 +91,12 @@ export function reconcileBrick3KktMedia(w: Work, s: Runtime): Runtime {
 /** Free-form KKT replies must be bound to currently pending authored photo questions. */
 export function recordBrick3PhotoTextReply(s: Runtime, thread: string, text: string, beforeChoices: {label:string;target:string}[]): void {
   if (!LEADS[thread]) return;
+  const activePhotoId = [...(s.messages.kakao ?? [])].reverse().find(m =>
+    !m.outgoing && m.title === thread && !!m.meta?.photoEventId)?.meta?.photoEventId;
   const latest = [...beforeChoices].reverse().find(c => {
     const match = brick3ChoiceMap.get(c.target);
-    return match?.event.kind === "photo" && match.event.characterId === LEADS[thread];
+    return match?.event.kind === "photo" && match.event.characterId === LEADS[thread] &&
+      (!activePhotoId || match.event.id === activePhotoId);
   });
   if (!latest) return;
   const match = brick3ChoiceMap.get(latest.target)!;
