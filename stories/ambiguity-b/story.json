@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 50,
+  "revision": 51,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -17646,7 +17646,7 @@
       "label": "裴知聿｜繼續對話或結束",
       "type": "choice",
       "event": "read",
-      "target": "pei-branch-1-in",
+      "target": "pei-branch-1-in-bubble-3",
       "once": true,
       "next": [
         "phase2-pei-1-a",
@@ -17758,7 +17758,7 @@
       "label": "裴知聿｜繼續對話或結束",
       "type": "choice",
       "event": "read",
-      "target": "pei-branch-2-in",
+      "target": "pei-branch-2-in-bubble-4",
       "once": true,
       "next": [
         "phase2-pei-2-a",
@@ -17870,7 +17870,7 @@
       "label": "裴知聿｜繼續對話或結束",
       "type": "choice",
       "event": "read",
-      "target": "pei-branch-3-in",
+      "target": "pei-branch-3-in-bubble-2",
       "once": true,
       "next": [
         "phase2-pei-3-a",
@@ -18887,7 +18887,7 @@
       "id": "phase3-pei-1-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-1-1-in",
+      "target": "pei-phase2-1-1-in-bubble-3",
       "next": [
         "pei-phase3-1-1-a",
         "pei-phase3-1-1-b",
@@ -18988,7 +18988,7 @@
       "id": "phase3-pei-1-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-1-2-in",
+      "target": "pei-phase2-1-2-in-bubble-3",
       "next": [
         "pei-phase3-1-2-a",
         "pei-phase3-1-2-b",
@@ -19089,7 +19089,7 @@
       "id": "phase3-pei-2-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-2-1-in",
+      "target": "pei-phase2-2-1-in-bubble-3",
       "next": [
         "pei-phase3-2-1-a",
         "pei-phase3-2-1-b",
@@ -19190,7 +19190,7 @@
       "id": "phase3-pei-2-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-2-2-in",
+      "target": "pei-phase2-2-2-in-bubble-3",
       "next": [
         "pei-phase3-2-2-a",
         "pei-phase3-2-2-b",
@@ -19289,7 +19289,7 @@
       "id": "phase3-pei-3-1",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-3-1-in",
+      "target": "pei-phase2-3-1-in-bubble-2",
       "next": [
         "pei-phase3-3-1-a",
         "pei-phase3-3-1-b",
@@ -19390,7 +19390,7 @@
       "id": "phase3-pei-3-2",
       "label": "裴知聿｜延續話題",
       "type": "choice",
-      "target": "pei-phase2-3-2-in",
+      "target": "pei-phase2-3-2-in-bubble-3",
       "next": [
         "pei-phase3-3-2-a",
         "pei-phase3-3-2-b",
@@ -23185,7 +23185,7 @@
       "id": "choice-pei-r4-after-pei-phase3-1-1-a-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-1-1-a-in",
+      "target": "pei-phase3-1-1-a-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23198,7 +23198,7 @@
       "id": "choice-pei-r4-after-pei-phase3-1-1-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-1-1-b-in",
+      "target": "pei-phase3-1-1-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23211,7 +23211,7 @@
       "id": "choice-pei-r4-after-pei-phase3-1-2-a-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-1-2-a-in",
+      "target": "pei-phase3-1-2-a-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23224,7 +23224,7 @@
       "id": "choice-pei-r4-after-pei-phase3-1-2-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-1-2-b-in",
+      "target": "pei-phase3-1-2-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23237,7 +23237,7 @@
       "id": "choice-pei-r4-after-pei-phase3-2-1-a-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-2-1-a-in",
+      "target": "pei-phase3-2-1-a-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23250,7 +23250,7 @@
       "id": "choice-pei-r4-after-pei-phase3-2-1-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-2-1-b-in",
+      "target": "pei-phase3-2-1-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23276,7 +23276,7 @@
       "id": "choice-pei-r4-after-pei-phase3-2-2-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-2-2-b-in",
+      "target": "pei-phase3-2-2-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23289,7 +23289,7 @@
       "id": "choice-pei-r4-after-pei-phase3-3-1-a-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-3-1-a-in",
+      "target": "pei-phase3-3-1-a-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23302,7 +23302,7 @@
       "id": "choice-pei-r4-after-pei-phase3-3-1-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-3-1-b-in",
+      "target": "pei-phase3-3-1-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23315,7 +23315,7 @@
       "id": "choice-pei-r4-after-pei-phase3-3-2-a-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-3-2-a-in",
+      "target": "pei-phase3-3-2-a-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23328,7 +23328,7 @@
       "id": "choice-pei-r4-after-pei-phase3-3-2-b-in",
       "label": "裴知聿｜第4輪",
       "type": "choice",
-      "target": "pei-phase3-3-2-b-in",
+      "target": "pei-phase3-3-2-b-in-bubble-2",
       "next": [
         "pei-r4-a",
         "pei-r4-b",
@@ -23440,7 +23440,7 @@
       "id": "choice-pei-r5-after-pei-r4-b-in",
       "label": "裴知聿｜第5輪",
       "type": "choice",
-      "target": "pei-r4-b-in",
+      "target": "pei-r4-b-in-bubble-3",
       "next": [
         "pei-r5-a",
         "pei-r5-b",
@@ -23541,7 +23541,7 @@
       "id": "choice-pei-r6-after-pei-r5-a-in",
       "label": "裴知聿｜第6輪",
       "type": "choice",
-      "target": "pei-r5-a-in",
+      "target": "pei-r5-a-in-bubble-3",
       "next": [
         "pei-r6-a",
         "pei-r6-b",
@@ -23554,7 +23554,7 @@
       "id": "choice-pei-r6-after-pei-r5-b-in",
       "label": "裴知聿｜第6輪",
       "type": "choice",
-      "target": "pei-r5-b-in",
+      "target": "pei-r5-b-in-bubble-3",
       "next": [
         "pei-r6-a",
         "pei-r6-b",
@@ -23655,7 +23655,7 @@
       "id": "choice-pei-r7-after-pei-r6-a-in",
       "label": "裴知聿｜第7輪",
       "type": "choice",
-      "target": "pei-r6-a-in",
+      "target": "pei-r6-a-in-bubble-2",
       "next": [
         "pei-r7-a",
         "pei-r7-b",
@@ -23668,7 +23668,7 @@
       "id": "choice-pei-r7-after-pei-r6-b-in",
       "label": "裴知聿｜第7輪",
       "type": "choice",
-      "target": "pei-r6-b-in",
+      "target": "pei-r6-b-in-bubble-3",
       "next": [
         "pei-r7-a",
         "pei-r7-b",
@@ -23769,7 +23769,7 @@
       "id": "choice-pei-r8-after-pei-r7-a-in",
       "label": "裴知聿｜第8輪",
       "type": "choice",
-      "target": "pei-r7-a-in",
+      "target": "pei-r7-a-in-bubble-3",
       "next": [
         "pei-r8-a",
         "pei-r8-b",
@@ -23782,7 +23782,7 @@
       "id": "choice-pei-r8-after-pei-r7-b-in",
       "label": "裴知聿｜第8輪",
       "type": "choice",
-      "target": "pei-r7-b-in",
+      "target": "pei-r7-b-in-bubble-2",
       "next": [
         "pei-r8-a",
         "pei-r8-b",
@@ -23883,7 +23883,7 @@
       "id": "choice-pei-r9-after-pei-r8-a-in",
       "label": "裴知聿｜第9輪",
       "type": "choice",
-      "target": "pei-r8-a-in",
+      "target": "pei-r8-a-in-bubble-2",
       "next": [
         "pei-r9-a",
         "pei-r9-b",
@@ -23896,7 +23896,7 @@
       "id": "choice-pei-r9-after-pei-r8-b-in",
       "label": "裴知聿｜第9輪",
       "type": "choice",
-      "target": "pei-r8-b-in",
+      "target": "pei-r8-b-in-bubble-2",
       "next": [
         "pei-r9-a",
         "pei-r9-b",
@@ -23997,7 +23997,7 @@
       "id": "choice-pei-r10-after-pei-r9-a-in",
       "label": "裴知聿｜第10輪",
       "type": "choice",
-      "target": "pei-r9-a-in",
+      "target": "pei-r9-a-in-bubble-3",
       "next": [
         "pei-r10-a",
         "pei-r10-b",
@@ -24010,7 +24010,7 @@
       "id": "choice-pei-r10-after-pei-r9-b-in",
       "label": "裴知聿｜第10輪",
       "type": "choice",
-      "target": "pei-r9-b-in",
+      "target": "pei-r9-b-in-bubble-3",
       "next": [
         "pei-r10-a",
         "pei-r10-b",
@@ -24111,7 +24111,7 @@
       "id": "choice-pei-r11-after-pei-r10-a-in",
       "label": "裴知聿｜第11輪",
       "type": "choice",
-      "target": "pei-r10-a-in",
+      "target": "pei-r10-a-in-bubble-3",
       "next": [
         "pei-r11-a",
         "pei-r11-b",
@@ -24124,7 +24124,7 @@
       "id": "choice-pei-r11-after-pei-r10-b-in",
       "label": "裴知聿｜第11輪",
       "type": "choice",
-      "target": "pei-r10-b-in",
+      "target": "pei-r10-b-in-bubble-3",
       "next": [
         "pei-r11-a",
         "pei-r11-b",
@@ -24225,7 +24225,7 @@
       "id": "choice-pei-r12-after-pei-r11-a-in",
       "label": "裴知聿｜第12輪",
       "type": "choice",
-      "target": "pei-r11-a-in",
+      "target": "pei-r11-a-in-bubble-3",
       "next": [
         "pei-r12-a",
         "pei-r12-b",
@@ -24238,7 +24238,7 @@
       "id": "choice-pei-r12-after-pei-r11-b-in",
       "label": "裴知聿｜第12輪",
       "type": "choice",
-      "target": "pei-r11-b-in",
+      "target": "pei-r11-b-in-bubble-2",
       "next": [
         "pei-r12-a",
         "pei-r12-b",
@@ -24339,7 +24339,7 @@
       "id": "choice-pei-r13-after-pei-r12-a-in",
       "label": "裴知聿｜第13輪",
       "type": "choice",
-      "target": "pei-r12-a-in",
+      "target": "pei-r12-a-in-bubble-3",
       "next": [
         "pei-r13-a",
         "pei-r13-b",
@@ -24352,7 +24352,7 @@
       "id": "choice-pei-r13-after-pei-r12-b-in",
       "label": "裴知聿｜第13輪",
       "type": "choice",
-      "target": "pei-r12-b-in",
+      "target": "pei-r12-b-in-bubble-2",
       "next": [
         "pei-r13-a",
         "pei-r13-b",
@@ -24451,7 +24451,7 @@
       "id": "choice-pei-r14-after-pei-r13-a-in",
       "label": "裴知聿｜第14輪",
       "type": "choice",
-      "target": "pei-r13-a-in",
+      "target": "pei-r13-a-in-bubble-3",
       "next": [
         "pei-r14-a",
         "pei-r14-b",
@@ -24565,7 +24565,7 @@
       "id": "choice-pei-r15-after-pei-r14-a-in",
       "label": "裴知聿｜第15輪",
       "type": "choice",
-      "target": "pei-r14-a-in",
+      "target": "pei-r14-a-in-bubble-3",
       "next": [
         "pei-r15-a",
         "pei-r15-b",
@@ -24578,7 +24578,7 @@
       "id": "choice-pei-r15-after-pei-r14-b-in",
       "label": "裴知聿｜第15輪",
       "type": "choice",
-      "target": "pei-r14-b-in",
+      "target": "pei-r14-b-in-bubble-3",
       "next": [
         "pei-r15-a",
         "pei-r15-b",
@@ -24679,7 +24679,7 @@
       "id": "choice-pei-r16-after-pei-r15-a-in",
       "label": "裴知聿｜第16輪",
       "type": "choice",
-      "target": "pei-r15-a-in",
+      "target": "pei-r15-a-in-bubble-2",
       "next": [
         "pei-r16-a",
         "pei-r16-b",
@@ -24692,7 +24692,7 @@
       "id": "choice-pei-r16-after-pei-r15-b-in",
       "label": "裴知聿｜第16輪",
       "type": "choice",
-      "target": "pei-r15-b-in",
+      "target": "pei-r15-b-in-bubble-3",
       "next": [
         "pei-r16-a",
         "pei-r16-b",
@@ -24793,7 +24793,7 @@
       "id": "choice-pei-r17-after-pei-r16-a-in",
       "label": "裴知聿｜第17輪",
       "type": "choice",
-      "target": "pei-r16-a-in",
+      "target": "pei-r16-a-in-bubble-2",
       "next": [
         "pei-r17-a",
         "pei-r17-b",
@@ -24806,7 +24806,7 @@
       "id": "choice-pei-r17-after-pei-r16-b-in",
       "label": "裴知聿｜第17輪",
       "type": "choice",
-      "target": "pei-r16-b-in",
+      "target": "pei-r16-b-in-bubble-2",
       "next": [
         "pei-r17-a",
         "pei-r17-b",
@@ -24907,7 +24907,7 @@
       "id": "choice-pei-r18-after-pei-r17-a-in",
       "label": "裴知聿｜第18輪",
       "type": "choice",
-      "target": "pei-r17-a-in",
+      "target": "pei-r17-a-in-bubble-2",
       "next": [
         "pei-r18-a",
         "pei-r18-b",
@@ -24920,7 +24920,7 @@
       "id": "choice-pei-r18-after-pei-r17-b-in",
       "label": "裴知聿｜第18輪",
       "type": "choice",
-      "target": "pei-r17-b-in",
+      "target": "pei-r17-b-in-bubble-2",
       "next": [
         "pei-r18-a",
         "pei-r18-b",
@@ -25021,7 +25021,7 @@
       "id": "choice-pei-r19-after-pei-r18-a-in",
       "label": "裴知聿｜第19輪",
       "type": "choice",
-      "target": "pei-r18-a-in",
+      "target": "pei-r18-a-in-bubble-2",
       "next": [
         "pei-r19-a",
         "pei-r19-b",
@@ -25034,7 +25034,7 @@
       "id": "choice-pei-r19-after-pei-r18-b-in",
       "label": "裴知聿｜第19輪",
       "type": "choice",
-      "target": "pei-r18-b-in",
+      "target": "pei-r18-b-in-bubble-2",
       "next": [
         "pei-r19-a",
         "pei-r19-b",
@@ -25135,7 +25135,7 @@
       "id": "choice-pei-r20-after-pei-r19-a-in",
       "label": "裴知聿｜第20輪",
       "type": "choice",
-      "target": "pei-r19-a-in",
+      "target": "pei-r19-a-in-bubble-3",
       "next": [
         "pei-r20-a",
         "pei-r20-b",
@@ -25148,7 +25148,7 @@
       "id": "choice-pei-r20-after-pei-r19-b-in",
       "label": "裴知聿｜第20輪",
       "type": "choice",
-      "target": "pei-r19-b-in",
+      "target": "pei-r19-b-in-bubble-3",
       "next": [
         "pei-r20-a",
         "pei-r20-b",
@@ -25249,7 +25249,7 @@
       "id": "choice-pei-r21-after-pei-r20-a-in",
       "label": "裴知聿｜第21輪",
       "type": "choice",
-      "target": "pei-r20-a-in",
+      "target": "pei-r20-a-in-bubble-2",
       "next": [
         "pei-r21-a",
         "pei-r21-b",
@@ -25262,7 +25262,7 @@
       "id": "choice-pei-r21-after-pei-r20-b-in",
       "label": "裴知聿｜第21輪",
       "type": "choice",
-      "target": "pei-r20-b-in",
+      "target": "pei-r20-b-in-bubble-3",
       "next": [
         "pei-r21-a",
         "pei-r21-b",
@@ -25363,7 +25363,7 @@
       "id": "choice-pei-r22-after-pei-r21-a-in",
       "label": "裴知聿｜第22輪",
       "type": "choice",
-      "target": "pei-r21-a-in",
+      "target": "pei-r21-a-in-bubble-2",
       "next": [
         "pei-r22-a",
         "pei-r22-b",
@@ -25376,7 +25376,7 @@
       "id": "choice-pei-r22-after-pei-r21-b-in",
       "label": "裴知聿｜第22輪",
       "type": "choice",
-      "target": "pei-r21-b-in",
+      "target": "pei-r21-b-in-bubble-3",
       "next": [
         "pei-r22-a",
         "pei-r22-b",
@@ -25477,7 +25477,7 @@
       "id": "choice-pei-r23-after-pei-r22-a-in",
       "label": "裴知聿｜第23輪",
       "type": "choice",
-      "target": "pei-r22-a-in",
+      "target": "pei-r22-a-in-bubble-3",
       "next": [
         "pei-r23-a",
         "pei-r23-b",
@@ -25490,7 +25490,7 @@
       "id": "choice-pei-r23-after-pei-r22-b-in",
       "label": "裴知聿｜第23輪",
       "type": "choice",
-      "target": "pei-r22-b-in",
+      "target": "pei-r22-b-in-bubble-3",
       "next": [
         "pei-r23-a",
         "pei-r23-b",
@@ -25591,7 +25591,7 @@
       "id": "choice-pei-r24-after-pei-r23-a-in",
       "label": "裴知聿｜第24輪",
       "type": "choice",
-      "target": "pei-r23-a-in",
+      "target": "pei-r23-a-in-bubble-3",
       "next": [
         "pei-r24-a",
         "pei-r24-b",
@@ -25604,7 +25604,7 @@
       "id": "choice-pei-r24-after-pei-r23-b-in",
       "label": "裴知聿｜第24輪",
       "type": "choice",
-      "target": "pei-r23-b-in",
+      "target": "pei-r23-b-in-bubble-3",
       "next": [
         "pei-r24-a",
         "pei-r24-b",
@@ -25705,7 +25705,7 @@
       "id": "choice-pei-r25-after-pei-r24-a-in",
       "label": "裴知聿｜第25輪",
       "type": "choice",
-      "target": "pei-r24-a-in",
+      "target": "pei-r24-a-in-bubble-3",
       "next": [
         "pei-r25-a",
         "pei-r25-b",
@@ -25718,7 +25718,7 @@
       "id": "choice-pei-r25-after-pei-r24-b-in",
       "label": "裴知聿｜第25輪",
       "type": "choice",
-      "target": "pei-r24-b-in",
+      "target": "pei-r24-b-in-bubble-4",
       "next": [
         "pei-r25-a",
         "pei-r25-b",
@@ -25819,7 +25819,7 @@
       "id": "choice-pei-r26-after-pei-r25-a-in",
       "label": "裴知聿｜第26輪",
       "type": "choice",
-      "target": "pei-r25-a-in",
+      "target": "pei-r25-a-in-bubble-3",
       "next": [
         "pei-r26-a",
         "pei-r26-b",
@@ -25832,7 +25832,7 @@
       "id": "choice-pei-r26-after-pei-r25-b-in",
       "label": "裴知聿｜第26輪",
       "type": "choice",
-      "target": "pei-r25-b-in",
+      "target": "pei-r25-b-in-bubble-3",
       "next": [
         "pei-r26-a",
         "pei-r26-b",
@@ -25933,7 +25933,7 @@
       "id": "choice-pei-r27-after-pei-r26-a-in",
       "label": "裴知聿｜第27輪",
       "type": "choice",
-      "target": "pei-r26-a-in",
+      "target": "pei-r26-a-in-bubble-3",
       "next": [
         "pei-r27-a",
         "pei-r27-b",
@@ -25946,7 +25946,7 @@
       "id": "choice-pei-r27-after-pei-r26-b-in",
       "label": "裴知聿｜第27輪",
       "type": "choice",
-      "target": "pei-r26-b-in",
+      "target": "pei-r26-b-in-bubble-3",
       "next": [
         "pei-r27-a",
         "pei-r27-b",
@@ -26047,7 +26047,7 @@
       "id": "choice-pei-r28-after-pei-r27-a-in",
       "label": "裴知聿｜第28輪",
       "type": "choice",
-      "target": "pei-r27-a-in",
+      "target": "pei-r27-a-in-bubble-3",
       "next": [
         "pei-r28-a",
         "pei-r28-b",
@@ -26060,7 +26060,7 @@
       "id": "choice-pei-r28-after-pei-r27-b-in",
       "label": "裴知聿｜第28輪",
       "type": "choice",
-      "target": "pei-r27-b-in",
+      "target": "pei-r27-b-in-bubble-2",
       "next": [
         "pei-r28-a",
         "pei-r28-b",
@@ -26161,7 +26161,7 @@
       "id": "choice-pei-r29-after-pei-r28-a-in",
       "label": "裴知聿｜第29輪",
       "type": "choice",
-      "target": "pei-r28-a-in",
+      "target": "pei-r28-a-in-bubble-2",
       "next": [
         "pei-r29-a",
         "pei-r29-b",
@@ -26174,7 +26174,7 @@
       "id": "choice-pei-r29-after-pei-r28-b-in",
       "label": "裴知聿｜第29輪",
       "type": "choice",
-      "target": "pei-r28-b-in",
+      "target": "pei-r28-b-in-bubble-2",
       "next": [
         "pei-r29-a",
         "pei-r29-b",
@@ -26275,7 +26275,7 @@
       "id": "choice-pei-r30-after-pei-r29-a-in",
       "label": "裴知聿｜第30輪",
       "type": "choice",
-      "target": "pei-r29-a-in",
+      "target": "pei-r29-a-in-bubble-2",
       "next": [
         "pei-r30-a",
         "pei-r30-b",
@@ -26288,7 +26288,7 @@
       "id": "choice-pei-r30-after-pei-r29-b-in",
       "label": "裴知聿｜第30輪",
       "type": "choice",
-      "target": "pei-r29-b-in",
+      "target": "pei-r29-b-in-bubble-3",
       "next": [
         "pei-r30-a",
         "pei-r30-b",
@@ -29941,7 +29941,7 @@
       "label": "裴知聿｜回覆主動訊息",
       "type": "choice",
       "event": "read",
-      "target": "pei-day11-opening",
+      "target": "pei-day11-opening-bubble-2",
       "next": [
         "pei-day11-reply-1",
         "pei-day11-reply-2",
@@ -30078,7 +30078,7 @@
       "label": "裴知聿｜回覆主動訊息",
       "type": "choice",
       "event": "read",
-      "target": "pei-day21-opening",
+      "target": "pei-day21-opening-bubble-4",
       "next": [
         "pei-day21-reply-1",
         "pei-day21-reply-2",
@@ -30215,7 +30215,7 @@
       "label": "裴知聿｜回覆主動訊息",
       "type": "choice",
       "event": "read",
-      "target": "pei-major-event-opening",
+      "target": "pei-major-event-opening-bubble-3",
       "next": [
         "pei-major-event-reply-1",
         "pei-major-event-reply-2",
@@ -31660,7 +31660,7 @@
       "type": "choice",
       "once": true,
       "event": "read",
-      "target": "pei-autonomy-v3-day2",
+      "target": "pei-autonomy-v3-day2-bubble-2",
       "next": [
         "pei-autonomy-v3-reply-1",
         "pei-autonomy-v3-reply-2",
