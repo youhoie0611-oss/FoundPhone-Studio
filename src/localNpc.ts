@@ -113,7 +113,7 @@ export function localNpcReply(request: AiChatRequest): AiChatResponse {
   const recent = request.history.filter(x => !x.outgoing).at(-1)?.body ?? "";
   const input = request.message.trim();
   // A concrete reply to the current scene outranks generic intent templates.
-  const direct = brick3ContextAnswer(request);
+  const direct = request.storyId === "between-the-lines-b-demo" ? brick3ContextAnswer(request) : null;
   if (direct) return { ...direct, reply: enforceCanon(request.thread, direct.reply) };
   const context = request.history.filter(x => !x.outgoing).slice(-8).map(x => x.body).join(" ");
   // Privacy objections are boundaries, not consent to receive or redistribute photos.
