@@ -62,7 +62,8 @@ export const actionSchema = z.object({
 });
 export type Action = z.infer<typeof actionSchema>;
 export const nodeSchema = z.object({
-  delayMs: z.number().int().min(0).max(86400000).optional(),
+  // Allow authored cross-day story events (up to 30 days); runtime advancement remains capped per tick.
+  delayMs: z.number().int().min(0).max(30 * 86400000).optional(),
   id: z.string(),
   label: z.string(),
   type: z.enum([
