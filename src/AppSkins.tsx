@@ -40,6 +40,7 @@ export type SkinProps = {
   owner?: string;
   virtualTime?: string;
   relationship?: { variables: Record<string, string | number | boolean>; clues: string[] };
+  continuity?: import("./brick3/continuity").ContinuitySave;
   name: string;
   items: Item[];
   creator: boolean;
@@ -54,6 +55,7 @@ export type SkinProps = {
   onChoose?: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
   onOvernightAction?: (thread: string, action: string) => void;
+  onContinuityAction?: (thread: string, action: string) => void;
   onDateAction?: (thread: string, action: string) => void;
   onDatePhotoPost?: (photo: Item) => void;
 };

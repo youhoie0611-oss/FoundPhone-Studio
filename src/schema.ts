@@ -137,6 +137,7 @@ export type Runtime = {
   elapsedMs?: number;
   clockRemainderMs?: number;
   scheduled?: { nodeId: string; due: number }[];
+  continuity?: import("./brick3/continuity").ContinuitySave;
   incomingCall?: {
     caller: string;
     target: string;

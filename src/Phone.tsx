@@ -64,6 +64,7 @@ import {
 } from "./schema";
 import { dispatch, choose, submitCustomReply, visible, advance } from "./engine";
 import { overnightAction } from "./brick3/overnight";
+import { continuityAction } from "./brick3/continuity";
 import { dateLeads } from "./brick3/dateStory";
 import { db } from "./persistence";
 import { requestNpcReply } from "./aiChat";
@@ -506,6 +507,7 @@ function PhoneRuntime({
                   onRead={(id) => event("read", id)}
                   onChoose={(target) => update(choose(work, runtimeRef.current, target))}
                   onOvernightAction={(thread, command) => update(overnightAction(runtimeRef.current, thread, command))}
+                  onContinuityAction={(thread, command) => update(continuityAction(runtimeRef.current, work, thread, command))}
                   onDateAction={(thread, command) => {
                     const lead = dateLeads.find(k => ({shen:"沈硯舟",pei:"裴知聿",qi:"祁野",gu:"顧時安",lu:"陸沉川"} as Record<string,string>)[k] === thread);
                     if (!lead) return;
@@ -964,6 +966,7 @@ function AppContent({
   onChoose,
   onCustomMessage,
   onOvernightAction,
+  onContinuityAction,
   onDateAction,
   onDatePhotoPost,
   onEdit,
@@ -983,6 +986,7 @@ function AppContent({
   onChoose: (target: string) => void;
   onCustomMessage?: (thread: string, message: string) => void;
   onOvernightAction?: (thread: string, command: string) => void;
+  onContinuityAction?: (thread: string, command: string) => void;
   onDateAction?: (thread: string, command: string) => void;
   onDatePhotoPost?: (photo: Item) => void;
   onEdit: (item: Item) => void;
@@ -1102,6 +1106,7 @@ function AppContent({
               owner={work.phone.owner}
               virtualTime={state.time}
               relationship={{ variables: state.variables, clues: state.clues }}
+               continuity={state.continuity}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
               name={name}
@@ -1117,6 +1122,7 @@ function AppContent({
               onChoose={onChoose}
               onCustomMessage={onCustomMessage}
               onOvernightAction={onOvernightAction}
+               onContinuityAction={onContinuityAction}
               onDateAction={onDateAction}
               onDatePhotoPost={onDatePhotoPost}
               onThread={(nextThread) => {

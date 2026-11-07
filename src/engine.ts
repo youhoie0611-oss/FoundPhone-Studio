@@ -1,6 +1,7 @@
 import type { Action, Condition, Runtime, StoryNode, Work } from "./schema";
 import { makeItem } from "./schema";
 import { progressOvernight } from "./brick3/overnight";
+import { progressContinuity } from "./brick3/continuity";
 import { completeDate, noticeDatePost, answerDateJealousy, publishPlayerDatePhoto, noticePlayerDatePost, type DateLead } from "./brick3/dateAftermath";
 import { dateAffectionChanged, dateChoose } from "./brick3/dateStory";
 export function testCondition(c: Condition, s: Runtime): boolean {
@@ -262,6 +263,7 @@ export function dispatch(
     )
     .map((n) => n.id);
   const next = runQueue(w, s, event, target, queue);
+  if (event === "start") progressContinuity(w, next);
   return next;
 }
 export function advance(
@@ -307,6 +309,7 @@ export function advance(
             progressOvernight(s);
           }
         }
+        if (value % 60 === 0) progressContinuity(w, s);
         if (w.mode !== "explore")
           runQueue(
             w,
@@ -346,6 +349,7 @@ export function advance(
     }
     if (s.elapsedMs >= end) break;
   }
+  progressContinuity(w, s);
   return s;
 }
 /** Preserve custom player text without silently choosing a scripted response. */

@@ -1,5 +1,6 @@
 import { dateOptions, dateLeads } from "../../brick3/dateStory";
 import { overnightPanelFor } from "../../brick3/overnight";
+import { continuityChoices } from "../../brick3/continuity";
 /* React/data adapters for dudwo5/Mymy UI templates: kt/ktn/KHD/bub,
  * igHome/igProfile/igDM/igSheet, xHome. See NOTICE.txt for permission.
  * Author content, DOM globals, timers and media dependencies are excluded. */
@@ -133,6 +134,7 @@ export function MymyKakao(p: SkinProps) {
   const dateKey = dateLeads.find(k => ({shen:"沈硯舟",pei:"裴知聿",qi:"祁野",gu:"顧時安",lu:"陸沉川"} as Record<string,string>)[k] === p.thread);
   const dateChoices = !p.creator && dateKey ? dateOptions({variables:p.relationship?.variables ?? {}} as import("../../schema").Runtime,dateKey) : [];
   const overnightPanel = !p.creator && p.thread ? overnightPanelFor(p.relationship?.variables ?? {}, p.thread) : null;
+  const continuity = !p.creator && p.thread ? continuityChoices(p.continuity, p.thread) : [];
   const guScene = p.thread === "顧時安" ? lastMessage?.meta?.guScene : undefined;
   const guSceneChoices = guScene
     ? (p.choices ?? []).filter((choice) => choice.target.startsWith(`${guScene}-choice-`))
@@ -225,12 +227,18 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread === "下班後五人組" ? "群組成員" : p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && dateKey && dateChoices.length > 0 && !isTyping && (
+          {!p.creator && continuity.length > 0 && !isTyping && (
+             <div className="kkt-reply-tray" aria-label="事件進度回覆選項">
+               {continuity.map(option => <button key={option.code} type="button" className="kkt-reply-choice"
+                 onClick={() => p.onContinuityAction?.(p.thread,option.code)}>{option.label}</button>)}
+             </div>
+           )}
+           {!p.creator && continuity.length === 0 && dateKey && dateChoices.length > 0 && !isTyping && (
             <div className="kkt-reply-tray" aria-label="約會互動選項">
               {dateChoices.map(choice => <button key={choice.code} type="button" className="kkt-reply-choice" onClick={() => p.onDateAction?.(p.thread,choice.code)}>{choice.label}</button>)}
             </div>
           )}
-          {!p.creator && overnightPanel && dateChoices.length === 0 && !isTyping && (
+          {!p.creator && continuity.length === 0 && overnightPanel && dateChoices.length === 0 && !isTyping && (
             <div className="kkt-reply-tray" aria-label={overnightPanel.title || "過夜與關係邀約"}>
               {overnightPanel.pending && <small>{overnightPanel.title}</small>}
               {overnightPanel.items.map((entry) => (
@@ -239,7 +247,7 @@ export function MymyKakao(p: SkinProps) {
               ))}
             </div>
           )}
-          {!p.creator && dateChoices.length === 0 && !overnightPanel?.pending && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
+          {!p.creator && continuity.length === 0 && dateChoices.length === 0 && !overnightPanel?.pending && !lastMessage?.meta?.continuity && !isTyping && !lastMessage?.outgoing && awaitingReply?.thread !== p.thread && (!guScene || guSceneChoices.length > 0) && (
             <div className="kkt-reply-tray" aria-label="四個不同的回覆選項">
               {(() => {
                 const latest = lastMessage?.body ?? "";
@@ -279,7 +287,7 @@ export function MymyKakao(p: SkinProps) {
                                   ? ["你那天有看到我嗎？", "你先把那件事解釋清楚。", "算了，我不想再追究。", "你平常都這樣跟人搭話？"]
                                   : /吃飯|聚餐|週末|約/.test(latest)
                                     ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
-                                    : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
+                                    : p.continuity ? [] : ["你想說什麼？", "有事就直接說吧。", "我現在有點忙，晚點聊。", "你最近過得怎麼樣？"];
                 return <>
                   {options.map((reply, index) => (
                     <button type="button" key={index} className="kkt-reply-choice" onClick={() => { setAwaitingReply({ thread: p.thread, afterId: latestIncomingId }); if (guSceneChoices.length > 0) p.onChoose?.(guSceneChoices[index].target); else p.onCustomMessage?.(p.thread, reply); }}>
@@ -290,8 +298,8 @@ export function MymyKakao(p: SkinProps) {
               })()}
             </div>
           )}
-          {menu && (
-            <div className="mymy-local-menu">
+           {menu && (
+             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
               <p>
                 群成员：{[...new Set(messages.map((m) => m.sender))].join("、")}
