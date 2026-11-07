@@ -1,4 +1,5 @@
 import { advanceBrick3Chat } from "./brick3ChatScenes";
+import { orderBrick3Chat } from "./brick3ChatTimeline";
 import { Brick3RelationshipPanel } from "./brick3RelationshipPanel";
 import { StatusGlyph } from "./ios/StatusGlyph";
 import { SocialDetail, socialDetailApps } from "./skins/SocialDetails";
@@ -513,8 +514,24 @@ function PhoneRuntime({
                       .filter(item => item.title === thread && !item.outgoing).map(item => item.id));
                     const knownUnlocks = new Set(next.unlocked);
                     pendingNpcReplies.current.add(threadKey);
-                    const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
-                      .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
+                    const deliveredAt = (next.ui?.deliveryTimes ?? {}) as Record<string, string>;
+                    const authored = (work.data[sourceApp] ?? [])
+                      .filter(item => item.title === thread && (!item.hidden || next.unlocked.includes(item.id)))
+                      .map(item => ({
+                        ...item,
+                        time: deliveredAt[item.id] ||
+                          (item.hidden && next.unlocked.includes(item.id)
+                            ? `${next.date ?? work.phone.date} ${next.time}`
+                            : item.time),
+                      }));
+                    const historyItems = [
+                      ...authored,
+                      ...(next.messages[sourceApp] ?? []).filter(item => item.title === thread),
+                    ];
+                    // Brick3 NPCs must see messages in the same order as the player.
+                    const history = (work.id === "between-the-lines-b-demo" && sourceApp === "kakao"
+                      ? orderBrick3Chat(historyItems) : historyItems)
+                      .slice(-20).map(item => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
                     const sceneReply = sourceApp === "kakao" && work.id === "between-the-lines-b-demo"
                       ? advanceBrick3Chat(next, thread, message, history) : null;
                     if (sceneReply) update(next);
