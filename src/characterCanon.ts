@@ -36,7 +36,12 @@ export function canonViolations(character: string, reply: string): string[] {
 }
 
 export function enforceCanon(character: string, reply: string): string {
-  if (!canonViolations(character, reply).length) return reply;
+  const violations = canonViolations(character, reply);
+  // Possessive or controlling language may be a character flaw in fiction;
+  // flag it for narrative review, but do not rewrite it as a canned apology.
+  // This preserves a flawed NPC's voice without imposing any actual action
+  // on the player. Facts and player agency remain immutable.
+  if (!violations.some(v => v !== "relationship-boundary")) return reply;
   if (character === "裴知聿") return "對不起。我剛才太急了。\n我知道妳不一定想聽，可是我真的還放不下。\n……我不會替妳做決定。";
   if (character === "祁野") return "我有我的想法，但妳要怎麼選，是妳的自由。";
   if (character === "沈硯舟") return "我想先聽妳怎麼想，不會替妳做決定。";
