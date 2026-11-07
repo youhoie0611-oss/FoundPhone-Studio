@@ -1,3 +1,4 @@
+import { recordBrick3AuthoredChoice, recordBrick3PhotoTextReply } from "./brick3CausalIntegration";
 import { syncBrick3KktEvents } from "./brick3KktEventBridge";
 import { tickBrick3SceneEvents } from "./brick3SceneScheduler";
 import {tickPeiPhotoV6,choosePeiPhotoV6,dismissPeiPhotoV6} from "./brick3PeiPhotoV6";
@@ -416,6 +417,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
     trace: [...s.trace, `player-custom-reply:${message.id}`],
   } as Runtime;
   rememberBrick3Reply(next, thread, raw, context);
+  if (appId === "kakao") recordBrick3PhotoTextReply(next, thread, raw, s.choices);
   observeV8Reply(next, thread, raw);
   if (thread === "裴知聿") observeV8PeiThirdPartyReply(next, raw);
   if (thread === "沈硯舟" || thread === "裴知聿" || thread === "祁野" || thread === "顧時安" || thread === "陸沉川") askV8Psychology(next, thread, raw);
@@ -431,7 +433,7 @@ export function submitCustomReply(s: Runtime, raw: string, appId = "kakao", thre
   return syncBrick3KktEvents({ id: next.workId, phone: { date: next.date ?? "2026-11-03" } } as Work, next);
 }
 
-export function choose(w: Work, s: Runtime, id: string) {
+function chooseInternal(w: Work, s: Runtime, id: string) {
   const v6Photo = choosePeiPhotoV6(w, s, id);
   if (v6Photo !== null) return v6Photo;
   const intimacy = chooseV8Intimacy(w, s, id);
@@ -459,6 +461,9 @@ export function choose(w: Work, s: Runtime, id: string) {
     "choose",
     id,
   );
+}
+export function choose(w: Work, s: Runtime, id: string): Runtime {
+  return recordBrick3AuthoredChoice(w, s, chooseInternal(w, s, id), id);
 }
 export function validateGraph(nodes: StoryNode[]) {
   const errors: string[] = [];
