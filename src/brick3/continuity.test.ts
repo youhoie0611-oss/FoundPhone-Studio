@@ -40,7 +40,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(s.messages.kakao.some(i=>i.title==="陸沉川")).toBe(false);
   });
   it("accept creates a real promise, while attendance only occurs by explicit player confirmation",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:accept");
     const record=s.continuity!.events["qi-court"];
     expect(record.status).toBe("scheduled");
@@ -68,7 +68,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(s.messages.kakao.some(x=>x.body.includes("去檢查了"))).toBe(true);
   });
   it("declining does not imply attending; actor still acts and reports follow-up",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:decline");
     expect(s.continuity!.events["qi-court"].status).toBe("declined");
     expect(s.continuity!.events["qi-court"].playerJoined).toBe(false);
@@ -79,7 +79,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(s.messages.photos?.length??0).toBe(0);
   });
   it("a postponement replaces the original date, no phantom attendance",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     const original=s.continuity!.events["qi-court"].dueDate;
     s=action(w,s,"祁野","qi-court:postpone");
     const rescheduled=s.continuity!.events["qi-court"].dueDate;
@@ -99,7 +99,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
       ["remote","completed","remote"],
     ] as const;
     const snapshots=new Set<string>();
-    for(const [command,status,outcome] of expected){
+    for(const [command,status] of expected){
       const {w,s}=start();
       const result=action(w,s,"祁野","qi-court:"+command);
       const record=result.continuity!.events["qi-court"];
@@ -118,7 +118,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
   it("four scheduled choices produce cancel, new date, new time or prepared scene",()=>{
     const seen=new Set<string>();
     for(const c of ["cancel","postpone","shift","prepare"]){
-      let {w,s}=start();
+      const {w,s:initial}=start(); let s=initial;
       s=action(w,s,"祁野","qi-court:accept");
       expect(continuityChoices(s.continuity,"祁野").length).toBe(4);
       s=action(w,s,"祁野","qi-court:"+c);
@@ -134,7 +134,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
   it("each of the four scene answers leads to distinct persisted consequences",()=>{
     const endings=new Set<string>();
     for(const c of ["investigate","support","boundary","leave"]){
-      let {w,s}=start();
+      const {w,s:initial}=start(); let s=initial;
       s=action(w,s,"祁野","qi-court:accept");
       s.date=s.continuity!.events["qi-court"].dueDate;
       s.time="19:00";progressContinuity(w,s);
@@ -161,7 +161,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(after.continuity!.events["qi-court"].status).toBe("scheduled");
   });
   it("an accepted but missed engagement lowers trust and never creates a fake scene or image",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:accept");
     s.date=addDays(s.continuity!.events["qi-court"].dueDate,1);s.time="09:00";
     progressContinuity(w,s);
@@ -172,7 +172,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(s.messages.kakao.some(x=>x.meta.eventId==="qi-court"&&x.kind==="image")).toBe(false);
   });
   it("shared calendar blocks overlapping accepted invitations across characters",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:accept");
     const r=s.continuity!.events["shen-portfolio"];
     r.status="active";r.stage="offer";r.dueDate=s.continuity!.events["qi-court"].dueDate;r.dueTime="19:00";
@@ -182,7 +182,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(next.continuity!.events["shen-portfolio"].playerJoined).toBe(false);
   });
   it("NPC can cancel a confirmed appointment and keeps its own agency",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:accept");
     s=npcCancel(s,w,"qi-court");
     expect(s.continuity!.events["qi-court"].status).toBe("cancelled");
@@ -191,7 +191,7 @@ describe("磚3 跨事件、共同日程與真實後果",()=>{
     expect(s.messages.kakao.some(x=>x.body.includes("場地臨時被借走"))).toBe(true);
   });
   it("independent actor knowledge is not telepathically shared with rivals",()=>{
-    let {w,s}=start();
+    const {w,s:initial}=start(); let s=initial;
     s=action(w,s,"祁野","qi-court:accept");
     s.date=s.continuity!.events["qi-court"].dueDate;s.time="19:00";progressContinuity(w,s);
     s=action(w,s,"祁野","qi-court:attend");
