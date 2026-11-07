@@ -94,6 +94,19 @@ export function tickPeiAutonomy(w: Work, s: Runtime): Runtime {
     };
     return s;
   }
+  // An ongoing dinner invitation already owns this conversation.
+  // Do not interleave unrelated anxious/autonomous messages while the player
+  // and Pei are negotiating whether, when, and where to meet.
+  if (["invited", "reply_pending", "travel", "arrival"].includes(
+    s.brick3Invites?.pei_dinner_outing?.phase ?? ""
+  )) {
+    p.lastPlayerId = latestPlayer?.id ?? p.lastPlayerId;
+    p.lastPeiId = latestPei?.id ?? p.lastPeiId;
+    p.lastSocialCount = count;
+    p.phase = "idle";
+    p.nextAt = Infinity;
+    return s;
+  }
   if (latestPlayer && latestPlayer.id !== p.lastPlayerId) {
     p.lastPlayerId = latestPlayer.id;
     const body = latestPlayer.body.trim();
