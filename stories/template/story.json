@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 14,
+  "revision": 15,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -748,6 +748,998 @@
           "hidden": true,
           "meta": {
             "guScene": "gu-photo-book"
+          }
+        },
+        {
+          "id": "gu-core-site-detail-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天拍給妳看的清水模牆面，今天驗收時真的發現一處收邊不平。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "detail"
+          }
+        },
+        {
+          "id": "gu-core-site-detail-player-yes",
+          "senderId": "owner",
+          "body": "那你們打算怎麼處理？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "detail"
+          }
+        },
+        {
+          "id": "gu-core-site-detail-reply-yes",
+          "senderId": "gu-shian",
+          "body": "先請工班做局部修整，週五再複驗。幸好昨天有留照片對照。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "detail"
+          }
+        },
+        {
+          "id": "gu-core-site-detail-player-no",
+          "senderId": "owner",
+          "body": "希望你們能順利處理。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "detail"
+          }
+        },
+        {
+          "id": "gu-core-site-detail-reply-no",
+          "senderId": "gu-shian",
+          "body": "嗯，我會盯著進度。等複驗完再跟妳說結果。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "detail"
+          }
+        },
+        {
+          "id": "gu-core-site-safety-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天妳提醒我注意安全。今天現場臨時封了一段動線，我先讓大家改走外側。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "safety"
+          }
+        },
+        {
+          "id": "gu-core-site-safety-player-yes",
+          "senderId": "owner",
+          "body": "還好有先確認，現在安全嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "safety"
+          }
+        },
+        {
+          "id": "gu-core-site-safety-reply-yes",
+          "senderId": "gu-shian",
+          "body": "安全，已經請現場負責人重新設圍籬。等確認完我才進去。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "safety"
+          }
+        },
+        {
+          "id": "gu-core-site-safety-player-no",
+          "senderId": "owner",
+          "body": "那你先忙現場，不用回我。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "safety"
+          }
+        },
+        {
+          "id": "gu-core-site-safety-reply-no",
+          "senderId": "gu-shian",
+          "body": "好。今天要盯動線，我晚點再說。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "safety"
+          }
+        },
+        {
+          "id": "gu-core-site-question-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天妳問是不是我設計的案子。今天開會，團隊決定把入口動線重新調整。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "question"
+          }
+        },
+        {
+          "id": "gu-core-site-question-player-yes",
+          "senderId": "owner",
+          "body": "為什麼要改入口？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "question"
+          }
+        },
+        {
+          "id": "gu-core-site-question-reply-yes",
+          "senderId": "gu-shian",
+          "body": "使用者走起來會繞遠路，我們想讓動線更直接。下週會拿新版圖面再確認。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "question"
+          }
+        },
+        {
+          "id": "gu-core-site-question-player-no",
+          "senderId": "owner",
+          "body": "原來還要一直調整。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "question"
+          }
+        },
+        {
+          "id": "gu-core-site-question-reply-no",
+          "senderId": "gu-shian",
+          "body": "對，設計不是畫完就算了。等圖面定下來才真的放心。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "question"
+          }
+        },
+        {
+          "id": "gu-core-site-busy-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天妳在忙，我就沒繼續打擾。現場勘查已經結束了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "busy"
+          }
+        },
+        {
+          "id": "gu-core-site-busy-player-yes",
+          "senderId": "owner",
+          "body": "昨天忙完了，結果順利嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "busy"
+          }
+        },
+        {
+          "id": "gu-core-site-busy-reply-yes",
+          "senderId": "gu-shian",
+          "body": "大致順利，只有收邊要再調整。週五還會回去複驗。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "busy"
+          }
+        },
+        {
+          "id": "gu-core-site-busy-player-no",
+          "senderId": "owner",
+          "body": "謝謝你等我有空再說。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "busy"
+          }
+        },
+        {
+          "id": "gu-core-site-busy-reply-no",
+          "senderId": "gu-shian",
+          "body": "沒事，妳先顧好自己的工作。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "site",
+            "sourceChoice": "busy"
+          }
+        },
+        {
+          "id": "gu-core-studio-accept-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天那版圖面送出去後，今天收到業主的第一輪意見了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "accept"
+          }
+        },
+        {
+          "id": "gu-core-studio-accept-player-yes",
+          "senderId": "owner",
+          "body": "有需要大改嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "accept"
+          }
+        },
+        {
+          "id": "gu-core-studio-accept-reply-yes",
+          "senderId": "gu-shian",
+          "body": "入口要再調整，但主體保留。我今晚會跟團隊討論。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "accept"
+          }
+        },
+        {
+          "id": "gu-core-studio-accept-player-no",
+          "senderId": "owner",
+          "body": "那你又要加班了？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "accept"
+          }
+        },
+        {
+          "id": "gu-core-studio-accept-reply-no",
+          "senderId": "gu-shian",
+          "body": "可能會晚一點，不過這次會先分好工作，不硬撐。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "accept"
+          }
+        },
+        {
+          "id": "gu-core-studio-ask-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜妳昨天問的那個模型，今天終於確定量體方向了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "ask"
+          }
+        },
+        {
+          "id": "gu-core-studio-ask-player-yes",
+          "senderId": "owner",
+          "body": "最後選了哪一版？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "ask"
+          }
+        },
+        {
+          "id": "gu-core-studio-ask-reply-yes",
+          "senderId": "gu-shian",
+          "body": "選了採光比較好的版本。照片裡那塊凸出的部分也會縮回去。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "ask"
+          }
+        },
+        {
+          "id": "gu-core-studio-ask-player-no",
+          "senderId": "owner",
+          "body": "想看完成後的樣子。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "ask"
+          }
+        },
+        {
+          "id": "gu-core-studio-ask-reply-no",
+          "senderId": "gu-shian",
+          "body": "等正式公開能分享時，再拍給妳看。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "ask"
+          }
+        },
+        {
+          "id": "gu-core-studio-tease-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天那張自拍被同事看到，說我拍模型還把自己拍得那麼大。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-studio-tease-player-yes",
+          "senderId": "owner",
+          "body": "所以你承認是自拍了？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-studio-tease-reply-yes",
+          "senderId": "gu-shian",
+          "body": "好吧，有一半是。另一半真的想記錄工作室那天的樣子。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-studio-tease-player-no",
+          "senderId": "owner",
+          "body": "你同事也太會吐槽。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-studio-tease-reply-no",
+          "senderId": "gu-shian",
+          "body": "他們平常就這樣。今天倒是幫我把模型修好了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-studio-boundary-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜專案這邊已收到業主回覆，入口動線要再調整。我只傳工作相關進度給妳。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "boundary"
+          }
+        },
+        {
+          "id": "gu-core-studio-boundary-player-yes",
+          "senderId": "owner",
+          "body": "收到，後續照工作流程處理就好。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "boundary"
+          }
+        },
+        {
+          "id": "gu-core-studio-boundary-reply-yes",
+          "senderId": "gu-shian",
+          "body": "了解。我會把需要確認的事項整理成清單。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "boundary"
+          }
+        },
+        {
+          "id": "gu-core-studio-boundary-player-no",
+          "senderId": "owner",
+          "body": "這部分請直接走正式窗口。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "boundary"
+          }
+        },
+        {
+          "id": "gu-core-studio-boundary-reply-no",
+          "senderId": "gu-shian",
+          "body": "好，之後由正式窗口聯繫，不再私訊專案細節。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "studio",
+            "sourceChoice": "boundary"
+          }
+        },
+        {
+          "id": "gu-core-late-rest-lead",
+          "senderId": "gu-shian",
+          "body": "隔天早上｜昨晚照妳說的先收工，今天重新看圖，真的比較容易找到問題。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "rest"
+          }
+        },
+        {
+          "id": "gu-core-late-rest-player-yes",
+          "senderId": "owner",
+          "body": "找到什麼問題？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "rest"
+          }
+        },
+        {
+          "id": "gu-core-late-rest-reply-yes",
+          "senderId": "gu-shian",
+          "body": "兩張圖的開口尺寸沒對上，還好送件前發現。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "rest"
+          }
+        },
+        {
+          "id": "gu-core-late-rest-player-no",
+          "senderId": "owner",
+          "body": "那今天記得早點下班。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "rest"
+          }
+        },
+        {
+          "id": "gu-core-late-rest-reply-no",
+          "senderId": "gu-shian",
+          "body": "會努力。至少今天不用重畫整份。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "rest"
+          }
+        },
+        {
+          "id": "gu-core-late-work-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天妳問我改哪裡。今天跟結構顧問確認後，開口位置終於定下來了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "work"
+          }
+        },
+        {
+          "id": "gu-core-late-work-player-yes",
+          "senderId": "owner",
+          "body": "所以可以送件了？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "work"
+          }
+        },
+        {
+          "id": "gu-core-late-work-reply-yes",
+          "senderId": "gu-shian",
+          "body": "還差最後一輪核對。明天下午之前應該能送。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "work"
+          }
+        },
+        {
+          "id": "gu-core-late-work-player-no",
+          "senderId": "owner",
+          "body": "你們這樣反覆確認很累吧。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "work"
+          }
+        },
+        {
+          "id": "gu-core-late-work-reply-no",
+          "senderId": "gu-shian",
+          "body": "是有點，但比施工時才發現問題好多了。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "work"
+          }
+        },
+        {
+          "id": "gu-core-late-joke-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天那杯咖啡果然沒救我。今天同事直接塞了早餐給我。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "joke"
+          }
+        },
+        {
+          "id": "gu-core-late-joke-player-yes",
+          "senderId": "owner",
+          "body": "你同事人真好。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "joke"
+          }
+        },
+        {
+          "id": "gu-core-late-joke-reply-yes",
+          "senderId": "gu-shian",
+          "body": "他嘴上嫌我拖進度，還是幫我帶了三明治。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "joke"
+          }
+        },
+        {
+          "id": "gu-core-late-joke-player-no",
+          "senderId": "owner",
+          "body": "那你今晚別再靠咖啡硬撐。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "joke"
+          }
+        },
+        {
+          "id": "gu-core-late-joke-reply-no",
+          "senderId": "gu-shian",
+          "body": "知道了，今天會把事情交接完就走。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "joke"
+          }
+        },
+        {
+          "id": "gu-core-late-no_late-lead",
+          "senderId": "gu-shian",
+          "body": "隔天白天｜昨天太晚傳訊息，抱歉。今天把專案進度整理好了，現在這個時間方便說嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "no_late"
+          }
+        },
+        {
+          "id": "gu-core-late-no_late-player-yes",
+          "senderId": "owner",
+          "body": "現在可以，怎麼了？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "no_late"
+          }
+        },
+        {
+          "id": "gu-core-late-no_late-reply-yes",
+          "senderId": "gu-shian",
+          "body": "昨天卡住的圖面已經修正。這週會進行下一次確認。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "no_late"
+          }
+        },
+        {
+          "id": "gu-core-late-no_late-player-no",
+          "senderId": "owner",
+          "body": "工作上的事請照正常時間聯絡。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "no_late"
+          }
+        },
+        {
+          "id": "gu-core-late-no_late-reply-no",
+          "senderId": "gu-shian",
+          "body": "了解，我之後只在白天聯絡，不會再深夜打擾。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "late",
+            "sourceChoice": "no_late"
+          }
+        },
+        {
+          "id": "gu-core-book-ask_place-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天那家書店的名字我確認到了。是在舊街區的小店，二樓靠窗的位置很好坐。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "ask_place"
+          }
+        },
+        {
+          "id": "gu-core-book-ask_place-player-yes",
+          "senderId": "owner",
+          "body": "下次有空可以一起去看看。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "ask_place"
+          }
+        },
+        {
+          "id": "gu-core-book-ask_place-reply-yes",
+          "senderId": "gu-shian",
+          "body": "可以。等我這週複驗結束，再問妳哪天方便。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "ask_place"
+          }
+        },
+        {
+          "id": "gu-core-book-ask_place-player-no",
+          "senderId": "owner",
+          "body": "謝謝你特地去確認。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "ask_place"
+          }
+        },
+        {
+          "id": "gu-core-book-ask_place-reply-no",
+          "senderId": "gu-shian",
+          "body": "不客氣。我自己也想再去一次，順便把昨天沒畫完的速寫補完。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "ask_place"
+          }
+        },
+        {
+          "id": "gu-core-book-sketch-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天在書店畫的速寫，我回家又補了幾筆。發現那個窗框比例很有意思。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "sketch"
+          }
+        },
+        {
+          "id": "gu-core-book-sketch-player-yes",
+          "senderId": "owner",
+          "body": "你會把它做成作品嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "sketch"
+          }
+        },
+        {
+          "id": "gu-core-book-sketch-reply-yes",
+          "senderId": "gu-shian",
+          "body": "可能整理成私人速寫集，不會拿去工作用。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "sketch"
+          }
+        },
+        {
+          "id": "gu-core-book-sketch-player-no",
+          "senderId": "owner",
+          "body": "所以休假還是離不開建築。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "sketch"
+          }
+        },
+        {
+          "id": "gu-core-book-sketch-reply-no",
+          "senderId": "gu-shian",
+          "body": "大概是職業病吧。但這次畫得很開心。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "sketch"
+          }
+        },
+        {
+          "id": "gu-core-book-tease-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜被妳說不會休息之後，我今天真的什麼圖都沒畫。帶狗出去走了一大圈。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-book-tease-player-yes",
+          "senderId": "owner",
+          "body": "你家狗今天開心嗎？",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-book-tease-reply-yes",
+          "senderId": "gu-shian",
+          "body": "開心得不得了，回家直接趴在地板上睡。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-book-tease-player-no",
+          "senderId": "owner",
+          "body": "這樣才像休假。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-book-tease-reply-no",
+          "senderId": "gu-shian",
+          "body": "好，這次我有認真休息。下次再找個地方走走。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "tease"
+          }
+        },
+        {
+          "id": "gu-core-book-neutral-lead",
+          "senderId": "gu-shian",
+          "body": "隔天｜昨天那家書店還不錯，我把速寫收進本子裡了。這週要先忙完專案。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "neutral"
+          }
+        },
+        {
+          "id": "gu-core-book-neutral-player-yes",
+          "senderId": "owner",
+          "body": "祝你這週工作順利。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "neutral"
+          }
+        },
+        {
+          "id": "gu-core-book-neutral-reply-yes",
+          "senderId": "gu-shian",
+          "body": "謝謝。忙完再找時間休息。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "neutral"
+          }
+        },
+        {
+          "id": "gu-core-book-neutral-player-no",
+          "senderId": "owner",
+          "body": "那你先忙，不用特地回覆。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "outgoing": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "neutral"
+          }
+        },
+        {
+          "id": "gu-core-book-neutral-reply-no",
+          "senderId": "gu-shian",
+          "body": "好，妳也工作順利。",
+          "time": "2026-11-06 13:00",
+          "hidden": true,
+          "meta": {
+            "guCoreContinuation": true,
+            "sourcePhotoScene": "book",
+            "sourceChoice": "neutral"
           }
         }
       ]
@@ -2819,7 +3811,23 @@
     "shen-opening-follow-distance-scene-outcome": "pending",
     "pei-intro-follow-ordinary-scene-outcome": "pending",
     "pei-intro-follow-ask-scene-outcome": "pending",
-    "pei-intro-follow-direct-scene-outcome": "pending"
+    "pei-intro-follow-direct-scene-outcome": "pending",
+    "gu-core-site-detail-outcome": "pending",
+    "gu-core-site-safety-outcome": "pending",
+    "gu-core-site-question-outcome": "pending",
+    "gu-core-site-busy-outcome": "pending",
+    "gu-core-studio-accept-outcome": "pending",
+    "gu-core-studio-ask-outcome": "pending",
+    "gu-core-studio-tease-outcome": "pending",
+    "gu-core-studio-boundary-outcome": "pending",
+    "gu-core-late-rest-outcome": "pending",
+    "gu-core-late-work-outcome": "pending",
+    "gu-core-late-joke-outcome": "pending",
+    "gu-core-late-no_late-outcome": "pending",
+    "gu-core-book-ask_place-outcome": "pending",
+    "gu-core-book-sketch-outcome": "pending",
+    "gu-core-book-tease-outcome": "pending",
+    "gu-core-book-neutral-outcome": "pending"
   },
   "events": [
     {
@@ -2974,7 +3982,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-site-detail-delay"
+      ]
     },
     {
       "id": "gu-photo-site-choice-safety",
@@ -3047,7 +4057,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-site-safety-delay"
+      ]
     },
     {
       "id": "gu-photo-site-choice-question",
@@ -3120,7 +4132,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-site-question-delay"
+      ]
     },
     {
       "id": "gu-photo-site-choice-busy",
@@ -3188,7 +4202,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-site-busy-delay"
+      ]
     },
     {
       "id": "gu-photo-site-select",
@@ -3360,7 +4376,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-studio-accept-delay"
+      ]
     },
     {
       "id": "gu-photo-studio-choice-ask",
@@ -3433,7 +4451,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-studio-ask-delay"
+      ]
     },
     {
       "id": "gu-photo-studio-choice-tease",
@@ -3506,7 +4526,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-studio-tease-delay"
+      ]
     },
     {
       "id": "gu-photo-studio-choice-boundary",
@@ -3584,7 +4606,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-studio-boundary-delay"
+      ]
     },
     {
       "id": "gu-photo-studio-select",
@@ -3766,7 +4790,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-late-rest-delay"
+      ]
     },
     {
       "id": "gu-photo-late-choice-work",
@@ -3834,7 +4860,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-late-work-delay"
+      ]
     },
     {
       "id": "gu-photo-late-choice-joke",
@@ -3902,7 +4930,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-late-joke-delay"
+      ]
     },
     {
       "id": "gu-photo-late-choice-no_late",
@@ -3975,7 +5005,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-late-no_late-delay"
+      ]
     },
     {
       "id": "gu-photo-late-select",
@@ -4167,7 +5199,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-book-ask_place-delay"
+      ]
     },
     {
       "id": "gu-photo-book-choice-sketch",
@@ -4235,7 +5269,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-book-sketch-delay"
+      ]
     },
     {
       "id": "gu-photo-book-choice-tease",
@@ -4303,7 +5339,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-book-tease-delay"
+      ]
     },
     {
       "id": "gu-photo-book-choice-neutral",
@@ -4346,7 +5384,9 @@
           "value": true
         }
       ],
-      "next": []
+      "next": [
+        "gu-core-book-neutral-delay"
+      ]
     },
     {
       "id": "gu-photo-book-select",
@@ -8045,6 +9085,2022 @@
         {
           "type": "unlock",
           "key": "pei-intro-follow-direct-scene-reply-b",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-detail-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-site-detail-lead"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-detail-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天拍給妳看的清水模牆面，今天驗收時真的發現一處收邊不平。"
+        }
+      ],
+      "next": [
+        "gu-core-site-detail-select"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-site-detail-yes",
+        "gu-core-site-detail-no"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-yes",
+      "type": "action",
+      "label": "那你們打算怎麼處理？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-detail-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-detail-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-site-detail-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-detail-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-detail-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-detail-no",
+      "type": "action",
+      "label": "希望你們能順利處理。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-detail-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-detail-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-site-detail-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-detail-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-detail-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-detail-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-safety-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-site-safety-lead"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-safety-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天妳提醒我注意安全。今天現場臨時封了一段動線，我先讓大家改走外側。"
+        }
+      ],
+      "next": [
+        "gu-core-site-safety-select"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-site-safety-yes",
+        "gu-core-site-safety-no"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-yes",
+      "type": "action",
+      "label": "還好有先確認，現在安全嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-safety-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-safety-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-site-safety-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-safety-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-safety-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-safety-no",
+      "type": "action",
+      "label": "那你先忙現場，不用回我。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-safety-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-safety-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-site-safety-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-safety-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-safety-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-safety-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-question-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-site-question-lead"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-question-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天妳問是不是我設計的案子。今天開會，團隊決定把入口動線重新調整。"
+        }
+      ],
+      "next": [
+        "gu-core-site-question-select"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-site-question-yes",
+        "gu-core-site-question-no"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-yes",
+      "type": "action",
+      "label": "為什麼要改入口？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-question-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-question-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-site-question-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-question-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-question-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-question-no",
+      "type": "action",
+      "label": "原來還要一直調整。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-question-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-question-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-site-question-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-question-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-question-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-question-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-busy-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-site-busy-lead"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-busy-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天妳在忙，我就沒繼續打擾。現場勘查已經結束了。"
+        }
+      ],
+      "next": [
+        "gu-core-site-busy-select"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-site-busy-yes",
+        "gu-core-site-busy-no"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-yes",
+      "type": "action",
+      "label": "昨天忙完了，結果順利嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-busy-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-busy-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-site-busy-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-busy-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-busy-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-site-busy-no",
+      "type": "action",
+      "label": "謝謝你等我有空再說。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-busy-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-site-busy-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-site-busy-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-site-busy-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-site-busy-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-site-busy-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-accept-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-studio-accept-lead"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-accept-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天那版圖面送出去後，今天收到業主的第一輪意見了。"
+        }
+      ],
+      "next": [
+        "gu-core-studio-accept-select"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-studio-accept-yes",
+        "gu-core-studio-accept-no"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-yes",
+      "type": "action",
+      "label": "有需要大改嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-accept-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-accept-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-studio-accept-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-accept-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-accept-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-accept-no",
+      "type": "action",
+      "label": "那你又要加班了？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-accept-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-accept-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-studio-accept-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-accept-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-accept-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-accept-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-ask-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-studio-ask-lead"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-ask-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜妳昨天問的那個模型，今天終於確定量體方向了。"
+        }
+      ],
+      "next": [
+        "gu-core-studio-ask-select"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-studio-ask-yes",
+        "gu-core-studio-ask-no"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-yes",
+      "type": "action",
+      "label": "最後選了哪一版？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-ask-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-ask-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-studio-ask-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-ask-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-ask-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-ask-no",
+      "type": "action",
+      "label": "想看完成後的樣子。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-ask-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-ask-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-studio-ask-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-ask-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-ask-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-ask-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-tease-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-studio-tease-lead"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-tease-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天那張自拍被同事看到，說我拍模型還把自己拍得那麼大。"
+        }
+      ],
+      "next": [
+        "gu-core-studio-tease-select"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-studio-tease-yes",
+        "gu-core-studio-tease-no"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-yes",
+      "type": "action",
+      "label": "所以你承認是自拍了？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-tease-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-tease-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-studio-tease-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-tease-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-tease-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-tease-no",
+      "type": "action",
+      "label": "你同事也太會吐槽。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-tease-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-tease-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-studio-tease-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-tease-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-tease-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-tease-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-boundary-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-studio-boundary-lead"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-boundary-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜專案這邊已收到業主回覆，入口動線要再調整。我只傳工作相關進度給妳。"
+        }
+      ],
+      "next": [
+        "gu-core-studio-boundary-select"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-studio-boundary-yes",
+        "gu-core-studio-boundary-no"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-yes",
+      "type": "action",
+      "label": "收到，後續照工作流程處理就好。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-boundary-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-boundary-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-studio-boundary-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-boundary-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-boundary-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-studio-boundary-no",
+      "type": "action",
+      "label": "這部分請直接走正式窗口。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-boundary-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-studio-boundary-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-studio-boundary-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-studio-boundary-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-studio-boundary-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-studio-boundary-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-rest-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-late-rest-lead"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-rest-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天早上｜昨晚照妳說的先收工，今天重新看圖，真的比較容易找到問題。"
+        }
+      ],
+      "next": [
+        "gu-core-late-rest-select"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-late-rest-yes",
+        "gu-core-late-rest-no"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-yes",
+      "type": "action",
+      "label": "找到什麼問題？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-rest-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-rest-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-late-rest-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-rest-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-rest-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-rest-no",
+      "type": "action",
+      "label": "那今天記得早點下班。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-rest-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-rest-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-late-rest-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-rest-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-rest-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-rest-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-work-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-late-work-lead"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-work-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天妳問我改哪裡。今天跟結構顧問確認後，開口位置終於定下來了。"
+        }
+      ],
+      "next": [
+        "gu-core-late-work-select"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-late-work-yes",
+        "gu-core-late-work-no"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-yes",
+      "type": "action",
+      "label": "所以可以送件了？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-work-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-work-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-late-work-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-work-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-work-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-work-no",
+      "type": "action",
+      "label": "你們這樣反覆確認很累吧。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-work-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-work-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-late-work-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-work-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-work-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-work-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-joke-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-late-joke-lead"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-joke-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天那杯咖啡果然沒救我。今天同事直接塞了早餐給我。"
+        }
+      ],
+      "next": [
+        "gu-core-late-joke-select"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-late-joke-yes",
+        "gu-core-late-joke-no"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-yes",
+      "type": "action",
+      "label": "你同事人真好。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-joke-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-joke-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-late-joke-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-joke-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-joke-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-joke-no",
+      "type": "action",
+      "label": "那你今晚別再靠咖啡硬撐。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-joke-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-joke-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-late-joke-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-joke-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-joke-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-joke-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-no_late-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-late-no_late-lead"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-no_late-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天白天｜昨天太晚傳訊息，抱歉。今天把專案進度整理好了，現在這個時間方便說嗎？"
+        }
+      ],
+      "next": [
+        "gu-core-late-no_late-select"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-late-no_late-yes",
+        "gu-core-late-no_late-no"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-yes",
+      "type": "action",
+      "label": "現在可以，怎麼了？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-no_late-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-no_late-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-late-no_late-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-no_late-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-no_late-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-late-no_late-no",
+      "type": "action",
+      "label": "工作上的事請照正常時間聯絡。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-no_late-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-late-no_late-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-late-no_late-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-late-no_late-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-late-no_late-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-late-no_late-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-ask_place-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-book-ask_place-lead"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-ask_place-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天那家書店的名字我確認到了。是在舊街區的小店，二樓靠窗的位置很好坐。"
+        }
+      ],
+      "next": [
+        "gu-core-book-ask_place-select"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-book-ask_place-yes",
+        "gu-core-book-ask_place-no"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-yes",
+      "type": "action",
+      "label": "下次有空可以一起去看看。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-ask_place-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-ask_place-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-book-ask_place-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-ask_place-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-ask_place-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-ask_place-no",
+      "type": "action",
+      "label": "謝謝你特地去確認。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-ask_place-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-ask_place-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-book-ask_place-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-ask_place-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-ask_place-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-ask_place-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-sketch-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-book-sketch-lead"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-sketch-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天在書店畫的速寫，我回家又補了幾筆。發現那個窗框比例很有意思。"
+        }
+      ],
+      "next": [
+        "gu-core-book-sketch-select"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-book-sketch-yes",
+        "gu-core-book-sketch-no"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-yes",
+      "type": "action",
+      "label": "你會把它做成作品嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-sketch-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-sketch-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-book-sketch-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-sketch-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-sketch-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-sketch-no",
+      "type": "action",
+      "label": "所以休假還是離不開建築。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-sketch-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-sketch-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-book-sketch-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-sketch-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-sketch-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-sketch-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-tease-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-book-tease-lead"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-tease-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜被妳說不會休息之後，我今天真的什麼圖都沒畫。帶狗出去走了一大圈。"
+        }
+      ],
+      "next": [
+        "gu-core-book-tease-select"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-book-tease-yes",
+        "gu-core-book-tease-no"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-yes",
+      "type": "action",
+      "label": "你家狗今天開心嗎？",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-tease-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-tease-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-book-tease-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-tease-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-tease-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-tease-no",
+      "type": "action",
+      "label": "這樣才像休假。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-tease-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-tease-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-book-tease-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-tease-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-tease-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-tease-reply-no",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-neutral-delay",
+      "type": "delay",
+      "label": "照片事件後續｜跨日發展",
+      "actions": [],
+      "delayMs": 86400000,
+      "next": [
+        "gu-core-book-neutral-lead"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-lead",
+      "type": "action",
+      "label": "照片情節接回角色主線",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-neutral-lead",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "顧時安：隔天｜昨天那家書店還不錯，我把速寫收進本子裡了。這週要先忙完專案。"
+        }
+      ],
+      "next": [
+        "gu-core-book-neutral-select"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-select",
+      "type": "choice",
+      "label": "依照照片情節的後續選擇",
+      "actions": [],
+      "next": [
+        "gu-core-book-neutral-yes",
+        "gu-core-book-neutral-no"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-yes",
+      "type": "action",
+      "label": "祝你這週工作順利。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-neutral-player-yes",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-neutral-outcome",
+          "value": "yes"
+        }
+      ],
+      "next": [
+        "gu-core-book-neutral-yes-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-yes-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-neutral-yes-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-yes-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-neutral-reply-yes",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "gu-core-book-neutral-no",
+      "type": "action",
+      "label": "那你先忙，不用特地回覆。",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-neutral-player-no",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "gu-core-book-neutral-outcome",
+          "value": "no"
+        }
+      ],
+      "next": [
+        "gu-core-book-neutral-no-delay"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-no-delay",
+      "type": "delay",
+      "label": "閱讀後回覆",
+      "actions": [],
+      "delayMs": 65000,
+      "next": [
+        "gu-core-book-neutral-no-reply"
+      ]
+    },
+    {
+      "id": "gu-core-book-neutral-no-reply",
+      "type": "action",
+      "label": "延續主線並記錄結果",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "gu-core-book-neutral-reply-no",
           "value": true
         }
       ],
