@@ -9920,6 +9920,1730 @@
         "reference": "陸沉川角色設定與造型參考表.png",
         "noStudioPhotography": true
       }
+    },
+    {
+      "eventId": "photo_qi_v6_parked_car",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "車停好了。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_parked_car_choice_1",
+          "text": "車子保養好了？",
+          "branches": "photo_qi_v6_parked_car_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_parked_car_choice_2",
+          "text": "你還記得要停在線內啊。",
+          "branches": "photo_qi_v6_parked_car_tease"
+        },
+        {
+          "id": "photo_qi_v6_parked_car_choice_3",
+          "text": "車停好才拿手機的吧？",
+          "branches": "photo_qi_v6_parked_car_care"
+        },
+        {
+          "id": "photo_qi_v6_parked_car_choice_4",
+          "text": "好，我先忙。",
+          "branches": "photo_qi_v6_parked_car_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_parked_car_choice_1": {
+          "reply": [
+            "嗯，剛從車行過來。",
+            "這次沒讓人等。"
+          ]
+        },
+        "photo_qi_v6_parked_car_choice_2": {
+          "reply": [
+            "妳要笑多久？",
+            "我現在停得比誰都正。"
+          ]
+        },
+        "photo_qi_v6_parked_car_choice_3": {
+          "reply": [
+            "當然。",
+            "我又不是邊開邊拍。"
+          ]
+        },
+        "photo_qi_v6_parked_car_choice_4": {
+          "reply": [
+            "行，我也有事。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_parked_car_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "嗯，剛從車行過來。",
+            "這次沒讓人等。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parked_car_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parked_car_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "妳要笑多久？",
+            "我現在停得比誰都正。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parked_car_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parked_car_care": {
+          "intent": "care",
+          "npcMessages": [
+            "當然。",
+            "我又不是邊開邊拍。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parked_car_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parked_car_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "行，我也有事。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parked_car_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_parked_car_01",
+          "filename": "qi_ye_parked_car_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_parked_car_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在停車後以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "停車後",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "初識",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_parked_car_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "初識",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-day11-opening",
+        "delayMs": 172800000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_basketball_rest",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "打完了。這天氣真要命。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_basketball_rest_choice_1",
+          "text": "今天打幾場？",
+          "branches": "photo_qi_v6_basketball_rest_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_basketball_rest_choice_2",
+          "text": "你也有打到喊累的一天？",
+          "branches": "photo_qi_v6_basketball_rest_tease"
+        },
+        {
+          "id": "photo_qi_v6_basketball_rest_choice_3",
+          "text": "先喝水休息吧。",
+          "branches": "photo_qi_v6_basketball_rest_care"
+        },
+        {
+          "id": "photo_qi_v6_basketball_rest_choice_4",
+          "text": "那你休息。",
+          "branches": "photo_qi_v6_basketball_rest_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_basketball_rest_choice_1": {
+          "reply": [
+            "四場。",
+            "最後一場差點打到熄燈。"
+          ]
+        },
+        "photo_qi_v6_basketball_rest_choice_2": {
+          "reply": [
+            "妳來打四場試試。"
+          ]
+        },
+        "photo_qi_v6_basketball_rest_choice_3": {
+          "reply": [
+            "喝了。",
+            "在旁邊坐著。"
+          ]
+        },
+        "photo_qi_v6_basketball_rest_choice_4": {
+          "reply": [
+            "嗯，晚點再聊。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_basketball_rest_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "四場。",
+            "最後一場差點打到熄燈。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_rest_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_rest_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "妳來打四場試試。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_rest_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_rest_care": {
+          "intent": "care",
+          "npcMessages": [
+            "喝了。",
+            "在旁邊坐著。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_rest_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_rest_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "嗯，晚點再聊。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_rest_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_basketball_rest_01",
+          "filename": "qi_ye_basketball_rest_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_basketball_rest_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在夜間球場以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "夜間球場",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "普通朋友",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_basketball_rest_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "普通朋友",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-autonomy-v3-day3",
+        "delayMs": 216000000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_basketball_after",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "最後那球差點沒進。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_basketball_after_choice_1",
+          "text": "所以最後有贏嗎？",
+          "branches": "photo_qi_v6_basketball_after_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_basketball_after_choice_2",
+          "text": "差點沒進還敢炫耀。",
+          "branches": "photo_qi_v6_basketball_after_tease"
+        },
+        {
+          "id": "photo_qi_v6_basketball_after_choice_3",
+          "text": "你手沒受傷吧？",
+          "branches": "photo_qi_v6_basketball_after_care"
+        },
+        {
+          "id": "photo_qi_v6_basketball_after_choice_4",
+          "text": "知道了，我有事。",
+          "branches": "photo_qi_v6_basketball_after_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_basketball_after_choice_1": {
+          "reply": [
+            "贏了，兩分。",
+            "最後差點被追平。"
+          ]
+        },
+        "photo_qi_v6_basketball_after_choice_2": {
+          "reply": [
+            "進了就是進了，哪來那麼多差點。"
+          ]
+        },
+        "photo_qi_v6_basketball_after_choice_3": {
+          "reply": [
+            "沒事。",
+            "只是手臂有點痠。"
+          ]
+        },
+        "photo_qi_v6_basketball_after_choice_4": {
+          "reply": [
+            "去忙，沒要妳當球評。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_basketball_after_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "贏了，兩分。",
+            "最後差點被追平。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_after_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_after_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "進了就是進了，哪來那麼多差點。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_after_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_after_care": {
+          "intent": "care",
+          "npcMessages": [
+            "沒事。",
+            "只是手臂有點痠。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_after_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_basketball_after_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "去忙，沒要妳當球評。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_basketball_after_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_basketball_after_01",
+          "filename": "qi_ye_basketball_after_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_basketball_after_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在夜間球場以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "夜間球場",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "普通朋友",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_basketball_after_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "普通朋友",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-autonomy-v3-day3",
+        "delayMs": 302400000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_headphones_car",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "等人。還有十分鐘。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_headphones_car_choice_1",
+          "text": "在等誰？",
+          "branches": "photo_qi_v6_headphones_car_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_headphones_car_choice_2",
+          "text": "難得看到你這麼有耐心。",
+          "branches": "photo_qi_v6_headphones_car_tease"
+        },
+        {
+          "id": "photo_qi_v6_headphones_car_choice_3",
+          "text": "是不是有點睏？",
+          "branches": "photo_qi_v6_headphones_car_care"
+        },
+        {
+          "id": "photo_qi_v6_headphones_car_choice_4",
+          "text": "那你先等吧。",
+          "branches": "photo_qi_v6_headphones_car_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_headphones_car_choice_1": {
+          "reply": [
+            "合作方的人。",
+            "約的時間快到了。"
+          ]
+        },
+        "photo_qi_v6_headphones_car_choice_2": {
+          "reply": [
+            "等十分鐘還好。",
+            "再晚我就要打電話了。"
+          ]
+        },
+        "photo_qi_v6_headphones_car_choice_3": {
+          "reply": [
+            "剛剛才閉眼一下。",
+            "等人來就醒了。"
+          ]
+        },
+        "photo_qi_v6_headphones_car_choice_4": {
+          "reply": [
+            "好，先不聊。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_headphones_car_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "合作方的人。",
+            "約的時間快到了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_headphones_car_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_headphones_car_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "等十分鐘還好。",
+            "再晚我就要打電話了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_headphones_car_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_headphones_car_care": {
+          "intent": "care",
+          "npcMessages": [
+            "剛剛才閉眼一下。",
+            "等人來就醒了。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_headphones_car_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_headphones_car_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "好，先不聊。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_headphones_car_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_headphones_car_01",
+          "filename": "qi_ye_headphones_car_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_headphones_car_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在停車等候以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "停車等候",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "熟悉",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_headphones_car_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "熟悉",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-r17-a-in",
+        "delayMs": 259200000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_parking_wait",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "人還沒來。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_parking_wait_choice_1",
+          "text": "對方遲到了？",
+          "branches": "photo_qi_v6_parking_wait_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_parking_wait_choice_2",
+          "text": "少爺也會被放鴿子？",
+          "branches": "photo_qi_v6_parking_wait_tease"
+        },
+        {
+          "id": "photo_qi_v6_parking_wait_choice_3",
+          "text": "別一直待車上悶著。",
+          "branches": "photo_qi_v6_parking_wait_care"
+        },
+        {
+          "id": "photo_qi_v6_parking_wait_choice_4",
+          "text": "嗯，那我先走了。",
+          "branches": "photo_qi_v6_parking_wait_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_parking_wait_choice_1": {
+          "reply": [
+            "嗯，臨時說塞車。",
+            "還要等一會。"
+          ]
+        },
+        "photo_qi_v6_parking_wait_choice_2": {
+          "reply": [
+            "還沒放鴿子。",
+            "我先記著這筆。"
+          ]
+        },
+        "photo_qi_v6_parking_wait_choice_3": {
+          "reply": [
+            "我把窗開了一點。",
+            "等下就下車。"
+          ]
+        },
+        "photo_qi_v6_parking_wait_choice_4": {
+          "reply": [
+            "行，妳忙。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_parking_wait_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "嗯，臨時說塞車。",
+            "還要等一會。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parking_wait_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parking_wait_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "還沒放鴿子。",
+            "我先記著這筆。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parking_wait_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parking_wait_care": {
+          "intent": "care",
+          "npcMessages": [
+            "我把窗開了一點。",
+            "等下就下車。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parking_wait_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_parking_wait_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "行，妳忙。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_parking_wait_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_parking_wait_01",
+          "filename": "qi_ye_parking_wait_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_parking_wait_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在停車場以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "停車場",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "熟悉",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_parking_wait_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "熟悉",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-r18-b-in",
+        "delayMs": 288000000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_night_car",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "今天事情有夠多。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_night_car_choice_1",
+          "text": "今天在忙什麼？",
+          "branches": "photo_qi_v6_night_car_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_night_car_choice_2",
+          "text": "終於知道分身乏術了？",
+          "branches": "photo_qi_v6_night_car_tease"
+        },
+        {
+          "id": "photo_qi_v6_night_car_choice_3",
+          "text": "事情處理完就早點回去。",
+          "branches": "photo_qi_v6_night_car_care"
+        },
+        {
+          "id": "photo_qi_v6_night_car_choice_4",
+          "text": "那不打擾你。",
+          "branches": "photo_qi_v6_night_car_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_night_car_choice_1": {
+          "reply": [
+            "家裡的事，還有合作那邊。",
+            "兩邊時間都撞在一起。"
+          ]
+        },
+        "photo_qi_v6_night_car_choice_2": {
+          "reply": [
+            "笑吧。",
+            "今天是真的排太滿。"
+          ]
+        },
+        "photo_qi_v6_night_car_choice_3": {
+          "reply": [
+            "快了。",
+            "我也想先回去。"
+          ]
+        },
+        "photo_qi_v6_night_car_choice_4": {
+          "reply": [
+            "嗯，等我忙完。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_night_car_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "家裡的事，還有合作那邊。",
+            "兩邊時間都撞在一起。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_night_car_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_night_car_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "笑吧。",
+            "今天是真的排太滿。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_night_car_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_night_car_care": {
+          "intent": "care",
+          "npcMessages": [
+            "快了。",
+            "我也想先回去。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_night_car_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_night_car_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "嗯，等我忙完。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_night_car_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_night_car_01",
+          "filename": "qi_ye_night_car_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_night_car_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在停車場以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "停車場",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "熟悉",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_night_car_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "熟悉",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-autonomy-v3-day2",
+        "delayMs": 187200000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_sofa_rest",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "我先躺一下。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_sofa_rest_choice_1",
+          "text": "今天怎麼了？",
+          "branches": "photo_qi_v6_sofa_rest_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_sofa_rest_choice_2",
+          "text": "你也會乖乖躺著不頂嘴？",
+          "branches": "photo_qi_v6_sofa_rest_tease"
+        },
+        {
+          "id": "photo_qi_v6_sofa_rest_choice_3",
+          "text": "先休息，不用急著解釋。",
+          "branches": "photo_qi_v6_sofa_rest_care"
+        },
+        {
+          "id": "photo_qi_v6_sofa_rest_choice_4",
+          "text": "那你休息吧。",
+          "branches": "photo_qi_v6_sofa_rest_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_sofa_rest_choice_1": {
+          "reply": [
+            "家裡又聊到以後的安排。",
+            "我沒想現在就答應。"
+          ]
+        },
+        "photo_qi_v6_sofa_rest_choice_2": {
+          "reply": [
+            "我現在連吵都懶。",
+            "明天再說。"
+          ]
+        },
+        "photo_qi_v6_sofa_rest_choice_3": {
+          "reply": [
+            "嗯。",
+            "這句我收下。"
+          ]
+        },
+        "photo_qi_v6_sofa_rest_choice_4": {
+          "reply": [
+            "行，晚點再說。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_sofa_rest_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "家裡又聊到以後的安排。",
+            "我沒想現在就答應。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_sofa_rest_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_sofa_rest_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "我現在連吵都懶。",
+            "明天再說。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_sofa_rest_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_sofa_rest_care": {
+          "intent": "care",
+          "npcMessages": [
+            "嗯。",
+            "這句我收下。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_sofa_rest_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_sofa_rest_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "行，晚點再說。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_sofa_rest_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_sofa_rest_01",
+          "filename": "qi_ye_sofa_rest_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_sofa_rest_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在室內沙發以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "室內沙發",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "親近",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_sofa_rest_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "親近",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-autonomy-v3-reply-2-next-day",
+        "delayMs": 345600000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_hoodie_street",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "外面突然變冷。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_hoodie_street_choice_1",
+          "text": "外面下雨了嗎？",
+          "branches": "photo_qi_v6_hoodie_street_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_hoodie_street_choice_2",
+          "text": "你這樣包得跟要去躲債一樣。",
+          "branches": "photo_qi_v6_hoodie_street_tease"
+        },
+        {
+          "id": "photo_qi_v6_hoodie_street_choice_3",
+          "text": "別著涼了。",
+          "branches": "photo_qi_v6_hoodie_street_care"
+        },
+        {
+          "id": "photo_qi_v6_hoodie_street_choice_4",
+          "text": "嗯，我先忙。",
+          "branches": "photo_qi_v6_hoodie_street_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_hoodie_street_choice_1": {
+          "reply": [
+            "剛停。",
+            "路邊還有一堆水。"
+          ]
+        },
+        "photo_qi_v6_hoodie_street_choice_2": {
+          "reply": [
+            "嘴巴真欠。",
+            "只是風大。"
+          ]
+        },
+        "photo_qi_v6_hoodie_street_choice_3": {
+          "reply": [
+            "知道，我有穿外套。"
+          ]
+        },
+        "photo_qi_v6_hoodie_street_choice_4": {
+          "reply": [
+            "好，忙妳的。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_hoodie_street_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "剛停。",
+            "路邊還有一堆水。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_hoodie_street_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_hoodie_street_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "嘴巴真欠。",
+            "只是風大。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_hoodie_street_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_hoodie_street_care": {
+          "intent": "care",
+          "npcMessages": [
+            "知道，我有穿外套。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_hoodie_street_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_hoodie_street_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "好，忙妳的。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_hoodie_street_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_hoodie_street_01",
+          "filename": "qi_ye_hoodie_street_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_hoodie_street_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在夜間街頭以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "夜間街頭",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "熟悉",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_hoodie_street_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "熟悉",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-autonomy-v3-day1",
+        "delayMs": 158400000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_daytime_car",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "剛回車上。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_daytime_car_choice_1",
+          "text": "剛去哪裡？",
+          "branches": "photo_qi_v6_daytime_car_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_daytime_car_choice_2",
+          "text": "又在巡你的停車線？",
+          "branches": "photo_qi_v6_daytime_car_tease"
+        },
+        {
+          "id": "photo_qi_v6_daytime_car_choice_3",
+          "text": "累的話別勉強開車。",
+          "branches": "photo_qi_v6_daytime_car_care"
+        },
+        {
+          "id": "photo_qi_v6_daytime_car_choice_4",
+          "text": "知道了。",
+          "branches": "photo_qi_v6_daytime_car_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_daytime_car_choice_1": {
+          "reply": [
+            "去把合作要用的東西拿回來。",
+            "等下還要核對。"
+          ]
+        },
+        "photo_qi_v6_daytime_car_choice_2": {
+          "reply": [
+            "至少這次沒擋到人。",
+            "滿意了？"
+          ]
+        },
+        "photo_qi_v6_daytime_car_choice_3": {
+          "reply": [
+            "我還沒出發。",
+            "會先休息。"
+          ]
+        },
+        "photo_qi_v6_daytime_car_choice_4": {
+          "reply": [
+            "嗯。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_daytime_car_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "去把合作要用的東西拿回來。",
+            "等下還要核對。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_daytime_car_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_daytime_car_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "至少這次沒擋到人。",
+            "滿意了？"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_daytime_car_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_daytime_car_care": {
+          "intent": "care",
+          "npcMessages": [
+            "我還沒出發。",
+            "會先休息。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_daytime_car_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_daytime_car_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "嗯。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_daytime_car_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_daytime_car_01",
+          "filename": "qi_ye_daytime_car_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_daytime_car_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在日間停車以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "日間停車",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "普通朋友",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_daytime_car_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "普通朋友",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-r15-a-in",
+        "delayMs": 129600000
+      }
+    },
+    {
+      "eventId": "photo_qi_v6_late_night_car",
+      "characterId": "qi_ye",
+      "characterName": "祁野",
+      "type": "npc_message",
+      "trigger": {
+        "requiresEstablishedAcquaintance": true,
+        "requiresNpcSchedule": true,
+        "requiresPastContinuity": true,
+        "requiresActualLocationAndActivity": true,
+        "requiresShareDecision": true,
+        "requiresPlayerAttendance": false,
+        "notAlreadyDelivered": true,
+        "doesNotTriggerOnOpeningChat": true
+      },
+      "message": "終於忙完了。",
+      "choices": [
+        {
+          "id": "photo_qi_v6_late_night_car_choice_1",
+          "text": "事情都處理完了？",
+          "branches": "photo_qi_v6_late_night_car_normal_inquiry"
+        },
+        {
+          "id": "photo_qi_v6_late_night_car_choice_2",
+          "text": "這種時間才下班，真不像少爺。",
+          "branches": "photo_qi_v6_late_night_car_tease"
+        },
+        {
+          "id": "photo_qi_v6_late_night_car_choice_3",
+          "text": "很晚了，先回去休息。",
+          "branches": "photo_qi_v6_late_night_car_care"
+        },
+        {
+          "id": "photo_qi_v6_late_night_car_choice_4",
+          "text": "那先這樣。",
+          "branches": "photo_qi_v6_late_night_car_distance"
+        }
+      ],
+      "onChoiceResponses": {
+        "photo_qi_v6_late_night_car_choice_1": {
+          "reply": [
+            "今天的先告一段落。",
+            "明天還有得忙。"
+          ]
+        },
+        "photo_qi_v6_late_night_car_choice_2": {
+          "reply": [
+            "少爺也要做事。",
+            "不然誰幫我談案子？"
+          ]
+        },
+        "photo_qi_v6_late_night_car_choice_3": {
+          "reply": [
+            "嗯，準備走。",
+            "妳也早點睡。"
+          ]
+        },
+        "photo_qi_v6_late_night_car_choice_4": {
+          "reply": [
+            "好，晚點聊。"
+          ]
+        }
+      },
+      "branchResponses": {
+        "photo_qi_v6_late_night_car_normal_inquiry": {
+          "intent": "normal_inquiry",
+          "npcMessages": [
+            "今天的先告一段落。",
+            "明天還有得忙。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_late_night_car_choice_1"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_late_night_car_tease": {
+          "intent": "tease",
+          "npcMessages": [
+            "少爺也要做事。",
+            "不然誰幫我談案子？"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_late_night_car_choice_2"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_late_night_car_care": {
+          "intent": "care",
+          "npcMessages": [
+            "嗯，準備走。",
+            "妳也早點睡。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_late_night_car_choice_3"
+          },
+          "relationshipEffect": "no_automatic_romance",
+          "followUp": "only_if_scheduled_and_contextually_appropriate"
+        },
+        "photo_qi_v6_late_night_car_distance": {
+          "intent": "distance",
+          "npcMessages": [
+            "好，晚點聊。"
+          ],
+          "conditions": {
+            "requiresChoiceId": "photo_qi_v6_late_night_car_choice_4"
+          },
+          "relationshipEffect": "respect_player_distance",
+          "followUp": "none"
+        }
+      },
+      "images": [
+        {
+          "assetId": "qi_ye_late_night_car_01",
+          "filename": "qi_ye_late_night_car_01.webp",
+          "path": "public/story-photos/qi_ye/qi_ye_late_night_car_01.webp",
+          "usage": "chat_attachment",
+          "unlock": {
+            "requiresMessageDelivered": true,
+            "requiresEventOccurred": true,
+            "requiresAssetAvailable": true
+          },
+          "visualPrompt": "祁野在夜間停車以手機自行自拍，單一拍攝瞬間",
+          "uploadStatus": "pending_manual_upload",
+          "captureBy": "qi_ye",
+          "sentToPlayer": "only_when_game_event_delivered",
+          "originalAssetReuseRequired": true
+        }
+      ],
+      "captureMetadata": {
+        "photographerId": "qi_ye",
+        "subjects": [
+          "qi_ye"
+        ],
+        "source": "self_phone_camera",
+        "possibleScene": "夜間停車",
+        "exactTime": "based_on_existing_qiye_schedule",
+        "mood": "determined_by_linked_story_event",
+        "wardrobeContinuity": "match_same-day_scenes",
+        "originalImageMustBeReused": true,
+        "authoringStage": "親近",
+        "independentPhotoConfirmed": true,
+        "captureReason": "記錄當下生活並自主選擇分享"
+      },
+      "albumRules": {
+        "requiresActualStoryEvent": true,
+        "requiresMessageDelivered": true,
+        "requiresUploadedAsset": true,
+        "unlockSource": "kkt_chat_attachment_only",
+        "notUnlockedByPlayerOpeningChat": true,
+        "keepUnreadUntilRead": true,
+        "albumAutoSave": false,
+        "fallbackWhenMissing": "text_only_with_missing_asset_log"
+      },
+      "followUpEvents": [
+        {
+          "eventId": "photo_qi_v6_late_night_car_contextual_followup",
+          "optional": true,
+          "requiresActualScheduleAndContinuity": true,
+          "description": "依玩家選項延續現有工作、家族或生活主線；不強制進入戀愛，對話結束後祁野繼續自己的日常。"
+        }
+      ],
+      "authoring": {
+        "sourceDraft": "qi_ye_v6_batch01_authoring.json",
+        "photoStage": "親近",
+        "assetProductionStatus": "generated_pending_manual_upload",
+        "playerUnlockState": "locked_until_actual_event",
+        "approvedByAuthor": true,
+        "storyAnchor": "qi-r19-a-in",
+        "delayMs": 388800000
+      }
     }
   ],
   "lastAuthoringUpdate": "2026-11-06",
@@ -10298,5 +12022,40 @@
     "noAutomaticAlbum": true,
     "photoRevision": "2026-11-06 handheld-smartphone-replacement",
     "photoFiles": "ten separate webp assets; uploaded separately by player"
+  },
+  "qiYeV6Batch01": {
+    "batchId": "qi_ye_v6_batch01",
+    "characterId": "qi_ye",
+    "approvedByAuthor": true,
+    "events": [
+      "photo_qi_v6_parked_car",
+      "photo_qi_v6_basketball_rest",
+      "photo_qi_v6_basketball_after",
+      "photo_qi_v6_headphones_car",
+      "photo_qi_v6_parking_wait",
+      "photo_qi_v6_night_car",
+      "photo_qi_v6_sofa_rest",
+      "photo_qi_v6_hoodie_street",
+      "photo_qi_v6_daytime_car",
+      "photo_qi_v6_late_night_car"
+    ],
+    "filenames": [
+      "qi_ye_parked_car_01.webp",
+      "qi_ye_basketball_rest_01.webp",
+      "qi_ye_basketball_after_01.webp",
+      "qi_ye_headphones_car_01.webp",
+      "qi_ye_parking_wait_01.webp",
+      "qi_ye_night_car_01.webp",
+      "qi_ye_sofa_rest_01.webp",
+      "qi_ye_hoodie_street_01.webp",
+      "qi_ye_daytime_car_01.webp",
+      "qi_ye_late_night_car_01.webp"
+    ],
+    "assetStatus": "generated_pending_manual_upload",
+    "playerUnlockStatus": "locked_until_game_event_and_media_delivery",
+    "source": "作者確認 V6 十張單獨生成生活照",
+    "photoUsage": "kkt_private_chat",
+    "configurationType": "manifest_events_with_runtime_adapter",
+    "photosUploaded": false
   }
 }
