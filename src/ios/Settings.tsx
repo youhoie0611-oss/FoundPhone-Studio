@@ -242,7 +242,7 @@ export function NativeSettings({
               <div className="settings-group">
                 <button className="settings-native-row" type="button" disabled={refreshing} onClick={() => void refreshStoryData()}>
                   <span>重新刷新資料</span>
-                  <span className="settings-detail-value">{refreshing ? "正在刷新…" : "載入最新劇情"}</span>
+                  <span className="settings-detail-value">{refreshing ? "正在更新並重啟…" : "更新劇情・清除舊紀錄"}</span>
                   <ChevronRight size={16} />
                 </button>
               </div>
