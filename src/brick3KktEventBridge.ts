@@ -1,3 +1,4 @@
+import { reconcileBrick3KktMedia } from "./brick3CausalIntegration";
 import { emptyStoryLedger, type EventStatus, type StoryEvent } from "./brick3CausalEvents";
 import type { Runtime, Work } from "./schema";
 
@@ -48,7 +49,7 @@ export function syncBrick3KktEvents(w: Work, s: Runtime): Runtime {
     record(s, key, characterId, status, at, choice);
     // The previous system handles message timing and photos; this ledger never invents attendance.
   }
-  return s;
+  return reconcileBrick3KktMedia(w, s);
 }
 /** Save deterministic character-scene decisions made through the KKT composer. */
 export function recordBrick3KktScene(s: Runtime, thread: string, outcome: string): void {
