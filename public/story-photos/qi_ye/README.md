@@ -63,3 +63,25 @@
 
 本次 batch01 初版約 900×600 橫圖，已另製作 **1080×1440 3:4 直式 WebP 的修正版十張**供作者批次上傳。修正版仍由拼圖生成來源重裁及重採樣，屬網頁遊戲用預覽品質，**不是原生 1080×1440 光學細節**。GitHub 上的圖片須由作者手動上傳後才算實際存在。
 
+
+
+## V6 第一批獨立生成照片（已批准，待手動上傳）
+
+本批 **10 張獨立 WebP** 已獲作者批准。劇情配置已同步到 `docs/brick3-photo-events-v1.json`，故事掛鉤已同步到 `scripts/brick3-photo-events.mjs`；本目錄圖片由作者自行手動批次上傳。**提交設定檔不是圖片已上傳，所有圖片上傳前不得視為可見相簿內容。**
+
+請把 ZIP 先解壓縮，再全選以下 **10 張 .webp**，一次拖入 GitHub 上傳頁，按一次 Commit changes：
+
+1. `qi_ye_parked_car_01.webp`
+2. `qi_ye_basketball_rest_01.webp`
+3. `qi_ye_basketball_after_01.webp`
+4. `qi_ye_headphones_car_01.webp`
+5. `qi_ye_parking_wait_01.webp`
+6. `qi_ye_night_car_01.webp`
+7. `qi_ye_sofa_rest_01.webp`
+8. `qi_ye_hoodie_street_01.webp`
+9. `qi_ye_daytime_car_01.webp`
+10. `qi_ye_late_night_car_01.webp`
+
+- 上傳連結：https://github.com/youhoie0611-oss/FoundPhone-Studio/upload/feature/character-autonomy-v3/public/story-photos/qi_ye
+- 事件配置：https://github.com/youhoie0611-oss/FoundPhone-Studio/blob/feature/character-autonomy-v3/docs/brick3-photo-events-v1.json
+- 上傳後應確認所有檔名完全一致，遊戲重新建置後圖片才可能被讀取。
