@@ -468,6 +468,10 @@ function PhoneRuntime({
                       const legacyDelivered = !delivered && item.hidden && s.unlocked.includes(item.id);
                       const timestamp = delivered || (legacyDelivered ? `${s.date ?? work.phone.date} ${s.time}` : item.time);
                       const base = { ...item, time: timestamp };
+                      // Brick3 KKT must show the complete authored message. MymyKakao
+                      // already reveals its newline-separated speech beats in order;
+                      // the legacy transform below dropped every line after the first.
+                      if (work.id === "between-the-lines-b-demo" && app === "kakao") return [base];
                       // Render each incoming chat line as an independent bubble.
                       // Unread and notifications continue to follow the underlying event.
                       if (item.meta?.photoEventId || item.meta?.source === "brick3-v7-lu" || item.outgoing || !item.body.includes("\n") || !["kakao", "messages"].includes(app)) return [base];
