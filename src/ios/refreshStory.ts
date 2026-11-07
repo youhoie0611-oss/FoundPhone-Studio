@@ -51,7 +51,7 @@ export async function refreshBrick3Site(env: RefreshEnvironment): Promise<void> 
         const scoped = keys.filter(key => key.includes(basePath) ||
           key.includes(encodeURIComponent(basePath)));
         await Promise.allSettled(scoped.map(key => env.caches!.delete(key)));
-      })());
+      })(), env.timeoutMs);
     } catch {
       // A blocked CacheStorage API must not strand the game on a spinner.
     }
