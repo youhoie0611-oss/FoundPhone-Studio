@@ -14,10 +14,6 @@ const content: Record<V8Lead, { flirt: string; tease: string; image: string; cap
   "陸沉川": { flirt: "剛結束會議。看到妳上次提過的甜點，順手記下店名了。", tease: "今天難得提早離開公司。妳要看我現在穿什麼嗎？", image: "lu_chenchuan_gym_selfie_01.webp", caption: "不是工作照。妳覺得呢？", praise: "妳的評價，我會記得。", neutral: "嗯。那我不打擾妳。", refuse: "明白。之後不會擅自傳這類照片。", invite: "今晚有時間嗎？我想邀妳吃飯，不談工作。" },
 };
 const DAY = 86400000;
-const stop = /不要再聯絡|不要聯絡|封鎖|別再找|停止聯絡/;
-const noPhoto = /不要傳照片|別傳照片|不要再傳這種|別再發這種|不想看這種/;
-const praise = /好看|帥|喜歡|很棒|很可以|性感|迷人|可愛|身材好|很適合|好香|想看更多|真不錯/;
-const negative = /不好看|不喜歡|不要|不想|別|停止|不舒服|不適合|噁心/;
 function progress(s: Runtime, lead: V8Lead): LeadProgress {
   const state = s.brick3Flirt ??= { version: 1, leads: {} };
   return state.leads[lead] ??= { compliments: 0, seq: 0 };
@@ -38,7 +34,7 @@ function affection(s: Runtime, lead: V8Lead) {
   return Number(s.variables[`${prefix[lead]}_attraction`] ?? 0);
 }
 function blocked(s: Runtime, lead: V8Lead) {
-  return progress(s, lead).muted || (s.messages.kakao ?? []).filter(m => m.title === lead && m.outgoing).slice(-1).some(m => stop.test(m.body));
+  return progress(s, lead).muted;
 }
 function offerDate(s: Runtime, lead: V8Lead) {
   const p = progress(s, lead);
@@ -64,7 +60,7 @@ export function tickFlirt(w: Work, s: Runtime): Runtime {
     } else {
       p.stage = "flirt";
       send(s, lead, content[lead].flirt, `brick3-flirt-${lead}-opening-${p.seq}`);
-      choices(s, lead, [["flirt_yes", "回應他的曖昧"], ["flirt_neutral", "正常聊天"], ["flirt_no", "保持距離"]]);
+      choices(s, lead, [["flirt_yes", "回應他的曖昧"], ["flirt_neutral", "正常聊天"], ["flirt_no", "保持距離"], ...(a >= 60 ? [["overnight_ask", "主動詢問今晚能不能過夜"] as [string, string]] : [])]);
     }
   }
   return s;
@@ -85,7 +81,7 @@ export function chooseFlirt(w: Work, previous: Runtime, target: string): Runtime
     p.lastPhotoId = id;
     send(s, lead, "照片", id + "-photo", false, media);
     send(s, lead, content[lead].caption, id + "-caption");
-    choices(s, lead, [["praise", "稱讚他很好看"], ["tease", "調侃他一下"], ["neutral", "正常回覆"], ["refuse", "表示不想再收到這類照片"]]);
+    choices(s, lead, [["praise", "稱讚他很好看"], ["tease", "調侃他一下"], ["neutral", "正常回覆"], ["refuse", "表示不想再收到這類照片"], ...(affection(s, lead) >= 60 ? [["overnight_ask", "主動詢問今晚能不能過夜"] as [string, string]] : [])]);
   } else if (action === "photo_no" || action === "refuse") {
     p.muted = true; p.compliments = 0;
     reply(action === "photo_no" ? "先不要傳照片。" : "我不想再收到這種照片。", content[lead].refuse);
@@ -114,26 +110,4 @@ export function chooseFlirt(w: Work, previous: Runtime, target: string): Runtime
     }
   } else return previous;
   return s;
-}
-export function observeFlirtReply(s: Runtime, thread: string, raw: string) {
-  if (!V8_LEADS.includes(thread as V8Lead)) return;
-  const lead = thread as V8Lead, p = progress(s, lead);
-  if (stop.test(raw) || noPhoto.test(raw)) { p.muted = true; p.lastPhotoId = undefined; p.compliments = 0; }
-  if (/過夜|留宿|今晚住你那|今晚留下/.test(raw) && !negative.test(raw) && affection(s, lead) >= 60 && !p.muted) {
-    const overnight = ensureOvernight(s);
-    const recordId = `player_${prefix[lead]}_${++p.seq}`;
-    if (!overnight.records.some(r => r.lead === lead && ["invited", "accepted", "arrived", "morning"].includes(r.phase))) {
-      overnight.records.push({ id: recordId, lead, phase: "invited", createdAt: s.elapsedMs ?? 0 });
-      send(s, lead, "可以談談今晚的安排，但要等我們都確定。", `brick3-flirt-${recordId}-answer`);
-      s.choices.push({ target: `brick3-overnight:${recordId}:accept`, label: `${lead}｜確認過夜安排` },
-        { target: `brick3-overnight:${recordId}:decline`, label: `${lead}｜今晚先回去` });
-    }
-  }
-  if (p.lastPhotoId) {
-    if (praise.test(raw) && !negative.test(raw)) { p.compliments++; send(s, lead, content[lead].praise, `brick3-flirt-${lead}-free-praise-${p.seq}`); }
-    else send(s, lead, content[lead].neutral, `brick3-flirt-${lead}-free-neutral-${p.seq}`);
-    p.lastPhotoId = undefined;
-    s.choices = s.choices.filter(c => !c.target.startsWith(`brick3-flirt:${lead}:`));
-    if (affection(s, lead) >= 60 && p.compliments >= 2 && !p.muted) offerDate(s, lead);
-  }
 }
