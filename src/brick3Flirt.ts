@@ -56,7 +56,7 @@ export function tickFlirt(w: Work, s: Runtime): Runtime {
     if (a >= 50 && p.seq % 2 === 1) {
       p.stage = "tease";
       send(s, lead, content[lead].tease, `brick3-flirt-${lead}-tease-${p.seq}`);
-      choices(s, lead, [["photo_yes", "想看照片"], ["photo_no", "先不要傳照片"]]);
+      choices(s, lead, [["photo_yes", "想看照片"], ["photo_no", "先不要傳照片"], ...(a >= 60 ? [["overnight_ask", "主動詢問今晚能不能過夜"] as [string, string]] : [])]);
     } else {
       p.stage = "flirt";
       send(s, lead, content[lead].flirt, `brick3-flirt-${lead}-opening-${p.seq}`);
