@@ -15,11 +15,11 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
   const context = turn || recent;
   const name = request.thread;
   const say = (reply: string): AiChatResponse => ({ reply, delayMs: 1200 });
-  const stop = /不方便|改天|晚點|先不|先不要|不想|不要|保持距離|先算了|不聊|停止|別|拒絕/;
+  const stop = /不方便|改天|晚點|先不|先不要|不想|不要|不去了|改變主意|還沒.*決定|保持距離|先算了|不聊|停止|別|拒絕/;
   const details = /幾點|什麼時候|時間|在哪|哪裡|地點|地址|哪天/;
 
-  if (name === "祁野" && /態度|太衝|說話太衝|認真聽|自己覺得哪裡|先道歉/.test(player)) {
-    if (/算了|先不談/.test(player)) return say("行。妳不想談，我就不追著問。");
+  if (name === "祁野" && /態度|太衝|說話|認真|回答剛才|不舒服|覺得自己|哪裡說得不對|道歉|玩笑帶過|聽我把話說完/.test(player)) {
+    if (/算了|先不談|先停在這裡/.test(player)) return say("行。妳不想談，我就不追著問。");
     return say(/道歉/.test(player)
       ? "妳說得對。剛才我講話沒分寸，先跟妳道歉。我不該拿脾氣讓妳受氣。"
       : "有，我有想。剛剛那句話是我太衝，光說「我就這樣」不是理由。妳不舒服，我應該先聽完。");
@@ -54,6 +54,8 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
       return say("這問題應該先交代清楚。目前我沒辦法確認聯絡資料的來源，不會編一個理由搪塞妳。我先核對，確定前不再打擾。");
     if (/哪裡認識|在哪裡認識|之前在哪|見過|怎麼認識/.test(player))
       return say("我們之前有工作專案上的接觸，但可能還沒正式聊過。抱歉我突然這樣自我介紹，應該先把來意說清楚。");
+    if (/什麼案子|建築設計.*什麼|做什麼設計/.test(player))
+      return say("我主要做建築設計。至於具體的工作案子，我先確認哪些內容方便說，再慢慢跟妳介紹。");
     if (/找我|什麼事|有事嗎|為什麼聯絡/.test(player))
       return say("原本想跟妳聊聊之前工作接觸過的事。不過我應該先問妳現在方不方便，而不是突然傳一長串。");
   }
