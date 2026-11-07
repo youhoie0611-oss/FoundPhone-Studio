@@ -81,7 +81,7 @@ export function tickOvernight(w: Work, s: Runtime): Runtime {
 export function chooseOvernight(w: Work, previous: Runtime, target: string): Runtime | null {
   if (!target.startsWith("brick3-overnight:")) return null;
   if (w.id !== "between-the-lines-b-demo" || !previous.choices.some(c => c.target === target)) return previous;
-  const [, , id, action] = target.split(":");
+  const [, id, action] = target.split(":");
   const s = structuredClone(previous), record = ensureOvernight(s).records.find(r => r.id === id);
   if (!record || stopped(s, record.lead)) return previous;
   const now = s.elapsedMs ?? 0;
