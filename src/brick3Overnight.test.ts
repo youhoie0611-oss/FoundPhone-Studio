@@ -40,7 +40,7 @@ describe("Brick3 overnight continuation", () => {
     expect((s.messages.kakao ?? []).filter(m => m.id.includes("morning-answer"))).toHaveLength(1);
   });
   it("old option is not actionable after it was consumed", () => {
-    let s = chooseOvernight(work, setup(), "brick3-overnight:lu_photo_exhibit:accept")!;
+    const s = chooseOvernight(work, setup(), "brick3-overnight:lu_photo_exhibit:accept")!;
     const old = chooseOvernight(work, s, "brick3-overnight:lu_photo_exhibit:decline")!;
     expect(old.brick3Overnight?.records[0].phase).toBe("accepted");
   });
