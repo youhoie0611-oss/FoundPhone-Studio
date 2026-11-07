@@ -1121,6 +1121,9 @@ function AppContent({
               onBack={onBack}
               thread={thread}
               choices={state.choices}
+              brick3PendingDialogue={app.id === "kakao" && work.id === "between-the-lines-b-demo" &&
+                ((thread === "裴知聿" && !!state.brick3Invites?.pei_dinner_outing?.peiQueue) ||
+                  !!state.brick3V8?.pending?.some(entry => entry.lead === thread))}
               brick3AuthoredChoices={app.id === "kakao" && work.id === "between-the-lines-b-demo"
                 ? Object.fromEntries(work.nodes.filter(node => node.type === "choice" && node.event === "read" && node.target)
                   .map(node => [node.target, (node.next ?? []).flatMap(target => state.choices.filter(choice => choice.target === target))])
