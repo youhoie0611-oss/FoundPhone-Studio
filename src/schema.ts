@@ -200,6 +200,9 @@ export function safeMedia(value: string) {
   // Relative paths work under GitHub Pages project subdirectories.
   if (/^\.\/characters\/[a-z0-9-]+(?:-avatar)?\.(?:png|jpg|jpeg|webp)$/.test(value))
     return value;
+  // Bundled story-photo assets are served from public/story-photos; reject traversal and URLs.
+  if (/^\.\/story-photos\/[a-z0-9_-]+\/[a-z0-9_-]+\.webp$/.test(value))
+    return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
     value,
   )
