@@ -25,9 +25,9 @@ describe("Brick3 affection-gated flirting", () => {
     s = chooseFlirt(work, s, "brick3-flirt:沈硯舟:photo_yes")!;
     s = chooseFlirt(work, s, "brick3-flirt:沈硯舟:praise")!;
     expect(s.brick3Flirt?.leads["沈硯舟"]?.compliments).toBe(1);
-    s.date = "2026-11-07"; s.elapsedMs += 86400000; tickFlirt(work, s);
+    s.date = "2026-11-07"; s.elapsedMs = (s.elapsedMs ?? 0) + 86400000; tickFlirt(work, s);
     s = chooseFlirt(work, s, "brick3-flirt:沈硯舟:flirt_neutral")!;
-    s.date = "2026-11-08"; s.elapsedMs += 86400000; tickFlirt(work, s);
+    s.date = "2026-11-08"; s.elapsedMs = (s.elapsedMs ?? 0) + 86400000; tickFlirt(work, s);
     s = chooseFlirt(work, s, "brick3-flirt:沈硯舟:photo_yes")!;
     s = chooseFlirt(work, s, "brick3-flirt:沈硯舟:praise")!;
     expect(s.choices.some(x => x.target === "brick3-flirt:沈硯舟:date_yes")).toBe(true);
@@ -35,7 +35,7 @@ describe("Brick3 affection-gated flirting", () => {
   });
   it("photo refusal blocks further photo progression", () => {
     const s = chooseFlirt(work, setup(60), "brick3-flirt:沈硯舟:photo_no")!;
-    s.date = "2026-11-07"; s.elapsedMs += 86400000; tickFlirt(work, s);
+    s.date = "2026-11-07"; s.elapsedMs = (s.elapsedMs ?? 0) + 86400000; tickFlirt(work, s);
     expect(s.brick3Flirt?.leads["沈硯舟"]?.muted).toBe(true);
     expect(s.choices.some(x => x.target.includes("photo_yes"))).toBe(false);
   });
