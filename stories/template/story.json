@@ -11758,7 +11758,7 @@
         {
           "id": "pei-v6-25-player-3",
           "senderId": "owner",
-          "body": "這張拍得好近。",
+          "body": "如果你願意，下次運動後可以傳照片給我，我想看看。",
           "time": "2026-11-06 21:03",
           "hidden": true,
           "meta": {
@@ -11772,7 +11772,7 @@
         {
           "id": "pei-v6-25-reply-3",
           "senderId": "pei-zhiyu",
-          "body": "因為我懶得把手機拿遠。",
+          "body": "可以。妳說想看，我下次運動結束再傳給妳。",
           "time": "2026-11-06 21:04",
           "hidden": true,
           "meta": {
@@ -30958,7 +30958,7 @@
     },
     {
       "id": "pei-v6-25-choice-3",
-      "label": "這張拍得好近。",
+      "label": "如果你願意，下次運動後可以傳照片給我，我想看看。",
       "type": "action",
       "actions": [
         {
@@ -30970,6 +30970,11 @@
           "type": "variable",
           "key": "pei-v6-25-reaction",
           "value": "casual"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -30988,7 +30993,7 @@
     },
     {
       "id": "pei-v6-25-reply-node-3",
-      "label": "因為我懶得把手機拿遠。",
+      "label": "可以。妳說想看，我下次運動結束再傳給妳。",
       "type": "action",
       "actions": [
         {
@@ -30998,7 +31003,7 @@
         }
       ],
       "next": [
-        "pei-v6-27-wait"
+        "pei-v6-26-wait"
       ]
     },
     {
@@ -33914,12 +33919,10 @@
     },
     {
       "id": "b3-photo-qi_ye-04-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-05-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -34141,12 +34144,10 @@
     },
     {
       "id": "b3-photo-qi_ye-05-continue-3",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-06-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -34966,12 +34967,10 @@
     },
     {
       "id": "b3-photo-qi_ye-08-continue-3",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-09-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -35841,12 +35840,10 @@
     },
     {
       "id": "b3-photo-qi_ye-11-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-12-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -37214,12 +37211,10 @@
     },
     {
       "id": "b3-photo-qi_ye-16-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-17-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -37441,12 +37436,10 @@
     },
     {
       "id": "b3-photo-qi_ye-17-continue-3",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-18-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -37768,12 +37761,10 @@
     },
     {
       "id": "b3-photo-qi_ye-18-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-qi_ye-19-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -38610,12 +38601,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-03-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-04-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -38921,12 +38910,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-04-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-05-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -39223,12 +39210,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-05-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-06-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -39525,12 +39510,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-06-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-07-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -39827,12 +39810,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-07-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-08-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -40129,12 +40110,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-08-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-09-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -40431,12 +40410,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-09-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-10-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -40733,12 +40710,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-10-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-11-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -41035,12 +41010,10 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-11-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-shen_yanzhou-12-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -41283,8 +41256,8 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-12-continue-3",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
       "next": [],
       "delayMs": 86400000
@@ -41334,8 +41307,8 @@
     },
     {
       "id": "b3-photo-shen_yanzhou-12-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
       "next": [],
       "delayMs": 86400000
@@ -41639,12 +41612,10 @@
     },
     {
       "id": "b3-photo-gu_shian-01-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-02-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -41955,12 +41926,10 @@
     },
     {
       "id": "b3-photo-gu_shian-02-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-03-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -42566,12 +42535,10 @@
     },
     {
       "id": "b3-photo-gu_shian-04-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-05-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -42798,12 +42765,10 @@
     },
     {
       "id": "b3-photo-gu_shian-05-continue-3",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-06-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -44550,12 +44515,10 @@
     },
     {
       "id": "b3-photo-gu_shian-11-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-12-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -45465,12 +45428,10 @@
     },
     {
       "id": "b3-photo-gu_shian-14-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-gu_shian-15-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -47438,12 +47399,10 @@
     },
     {
       "id": "b3-photo-lu_chenchuan-01-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
-      "next": [
-        "b3-photo-lu_chenchuan-02-wait"
-      ],
+      "next": [],
       "delayMs": 86400000
     },
     {
@@ -50180,8 +50139,8 @@
     },
     {
       "id": "b3-photo-lu_chenchuan-10-continue-4",
-      "type": "delay",
-      "label": "角色自主安排下一次生活分享",
+      "type": "comment",
+      "label": "已停止照片分享，此保留節點不觸發新事件",
       "actions": [],
       "next": [],
       "delayMs": 86400000
