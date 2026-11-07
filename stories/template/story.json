@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 18,
+  "revision": 19,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -8538,7 +8538,8 @@
     "pei-v6-28-reaction": "pending",
     "pei-v6-29-reaction": "pending",
     "pei-v6-30-reaction": "pending",
-    "pei_v6_boundary": false
+    "pei_v6_boundary": false,
+    "pei_v6_photo_optin": false
   },
   "events": [
     {
@@ -15849,6 +15850,18 @@
       ],
       "next": [
         "pei-v6-01-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -16087,14 +16100,11 @@
           "type": "unlock",
           "key": "pei-v6-01-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-02-wait"
+      ]
     },
     {
       "id": "pei-v6-02-wait",
@@ -16124,6 +16134,18 @@
       ],
       "next": [
         "pei-v6-02-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -16396,6 +16418,18 @@
       ],
       "next": [
         "pei-v6-03-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -16668,6 +16702,18 @@
       ],
       "next": [
         "pei-v6-04-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -16791,6 +16837,11 @@
           "type": "variable",
           "key": "pei-v6-04-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -16906,14 +16957,11 @@
           "type": "unlock",
           "key": "pei-v6-04-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-05-wait"
+      ]
     },
     {
       "id": "pei-v6-05-wait",
@@ -16943,6 +16991,18 @@
       ],
       "next": [
         "pei-v6-05-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -17049,7 +17109,7 @@
         }
       ],
       "next": [
-        "pei-v6-06-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17094,7 +17154,7 @@
         }
       ],
       "next": [
-        "pei-v6-06-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17139,7 +17199,7 @@
         }
       ],
       "next": [
-        "pei-v6-06-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17181,14 +17241,11 @@
           "type": "unlock",
           "key": "pei-v6-05-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-10-wait"
+      ]
     },
     {
       "id": "pei-v6-06-wait",
@@ -17218,6 +17275,23 @@
       ],
       "next": [
         "pei-v6-06-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -17296,6 +17370,11 @@
           "type": "variable",
           "key": "pei-v6-06-reaction",
           "value": "curious"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -17324,7 +17403,7 @@
         }
       ],
       "next": [
-        "pei-v6-07-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17341,6 +17420,11 @@
           "type": "variable",
           "key": "pei-v6-06-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -17386,6 +17470,11 @@
           "type": "variable",
           "key": "pei-v6-06-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -17414,7 +17503,7 @@
         }
       ],
       "next": [
-        "pei-v6-07-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17431,6 +17520,11 @@
           "type": "variable",
           "key": "pei-v6-06-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -17455,11 +17549,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-06-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -17493,6 +17582,23 @@
       ],
       "next": [
         "pei-v6-07-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -17571,6 +17677,11 @@
           "type": "variable",
           "key": "pei-v6-07-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -17616,6 +17727,11 @@
           "type": "variable",
           "key": "pei-v6-07-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -17644,7 +17760,7 @@
         }
       ],
       "next": [
-        "pei-v6-08-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17661,6 +17777,11 @@
           "type": "variable",
           "key": "pei-v6-07-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -17686,11 +17807,6 @@
           "type": "unlock",
           "key": "pei-v6-07-reply-3",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
       "next": []
@@ -17709,6 +17825,11 @@
           "type": "variable",
           "key": "pei-v6-07-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -17733,11 +17854,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-07-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -17771,6 +17887,23 @@
       ],
       "next": [
         "pei-v6-08-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -17849,6 +17982,11 @@
           "type": "variable",
           "key": "pei-v6-08-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -17894,6 +18032,11 @@
           "type": "variable",
           "key": "pei-v6-08-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -17922,7 +18065,7 @@
         }
       ],
       "next": [
-        "pei-v6-09-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17939,6 +18082,11 @@
           "type": "variable",
           "key": "pei-v6-08-reaction",
           "value": "probe"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -17967,7 +18115,7 @@
         }
       ],
       "next": [
-        "pei-v6-09-wait"
+        "pei-v6-10-wait"
       ]
     },
     {
@@ -17984,6 +18132,11 @@
           "type": "variable",
           "key": "pei-v6-08-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -18008,11 +18161,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-08-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -18046,6 +18194,23 @@
       ],
       "next": [
         "pei-v6-09-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -18124,6 +18289,11 @@
           "type": "variable",
           "key": "pei-v6-09-reaction",
           "value": "curious"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -18169,6 +18339,11 @@
           "type": "variable",
           "key": "pei-v6-09-reaction",
           "value": "tease"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -18214,6 +18389,11 @@
           "type": "variable",
           "key": "pei-v6-09-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -18259,6 +18439,11 @@
           "type": "variable",
           "key": "pei-v6-09-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -18283,11 +18468,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-09-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -18321,6 +18501,18 @@
       ],
       "next": [
         "pei-v6-10-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -18559,14 +18751,11 @@
           "type": "unlock",
           "key": "pei-v6-10-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-11-wait"
+      ]
     },
     {
       "id": "pei-v6-11-wait",
@@ -18596,6 +18785,18 @@
       ],
       "next": [
         "pei-v6-11-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -18764,6 +18965,11 @@
           "type": "variable",
           "key": "pei-v6-11-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -18868,6 +19074,18 @@
       ],
       "next": [
         "pei-v6-12-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -18974,7 +19192,7 @@
         }
       ],
       "next": [
-        "pei-v6-13-wait"
+        "pei-v6-14-wait"
       ]
     },
     {
@@ -19019,7 +19237,7 @@
         }
       ],
       "next": [
-        "pei-v6-13-wait"
+        "pei-v6-14-wait"
       ]
     },
     {
@@ -19064,7 +19282,7 @@
         }
       ],
       "next": [
-        "pei-v6-13-wait"
+        "pei-v6-14-wait"
       ]
     },
     {
@@ -19106,14 +19324,11 @@
           "type": "unlock",
           "key": "pei-v6-12-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-14-wait"
+      ]
     },
     {
       "id": "pei-v6-13-wait",
@@ -19143,6 +19358,23 @@
       ],
       "next": [
         "pei-v6-13-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -19221,6 +19453,11 @@
           "type": "variable",
           "key": "pei-v6-13-reaction",
           "value": "curious"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -19266,6 +19503,11 @@
           "type": "variable",
           "key": "pei-v6-13-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -19311,6 +19553,11 @@
           "type": "variable",
           "key": "pei-v6-13-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -19356,6 +19603,11 @@
           "type": "variable",
           "key": "pei-v6-13-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -19380,11 +19632,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-13-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -19418,6 +19665,18 @@
       ],
       "next": [
         "pei-v6-14-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -19690,6 +19949,18 @@
       ],
       "next": [
         "pei-v6-15-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -19796,7 +20067,7 @@
         }
       ],
       "next": [
-        "pei-v6-16-wait"
+        "pei-v6-17-wait"
       ]
     },
     {
@@ -19841,7 +20112,7 @@
         }
       ],
       "next": [
-        "pei-v6-16-wait"
+        "pei-v6-17-wait"
       ]
     },
     {
@@ -19858,6 +20129,11 @@
           "type": "variable",
           "key": "pei-v6-15-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -19903,6 +20179,11 @@
           "type": "variable",
           "key": "pei-v6-15-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -19927,11 +20208,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-15-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -19965,6 +20241,23 @@
       ],
       "next": [
         "pei-v6-16-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -20043,6 +20336,11 @@
           "type": "variable",
           "key": "pei-v6-16-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -20088,6 +20386,11 @@
           "type": "variable",
           "key": "pei-v6-16-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -20133,6 +20436,11 @@
           "type": "variable",
           "key": "pei-v6-16-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -20158,11 +20466,6 @@
           "type": "unlock",
           "key": "pei-v6-16-reply-3",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
       "next": []
@@ -20181,6 +20484,11 @@
           "type": "variable",
           "key": "pei-v6-16-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -20205,11 +20513,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-16-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -20243,6 +20546,18 @@
       ],
       "next": [
         "pei-v6-17-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -20436,14 +20751,11 @@
           "type": "unlock",
           "key": "pei-v6-17-reply-3",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-18-wait"
+      ]
     },
     {
       "id": "pei-v6-17-choice-4",
@@ -20518,6 +20830,18 @@
       ],
       "next": [
         "pei-v6-18-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -20756,14 +21080,11 @@
           "type": "unlock",
           "key": "pei-v6-18-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-19-wait"
+      ]
     },
     {
       "id": "pei-v6-19-wait",
@@ -20793,6 +21114,18 @@
       ],
       "next": [
         "pei-v6-19-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -21031,14 +21364,11 @@
           "type": "unlock",
           "key": "pei-v6-19-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-20-wait"
+      ]
     },
     {
       "id": "pei-v6-20-wait",
@@ -21068,6 +21398,18 @@
       ],
       "next": [
         "pei-v6-20-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -21306,14 +21648,11 @@
           "type": "unlock",
           "key": "pei-v6-20-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-21-wait"
+      ]
     },
     {
       "id": "pei-v6-21-wait",
@@ -21343,6 +21682,18 @@
       ],
       "next": [
         "pei-v6-21-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -21466,6 +21817,11 @@
           "type": "variable",
           "key": "pei-v6-21-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -21556,6 +21912,11 @@
           "type": "variable",
           "key": "pei-v6-21-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -21580,11 +21941,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-21-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -21618,6 +21974,18 @@
       ],
       "next": [
         "pei-v6-22-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -21724,7 +22092,7 @@
         }
       ],
       "next": [
-        "pei-v6-23-wait"
+        "pei-v6-25-wait"
       ]
     },
     {
@@ -21769,7 +22137,7 @@
         }
       ],
       "next": [
-        "pei-v6-23-wait"
+        "pei-v6-25-wait"
       ]
     },
     {
@@ -21814,7 +22182,7 @@
         }
       ],
       "next": [
-        "pei-v6-23-wait"
+        "pei-v6-25-wait"
       ]
     },
     {
@@ -21856,14 +22224,11 @@
           "type": "unlock",
           "key": "pei-v6-22-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-25-wait"
+      ]
     },
     {
       "id": "pei-v6-23-wait",
@@ -21893,6 +22258,23 @@
       ],
       "next": [
         "pei-v6-23-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -21971,6 +22353,11 @@
           "type": "variable",
           "key": "pei-v6-23-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -21999,7 +22386,7 @@
         }
       ],
       "next": [
-        "pei-v6-24-wait"
+        "pei-v6-25-wait"
       ]
     },
     {
@@ -22016,6 +22403,11 @@
           "type": "variable",
           "key": "pei-v6-23-reaction",
           "value": "probe"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22044,7 +22436,7 @@
         }
       ],
       "next": [
-        "pei-v6-24-wait"
+        "pei-v6-25-wait"
       ]
     },
     {
@@ -22061,6 +22453,11 @@
           "type": "variable",
           "key": "pei-v6-23-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -22106,6 +22503,11 @@
           "type": "variable",
           "key": "pei-v6-23-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -22130,11 +22532,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-23-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -22168,6 +22565,23 @@
       ],
       "next": [
         "pei-v6-24-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -22246,6 +22660,11 @@
           "type": "variable",
           "key": "pei-v6-24-reaction",
           "value": "provenance"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22291,6 +22710,11 @@
           "type": "variable",
           "key": "pei-v6-24-reaction",
           "value": "curious"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22336,6 +22760,11 @@
           "type": "variable",
           "key": "pei-v6-24-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22381,6 +22810,11 @@
           "type": "variable",
           "key": "pei-v6-24-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -22405,11 +22839,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-24-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -22443,6 +22872,18 @@
       ],
       "next": [
         "pei-v6-25-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -22549,7 +22990,7 @@
         }
       ],
       "next": [
-        "pei-v6-26-wait"
+        "pei-v6-27-wait"
       ]
     },
     {
@@ -22594,7 +23035,7 @@
         }
       ],
       "next": [
-        "pei-v6-26-wait"
+        "pei-v6-27-wait"
       ]
     },
     {
@@ -22639,7 +23080,7 @@
         }
       ],
       "next": [
-        "pei-v6-26-wait"
+        "pei-v6-27-wait"
       ]
     },
     {
@@ -22681,14 +23122,11 @@
           "type": "unlock",
           "key": "pei-v6-25-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-27-wait"
+      ]
     },
     {
       "id": "pei-v6-26-wait",
@@ -22718,6 +23156,23 @@
       ],
       "next": [
         "pei-v6-26-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -22796,6 +23251,11 @@
           "type": "variable",
           "key": "pei-v6-26-reaction",
           "value": "curious"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22841,6 +23301,11 @@
           "type": "variable",
           "key": "pei-v6-26-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -22886,6 +23351,11 @@
           "type": "variable",
           "key": "pei-v6-26-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -22931,6 +23401,11 @@
           "type": "variable",
           "key": "pei-v6-26-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -22955,11 +23430,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-26-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -22993,6 +23463,18 @@
       ],
       "next": [
         "pei-v6-27-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -23099,7 +23581,7 @@
         }
       ],
       "next": [
-        "pei-v6-28-wait"
+        "pei-v6-29-wait"
       ]
     },
     {
@@ -23144,7 +23626,7 @@
         }
       ],
       "next": [
-        "pei-v6-28-wait"
+        "pei-v6-29-wait"
       ]
     },
     {
@@ -23189,7 +23671,7 @@
         }
       ],
       "next": [
-        "pei-v6-28-wait"
+        "pei-v6-29-wait"
       ]
     },
     {
@@ -23231,14 +23713,11 @@
           "type": "unlock",
           "key": "pei-v6-27-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-29-wait"
+      ]
     },
     {
       "id": "pei-v6-28-wait",
@@ -23268,6 +23747,23 @@
       ],
       "next": [
         "pei-v6-28-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_photo_optin",
+          "op": "eq",
+          "value": true
+        }
       ]
     },
     {
@@ -23346,6 +23842,11 @@
           "type": "variable",
           "key": "pei-v6-28-reaction",
           "value": "flirt"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -23391,6 +23892,11 @@
           "type": "variable",
           "key": "pei-v6-28-reaction",
           "value": "reflect"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -23436,6 +23942,11 @@
           "type": "variable",
           "key": "pei-v6-28-reaction",
           "value": "care"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": false
         }
       ],
       "next": [
@@ -23481,6 +23992,11 @@
           "type": "variable",
           "key": "pei-v6-28-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -23505,11 +24021,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-28-reply-4",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
@@ -23543,6 +24054,18 @@
       ],
       "next": [
         "pei-v6-29-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -23781,14 +24304,11 @@
           "type": "unlock",
           "key": "pei-v6-29-reply-4",
           "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
-          "value": true
         }
       ],
-      "next": []
+      "next": [
+        "pei-v6-30-wait"
+      ]
     },
     {
       "id": "pei-v6-30-wait",
@@ -23818,6 +24338,18 @@
       ],
       "next": [
         "pei-v6-30-image-wait"
+      ],
+      "conditions": [
+        {
+          "key": "pei_no_contact",
+          "op": "eq",
+          "value": false
+        },
+        {
+          "key": "pei_v6_boundary",
+          "op": "eq",
+          "value": false
+        }
       ]
     },
     {
@@ -23896,6 +24428,11 @@
           "type": "variable",
           "key": "pei-v6-30-reaction",
           "value": "reconcile"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_photo_optin",
+          "value": true
         }
       ],
       "next": [
@@ -23982,6 +24519,11 @@
           "type": "variable",
           "key": "pei-v6-30-reaction",
           "value": "boundary"
+        },
+        {
+          "type": "variable",
+          "key": "pei_v6_boundary",
+          "value": true
         }
       ],
       "next": [
@@ -24006,11 +24548,6 @@
         {
           "type": "unlock",
           "key": "pei-v6-30-reply-3",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "pei_v6_boundary",
           "value": true
         }
       ],
