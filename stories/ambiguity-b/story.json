@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 53,
+  "revision": 54,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -4278,7 +4278,7 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "妳最近還好嗎？",
+          "body": "我剛剛打了好幾次字，又刪掉了。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png"
         },
@@ -4286,7 +4286,7 @@
           "id": "pei-01-bubble-2",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "我知道我們很久沒聯絡。",
+          "body": "妳現在應該不想看到我傳訊息吧。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4295,7 +4295,7 @@
           "id": "pei-01-bubble-3",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "整理東西的時候看到一張舊照片。",
+          "body": "整理研究室的資料時，翻到以前我們一起拍的照片。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4304,7 +4304,7 @@
           "id": "pei-01-bubble-4",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "我看著那張照片看了很久。",
+          "body": "明明可以直接收起來，我卻看了很久。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4313,7 +4313,7 @@
           "id": "pei-01-bubble-5",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "本來想忍住不傳。",
+          "body": "我知道這不是突然聯絡妳的理由。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4322,7 +4322,7 @@
           "id": "pei-01-bubble-6",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "……妳是不是已經不想再看到我的名字了？",
+          "body": "……妳最近還好嗎？",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4331,7 +4331,7 @@
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
-          "body": "……我是不是太突然了？\n我剛剛一直在看手機。\n妳不用勉強自己回，但我真的很想聽妳說一句話。",
+          "body": "……我是不是太突然了？\n妳不用勉強回。我只是又忍不住確認妳有沒有看到。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4357,7 +4357,7 @@
         {
           "id": "pei-05",
           "title": "",
-          "body": "如果妳願意，我想跟妳好好說一次。\n……不願意也沒關係。我只是怕這次不說，以後真的沒機會了。",
+          "body": "我有很多話想說。\n但我知道，妳不一定想聽。\n……如果有一天妳願意，我想把當年的事說清楚。",
           "senderId": "peizhiyu",
           "time": "21:17",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -4715,7 +4715,7 @@
         {
           "id": "pei-phase3-1-1-b-in-bubble-2",
           "title": "",
-          "body": "我知道妳需要時間。……我會努力不再一直追問。",
+          "body": "我剛才差點問妳要多久。打完又刪了。妳說需要時間，我就不該逼妳給期限。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -4862,7 +4862,7 @@
         {
           "id": "pei-phase3-2-2-b-in-bubble-2",
           "title": "",
-          "body": "……我先停在這裡。妳不用現在回答。",
+          "body": "算了。妳沒有義務聽我說完。我先停。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -4966,7 +4966,7 @@
         {
           "id": "pei-phase3-3-2-b-in-bubble-2",
           "title": "",
-          "body": "我會忍住不再傳。妳想靜靜，我就不去打擾。",
+          "body": "我剛剛又想補一句。還是算了，這次真的不傳了。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -6640,7 +6640,7 @@
         {
           "id": "pei-r30-b-in-bubble-2",
           "title": "",
-          "body": "我不再問妳要答案。這句話我會記住。",
+          "body": "我知道妳沒有答應我什麼。我不會再拿自己的等待跟妳要答案。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -6649,7 +6649,7 @@
         {
           "id": "pei-r30-b-in-bubble-3",
           "title": "",
-          "body": "可是想妳的時候，我可能還是會打開對話框看看。",
+          "body": "只是有些習慣還改不掉。看到妳的名字，我還是會停一下。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -7853,7 +7853,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我剛剛其實就很怕妳不回，但那是我的不安，不該讓妳來猜。",
+          "body": "剛才差點又問妳是不是生氣了。這句我收回。妳已經說得很清楚。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7905,7 +7905,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4-in-bubble-2",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我不會替妳解讀。",
+          "body": "我知道妳不回，也可能只是根本不想再談。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7914,7 +7914,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4-in-bubble-3",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "只是我得承認，看到妳回覆我還是會高興。",
+          "body": "可是每次看到通知亮起來，我還是會先希望是妳。這是我的問題。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
