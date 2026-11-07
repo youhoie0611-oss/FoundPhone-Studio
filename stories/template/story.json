@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "磚3",
   "description": "《磚3》多角色互動戀愛劇情：玩家選擇不只改變語氣，也決定邀約、共同活動、界線與後續事件。",
-  "revision": 20,
+  "revision": 21,
   "phone": {
     "owner": "我",
     "date": "2026-11-04",
@@ -16870,7 +16870,7 @@
         }
       ],
       "next": [
-        "pei-v6-05-wait"
+        "pei-v6-06-wait"
       ]
     },
     {
@@ -18998,7 +18998,7 @@
         }
       ],
       "next": [
-        "pei-v6-12-wait"
+        "pei-v6-13-wait"
       ]
     },
     {
@@ -19536,7 +19536,7 @@
         }
       ],
       "next": [
-        "pei-v6-14-wait"
+        "pei-v6-16-wait"
       ]
     },
     {
@@ -20369,7 +20369,7 @@
         }
       ],
       "next": [
-        "pei-v6-17-wait"
+        "pei-v6-23-wait"
       ]
     },
     {
@@ -21850,7 +21850,7 @@
         }
       ],
       "next": [
-        "pei-v6-22-wait"
+        "pei-v6-23-wait"
       ]
     },
     {
@@ -23334,7 +23334,7 @@
         }
       ],
       "next": [
-        "pei-v6-27-wait"
+        "pei-v6-28-wait"
       ]
     },
     {
