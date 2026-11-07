@@ -484,14 +484,20 @@ function PhoneRuntime({
                   // The player can only select authored reply buttons; no free-text composer is exposed.
                   onPresetReply={(thread, message) => {
                     const sourceApp = app;
+                    const threadKey = sourceApp + ":" + thread;
+                    // Rapid repeat taps must not create another reply to an unanswered message.
+                    if (pendingNpcReplies.current.has(threadKey)) return;
                     const next = submitCustomReply(runtimeRef.current, message, sourceApp, thread);
                     update(next);
                     // The invitation engine will deliver its own timed response; do not duplicate it via local NPC chat.
-                    const lastCustomId = next.messages[sourceApp]?.at(-1)?.id;
+                    const lastCustomId = [...(next.messages[sourceApp] ?? [])].reverse()
+                      .find(item => item.title === thread && item.outgoing)?.id;
                     const scripted = (next.ui?.scriptedInvitationReply ?? {}) as Record<string, string>;
                     if (scripted[thread] && scripted[thread] === lastCustomId) return;
                     const id = `${sourceApp}:${thread}:${next.messages[sourceApp]?.length ?? 0}`;
-                    const threadKey = `${sourceApp}:${thread}`;
+                    const knownIncoming = new Set((next.messages[sourceApp] ?? [])
+                      .filter(item => item.title === thread && !item.outgoing).map(item => item.id));
+                    const knownUnlocks = new Set(next.unlocked);
                     pendingNpcReplies.current.add(threadKey);
                     const history = [...(work.data[sourceApp] ?? []).filter((item) => item.title === thread && (!item.hidden || next.unlocked.includes(item.id))), ...(next.messages[sourceApp] ?? []).filter((item) => item.title === thread)]
                       .slice(-20).map((item) => ({ sender: item.sender, body: item.body, outgoing: !!item.outgoing }));
@@ -510,6 +516,16 @@ function PhoneRuntime({
                         for (let part = 0; part < parts.length; part++) {
                           if (part > 0) await new Promise<void>(resolve => setTimeout(resolve, 850 + Math.min(parts[part].length * 35, 1150)));
                           const current = runtimeRef.current;
+                          // A new player reply or a scheduled scene answer supersedes stale fallback text.
+                          const newestPlayer = [...(current.messages[sourceApp] ?? [])].reverse()
+                            .find(item => item.title === thread && item.outgoing);
+                          if (newestPlayer?.id !== lastCustomId) break;
+                          if (!sceneReply && part === 0 && (
+                            (current.messages[sourceApp] ?? []).some(item =>
+                              item.title === thread && !item.outgoing && !knownIncoming.has(item.id)) ||
+                            current.unlocked.some(itemId => !knownUnlocks.has(itemId) &&
+                              (work.data[sourceApp] ?? []).some(item => item.id === itemId && item.title === thread && !item.outgoing))
+                          )) break;
                           const incoming = makeItem({
                             id: `ai-npc-${id}-${part}-${Date.now()}`,
                             title: thread,
