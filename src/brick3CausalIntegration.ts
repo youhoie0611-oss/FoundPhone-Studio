@@ -87,7 +87,7 @@ export function reconcileBrick3KktMedia(w: Work, s: Runtime): Runtime {
     const skipped = ensure(s,eventKey(id),"pei_zhiyu","expired",timestamp);
     skipped.outcome = "skipped_without_player_response";
   }
-  for (const item of w.data.kakao ?? []) {
+  for (const item of w.data?.kakao ?? []) {
     if (item.hidden && !s.unlocked.includes(item.id)) continue;
     if (s.hidden.includes(item.id)) continue;
     attachMedia(s,timestamp,item);
