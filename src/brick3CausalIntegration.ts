@@ -64,7 +64,7 @@ export function recordBrick3AuthoredChoice(w: Work, previous: Runtime, next: Run
   return next;
 }
 function attachMedia(s: Runtime, timestamp: string, item: Item) {
-  if (item.outgoing || item.kind !== "image") return;
+  if (item.outgoing) return;
   const id = item.meta?.photoEventId || item.meta?.photoId;
   if (!id) return;
   const meta = brick3PhotoMap.get(id);
@@ -72,25 +72,31 @@ function attachMedia(s: Runtime, timestamp: string, item: Item) {
   if (!lead) return;
   const ev = ensure(s,eventKey(id),lead,"active",timestamp);
   if (ev.status === "not_started") transition(ev,"active",timestamp);
-  const photoId = item.meta?.photoId || meta?.photoIds[0] || item.id;
-  if (!ev.photoIds.includes(photoId)) ev.photoIds.push(photoId);
+  if (item.kind === "image") {
+    const photoId = item.meta?.photoId || meta?.photoIds[0] || item.id;
+    if (!ev.photoIds.includes(photoId)) ev.photoIds.push(photoId);
+  }
   if (!ev.sourceMessageIds?.includes(item.id)) ev.sourceMessageIds = [...(ev.sourceMessageIds ?? []),item.id];
 }
 /** Connect only media actually delivered in KKT; registry entries alone are not photos or memories. */
 export function reconcileBrick3KktMedia(w: Work, s: Runtime): Runtime {
   if (w.id !== "between-the-lines-b-demo") return s;
   const timestamp = at(s,w);
-  for (const item of s.messages.kakao ?? []) attachMedia(s,timestamp,item);
+  for (const app of ["kakao", "instagram", "photos"]) {
+    for (const item of s.messages[app] ?? []) attachMedia(s,timestamp,item);
+  }
   // Skipped V6 scenes cannot be treated as player-viewed photographs.
   for (const id of s.brick3PeiV6?.skippedPhotoIds ?? []) {
     if (s.brick3Ledger?.events[eventKey(id)]) continue;
     const skipped = ensure(s,eventKey(id),"pei_zhiyu","expired",timestamp);
     skipped.outcome = "skipped_without_player_response";
   }
-  for (const item of w.data?.kakao ?? []) {
-    if (item.hidden && !s.unlocked.includes(item.id)) continue;
-    if (s.hidden.includes(item.id)) continue;
-    attachMedia(s,timestamp,item);
+  for (const app of ["kakao", "instagram", "photos"]) {
+    for (const item of w.data?.[app] ?? []) {
+      if (item.hidden && !s.unlocked.includes(item.id)) continue;
+      if (s.hidden.includes(item.id)) continue;
+      attachMedia(s,timestamp,item);
+    }
   }
   return s;
 }
