@@ -64,7 +64,7 @@ function grouped(items: Item[]) {
   // Legacy scripted records can carry dates from a different story day;
   // comparing those dates against live HH:mm replies misorders the inbox.
   const visibleMinute = (item: Item) => {
-    const match = item.time.match(/(\\d{1,2}):(\\d{2})(?::\\d{2})?$/);
+    const match = item.time.match(/(\d{1,2}):(\d{2})(?::\d{2})?$/);
     return match ? Number(match[1]) * 60 + Number(match[2]) : -1;
   };
   return groups.sort((a, b) =>
