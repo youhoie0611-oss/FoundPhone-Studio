@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 51,
+  "revision": 52,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -4278,15 +4278,60 @@
           "id": "pei-01",
           "senderId": "peizhiyu",
           "time": "20:03",
-          "body": "妳最近還好嗎？\n我知道我們很久沒聯絡。\n整理東西的時候看到一張舊照片。\n……我本來不想打擾妳的。",
+          "body": "妳最近還好嗎？",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-01-bubble-2",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "我知道我們很久沒聯絡。",
+          "title": "",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": false
+        },
+        {
+          "id": "pei-01-bubble-3",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "整理東西的時候看到一張舊照片。",
+          "title": "",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": false
+        },
+        {
+          "id": "pei-01-bubble-4",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "我看著那張照片看了很久。",
+          "title": "",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": false
+        },
+        {
+          "id": "pei-01-bubble-5",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "本來想忍住不傳。",
+          "title": "",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": false
+        },
+        {
+          "id": "pei-01-bubble-6",
+          "senderId": "peizhiyu",
+          "time": "20:03",
+          "body": "……妳是不是已經不想再看到我的名字了？",
+          "title": "",
+          "avatar": "./characters/pei-zhiyu-avatar.png",
+          "hidden": false
         },
         {
           "id": "pei-02",
           "senderId": "peizhiyu",
           "time": "20:05",
-          "body": "我沒有要妳現在回答什麼。\n只是想確認妳過得好不好。",
+          "body": "……我是不是太突然了？\n我剛剛一直在看手機。\n妳不用勉強自己回，但我真的很想聽妳說一句話。",
           "title": "",
           "avatar": "./characters/pei-zhiyu-avatar.png",
           "hidden": true
@@ -4294,7 +4339,7 @@
         {
           "id": "pei-03",
           "title": "",
-          "body": "有些話以前沒說清楚，是我的問題。",
+          "body": "我還是會想妳。明明知道這樣講很沒出息。",
           "senderId": "peizhiyu",
           "time": "20:19",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -4303,7 +4348,7 @@
         {
           "id": "pei-04",
           "title": "",
-          "body": "我一直想問妳，那時候妳到底是怎麼決定離開的。可是我又怕妳真的告訴我。",
+          "body": "妳那天說分手的時候，我腦子裡只剩下『不要走』。現在才想問，妳那時到底有多難過。",
           "senderId": "peizhiyu",
           "time": "20:31",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -4312,7 +4357,7 @@
         {
           "id": "pei-05",
           "title": "",
-          "body": "如果妳願意，哪天我想好好向妳道歉。",
+          "body": "如果妳願意，我想跟妳好好說一次。\n……不願意也沒關係。我只是怕這次不說，以後真的沒機會了。",
           "senderId": "peizhiyu",
           "time": "21:17",
           "avatar": "./characters/pei-zhiyu-avatar.png",
@@ -4661,7 +4706,7 @@
         {
           "id": "pei-phase3-1-1-b-in",
           "title": "",
-          "body": "好。",
+          "body": "……好。我會等。只是我現在真的很怕，妳想著想著，就決定再也不要我了。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -4808,7 +4853,7 @@
         {
           "id": "pei-phase3-2-2-b-in",
           "title": "",
-          "body": "好。",
+          "body": "……這樣就結束了嗎？我知道我不能一直留妳，可是我還想再跟妳說幾句。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -4912,7 +4957,7 @@
         {
           "id": "pei-phase3-3-2-b-in",
           "title": "",
-          "body": "好。",
+          "body": "好。我不打擾妳。只是妳說想一個人靜靜的時候，我第一個念頭竟然是妳是不是已經不需要我了。",
           "senderId": "peizhiyu",
           "time": "22:18",
           "hidden": true,
@@ -6586,7 +6631,7 @@
         {
           "id": "pei-r30-b-in",
           "title": "",
-          "body": "好。",
+          "body": "好。妳先把生活過好。可我現在連一句『晚安』都要忍很久才敢傳。",
           "senderId": "peizhiyu",
           "time": "22:23",
           "hidden": true,
@@ -6613,7 +6658,7 @@
         {
           "id": "pei-day11-opening",
           "title": "",
-          "body": "今天路過以前常去的書店，想起妳。",
+          "body": "今天路過書店，看到一本妳以前想買的書。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6701,7 +6746,7 @@
         {
           "id": "pei-day21-opening",
           "title": "",
-          "body": "早。",
+          "body": "早。我剛結束一整晚的研究資料整理。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6922,7 +6967,7 @@
         {
           "id": "pei-autonomy-v3-day1",
           "title": "",
-          "body": "剛才整理抽屜，找到以前一起去那家店的收據。",
+          "body": "剛從研究室出來，看到有人拿著妳以前喜歡的那款飲料。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 20:30",
           "hidden": true,
@@ -6940,7 +6985,7 @@
         {
           "id": "pei-autonomy-v3-day2",
           "title": "",
-          "body": "今天事情有點多，我晚點才有空回訊息。",
+          "body": "今天開會有人問我是不是沒睡好。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:30",
           "hidden": true,
@@ -6958,7 +7003,7 @@
         {
           "id": "pei-autonomy-v3-day3",
           "title": "",
-          "body": "今天沒有特別的事。",
+          "body": "我今天忍了很久沒有傳訊息。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 20:30",
           "hidden": true,
@@ -7799,7 +7844,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道。妳不想再猜，我卻還是怕得一直想問。這次我自己忍住。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7851,7 +7896,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。妳的沉默不是答案。我只是看到妳在線上，還是會不爭氣地期待。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7921,7 +7966,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳沒有原諒我。我只是太怕妳連罵我都不願意了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -7991,7 +8036,7 @@
           "id": "choice-pei-r4-after-pei-phase3-1-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。這個話題我停。妳不用再傳一句『知道了』來安撫我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8052,7 +8097,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道我們分手了。就是因為知道，才會每次看到妳回訊息都高興得像個傻子。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8113,7 +8158,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。我不問妳還愛不愛我。可我真的會想知道。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8174,7 +8219,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳不用報備。我剛剛還想問妳跟誰出去，打完又刪掉了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8235,7 +8280,7 @@
           "id": "choice-pei-r4-after-pei-phase3-2-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。今天不問了。妳不用再回我，我會把想問的話吞回去。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8296,7 +8341,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳不是為了教訓我才離開。可我還是會想，如果我早點懂，是不是就不會失去妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8348,7 +8393,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-1-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。我不逼妳聽。只是我還有好多話沒說。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8461,7 +8506,7 @@
           "id": "choice-pei-r4-after-pei-phase3-3-2-b-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。我不會再用關心當藉口靠近妳。可是我真的很想妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8513,7 +8558,7 @@
           "id": "choice-pei-r5-after-pei-r4-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道。照片我自己留著，不再拿出來試探妳是不是心軟。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -8721,7 +8766,7 @@
           "id": "choice-pei-r7-after-pei-r6-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。我不拿那些地方當理由找妳。只是走過去的時候，還是會想起妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -9033,7 +9078,7 @@
           "id": "choice-pei-r10-after-pei-r9-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道害怕不是理由。可妳一說不回頭，我就忍不住想求妳再等等。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -9155,7 +9200,7 @@
           "id": "choice-pei-r11-after-pei-r10-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。我不每天報告自己改了什麼。可我真的希望有一天妳能看見。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -9580,7 +9625,7 @@
           "id": "choice-pei-r15-after-pei-r14-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道我們不用報備。可我有時候還是會想問妳吃了沒，然後盯著輸入框發呆。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -9779,7 +9824,7 @@
           "id": "choice-pei-r17-after-pei-r16-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳受傷了。可我現在才明白，光說『對不起』根本不夠。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -9892,7 +9937,7 @@
           "id": "choice-pei-r18-after-pei-r17-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。我不分析妳。其實我連自己為什麼一直等妳回訊息，都不想再分析了。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -10101,7 +10146,7 @@
           "id": "choice-pei-r20-after-pei-r19-a-in-extra-3-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "是。",
+          "body": "是。我嫉妒。妳身邊只要有別人，我就忍不住想，那個位置以前明明是我的。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -10335,7 +10380,7 @@
           "id": "choice-pei-r22-after-pei-r21-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳不能救我。只是以前我難過的時候，第一個想到的永遠是妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -10891,7 +10936,7 @@
           "id": "choice-pei-r27-after-pei-r26-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳不會為了我背叛別人。可我聽到妳可能喜歡別人，還是嫉妒得要命。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11153,7 +11198,7 @@
           "id": "choice-pei-r29-after-pei-r28-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。我不再追問期限。可我真的怕有一天，連等妳都變得沒有意義。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11275,7 +11320,7 @@
           "id": "choice-pei-r30-after-pei-r29-a-in-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "好。妳把生活過好。我不想再讓妳覺得，連照顧自己都得先安撫我。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11388,7 +11433,7 @@
           "id": "pei-day11-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。那家書店我不再提。可是我剛剛真的差點把那張照片傳給妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11449,7 +11494,7 @@
           "id": "pei-day21-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "我知道。只是以前有什麼進展，我第一個想告訴的人就是妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11528,7 +11573,7 @@
           "id": "pei-major-event-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "我知道。",
+          "body": "我知道妳不會因為我求就答應。可我真的還想求妳，再給我一次機會。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -11563,7 +11608,7 @@
           "id": "pei-autonomy-v3-day2-choice-extra-4-in",
           "title": "",
           "senderId": "peizhiyu",
-          "body": "好。",
+          "body": "……好。我暫時不主動聯絡。妳不用擔心我又用別的藉口找妳。",
           "time": "21:47",
           "hidden": true,
           "avatar": "./characters/pei-zhiyu-avatar.png"
@@ -16955,7 +17000,7 @@
       "label": "裴知聿｜選擇回覆",
       "type": "choice",
       "event": "read",
-      "target": "pei-01",
+      "target": "pei-01-bubble-6",
       "once": true,
       "next": [
         "reply-pei-1",
@@ -18977,7 +19022,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我會等。只是我現在真的很怕，妳想著想著，就決定再也不要我了。"
         }
       ],
       "next": [
@@ -19278,7 +19323,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……這樣就結束了嗎？我知道我不能一直留妳，可是我還想再跟妳說幾句。"
         }
       ],
       "next": [
@@ -19480,7 +19525,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。我不打擾妳。只是妳說想一個人靜靜的時候，我第一個念頭竟然是妳是不是已經不需要我了。"
         }
       ],
       "next": [
@@ -26378,7 +26423,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。妳先把生活過好。可我現在連一句『晚安』都要忍很久才敢傳。"
         }
       ],
       "next": [
@@ -29929,7 +29974,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天路過以前常去的書店，想起妳。"
+          "value": "裴知聿：今天路過書店，看到一本妳以前想買的書。"
         }
       ],
       "next": [
@@ -30066,7 +30111,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：早。"
+          "value": "裴知聿：早。我剛結束一整晚的研究資料整理。"
         }
       ],
       "next": [
@@ -31444,7 +31489,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：剛才整理抽屜，找到以前一起去那家店的收據。"
+          "value": "裴知聿：剛從研究室出來，看到有人拿著妳以前喜歡的那款飲料。"
         }
       ],
       "next": [
@@ -31475,7 +31520,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天事情有點多，我晚點才有空回訊息。"
+          "value": "裴知聿：今天開會有人問我是不是沒睡好。"
         }
       ],
       "next": [
@@ -31506,7 +31551,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天沒有特別的事。"
+          "value": "裴知聿：我今天忍了很久沒有傳訊息。"
         }
       ],
       "next": [
@@ -42569,7 +42614,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道。妳不想再猜，我卻還是怕得一直想問。這次我自己忍住。"
         }
       ],
       "next": [
@@ -42669,7 +42714,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。妳的沉默不是答案。我只是看到妳在線上，還是會不爭氣地期待。"
         }
       ],
       "next": [
@@ -42769,7 +42814,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳沒有原諒我。我只是太怕妳連罵我都不願意了。"
         }
       ],
       "next": [
@@ -42869,7 +42914,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。這個話題我停。妳不用再傳一句『知道了』來安撫我。"
         }
       ],
       "next": [
@@ -42969,7 +43014,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道我們分手了。就是因為知道，才會每次看到妳回訊息都高興得像個傻子。"
         }
       ],
       "next": [
@@ -43069,7 +43114,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我不問妳還愛不愛我。可我真的會想知道。"
         }
       ],
       "next": [
@@ -43169,7 +43214,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳不用報備。我剛剛還想問妳跟誰出去，打完又刪掉了。"
         }
       ],
       "next": [
@@ -43269,7 +43314,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。今天不問了。妳不用再回我，我會把想問的話吞回去。"
         }
       ],
       "next": [
@@ -43369,7 +43414,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳不是為了教訓我才離開。可我還是會想，如果我早點懂，是不是就不會失去妳。"
         }
       ],
       "next": [
@@ -43469,7 +43514,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我不逼妳聽。只是我還有好多話沒說。"
         }
       ],
       "next": [
@@ -43669,7 +43714,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。我不會再用關心當藉口靠近妳。可是我真的很想妳。"
         }
       ],
       "next": [
@@ -43769,7 +43814,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道。照片我自己留著，不再拿出來試探妳是不是心軟。"
         }
       ],
       "next": [
@@ -44169,7 +44214,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我不拿那些地方當理由找妳。只是走過去的時候，還是會想起妳。"
         }
       ],
       "next": [
@@ -44769,7 +44814,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道害怕不是理由。可妳一說不回頭，我就忍不住想求妳再等等。"
         }
       ],
       "next": [
@@ -44969,7 +45014,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。我不每天報告自己改了什麼。可我真的希望有一天妳能看見。"
         }
       ],
       "next": [
@@ -45767,7 +45812,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道我們不用報備。可我有時候還是會想問妳吃了沒，然後盯著輸入框發呆。"
         }
       ],
       "next": [
@@ -46165,7 +46210,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳受傷了。可我現在才明白，光說『對不起』根本不夠。"
         }
       ],
       "next": [
@@ -46365,7 +46410,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。我不分析妳。其實我連自己為什麼一直等妳回訊息，都不想再分析了。"
         }
       ],
       "next": [
@@ -46715,7 +46760,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：是。"
+          "value": "裴知聿：是。我嫉妒。妳身邊只要有別人，我就忍不住想，那個位置以前明明是我的。"
         }
       ],
       "next": [
@@ -47161,7 +47206,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳不能救我。只是以前我難過的時候，第一個想到的永遠是妳。"
         }
       ],
       "next": [
@@ -48161,7 +48206,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳不會為了我背叛別人。可我聽到妳可能喜歡別人，還是嫉妒得要命。"
         }
       ],
       "next": [
@@ -48561,7 +48606,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我不再追問期限。可我真的怕有一天，連等妳都變得沒有意義。"
         }
       ],
       "next": [
@@ -48761,7 +48806,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：好。妳把生活過好。我不想再讓妳覺得，連照顧自己都得先安撫我。"
         }
       ],
       "next": [
@@ -55393,7 +55438,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。那家書店我不再提。可是我剛剛真的差點把那張照片傳給妳。"
         }
       ],
       "next": [
@@ -55493,7 +55538,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：我知道。只是以前有什麼進展，我第一個想告訴的人就是妳。"
         }
       ],
       "next": [
@@ -55593,7 +55638,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我知道。"
+          "value": "裴知聿：我知道妳不會因為我求就答應。可我真的還想求妳，再給我一次機會。"
         }
       ],
       "next": [
@@ -56363,7 +56408,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：好。"
+          "value": "裴知聿：……好。我暫時不主動聯絡。妳不用擔心我又用別的藉口找妳。"
         }
       ],
       "next": [
