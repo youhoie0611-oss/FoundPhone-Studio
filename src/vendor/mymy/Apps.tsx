@@ -29,6 +29,7 @@ import { Avatar, Media } from "../../skins/shared";
 import { useSkinState } from "../../skinState";
 import type { Item } from "../../schema";
 import { pendingBrick3PhotoOptions } from "../../brick3PhotoChoices";
+import { brick3ContextReplies } from "../../brick3ReplyOptions";
 import "./ui.css";
 import "./adapter.css";
 const characterAvatar: Record<string, string> = {
@@ -213,7 +214,7 @@ export function MymyKakao(p: SkinProps) {
             {isTyping && <div className="kkt-typing" role="status" aria-live="polite">{p.thread} 正在輸入…</div>}
             {!messages.length && <Blank />}
           </div>
-          {!p.creator && !isTyping && !shenPhotoReplyFinished && (!lastMessage?.outgoing || photoOptions.length === 4 || v8Options.length > 0) && (
+          {!p.creator && !isTyping && !shenPhotoReplyFinished && !lastMessage?.outgoing && (
             <div className="kkt-reply-tray" aria-label="回覆選項">
               {(() => {
                 if (v8Options.length) return v8Options.map((choice) => (
@@ -223,52 +224,7 @@ export function MymyKakao(p: SkinProps) {
                 if (photoOptions.length === 4) return photoOptions.map((choice) => (
                   <button type="button" key={choice.target} className="kkt-reply-choice" onClick={() => p.onChoose?.(choice.target)}>{choice.label}</button>
                 ));
-                const latest = lastMessage?.body ?? "";
-                // Match the complete delivered turn, not only a generic keyword.
-                // Earlier lines in the same message contain the actual question and context.
-                const peiCurrentPartner = p.thread === "裴知聿"
-                  ? (p.relationshipContext ?? []).find(name => name !== "裴知聿") : undefined;
-                const options = peiCurrentPartner && !/我知道妳已經有男朋友|只能不公開地在一起/.test(latest)
-                  ? [`我和${peiCurrentPartner}在交往。`, "我現在還不想談復合。", "你最近還好嗎？", "我想我們先保持距離。"]
-                  : p.thread === "沈硯舟" && /希望我刪掉|我就刪掉|不會公開|不會把照片傳給任何人/.test(latest)
-                  ? ["請你刪掉那張照片。", "謝謝你尊重我的意思。", "那天你還拍了什麼？", "我們先聊別的吧。"]
-                  : p.thread === "裴知聿" && /當初沒說清楚|重新開始的可能|願意先聽/.test(latest)
-                    ? ["你先說說當初的問題。", "我願意聽，但不代表復合。", "我還需要時間。", "我不想再談這段關係。"]
-                  : p.thread === "顧時安" && /提案被退|失落|心情其實不太好/.test(latest)
-                  ? ["想聊聊發生什麼事嗎？", "你接下來打算怎麼做？", "先休息吧，不用急著說。", "我現在也有點累，改天再聊。"]
-                  : p.thread === "顧時安" && /建築展|一起逛|城市散步/.test(latest)
-                    ? ["時間地點是什麼？", "我這次不方便去。", "你為什麼對這個展有興趣？", "我先看看工作安排。"]
-                    : p.thread === "顧時安" && /城市展覽|建築設計|這類活動/.test(latest)
-                  ? ["聽起來有趣，是什麼展覽？", "你怎麼會有我的聯絡方式？", "謝謝邀請，但我對這類活動沒興趣。", "我現在工作有點忙，改天再聊。"]
-                  : p.thread === "沈硯舟" && /介意我傳|傳給妳看看|入鏡/.test(latest)
-                  ? ["可以啊，傳給我看看。", "我不太想讓照片被傳來傳去。", "你拍到的是哪一張？", "你怎麼知道那個人是我？"]
-                  : p.thread === "沈硯舟" && /上次活動|那位|是妳|是你/.test(latest)
-                    ? ["對，是我。你還記得我？", "你是不是認錯人了？", "你怎麼認出我的？", "我們好像還不太熟，先說說你是誰吧。"]
-                    : p.thread === "裴知聿" && /分手|以前的照片|很久沒聯絡/.test(latest)
-                      ? ["你突然聯絡我，是想說什麼？", "我們不是說好先不要聯絡嗎？", "我最近還好，你呢？", "我現在不想聊以前的事。"]
-                      : p.thread === "祁野" && /停車場|擋路|生氣/.test(latest)
-                        ? ["對，是我。你那天真的擋到路了。", "你怎麼知道是我？", "我沒有生氣，但你應該先道歉。", "這件事就算了，別再提了。"]
-                        : /下班了沒|下班了|今天下班/.test(latest)
-                          ? ["剛下班，今天真的有點累。", "還沒，手邊的工作還沒做完。", "你今天怎麼忙成這樣？", "我晚點再跟你聊。"]
-                          : /週五|活動|現場/.test(latest)
-                            ? ["你說的是哪個活動？", "那天我可能沒空。", "活動是幾點開始？", "你怎麼突然提起這件事？"]
-                            : /照片|相機|拍/.test(latest)
-                              ? ["可以傳給我看看嗎？", "先不用傳，謝謝。", "那張照片在哪裡拍的？", "你怎麼突然提起照片？"]
-                              : /分手|聯絡|以前/.test(latest)
-                                ? ["你找我到底有什麼事？", "我不想再談以前的事。", "你現在是怎麼想的？", "我們先保持距離吧。"]
-                                : /停車場|擋路|車/.test(latest)
-                                  ? ["你那天有看到我嗎？", "你先把那件事解釋清楚。", "算了，我不想再追究。", "你平常都這樣跟人搭話？"]
-                                  : /吃飯|聚餐|週末|約/.test(latest)
-                                    ? ["好啊，時間地點呢？", "我可能要加班，先別算我。", "還有誰會去？", "這次我先不去了。"]
-                                    : p.thread === "沈硯舟"
-                                      ? ["你說的那張照片可以給我看看嗎？", "你是在哪場活動認出我的？", "你為什麼想聯絡我？", "我不希望照片被公開。"]
-                                      : p.thread === "顧時安"
-                                        ? ["先說清楚你怎麼拿到我的聯絡方式。", "我們之前在哪裡見過？", "你找我有什麼具體的事？", "我不想跟不認識的人聊天。"]
-                                        : p.thread === "裴知聿"
-                                          ? ["你現在聯絡我是想復合嗎？", "我們分手的問題你想清楚了嗎？", "我需要時間，不想現在談。", "我們先保持距離。"]
-                                          : p.thread === "祁野"
-                                            ? ["你那天為什麼會出現在那裡？", "你先說清楚找我的原因。", "你有沒有認真想過自己的態度？", "我現在不想聊。"]
-                                            : ["你剛剛提的事情，具體是什麼？", "我們先把時間和地點確認。", "這件事我還沒答應。", "我現在不方便，改天再說。"];
+                const options = brick3ContextReplies(p.thread, messages);
                 return options.map((reply, index) => (
                   <button type="button" key={index} className="kkt-reply-choice" onClick={() => p.onPresetReply?.(p.thread, reply)}>
                     {reply}
