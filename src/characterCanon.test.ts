@@ -15,10 +15,10 @@ describe("character canon", () => {
   it("flags history contradictions", () => {
     expect(canonViolations("裴知聿", "我們從來沒有交往過")).toContain("character-history");
   });
-  it("keeps Pei emotionally recognizable when a reply violates boundaries", () => {
-    const reply = enforceCanon("裴知聿", "不准妳跟其他男人見面");
-    expect(reply).toMatch(/放不下|太急/);
-    expect(reply).not.toMatch(/不准|禁止/);
+  it("keeps unhealthy possessiveness as fictional speech without assuming player action", () => {
+    const spoken = "不准妳跟其他男人見面";
+    expect(canonViolations("裴知聿", spoken)).toContain("relationship-boundary");
+    expect(enforceCanon("裴知聿", spoken)).toBe(spoken);
   });
   it("rejects forced player feelings", () => {
     expect(canonViolations("祁野", "妳已經愛上我")).toContain("player-agency");
