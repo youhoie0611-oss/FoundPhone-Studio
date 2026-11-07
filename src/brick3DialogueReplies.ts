@@ -106,6 +106,6 @@ export function brick3ContextAnswer(request: AiChatRequest): AiChatResponse | nu
       "我在聽。妳想先問哪一件事，我會直接回答。");
   }
   if (/謝謝|感謝/.test(player)) return say("不用客氣。這是我願意做的事。");
-  if (stop.test(player)) return say(name === "祁野" ? "行，我不逼妳聊。晚點再說。" : "好，先不打擾妳。妳有空再說。");
+  if (stop.test(player)) return say(name === "祁野" ? "行，不煩妳。這件事就到這裡。" : "好，先不打擾妳。妳有空再說。");
   return null;
 }
