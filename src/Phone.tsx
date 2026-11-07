@@ -140,7 +140,6 @@ function PhoneRuntime({
 }) {
   const [app, setApp] = useState("");
   const [homeRequest, setHomeRequest] = useState(0);
-  const [brick3RelationshipsOpen, setBrick3RelationshipsOpen] = useState(false);
   const [locked, setLocked] = useState(!creator);
   const [pinOpen, setPinOpen] = useState(false);
   const [quickCamera, setQuickCamera] = useState(false);
@@ -455,7 +454,9 @@ function PhoneRuntime({
                 creator={creator}
                 origin={launchOrigin}
               >
-                <AppContent
+                {!creator && work.id === "between-the-lines-b-demo" && app === "contacts" ? (
+                <Brick3RelationshipPanel state={s} close={() => setApp("")} />
+              ) : <AppContent
                   initialThread={notificationThread}
                   app={plugin}
                   name={
@@ -557,7 +558,7 @@ function PhoneRuntime({
                     );
                   }}
                   work={work}
-                />
+                />}
               </AppWindow>
             ) : (
               <HomeLauncher
@@ -599,23 +600,6 @@ function PhoneRuntime({
               />
             )}
           </AnimatePresence>
-          {!creator && !locked && !app && work.id === "between-the-lines-b-demo" && (
-            <>
-              {!brick3RelationshipsOpen && (
-                <button type="button" className="brick3-relation-shortcut"
-                  onClick={() => setBrick3RelationshipsOpen(true)}>
-                  我的關係
-                </button>
-              )}
-              {brick3RelationshipsOpen && (
-                <Brick3RelationshipPanel
-                  state={s}
-                  close={() => setBrick3RelationshipsOpen(false)}
-                  onUpdate={update}
-                />
-              )}
-            </>
-          )}
           {folder && (
             <div className="folder-overlay" onClick={() => setFolder("")}>
               <h2>{folder}</h2>
