@@ -3,7 +3,7 @@
   "id": "between-the-lines-b-demo",
   "title": "未定義關係｜三人初識",
   "description": "上班族玩家與活動認識的大學生沈硯舟、希望複合的前男友裴知聿，以及偶然結識的富家子弟祁野，在各自生活中逐步建立關係。好感度為隱藏數值。",
-  "revision": 48,
+  "revision": 49,
   "phone": {
     "owner": "妳",
     "date": "2026-11-03",
@@ -6613,7 +6613,16 @@
         {
           "id": "pei-day11-opening",
           "title": "",
-          "body": "今天路過以前常去的書店，想起妳。\n希望妳最近順利，不用急著回。",
+          "body": "今天路過以前常去的書店，想起妳。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day11-opening-bubble-2",
+          "title": "",
+          "body": "希望妳最近順利，不用急著回。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 09:15",
           "hidden": true,
@@ -6692,7 +6701,34 @@
         {
           "id": "pei-day21-opening",
           "title": "",
-          "body": "早。\n我今天要跟主管報告進度。\n昨天重新核對妳提過的問題，發現確實有一處我忽略了。\n先跟妳說一聲。",
+          "body": "早。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-opening-bubble-2",
+          "title": "",
+          "body": "我今天要跟主管報告進度。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-opening-bubble-3",
+          "title": "",
+          "body": "昨天重新核對妳提過的問題，發現確實有一處我忽略了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 09:15",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-day21-opening-bubble-4",
+          "title": "",
+          "body": "先跟妳說一聲。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 09:15",
           "hidden": true,
@@ -6780,7 +6816,25 @@
         {
           "id": "pei-major-event-opening",
           "title": "",
-          "body": "我想清楚了。\n我還喜歡妳，也想重新開始。\n但我不會要求妳一定接受。",
+          "body": "我想清楚了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-major-event-opening-bubble-2",
+          "title": "",
+          "body": "我還喜歡妳，也想重新開始。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 18:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-major-event-opening-bubble-3",
+          "title": "",
+          "body": "但我不會要求妳一定接受。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 18:30",
           "hidden": true,
@@ -6868,7 +6922,16 @@
         {
           "id": "pei-autonomy-v3-day1",
           "title": "",
-          "body": "剛才整理抽屜，找到以前一起去那家店的收據。\n我知道突然提這個有點冒昧。",
+          "body": "剛才整理抽屜，找到以前一起去那家店的收據。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-04 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day1-bubble-2",
+          "title": "",
+          "body": "我知道突然提這個有點冒昧。",
           "senderId": "peizhiyu",
           "time": "2026-11-04 20:30",
           "hidden": true,
@@ -6877,7 +6940,16 @@
         {
           "id": "pei-autonomy-v3-day2",
           "title": "",
-          "body": "今天事情有點多，我晚點才有空回訊息。\n昨天那句話不是要妳給我答案，只是我不想再裝作什麼都沒發生。",
+          "body": "今天事情有點多，我晚點才有空回訊息。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-05 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day2-bubble-2",
+          "title": "",
+          "body": "昨天那句話不是要妳給我答案，只是我不想再裝作什麼都沒發生。",
           "senderId": "peizhiyu",
           "time": "2026-11-05 20:30",
           "hidden": true,
@@ -6886,7 +6958,16 @@
         {
           "id": "pei-autonomy-v3-day3",
           "title": "",
-          "body": "今天沒有特別的事。\n只是想問問妳最近好不好。如果不方便回，也沒關係。",
+          "body": "今天沒有特別的事。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 20:30",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-day3-bubble-2",
+          "title": "",
+          "body": "只是想問問妳最近好不好。如果不方便回，也沒關係。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 20:30",
           "hidden": true,
@@ -7000,7 +7081,16 @@
         {
           "id": "pei-autonomy-v3-reply-1-next-day",
           "title": "",
-          "body": "妳昨天問我的事，我想了一晚。\n我不想只靠一句道歉就要求妳相信我。",
+          "body": "妳昨天問我的事，我想了一晚。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-1-next-day-bubble-2",
+          "title": "",
+          "body": "我不想只靠一句道歉就要求妳相信我。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 21:10",
           "hidden": true,
@@ -7009,7 +7099,16 @@
         {
           "id": "pei-autonomy-v3-reply-2-next-day",
           "title": "",
-          "body": "我明白了。昨天之後我沒有再提那件事。\n妳不需要替我的情緒負責。",
+          "body": "我明白了。昨天之後我沒有再提那件事。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-2-next-day-bubble-2",
+          "title": "",
+          "body": "妳不需要替我的情緒負責。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 21:10",
           "hidden": true,
@@ -7018,7 +7117,16 @@
         {
           "id": "pei-autonomy-v3-reply-3-next-day",
           "title": "",
-          "body": "昨天聊完我去處理工作了。\n今天想問問妳近況，但不必勉強回覆。",
+          "body": "昨天聊完我去處理工作了。",
+          "senderId": "peizhiyu",
+          "time": "2026-11-06 21:10",
+          "hidden": true,
+          "avatar": "./characters/pei-zhiyu-avatar.png"
+        },
+        {
+          "id": "pei-autonomy-v3-reply-3-next-day-bubble-2",
+          "title": "",
+          "body": "今天想問問妳近況，但不必勉強回覆。",
           "senderId": "peizhiyu",
           "time": "2026-11-06 21:10",
           "hidden": true,
@@ -29821,10 +29929,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天路過以前常去的書店，想起妳。 希望妳最近順利，不用急著回。"
+          "value": "裴知聿：今天路過以前常去的書店，想起妳。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-day11-arrival-2"
+      ]
     },
     {
       "id": "pei-day11-choice",
@@ -29956,10 +30066,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：早。 我今天要跟主管報告進度。 昨天重新核對妳提過的問題，發現確實有一處我忽略了。 先跟妳說一聲。"
+          "value": "裴知聿：早。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-day21-arrival-2"
+      ]
     },
     {
       "id": "pei-day21-choice",
@@ -30091,10 +30203,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：我想清楚了。 我還喜歡妳，也想重新開始。 但我不會要求妳一定接受。"
+          "value": "裴知聿：我想清楚了。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-major-event-arrival-2"
+      ]
     },
     {
       "id": "pei-major-event-choice",
@@ -31330,11 +31444,11 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：剛才整理抽屜，找到以前一起去那家店的收據。 我知道突然提這個有點冒昧。"
+          "value": "裴知聿：剛才整理抽屜，找到以前一起去那家店的收據。"
         }
       ],
       "next": [
-        "pei-autonomy-v3-day2-delay"
+        "pei-bubble-wait-pei-autonomy-v3-day1-arrive-2"
       ]
     },
     {
@@ -31361,11 +31475,11 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天事情有點多，我晚點才有空回訊息。 昨天那句話不是要妳給我答案，只是我不想再裝作什麼都沒發生。"
+          "value": "裴知聿：今天事情有點多，我晚點才有空回訊息。"
         }
       ],
       "next": [
-        "pei-autonomy-v3-day3-delay"
+        "pei-bubble-wait-pei-autonomy-v3-day2-arrive-2"
       ]
     },
     {
@@ -31392,8 +31506,11 @@
         {
           "type": "notification",
           "key": "",
-          "value": "裴知聿：今天沒有特別的事。 只是想問問妳最近好不好。如果不方便回，也沒關係。"
+          "value": "裴知聿：今天沒有特別的事。"
         }
+      ],
+      "next": [
+        "pei-bubble-wait-pei-autonomy-v3-day3-arrive-2"
       ]
     },
     {
@@ -31907,10 +32024,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "KKT：裴知聿傳來後續訊息"
+          "value": "裴知聿：妳昨天問我的事，我想了一晚。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-autonomy-v3-reply-1-next-day-arrive-2"
+      ]
     },
     {
       "id": "pei-autonomy-v3-reply-2-next-day-wait",
@@ -31936,10 +32055,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "KKT：裴知聿傳來後續訊息"
+          "value": "裴知聿：我明白了。昨天之後我沒有再提那件事。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-autonomy-v3-reply-2-next-day-arrive-2"
+      ]
     },
     {
       "id": "pei-autonomy-v3-reply-3-next-day-wait",
@@ -31965,10 +32086,12 @@
         {
           "type": "notification",
           "key": "",
-          "value": "KKT：裴知聿傳來後續訊息"
+          "value": "裴知聿：昨天聊完我去處理工作了。"
         }
       ],
-      "next": []
+      "next": [
+        "pei-bubble-wait-pei-autonomy-v3-reply-3-next-day-arrive-2"
+      ]
     },
     {
       "id": "qi-autonomy-v3-reply-1-next-day-wait",
@@ -63986,6 +64109,280 @@
       "next": [
         "pei-bubble-wait-pei-autonomy-v3-day2-choice-extra-4-arrival-3"
       ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-day11-arrival-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-day11-arrival-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-day11-arrival-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day11-opening-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-day21-arrival-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-day21-arrival-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-day21-arrival-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-opening-bubble-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-bubble-wait-pei-day21-arrival-3"
+      ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-day21-arrival-3",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 2500,
+      "next": [
+        "pei-bubble-delivery-pei-day21-arrival-3"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-day21-arrival-3",
+      "label": "裴知聿第3則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-opening-bubble-3",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-bubble-wait-pei-day21-arrival-4"
+      ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-day21-arrival-4",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 2500,
+      "next": [
+        "pei-bubble-delivery-pei-day21-arrival-4"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-day21-arrival-4",
+      "label": "裴知聿第4則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-day21-opening-bubble-4",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-major-event-arrival-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-major-event-arrival-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-major-event-arrival-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-opening-bubble-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-bubble-wait-pei-major-event-arrival-3"
+      ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-major-event-arrival-3",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 2500,
+      "next": [
+        "pei-bubble-delivery-pei-major-event-arrival-3"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-major-event-arrival-3",
+      "label": "裴知聿第3則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-major-event-opening-bubble-3",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-day1-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-day1-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-day1-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day1-bubble-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day2-delay"
+      ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-day2-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-day2-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-day2-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day2-bubble-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "pei-autonomy-v3-day3-delay"
+      ]
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-day3-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-day3-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-day3-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-day3-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-reply-1-next-day-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-reply-1-next-day-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-reply-1-next-day-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-1-next-day-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-reply-2-next-day-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-reply-2-next-day-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-reply-2-next-day-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-2-next-day-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pei-bubble-wait-pei-autonomy-v3-reply-3-next-day-arrive-2",
+      "label": "裴知聿正在輸入",
+      "type": "delay",
+      "delayMs": 1800,
+      "next": [
+        "pei-bubble-delivery-pei-autonomy-v3-reply-3-next-day-arrive-2"
+      ]
+    },
+    {
+      "id": "pei-bubble-delivery-pei-autonomy-v3-reply-3-next-day-arrive-2",
+      "label": "裴知聿第2則訊息",
+      "type": "action",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "pei-autonomy-v3-reply-3-next-day-bubble-2",
+          "value": true
+        }
+      ],
+      "next": []
     }
   ],
   "tests": [
